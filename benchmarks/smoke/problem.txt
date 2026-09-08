@@ -1,0 +1,1 @@
+CUMCM smoke fixture. Question 1 asks for a dimensionally consistent estimate and an independently verified numerical result.

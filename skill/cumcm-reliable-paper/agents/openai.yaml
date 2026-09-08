@@ -1,0 +1,4 @@
+interface:
+  display_name: "国赛可信论文 Agent"
+  short_description: "CUMCM evidence gates and paper workflow"
+  default_prompt: "Use $cumcm-reliable-paper to start a traceable CUMCM modeling and paper workflow from the provided problem and attachments."

@@ -1,0 +1,221 @@
+{
+  "scope": "full intake only; dense numeric workbook oracle",
+  "oracle": "openpyxl 3.1.5 + math.fsum; reset worksheet dimensions",
+  "intake_seconds": 36.171803208999336,
+  "total_seconds": 60.54736070900981,
+  "sheet_count": 30,
+  "data_rows": 1796765,
+  "passed": true,
+  "comparisons": [
+    {
+      "source_id": "attachment-01",
+      "sheet": "level",
+      "data_rows": 143043,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "source_id": "attachment-01",
+      "sheet": "down",
+      "data_rows": 141584,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "source_id": "attachment-02",
+      "sheet": "25-1",
+      "data_rows": 74836,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "source_id": "attachment-02",
+      "sheet": "25-2",
+      "data_rows": 82243,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "source_id": "attachment-02",
+      "sheet": "26-1",
+      "data_rows": 70909,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "source_id": "attachment-02",
+      "sheet": "26-2",
+      "data_rows": 69305,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "source_id": "attachment-02",
+      "sheet": "27-1",
+      "data_rows": 71347,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "source_id": "attachment-02",
+      "sheet": "27-2",
+      "data_rows": 70318,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "source_id": "attachment-02",
+      "sheet": "28-1",
+      "data_rows": 78525,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "source_id": "attachment-02",
+      "sheet": "28-2",
+      "data_rows": 80041,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "source_id": "attachment-02",
+      "sheet": "29-1",
+      "data_rows": 82023,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "source_id": "attachment-02",
+      "sheet": "29-2",
+      "data_rows": 79110,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "source_id": "attachment-03",
+      "sheet": "1-2-1",
+      "data_rows": 61394,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "source_id": "attachment-03",
+      "sheet": "1-2-2",
+      "data_rows": 62667,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "source_id": "attachment-03",
+      "sheet": "1-2-3",
+      "data_rows": 64495,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "source_id": "attachment-03",
+      "sheet": "2-2-1",
+      "data_rows": 61848,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "source_id": "attachment-03",
+      "sheet": "2-2-2",
+      "data_rows": 57910,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "source_id": "attachment-03",
+      "sheet": "2-2-3",
+      "data_rows": 59139,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "source_id": "attachment-03",
+      "sheet": "3-2-1",
+      "data_rows": 58005,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "source_id": "attachment-03",
+      "sheet": "3-2-2",
+      "data_rows": 61485,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "source_id": "attachment-03",
+      "sheet": "3-2-3",
+      "data_rows": 61742,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "source_id": "attachment-04",
+      "sheet": "1-3-1",
+      "data_rows": 19741,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "source_id": "attachment-04",
+      "sheet": "1-3-2",
+      "data_rows": 25262,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "source_id": "attachment-04",
+      "sheet": "1-3-3",
+      "data_rows": 24869,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "source_id": "attachment-04",
+      "sheet": "2-3-1",
+      "data_rows": 20918,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "source_id": "attachment-04",
+      "sheet": "2-3-2",
+      "data_rows": 23996,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "source_id": "attachment-04",
+      "sheet": "2-3-3",
+      "data_rows": 23109,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "source_id": "attachment-04",
+      "sheet": "3-3-1",
+      "data_rows": 17904,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "source_id": "attachment-04",
+      "sheet": "3-3-2",
+      "data_rows": 24782,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "source_id": "attachment-04",
+      "sheet": "3-3-3",
+      "data_rows": 24215,
+      "passed": true,
+      "failures": []
+    }
+  ]
+}
