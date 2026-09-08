@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "project": "cumcm-reliable-paper-agent",
-  "version": "0.7.0-mvp",
+  "version": "0.8.0-mvp",
   "built_on": "2026-09-08",
   "skill": "skill/cumcm-reliable-paper",
   "entrypoint": "python3 skill/cumcm-reliable-paper/scripts/cumcm_agent.py",

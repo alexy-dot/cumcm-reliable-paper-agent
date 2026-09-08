@@ -13,7 +13,7 @@
 | --- | --- |
 | 读题与读数据 | 冻结原始文件；提取 DOCX 段落；全量检查 CSV/XLSX 行数、缺失、重复和异常值 |
 | 建模与复核 | 记录题意、约束、假设；提前确定容差，逐项比较两份独立计算输出 |
-| 写作与追溯 | 论文主张绑定结果 ID；台账数值直接匹配 JSON 产物，阻止“程序算2、论文依据写3” |
+| 写作与追溯 | 论文主张绑定结果 ID；台账直接匹配 JSON 产物；从同一稿件生成 Markdown 与嵌入字体的PDF |
 | 修改与交付 | 检测已通过阶段的内容变化；记录人工评阅；封存文件清单与哈希 |
 
 ```text
@@ -35,6 +35,23 @@ python3 examples/production/run.py --output runs/demo
 - `runs/demo/demo_validation.json`：校验结果，真实人工评阅仍待完成。
 
 输出目录必须为空。示例不会伪造审批或将演示结果标成正式提交稿；它不是国赛盲测成绩。
+
+## 看一次完整题目实测
+
+2020 A“炉温曲线”的项目内首次实测，在约30分钟内完成四问、671条采样输出和8页训练稿，29项独立数值检查通过。它还揭示了参数非唯一和贴边解的脆弱性，而不是只展示一个漂亮最优值。
+
+[训练稿 PDF](benchmarks/reports/furnace-2020a-paper.pdf) · [验收记录与边界](benchmarks/reports/furnace-2020a-summary.json)
+
+![炉温曲线与峰值对齐比较](benchmarks/reports/furnace-2020a-curves.png)
+
+自备原始题面与附件后可一键回放（约一分钟，取决于机器）：
+
+```bash
+python3 -m pip install -r benchmarks/furnace_2020a/requirements.txt -r requirements-paper.txt
+python3 benchmarks/furnace_2020a/run_all.py --source-dir /path/2020/A --output runs/furnace
+```
+
+PDF需要可嵌入的中文TrueType字体；未自动找到时加 `--font /path/font.ttf`。回放不等于新的盲测；预训练接触无法排除，真实人工评阅与正式提交审核仍待完成。
 
 ## 用于自己的题目
 
@@ -59,7 +76,7 @@ python3 skill/cumcm-reliable-paper/scripts/cumcm_agent.py status /path/run
 python3 -m unittest discover -s tests -v
 ```
 
-测试覆盖文件尾部损坏、稀疏表格、编码、数值不一致、伪独立复核、版本漂移和封存变更。GitHub Actions 在 Python 3.10、3.12、3.13 上执行测试与示例。
+核心测试覆盖文件尾部损坏、稀疏表格、编码、数值不一致、伪独立复核、版本漂移和封存变更。GitHub Actions 在 Python 3.10、3.12、3.13 上执行测试与示例，并分别检查科学计算内核和PDF字体嵌入；缺少可选PDF依赖时，核心测试会明确跳过相应两项。
 
 [真实输入集成记录](benchmarks/reports/intake-2020d.json)：2020 D的30个工作表、1,796,765行数据，与 openpyxl 独立读取及 math.fsum 计算的行数、缺失数、范围和均值全部一致。复跑需要自备题目附件并安装 openpyxl：
 
@@ -71,7 +88,7 @@ python3 benchmarks/verify_intake.py --source-dir /path/2020/D --output runs/inta
 
 ## 当前边界
 
-当前是国奖导向的辅助工具，**尚未通过完整陌生题限时验收，不保证奖项**。通用题型求解、自动 PDF 成稿和正式比赛规则校验仍在完善。
+当前是国奖导向的辅助工具，**历史题已完成一次限时成稿实测，但尚未证明国奖级可靠性，不保证奖项**。通用题型求解、正式比赛规则校验及更广泛的独立评阅仍在完善。
 
 数据读取不等于题意理解；第一存储行暂作表头候选，图示、单位、日期和公式缓存需结合原文解释。数值一致不证明两种算法真正独立；人工签核字段不认证身份，文件哈希也不是防篡改认证。项目会明确区分合成示例、历史回放和陌生题验收。
 

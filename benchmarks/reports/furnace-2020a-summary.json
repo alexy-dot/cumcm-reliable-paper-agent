@@ -1,0 +1,82 @@
+{
+  "case": "2020 A furnace profile",
+  "started_at": "2026-09-08T13:07:53.376718+00:00",
+  "artifact_ready_at": "2026-09-08T13:38:14.579267+00:00",
+  "elapsed_minutes": 30.353375816666667,
+  "budget_minutes": 180,
+  "within_artifact_time_budget": true,
+  "exposure_scope": "first project-local attempt; public-problem pretraining exposure cannot be excluded",
+  "workflow_scope": "source freeze before analysis; ledgers assembled after solving; not a prospectively approved stage-by-stage run",
+  "output_coverage": {
+    "Q1": {
+      "temperature_points": 4,
+      "csv_samples": 671
+    },
+    "Q2": "speed boundary and all process metrics",
+    "Q3": "best found feasible settings, area, non-unique alternatives",
+    "Q4": "explicit epsilon tradeoff and symmetry metric"
+  },
+  "calibration": {
+    "parameters": [
+      50.097382371824224,
+      70.31409527195162,
+      40.588012701982315,
+      46.207009770821955,
+      23.622404251644408,
+      30.499999999999996,
+      99.04957717082503
+    ],
+    "rmse": 0.7131139608936958,
+    "max_abs_error": 1.951868166451817,
+    "held_block_rmse": 0.8363166651996394,
+    "train_parameters": [
+      50.13974084605615,
+      67.4857522154901,
+      39.9127488732386,
+      46.971550245646156,
+      25.386778888728077,
+      30.499999999999996,
+      95.18425960991817
+    ],
+    "train_count": 522,
+    "held_count": 187,
+    "parameter_standard_errors_iid_diagnostic_only": [
+      0.0900875289494408,
+      1.075945626359956,
+      0.2597159904584599,
+      0.23551730014366037,
+      0.6582557593141765,
+      0.1578029025672717,
+      1.369951733132202
+    ],
+    "jacobian_condition": 34.454998775615316,
+    "success": true
+  },
+  "independent_numerical_checks": {
+    "count": 29,
+    "passed": true
+  },
+  "paper": {
+    "pages": 8,
+    "sha256": "0aa2f4e4b34cf95782476d17909e3ba4df204398edc333a0b5796a0c8132e67d",
+    "visual_review": {
+      "status": "PASS",
+      "reviewer_type": "agent",
+      "scope": "Inspected all 8 final rendered pages: embedded Chinese glyphs, table boundaries, figure captions and page flow; no clipped or missing content observed.",
+      "pdf_sha256": "0aa2f4e4b34cf95782476d17909e3ba4df204398edc333a0b5796a0c8132e67d"
+    }
+  },
+  "headlines": {
+    "Q2_speed_cm_min": 79.2023311426206,
+    "Q3_area": 416.22006511537313,
+    "Q4_symmetry": 0.03362229201969632
+  },
+  "submission_ready": false,
+  "national_award_level": "NOT_ESTABLISHED",
+  "remaining": [
+    "real human review",
+    "current contest rule and formatting approval",
+    "new-condition physical validation",
+    "broader task-family evaluation"
+  ]
+}

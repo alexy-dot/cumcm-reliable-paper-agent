@@ -98,6 +98,12 @@ These fields record a declaration; the local JSON ledger does not authenticate t
 - `S5-ABSTRACT-HEADLINES`: abstract numbers and strong wording, required at `PAPER_LINKED`.
 - `S6-RULES-AI-DECLARATION`: current rules and AI-use declaration, required at `PAPER_LINKED`.
 
+## Optional `paper/document.json` renderer
+
+Install `scripts/requirements-paper.txt` for PDF output. Use a JSON object with `title`, optional `status_note`, and `sections`. Each section has `title`, optional `page_break_before`, and `blocks`: a block contains either `text`, a rectangular `table` (first row is its header), or a run-relative `image` path with optional `caption` and `width_cm`. The renderer creates `paper/main.md`, `paper/main.pdf` and `paper/render_report.json` from the same content.
+
+Provide an embeddable CJK TrueType font with `--font` when automatic detection is unavailable. Fonts are embedded and missing glyphs rejected; inspect the actual rendered pages before recording visual acceptance. Rendering does not approve the paper, validate its science, or apply current official contest formatting automatically.
+
 ## `state.json` and `artifact_manifest.json`
 
 Modify `state.json` only through the CLI. Each `advance` stores a SHA-256 fingerprint of the completed stage's semantic inputs and result artifacts. Any later drift fails `CORE-UPSTREAM-FREEZE`. Seal from `PAPER_LINKED`; the seal command writes final validation, changes state to `VERIFIED`, and hashes every run artifact except the manifest itself.

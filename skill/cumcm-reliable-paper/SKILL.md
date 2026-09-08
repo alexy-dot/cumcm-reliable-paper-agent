@@ -37,6 +37,7 @@ Stage hashes detect changes to recorded content. When evidence warrants a revise
 ## Evidence that matters
 
 - Read [artifact-contracts.md](references/artifact-contracts.md) when editing ledgers, interpreting intake statistics or recording approvals. Keep schema details there.
+- Use `scripts/render_paper.py --run RUN --source RUN/paper/document.json` for matching Markdown/PDF output. Install optional paper dependencies and inspect rendered pages; see the same artifact contract for the document structure and fonts.
 - Read [problem-routing.md](references/problem-routing.md) when choosing methods and checks appropriate to the task.
 - Read [hard-gates.md](references/hard-gates.md) when assessing numerical and methodological evidence.
 - Read [paper-patterns.md](references/paper-patterns.md) when drafting. Use [paper-outline.md](assets/paper-outline.md) as an adaptable starting point.

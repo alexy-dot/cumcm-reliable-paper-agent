@@ -17,3 +17,21 @@ jobs:
           python-version: ${{ matrix.python }}
       - run: python -m unittest discover -s tests -v
       - run: python examples/production/run.py --output runs/demo
+  numerical-kernels:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install 'numpy>=2,<3' 'scipy>=1.14,<2'
+      - run: python -m unittest discover -s benchmarks/furnace_2020a -p 'test_*.py' -v
+  paper-rendering:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements-paper.txt
+      - run: python -m unittest discover -s tests -p 'test_render_paper.py' -v
