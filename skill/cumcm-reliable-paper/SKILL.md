@@ -37,10 +37,12 @@ Stage hashes detect changes to recorded content. When evidence warrants a revise
 ## Evidence that matters
 
 - Read [artifact-contracts.md](references/artifact-contracts.md) when editing ledgers, interpreting intake statistics or recording approvals. Keep schema details there.
-- Use `scripts/render_paper.py --run RUN --source RUN/paper/document.json` for matching Markdown/PDF output. Install optional paper dependencies and inspect rendered pages; see the same artifact contract for the document structure and fonts.
+- Use `scripts/render_paper.py --run RUN --source RUN/paper/document.json` for matching Markdown/PDF output. Write inline math as `$...$` and display formulas as `equation` blocks; these require Tectonic/XeLaTeX and automatically use the TeX backend. Never print formula source strings as ordinary prose. Inspect actual Chinese fonts and mathematics on rendered pages, not just extracted text.
+- Before preparing a competition submission, run `scripts/cumcm_agent.py submission-check RUN --year YEAR --ai-used yes --support support.zip --identity-term SCHOOL`. Install `scripts/requirements-submission.txt`; the current profile covers national 2026 PDF/ZIP checks. Address failures and unresolved review items; a mechanical pass does not grant submission readiness.
 - Read [problem-routing.md](references/problem-routing.md) when choosing methods and checks appropriate to the task.
 - Read [hard-gates.md](references/hard-gates.md) when assessing numerical and methodological evidence.
 - Read [paper-patterns.md](references/paper-patterns.md) when drafting. Use [paper-outline.md](assets/paper-outline.md) as an adaptable starting point.
+- Apply the user's CUMCM structure: abstract and keywords on page one; problem restatement, per-question analysis, assumptions and notation before per-question modeling/solution, validation and evaluation. Check actual pages with `scripts/paper_structure.py PAPER.pdf`; a numerical pass is not a writing or typography pass.
 - Read [competition-operations.md](references/competition-operations.md) for time management.
 
 Prepare concrete review material before requesting a recorded human sign-off; reuse applicable explicit approval already given in the conversation. `signoffs RUN` shows the content hash to bind. Never invent a reviewer or approval. The ledger checks declarations and content binding; it does not authenticate human identity.

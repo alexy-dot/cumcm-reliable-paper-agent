@@ -18,6 +18,8 @@ from engine import (
     status_run,
     validate_run,
     write_json,
+    read_json,
+    _safe_run_path,
 )
 
 
@@ -61,6 +63,15 @@ def build_parser() -> argparse.ArgumentParser:
 
     seal = commands.add_parser("seal", help="seal a PAPER_LINKED run as VERIFIED")
     seal.add_argument("run_dir", type=Path)
+    submission = commands.add_parser("submission-check", help="check PDF/ZIP files against a source-bound official year profile")
+    submission.add_argument("run_dir", type=Path)
+    submission.add_argument("--paper", default="paper/main.pdf")
+    submission.add_argument("--support")
+    submission.add_argument("--year", type=int, required=True)
+    submission.add_argument("--ai-used", choices=("yes", "no"), required=True)
+    submission.add_argument("--no-code", action="store_true")
+    submission.add_argument("--identity-term", action="append", default=[])
+    submission.add_argument("--report")
     return parser
 
 
@@ -87,6 +98,22 @@ def main() -> int:
                 write_json(args.report, result)
         elif args.command == "advance":
             result = advance_run(args.run_dir)
+        elif args.command == "submission-check":
+            from submission_check import check_submission
+            try:
+                report_path = _safe_run_path(args.run_dir, args.report) if args.report else None
+                if args.report and report_path is None:
+                    raise ValueError("report must remain inside the run directory")
+                if report_path and (args.run_dir / "state.json").is_file() and read_json(args.run_dir / "state.json").get("stage") == "VERIFIED":
+                    raise ValueError("sealed runs are read-only; omit --report to inspect without writing")
+                if report_path and report_path.exists() and "profile_sha256" not in read_json(report_path):
+                    raise ValueError("refusing to overwrite an existing artifact with a submission report")
+                result = check_submission(args.run_dir, args.paper, args.support, year=args.year,
+                                          ai_used=args.ai_used == "yes", identity_terms=args.identity_term, no_code=args.no_code)
+                if report_path:
+                    write_json(report_path, result)
+            except ValueError as exc:
+                raise WorkflowError(str(exc)) from exc
         else:
             result = seal_run(args.run_dir)
         print_json(result)

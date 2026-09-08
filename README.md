@@ -14,7 +14,7 @@
 | 读题与读数据 | 冻结原始文件；提取 DOCX 段落；全量检查 CSV/XLSX 行数、缺失、重复和异常值 |
 | 建模与复核 | 记录题意、约束、假设；提前确定容差，逐项比较两份独立计算输出 |
 | 写作与追溯 | 论文主张绑定结果 ID；台账直接匹配 JSON 产物；从同一稿件生成 Markdown 与嵌入字体的PDF |
-| 修改与交付 | 检测已通过阶段的内容变化；记录人工评阅；封存文件清单与哈希 |
+| 修改与交付 | 检测内容变化；核对2026官方PDF/ZIP格式、代码附录、AI声明与详情；保留评阅及文件指纹 |
 
 ```text
 题面与附件 → 模型与代码 → 独立数值复核 → 论文草稿 → 人工评阅与封存
@@ -38,20 +38,24 @@ python3 examples/production/run.py --output runs/demo
 
 ## 看一次完整题目实测
 
-2020 A“炉温曲线”的项目内首次实测，在约30分钟内完成四问、671条采样输出和8页训练稿，29项独立数值检查通过。它还揭示了参数非唯一和贴边解的脆弱性，而不是只展示一个漂亮最优值。
+2020 A“炉温曲线”的项目内首次实测，在约30分钟内完成四问和671条采样输出，29项独立数值检查通过。原8页稿的结构、字体与公式排版不合格，先前的排版通过记录已撤回。当前14页修订稿采用摘要独页、逐问分析、模型假设、符号说明与分问求解结构，并使用宋体、黑体和TeX数学公式。数值验收与论文修订分别记录。
 
 [训练稿 PDF](benchmarks/reports/furnace-2020a-paper.pdf) · [验收记录与边界](benchmarks/reports/furnace-2020a-summary.json)
+
+该留档仍是训练稿，尚未补齐正式提交所需的完整代码附录、AI详情及实际人工审查，不能将数值验收代替论文和规则验收。
 
 ![炉温曲线与峰值对齐比较](benchmarks/reports/furnace-2020a-curves.png)
 
 自备原始题面与附件后可一键回放（约一分钟，取决于机器）：
+
+可选依赖建议装在项目虚拟环境：先运行 `python3 -m venv .venv`，macOS/Linux再用 `source .venv/bin/activate`，随后执行下面的命令。
 
 ```bash
 python3 -m pip install -r benchmarks/furnace_2020a/requirements.txt -r requirements-paper.txt
 python3 benchmarks/furnace_2020a/run_all.py --source-dir /path/2020/A --output runs/furnace
 ```
 
-PDF需要可嵌入的中文TrueType字体；未自动找到时加 `--font /path/font.ttf`。回放不等于新的盲测；预训练接触无法排除，真实人工评阅与正式提交审核仍待完成。
+数学论文需要Tectonic或XeLaTeX（macOS可用 `brew install tectonic`），未在PATH中时加 `--latex-compiler /path/to/tectonic`。首次编译需要下载宏包；`--cache-dir`可指定缓存目录。回放不等于新盲测，真实人工评阅与正式提交审核仍待完成。
 
 ## 用于自己的题目
 
@@ -69,6 +73,17 @@ python3 skill/cumcm-reliable-paper/scripts/cumcm_agent.py status /path/run
 ```
 
 `inspect` 重建输入审计；`validate` 检查当前或指定阶段；`advance` 推进；`signoffs` 显示评阅对象；`seal` 封存。字段和迁移说明统一见[台账合同](skill/cumcm-reliable-paper/references/artifact-contracts.md)。
+
+提交前，可按已核实的2026全国规则检查PDF论文与ZIP支撑包：
+
+```bash
+python3 -m pip install -r requirements-submission.txt
+python3 skill/cumcm-reliable-paper/scripts/cumcm_agent.py submission-check /path/run \
+  --year 2026 --ai-used yes --paper paper/main.pdf --support support.zip \
+  --identity-term "学校名称" --report artifacts/submission_report.json
+```
+
+来源：[官方格式规范](https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html)、[AI工具使用规定](https://www.mcm.edu.cn/upload_cn/node/785/Glps6mBh6563c55c45300fede72ddbf6eb33d3a8.pdf)，2026-09-08核对。机械检查通过仍需核对赛区通知、内容真实性与实际人工复核；Word/RAR需另行检查，不会冒充已通过。
 
 ## 验证依据
 
@@ -88,7 +103,7 @@ python3 benchmarks/verify_intake.py --source-dir /path/2020/D --output runs/inta
 
 ## 当前边界
 
-当前是国奖导向的辅助工具，**历史题已完成一次限时成稿实测，但尚未证明国奖级可靠性，不保证奖项**。通用题型求解、正式比赛规则校验及更广泛的独立评阅仍在完善。
+当前是国奖导向的辅助工具，**历史题已完成一次限时成稿实测，但尚未证明国奖级可靠性，不保证奖项**。通用题型求解、赛区差异与更广泛的独立评阅仍在完善。规则摘录的权利归原发布者，代码适用MIT许可证。
 
 数据读取不等于题意理解；第一存储行暂作表头候选，图示、单位、日期和公式缓存需结合原文解释。数值一致不证明两种算法真正独立；人工签核字段不认证身份，文件哈希也不是防篡改认证。项目会明确区分合成示例、历史回放和陌生题验收。
 

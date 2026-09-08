@@ -71,11 +71,12 @@ def link(run):
                       for q,(_,_,_,_,ref_pointer) in locations.items()])
     document = read_json(run / "paper/document.json")
     claims = []
-    selections = {"Q1": (0, 2), "Q2": (5, 1), "Q3": (6, 2), "Q4": (7, 4)}
-    for q,(section_index, block_index) in selections.items():
-        excerpt = document["sections"][section_index]["blocks"][block_index]["text"]
+    selections = {"Q1": ("abstract", "保留实验的原始计时起点"), "Q2": ("q2", "主算法边界速度为"), "Q3": ("q3", "找到的上升面积为"), "Q4": ("q4", "问题4面积比")}
+    for q,(section_id, prefix) in selections.items():
+        section = next(row for row in document["sections"] if row.get("id") == section_id)
+        excerpt = next(block["text"] for block in section["blocks"] if block.get("text", "").startswith(prefix))
         claims.append({"id": "claim-" + q, "question_id": q, "text": excerpt, "paper_excerpt": excerpt,
-                       "paper_locator": document["sections"][section_index]["title"], "result_ids": [q + "-headline"], "status": "VERIFIED"})
+                       "paper_locator": section["title"], "result_ids": [q + "-headline"], "status": "VERIFIED"})
     update("claim_ledger.json", paper_artifact="paper/main.pdf", paper_source_artifact="paper/main.md", claims=claims)
     report = validate_run(run, "PAPER_LINKED")
     write_json(run / "trial_workflow_validation.json", report)

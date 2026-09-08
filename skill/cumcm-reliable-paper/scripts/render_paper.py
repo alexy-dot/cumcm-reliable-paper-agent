@@ -5,7 +5,13 @@ import json
 from pathlib import Path
 
 
-def render(run: Path, source: Path, font: Path | None = None):
+def render(run: Path, source: Path, font: Path | None = None, *, latex_compiler=None, cache_dir=None):
+    data = json.loads(source.read_text(encoding="utf-8"))
+    has_math = any("equation" in block or "$" in str(block.get("text", "")) or "$" in str(block.get("table", ""))
+                   for section in data["sections"] for block in section["blocks"])
+    if has_math:
+        from render_latex import render_latex
+        return render_latex(run, source, compiler=latex_compiler, cache_dir=cache_dir)
     from reportlab.lib import colors
     from reportlab.lib.enums import TA_CENTER
     from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
@@ -17,16 +23,14 @@ def render(run: Path, source: Path, font: Path | None = None):
     run = run.resolve()
     if (run / "state.json").is_file() and json.loads((run / "state.json").read_text())["stage"] == "VERIFIED":
         raise ValueError("create a new version before rendering a sealed run")
-    data = json.loads(source.read_text(encoding="utf-8"))
     candidates = [font] if font else [
-        Path("/System/Library/Fonts/Supplemental/Arial Unicode.ttf"),
-        Path("/usr/share/fonts/truetype/wqy/wqy-microhei.ttc"),
+        Path("/System/Library/Fonts/Supplemental/Songti.ttc"),
         Path("/usr/share/fonts/truetype/arphic/uming.ttc"),
     ]
     font_path = next((path for path in candidates if path and path.is_file()), None)
     if font_path is None:
         raise ValueError("provide an embeddable CJK TrueType font using --font")
-    paper_font = TTFont("PaperFont", str(font_path))
+    paper_font = TTFont("PaperFont", str(font_path), subfontIndex=6 if font_path.name == "Songti.ttc" else 0)
     pdfmetrics.registerFont(paper_font)
     content = json.dumps(data, ensure_ascii=False)
     missing = sorted({character for character in content if ord(character) > 127 and ord(character) not in paper_font.face.charToGlyph})
@@ -56,7 +60,7 @@ def render(run: Path, source: Path, font: Path | None = None):
                 markdown.extend([text, ""])
             elif "table" in block:
                 rows = block["table"]
-                width = 16.6 * cm / len(rows[0])
+                width = 16 * cm / len(rows[0])
                 table = Table([[Paragraph(html.escape(str(cell)), cell_style) for cell in row] for row in rows],
                               colWidths=[width] * len(rows[0]), repeatRows=1, hAlign="CENTER")
                 table.setStyle(TableStyle([
@@ -77,7 +81,7 @@ def render(run: Path, source: Path, font: Path | None = None):
                 path = (run / block["image"]).resolve()
                 path.relative_to(run)
                 graphic = Image(str(path))
-                width = float(block.get("width_cm", 16.4)) * cm
+                width = min(float(block.get("width_cm", 16)), 16) * cm
                 graphic.drawHeight *= width / graphic.drawWidth
                 graphic.drawWidth = width
                 image_block = [graphic]
@@ -95,7 +99,7 @@ def render(run: Path, source: Path, font: Path | None = None):
         canvas.drawCentredString(10.5 * cm, 1.2 * cm, str(document.page))
         canvas.restoreState()
     document = SimpleDocTemplate(str(output / "main.pdf"), pagesize=(21 * cm, 29.7 * cm),
-                                 leftMargin=2.2 * cm, rightMargin=2.2 * cm, topMargin=1.9 * cm, bottomMargin=1.9 * cm,
+                                 leftMargin=2.5 * cm, rightMargin=2.5 * cm, topMargin=2.5 * cm, bottomMargin=2.5 * cm,
                                  title=data["title"], author="")
     document.build(story, onFirstPage=footer, onLaterPages=footer)
     pdf = PdfReader(output / "main.pdf")
@@ -111,5 +115,7 @@ if __name__ == "__main__":
     parser.add_argument("--run", type=Path, required=True)
     parser.add_argument("--source", type=Path, required=True)
     parser.add_argument("--font", type=Path)
+    parser.add_argument("--latex-compiler")
+    parser.add_argument("--cache-dir", type=Path)
     args = parser.parse_args()
-    render(args.run, args.source, args.font)
+    render(args.run, args.source, args.font, latex_compiler=args.latex_compiler, cache_dir=args.cache_dir)

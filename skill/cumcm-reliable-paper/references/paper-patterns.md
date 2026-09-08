@@ -1,30 +1,33 @@
-# Paper patterns and anti-patterns
+# 从论文样例到可执行的写作判断
 
-Use these patterns as review heuristics, not award causality. The evidence base contains 20 stratified primary papers and 2 targeted supplements, 22 full papers and 1,158 pages total, each with dual independent reproduction. It does not cover all 45 indexed papers.
+官方评审重视假设合理性、建模创造性、结果正确性和文字清晰程度。下面记录可直接学习的正面做法及应用位置，避免把研究只做成错误清单。
 
-## Transferable writing patterns
+## 本轮回看的正面样例
 
-- Map every abstract paragraph to a subquestion and include a verified number, decision, or bounded conclusion.
-- Explain why the model answers the frozen task before presenting equations.
-- Report one transparent baseline before an upgraded method.
-- Put the final answer, unit, scenario, and constraint status in a result table near each question.
-- Pair fit plots with residual, holdout, feasibility, or sensitivity evidence.
-- State which earlier variables and verified modules a later question inherits.
-- Surface non-identifiability and censored ranges instead of manufacturing precision.
-- Make tables and figures reproducible from result files.
+| 维度 | 样例与页码 | 可观察的做法 | 如何用于当前稿 |
+| --- | --- | --- | --- |
+| 算法选择 | A001，第8、12页 | 从运动方程到数值求解，再定义目标并优化；算法承担明确任务 | 先由能量收支建立炉温响应，再辨识参数，最后解各问约束优化 |
+| 算法组织 | B157，第8—12页 | 用FFT给反演初值，再做共享参数联合拟合 | 明确初始化、求解与验证各自作用；方法升级要说明解决的瓶颈 |
+| 摘要写法 | A001、B157，第1页 | 用“针对问题……”逐问组织，紧接模型、求解方法与量化结果 | 摘要逐问分段，加醒目引导语；不给评委只剩算法名称的摘要 |
+| 论证层次 | B157，第10页 | 公式、参数解释、求解结果与下一步模型衔接紧邻 | 在模型段解释符号和参数，再进入结果，不让读者往返猜测 |
+| 图表表达 | A001，第9页 | 位移/速度曲线配中文坐标、单位和明确图题，旁边给对应数值表 | Q1曲线标出指定位置，配直接回答题目的温度表 |
+| 图表表达 | B157，第10页 | 同类频谱并列展示，并标注关键峰位以支持初值结论 | 同类方案保持一致尺度；用峰值对齐图解释对称性改善 |
+| 基础版式 | 上述原图 | 中文正文、层级标题、数学上下标、三线表共同形成清楚的信息层次 | 宋体正文、黑体标题、TeX数学公式、按问分析、独立符号表 |
 
-## Recurring failure patterns
+原始展示页：
+- [A001：波浪能装置输出功率优化设计](https://dxs.moe.gov.cn/zx/a/hd_sxjm_sxjmlw_2022qgdxssxjmjslwzs/221106/1820295.shtml)
+- [B157：碳化硅外延层厚度的双光束和多光束干涉法测量研究](https://dxs.moe.gov.cn/zx/a/hd_sxjm_sxjmlw_2025qgdxssxjmjslwzs_2025btlw/251107/2023197.shtml)
 
-- Text, equations, code, defaults, and result tables use different bounds or group counts.
-- A hard constraint appears in prose but not in the feasible set or final audit.
-- Advanced model names replace a baseline, leakage-free validation, or residual check.
-- A display-smoothed or manually modified curve is reused for performance metrics.
-- Training fit is described as prediction accuracy or physical mechanism.
-- Multiple tied optima are reported as one precise unique optimum.
-- A future trajectory, repeated entity, spatial neighbor, or test label leaks into training or threshold selection.
-- Summary numbers are copied by hand and cannot be regenerated from the delivered code.
-- Attractive figures or long appendices distract from arithmetic, units, schemas, or missing files.
+## 三类判断怎样落地
 
-## Drafting rule
+- 算法：先明确题目瓶颈，再选择能够解释和解决它的方法；在同一验证口径下展示改进效果。方法的新颖之处要落实到目标、约束、表示或求解效率。
+- 文字：问题分析负责说明“为何这样做”，建模段负责给出数学关系，结果段负责回答题目。摘要突出每问的贡献与关键数字，避免工程日志式叙述。
+- 图表：每图承担一个说明任务。曲线看变化，结果表看答案，对照图看差异，诊断图看假设和误差。单位、图例、符号、字号和色彩保持一致，不以装饰替代信息。
 
-Draft from `results.json`, `verification_report.json`, and `claim_ledger.json`; never reconstruct important numbers from conversation memory. If the evidence chain is incomplete, write the limitation or leave the claim out.
+这些是页码可核对的样例观察与设计建议。现有展示编号没有可靠奖级映射，也没有评委对特定算法、文风或配色的选择数据，因此不能把它们写成已经证实的获奖因果或评委心理偏好。
+
+## 应用后的复核
+
+按照[默认论文结构](../assets/paper-outline.md)检查实际稿件，不以章节名存在代替内容完整。
+核对摘要独页、各问分析、假设理由、符号单位、公式渲染、图表与结论的对应关系。
+数值与实现的错误审计仍按[hard-gates.md](hard-gates.md)执行，但它不代替写作与视觉审阅。

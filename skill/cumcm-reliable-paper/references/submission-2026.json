@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "competition_year": 2026,
+  "verified_on": "2026-09-08",
+  "scope": "National PDF/ZIP submission checks only; regional rules and substantive human verification remain separate.",
+  "sources": {
+    "format": {
+      "title": "全国大学生数学建模竞赛论文格式规范（2026年修订稿）",
+      "url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "sha256": "2aa27a6c74ddc0385c924f29fac1d91ab1511f15a01042cdc2ee8a6d49293e8a",
+      "anchors": {
+        "page": "第一条：论文用白色A4纸打印(单面、双面均可)；上下左右各留出至少2.5厘米的页边距",
+        "abstract": "第十条：电子版论文的第一页必须为摘要专用页",
+        "body": "第四条：论文从第四页开始是正文内容（不要目录，不超过30页）；正文之后是论文附录（页数不限）",
+        "code": "第五条：建模所用到的全部完整、可运行的源程序代码",
+        "file": "第十条：文件大小不超过20MB",
+        "support": "第十一条：后缀为RAR或ZIP，大小不超过20MB",
+        "identity": "第六条：任何地方都不能有显示参赛者身份和所在学校及赛区的信息"
+      }
+    },
+    "ai": {
+      "title": "全国大学生数学建模竞赛人工智能工具使用规定（2026年试行）",
+      "url": "https://www.mcm.edu.cn/upload_cn/node/785/Glps6mBh6563c55c45300fede72ddbf6eb33d3a8.pdf",
+      "sha256": "4cf6f30cdd37d6ef2cdb3439c5dba4d9f207c12d6aafe24419e81f3c69acf59a",
+      "anchors": {
+        "declaration": "第3条：参赛队应在论文参考文献之前设置“AI工具使用声明”",
+        "detail": "第4条：PDF格式，文件名为“AI工具使用详情.pdf”",
+        "human": "第2条：对AI参与完成的内容逐项人工审查与核实"
+      }
+    }
+  },
+  "page_size_mm": [210, 297],
+  "minimum_margin_mm": 25,
+  "body_max_pages": 30,
+  "max_file_bytes": 20000000,
+  "byte_interpretation": "20MB interpreted conservatively as 20,000,000 bytes",
+  "ai_detail_filename": "AI工具使用详情.pdf"
+}

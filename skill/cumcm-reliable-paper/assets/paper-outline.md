@@ -1,45 +1,49 @@
-# Paper outline generated from verified evidence
+# 国赛论文默认结构
 
-## Title
+这是本项目按用户要求采用的写作结构。摘要独页等正式要求以当年官方文件为准，其余章节可在不损害论证完整性的前提下适配题目。
 
-State the problem mechanism or decision, not a list of algorithms.
+## 第一页：题目、摘要、关键词
 
-## Abstract
+摘要按“总体任务—针对各小问的方法与主要结果—必要验证”组织。
+每个小问单独一段，用醒目的引导语；方法必须说明用途，数字必须有单位。
+标题、摘要和关键词共同占一页；正文从下一页开始，不生成目录。
 
-For each question: task -> justified method -> verified quantitative answer -> validation or scope boundary.
+## 一、问题重述
 
-## 1. Problem restatement and output contract
+交代背景、给定条件和需要回答的各问；忠实保留限制与指定输出。
 
-Mirror `problem_contract.json`. State ambiguity choices and unidentifiable outputs.
+## 二、问题分析
 
-## 2. Data audit and preprocessing
+先说明各问的关系，再设2.1、2.2等小节分别分析。
+每问写清难点、拟采用的思路、选择依据及与前问的承接，不提前堆砌结果。
 
-Report source hashes/schemas, missingness, units, exclusions, and information boundaries.
+## 三、模型假设
 
-## 3. Assumptions and notation
+逐条列出额外近似及其理由、影响。不要把题面给定事实冒充模型假设。
 
-Mirror active assumptions from `assumption_ledger.json` and state their impact.
+## 四、符号说明
 
-## 4+. Question sections
+三列列出符号、含义、单位；同一符号只承担一种主要含义。
+用数学排版表达上下标，不把源代码形式直接印进论文。
 
-For each question:
+## 五、模型的建立与求解
 
-1. objective and inherited verified inputs;
-2. executable baseline;
-3. observed bottleneck and model upgrade;
-4. formulation and solution;
-5. direct result table with units;
-6. independent verification, residuals, feasibility, sensitivity, and counterexamples;
-7. bounded conclusion.
+按小问设5.1、5.2等小节。每问依次给出模型建立、求解方法、结果与必要验证。
+公式从题意和假设推导；结果表直接回答要求；图表前后说明它支持哪项结论。
 
-## Model evaluation and limitations
+## 六、模型检验与灵敏度分析
 
-Convert unresolved P1 warnings into specific limitations with trigger, direction of impact, and remedy.
+报告误差、对照、约束核验和关键参数变化的影响；区分拟合与外部验证。
 
-## Conclusion
+## 七、模型评价与改进
 
-Use only verified claims and results recorded in `claim_ledger.json`.
+优点有证据，局限具体到触发条件及影响，并给出可执行的改进方向。
 
-## References and appendices
+## 八、结论
 
-Reconcile every citation in both directions. Include one-command reproduction instructions and artifact inventory.
+逐问收束主要答案与适用边界，避免重复整篇摘要。
+
+## AI工具使用声明、参考文献、附录
+
+按当年规则安排AI声明与详情，逐项核对引用。
+附录提供支撑文件清单及完整源程序；未补齐时不得称为正式提交稿。

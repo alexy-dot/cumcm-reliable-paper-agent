@@ -2,6 +2,7 @@
 import argparse
 import subprocess
 import sys
+import shutil
 from pathlib import Path
 
 
@@ -11,7 +12,12 @@ if __name__ == "__main__":
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--paper-python", default=sys.executable, help="Python with reportlab and pypdf; defaults to this interpreter")
     parser.add_argument("--font", type=Path)
+    parser.add_argument("--latex-compiler", help="Tectonic or XeLaTeX executable for mathematical typesetting")
+    parser.add_argument("--cache-dir", type=Path)
     args = parser.parse_args()
+    compiler = args.latex_compiler or shutil.which("tectonic") or shutil.which("xelatex")
+    if not compiler:
+        parser.error("this mathematical paper requires Tectonic or XeLaTeX; install it or pass --latex-compiler")
     scripts = Path(__file__).resolve().parent
     project = scripts.parents[1]
     output = args.output.resolve()
@@ -24,6 +30,9 @@ if __name__ == "__main__":
                "--run", str(output), "--source", str(output / "paper/document.json")]
     if args.font:
         command.extend(["--font", str(args.font)])
+    command.extend(["--latex-compiler", compiler])
+    if args.cache_dir:
+        command.extend(["--cache-dir", str(args.cache_dir.resolve())])
     subprocess.run(command, check=True)
     run("link_workflow.py", output)
     run("finalize.py", output)
