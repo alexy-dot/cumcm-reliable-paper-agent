@@ -54,28 +54,28 @@
     "passed": true
   },
   "paper": {
-    "pages": 14,
-    "sha256": "56bb222085a15736d02a89be49c0a065e756cfb902bcf2968acef0b4b985a557",
+    "pages": 15,
+    "sha256": "cc8b3af54104bde2e6d2bf3c5c3bcb4452fb7571551db3db1bbe70a582470b23",
     "backend": "latex",
     "fonts": [
       "/AKHCZK+STHeitiSC-Light",
       "/BZIVMZ+STSongti-SC-Regular",
       "/CAFSZL+CMSY10",
       "/DDIEWW+CMR12",
-      "/FKPJSN+CMMI12",
+      "/FKPJSN+CMMI10",
       "/FZDNHS+CMSY6",
       "/IHAIZV+STHeitiSC-Medium",
       "/IXFAWU+TimesNewRomanPSMT",
-      "/JAGKKY+CMMI10",
-      "/KPXLOM+CMMI8",
-      "/NOMARO+CMR8",
+      "/JAGKKY+CMR8",
+      "/KPXLOM+CMMI12",
+      "/NOMARO+CMMI8",
       "/PVTTLK+CMR10",
       "/TQTHRL+LMSans10-Bold-Identity-H",
       "/UTACNV+CMEX10",
       "/VDVGTR+CMSY8",
       "/YEUUOC+LMSans12-Regular-Identity-H"
     ],
-    "revision_at": "2026-09-08T14:58:16Z",
+    "revision_at": "2026-09-08T15:27:25Z",
     "structure_review": {
       "profile": "user-requested CUMCM paper structure; not an official universal chapter-order rule",
       "passed": true,
@@ -87,28 +87,41 @@
         "four_question_solution_subsections": true,
         "notation_table_columns": true
       },
-      "pages": 14,
+      "pages": 15,
       "heading_pages": {
         "一、问题重述": 2,
-        "二、问题分析": 3,
+        "二、问题分析": 2,
         "三、模型假设": 4,
         "四、符号说明": 5,
         "五、模型的建立与求解": 5,
         "六、模型检验与灵敏度分析": 12,
         "七、模型评价与改进": 13,
-        "八、结论": 13,
+        "八、结论": 14,
         "AI工具使用声明": 14,
         "参考文献": 14,
-        "附录": 14
+        "附录": 15
       },
-      "pdf_sha256": "56bb222085a15736d02a89be49c0a065e756cfb902bcf2968acef0b4b985a557",
+      "pdf_sha256": "cc8b3af54104bde2e6d2bf3c5c3bcb4452fb7571551db3db1bbe70a582470b23",
       "scope": "actual page-one contents and required structure; substantive writing and scientific quality still require review"
     },
     "visual_review": {
-      "status": "REVIEWED_AFTER_USER_FEEDBACK",
+      "status": "TARGETED_REVISION_REVIEWED",
       "reviewer_type": "agent",
-      "scope": "All 14 rendered pages inspected for requested chapter structure, Songti/Heiti typography, real mathematical notation, readable tables and Chinese figure labels; not a certification of research quality.",
-      "pdf_sha256": "56bb222085a15736d02a89be49c0a065e756cfb902bcf2968acef0b4b985a557"
+      "scope": "Problem restatement compared with the original task and A001/B157 page 2. Revised page 2 and appendix inspected at readable resolution; document reflow inspected in page montage; no whole-paper quality certification.",
+      "pdf_sha256": "cc8b3af54104bde2e6d2bf3c5c3bcb4452fb7571551db3db1bbe70a582470b23"
+    },
+    "restatement_revision": {
+      "evidence": [
+        "2020 A original statement and calibration conditions",
+        "A001 page 2: background, device/principle, per-question tasks",
+        "B157 page 2: 1.1 background, 1.2 tasks"
+      ],
+      "changes": [
+        "Separate background/given conditions from per-question requirements",
+        "Restore complete calibration settings, 70 cm/min, and exact Q1 positions",
+        "Move coordinate derivation, data-audit findings and initial-temperature assumption out of restatement"
+      ],
+      "format_note": "Subheading choice is a case-specific editorial decision, not a universal official rule."
     }
   },
   "headlines": {
