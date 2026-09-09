@@ -83,6 +83,15 @@ python3 skill/cumcm-reliable-paper/scripts/cumcm_agent.py status /path/run
 
 `inspect` 重建输入审计；`validate` 检查当前或指定阶段；`advance` 推进；`signoffs` 显示评阅对象；`seal` 封存。字段和迁移说明统一见[台账合同](skill/cumcm-reliable-paper/references/artifact-contracts.md)。
 
+结构检查按题目合同核对实际小问数量，不固定为四问：
+
+```bash
+python3 skill/cumcm-reliable-paper/scripts/paper_structure.py /path/run/paper/main.pdf \
+  --contract /path/run/problem_contract.json
+```
+
+它检查各问是否在分析和求解章节中出现，报告缺失小问及页码；不能替代对答案内容的评阅。独立PDF可显式传入`--question-count`。
+
 提交前，可按已核实的2026全国规则检查PDF论文与ZIP支撑包：
 
 ```bash

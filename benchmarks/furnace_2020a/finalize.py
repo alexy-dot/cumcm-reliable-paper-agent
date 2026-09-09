@@ -25,6 +25,11 @@ def finalize(run, visual_review_note=""):
     elapsed = (ended - datetime.fromisoformat(clock["started_at"])).total_seconds()
     solution = read_json(run / "artifacts/solution.json")
     rendering = read_json(run / "paper/render_report.json")
+    structure = read_json(run / "paper/structure_review.json")
+    if (structure.get("passed") is not True
+            or structure.get("pdf_sha256") != sha256_file(run / "paper/main.pdf")
+            or structure.get("contract_sha256") != sha256_file(run / "problem_contract.json")):
+        raise ValueError("paper structure review is missing, failed or stale against PDF/contract")
     if visual_review_note:
         rendering["visual_review"] = {"status": "PASS", "reviewer_type": "agent",
                                     "scope": visual_review_note, "pdf_sha256": sha256_file(run / "paper/main.pdf")}
@@ -39,7 +44,7 @@ def finalize(run, visual_review_note=""):
                             "Q3": "best found feasible settings, area, non-unique alternatives", "Q4": "explicit epsilon tradeoff and symmetry metric"},
         "calibration": read_json(run / "artifacts/calibration.json")["models"]["zoned"],
         "independent_numerical_checks": {"count": len(independent["comparisons"]), "passed": independent["passed"]},
-        "paper": {"pages": rendering["pages"], "sha256": sha256_file(run / "paper/main.pdf"), "visual_review": rendering["visual_review"]},
+        "paper": {"pages": rendering["pages"], "sha256": sha256_file(run / "paper/main.pdf"), "visual_review": rendering["visual_review"], "structure_review": structure},
         "headlines": {"Q2_speed_cm_min": solution["Q2"]["speed_cm_min"], "Q3_area": solution["Q3"]["metrics"]["area_rising_above_217"],
                       "Q4_symmetry": solution["Q4"]["metrics"]["symmetry"]},
         "submission_ready": False, "national_award_level": "NOT_ESTABLISHED",

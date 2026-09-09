@@ -43,7 +43,7 @@ Stage hashes detect changes to recorded content. When evidence warrants a revise
 - Read [problem-routing.md](references/problem-routing.md) when choosing methods and checks appropriate to the task.
 - Read [hard-gates.md](references/hard-gates.md) when assessing numerical and methodological evidence.
 - Read [paper-patterns.md](references/paper-patterns.md) when drafting. Use [paper-outline.md](assets/paper-outline.md) as an adaptable starting point.
-- Apply the user's CUMCM structure: abstract and keywords on page one; problem restatement, per-question analysis, assumptions and notation before per-question modeling/solution, validation and evaluation. Check actual pages with `scripts/paper_structure.py PAPER.pdf`; a numerical pass is not a writing or typography pass.
+- Apply the user's CUMCM structure: abstract and keywords on page one; problem restatement, per-question analysis, assumptions and notation before per-question modeling/solution, validation and evaluation. Check actual pages with `scripts/paper_structure.py PAPER.pdf --contract RUN/problem_contract.json`; question coverage comes from that contract, never a fixed four-question template. A numerical pass is not a writing or typography pass.
 - Read [competition-operations.md](references/competition-operations.md) for time management.
 
 Prepare concrete review material before requesting a recorded human sign-off; reuse applicable explicit approval already given in the conversation. `signoffs RUN` shows the content hash to bind. Never invent a reviewer or approval. The ledger checks declarations and content binding; it does not authenticate human identity.

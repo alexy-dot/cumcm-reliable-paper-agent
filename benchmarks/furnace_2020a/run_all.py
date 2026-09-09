@@ -35,4 +35,7 @@ if __name__ == "__main__":
         command.extend(["--cache-dir", str(args.cache_dir.resolve())])
     subprocess.run(command, check=True)
     run("link_workflow.py", output)
+    subprocess.run([args.paper_python, str(project / "skill/cumcm-reliable-paper/scripts/paper_structure.py"),
+                    str(output / "paper/main.pdf"), "--contract", str(output / "problem_contract.json"),
+                    "--report", str(output / "paper/structure_review.json")], check=True)
     run("finalize.py", output)
