@@ -7,7 +7,7 @@ from pathlib import Path
 
 def render(run: Path, source: Path, font: Path | None = None, *, latex_compiler=None, cache_dir=None):
     data = json.loads(source.read_text(encoding="utf-8"))
-    has_math = any("equation" in block or "$" in str(block.get("text", "")) or "$" in str(block.get("table", ""))
+    has_math = any("equation" in block or "code" in block or "$" in str(block.get("text", "")) or "$" in str(block.get("table", ""))
                    for section in data["sections"] for block in section["blocks"])
     if has_math:
         from render_latex import render_latex

@@ -33,8 +33,11 @@ python3 examples/production/run.py --output runs/demo
 - `runs/demo/paper/main.md`：由计算结果生成的中文论文草稿；
 - `runs/demo/artifacts/`：两种算法各自的 JSON 输出；
 - `runs/demo/demo_validation.json`：校验结果，真实人工评阅仍待完成。
+- `runs/demo/artifacts/submission-package/support.zip`：可独立解压复算的支撑包；同目录的`appendix.json`包含完整源码，与ZIP同源生成。
 
 输出目录必须为空。示例不会伪造审批或将演示结果标成正式提交稿；它不是国赛盲测成绩。
+
+解压支撑包后，在解压目录运行 `python3 solver.py --output reproduced.json`，两种算法应再次得到利润121。`paper/document.json`也已包含完整源码附录，可用论文排版器生成带分页代码的PDF。
 
 ## 看一次完整题目实测
 

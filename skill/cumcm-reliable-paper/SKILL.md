@@ -37,6 +37,7 @@ Stage hashes detect changes to recorded content. When evidence warrants a revise
 ## Evidence that matters
 
 - Read [artifact-contracts.md](references/artifact-contracts.md) when editing ledgers, interpreting intake statistics or recording approvals. Keep schema details there.
+- Use `scripts/package_support.py` to generate a support ZIP and full source-code appendix from the same explicit file selection. Verify the extracted package can reproduce results; file hashes alone do not prove dependency completeness.
 - Use `scripts/render_paper.py --run RUN --source RUN/paper/document.json` for matching Markdown/PDF output. Write inline math as `$...$` and display formulas as `equation` blocks; these require Tectonic/XeLaTeX and automatically use the TeX backend. Never print formula source strings as ordinary prose. Inspect actual Chinese fonts and mathematics on rendered pages, not just extracted text.
 - Before preparing a competition submission, run `scripts/cumcm_agent.py submission-check RUN --year YEAR --ai-used yes --support support.zip --identity-term SCHOOL`. Install `scripts/requirements-submission.txt`; the current profile covers national 2026 PDF/ZIP checks. Address failures and unresolved review items; a mechanical pass does not grant submission readiness.
 - Read [problem-routing.md](references/problem-routing.md) when choosing methods and checks appropriate to the task.

@@ -1,49 +1,17 @@
 """One-command synthetic modeling example. Human approvals remain pending."""
 import argparse
 import csv
-import itertools
+import shutil
 import sys
-from functools import lru_cache
 from pathlib import Path
 
 PROJECT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(PROJECT / "skill/cumcm-reliable-paper/scripts"))
 from engine import initialize_run, read_json, write_json, validate_run
+from package_support import package_support
+from solver import enumerate_plans, dynamic_profit
 
 
-def enumerate_plans(products, hours, material):
-    bounds = [min(hours // p["hours"], material // p["material"]) for p in products]
-    best = -1
-    optima = []
-    feasible = 0
-    for quantities in itertools.product(*(range(bound + 1) for bound in bounds)):
-        used_h = sum(q * p["hours"] for q, p in zip(quantities, products))
-        used_m = sum(q * p["material"] for q, p in zip(quantities, products))
-        if used_h > hours or used_m > material:
-            continue
-        feasible += 1
-        profit = sum(q * p["profit"] for q, p in zip(quantities, products))
-        if profit > best:
-            best, optima = profit, [list(quantities)]
-        elif profit == best:
-            optima.append(list(quantities))
-    quantities = optima[0]
-    return {"profit": best, "quantities": quantities, "optima": optima,
-            "feasible_plans": feasible,
-            "hours_slack": hours - sum(q * p["hours"] for q, p in zip(quantities, products)),
-            "material_slack": material - sum(q * p["material"] for q, p in zip(quantities, products))}
-
-
-def dynamic_profit(products, hours, material):
-    # Independent state recurrence; no use of enumeration bounds or chosen plan.
-    @lru_cache(None)
-    def value(h, m):
-        options = [0]
-        for product in products:
-            if h >= product["hours"] and m >= product["material"]:
-                options.append(product["profit"] + value(h - product["hours"], m - product["material"]))
-        return max(options)
-    return value(hours, material)
 
 
 def build_run(output):
@@ -97,6 +65,7 @@ def build_run(output):
                            "result_id": "profit", "reference_artifact": "artifacts/dynamic-programming.json", "reference_pointer": "/profit"}]}}])
     statement = f"在题设两种资源上限下，最大利润为{primary['profit']}利润单位。"
     quantities = primary["quantities"]
+    uniqueness = "有限整数域穷举得到唯一最优计划。" if len(primary["optima"]) == 1 else f"共有{len(primary['optima'])}个最优计划，选取其中一个报告。"
     paper = f"""# 两种资源约束下的整数生产计划
 
 > 合成演示；数值已复核，人工评阅未完成，不是国赛提交稿。
@@ -105,7 +74,7 @@ def build_run(output):
 
 针对三类产品的整数生产决策，建立固定批次利润下的双资源约束模型。
 采用有限穷举求解，并以剩余资源动态规划独立核对目标值。{statement}
-共有{len(primary['optima'])}个最优计划；选取其中一个报告，不声称最优计划唯一。
+{uniqueness}
 
 ## 模型与基线
 
@@ -140,12 +109,30 @@ def build_run(output):
            "paper_locator": "摘要", "paper_excerpt": statement, "status": "VERIFIED"}])
     report = validate_run(output, "PAPER_LINKED")
     write_json(output / "demo_validation.json", report)
+    reproducible = output / "artifacts/reproduction"
+    reproducible.mkdir()
+    shutil.copyfile(source / "solver.py", reproducible / "solver.py")
+    shutil.copyfile(frozen_data, reproducible / "products.csv")
+    (reproducible / "README.txt").write_text("Synthetic example, not a contest submission.\nRun: python3 solver.py --output reproduced.json\nExpected profit: 121; both algorithms must agree. Human review remains pending.\n",encoding="utf-8")
+    selection = {"files":[{"source": "artifacts/reproduction/"+name, "archive_path": name, "role": role}
+                          for name,role in [("solver.py","code"),("products.csv","data"),("README.txt","document")]]}
+    package = package_support(output,selection)
+    appendix = read_json(output / "artifacts/submission-package/appendix.json")
+    sections = []
+    for paragraph in paper.split("\n\n"):
+        if paragraph.startswith("## "):
+            sections.append({"title":paragraph[3:].strip(),"blocks":[]})
+        elif paragraph.strip() and sections:
+            sections[-1]["blocks"].append({"text": " ".join(paragraph.splitlines())})
+    sections.append(appendix)
+    write_json(output / "paper/document.json", {"title":"两种资源约束下的整数生产计划", "status_note":"合成示例，数值已复核，真实人工评阅待完成", "sections":sections})
     # The demo never fabricates approvals, advances history or seals a submission.
     if report["failed_checks"] != ["HUMAN-SIGNOFFS"]:
         raise RuntimeError(report["failed_checks"])
     return {"numerical_checks_passed": True, "submission_verified": False,
             "pending": "human review", "profit": primary["profit"], "optima": primary["optima"],
-            "paper": str(output / "paper/main.md")}
+            "paper": str(output / "paper/main.md"), "support_zip": "artifacts/submission-package/support.zip",
+            "support_sha256": package["sha256"]}
 
 
 if __name__ == "__main__":

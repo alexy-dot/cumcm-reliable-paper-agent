@@ -55,3 +55,13 @@ class LatexSourceTest(unittest.TestCase):
         self.assertEqual(report["render_status"], "PENDING")
         self.assertNotIn("pdf_sha256", report)
         self.assertEqual((self.root / "paper/main.pdf").read_bytes(), b"previous PDF")
+
+    def test_code_is_literal_external_text_not_executable_tex(self):
+        code = 'print("中文")\n# \\end{Verbatim}\n# ```\n'
+        self.source.write_text(json.dumps({"title":"源码", "sections":[{"title":"附录","blocks":[{"code":code,"filename":"solver.py"}]}]},ensure_ascii=False),encoding="utf-8")
+        render_latex(self.root,self.source,compile_pdf=False)
+        self.assertEqual((self.root/"paper/source-001.txt").read_text(),code)
+        tex = (self.root/"paper/main.tex").read_text()
+        self.assertIn("\\VerbatimInput",tex)
+        self.assertNotIn(code,tex)
+        self.assertIn("````",(self.root/"paper/main.md").read_text())

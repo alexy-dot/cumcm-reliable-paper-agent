@@ -45,9 +45,13 @@ def render_latex(run, source, *, compiler=None, cache_dir=None, compile_pdf=True
                                                           "note": "An existing PDF may be from an earlier generation; not accepted until compilation succeeds."},
                                                          ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     if platform.system() == "Darwin":
-        fonts = r"\setmainfont{Times New Roman}\setCJKmainfont{Songti SC}\setCJKsansfont{Heiti SC}"
+        fonts = r"\setmainfont{Times New Roman}\setCJKmainfont{Songti SC}\setCJKsansfont{Heiti SC}\setCJKmonofont{Songti SC}"
     else:
-        fonts = r"\setmainfont{TeX Gyre Termes}\setCJKmainfont{FandolSong-Regular.otf}[BoldFont=FandolSong-Bold.otf]\setCJKsansfont{FandolHei-Regular.otf}"
+        fonts = r"\setmainfont{TeX Gyre Termes}\setCJKmainfont{FandolSong-Regular.otf}[BoldFont=FandolSong-Bold.otf]\setCJKsansfont{FandolHei-Regular.otf}\setCJKmonofont{FandolSong-Regular.otf}"
+    has_code = any("code" in block for section in data["sections"] for block in section["blocks"])
+    if has_code:
+        fonts += r"\usepackage{fvextra}"
+    code_receipts = []
     preamble = r"""\documentclass[12pt,a4paper]{article}
 \usepackage{fontspec,xeCJK,amsmath,amssymb,geometry,graphicx,booktabs,tabularx,array}
 \usepackage{titlesec,caption,placeins,indentfirst,float}
@@ -92,6 +96,19 @@ FONTS
                 formula = block["equation"]
                 lines.extend([r"\begin{equation}", formula, r"\end{equation}"])
                 markdown.extend(["$$", formula, "$$", ""])
+            elif "code" in block:
+                code = block["code"]
+                if not isinstance(code, str) or not code.strip():
+                    raise ValueError("source-code blocks require nonempty text")
+                name = block.get("filename", "source")
+                code_file = output / f"source-{len(code_receipts)+1:03d}.txt"
+                code_file.write_text(code, encoding="utf-8")
+                code_receipts.append({"filename": name, "utf8_sha256": hashlib.sha256(code.encode("utf-8")).hexdigest()})
+                lines.extend([r"\subsubsection*{" + escape_text(name) + "}",
+                              r"\VerbatimInput[fontsize=\footnotesize,breaklines=true,breakanywhere=true,breaksymbolleft={},breaksymbolright={}]{" + code_file.name + "}"])
+                longest = max((len(match.group()) for match in re.finditer(r"`+", code)), default=0)
+                fence = "`" * max(3, longest+1)
+                markdown.extend(["### " + name, "", fence, code.rstrip("\n"), fence, ""])
             elif "table" in block:
                 rows = block["table"]
                 columns = len(rows[0])
@@ -158,7 +175,7 @@ FONTS
                   "text_characters": sum(len(page.extract_text() or "") for page in pdf.pages),
                   "visual_review": "PENDING", "source": source.name, "backend": "latex",
                   "fonts": font_names, "pdf_sha256": hashlib.sha256((output / "main.pdf").read_bytes()).hexdigest(),
-                  "document_sha256": document_sha256, "render_status": "COMPILED"}
+                  "document_sha256": document_sha256, "render_status": "COMPILED", "code_blocks": code_receipts}
         (output / "render_report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print({"tex": str(tex), "pdf_compiled": compile_pdf, "visual_review": "PENDING"})
 

@@ -113,3 +113,12 @@ The source-bound rules live in [submission-2026.json](submission-2026.json), inc
 ## `state.json` and `artifact_manifest.json`
 
 Modify `state.json` only through the CLI. Each `advance` stores a SHA-256 fingerprint of the completed stage's semantic inputs and result artifacts. Any later drift fails `CORE-UPSTREAM-FREEZE`. Seal from `PAPER_LINKED`; the seal command writes final validation, changes state to `VERIFIED`, and hashes every run artifact except the manifest itself.
+
+## Support ZIP and complete source appendix
+
+Run `python3 scripts/package_support.py RUN --selection selection.json --output artifacts/package-v1`.
+The selection is an object with `files`: each row has a run-relative `source`, relative `archive_path`, and `role` (`code`, `data`, or `document`). Select all necessary files explicitly; the packager does not infer dependency completeness.
+
+The new output directory contains a deterministic `support.zip`, `appendix.json` and `package_receipt.json`. The ZIP includes original file bytes and their hashes; the appendix includes the complete UTF-8 source of every `code` file. Append the generated section to the paper document's `sections` before rendering. `code` blocks have `filename` and literal `code` text; they automatically use TeX's verbatim-file reader and wrap across lines/pages without interpreting code as TeX. These are source listings, not images or summaries.
+
+Do not edit the ZIP and appendix separately. Regenerate a new package version if a source changes, and rerun from a clean extraction to establish reproducibility. AI-use details and human verification must remain truthful; packaging sets `submission_ready: false` and does not fabricate them.
