@@ -1,13 +1,13 @@
 {
   "case": "2024 B production decisions, four-question conditional training paper",
   "paper": {
-    "pages": 15,
-    "sha256": "c796f1db6ae961993e5db97b802856d2db123cd5f07c3684e38b67eb4262ba49",
+    "pages": 16,
+    "sha256": "dee1b2cfe6c487d48b47410c4fb84876cad6253516ab5cbd44ad0768ecc492f9",
     "visual_review": {
       "reviewer_type": "agent",
-      "scope": "First 12 pages pixel-identical to previously reviewed paper. New pages 13-15 checked at full resolution for posterior-moment formula, prior comparison table, Chinese typography and scope statements. All 15 pages have verified content margins and four-question structure. Agent visual review only.",
+      "scope": "Pages 2-13 pixel-identical to previously reviewed paper. Updated abstract and pages 14-16 inspected at full resolution: five-moment definitions, cost recurrences and exact-integration scope are legible. All 16 pages pass content bounds and four-question structure. Agent visual review only.",
       "status": "PASS",
-      "pdf_sha256": "c796f1db6ae961993e5db97b802856d2db123cd5f07c3684e38b67eb4262ba49"
+      "pdf_sha256": "dee1b2cfe6c487d48b47410c4fb84876cad6253516ab5cbd44ad0768ecc492f9"
     },
     "structure": {
       "profile": "user-requested CUMCM organization; recognized labels are conventions, not universal official rules",
@@ -21,7 +21,7 @@
         "all_questions_solution": true,
         "notation_table_columns": true
       },
-      "pages": 15,
+      "pages": 16,
       "question_count": 4,
       "question_evidence": {
         "analysis": {
@@ -121,24 +121,24 @@
           13
         ],
         "evaluation": [
-          14
+          16
         ],
         "conclusion": [
-          15
+          16
         ],
         "ai": [
-          15
+          16
         ],
         "references": [
-          15
+          16
         ],
         "appendix": [
-          15
+          16
         ]
       },
       "scope": "actual section coverage only; no certification of substantive answers, math, visual quality or awards",
       "question_mapping": "contract questions in listed order map to 问题一/问题1 etc.; nested outputs need semantic review",
-      "pdf_sha256": "c796f1db6ae961993e5db97b802856d2db123cd5f07c3684e38b67eb4262ba49",
+      "pdf_sha256": "dee1b2cfe6c487d48b47410c4fb84876cad6253516ab5cbd44ad0768ecc492f9",
       "extractor": "pypdf layout text",
       "contract_sha256": "e3fa313a36599ca9b847d3c48e78b4e9b3757256c7bbaad06692cf89a634281f"
     }
@@ -1184,6 +1184,12 @@
       }
     ],
     "scope": "same illustrative counts under declared alternative independent priors; Beta(2,18) expresses hypothetical prior information and is not empirically established"
+  },
+  "exact_posterior": {
+    "summary_sha256": "054ee215119e35e654767e082c0780b75e8d35a5feb5e9a053b098da7fd16669",
+    "scenario_count": 6,
+    "all_previous_selected_policies_optimal": true,
+    "scope": "exact conditional posterior mean within the declared policy class, not a guarantee under other priors or adaptive recovery policies"
   },
   "figure_evidence": {
     "source_protocol_sha256": "ccc9f9d7dc5a543cc1b7e7dbe8a42c6955efd5322faa20863100fc32c5e02682",

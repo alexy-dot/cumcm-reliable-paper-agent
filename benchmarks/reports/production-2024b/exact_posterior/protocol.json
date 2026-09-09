@@ -1,0 +1,35 @@
+{
+  "inputs": [
+    {
+      "label": "uniform-n20",
+      "samples_sha256": "7010a2ad6467c3200251d5b674b2d65ff003410ceb66f53c4cd131eb2fef614a",
+      "mc_result_sha256": "88d8ad9998a85a895c40029e7cabe07609519a008654f3fd0d1083b5c8a7b395"
+    },
+    {
+      "label": "uniform-n200",
+      "samples_sha256": "1aae2fdf43c04f61ddc5d15fd9a20ff822a83de1683bf7f0e8d9da6db8f27c9f",
+      "mc_result_sha256": "4c04b8ef3296dc4fb10c9ae8a7a562ebc549fe55a6cc3754ef195c7b5565dd7b"
+    },
+    {
+      "label": "illustrative_n20_Jeffreys",
+      "samples_sha256": "19ff510eb3b2625527b33da2a81c256280515ddcb8d75d99d9033630e3e26a0f",
+      "mc_result_sha256": "dbb08b0a2a646ccf06f334c29ad64c72b1cafec4ecf969014c9a4f4ab9c33b34"
+    },
+    {
+      "label": "illustrative_n200_Jeffreys",
+      "samples_sha256": "b82689451fc02ce6d61b9cf50b65ea4ae61b7c73eec0788215350b261c45ba4f",
+      "mc_result_sha256": "bc339c82eb4f228ae07d91467ffb8e333f0d25b1ce052c18b2f72113a049b60c"
+    },
+    {
+      "label": "illustrative_n20_mean_0.1_strength_20",
+      "samples_sha256": "10499a44cfd8617f98d9742d29bbeba00995caa3e63ccf5899a2df49482a20d8",
+      "mc_result_sha256": "c1a60ed6251546a5276f12fc9e265f4f1ea143102f107382e99c8113e8af70d7"
+    },
+    {
+      "label": "illustrative_n200_mean_0.1_strength_20",
+      "samples_sha256": "e49f6d0bf41da05127a1ecd1a788b5c1aaf946aaa3636b6cea57bbf6a8ff9f47",
+      "mc_result_sha256": "376bf64755c34a2853569e5510ffa634c75cb613fc8f2fd34aa4c958aa991be0"
+    }
+  ],
+  "scope": "exact comparison using the same illustrative sample scenarios and priors as prior reports; no new observed data"
+}

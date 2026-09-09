@@ -1,0 +1,180 @@
+{
+  "samples": {
+    "label": "illustrative_n200_mean_0.1_strength_20",
+    "provenance": "ILLUSTRATIVE_COUNTS_NOT_OBSERVED",
+    "prior": {
+      "alpha": 2.0,
+      "beta": 18.0
+    },
+    "q2": {
+      "1": [
+        {
+          "n": 200,
+          "k": 20,
+          "basis": "random_supply"
+        },
+        {
+          "n": 200,
+          "k": 20,
+          "basis": "random_supply"
+        },
+        {
+          "n": 200,
+          "k": 20,
+          "basis": "good_inputs"
+        }
+      ],
+      "2": [
+        {
+          "n": 200,
+          "k": 40,
+          "basis": "random_supply"
+        },
+        {
+          "n": 200,
+          "k": 40,
+          "basis": "random_supply"
+        },
+        {
+          "n": 200,
+          "k": 40,
+          "basis": "good_inputs"
+        }
+      ],
+      "3": [
+        {
+          "n": 200,
+          "k": 20,
+          "basis": "random_supply"
+        },
+        {
+          "n": 200,
+          "k": 20,
+          "basis": "random_supply"
+        },
+        {
+          "n": 200,
+          "k": 20,
+          "basis": "good_inputs"
+        }
+      ],
+      "4": [
+        {
+          "n": 200,
+          "k": 40,
+          "basis": "random_supply"
+        },
+        {
+          "n": 200,
+          "k": 40,
+          "basis": "random_supply"
+        },
+        {
+          "n": 200,
+          "k": 40,
+          "basis": "good_inputs"
+        }
+      ],
+      "5": [
+        {
+          "n": 200,
+          "k": 20,
+          "basis": "random_supply"
+        },
+        {
+          "n": 200,
+          "k": 40,
+          "basis": "random_supply"
+        },
+        {
+          "n": 200,
+          "k": 20,
+          "basis": "good_inputs"
+        }
+      ],
+      "6": [
+        {
+          "n": 200,
+          "k": 10,
+          "basis": "random_supply"
+        },
+        {
+          "n": 200,
+          "k": 10,
+          "basis": "random_supply"
+        },
+        {
+          "n": 200,
+          "k": 10,
+          "basis": "good_inputs"
+        }
+      ]
+    },
+    "q3": [
+      {
+        "n": 200,
+        "k": 20,
+        "basis": "random_supply"
+      },
+      {
+        "n": 200,
+        "k": 20,
+        "basis": "random_supply"
+      },
+      {
+        "n": 200,
+        "k": 20,
+        "basis": "random_supply"
+      },
+      {
+        "n": 200,
+        "k": 20,
+        "basis": "random_supply"
+      },
+      {
+        "n": 200,
+        "k": 20,
+        "basis": "random_supply"
+      },
+      {
+        "n": 200,
+        "k": 20,
+        "basis": "random_supply"
+      },
+      {
+        "n": 200,
+        "k": 20,
+        "basis": "random_supply"
+      },
+      {
+        "n": 200,
+        "k": 20,
+        "basis": "random_supply"
+      },
+      {
+        "n": 200,
+        "k": 20,
+        "basis": "good_inputs"
+      },
+      {
+        "n": 200,
+        "k": 20,
+        "basis": "good_inputs"
+      },
+      {
+        "n": 200,
+        "k": 20,
+        "basis": "good_inputs"
+      },
+      {
+        "n": 200,
+        "k": 20,
+        "basis": "good_inputs"
+      }
+    ]
+  },
+  "samples_sha256": "e49f6d0bf41da05127a1ecd1a788b5c1aaf946aaa3636b6cea57bbf6a8ff9f47",
+  "facts_sha256": "e6834a60d17866a05361f2743e103ab9c01707b8466856448e3e31e3359f81c4",
+  "method": "rational recursion of E(C), E(g), E(1/g), E(C/g), E(bR)",
+  "finite_moment_condition": "all posterior beta>1; no finite variance assumption or Monte Carlo standard error is used"
+}

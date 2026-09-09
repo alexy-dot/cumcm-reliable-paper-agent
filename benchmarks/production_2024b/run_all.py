@@ -36,7 +36,7 @@ if __name__=="__main__":
         execute("sampled_rates.py",run,"--make-example",n,"--output",samples)
         execute("sampled_rates.py",run,"--samples",samples,"--output",folder)
         execute("verify_sampled_rates.py",run,folder)
-    execute("prior_sensitivity.py",run);execute("report_q4.py",run,*folders);execute("figures.py",run);execute("paper.py",run)
+    execute("prior_sensitivity.py",run);execute("exact_study.py",run);execute("report_q4.py",run,*folders);execute("figures.py",run);execute("paper.py",run)
     renderer=scripts.parents[1]/"skill/cumcm-reliable-paper/scripts/render_paper.py"
     command=[sys.executable,str(renderer),"--run",str(run),"--source",str(run/"paper/document.json"),"--latex-compiler",compiler]
     if args.cache_dir:command.extend(["--cache-dir",str(args.cache_dir.resolve())])

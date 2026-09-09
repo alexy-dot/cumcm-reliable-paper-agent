@@ -147,7 +147,7 @@ def solve(run,samples_path,output):
     moments={name:posterior_moment_status(p) for name,p in parameters.items()}
     for name,status in moments.items():
         if not status["inverse_good_rate_variance_finite"]:
-            raise ValueError(f"{name}: posterior mean exists but inverse-good-rate variance diverges at stages {status['variance_failure_stages']}; this Monte Carlo/standard-error workflow requires beta>2. Use a justified analytic or deterministic integrator instead.")
+            raise ValueError(f"{name}: posterior mean exists but inverse-good-rate variance diverges at stages {status['variance_failure_stages']}; this Monte Carlo/standard-error workflow requires beta>2. Use exact_posterior.py for the declared independent-rate tree model.")
     output.mkdir(parents=True,exist_ok=False)
     protocol={"samples":samples,"samples_sha256":sha256_file(samples_path),"selection_draws":DESIGN_DRAWS,"validation_draws":CHECK_DRAWS,
         "selection_seed_base":104729,"validation_seed_base":130363,"prior_and_likelihood":"independent Beta prior per stage, iid Bernoulli likelihood; assembly observations require all-good inputs",

@@ -1,0 +1,1755 @@
+{
+  "protocol_sha256": "1cf5938f05d663d01bd673e15858331dc17e4557fb9d312e0712458bb7424441",
+  "results": {
+    "Q2-1": {
+      "policy_count": 16,
+      "best_policies": [
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "cost_exact": "121/3",
+          "expected_cost": 40.333333333333336,
+          "expected_profit": 15.666666666666666
+        }
+      ],
+      "q2_all_policies": [
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 0
+          },
+          "cost_exact": "5183/108",
+          "expected_cost": 47.99074074074074,
+          "expected_profit": 8.00925925925926
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "cost_exact": "1323529/31944",
+          "expected_cost": 41.43278863010268,
+          "expected_profit": 14.56721136989732
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 0
+          },
+          "cost_exact": "10633/216",
+          "expected_cost": 49.226851851851855,
+          "expected_profit": 6.773148148148148
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "cost_exact": "1379035/31944",
+          "expected_cost": 43.17039193588781,
+          "expected_profit": 12.829608064112197
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 0
+          },
+          "cost_exact": "393/8",
+          "expected_cost": 49.125,
+          "expected_profit": 6.875
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "cost_exact": "14941/363",
+          "expected_cost": 41.15977961432507,
+          "expected_profit": 14.84022038567493
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 0
+          },
+          "cost_exact": "1225/24",
+          "expected_cost": 51.041666666666664,
+          "expected_profit": 4.958333333333333
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "cost_exact": "15700/363",
+          "expected_cost": 43.25068870523416,
+          "expected_profit": 12.74931129476584
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 0
+          },
+          "cost_exact": "1597/36",
+          "expected_cost": 44.361111111111114,
+          "expected_profit": 11.63888888888889
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "cost_exact": "58681/1452",
+          "expected_cost": 40.41391184573003,
+          "expected_profit": 15.586088154269973
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 0
+          },
+          "cost_exact": "833/18",
+          "expected_cost": 46.27777777777778,
+          "expected_profit": 9.722222222222221
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "cost_exact": "61717/1452",
+          "expected_cost": 42.50482093663912,
+          "expected_profit": 13.495179063360881
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 0
+          },
+          "cost_exact": "179/4",
+          "expected_cost": 44.75,
+          "expected_profit": 11.25
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "cost_exact": "121/3",
+          "expected_cost": 40.333333333333336,
+          "expected_profit": 15.666666666666666
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 0
+          },
+          "cost_exact": "189/4",
+          "expected_cost": 47.25,
+          "expected_profit": 8.75
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "cost_exact": "257/6",
+          "expected_cost": 42.833333333333336,
+          "expected_profit": 13.166666666666666
+        }
+      ],
+      "scope": "exact posterior-mean optimum within the same declared stationary recovery class, under independent Beta stage parameters; not unrestricted adaptive policy optimality",
+      "posterior_shapes": [
+        [
+          "3",
+          "19"
+        ],
+        [
+          "3",
+          "19"
+        ],
+        [
+          "3",
+          "19"
+        ]
+      ]
+    },
+    "Q2-2": {
+      "policy_count": 16,
+      "best_policies": [
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "cost_exact": "187/4",
+          "expected_cost": 46.75,
+          "expected_profit": 9.25
+        }
+      ],
+      "q2_all_policies": [
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 0
+          },
+          "cost_exact": "145149/2048",
+          "expected_cost": 70.87353515625,
+          "expected_profit": -14.87353515625
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "cost_exact": "546159/10648",
+          "expected_cost": 51.2921675432006,
+          "expected_profit": 4.707832456799399
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 0
+          },
+          "cost_exact": "287091/4096",
+          "expected_cost": 70.090576171875,
+          "expected_profit": -14.090576171875
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "cost_exact": "1110501/21296",
+          "expected_cost": 52.145989857250186,
+          "expected_profit": 3.854010142749812
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 0
+          },
+          "cost_exact": "282801/4096",
+          "expected_cost": 69.043212890625,
+          "expected_profit": -13.043212890625
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "cost_exact": "23919/484",
+          "expected_cost": 49.41942148760331,
+          "expected_profit": 6.580578512396694
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 0
+          },
+          "cost_exact": "286209/4096",
+          "expected_cost": 69.875244140625,
+          "expected_profit": -13.875244140625
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "cost_exact": "98349/1936",
+          "expected_cost": 50.80010330578512,
+          "expected_profit": 5.199896694214876
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 0
+          },
+          "cost_exact": "121335/2048",
+          "expected_cost": 59.24560546875,
+          "expected_profit": -3.24560546875
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "cost_exact": "11815/242",
+          "expected_cost": 48.82231404958678,
+          "expected_profit": 7.177685950413223
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 0
+          },
+          "cost_exact": "123039/2048",
+          "expected_cost": 60.07763671875,
+          "expected_profit": -4.07763671875
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "cost_exact": "97193/1936",
+          "expected_cost": 50.20299586776859,
+          "expected_profit": 5.797004132231405
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 0
+          },
+          "cost_exact": "14403/256",
+          "expected_cost": 56.26171875,
+          "expected_profit": -0.26171875
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "cost_exact": "187/4",
+          "expected_cost": 46.75,
+          "expected_profit": 9.25
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 0
+          },
+          "cost_exact": "14931/256",
+          "expected_cost": 58.32421875,
+          "expected_profit": -2.32421875
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "cost_exact": "781/16",
+          "expected_cost": 48.8125,
+          "expected_profit": 7.1875
+        }
+      ],
+      "scope": "exact posterior-mean optimum within the same declared stationary recovery class, under independent Beta stage parameters; not unrestricted adaptive policy optimality",
+      "posterior_shapes": [
+        [
+          "5",
+          "17"
+        ],
+        [
+          "5",
+          "17"
+        ],
+        [
+          "5",
+          "17"
+        ]
+      ]
+    },
+    "Q2-3": {
+      "policy_count": 16,
+      "best_policies": [
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "cost_exact": "61717/1452",
+          "expected_cost": 42.50482093663912,
+          "expected_profit": 13.495179063360881
+        }
+      ],
+      "q2_all_policies": [
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 0
+          },
+          "cost_exact": "6707/108",
+          "expected_cost": 62.101851851851855,
+          "expected_profit": -6.101851851851852
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "cost_exact": "1646137/31944",
+          "expected_cost": 51.53196218382169,
+          "expected_profit": 4.468037816178312
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 0
+          },
+          "cost_exact": "10633/216",
+          "expected_cost": 49.226851851851855,
+          "expected_profit": 6.773148148148148
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "cost_exact": "1379035/31944",
+          "expected_cost": 43.17039193588781,
+          "expected_profit": 12.829608064112197
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 0
+          },
+          "cost_exact": "1387/24",
+          "expected_cost": 57.791666666666664,
+          "expected_profit": -1.7916666666666667
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "cost_exact": "17581/363",
+          "expected_cost": 48.43250688705234,
+          "expected_profit": 7.567493112947658
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 0
+          },
+          "cost_exact": "1225/24",
+          "expected_cost": 51.041666666666664,
+          "expected_profit": 4.958333333333333
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "cost_exact": "15700/363",
+          "expected_cost": 43.25068870523416,
+          "expected_profit": 12.74931129476584
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 0
+          },
+          "cost_exact": "1909/36",
+          "expected_cost": 53.02777777777778,
+          "expected_profit": 2.9722222222222223
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "cost_exact": "69241/1452",
+          "expected_cost": 47.6866391184573,
+          "expected_profit": 8.3133608815427
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 0
+          },
+          "cost_exact": "833/18",
+          "expected_cost": 46.27777777777778,
+          "expected_profit": 9.722222222222221
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "cost_exact": "61717/1452",
+          "expected_cost": 42.50482093663912,
+          "expected_profit": 13.495179063360881
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 0
+          },
+          "cost_exact": "195/4",
+          "expected_cost": 48.75,
+          "expected_profit": 7.25
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "cost_exact": "133/3",
+          "expected_cost": 44.333333333333336,
+          "expected_profit": 11.666666666666666
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 0
+          },
+          "cost_exact": "189/4",
+          "expected_cost": 47.25,
+          "expected_profit": 8.75
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "cost_exact": "257/6",
+          "expected_cost": 42.833333333333336,
+          "expected_profit": 13.166666666666666
+        }
+      ],
+      "scope": "exact posterior-mean optimum within the same declared stationary recovery class, under independent Beta stage parameters; not unrestricted adaptive policy optimality",
+      "posterior_shapes": [
+        [
+          "3",
+          "19"
+        ],
+        [
+          "3",
+          "19"
+        ],
+        [
+          "3",
+          "19"
+        ]
+      ]
+    },
+    "Q2-4": {
+      "policy_count": 16,
+      "best_policies": [
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "cost_exact": "697/16",
+          "expected_cost": 43.5625,
+          "expected_profit": 12.4375
+        }
+      ],
+      "q2_all_policies": [
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 0
+          },
+          "cost_exact": "207129/2048",
+          "expected_cost": 101.13720703125,
+          "expected_profit": -45.13720703125
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "cost_exact": "1403583/21296",
+          "expected_cost": 65.90829263711495,
+          "expected_profit": -9.90829263711495
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 0
+          },
+          "cost_exact": "138915/2048",
+          "expected_cost": 67.82958984375,
+          "expected_profit": -11.82958984375
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "cost_exact": "1019595/21296",
+          "expected_cost": 47.87730090157776,
+          "expected_profit": 8.122699098422238
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 0
+          },
+          "cost_exact": "335319/4096",
+          "expected_cost": 81.864990234375,
+          "expected_profit": -25.864990234375
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "cost_exact": "114289/1936",
+          "expected_cost": 59.03357438016529,
+          "expected_profit": -3.0335743801652892
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 0
+          },
+          "cost_exact": "260631/4096",
+          "expected_cost": 63.630615234375,
+          "expected_profit": -7.630615234375
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "cost_exact": "88901/1936",
+          "expected_cost": 45.919938016528924,
+          "expected_profit": 10.080061983471074
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 0
+          },
+          "cost_exact": "304449/4096",
+          "expected_cost": 74.328369140625,
+          "expected_profit": -18.328369140625
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "cost_exact": "114289/1936",
+          "expected_cost": 59.03357438016529,
+          "expected_profit": -3.0335743801652892
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 0
+          },
+          "cost_exact": "229761/4096",
+          "expected_cost": 56.093994140625,
+          "expected_profit": -0.093994140625
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "cost_exact": "88901/1936",
+          "expected_cost": 45.919938016528924,
+          "expected_profit": 10.080061983471074
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 0
+          },
+          "cost_exact": "1875/32",
+          "expected_cost": 58.59375,
+          "expected_profit": -2.59375
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "cost_exact": "805/16",
+          "expected_cost": 50.3125,
+          "expected_profit": 5.6875
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 0
+          },
+          "cost_exact": "1659/32",
+          "expected_cost": 51.84375,
+          "expected_profit": 4.15625
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "cost_exact": "697/16",
+          "expected_cost": 43.5625,
+          "expected_profit": 12.4375
+        }
+      ],
+      "scope": "exact posterior-mean optimum within the same declared stationary recovery class, under independent Beta stage parameters; not unrestricted adaptive policy optimality",
+      "posterior_shapes": [
+        [
+          "5",
+          "17"
+        ],
+        [
+          "5",
+          "17"
+        ],
+        [
+          "5",
+          "17"
+        ]
+      ]
+    },
+    "Q2-5": {
+      "policy_count": 16,
+      "best_policies": [
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "cost_exact": "260837/5808",
+          "expected_cost": 44.909951790633606,
+          "expected_profit": 11.09004820936639
+        }
+      ],
+      "q2_all_policies": [
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 0
+          },
+          "cost_exact": "5557/96",
+          "expected_cost": 57.885416666666664,
+          "expected_profit": -1.8854166666666667
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "cost_exact": "1069823/21296",
+          "expected_cost": 50.23586589030804,
+          "expected_profit": 5.764134109691961
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 0
+          },
+          "cost_exact": "1715/32",
+          "expected_cost": 53.59375,
+          "expected_profit": 2.40625
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "cost_exact": "3082045/63888",
+          "expected_cost": 48.241375532181316,
+          "expected_profit": 7.758624467818683
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 0
+          },
+          "cost_exact": "29471/576",
+          "expected_cost": 51.16493055555556,
+          "expected_profit": 4.835069444444445
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "cost_exact": "87767/1936",
+          "expected_cost": 45.334194214876035,
+          "expected_profit": 10.665805785123966
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 0
+          },
+          "cost_exact": "9653/192",
+          "expected_cost": 50.276041666666664,
+          "expected_profit": 5.723958333333333
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "cost_exact": "260837/5808",
+          "expected_cost": 44.909951790633606,
+          "expected_profit": 11.09004820936639
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 0
+          },
+          "cost_exact": "127/2",
+          "expected_cost": 63.5,
+          "expected_profit": -7.5
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "cost_exact": "101723/1936",
+          "expected_cost": 52.54287190082645,
+          "expected_profit": 3.457128099173554
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 0
+          },
+          "cost_exact": "245/4",
+          "expected_cost": 61.25,
+          "expected_profit": -5.25
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "cost_exact": "298481/5808",
+          "expected_cost": 51.39135674931129,
+          "expected_profit": 4.608643250688705
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 0
+          },
+          "cost_exact": "1731/32",
+          "expected_cost": 54.09375,
+          "expected_profit": 1.90625
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "cost_exact": "775/16",
+          "expected_cost": 48.4375,
+          "expected_profit": 7.5625
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 0
+          },
+          "cost_exact": "5257/96",
+          "expected_cost": 54.760416666666664,
+          "expected_profit": 1.2395833333333333
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "cost_exact": "2357/48",
+          "expected_cost": 49.104166666666664,
+          "expected_profit": 6.895833333333333
+        }
+      ],
+      "scope": "exact posterior-mean optimum within the same declared stationary recovery class, under independent Beta stage parameters; not unrestricted adaptive policy optimality",
+      "posterior_shapes": [
+        [
+          "3",
+          "19"
+        ],
+        [
+          "5",
+          "17"
+        ],
+        [
+          "3",
+          "19"
+        ]
+      ]
+    },
+    "Q2-6": {
+      "policy_count": 16,
+      "best_policies": [
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 0
+          },
+          "cost_exact": "271862/6859",
+          "expected_cost": 39.63580696894591,
+          "expected_profit": 16.36419303105409
+        }
+      ],
+      "q2_all_policies": [
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 0
+          },
+          "cost_exact": "14912/361",
+          "expected_cost": 41.307479224376735,
+          "expected_profit": 14.692520775623269
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "cost_exact": "1206267/25289",
+          "expected_cost": 47.699276365218076,
+          "expected_profit": 8.30072363478192
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 0
+          },
+          "cost_exact": "287091/6859",
+          "expected_cost": 41.85610147251786,
+          "expected_profit": 14.14389852748214
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "cost_exact": "64883/1331",
+          "expected_cost": 48.74755822689707,
+          "expected_profit": 7.25244177310293
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 0
+          },
+          "cost_exact": "293471/6859",
+          "expected_cost": 42.78626621956553,
+          "expected_profit": 13.213733780434465
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "cost_exact": "103857/2299",
+          "expected_cost": 45.17485863418878,
+          "expected_profit": 10.825141365811222
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 0
+          },
+          "cost_exact": "303408/6859",
+          "expected_cost": 44.235019682169415,
+          "expected_profit": 11.764980317830588
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "cost_exact": "5663/121",
+          "expected_cost": 46.80165289256198,
+          "expected_profit": 9.198347107438016
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 0
+          },
+          "cost_exact": "271862/6859",
+          "expected_cost": 39.63580696894591,
+          "expected_profit": 16.36419303105409
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "cost_exact": "101957/2299",
+          "expected_cost": 44.34841235319704,
+          "expected_profit": 11.651587646802957
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 0
+          },
+          "cost_exact": "281799/6859",
+          "expected_cost": 41.08456043154979,
+          "expected_profit": 14.91543956845021
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "cost_exact": "5563/121",
+          "expected_cost": 45.97520661157025,
+          "expected_profit": 10.024793388429751
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 0
+          },
+          "cost_exact": "14681/361",
+          "expected_cost": 40.66759002770083,
+          "expected_profit": 15.33240997229917
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "cost_exact": "793/19",
+          "expected_cost": 41.73684210526316,
+          "expected_profit": 14.263157894736842
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 0
+          },
+          "cost_exact": "15498/361",
+          "expected_cost": 42.930747922437675,
+          "expected_profit": 13.069252077562327
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "cost_exact": "44",
+          "expected_cost": 44.0,
+          "expected_profit": 12.0
+        }
+      ],
+      "scope": "exact posterior-mean optimum within the same declared stationary recovery class, under independent Beta stage parameters; not unrestricted adaptive policy optimality",
+      "posterior_shapes": [
+        [
+          "2",
+          "20"
+        ],
+        [
+          "2",
+          "20"
+        ],
+        [
+          "2",
+          "20"
+        ]
+      ]
+    },
+    "Q3": {
+      "policy_count": 65536,
+      "best_policies": [
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "semi_tests": [
+              1,
+              1,
+              1
+            ],
+            "semi_dismantle": [
+              1,
+              1,
+              1
+            ],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "cost_exact": "901/6",
+          "expected_cost": 150.16666666666666,
+          "expected_profit": 49.833333333333336
+        }
+      ],
+      "q2_all_policies": [],
+      "scope": "exact posterior-mean optimum within the same declared stationary recovery class, under independent Beta stage parameters; not unrestricted adaptive policy optimality",
+      "posterior_shapes": [
+        [
+          "3",
+          "19"
+        ],
+        [
+          "3",
+          "19"
+        ],
+        [
+          "3",
+          "19"
+        ],
+        [
+          "3",
+          "19"
+        ],
+        [
+          "3",
+          "19"
+        ],
+        [
+          "3",
+          "19"
+        ],
+        [
+          "3",
+          "19"
+        ],
+        [
+          "3",
+          "19"
+        ],
+        [
+          "3",
+          "19"
+        ],
+        [
+          "3",
+          "19"
+        ],
+        [
+          "3",
+          "19"
+        ],
+        [
+          "3",
+          "19"
+        ]
+      ]
+    }
+  },
+  "sample_provenance": "ILLUSTRATIVE_COUNTS_NOT_OBSERVED",
+  "submission_ready": false
+}

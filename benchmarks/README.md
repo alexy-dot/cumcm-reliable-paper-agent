@@ -126,6 +126,15 @@ python3 benchmarks/ethanol_2021b/run_all.py --source-dir /path/2021/B --output r
 
 [先验敏感性](reports/production-2024b/prior_sensitivity/report.json)固定同一计数，比较Jeffreys与假设性Beta(2,18)先验：20件时部分推荐改变，200件时本次比较的策略保持一致。接口也区分后验均值与方差是否存在；当前随机积分标准误路径不接受逆合格率方差发散的输入，不能凭有限样本标准差宣称误差已控制。
 
+[精确后验积分](reports/production-2024b/exact_posterior/summary.json)进一步利用独立阶段参数和树形结构，递推五个后验矩，以有理数比较全部声明策略。六个先验/样本量情景共582项独立积分核对通过，之前的42个推荐均达到对应精确最小成本。该路径只要求后验均值有限，支持均值存在但方差发散的输入，不使用蒙特卡罗标准误。
+
+```bash
+.venv/bin/python benchmarks/production_2024b/exact_posterior.py RUN \
+  --samples records.json --output NEW_DIRECTORY
+```
+
+精确性限于当前独立Beta参数与固定回收策略类，不包括相关质量参数或历史依赖的自适应策略。
+
 ```bash
 .venv/bin/python benchmarks/production_2024b/run_all.py \
   --source /path/2024/B题.pdf --output runs/production-full --example-sizes 20 200 \

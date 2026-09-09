@@ -33,5 +33,34 @@
     "dual_independent_reproductions": 22,
     "all_45_papers_reviewed": false
   },
-  "claim_boundary": "National-award-oriented reliability workflow; no award guarantee."
+  "claim_boundary": "National-award-oriented reliability workflow; no award guarantee.",
+  "supervision": {
+    "updated_on": "2026-09-09",
+    "readiness": "NOT_ESTABLISHED",
+    "latest_accepted_increment": {
+      "name": "2024 B exact posterior expectation within declared independent-Beta policy classes",
+      "evidence": "benchmarks/reports/production-2024b/exact_posterior/summary.json",
+      "independent_comparisons": 582,
+      "prior_recommendations_exact_optimal": 42,
+      "paper": "benchmarks/reports/production-2024b-paper.pdf",
+      "submission_ready": false
+    },
+    "next_priorities": [
+      {
+        "work": "Complete an unfamiliar-problem timed trial with input and time boundaries recorded before solving",
+        "status": "PENDING",
+        "acceptance": "Deliver all requested answers, executable code, independent numerical checks and a visually reviewed paper; preserve failures and distinguish within-time output from later repairs."
+      },
+      {
+        "work": "Assess paper argument quality against source-backed same-problem references",
+        "status": "PENDING",
+        "acceptance": "Identify concrete omissions in reasoning, model choice, validation and figures; neither page count nor algorithm count establishes quality."
+      },
+      {
+        "work": "Complete remaining submission packages and obtain actual team or reviewer assessment",
+        "status": "PENDING",
+        "acceptance": "Verify complete source appendices, reproducible support packages and required AI disclosures; record only reviews actually received."
+      }
+    ]
+  }
 }

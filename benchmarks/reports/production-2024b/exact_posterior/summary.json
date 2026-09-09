@@ -1,0 +1,1206 @@
+{
+  "scenarios": [
+    {
+      "label": "uniform-n20",
+      "input_samples_sha256": "7010a2ad6467c3200251d5b674b2d65ff003410ceb66f53c4cd131eb2fef614a",
+      "results": {
+        "Q2-1": {
+          "policy_count": 16,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  1,
+                  1
+                ],
+                "semi_tests": [],
+                "semi_dismantle": [],
+                "final_test": 0,
+                "final_dismantle": 1
+              },
+              "cost_exact": "121/3",
+              "expected_cost": 40.333333333333336,
+              "expected_profit": 15.666666666666666
+            }
+          ]
+        },
+        "Q2-2": {
+          "policy_count": 16,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  1,
+                  1
+                ],
+                "semi_tests": [],
+                "semi_dismantle": [],
+                "final_test": 0,
+                "final_dismantle": 1
+              },
+              "cost_exact": "187/4",
+              "expected_cost": 46.75,
+              "expected_profit": 9.25
+            }
+          ]
+        },
+        "Q2-3": {
+          "policy_count": 16,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  1,
+                  0
+                ],
+                "semi_tests": [],
+                "semi_dismantle": [],
+                "final_test": 1,
+                "final_dismantle": 1
+              },
+              "cost_exact": "61717/1452",
+              "expected_cost": 42.50482093663912,
+              "expected_profit": 13.495179063360881
+            }
+          ]
+        },
+        "Q2-4": {
+          "policy_count": 16,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  1,
+                  1
+                ],
+                "semi_tests": [],
+                "semi_dismantle": [],
+                "final_test": 1,
+                "final_dismantle": 1
+              },
+              "cost_exact": "697/16",
+              "expected_cost": 43.5625,
+              "expected_profit": 12.4375
+            }
+          ]
+        },
+        "Q2-5": {
+          "policy_count": 16,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  0,
+                  1
+                ],
+                "semi_tests": [],
+                "semi_dismantle": [],
+                "final_test": 1,
+                "final_dismantle": 1
+              },
+              "cost_exact": "260837/5808",
+              "expected_cost": 44.909951790633606,
+              "expected_profit": 11.09004820936639
+            }
+          ]
+        },
+        "Q2-6": {
+          "policy_count": 16,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  1,
+                  0
+                ],
+                "semi_tests": [],
+                "semi_dismantle": [],
+                "final_test": 0,
+                "final_dismantle": 0
+              },
+              "cost_exact": "271862/6859",
+              "expected_cost": 39.63580696894591,
+              "expected_profit": 16.36419303105409
+            }
+          ]
+        },
+        "Q3": {
+          "policy_count": 65536,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "semi_tests": [
+                  1,
+                  1,
+                  1
+                ],
+                "semi_dismantle": [
+                  1,
+                  1,
+                  1
+                ],
+                "final_test": 0,
+                "final_dismantle": 1
+              },
+              "cost_exact": "901/6",
+              "expected_cost": 150.16666666666666,
+              "expected_profit": 49.833333333333336
+            }
+          ]
+        }
+      },
+      "mc_policy_comparisons": [
+        {
+          "problem": "Q2-1",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        },
+        {
+          "problem": "Q2-2",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        },
+        {
+          "problem": "Q2-3",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        },
+        {
+          "problem": "Q2-4",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        },
+        {
+          "problem": "Q2-5",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        },
+        {
+          "problem": "Q2-6",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        },
+        {
+          "problem": "Q3",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        }
+      ],
+      "verification_passed": true,
+      "result_sha256": "92e82bc046b714b9eb4f01440e282b930bbec33222d2126af4bdb9c678a90f39",
+      "verification_sha256": "a2224f020ee828c594db696ba8aa95616ddfaa0f819f7f0f9d144bddba824fcd"
+    },
+    {
+      "label": "uniform-n200",
+      "input_samples_sha256": "1aae2fdf43c04f61ddc5d15fd9a20ff822a83de1683bf7f0e8d9da6db8f27c9f",
+      "results": {
+        "Q2-1": {
+          "policy_count": 16,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  1,
+                  0
+                ],
+                "semi_tests": [],
+                "semi_dismantle": [],
+                "final_test": 0,
+                "final_dismantle": 1
+              },
+              "cost_exact": "22947353/612060",
+              "expected_cost": 37.49199915041009,
+              "expected_profit": 18.50800084958991
+            }
+          ]
+        },
+        "Q2-2": {
+          "policy_count": 16,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  1,
+                  1
+                ],
+                "semi_tests": [],
+                "semi_dismantle": [],
+                "final_test": 0,
+                "final_dismantle": 1
+              },
+              "cost_exact": "1771/40",
+              "expected_cost": 44.275,
+              "expected_profit": 11.725
+            }
+          ]
+        },
+        "Q2-3": {
+          "policy_count": 16,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  1,
+                  0
+                ],
+                "semi_tests": [],
+                "semi_dismantle": [],
+                "final_test": 1,
+                "final_dismantle": 1
+              },
+              "cost_exact": "12189211/306030",
+              "expected_cost": 39.830117962291276,
+              "expected_profit": 16.16988203770872
+            }
+          ]
+        },
+        "Q2-4": {
+          "policy_count": 16,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  1,
+                  1
+                ],
+                "semi_tests": [],
+                "semi_dismantle": [],
+                "final_test": 1,
+                "final_dismantle": 1
+              },
+              "cost_exact": "6637/160",
+              "expected_cost": 41.48125,
+              "expected_profit": 14.51875
+            }
+          ]
+        },
+        "Q2-5": {
+          "policy_count": 16,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  0,
+                  1
+                ],
+                "semi_tests": [],
+                "semi_dismantle": [],
+                "final_test": 0,
+                "final_dismantle": 1
+              },
+              "cost_exact": "13540015/326432",
+              "expected_cost": 41.478822541907654,
+              "expected_profit": 14.521177458092344
+            }
+          ]
+        },
+        "Q2-6": {
+          "policy_count": 16,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  0,
+                  0
+                ],
+                "semi_tests": [],
+                "semi_dismantle": [],
+                "final_test": 0,
+                "final_dismantle": 0
+              },
+              "cost_exact": "6315601/180500",
+              "expected_cost": 34.98947922437673,
+              "expected_profit": 21.01052077562327
+            }
+          ]
+        },
+        "Q3": {
+          "policy_count": 65536,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "semi_tests": [
+                  1,
+                  1,
+                  1
+                ],
+                "semi_dismantle": [
+                  1,
+                  1,
+                  1
+                ],
+                "final_test": 0,
+                "final_dismantle": 1
+              },
+              "cost_exact": "8449/60",
+              "expected_cost": 140.81666666666666,
+              "expected_profit": 59.18333333333333
+            }
+          ]
+        }
+      },
+      "mc_policy_comparisons": [
+        {
+          "problem": "Q2-1",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        },
+        {
+          "problem": "Q2-2",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        },
+        {
+          "problem": "Q2-3",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        },
+        {
+          "problem": "Q2-4",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        },
+        {
+          "problem": "Q2-5",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        },
+        {
+          "problem": "Q2-6",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        },
+        {
+          "problem": "Q3",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        }
+      ],
+      "verification_passed": true,
+      "result_sha256": "b53e91642f2b506a49a3fa2c64241aabebcab4f98e09cf639759aec8ca50dd6a",
+      "verification_sha256": "1f07c3f2e780d4f92b7029950b9e0df58df0ffce5f6af662fe1f934ae7aa4a52"
+    },
+    {
+      "label": "illustrative_n20_Jeffreys",
+      "input_samples_sha256": "19ff510eb3b2625527b33da2a81c256280515ddcb8d75d99d9033630e3e26a0f",
+      "results": {
+        "Q2-1": {
+          "policy_count": 16,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  1,
+                  0
+                ],
+                "semi_tests": [],
+                "semi_dismantle": [],
+                "final_test": 0,
+                "final_dismantle": 1
+              },
+              "cost_exact": "22921/588",
+              "expected_cost": 38.9812925170068,
+              "expected_profit": 17.018707482993197
+            }
+          ]
+        },
+        "Q2-2": {
+          "policy_count": 16,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  1,
+                  1
+                ],
+                "semi_tests": [],
+                "semi_dismantle": [],
+                "final_test": 0,
+                "final_dismantle": 1
+              },
+              "cost_exact": "1419/31",
+              "expected_cost": 45.774193548387096,
+              "expected_profit": 10.225806451612904
+            }
+          ]
+        },
+        "Q2-3": {
+          "policy_count": 16,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  1,
+                  0
+                ],
+                "semi_tests": [],
+                "semi_dismantle": [],
+                "final_test": 1,
+                "final_dismantle": 1
+              },
+              "cost_exact": "24223/588",
+              "expected_cost": 41.195578231292515,
+              "expected_profit": 14.804421768707483
+            }
+          ]
+        },
+        "Q2-4": {
+          "policy_count": 16,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  1,
+                  1
+                ],
+                "semi_tests": [],
+                "semi_dismantle": [],
+                "final_test": 1,
+                "final_dismantle": 1
+              },
+              "cost_exact": "1325/31",
+              "expected_cost": 42.74193548387097,
+              "expected_profit": 13.258064516129032
+            }
+          ]
+        },
+        "Q2-5": {
+          "policy_count": 16,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  0,
+                  1
+                ],
+                "semi_tests": [],
+                "semi_dismantle": [],
+                "final_test": 1,
+                "final_dismantle": 1
+              },
+              "cost_exact": "1187369/27342",
+              "expected_cost": 43.42655987126033,
+              "expected_profit": 12.573440128739668
+            }
+          ]
+        },
+        "Q2-6": {
+          "policy_count": 16,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  1,
+                  0
+                ],
+                "semi_tests": [],
+                "semi_dismantle": [],
+                "final_test": 0,
+                "final_dismantle": 0
+              },
+              "cost_exact": "1890270/50653",
+              "expected_cost": 37.31802657295718,
+              "expected_profit": 18.68197342704282
+            }
+          ]
+        },
+        "Q3": {
+          "policy_count": 65536,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "semi_tests": [
+                  1,
+                  1,
+                  1
+                ],
+                "semi_dismantle": [
+                  1,
+                  1,
+                  1
+                ],
+                "final_test": 0,
+                "final_dismantle": 1
+              },
+              "cost_exact": "1020/7",
+              "expected_cost": 145.71428571428572,
+              "expected_profit": 54.285714285714285
+            }
+          ]
+        }
+      },
+      "mc_policy_comparisons": [
+        {
+          "problem": "Q2-1",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        },
+        {
+          "problem": "Q2-2",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        },
+        {
+          "problem": "Q2-3",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        },
+        {
+          "problem": "Q2-4",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        },
+        {
+          "problem": "Q2-5",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        },
+        {
+          "problem": "Q2-6",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        },
+        {
+          "problem": "Q3",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        }
+      ],
+      "verification_passed": true,
+      "result_sha256": "29dc39f3d46473f88d0c4dc225daccba068f19bf4d96fe8fb5e3581733d60834",
+      "verification_sha256": "4ae82528fe4e164454e0770e80eca08b0d612e067dd3f150259d76e7c3be2696"
+    },
+    {
+      "label": "illustrative_n200_Jeffreys",
+      "input_samples_sha256": "b82689451fc02ce6d61b9cf50b65ea4ae61b7c73eec0788215350b261c45ba4f",
+      "results": {
+        "Q2-1": {
+          "policy_count": 16,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  1,
+                  0
+                ],
+                "semi_tests": [],
+                "semi_dismantle": [],
+                "final_test": 0,
+                "final_dismantle": 1
+              },
+              "cost_exact": "722096711/19338612",
+              "expected_cost": 37.339634871416834,
+              "expected_profit": 18.66036512858317
+            }
+          ]
+        },
+        "Q2-2": {
+          "policy_count": 16,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  1,
+                  1
+                ],
+                "semi_tests": [],
+                "semi_dismantle": [],
+                "final_test": 0,
+                "final_dismantle": 1
+              },
+              "cost_exact": "1281/29",
+              "expected_cost": 44.172413793103445,
+              "expected_profit": 11.827586206896552
+            }
+          ]
+        },
+        "Q2-3": {
+          "policy_count": 16,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  1,
+                  0
+                ],
+                "semi_tests": [],
+                "semi_dismantle": [],
+                "final_test": 1,
+                "final_dismantle": 1
+              },
+              "cost_exact": "767569745/19338612",
+              "expected_cost": 39.69104633776199,
+              "expected_profit": 16.308953662238014
+            }
+          ]
+        },
+        "Q2-4": {
+          "policy_count": 16,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  1,
+                  1
+                ],
+                "semi_tests": [],
+                "semi_dismantle": [],
+                "final_test": 1,
+                "final_dismantle": 1
+              },
+              "cost_exact": "13205/319",
+              "expected_cost": 41.39498432601881,
+              "expected_profit": 14.60501567398119
+            }
+          ]
+        },
+        "Q2-5": {
+          "policy_count": 16,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  0,
+                  1
+                ],
+                "semi_tests": [],
+                "semi_dismantle": [],
+                "final_test": 0,
+                "final_dismantle": 1
+              },
+              "cost_exact": "382019504587/9253525842",
+              "expected_cost": 41.28366971788049,
+              "expected_profit": 14.716330282119506
+            }
+          ]
+        },
+        "Q2-6": {
+          "policy_count": 16,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  0,
+                  0
+                ],
+                "semi_tests": [],
+                "semi_dismantle": [],
+                "final_test": 0,
+                "final_dismantle": 0
+              },
+              "cost_exact": "1887600610/54439939",
+              "expected_cost": 34.67308458960617,
+              "expected_profit": 21.326915410393827
+            }
+          ]
+        },
+        "Q3": {
+          "policy_count": 65536,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "semi_tests": [
+                  1,
+                  1,
+                  1
+                ],
+                "semi_dismantle": [
+                  1,
+                  1,
+                  1
+                ],
+                "final_test": 0,
+                "final_dismantle": 1
+              },
+              "cost_exact": "50388/359",
+              "expected_cost": 140.35654596100278,
+              "expected_profit": 59.64345403899721
+            }
+          ]
+        }
+      },
+      "mc_policy_comparisons": [
+        {
+          "problem": "Q2-1",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        },
+        {
+          "problem": "Q2-2",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        },
+        {
+          "problem": "Q2-3",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        },
+        {
+          "problem": "Q2-4",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        },
+        {
+          "problem": "Q2-5",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        },
+        {
+          "problem": "Q2-6",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        },
+        {
+          "problem": "Q3",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        }
+      ],
+      "verification_passed": true,
+      "result_sha256": "c73867228cc1ad2b68680d8e8d8aca309997d1aaf198e3afe2fb32a5ddb3cdf8",
+      "verification_sha256": "890170023ed10e21df9e264cb8e7976404ae857a7b3d03fe211066736ee16c14"
+    },
+    {
+      "label": "illustrative_n20_mean_0.1_strength_20",
+      "input_samples_sha256": "10499a44cfd8617f98d9742d29bbeba00995caa3e63ccf5899a2df49482a20d8",
+      "results": {
+        "Q2-1": {
+          "policy_count": 16,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  1,
+                  0
+                ],
+                "semi_tests": [],
+                "semi_dismantle": [],
+                "final_test": 0,
+                "final_dismantle": 1
+              },
+              "cost_exact": "26109/700",
+              "expected_cost": 37.29857142857143,
+              "expected_profit": 18.701428571428572
+            }
+          ]
+        },
+        "Q2-2": {
+          "policy_count": 16,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  1,
+                  1
+                ],
+                "semi_tests": [],
+                "semi_dismantle": [],
+                "final_test": 0,
+                "final_dismantle": 1
+              },
+              "cost_exact": "41",
+              "expected_cost": 41.0,
+              "expected_profit": 15.0
+            }
+          ]
+        },
+        "Q2-3": {
+          "policy_count": 16,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  1,
+                  0
+                ],
+                "semi_tests": [],
+                "semi_dismantle": [],
+                "final_test": 1,
+                "final_dismantle": 1
+              },
+              "cost_exact": "27759/700",
+              "expected_cost": 39.65571428571429,
+              "expected_profit": 16.344285714285714
+            }
+          ]
+        },
+        "Q2-4": {
+          "policy_count": 16,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  1,
+                  1
+                ],
+                "semi_tests": [],
+                "semi_dismantle": [],
+                "final_test": 1,
+                "final_dismantle": 1
+              },
+              "cost_exact": "426/11",
+              "expected_cost": 38.72727272727273,
+              "expected_profit": 17.272727272727273
+            }
+          ]
+        },
+        "Q2-5": {
+          "policy_count": 16,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  0,
+                  1
+                ],
+                "semi_tests": [],
+                "semi_dismantle": [],
+                "final_test": 0,
+                "final_dismantle": 1
+              },
+              "cost_exact": "153407/3850",
+              "expected_cost": 39.84597402597402,
+              "expected_profit": 16.154025974025974
+            }
+          ]
+        },
+        "Q2-6": {
+          "policy_count": 16,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  1,
+                  0
+                ],
+                "semi_tests": [],
+                "semi_dismantle": [],
+                "final_test": 0,
+                "final_dismantle": 0
+              },
+              "cost_exact": "1201/32",
+              "expected_cost": 37.53125,
+              "expected_profit": 18.46875
+            }
+          ]
+        },
+        "Q3": {
+          "policy_count": 65536,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "semi_tests": [
+                  1,
+                  1,
+                  1
+                ],
+                "semi_dismantle": [
+                  1,
+                  1,
+                  1
+                ],
+                "final_test": 0,
+                "final_dismantle": 1
+              },
+              "cost_exact": "4913/35",
+              "expected_cost": 140.37142857142857,
+              "expected_profit": 59.628571428571426
+            }
+          ]
+        }
+      },
+      "mc_policy_comparisons": [
+        {
+          "problem": "Q2-1",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        },
+        {
+          "problem": "Q2-2",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        },
+        {
+          "problem": "Q2-3",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        },
+        {
+          "problem": "Q2-4",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        },
+        {
+          "problem": "Q2-5",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        },
+        {
+          "problem": "Q2-6",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        },
+        {
+          "problem": "Q3",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        }
+      ],
+      "verification_passed": true,
+      "result_sha256": "8e8bbb25894d2f7b2ba9c3a084b66a6d415a6df0dea1cb13d8a57f18d9bed3cf",
+      "verification_sha256": "3ff0d0e36a677b56b736d3c3ecbebe3cd8acc6f38e00d07ef5b6749ebd6ce1cf"
+    },
+    {
+      "label": "illustrative_n200_mean_0.1_strength_20",
+      "input_samples_sha256": "e49f6d0bf41da05127a1ecd1a788b5c1aaf946aaa3636b6cea57bbf6a8ff9f47",
+      "results": {
+        "Q2-1": {
+          "policy_count": 16,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  1,
+                  0
+                ],
+                "semi_tests": [],
+                "semi_dismantle": [],
+                "final_test": 0,
+                "final_dismantle": 1
+              },
+              "cost_exact": "732519/19700",
+              "expected_cost": 37.18370558375634,
+              "expected_profit": 18.816294416243654
+            }
+          ]
+        },
+        "Q2-2": {
+          "policy_count": 16,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  1,
+                  1
+                ],
+                "semi_tests": [],
+                "semi_dismantle": [],
+                "final_test": 0,
+                "final_dismantle": 1
+              },
+              "cost_exact": "2563/59",
+              "expected_cost": 43.440677966101696,
+              "expected_profit": 12.559322033898304
+            }
+          ]
+        },
+        "Q2-3": {
+          "policy_count": 16,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  1,
+                  0
+                ],
+                "semi_tests": [],
+                "semi_dismantle": [],
+                "final_test": 1,
+                "final_dismantle": 1
+              },
+              "cost_exact": "779109/19700",
+              "expected_cost": 39.548680203045684,
+              "expected_profit": 16.451319796954316
+            }
+          ]
+        },
+        "Q2-4": {
+          "policy_count": 16,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  1,
+                  1
+                ],
+                "semi_tests": [],
+                "semi_dismantle": [],
+                "final_test": 1,
+                "final_dismantle": 1
+              },
+              "cost_exact": "2406/59",
+              "expected_cost": 40.779661016949156,
+              "expected_profit": 15.220338983050848
+            }
+          ]
+        },
+        "Q2-5": {
+          "policy_count": 16,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  0,
+                  1
+                ],
+                "semi_tests": [],
+                "semi_dismantle": [],
+                "final_test": 0,
+                "final_dismantle": 1
+              },
+              "cost_exact": "23718913/581150",
+              "expected_cost": 40.813753764088446,
+              "expected_profit": 15.186246235911554
+            }
+          ]
+        },
+        "Q2-6": {
+          "policy_count": 16,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  0,
+                  0
+                ],
+                "semi_tests": [],
+                "semi_dismantle": [],
+                "final_test": 0,
+                "final_dismantle": 0
+              },
+              "cost_exact": "11497556/328509",
+              "expected_cost": 34.99921158933241,
+              "expected_profit": 21.000788410667592
+            }
+          ]
+        },
+        "Q3": {
+          "policy_count": 65536,
+          "best_policies": [
+            {
+              "policy": {
+                "part_tests": [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "semi_tests": [
+                  1,
+                  1,
+                  1
+                ],
+                "semi_dismantle": [
+                  1,
+                  1,
+                  1
+                ],
+                "final_test": 0,
+                "final_dismantle": 1
+              },
+              "cost_exact": "27557/197",
+              "expected_cost": 139.88324873096445,
+              "expected_profit": 60.11675126903553
+            }
+          ]
+        }
+      },
+      "mc_policy_comparisons": [
+        {
+          "problem": "Q2-1",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        },
+        {
+          "problem": "Q2-2",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        },
+        {
+          "problem": "Q2-3",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        },
+        {
+          "problem": "Q2-4",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        },
+        {
+          "problem": "Q2-5",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        },
+        {
+          "problem": "Q2-6",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        },
+        {
+          "problem": "Q3",
+          "old_mc_policy_exact_gap": "0",
+          "old_mc_policy_optimal": true
+        }
+      ],
+      "verification_passed": true,
+      "result_sha256": "c4b19c01beadbf8053ecef84d078e8e79889d905738b45cf925225319931a628",
+      "verification_sha256": "af236c42224aef51d622cba4ede3c314f6c95155d710da67eef2222093e817c8"
+    }
+  ],
+  "protocol_sha256": "0a4af7d92e3cd7395f6a6ec5c872e30b4749549d3ef84dd3b891bbdaf2bc06e5",
+  "scope": "exact conditional posterior mean within the declared policy class, not a guarantee under other priors or adaptive recovery policies"
+}

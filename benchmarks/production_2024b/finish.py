@@ -3,10 +3,12 @@ import argparse
 from pathlib import Path
 from prepare import read_json,write_json,sha256_file
 from prior_sensitivity import checked_report
+from exact_study import checked_report as checked_exact_report
 
 
 def finish(run,visual_note=""):
     prior=checked_report(run)
+    exact=checked_exact_report(run)
     figures=read_json(run/"artifacts/figures/figure_evidence.json")
     if figures["source_result_sha256"]!=sha256_file(run/"artifacts/multistage/result.json") or figures["source_protocol_sha256"]!=sha256_file(run/"artifacts/multistage/protocol.json"):
         raise ValueError("figure evidence predates current numerical sources")
@@ -32,6 +34,8 @@ def finish(run,visual_note=""):
         "q3":{"policy_count":65536,"best_policy":read_json(run/"artifacts/multistage/result.json")["best_policies"][0],"simulated_orders":sum(r["orders"] for r in third["checks"])},
         "q4":{"input_scope":fourth["scope"],"scenarios":fourth["scenarios"]},
         "prior_sensitivity":{"report_sha256":sha256_file(run/"artifacts/prior_sensitivity/report.json"),"results":prior["results"],"scope":prior["scope"]},
+        "exact_posterior":{"summary_sha256":sha256_file(run/"artifacts/exact_posterior/summary.json"),"scenario_count":len(exact["scenarios"]),
+                           "all_previous_selected_policies_optimal":all(c["old_mc_policy_optimal"] for s in exact["scenarios"] for c in s["mc_policy_comparisons"]),"scope":exact["scope"]},
         "figure_evidence":figures,
         "workflow_scope":"source-frozen historical analysis and numerical checks; workflow stage remains READING, no human signoffs fabricated",
         "remaining":["actual Q4 sample counts and sampling-design/priors assessment","complete code appendix and formal AI details","team/reviewer assessment and current contest submission checks"],

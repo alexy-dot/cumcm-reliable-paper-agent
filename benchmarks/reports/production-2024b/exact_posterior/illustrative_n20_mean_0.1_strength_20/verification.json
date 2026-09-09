@@ -1,0 +1,1491 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "problem": "Q2-1",
+      "policy": {
+        "part_tests": [
+          0,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 0
+      },
+      "absolute_error": 4.263256414560601e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-1",
+      "policy": {
+        "part_tests": [
+          0,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 1
+      },
+      "absolute_error": 2.1316282072803006e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-1",
+      "policy": {
+        "part_tests": [
+          0,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 0
+      },
+      "absolute_error": 5.684341886080802e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-1",
+      "policy": {
+        "part_tests": [
+          0,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 1
+      },
+      "absolute_error": 1.4210854715202004e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-1",
+      "policy": {
+        "part_tests": [
+          0,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 0
+      },
+      "absolute_error": 3.552713678800501e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-1",
+      "policy": {
+        "part_tests": [
+          0,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 1
+      },
+      "absolute_error": 7.105427357601002e-15,
+      "passed": true
+    },
+    {
+      "problem": "Q2-1",
+      "policy": {
+        "part_tests": [
+          0,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 0
+      },
+      "absolute_error": 3.552713678800501e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-1",
+      "policy": {
+        "part_tests": [
+          0,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 1
+      },
+      "absolute_error": 0.0,
+      "passed": true
+    },
+    {
+      "problem": "Q2-1",
+      "policy": {
+        "part_tests": [
+          1,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 0
+      },
+      "absolute_error": 2.842170943040401e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-1",
+      "policy": {
+        "part_tests": [
+          1,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 1
+      },
+      "absolute_error": 2.1316282072803006e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-1",
+      "policy": {
+        "part_tests": [
+          1,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 0
+      },
+      "absolute_error": 3.552713678800501e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-1",
+      "policy": {
+        "part_tests": [
+          1,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 1
+      },
+      "absolute_error": 2.1316282072803006e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-1",
+      "policy": {
+        "part_tests": [
+          1,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 0
+      },
+      "absolute_error": 2.842170943040401e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-1",
+      "policy": {
+        "part_tests": [
+          1,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 1
+      },
+      "absolute_error": 1.4210854715202004e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-1",
+      "policy": {
+        "part_tests": [
+          1,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 0
+      },
+      "absolute_error": 1.4210854715202004e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-1",
+      "policy": {
+        "part_tests": [
+          1,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 1
+      },
+      "absolute_error": 1.4210854715202004e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-2",
+      "policy": {
+        "part_tests": [
+          0,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 0
+      },
+      "absolute_error": 1.4210854715202004e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-2",
+      "policy": {
+        "part_tests": [
+          0,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 1
+      },
+      "absolute_error": 1.4210854715202004e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-2",
+      "policy": {
+        "part_tests": [
+          0,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 0
+      },
+      "absolute_error": 2.1316282072803006e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-2",
+      "policy": {
+        "part_tests": [
+          0,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 1
+      },
+      "absolute_error": 0.0,
+      "passed": true
+    },
+    {
+      "problem": "Q2-2",
+      "policy": {
+        "part_tests": [
+          0,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 0
+      },
+      "absolute_error": 7.105427357601002e-15,
+      "passed": true
+    },
+    {
+      "problem": "Q2-2",
+      "policy": {
+        "part_tests": [
+          0,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 1
+      },
+      "absolute_error": 7.105427357601002e-15,
+      "passed": true
+    },
+    {
+      "problem": "Q2-2",
+      "policy": {
+        "part_tests": [
+          0,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 0
+      },
+      "absolute_error": 7.105427357601002e-15,
+      "passed": true
+    },
+    {
+      "problem": "Q2-2",
+      "policy": {
+        "part_tests": [
+          0,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 1
+      },
+      "absolute_error": 1.4210854715202004e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-2",
+      "policy": {
+        "part_tests": [
+          1,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 0
+      },
+      "absolute_error": 7.105427357601002e-15,
+      "passed": true
+    },
+    {
+      "problem": "Q2-2",
+      "policy": {
+        "part_tests": [
+          1,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 1
+      },
+      "absolute_error": 7.105427357601002e-15,
+      "passed": true
+    },
+    {
+      "problem": "Q2-2",
+      "policy": {
+        "part_tests": [
+          1,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 0
+      },
+      "absolute_error": 7.105427357601002e-15,
+      "passed": true
+    },
+    {
+      "problem": "Q2-2",
+      "policy": {
+        "part_tests": [
+          1,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 1
+      },
+      "absolute_error": 1.4210854715202004e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-2",
+      "policy": {
+        "part_tests": [
+          1,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 0
+      },
+      "absolute_error": 1.4210854715202004e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-2",
+      "policy": {
+        "part_tests": [
+          1,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 1
+      },
+      "absolute_error": 2.842170943040401e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-2",
+      "policy": {
+        "part_tests": [
+          1,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 0
+      },
+      "absolute_error": 1.4210854715202004e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-2",
+      "policy": {
+        "part_tests": [
+          1,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 1
+      },
+      "absolute_error": 2.842170943040401e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-3",
+      "policy": {
+        "part_tests": [
+          0,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 0
+      },
+      "absolute_error": 7.815970093361102e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-3",
+      "policy": {
+        "part_tests": [
+          0,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 1
+      },
+      "absolute_error": 5.684341886080802e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-3",
+      "policy": {
+        "part_tests": [
+          0,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 0
+      },
+      "absolute_error": 5.684341886080802e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-3",
+      "policy": {
+        "part_tests": [
+          0,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 1
+      },
+      "absolute_error": 1.4210854715202004e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-3",
+      "policy": {
+        "part_tests": [
+          0,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 0
+      },
+      "absolute_error": 5.684341886080802e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-3",
+      "policy": {
+        "part_tests": [
+          0,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 1
+      },
+      "absolute_error": 4.263256414560601e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-3",
+      "policy": {
+        "part_tests": [
+          0,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 0
+      },
+      "absolute_error": 3.552713678800501e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-3",
+      "policy": {
+        "part_tests": [
+          0,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 1
+      },
+      "absolute_error": 0.0,
+      "passed": true
+    },
+    {
+      "problem": "Q2-3",
+      "policy": {
+        "part_tests": [
+          1,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 0
+      },
+      "absolute_error": 4.973799150320701e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-3",
+      "policy": {
+        "part_tests": [
+          1,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 1
+      },
+      "absolute_error": 4.263256414560601e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-3",
+      "policy": {
+        "part_tests": [
+          1,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 0
+      },
+      "absolute_error": 3.552713678800501e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-3",
+      "policy": {
+        "part_tests": [
+          1,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 1
+      },
+      "absolute_error": 2.1316282072803006e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-3",
+      "policy": {
+        "part_tests": [
+          1,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 0
+      },
+      "absolute_error": 4.263256414560601e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-3",
+      "policy": {
+        "part_tests": [
+          1,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 1
+      },
+      "absolute_error": 1.4210854715202004e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-3",
+      "policy": {
+        "part_tests": [
+          1,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 0
+      },
+      "absolute_error": 1.4210854715202004e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-3",
+      "policy": {
+        "part_tests": [
+          1,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 1
+      },
+      "absolute_error": 1.4210854715202004e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-4",
+      "policy": {
+        "part_tests": [
+          0,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 0
+      },
+      "absolute_error": 1.4210854715202004e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-4",
+      "policy": {
+        "part_tests": [
+          0,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 1
+      },
+      "absolute_error": 7.105427357601002e-15,
+      "passed": true
+    },
+    {
+      "problem": "Q2-4",
+      "policy": {
+        "part_tests": [
+          0,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 0
+      },
+      "absolute_error": 7.105427357601002e-15,
+      "passed": true
+    },
+    {
+      "problem": "Q2-4",
+      "policy": {
+        "part_tests": [
+          0,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 1
+      },
+      "absolute_error": 1.4210854715202004e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-4",
+      "policy": {
+        "part_tests": [
+          0,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 0
+      },
+      "absolute_error": 7.105427357601002e-15,
+      "passed": true
+    },
+    {
+      "problem": "Q2-4",
+      "policy": {
+        "part_tests": [
+          0,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 1
+      },
+      "absolute_error": 7.105427357601002e-15,
+      "passed": true
+    },
+    {
+      "problem": "Q2-4",
+      "policy": {
+        "part_tests": [
+          0,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 0
+      },
+      "absolute_error": 2.1316282072803006e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-4",
+      "policy": {
+        "part_tests": [
+          0,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 1
+      },
+      "absolute_error": 1.4210854715202004e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-4",
+      "policy": {
+        "part_tests": [
+          1,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 0
+      },
+      "absolute_error": 0.0,
+      "passed": true
+    },
+    {
+      "problem": "Q2-4",
+      "policy": {
+        "part_tests": [
+          1,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 1
+      },
+      "absolute_error": 0.0,
+      "passed": true
+    },
+    {
+      "problem": "Q2-4",
+      "policy": {
+        "part_tests": [
+          1,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 0
+      },
+      "absolute_error": 7.105427357601002e-15,
+      "passed": true
+    },
+    {
+      "problem": "Q2-4",
+      "policy": {
+        "part_tests": [
+          1,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 1
+      },
+      "absolute_error": 1.4210854715202004e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-4",
+      "policy": {
+        "part_tests": [
+          1,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 0
+      },
+      "absolute_error": 7.105427357601002e-15,
+      "passed": true
+    },
+    {
+      "problem": "Q2-4",
+      "policy": {
+        "part_tests": [
+          1,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 1
+      },
+      "absolute_error": 7.105427357601002e-15,
+      "passed": true
+    },
+    {
+      "problem": "Q2-4",
+      "policy": {
+        "part_tests": [
+          1,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 0
+      },
+      "absolute_error": 7.105427357601002e-15,
+      "passed": true
+    },
+    {
+      "problem": "Q2-4",
+      "policy": {
+        "part_tests": [
+          1,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 1
+      },
+      "absolute_error": 1.4210854715202004e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-5",
+      "policy": {
+        "part_tests": [
+          0,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 0
+      },
+      "absolute_error": 3.552713678800501e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-5",
+      "policy": {
+        "part_tests": [
+          0,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 1
+      },
+      "absolute_error": 2.842170943040401e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-5",
+      "policy": {
+        "part_tests": [
+          0,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 0
+      },
+      "absolute_error": 3.552713678800501e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-5",
+      "policy": {
+        "part_tests": [
+          0,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 1
+      },
+      "absolute_error": 2.1316282072803006e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-5",
+      "policy": {
+        "part_tests": [
+          0,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 0
+      },
+      "absolute_error": 4.973799150320701e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-5",
+      "policy": {
+        "part_tests": [
+          0,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 1
+      },
+      "absolute_error": 3.552713678800501e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-5",
+      "policy": {
+        "part_tests": [
+          0,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 0
+      },
+      "absolute_error": 4.263256414560601e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-5",
+      "policy": {
+        "part_tests": [
+          0,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 1
+      },
+      "absolute_error": 2.842170943040401e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-5",
+      "policy": {
+        "part_tests": [
+          1,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 0
+      },
+      "absolute_error": 3.552713678800501e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-5",
+      "policy": {
+        "part_tests": [
+          1,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 1
+      },
+      "absolute_error": 0.0,
+      "passed": true
+    },
+    {
+      "problem": "Q2-5",
+      "policy": {
+        "part_tests": [
+          1,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 0
+      },
+      "absolute_error": 3.552713678800501e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-5",
+      "policy": {
+        "part_tests": [
+          1,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 1
+      },
+      "absolute_error": 7.105427357601002e-15,
+      "passed": true
+    },
+    {
+      "problem": "Q2-5",
+      "policy": {
+        "part_tests": [
+          1,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 0
+      },
+      "absolute_error": 2.1316282072803006e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-5",
+      "policy": {
+        "part_tests": [
+          1,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 1
+      },
+      "absolute_error": 1.4210854715202004e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-5",
+      "policy": {
+        "part_tests": [
+          1,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 0
+      },
+      "absolute_error": 2.1316282072803006e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-5",
+      "policy": {
+        "part_tests": [
+          1,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 1
+      },
+      "absolute_error": 1.4210854715202004e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-6",
+      "policy": {
+        "part_tests": [
+          0,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 0
+      },
+      "absolute_error": 2.842170943040401e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-6",
+      "policy": {
+        "part_tests": [
+          0,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 1
+      },
+      "absolute_error": 4.973799150320701e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-6",
+      "policy": {
+        "part_tests": [
+          0,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 0
+      },
+      "absolute_error": 2.1316282072803006e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-6",
+      "policy": {
+        "part_tests": [
+          0,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 1
+      },
+      "absolute_error": 4.973799150320701e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-6",
+      "policy": {
+        "part_tests": [
+          0,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 0
+      },
+      "absolute_error": 2.842170943040401e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-6",
+      "policy": {
+        "part_tests": [
+          0,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 1
+      },
+      "absolute_error": 5.684341886080802e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-6",
+      "policy": {
+        "part_tests": [
+          0,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 0
+      },
+      "absolute_error": 3.552713678800501e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-6",
+      "policy": {
+        "part_tests": [
+          0,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 1
+      },
+      "absolute_error": 4.263256414560601e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-6",
+      "policy": {
+        "part_tests": [
+          1,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 0
+      },
+      "absolute_error": 2.842170943040401e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-6",
+      "policy": {
+        "part_tests": [
+          1,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 1
+      },
+      "absolute_error": 2.842170943040401e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-6",
+      "policy": {
+        "part_tests": [
+          1,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 0
+      },
+      "absolute_error": 3.552713678800501e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-6",
+      "policy": {
+        "part_tests": [
+          1,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 1
+      },
+      "absolute_error": 4.973799150320701e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-6",
+      "policy": {
+        "part_tests": [
+          1,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 0
+      },
+      "absolute_error": 3.552713678800501e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-6",
+      "policy": {
+        "part_tests": [
+          1,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 1
+      },
+      "absolute_error": 4.973799150320701e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-6",
+      "policy": {
+        "part_tests": [
+          1,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 0
+      },
+      "absolute_error": 2.842170943040401e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q2-6",
+      "policy": {
+        "part_tests": [
+          1,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 1
+      },
+      "absolute_error": 2.1316282072803006e-14,
+      "passed": true
+    },
+    {
+      "problem": "Q3",
+      "method": "separate all-upstream-tested analytic Beta expectation",
+      "absolute_error": 0.0,
+      "passed": true
+    }
+  ],
+  "mc_policy_comparisons": [
+    {
+      "problem": "Q2-1",
+      "old_mc_policy_exact_gap": "0",
+      "old_mc_policy_optimal": true
+    },
+    {
+      "problem": "Q2-2",
+      "old_mc_policy_exact_gap": "0",
+      "old_mc_policy_optimal": true
+    },
+    {
+      "problem": "Q2-3",
+      "old_mc_policy_exact_gap": "0",
+      "old_mc_policy_optimal": true
+    },
+    {
+      "problem": "Q2-4",
+      "old_mc_policy_exact_gap": "0",
+      "old_mc_policy_optimal": true
+    },
+    {
+      "problem": "Q2-5",
+      "old_mc_policy_exact_gap": "0",
+      "old_mc_policy_optimal": true
+    },
+    {
+      "problem": "Q2-6",
+      "old_mc_policy_exact_gap": "0",
+      "old_mc_policy_optimal": true
+    },
+    {
+      "problem": "Q3",
+      "old_mc_policy_exact_gap": "0",
+      "old_mc_policy_optimal": true
+    }
+  ],
+  "exact_result_sha256": "8e8bbb25894d2f7b2ba9c3a084b66a6d415a6df0dea1cb13d8a57f18d9bed3cf",
+  "old_mc_result_sha256": "c1a60ed6251546a5276f12fc9e265f4f1ea143102f107382e99c8113e8af70d7",
+  "scope": "all Q2 policy costs checked by deterministic integration, selected Q3 cost by a separate analytic formula; general recursion additionally checked on mixed two-layer policies"
+}

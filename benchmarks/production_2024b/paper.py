@@ -4,6 +4,7 @@ import re
 from pathlib import Path
 from prepare import read_json,write_json,sha256_file
 from prior_sensitivity import checked_report
+from exact_study import checked_report as checked_exact_report
 
 
 def typography(text):
@@ -42,6 +43,7 @@ def blocks(markdown):
 
 def compose(run):
     priors=checked_report(run)
+    exact=checked_exact_report(run)
     q2=read_json(run/"artifacts/rework.json");q3=read_json(run/"artifacts/multistage/result.json");q4=read_json(run/"artifacts/q4_summary.json")
     verification=read_json(run/"artifacts/verification.json");multi=read_json(run/"artifacts/multistage/verification.json")
     figures=read_json(run/"artifacts/figures/figure_evidence.json")
@@ -62,7 +64,7 @@ def compose(run):
         {"lead":"针对问题一：","text":"用双向混合似然比构造序贯接收与拒收规则，在独立Bernoulli假设下分别控制10%误接与5%误拒上界；最多检测300件仍不触发时保留未决结果。名义次品率10%时，误拒概率约2.75%，未决概率约90.57%，不以强制判定掩盖边界附近的信息不足。"},
         {"lead":"针对问题二：","text":"以零件的真实质量和已检测知识构造马尔可夫成本方程，精确比较64类声明策略，识别14类不能终止的策略。六种情形各给出最佳可终止方案，再以每种5万个完整订单的逐件仿真核对。"},
         {"lead":"针对问题三：","text":f"在八零件组装树上递推取得成本、缺陷概率与条件修复成本，精确比较65,536类策略。最优代表检测全部零件和半成品、各层拆解，但不检最终成品，期望成本{best['expected_cost']:.4f}元、利润{best['profit']:.4f}元。另以20万个订单的对象树仿真核对最优方案及基线。"},
-        {"lead":"针对问题四：","text":"提供按各阶段实际样本数与次品数计算的接口，以独立Beta先验传播质量参数不确定性。原题未给计数，故另设并明确标注20件与200件示例。小样本情景中第二问的三种情况改变检测策略；第三问所选方案的解析后验成本分别为150.1667元和140.8167元。"},
+        {"lead":"针对问题四：","text":"提供按各阶段样本数与次品数计算的接口，用独立Beta先验传播不确定性，并以有理数后验矩递推精确比较声明策略。原题未给计数，故明确标注20件与200件示例。小样本情景中第二问三种情况改变策略；第三问所选方案的后验成本分别为150.1667元和140.8167元。"},
         text("最优性限定所枚举策略类；第四问示例不是实际观测。新样本的代表性、成本口径和检测条件需人工确认，结果不等于现场验证。"),
         text("关键词：序贯检验；马尔可夫成本；条件期望；返工决策；贝叶斯决策")])
     section("一、问题重述",[],page=True)
@@ -144,6 +146,19 @@ def compose(run):
             for r in priors["results"] if r["problem"] in ("Q2-1","Q2-5","Q3")]},
         text("表中改变指相对于相同样本量、原均匀先验Beta(1,1)的策略。20件时，情形1在两个替代先验下改变，情形5在Beta(2,18)下改变；200件时，本次比较中全部策略保持一致。第三问策略虽不变，预测成本仍随先验变化，不能把不同先验的成本差理解为同一真实工厂的实际节省。"),
         text("四组先验/样本量情景的第二问推荐均由确定性积分核对其在16类策略中的最低期望成本，第三问已选策略的成本由解析Beta矩核对。敏感性分析仅覆盖这些明确选择，不保证对所有先验稳健；真实使用仍需先验和抽样设计评估。")],2)
+    section("6.2 后验期望成本的精确积分与策略比较",[
+        text("当前模型采用独立阶段先验与无共享子件的组装树，后验期望成本可以进一步解析递推，无须依赖有限组参数样本来排序。对每个子树保留以下五个后验矩，其中g=1−b为给定质量参数下该子树输出合格的概率，C为其取得成本，W=bR为缺陷加权修复成本："),
+        {"equation":r"\overline C=\mathbb E[C],\quad G=\mathbb E[g],\quad U=\mathbb E[g^{-1}],\quad H=\mathbb E[C/g],\quad\overline W=\mathbb E[bR]."},
+        text(r"跨子树的参数独立，但子树内的$C$与$g$不先假定独立，故显式保留联合矩$H$。对子件集合定义如下乘积与交叉项；组装自身令$r=\mathbb E[1-p]$、$v=\mathbb E[(1-p)^{-1}]$："),
+        {"equation":r"G_* =\prod_jG_j,\qquad U_* =\prod_jU_j,\qquad H_* =\sum_jH_j\prod_{k\ne j}U_k."},
+        text(r"未检测输出节点的四个基本矩依次为$\sum_j\overline C_j+a$、$rG_*$、$vU_*$与$v(H_*+aU_*)$。缺陷加权修复矩取决于报废或拆解，其中$u$为未知直接子件的检测费用之和："),
+        {"equation":r"\begin{aligned}\overline W_{\rm scrap}&=v[H_*+(a+t)U_*]-(\sum_j\overline C_j+a+t),\\\overline W_{\rm recover}&=\sum_j\overline W_j+u(1-rG_*)+(a+t+d)(v-G_*).\end{aligned}"},
+        text(r"若节点输出检测至合格，取得成本变为$\sum_j\overline C_j+a+t+\overline W$，而输出合格概率为1、加权修复成本为0。由此逐层递推到成品。成品检测开关$z$、未检调换损失$\ell=(1-z)L$下，两种处理方式的后验期望交付成本为："),
+        {"equation":r"\mathbb E[C_{\rm order,scrap}]=v[H_*+(a+zt+\ell)U_*]-\ell,"},
+        {"equation":r"\begin{aligned}\mathbb E[C_{\rm order,recover}]={}&\sum_j\overline C_j+a+zt+\sum_j\overline W_j\\&+u(1-rG_*)+(a+zt+d+\ell)(v-G_*).\end{aligned}"},
+        text("乘积分解只用于原先独立的子树参数，不用于假定父节点失败后的子件质量仍独立。Beta后验的r与v均有解析式；将声明的十进制先验参数与整数计数转成有理数后，成本比较没有随机积分误差。该路径只需各阶段β>1，因此也可处理1<β≤2的有限均值情形，不输出不存在的方差或蒙特卡罗标准误。"),
+        text("对均匀、Jeffreys及Beta(2,18)三种先验与20/200件两种示例，共六个情景重新精确枚举：每个情景的第二问六种情况各16类有效策略，第三问65,536类策略。此前随机搜索选中的全部策略都达到相应精确最小后验期望成本，原推荐无需改动。现在的最优性证据直接来自完整声明策略类的有理数比较，而不是仅比较随机搜索保留的少数候选。"),
+        text("独立验证对每个情景的96个第二问策略成本作确定性积分比较，并对第三问已选策略使用另一解析式核对，共582项数值比较通过；另以混合检测和拆解的两层模型作四维积分测试。此精确性依赖模型结构、独立先验和所枚举策略，不延伸到相关质量参数、共享库存或自适应生产策略。")],2)
     section("七、模型评价与改进",[
         text("模型直接利用题意中的条件次品率、拆解不损伤、免费调换等约束，保留质量身份，避免无穷返工被有限截断掩盖。层级条件期望将复杂内部结构压缩为可逐层解释的量，且可用独立对象仿真验证。"),
         text("主要限制是独立质量与完美检测假设、所选回收策略类，以及缺失的库存和时间成本。序贯检验在阈值附近可能长期未决，贝叶斯决策也依赖先验和抽样条件。实际应用应先核对检测性能和抽样设计，再决定是否扩展状态与目标。")])
