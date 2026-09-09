@@ -20,12 +20,20 @@ def regression_metrics(actual, prediction, groups):
             "r2_descriptive": float(1-error.sum()/total) if total>0 else None}
 
 
-def group_splits(groups, folds=5):
+def group_splits(groups, folds=5, seed=None):
     groups=np.asarray(groups)
     if groups.ndim!=1 or any(g is None or not str(g).strip() or (isinstance(g,(int,float,np.number)) and not np.isfinite(g)) for g in groups):
         raise ValueError("independent group IDs must be present and finite")
     if len(np.unique(groups))<folds or folds<2:
         raise ValueError("fold count must be between 2 and independent group count")
+    if seed is not None:
+        shuffled=np.random.default_rng(seed).permutation(np.unique(groups))
+        result=[]
+        for held_groups in np.array_split(shuffled,folds):
+            test=np.flatnonzero(np.isin(groups,held_groups))
+            train=np.flatnonzero(~np.isin(groups,held_groups))
+            result.append((train,test))
+        return result
     return [(train,test) for train,test in GroupKFold(folds).split(np.zeros((len(groups),1)),groups=groups)]
 
 

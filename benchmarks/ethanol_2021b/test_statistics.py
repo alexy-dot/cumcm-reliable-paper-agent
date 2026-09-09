@@ -9,6 +9,28 @@ from prepare import parse_formula
 
 
 class GroupedStatisticsTest(unittest.TestCase):
+    def test_seeded_group_partitions_are_reproducible_and_do_not_split_groups(self):
+        groups=np.repeat(np.arange(11),[1,2,3,4,5,6,1,2,3,4,5])
+        first=group_splits(groups,5,seed=17);again=group_splits(groups,5,seed=17)
+        other=group_splits(groups,5,seed=43)
+        validate_splits(groups,first)
+        for (a,b),(c,d) in zip(first,again):
+            np.testing.assert_array_equal(a,c);np.testing.assert_array_equal(b,d)
+        self.assertFalse(all(np.array_equal(a[1],b[1]) for a,b in zip(first,other)))
+        self.assertEqual(sorted(len(set(groups[test])) for _,test in first),[2,2,2,2,3])
+
+    def test_split_summary_retains_reversals_instead_of_averaging_predictions(self):
+        from split_sensitivity import summarize
+        repetitions=[]
+        for seed,(ridge,forest) in enumerate([(2.,4.),(5.,3.),(3.,6.)]):
+            repetitions.append({"seed":seed,"targets":{"y":{"models":{
+                name:{"metrics":{"group_rmse":value}} for name,value in
+                {"temperature_only":4.,"ridge":ridge,"random_forest":forest,"nested_selection":3.}.items()}}}})
+        result=summarize(repetitions)["y"]
+        self.assertEqual(result["fixed_family_winners"],["ridge","random_forest","ridge"])
+        self.assertEqual(result["families"]["ridge"]["per_split"],[2.,5.,3.])
+        self.assertEqual(result["families"]["ridge"]["better_than_temperature_count"],2)
+
     def test_mean_baseline_never_reads_heldout_targets(self):
         groups=np.repeat(np.arange(6),2);x=np.arange(12.)[:,None];y=np.repeat([0.,2,4,6,8,100],2)
         splits=group_splits(groups,3)

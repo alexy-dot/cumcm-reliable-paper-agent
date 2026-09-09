@@ -2,11 +2,13 @@
 import argparse
 from pathlib import Path
 from prepare import read_json,write_json,sha256_file
+from split_sensitivity import checked_report
 
 
 def compose(run):
     data=read_json(run/"artifacts/observations.json");statistics=read_json(run/"artifacts/statistical_results.json")
     decision=read_json(run/"artifacts/decisions.json");check=read_json(run/"artifacts/independent_statistics.json")
+    partitions=checked_report(run)
     if not check["passed"] or check["results_sha256"]!=sha256_file(run/"artifacts/statistical_results.json") or check["decisions_sha256"]!=sha256_file(run/"artifacts/decisions.json"):
         raise ValueError("statistical or decision evidence is stale")
     sections=[];text=lambda s:{"text":s};eq=lambda s:{"equation":s};table=lambda rows:{"table":rows}
@@ -41,7 +43,7 @@ def compose(run):
     section("三、模型假设",[
         text("1．使用附件给定的温度、质量和百分数作为观测值，不人为补造误差分布；空白组合标签仅在原合并单元格范围内继承。"),
         text("2．以催化剂组合为预测验证的分组单位。不同组间未知的批次关联仍可能影响外推，因此组合外验证不等于新实验室或新催化剂批次验证。"),
-        text("3．组内低阶多项式仅作实测温区内的经验关系；它不代表已识别的反应动力学。预测值的0—100物理截断规则提前固定，同时保留未经截断的误差和越界数量。"),
+        text("3．组内低阶多项式仅作实测温区内的经验关系，不代表已识别的反应动力学，其系数与留一误差按原始拟合值报告。组合外预测采用提前固定的0—100物理截断，同时保留未经截断的误差和越界数量。"),
         text("4．匹配对照只控制附件中记载的配方与温度，未观测因素仍可能混杂。A11同时改变HAP与石英砂，不能从这一组单独分离两者作用。"),
         text("5．349℃只是在假定1℃控制分辨率下的可执行示例，不将该分辨率添加为原题条件；重复性阈值须由实验室在新观测前确定。")])
     section("四、符号说明",[table([["符号","含义","单位"],["$T$","反应温度","℃"],["$X,S,Y$","转化率、C4选择性与收率","%"],["$g,G$","组合编号、组合总数","无量纲"],[r"$\mu_g,\sigma_g$","组内温度中心与尺度","℃"],["$a_2,a_1,a_0$","温度多项式系数","响应百分数"],[r"$\alpha$","岭回归惩罚系数","标准化后参数"],["$E_g$","第g组预测均方误差","百分点平方"]])])
@@ -90,13 +92,21 @@ def compose(run):
         text("独立验证按原始行索引检查训练/测试组合不相交，再用标准库math.fsum逐项重算15组模型结果的行等权和组等权RMSE，共30项数值比较，误差均不超过预定的10⁻¹⁰。观测最高收率另从原Excel单元格用Decimal计算确认，未调用主提取函数的收率结果。"),
         text("反例测试将某个外层测试折的响应大幅改变，该折选中的超参数、内层分数及预测必须保持不变；若改变则意味着测试标签参与了训练或选择。整组配方交换也检查质量加和与比例恒等式，禁止把温度这种组内变化特征当作组常量交换。"),
         text("每组只有5—7条温度记录，21个独立组合也不足以支持复杂模型稳定的普遍排名。留出组残差及家族选择结果需要与新实验持续对照。组间预测误差不是同一工况的重复实验噪声，不能拿它直接给A3/400℃与450℃的观测差异计算显著性。")])
+    section("6.1 外层组划分对模型比较的影响",[
+        text("为检验上一套分组划分是否左右模型选择，另外固定种子17、43、97，将21个组合打乱后按近似相等的组合数分为五折。三套完整索引在任何新拟合之前保存，分组只读取组合编号，不读取响应。模型候选、森林种子、内层四折选择和物理截断保持原协议，所有方法在同一套外层划分内比较。"),
+        table([["响应","模型","RMSE中位数","RMSE范围"]]+[[names[target],methods[family],f"{values['median']:.3f}",f"{values['min']:.3f}—{values['max']:.3f}"]
+              for target,output in partitions["summary"].items() for family,values in output["families"].items() if family!="training_mean"]),
+        text("三套新划分中，固定家族的最低误差模型分别为："+"；".join(names[target]+"为"+(methods[output["fixed_family_winners"][0]] if len(set(output["fixed_family_winners"]))==1 else "随划分变化") for target,output in partitions["summary"].items())+"。这里分别比较固定家族和跨家族的自适应选择流程，不把后者的外层成绩当作某个事后选中模型的成绩。"),
+        text(f"但局部两两比较存在翻转：C4选择性上，随机森林在新三套划分中有{partitions['summary']['selectivity_pct']['families']['random_forest']['better_than_temperature_count']}套优于仅温度模型，而原划分中稍差。因此不能把原表的一行差异推广为随机森林必定不如仅温度模型。相较之下，岭回归在本次各套划分中均优于二者，为当前数据的选择性建模提供了更一致的依据。"),
+        text("跨模型嵌套选择也未必胜过一个固定家族：内层验证可能选错家族，外层误差应如实计入这一选择代价。新增三套划分共90项行/组RMSE由标量求和独立核对，同时重新检查训练均值与组隔离；每套仍覆盖全部114条记录。"),
+        text("三次重分组反复使用同一批21个组合，结果彼此相关。表中的范围和优胜次数仅描述划分敏感性，不是置信区间、独立复现实验或获胜概率。这是见过原结果后的补充分析；更强的预测结论仍需独立新组合或新批次实验。")],2)
     section("七、模型评价与改进",[
         text("本方法把逐组描述、组合外预测和工艺决策分开验证，采用训练均值和仅温度基线，能够实际判断配方模型是否带来增量；匹配对照保留温度及其他记录条件一致的比较，避免只列算法重要性排名。对严格不等式显式区分上确界和可执行候选，五次实验预算也涵盖失败后的重新分配。"),
         text("不足在于原实验设计不均衡、缺少批次与老化信息、没有工况重复。最高记录与局部多项式尚不足以证明新的配方最优；岭回归与森林都只是经验模型。下一阶段应按实验设计取得真实新增数据，并用未参与选择的数据检验，而不是继续增加模型名称。")])
     section("八、结论",[text(f"在现有数据中，A3/400℃与A2/325℃分别是全部观测与严格低温域的最佳记录，收率为{observed['yield_pct']:.4f}%与{low['yield_pct']:.4f}%。不同响应适合的经验模型并不相同，随机森林不能统一替代简单模型。A2低温经验曲线的最佳极限位于被排除的350℃边界，实际推荐需先确定设备分辨率并实验确认。五次新增实验优先检验重复性和影响决策的温度区间。")])
     section("AI工具使用声明",[text("本历史题训练稿使用AI工具进行数据核对、建模、代码实现、独立复算和文字排版。参赛团队的实际人工审查及正式AI使用详情未完成，不能将本稿视为已经获准提交的参赛论文。")])
     section("参考文献",[text("[1] 全国大学生数学建模竞赛组委会. 2021年高教社杯全国大学生数学建模竞赛B题：乙醇偶合制备C4烯烃[Z]. 2021. 原题两页、附件1性能数据表及附件2稳定性测试。")])
-    section("附录",[text("项目内回放入口为benchmarks/ethanol_2021b/run_all.py。observations.json保留原始Excel行号，statistical_results.json包含全部折索引、候选分数和逐行预测，decisions.json包含21组局部系数、19对匹配差异与五次实验方案，independent_statistics.json记录独立核对。通用分组回归计算位于Skill的grouped_regression.py。正式提交仍需完整源程序附录、支撑包和真实AI详情。")])
+    section("附录",[text("运行run_all.py可复跑本题。statistical_results.json保存预测与选模明细，decisions.json保存温度关系和实验方案，split_sensitivity目录保存各套分组与结果。通用计算见grouped_regression.py。正式提交仍需完整源码附录、支撑包和真实AI详情。")])
     # Use TeX for the validation tolerance as well as all substantive formulas.
     for s in sections:
         for b in s["blocks"]:

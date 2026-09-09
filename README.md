@@ -121,6 +121,8 @@ python3 benchmarks/casting_2021d/run_all.py \
 
 [计算与边界](benchmarks/reports/ethanol-2021b-summary.json) · [全部外层预测及内层选择](benchmarks/reports/ethanol-2021b/statistical_results.json) · [历史练习错误的复核](benchmarks/reports/ethanol-2021b/legacy_audit.json)
 
+[三套额外分组划分](benchmarks/reports/ethanol-2021b/split_sensitivity/report.json)检验了上述排名的稳定性：固定家族中，转化率/收率仍由森林领先，选择性仍由岭回归领先；但森林与仅温度模型的选择性比较发生翻转。原表是单次划分的结果，重复划分范围不是置信区间或新实验成绩。
+
 这次复核纠正了全样本均值基线、逐列打乱依赖配方变量，以及把349.75℃网格候选当作连续最优的问题。严格`T < 350`时，A2经验曲线只有趋近350℃的上确界。最高已测点仍为A3/400℃的44.7281%；不据此承诺新配方或新批次的化学全局最优。
 
 ```bash

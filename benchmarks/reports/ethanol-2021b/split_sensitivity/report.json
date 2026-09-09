@@ -1,0 +1,207 @@
+{
+  "complete": true,
+  "protocol_sha256": "a868a1ab796bc2656ed6a346af305547b8f74b865a942b57fbf49f053fa388ae",
+  "repetition_sha256": {
+    "seed-17.json": "cb38396294896e6c9fba692d619335cd51869c994be5fd7d14d01e485e465f31",
+    "seed-43.json": "7b5a96645f03b5a1054997d2e7acea9cc75dc3a7b9646dc18ec5ae4157537ff9",
+    "seed-97.json": "2fc7f3d44c1fffcf3c2d2aa7e5eb759d7ca2e02030dfa352b325e8405d792dd7"
+  },
+  "summary": {
+    "conversion_pct": {
+      "families": {
+        "training_mean": {
+          "min": 22.917316112437568,
+          "median": 22.92783893868172,
+          "max": 23.100537818348236,
+          "per_split": [
+            22.917316112437568,
+            23.100537818348236,
+            22.92783893868172
+          ],
+          "better_than_temperature_count": 0
+        },
+        "temperature_only": {
+          "min": 14.701242923331826,
+          "median": 15.03687993653671,
+          "max": 15.395339733120974,
+          "per_split": [
+            14.701242923331826,
+            15.395339733120974,
+            15.03687993653671
+          ],
+          "better_than_temperature_count": 0
+        },
+        "ridge": {
+          "min": 12.27776864273236,
+          "median": 12.912253613442354,
+          "max": 13.283550062072335,
+          "per_split": [
+            13.283550062072335,
+            12.912253613442354,
+            12.27776864273236
+          ],
+          "better_than_temperature_count": 3
+        },
+        "random_forest": {
+          "min": 9.929937149329838,
+          "median": 11.09803027437214,
+          "max": 11.65153221411687,
+          "per_split": [
+            11.65153221411687,
+            11.09803027437214,
+            9.929937149329838
+          ],
+          "better_than_temperature_count": 3
+        },
+        "nested_selection": {
+          "min": 11.65153221411687,
+          "median": 11.885327337561904,
+          "max": 11.920254214889415,
+          "per_split": [
+            11.65153221411687,
+            11.885327337561904,
+            11.920254214889415
+          ],
+          "better_than_temperature_count": 3
+        }
+      },
+      "fixed_family_winners": [
+        "random_forest",
+        "random_forest",
+        "random_forest"
+      ],
+      "scope": "three correlated regroupings of the same observations; win counts and ranges are descriptive, not independent replications, confidence intervals or win probabilities"
+    },
+    "selectivity_pct": {
+      "families": {
+        "training_mean": {
+          "min": 13.576777314751405,
+          "median": 13.708315347468167,
+          "max": 13.833873352628098,
+          "per_split": [
+            13.576777314751405,
+            13.708315347468167,
+            13.833873352628098
+          ],
+          "better_than_temperature_count": 0
+        },
+        "temperature_only": {
+          "min": 10.058403514282666,
+          "median": 10.257175291542964,
+          "max": 10.507152405874026,
+          "per_split": [
+            10.058403514282666,
+            10.257175291542964,
+            10.507152405874026
+          ],
+          "better_than_temperature_count": 0
+        },
+        "ridge": {
+          "min": 8.005917838338153,
+          "median": 9.298916152974664,
+          "max": 9.492409599872486,
+          "per_split": [
+            9.298916152974664,
+            9.492409599872486,
+            8.005917838338153
+          ],
+          "better_than_temperature_count": 3
+        },
+        "random_forest": {
+          "min": 9.241189839325255,
+          "median": 10.090268536816863,
+          "max": 10.858966509443519,
+          "per_split": [
+            10.858966509443519,
+            10.090268536816863,
+            9.241189839325255
+          ],
+          "better_than_temperature_count": 2
+        },
+        "nested_selection": {
+          "min": 8.005917838338153,
+          "median": 9.892181764878684,
+          "max": 10.071171475241329,
+          "per_split": [
+            9.892181764878684,
+            10.071171475241329,
+            8.005917838338153
+          ],
+          "better_than_temperature_count": 3
+        }
+      },
+      "fixed_family_winners": [
+        "ridge",
+        "ridge",
+        "ridge"
+      ],
+      "scope": "three correlated regroupings of the same observations; win counts and ranges are descriptive, not independent replications, confidence intervals or win probabilities"
+    },
+    "yield_pct": {
+      "families": {
+        "training_mean": {
+          "min": 9.09658064103677,
+          "median": 9.1130806955097,
+          "max": 9.142316932932836,
+          "per_split": [
+            9.09658064103677,
+            9.1130806955097,
+            9.142316932932836
+          ],
+          "better_than_temperature_count": 0
+        },
+        "temperature_only": {
+          "min": 6.059397964273195,
+          "median": 6.089959279023336,
+          "max": 6.28935475466972,
+          "per_split": [
+            6.059397964273195,
+            6.089959279023336,
+            6.28935475466972
+          ],
+          "better_than_temperature_count": 0
+        },
+        "ridge": {
+          "min": 4.981009521014049,
+          "median": 5.152110967753851,
+          "max": 5.310267804264943,
+          "per_split": [
+            5.310267804264943,
+            4.981009521014049,
+            5.152110967753851
+          ],
+          "better_than_temperature_count": 3
+        },
+        "random_forest": {
+          "min": 3.9446739781385194,
+          "median": 4.331394918345075,
+          "max": 4.618096075552188,
+          "per_split": [
+            4.618096075552188,
+            4.331394918345075,
+            3.9446739781385194
+          ],
+          "better_than_temperature_count": 3
+        },
+        "nested_selection": {
+          "min": 4.331394918345075,
+          "median": 4.618096075552188,
+          "max": 4.9017195786293355,
+          "per_split": [
+            4.618096075552188,
+            4.331394918345075,
+            4.9017195786293355
+          ],
+          "better_than_temperature_count": 3
+        }
+      },
+      "fixed_family_winners": [
+        "random_forest",
+        "random_forest",
+        "random_forest"
+      ],
+      "scope": "three correlated regroupings of the same observations; win counts and ranges are descriptive, not independent replications, confidence intervals or win probabilities"
+    }
+  },
+  "independent_metric_checks": 90
+}
