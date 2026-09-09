@@ -507,9 +507,9 @@
           "part_inspection": 12.222222222222221,
           "semi_assembly": 26.666666666666668,
           "semi_inspection": 13.333333333333334,
-          "semi_dismantle": 2.0,
+          "semi_dismantle": 2,
           "final_assembly": 8.88888888888889,
-          "final_inspection": 0.0,
+          "final_inspection": 0,
           "final_dismantle": 1.1111111111111112,
           "customer_exchange_loss": 4.444444444444445
         },
@@ -530,13 +530,13 @@
       "no_inspection_no_recovery": {
         "components": {
           "purchase": 226.60519433421757,
-          "part_inspection": 0.0,
+          "part_inspection": 0,
           "semi_assembly": 84.97694787533159,
-          "semi_inspection": 0.0,
-          "semi_dismantle": 0.0,
+          "semi_inspection": 0,
+          "semi_dismantle": 0,
           "final_assembly": 28.325649291777196,
-          "final_inspection": 0.0,
-          "final_dismantle": 0.0,
+          "final_inspection": 0,
+          "final_dismantle": 0,
           "customer_exchange_loss": 101.628246458886
         },
         "exact_components": {
@@ -559,11 +559,11 @@
           "part_inspection": 12.222222222222221,
           "semi_assembly": 26.666666666666668,
           "semi_inspection": 13.333333333333334,
-          "semi_dismantle": 2.0,
+          "semi_dismantle": 2,
           "final_assembly": 8.88888888888889,
           "final_inspection": 6.666666666666667,
           "final_dismantle": 1.1111111111111112,
-          "customer_exchange_loss": 0.0
+          "customer_exchange_loss": 0
         },
         "exact_components": {
           "purchase": "640/9",
@@ -576,17 +576,17 @@
           "final_dismantle": "10/9",
           "customer_exchange_loss": "0"
         },
-        "total": 142.0,
+        "total": 142,
         "exact_total": "142"
       }
     },
     "scope": "exact fixed-policy expected cost decomposition, not simulation estimates or field cost measurements",
     "figure_sha256": {
       "assembly_tree.pdf": "7ff57ff7bf8de782f573e23ea1554b4d92fc841b7684c408f1dd655a19ad2db5",
-      "assembly_tree.svg": "ec68faad75d4df95633385b8459903db244e391638fbdef0ad9fb31cd2bc9a59",
+      "assembly_tree.svg": "f1ccc3bd33369aa680aaff730e7bf3c6cb02419eaf31b2834034f71a651cf31d",
       "assembly_tree.png": "621f8f479f68357a6873eee536e421777c408331b1cb71f8fe714a01cc71c880",
       "cost_breakdown.pdf": "282d0b6742e95baf6cfb7e2a3c97795fc78a8f41ae809220587f0a32fe80dfd5",
-      "cost_breakdown.svg": "a2433ea49acaced15c0e6926ae1df44773327fa12b1b8ad415805fdf7018ead0",
+      "cost_breakdown.svg": "afb3b6296d21034d4c20faf978a9df8c29de7185ab78020feb36d2fdbb1ca7b9",
       "cost_breakdown.png": "0a4ada2c240fd44c254b6109198691f7cfe6758bb3472d56d234b25d466577a3"
     }
   },

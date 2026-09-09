@@ -67,6 +67,8 @@ def draw(run):
     def save(fig,name):
         fig.savefig(out/(name+".pdf"),bbox_inches="tight")
         fig.savefig(out/(name+".svg"),bbox_inches="tight")
+        svg=out/(name+".svg")
+        svg.write_text("\n".join(line.rstrip() for line in svg.read_text(encoding="utf-8").splitlines())+"\n",encoding="utf-8")
         fig.savefig(out/(name+".png"),dpi=220,bbox_inches="tight")
         plt.close(fig)
     fig,ax=plt.subplots(figsize=(8.1,4.5));ax.set(xlim=(0,1),ylim=(0,1));ax.axis("off")
