@@ -54,65 +54,167 @@
     "passed": true
   },
   "paper": {
-    "pages": 20,
-    "sha256": "69a41cf9e4df677e124ae5a383e58e42be9f2ee122374c8b547576b9520ed4f1",
+    "pages": 22,
+    "sha256": "7fe2dfd1d786000fcaaaecebce793feb7bbd8b81b95594a202126c92f9084f98",
     "backend": "latex",
     "fonts": [
       "/AKHCZK+STHeitiSC-Light",
       "/BZIVMZ+STSongti-SC-Regular",
-      "/CAFSZL+CMSY10",
-      "/DDIEWW+CMR12",
-      "/DZGKAF+CMMI6",
-      "/FKPJSN+CMMI10",
-      "/FZDNHS+CMR6",
-      "/GJMHKB+CMSY6",
+      "/CAFSZL+CMSY8",
+      "/DDIEWW+CMSY10",
+      "/DZGKAF+CMR6",
+      "/FKPJSN+CMR12",
+      "/FZDNHS+CMEX10",
+      "/GJMHKB+CMMI6",
       "/IHAIZV+STHeitiSC-Medium",
       "/IXFAWU+TimesNewRomanPSMT",
-      "/JAGKKY+CMR8",
-      "/KPXLOM+CMMI12",
-      "/NITCSQ+CMMIB10",
-      "/NOMARO+CMMI8",
-      "/PVTTLK+CMR10",
+      "/JAGKKY+CMR10",
+      "/KPXLOM+CMMI8",
+      "/LPOGEQ+CMMIB8",
+      "/NITCSQ+CMSY6",
+      "/NOMARO+CMR8",
+      "/PVTTLK+CMMI10",
       "/TQTHRL+LMSans10-Bold-Identity-H",
-      "/UBBQTN+CMMIB8",
-      "/UTACNV+CMEX10",
-      "/VDVGTR+CMSY8",
+      "/UBBQTN+CMMIB10",
+      "/UTACNV+CMMI12",
+      "/VDVGTR+LMSans8-Regular-Identity-H",
       "/YEUUOC+LMSans12-Regular-Identity-H"
     ],
-    "revision_at": "2026-09-09T02:11:30Z",
+    "revision_at": "2026-09-09T03:16:15.817901+00:00",
     "structure_review": {
-      "profile": "user-requested CUMCM paper structure; not an official universal chapter-order rule",
+      "profile": "user-requested CUMCM organization; recognized labels are conventions, not universal official rules",
       "passed": true,
       "checks": {
+        "extractable_text": true,
         "abstract_and_keywords_on_page_one": true,
         "body_starts_on_page_two": true,
         "required_heading_order": true,
-        "four_question_analysis_subsections": true,
-        "four_question_solution_subsections": true,
+        "all_questions_analysis": true,
+        "all_questions_solution": true,
         "notation_table_columns": true
       },
-      "pages": 20,
-      "heading_pages": {
-        "一、问题重述": 2,
-        "二、问题分析": 2,
-        "三、模型假设": 4,
-        "四、符号说明": 5,
-        "五、模型的建立与求解": 5,
-        "六、模型检验与灵敏度分析": 15,
-        "七、模型评价与改进": 19,
-        "八、结论": 19,
-        "AI工具使用声明": 19,
-        "参考文献": 19,
-        "附录": 20
+      "pages": 22,
+      "question_count": 4,
+      "question_evidence": {
+        "analysis": {
+          "expected_question_ids": [
+            "Q1",
+            "Q2",
+            "Q3",
+            "Q4"
+          ],
+          "found": [
+            {
+              "ordinal": 1,
+              "label": "一",
+              "page": 3,
+              "heading": "2.1问题一的分析"
+            },
+            {
+              "ordinal": 2,
+              "label": "二",
+              "page": 3,
+              "heading": "2.2问题二的分析"
+            },
+            {
+              "ordinal": 3,
+              "label": "三",
+              "page": 3,
+              "heading": "2.3问题三的分析"
+            },
+            {
+              "ordinal": 4,
+              "label": "四",
+              "page": 3,
+              "heading": "2.4问题四的分析"
+            }
+          ],
+          "missing_ids": [],
+          "unknown_labels": []
+        },
+        "solution": {
+          "expected_question_ids": [
+            "Q1",
+            "Q2",
+            "Q3",
+            "Q4"
+          ],
+          "found": [
+            {
+              "ordinal": 1,
+              "label": "一",
+              "page": 5,
+              "heading": "5.1问题一：温度响应模型与曲线预测"
+            },
+            {
+              "ordinal": 2,
+              "label": "二",
+              "page": 10,
+              "heading": "5.2问题二：固定温区下的最大速度"
+            },
+            {
+              "ordinal": 3,
+              "label": "三",
+              "page": 11,
+              "heading": "5.3问题三：最小化上升回流面积"
+            },
+            {
+              "ordinal": 4,
+              "label": "四",
+              "page": 14,
+              "heading": "5.4问题四：面积与对称性的权衡"
+            }
+          ],
+          "missing_ids": [],
+          "unknown_labels": []
+        }
       },
-      "pdf_sha256": "69a41cf9e4df677e124ae5a383e58e42be9f2ee122374c8b547576b9520ed4f1",
-      "scope": "actual page-one contents and required structure; substantive writing and scientific quality still require review"
+      "heading_pages": {
+        "restatement": [
+          2
+        ],
+        "analysis": [
+          2
+        ],
+        "assumptions": [
+          4
+        ],
+        "notation": [
+          5
+        ],
+        "solution": [
+          5
+        ],
+        "validation": [
+          17
+        ],
+        "evaluation": [
+          21
+        ],
+        "conclusion": [
+          21
+        ],
+        "ai": [
+          21
+        ],
+        "references": [
+          21
+        ],
+        "appendix": [
+          22
+        ]
+      },
+      "scope": "actual section coverage only; no certification of substantive answers, math, visual quality or awards",
+      "question_mapping": "contract questions in listed order map to 问题一/问题1 etc.; nested outputs need semantic review",
+      "pdf_sha256": "7fe2dfd1d786000fcaaaecebce793feb7bbd8b81b95594a202126c92f9084f98",
+      "extractor": "pypdf layout text",
+      "contract_sha256": "97803fede4ec3de81948d5147790f34b07660358f175af682f37d897f7208a05"
     },
     "visual_review": {
-      "status": "TARGETED_REVISION_REVIEWED",
+      "status": "PASS",
       "reviewer_type": "agent",
-      "scope": "Scenario-design mathematical formulation, finite-design/holdout distinction and numerical tables inspected on pages 17-19. Structure, abstract page and content margins pass. Not whole-box or physical reliability certification.",
-      "pdf_sha256": "69a41cf9e4df677e124ae5a383e58e42be9f2ee122374c8b547576b9520ed4f1"
+      "scope": "All 22 rendered pages inspected in contact sheets; revised constraint paragraph on page 11 and optimizer table on page 17 inspected at full resolution. Formula superscripts, Chinese fonts and section transitions are legible; text bounds pass 25 mm margins excluding page numbers. Agent visual review, not human submission approval.",
+      "pdf_sha256": "7fe2dfd1d786000fcaaaecebce793feb7bbd8b81b95594a202126c92f9084f98"
     },
     "restatement_revision": {
       "evidence": [
@@ -126,6 +228,16 @@
         "Move coordinate derivation, data-audit findings and initial-temperature assumption out of restatement"
       ],
       "format_note": "Subheading choice is a case-specific editorial decision, not a universal official rule."
+    },
+    "optimizer_revision": {
+      "previous_pdf_sha256": "69a41cf9e4df677e124ae5a383e58e42be9f2ee122374c8b547576b9520ed4f1",
+      "previous_pages": 20,
+      "changes": [
+        "Explicit decision box, all eight process constraints, scaled penalty and stopping conditions",
+        "Equal-budget optimizer ablation: 36 independently checked selected candidates",
+        "Mathematical tolerance superscripts and text margins verified"
+      ],
+      "scope": "Retrospective revision; original failed timed manuscript acceptance is not changed"
     }
   },
   "headlines": {
@@ -380,5 +492,86 @@
       "Q4": 0
     },
     "candidate_sha256": "d3d6c3d1f4b2989e691927308fc72d38a08df62035eb158149b588007aa8d952"
+  },
+  "optimizer_evidence": {
+    "report": "furnace-2020a-optimizer-comparison/report.json",
+    "completed": true,
+    "protocol_sha256": "2ebb80f7d0490a03f006fa2470a93a6d3016666484f6a5c8519598db100c0fa8",
+    "trials_sha256": "cdbb9beb3ef8a15045658fc895ad27e57d7a6ecbaf5342c1ee8e5a6c571f94a4",
+    "trial_count": 36,
+    "budget_per_trial": 2400,
+    "summary": {
+      "Q3": [
+        {
+          "method": "multistart_slsqp",
+          "runs": 6,
+          "feasible_runs": 6,
+          "strict_feasible_runs": 6,
+          "objective_best": 416.21988353703864,
+          "objective_median": 416.2199088496489,
+          "objective_worst": 416.2199088496489,
+          "median_evaluations": 2400,
+          "median_search_seconds": 0.8778788330091629
+        },
+        {
+          "method": "de",
+          "runs": 6,
+          "feasible_runs": 6,
+          "strict_feasible_runs": 6,
+          "objective_best": 416.45958661060547,
+          "objective_median": 417.23446405789736,
+          "objective_worst": 419.19359414361224,
+          "median_evaluations": 2400,
+          "median_search_seconds": 0.8166611045016907
+        },
+        {
+          "method": "de_slsqp",
+          "runs": 6,
+          "feasible_runs": 6,
+          "strict_feasible_runs": 6,
+          "objective_best": 416.2198901571231,
+          "objective_median": 416.2199088496489,
+          "objective_worst": 416.2199088496489,
+          "median_evaluations": 2400,
+          "median_search_seconds": 0.8814837494937819
+        }
+      ],
+      "Q4": [
+        {
+          "method": "multistart_slsqp",
+          "runs": 6,
+          "feasible_runs": 6,
+          "strict_feasible_runs": 6,
+          "objective_best": 0.033621652273561745,
+          "objective_median": 0.03362165298263696,
+          "objective_worst": 0.03362165603554482,
+          "median_evaluations": 2400,
+          "median_search_seconds": 0.9191299159938353
+        },
+        {
+          "method": "de",
+          "runs": 6,
+          "feasible_runs": 6,
+          "strict_feasible_runs": 6,
+          "objective_best": 0.03381548966534327,
+          "objective_median": 0.034005396984750094,
+          "objective_worst": 0.034169028652267674,
+          "median_evaluations": 2400,
+          "median_search_seconds": 0.8271822914975928
+        },
+        {
+          "method": "de_slsqp",
+          "runs": 6,
+          "feasible_runs": 6,
+          "strict_feasible_runs": 6,
+          "objective_best": 0.03362165404303167,
+          "objective_median": 0.033621655092215486,
+          "objective_worst": 0.03362165547979855,
+          "median_evaluations": 2400,
+          "median_search_seconds": 0.8695900625025388
+        }
+      ]
+    },
+    "scope": "retrospective ablation on one fitted model, six seeds, one budget and one 50/50 hybrid allocation; not statistical superiority or global optimality"
   }
 }

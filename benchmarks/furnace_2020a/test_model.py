@@ -86,6 +86,55 @@ class FurnaceNumericsTest(unittest.TestCase):
         self.assertEqual(result["worst_peak_index"],0)
         self.assertEqual(result["worst_area"],450.)
 
+    def test_optimizer_budget_counts_shared_objective_constraint_evaluations(self):
+        from optimizer_comparison import Evaluator, BudgetExhausted
+        metrics = {"max_rise":2., "max_cooling":2., "soak_150_190":80.,
+                   "time_above_217":60., "peak":245., "symmetry":.04, "area_rising_above_217":400.}
+        evaluator = Evaluator([], None, 1, metric_function=lambda *a, **kw: metrics)
+        x = [175,195,235,255,80]
+        self.assertAlmostEqual(evaluator.objective(x), .4)
+        evaluator.constraints(x)
+        self.assertEqual(len(evaluator.cache), 1)
+        with self.assertRaises(BudgetExhausted): evaluator.objective([176,195,235,255,80])
+        self.assertAlmostEqual(evaluator.objective(x), .4)
+
+    def test_optimizer_rejects_attractive_but_infeasible_point(self):
+        from optimizer_comparison import Evaluator
+        metrics = {"max_rise":2., "max_cooling":2., "soak_150_190":80.,
+                   "time_above_217":60., "peak":239., "symmetry":.001, "area_rising_above_217":300.}
+        evaluator = Evaluator([], 440., 2, metric_function=lambda *a, **kw: metrics)
+        evaluator.objective([175,195,235,255,80])
+        self.assertIsNone(evaluator.best)
+        metrics["peak"] = 245.
+        metrics["area_rising_above_217"] = 450.
+        evaluator.objective([176,195,235,255,80])
+        self.assertIsNone(evaluator.best)
+
+    def test_optimizer_independent_check_distinguishes_tolerance_from_strict_feasibility(self):
+        from optimizer_comparison import check_candidate
+        metrics = {"max_rise":2., "max_cooling":2., "soak_150_190":80.,
+                   "time_above_217":60., "peak":239.999, "area_rising_above_217":400.}
+        result = check_candidate([175,195,235,255,80], metrics, None)
+        self.assertFalse(result["strict_feasible"])
+        self.assertTrue(result["feasible_with_numerical_tolerance"])
+        metrics["peak"] = 239.9
+        self.assertFalse(check_candidate([175,195,235,255,80], metrics, None)["feasible_with_numerical_tolerance"])
+        metrics["peak"] = 245.
+        self.assertFalse(check_candidate([175,195,235,255,101], metrics, None)["strict_feasible"])
+
+    def test_optimizer_summary_keeps_failed_trials_in_denominator(self):
+        from optimizer_comparison import summarize, METHODS
+        rows = []
+        for method in METHODS:
+            for feasible in (True, False):
+                rows.append({"question":"Q3", "method":method, "evaluations":100, "search_seconds":1.,
+                             "independent":{"metrics":{"area_rising_above_217":400. if feasible else 1.},
+                                            "strict_feasible":feasible, "feasible_with_numerical_tolerance":feasible}})
+        for row in summarize(rows, "Q3"):
+            self.assertEqual(row["runs"], 2)
+            self.assertEqual(row["feasible_runs"], 1)
+            self.assertEqual(row["objective_best"], 400.)
+
 
 if __name__ == "__main__":
     unittest.main()

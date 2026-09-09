@@ -1,0 +1,136 @@
+{
+  "protocol": {
+    "seeds": [
+      11,
+      29,
+      47,
+      71,
+      101,
+      131
+    ],
+    "budget_per_run": 2400,
+    "methods": [
+      "multistart_slsqp",
+      "de",
+      "de_slsqp"
+    ],
+    "bounds": [
+      [
+        165,
+        185
+      ],
+      [
+        185,
+        205
+      ],
+      [
+        225,
+        245
+      ],
+      [
+        245,
+        265
+      ],
+      [
+        65,
+        100
+      ]
+    ],
+    "search_dx_cm": 0.25,
+    "hybrid_de_budget": 1200,
+    "population": "40 uniform points per seed; point 0 fixed nominal baseline, point 1 bounds midpoint; shared by methods",
+    "cost_unit": "distinct temperature-model evaluations, exact-coordinate cache per run; independent verification excluded and timed separately",
+    "selection": "best search-feasible point among all evaluated coordinates, including finite-difference probes; independent check only after selection, no reselection",
+    "termination": "shared maximum budget; SLSQP ftol 1e-11/maxiter 400 per start; DE tol/atol zero, no polish",
+    "feasibility": "report both strict physical margins and numerical-tolerance acceptance; tolerances .005 degC or degC/s, .01 s, .1 degC*s; not process reserves",
+    "q4_area_cap": 437.0310683711418,
+    "solution_sha256": "dea1b36a597716bc63daa9c005ff625b4340375974670b4353eb3fe48bd0ed09",
+    "script_sha256": {
+      "optimizer_comparison.py": "e2c9bf2214eab75afaf8681fe216d357e7ae453ab54dce2b84e8248c76f12531",
+      "model.py": "6562d659a7bd67a56dfbaf1c98a59d57fd26d9432cb6d8400d7dec2f9e583425",
+      "solve.py": "53accee8b1429787d982edec844131c0fbc9c0073834dad369b28cdf49ca1b65",
+      "independent.py": "768f04492cb0a74fed7d7fe136ac6edd22261ba391d171d72800963a02f2dd87"
+    },
+    "environment": {
+      "python": "3.12.4",
+      "numpy": "2.2.6",
+      "scipy": "1.16.1"
+    },
+    "scope": "retrospective ablation on one fitted model, six seeds, one budget and one 50/50 hybrid allocation; not statistical superiority or global optimality"
+  },
+  "protocol_sha256": "2ebb80f7d0490a03f006fa2470a93a6d3016666484f6a5c8519598db100c0fa8",
+  "trials_sha256": "cdbb9beb3ef8a15045658fc895ad27e57d7a6ecbaf5342c1ee8e5a6c571f94a4",
+  "summary": {
+    "Q3": [
+      {
+        "method": "multistart_slsqp",
+        "runs": 6,
+        "feasible_runs": 6,
+        "strict_feasible_runs": 6,
+        "objective_best": 416.21988353703864,
+        "objective_median": 416.2199088496489,
+        "objective_worst": 416.2199088496489,
+        "median_evaluations": 2400.0,
+        "median_search_seconds": 0.8778788330091629
+      },
+      {
+        "method": "de",
+        "runs": 6,
+        "feasible_runs": 6,
+        "strict_feasible_runs": 6,
+        "objective_best": 416.45958661060547,
+        "objective_median": 417.23446405789736,
+        "objective_worst": 419.19359414361224,
+        "median_evaluations": 2400.0,
+        "median_search_seconds": 0.8166611045016907
+      },
+      {
+        "method": "de_slsqp",
+        "runs": 6,
+        "feasible_runs": 6,
+        "strict_feasible_runs": 6,
+        "objective_best": 416.2198901571231,
+        "objective_median": 416.2199088496489,
+        "objective_worst": 416.2199088496489,
+        "median_evaluations": 2400.0,
+        "median_search_seconds": 0.8814837494937819
+      }
+    ],
+    "Q4": [
+      {
+        "method": "multistart_slsqp",
+        "runs": 6,
+        "feasible_runs": 6,
+        "strict_feasible_runs": 6,
+        "objective_best": 0.033621652273561745,
+        "objective_median": 0.03362165298263696,
+        "objective_worst": 0.03362165603554482,
+        "median_evaluations": 2400.0,
+        "median_search_seconds": 0.9191299159938353
+      },
+      {
+        "method": "de",
+        "runs": 6,
+        "feasible_runs": 6,
+        "strict_feasible_runs": 6,
+        "objective_best": 0.03381548966534327,
+        "objective_median": 0.034005396984750094,
+        "objective_worst": 0.034169028652267674,
+        "median_evaluations": 2400.0,
+        "median_search_seconds": 0.8271822914975928
+      },
+      {
+        "method": "de_slsqp",
+        "runs": 6,
+        "feasible_runs": 6,
+        "strict_feasible_runs": 6,
+        "objective_best": 0.03362165404303167,
+        "objective_median": 0.033621655092215486,
+        "objective_worst": 0.03362165547979855,
+        "median_evaluations": 2400.0,
+        "median_search_seconds": 0.8695900625025388
+      }
+    ]
+  },
+  "completed": true
+}

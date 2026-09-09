@@ -1,5 +1,6 @@
 """Compose the complete training paper from computed artifacts, without manual numbers."""
 import argparse
+import json
 import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "skill/cumcm-reliable-paper/scripts"))
@@ -15,6 +16,20 @@ def compose(run):
     structural = read_json(run / "artifacts/structural_evidence.json")
     decision = read_json(run / "artifacts/decision_evidence.json")
     scenario = read_json(run / "artifacts/scenario_design.json")
+    optimizer_dir = run / "artifacts/optimizer_comparison"
+    optimizers = read_json(optimizer_dir / "report.json")
+    if (optimizers.get("completed") is not True
+            or optimizers["protocol"]["solution_sha256"] != sha256_file(run / "artifacts/solution.json")
+            or optimizers["protocol_sha256"] != sha256_file(optimizer_dir / "protocol.json")
+            or optimizers["trials_sha256"] != sha256_file(optimizer_dir / "trials.json")):
+        raise ValueError("optimizer comparison is incomplete or stale")
+    for name, digest in optimizers["protocol"]["script_sha256"].items():
+        if sha256_file(Path(__file__).with_name(name)) != digest:
+            raise ValueError("optimizer comparison predates current numerical code: " + name)
+    from optimizer_comparison import summarize
+    trials = json.loads((optimizer_dir / "trials.json").read_text(encoding="utf-8"))
+    if any(summarize(trials, q) != optimizers["summary"][q] for q in ("Q3", "Q4")):
+        raise ValueError("optimizer summary differs from recorded trials")
     if not scenario.get("passed") or scenario["candidates"]["source_sha256"] != sha256_file(run/"artifacts/solution.json"):
         raise ValueError("scenario design is incomplete, failed or bound to an earlier solution")
     if scenario["candidate_sha256"] != sha256_file(run/"artifacts/scenario_candidates.json"):
@@ -71,7 +86,7 @@ def compose(run):
     section("2.2 问题二的分析", [
         text("问题二固定温区温度，仅以传送速度为决策变量。提高速度可提高吞吐，但会改变加热程度及各温度区间的停留时间，因此不能只检验峰值。需要把全部制程指标写成速度的函数，扫描允许区间，定位最高可行区间，并对活动约束边界进一步求根。")], level=2)
     section("2.3 问题三的分析", [
-        text("问题三同时调整四组温区和速度，属于带多重制程限制的非线性优化。面积只覆盖温度在上升阶段超过217℃至峰值的区间，积分上下限本身随决策变化，不能将下降段算入。应使用同一温度模型动态求取交点和峰值，再进行全局启发式搜索及局部精修。"),
+        text("问题三同时调整四组温区和速度，属于带多重制程限制的非线性优化。面积只覆盖温度在上升阶段超过217℃至峰值的区间，积分上下限本身随决策变化，不能将下降段算入。应使用同一温度模型动态求取交点和峰值，构造约束优化问题，并检验局部求解之外增加全局启发式搜索是否有实际收益。"),
         text("前段温区可能通过热状态传递相互补偿，从而形成目标相同但参数不同的方案。因此需要保存多个起点的可行结果、逐项复查限制，并区分数值搜索稳定性与全局最优性证明。")], level=2)
     section("2.4 问题四的分析", [
         text("问题四在问题三的基础上引入以峰值时刻为轴的对称偏好，成为多目标权衡问题。只比较两侧持续时间可能忽略曲线形状差异；只在短侧区间比较又会遗漏长侧尾部。因此采用覆盖较长一侧的镜像温差指标，并以面积上浮上限约束性能损失。"),
@@ -152,6 +167,10 @@ def compose(run):
     section("5.3 问题三：最小化上升回流面积", [
         text(r"目标面积$A$由下式定义，单位为℃·s；$t_{\uparrow}$为上升至217℃的时刻，$t_{\mathrm p}$为峰值时刻。所有温区、速度范围与制程限制均保留。采用差分进化搜索并以SLSQP精修，不把惩罚较小但仍不可行的点作为答案；最终用更细网格和独立自适应积分复核。"),
         equation(r"\min A,\qquad A=\int_{t_{\uparrow}}^{t_{\mathrm p}}\bigl[T(t)-217\bigr]\,\mathrm dt."),
+        text(r"记决策向量为$\boldsymbol z=(T_1,T_6,T_7,T_8,v)$。温区与速度边界构成集合$\mathcal B$，制程界限写为八维余量$\boldsymbol g(\boldsymbol z)\ge0$。其中$k_+,k_-$为最大升温速率与最大降温速率绝对值，$H$为上升150—190℃停留时间，$R$为高于217℃的总时间，$P$为峰值："),
+        equation(r"\mathcal B=[165,185]\times[185,205]\times[225,245]\times[245,265]\times[65,100],"),
+        equation(r"\boldsymbol g=(3-k_+,\;3-k_-,\;H-60,\;120-H,\;R-40,\;90-R,\;P-240,\;250-P)^{\mathsf T}."),
+        text("因此完整优化问题为在上述盒约束与全部八项余量非负的条件下最小化面积。每次改变决策，都要重新求温度曲线、阈值交点与峰值；交点变化使目标不是一条固定区间上的简单积分，也可能给数值梯度带来不光滑性。"),
         table([["方案", "1—5区/℃", "6区/℃", "7区/℃", "8—9区/℃", "速度/cm·min⁻¹"]] + [["Q3", *[f(value,3) for value in q3["settings"]], f(q3["speed_cm_min"],3)]]),
         text(f"找到的上升面积为{f(q3['metrics']['area_rising_above_217'],6)}℃·s，峰值时刻{f(q3['metrics']['peak_time'])}s，上升越过217℃时刻{f(q3['metrics']['t217_up'])}s。速度100 cm/min与8—9区265℃达到允许上界，峰值接近240℃下界。"),
         table([["制程指标", "要求", "问题3计算值"]] + [[name,limit,f(q3["metrics"][key],4)] for key,name,limit in metric_names]),
@@ -163,6 +182,15 @@ def compose(run):
         table([["1—5区/℃", "6区/℃", "入口温度/℃", "上升面积/℃·s", "保温时间/s"]] +
               [[f(row["settings"][0],4),f(row["settings"][1],4),f(row["entry_temperature_c"],6),f(row["area"],6),f(60+row["constraint_margins"][2],4)] for row in structural["q3_superposition"]["alternatives"]]),
         text("多起点一致性是搜索稳定性的证据，不是非线性优化的全局证书。题面所求最优曲线在本文中被明确解释为所选有效模型下找到的最佳可行数值解。")], level=2, key="q3")
+
+    section("5.3.1 求解步骤与停止条件", [
+        text("原名义方案采用先搜索、后局部精修的流程：差分进化在整个决策盒中产生候选，SLSQP在候选附近处理非线性约束并改进目标。选择这一组合的初衷是降低单一起点的影响，但初衷不能证明其优于单独局部优化；下文另以同等计算预算检验是否需要这一组合。"),
+        text(r"为避免单位量级影响罚函数，将余量按$\boldsymbol s=(3,3,60,60,50,50,10,10)^{\mathsf T}$逐项归一化，记$\widetilde g_i=g_i/s_i-10^{-5}$。第三问以$f=A/1000$为缩放目标，差分进化最小化"),
+        equation(r"\Phi(\boldsymbol z)=f(\boldsymbol z)+10^4\sum_i\bigl[\min\{\widetilde g_i(\boldsymbol z),0\}\bigr]^2."),
+        text("SLSQP直接使用缩放目标及非线性不等式约束。缩放不改变原目标的排序，罚系数只用于引导搜索，不能把罚函数较小当成满足制程的证明。微小数值内缩用于降低离散误差影响，不是实际生产安全余量。"),
+        text("原求解设置为两个种子2020、917，DE种群规模40、最多110代、$\\mathrm{tol}=10^{-7}$且不启用内置抛光。每个种子后分别以DE输出和固定基准点(182,203,237,254,75)启动SLSQP，每次最多400次迭代、$\\mathrm{ftol}=10^{-11}$。固定基准点重复求解属于同一确定性起点，不当成新的独立起点证据。"),
+        text("每次目标与约束评价都重算炉温指标；缺少阈值交点的曲线保持不可行。局部求解完成后，要求所有缩放余量不小于$-10^{-7}$，保留其中目标最小者；优化器的success标志单独记录，不替代约束验算。搜索用0.25 cm网格，选定方案再以0.05 cm网格及独立连续积分复核。"),
+        text("这一流程给出可复算的候选选择规则，但没有提供全局下界或最优性间隙。后续对照中的搜索预算与这里原名义求解的代数预算不同，两套结果分别留存，不把追加实验算回最初限时成绩。")], level=3)
 
     section("5.4 问题四：面积与对称性的权衡", [
         text(r"令$t_{\mathrm p}$为峰值时刻，$t_{\downarrow}$为下降至217℃的时刻。定义两侧比较范围$D$与超过217℃的温升$E(t)$："),
@@ -184,6 +212,21 @@ def compose(run):
         text("面积上限较紧时，对称性改善随容许面积增加而逐步提升；从1%放宽至10%后，本次搜索得到的最佳指标已无实质改善，实际面积增加约0.66%。因此，至少在当前模型和搜索结果中，不需要耗尽5%的增量预算。若更强调面积，可选择0.5%这一较严格的候选；若更强调对称性，约1%的上限已容纳目前找到的最佳方案。"),
         text("表中0%行只列问题三既有可行解，并未在零松弛面上重新最小化对称性。其余各行也是多起点搜索得到的候选，而非经全局证明的Pareto前沿；不能据此断言不存在更优权衡。"),
         figure("decision_tradeoff", "图6 面积预算与对称性的数值权衡，以及名义方案和逐参数留余量方案在联合扰动下的越界计数。情景计数不表示实际风险概率。")],level=3)
+
+    names = {"multistart_slsqp": "多起点SLSQP", "de": "单独DE", "de_slsqp": "DE后SLSQP"}
+    section("5.4.2 相同计算预算下的算法对照", [
+        text("为判断增加算法是否有实际收益，固定已经校准的同一温度模型、制程约束和第四问既有面积上限，对三种方法进行事后对照。第三问最小化$A/1000$，第四问最小化$J$；第四问还加入$(A_{\\max}-A)/1000-10^{-5}$这一非负余量约束，DE使用同样的二次罚项。"),
+        text("每种方法使用种子11、29、47、71、101、131，每次最多计算2400个不同决策点的温度模型。相同点的目标与约束调用共享缓存，独立连续积分另行计时。每个种子生成40个共同候选起点，其中首点是上述固定基准，第二点是边界中点，其余为均匀随机点。SLSQP依次多起点运行，DE使用这组初始种群；组合方法先给DE1200次预算，再从其罚函数最佳点及共同起点继续SLSQP，最多再用1200次。"),
+        text("对照中的DE关闭收敛容差和内置抛光，运行至预算上限；SLSQP保留每起点的400次迭代及$\\mathrm{ftol}=10^{-11}$，整体受共同预算限制。各方法均保存所有已评估点中满足搜索余量的最佳候选，包括数值差分探测点。独立复核仅在选定之后执行，不据复核结果重新调参或替换候选。下表目标值均由独立连续积分得到，时间只计搜索阶段。"),
+        table([["问题/方法", "严格可行", "最好目标", "目标中位数", "最差目标", "时间中位数/s"]] +
+              [[q+"/"+names[row["method"]], str(row["strict_feasible_runs"])+"/"+str(row["runs"]),
+                f(row["objective_best"], 3 if q=="Q3" else 6) if row["objective_best"] is not None else "—",
+                f(row["objective_median"], 3 if q=="Q3" else 6) if row["objective_median"] is not None else "—",
+                f(row["objective_worst"], 3 if q=="Q3" else 6) if row["objective_worst"] is not None else "—",
+                f(row["median_search_seconds"],3)] for q in ("Q3","Q4") for row in optimizers["summary"][q]]),
+        text("第三问目标单位为℃·s，第四问J无量纲。三种方法的全部36个候选均在独立计算中严格满足制程、决策边界和适用的面积上限，实际各用满2400次预算；记录中另保留带数值容差的判定，但本表可行数不依赖该放宽。"),
+        text("在本次固定协议下，多起点SLSQP和组合方法的目标差异小于本文独立数值复核分辨率；单独DE的目标值略差。因而这次实验没有显示增加DE的必要性，采用多起点SLSQP作为该模型的简洁求解方案已有直接依据；DE可以保留为扩大搜索范围的补充检查。不能因为组合名称更复杂，就把相同结果描述为算法改进。"),
+        text("共同的工程基准起点已帮助局部法获得较好结果，六个种子主要改变后续随机起点，因此不代表六次完全独立的初值试验。这里只测试一个预算和50:50的组合分配，没有穷尽参数配置；墙钟时间还受软硬件和后台负载影响。结论仅限这套已拟合的历史题模型，不构成统计显著优势、跨题型排名或全局最优证明。")], level=3)
 
     worst = max(independent["comparisons"], key=lambda row: row["error"] / row["tolerance"])
     section("六、模型检验与灵敏度分析", [
