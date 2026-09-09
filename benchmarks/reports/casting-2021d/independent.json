@@ -1,0 +1,662 @@
+{
+  "solution_sha256": "54b3054cf43e604d761e17fdfc62c9682659c556e21eb33346bec49f8af9c06a",
+  "tails": [
+    {
+      "tail_m": 109.0,
+      "waste_m": 0.0,
+      "loss_agreement": true,
+      "network": {
+        "loss_tick": 0,
+        "deviation_tick2": 185,
+        "edges": 79317,
+        "nodes": 1092,
+        "flow_residual": 0.0,
+        "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+      },
+      "secondary_scope": "rational allocation checked algebraically; network secondary cost is grid-restricted, not the continuous Q1 objective"
+    },
+    {
+      "tail_m": 93.4,
+      "waste_m": 0.0,
+      "loss_agreement": true,
+      "network": {
+        "loss_tick": 0,
+        "deviation_tick2": 28,
+        "edges": 66993,
+        "nodes": 936,
+        "flow_residual": 0.0,
+        "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+      },
+      "secondary_scope": "rational allocation checked algebraically; network secondary cost is grid-restricted, not the continuous Q1 objective"
+    },
+    {
+      "tail_m": 80.9,
+      "waste_m": 0.9,
+      "loss_agreement": true,
+      "network": {
+        "loss_tick": 9,
+        "deviation_tick2": 200,
+        "edges": 57118,
+        "nodes": 811,
+        "flow_residual": 0.0,
+        "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+      },
+      "secondary_scope": "rational allocation checked algebraically; network secondary cost is grid-restricted, not the continuous Q1 objective"
+    },
+    {
+      "tail_m": 72.0,
+      "waste_m": 0.0,
+      "loss_agreement": true,
+      "network": {
+        "loss_tick": 0,
+        "deviation_tick2": 200,
+        "edges": 50087,
+        "nodes": 722,
+        "flow_residual": 0.0,
+        "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+      },
+      "secondary_scope": "rational allocation checked algebraically; network secondary cost is grid-restricted, not the continuous Q1 objective"
+    },
+    {
+      "tail_m": 62.7,
+      "waste_m": 2.7,
+      "loss_agreement": true,
+      "network": {
+        "loss_tick": 27,
+        "deviation_tick2": 150,
+        "edges": 42740,
+        "nodes": 629,
+        "flow_residual": 0.0,
+        "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+      },
+      "secondary_scope": "rational allocation checked algebraically; network secondary cost is grid-restricted, not the continuous Q1 objective"
+    },
+    {
+      "tail_m": 52.5,
+      "waste_m": 2.5,
+      "loss_agreement": true,
+      "network": {
+        "loss_tick": 25,
+        "deviation_tick2": 125,
+        "edges": 34682,
+        "nodes": 527,
+        "flow_residual": 9.992007221626409e-16,
+        "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+      },
+      "secondary_scope": "rational allocation checked algebraically; network secondary cost is grid-restricted, not the continuous Q1 objective"
+    },
+    {
+      "tail_m": 44.9,
+      "waste_m": 4.9,
+      "loss_agreement": true,
+      "network": {
+        "loss_tick": 49,
+        "deviation_tick2": 100,
+        "edges": 28678,
+        "nodes": 451,
+        "flow_residual": 0.0,
+        "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+      },
+      "secondary_scope": "rational allocation checked algebraically; network secondary cost is grid-restricted, not the continuous Q1 objective"
+    },
+    {
+      "tail_m": 42.7,
+      "waste_m": 2.7,
+      "loss_agreement": true,
+      "network": {
+        "loss_tick": 27,
+        "deviation_tick2": 100,
+        "edges": 26940,
+        "nodes": 429,
+        "flow_residual": 0.0,
+        "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+      },
+      "secondary_scope": "rational allocation checked algebraically; network secondary cost is grid-restricted, not the continuous Q1 objective"
+    },
+    {
+      "tail_m": 31.6,
+      "waste_m": 1.6,
+      "loss_agreement": true,
+      "network": {
+        "loss_tick": 16,
+        "deviation_tick2": 75,
+        "edges": 18171,
+        "nodes": 318,
+        "flow_residual": 0.0,
+        "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+      },
+      "secondary_scope": "rational allocation checked algebraically; network secondary cost is grid-restricted, not the continuous Q1 objective"
+    },
+    {
+      "tail_m": 22.7,
+      "waste_m": 2.7,
+      "loss_agreement": true,
+      "network": {
+        "loss_tick": 27,
+        "deviation_tick2": 50,
+        "edges": 11140,
+        "nodes": 229,
+        "flow_residual": 0.0,
+        "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+      },
+      "secondary_scope": "rational allocation checked algebraically; network secondary cost is grid-restricted, not the continuous Q1 objective"
+    },
+    {
+      "tail_m": 14.5,
+      "waste_m": 4.8,
+      "loss_agreement": true,
+      "network": {
+        "loss_tick": 48,
+        "deviation_tick2": 4,
+        "edges": 4662,
+        "nodes": 147,
+        "flow_residual": 0.0,
+        "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+      },
+      "secondary_scope": "rational allocation checked algebraically; network secondary cost is grid-restricted, not the continuous Q1 objective"
+    },
+    {
+      "tail_m": 13.7,
+      "waste_m": 13.7,
+      "loss_agreement": true,
+      "network": {
+        "loss_tick": 137,
+        "deviation_tick2": 0,
+        "edges": 4030,
+        "nodes": 139,
+        "flow_residual": 0.0,
+        "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+      },
+      "secondary_scope": "rational allocation checked algebraically; network secondary cost is grid-restricted, not the continuous Q1 objective"
+    }
+  ],
+  "online": {
+    "Q2": {
+      "trace": {
+        "passed": true,
+        "pieces": 38,
+        "total_waste_m": 23.8,
+        "checks": [
+          "mass balance",
+          "primary transport bounds",
+          "cut/return spacing",
+          "defect-free recovery",
+          "target bounds",
+          "no retroactive cut",
+          "known-event prefix",
+          "irrevocable prior cuts"
+        ]
+      },
+      "network_comparisons": [
+        {
+          "event": 1,
+          "passed": true,
+          "loss_tick": 8,
+          "deviation_tick2": 114,
+          "edges": 47843,
+          "nodes": 732,
+          "flow_residual": 0.0,
+          "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+        },
+        {
+          "event": 2,
+          "passed": true,
+          "loss_tick": 64,
+          "deviation_tick2": 150,
+          "edges": 52571,
+          "nodes": 792,
+          "flow_residual": 0.0,
+          "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+        },
+        {
+          "event": 3,
+          "passed": true,
+          "loss_tick": 56,
+          "deviation_tick2": 150,
+          "edges": 51947,
+          "nodes": 784,
+          "flow_residual": 0.0,
+          "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+        },
+        {
+          "event": 4,
+          "passed": true,
+          "loss_tick": 59,
+          "deviation_tick2": 150,
+          "edges": 52181,
+          "nodes": 787,
+          "flow_residual": 0.0,
+          "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+        },
+        {
+          "event": 5,
+          "passed": true,
+          "loss_tick": 34,
+          "deviation_tick2": 64,
+          "edges": 56861,
+          "nodes": 847,
+          "flow_residual": 0.0,
+          "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+        },
+        {
+          "event": 6,
+          "passed": true,
+          "loss_tick": 33,
+          "deviation_tick2": 118,
+          "edges": 49818,
+          "nodes": 757,
+          "flow_residual": 0.0,
+          "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+        },
+        {
+          "event": 7,
+          "passed": true,
+          "loss_tick": 52,
+          "deviation_tick2": 150,
+          "edges": 51635,
+          "nodes": 780,
+          "flow_residual": 1.1102230246251565e-15,
+          "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+        },
+        {
+          "event": 8,
+          "passed": true,
+          "loss_tick": 99,
+          "deviation_tick2": 150,
+          "edges": 55301,
+          "nodes": 827,
+          "flow_residual": 1.3322676295501878e-15,
+          "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+        },
+        {
+          "event": 9,
+          "passed": true,
+          "loss_tick": 82,
+          "deviation_tick2": 6,
+          "edges": 51161,
+          "nodes": 774,
+          "flow_residual": 0.0,
+          "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+        }
+      ],
+      "continuous_lower_bound": {
+        "waste_m": 23.8,
+        "exact_waste": "119/5",
+        "healthy_gaps": [
+          {
+            "length_m": 59.6,
+            "max_products": 6,
+            "unavoidable_waste_m": 0.0
+          },
+          {
+            "length_m": 44.8,
+            "max_products": 4,
+            "unavoidable_waste_m": 4.8
+          },
+          {
+            "length_m": 52.2,
+            "max_products": 5,
+            "unavoidable_waste_m": 2.2
+          },
+          {
+            "length_m": 32.1,
+            "max_products": 3,
+            "unavoidable_waste_m": 2.1
+          },
+          {
+            "length_m": 58.5,
+            "max_products": 6,
+            "unavoidable_waste_m": 0.0
+          },
+          {
+            "length_m": 41.7,
+            "max_products": 4,
+            "unavoidable_waste_m": 1.7
+          },
+          {
+            "length_m": 31.9,
+            "max_products": 3,
+            "unavoidable_waste_m": 1.9
+          },
+          {
+            "length_m": 3.9,
+            "max_products": 0,
+            "unavoidable_waste_m": 3.9
+          },
+          {
+            "length_m": 56.4,
+            "max_products": 6,
+            "unavoidable_waste_m": 0.0
+          }
+        ],
+        "scope": "continuous material bound using the complete realized event sequence, only for retrospective verification; not input to online decisions",
+        "attained": true
+      }
+    },
+    "Q3a": {
+      "trace": {
+        "passed": true,
+        "pieces": 45,
+        "total_waste_m": 16.0,
+        "checks": [
+          "mass balance",
+          "primary transport bounds",
+          "cut/return spacing",
+          "defect-free recovery",
+          "target bounds",
+          "no retroactive cut",
+          "known-event prefix",
+          "irrevocable prior cuts"
+        ]
+      },
+      "network_comparisons": [
+        {
+          "event": 1,
+          "passed": true,
+          "loss_tick": 8,
+          "deviation_tick2": 1,
+          "edges": 47843,
+          "nodes": 732,
+          "flow_residual": 0.0,
+          "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+        },
+        {
+          "event": 2,
+          "passed": true,
+          "loss_tick": 16,
+          "deviation_tick2": 108,
+          "edges": 50292,
+          "nodes": 763,
+          "flow_residual": 0.0,
+          "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+        },
+        {
+          "event": 3,
+          "passed": true,
+          "loss_tick": 16,
+          "deviation_tick2": 49,
+          "edges": 49739,
+          "nodes": 756,
+          "flow_residual": 0.0,
+          "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+        },
+        {
+          "event": 4,
+          "passed": true,
+          "loss_tick": 16,
+          "deviation_tick2": 107,
+          "edges": 54209,
+          "nodes": 813,
+          "flow_residual": 0.0,
+          "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+        },
+        {
+          "event": 5,
+          "passed": true,
+          "loss_tick": 16,
+          "deviation_tick2": 32,
+          "edges": 53975,
+          "nodes": 810,
+          "flow_residual": 0.0,
+          "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+        },
+        {
+          "event": 6,
+          "passed": true,
+          "loss_tick": 16,
+          "deviation_tick2": 17,
+          "edges": 54209,
+          "nodes": 813,
+          "flow_residual": 0.0,
+          "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+        },
+        {
+          "event": 7,
+          "passed": true,
+          "loss_tick": 65,
+          "deviation_tick2": 85,
+          "edges": 52961,
+          "nodes": 797,
+          "flow_residual": 0.0,
+          "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+        },
+        {
+          "event": 8,
+          "passed": true,
+          "loss_tick": 112,
+          "deviation_tick2": 81,
+          "edges": 50134,
+          "nodes": 761,
+          "flow_residual": 4.9517911894785745e-15,
+          "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+        },
+        {
+          "event": 9,
+          "passed": true,
+          "loss_tick": 112,
+          "deviation_tick2": 139,
+          "edges": 53507,
+          "nodes": 804,
+          "flow_residual": 0.0,
+          "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+        }
+      ],
+      "continuous_lower_bound": {
+        "waste_m": 16.0,
+        "exact_waste": "16",
+        "healthy_gaps": [
+          {
+            "length_m": 59.6,
+            "max_products": 7,
+            "unavoidable_waste_m": 0.0
+          },
+          {
+            "length_m": 44.8,
+            "max_products": 5,
+            "unavoidable_waste_m": 0.0
+          },
+          {
+            "length_m": 52.2,
+            "max_products": 6,
+            "unavoidable_waste_m": 0.0
+          },
+          {
+            "length_m": 32.1,
+            "max_products": 4,
+            "unavoidable_waste_m": 0.0
+          },
+          {
+            "length_m": 58.5,
+            "max_products": 7,
+            "unavoidable_waste_m": 0.0
+          },
+          {
+            "length_m": 41.7,
+            "max_products": 5,
+            "unavoidable_waste_m": 0.0
+          },
+          {
+            "length_m": 31.9,
+            "max_products": 3,
+            "unavoidable_waste_m": 4.9
+          },
+          {
+            "length_m": 3.9,
+            "max_products": 0,
+            "unavoidable_waste_m": 3.9
+          },
+          {
+            "length_m": 56.4,
+            "max_products": 7,
+            "unavoidable_waste_m": 0.0
+          }
+        ],
+        "scope": "continuous material bound using the complete realized event sequence, only for retrospective verification; not input to online decisions",
+        "attained": true
+      }
+    },
+    "Q3b": {
+      "trace": {
+        "passed": true,
+        "pieces": 35,
+        "total_waste_m": 25.9,
+        "checks": [
+          "mass balance",
+          "primary transport bounds",
+          "cut/return spacing",
+          "defect-free recovery",
+          "target bounds",
+          "no retroactive cut",
+          "known-event prefix",
+          "irrevocable prior cuts"
+        ]
+      },
+      "network_comparisons": [
+        {
+          "event": 1,
+          "passed": true,
+          "loss_tick": 24,
+          "deviation_tick2": 125,
+          "edges": 47843,
+          "nodes": 732,
+          "flow_residual": 0.0,
+          "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+        },
+        {
+          "event": 2,
+          "passed": true,
+          "loss_tick": 28,
+          "deviation_tick2": 54,
+          "edges": 56003,
+          "nodes": 836,
+          "flow_residual": 0.0,
+          "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+        },
+        {
+          "event": 3,
+          "passed": true,
+          "loss_tick": 74,
+          "deviation_tick2": 101,
+          "edges": 51477,
+          "nodes": 778,
+          "flow_residual": 0.0,
+          "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+        },
+        {
+          "event": 4,
+          "passed": true,
+          "loss_tick": 34,
+          "deviation_tick2": 123,
+          "edges": 55613,
+          "nodes": 831,
+          "flow_residual": 0.0,
+          "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+        },
+        {
+          "event": 5,
+          "passed": true,
+          "loss_tick": 21,
+          "deviation_tick2": 141,
+          "edges": 56003,
+          "nodes": 836,
+          "flow_residual": 0.0,
+          "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+        },
+        {
+          "event": 6,
+          "passed": true,
+          "loss_tick": 90,
+          "deviation_tick2": 125,
+          "edges": 53039,
+          "nodes": 798,
+          "flow_residual": 2.220446049250313e-16,
+          "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+        },
+        {
+          "event": 7,
+          "passed": true,
+          "loss_tick": 38,
+          "deviation_tick2": 141,
+          "edges": 55769,
+          "nodes": 833,
+          "flow_residual": 0.0,
+          "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+        },
+        {
+          "event": 8,
+          "passed": true,
+          "loss_tick": 85,
+          "deviation_tick2": 116,
+          "edges": 50371,
+          "nodes": 764,
+          "flow_residual": 0.0,
+          "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+        },
+        {
+          "event": 9,
+          "passed": true,
+          "loss_tick": 63,
+          "deviation_tick2": 17,
+          "edges": 49660,
+          "nodes": 755,
+          "flow_residual": 1.1102230246251565e-16,
+          "method": "two-stage minimum-cost unit-flow linear program, HiGHS; cell occupancy defines edge recovery"
+        }
+      ],
+      "continuous_lower_bound": {
+        "waste_m": 25.9,
+        "exact_waste": "259/10",
+        "healthy_gaps": [
+          {
+            "length_m": 59.6,
+            "max_products": 5,
+            "unavoidable_waste_m": 1.6
+          },
+          {
+            "length_m": 44.8,
+            "max_products": 4,
+            "unavoidable_waste_m": 0.0
+          },
+          {
+            "length_m": 52.2,
+            "max_products": 4,
+            "unavoidable_waste_m": 5.8
+          },
+          {
+            "length_m": 32.1,
+            "max_products": 3,
+            "unavoidable_waste_m": 0.0
+          },
+          {
+            "length_m": 58.5,
+            "max_products": 5,
+            "unavoidable_waste_m": 0.5
+          },
+          {
+            "length_m": 41.7,
+            "max_products": 3,
+            "unavoidable_waste_m": 6.9
+          },
+          {
+            "length_m": 31.9,
+            "max_products": 3,
+            "unavoidable_waste_m": 0.0
+          },
+          {
+            "length_m": 3.9,
+            "max_products": 0,
+            "unavoidable_waste_m": 3.9
+          },
+          {
+            "length_m": 56.4,
+            "max_products": 5,
+            "unavoidable_waste_m": 0.0
+          }
+        ],
+        "scope": "continuous material bound using the complete realized event sequence, only for retrospective verification; not input to online decisions",
+        "attained": true
+      }
+    }
+  },
+  "passed": true
+}

@@ -1,0 +1,69 @@
+{
+  "source_sha256": "e5d1447a36b0cb69d3b677aba037f617724303f13dbb2709793f63c54dc2a6ee",
+  "source_pages": 2,
+  "tail_lengths_m": [
+    109.0,
+    93.4,
+    80.9,
+    72.0,
+    62.7,
+    52.5,
+    44.9,
+    42.7,
+    31.6,
+    22.7,
+    14.5,
+    13.7
+  ],
+  "event_times_min": [
+    0.0,
+    45.6,
+    98.6,
+    131.5,
+    190.8,
+    233.3,
+    266.0,
+    270.7,
+    327.9
+  ],
+  "cases": {
+    "Q2": {
+      "target_m": 9.5,
+      "lower_m": 9.0,
+      "upper_m": 10.0
+    },
+    "Q3a": {
+      "target_m": 8.5,
+      "lower_m": 8.0,
+      "upper_m": 9.0
+    },
+    "Q3b": {
+      "target_m": 11.1,
+      "lower_m": 10.6,
+      "upper_m": 11.6
+    }
+  },
+  "primary_range_m": [
+    4.8,
+    12.6
+  ],
+  "downstream_range_m": [
+    8.0,
+    11.6
+  ],
+  "cut_minutes": 3,
+  "return_minutes": 1,
+  "speed_m_min": 1,
+  "mold_center_distance_m": 60.0,
+  "defect_length_m": 0.8,
+  "assumptions": [
+    "Material coordinate equals saw-arrival time at speed 1 m/min; at t=0 the initial boundary cut at x=0 is already initiated and irrevocable.",
+    "The 0.8 m defective segment is centered at the stated mold center: event t reveals material interval [t+59.6,t+60.4].",
+    "Zero kerf; the statement supplies no kerf width. Offline cutting has no stated capacity/time bound.",
+    "The 4.8-12.6 m transport rule applies to every primary piece, including the terminal tail. No unstated exception for short tails.",
+    "Among equal waste, minimize the sum of squared deviations of recovered acceptable products from the user target; the statement does not uniquely specify this norm.",
+    "At an event, cuts with start time strictly before the notification are frozen; same-time notification is processed before a new cut.",
+    "At each notification optimize for currently known defects and healthy continuation thereafter; no future notifications enter the planner.",
+    "Online controls are on a declared 0.1 m/0.1 min grid; grid optimality is distinct from unrestricted continuous optimality."
+  ]
+}

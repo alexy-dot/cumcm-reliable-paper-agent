@@ -11,7 +11,7 @@ SECTIONS = {
     "assumptions": ("模型假设", "基本假设"),
     "notation": ("符号说明", "符号与说明"),
     "solution": ("模型的建立与求解", "模型建立与求解"),
-    "validation": ("模型检验与灵敏度分析", "模型检验与敏感性分析", "模型检验"),
+    "validation": ("模型检验与灵敏度分析", "模型检验与敏感性分析", "模型检验", "验证与灵敏度分析", "验证与敏感性分析"),
     "evaluation": ("模型评价与改进", "模型评价"),
     "conclusion": ("结论",),
     "ai": ("AI工具使用声明",),
@@ -72,9 +72,12 @@ def analyze_pages(pages, *, contract=None, question_count=None):
         "required_heading_order":ordered,
     }
     question_evidence={}
+    def bounded(scope,end):
+        return len(hits[scope])==len(hits[end])==1 and hits[scope][0]<hits[end][0]
     for scope,end in (("analysis","assumptions"),("solution","validation")):
         found=[]
-        if ordered:
+        assessed=bounded(scope,end)
+        if assessed:
             for index in range(hits[scope][0]+1,hits[end][0]):
                 page,line=lines[index]
                 match=re.match(r"^(?:\d+(?:\.\d+)+[、.．]?)?问题([一二三四五六七八九十百]+|\d+)(?=[:：的]|$)",line)
@@ -83,11 +86,12 @@ def analyze_pages(pages, *, contract=None, question_count=None):
                     found.append({"ordinal":ordinal,"label":match[1],"page":page,"heading":line})
         ordinals=[row["ordinal"] for row in found]
         checks[f"all_questions_{scope}"]=list(dict.fromkeys(ordinals))==list(range(1,len(ids)+1))
-        question_evidence[scope]={"expected_question_ids":ids,"found":found,
-                                  "missing_ids":[qid for i,qid in enumerate(ids,1) if i not in ordinals],
+        question_evidence[scope]={"expected_question_ids":ids,"found":found,"assessed":assessed,
+                                  "missing_ids":[qid for i,qid in enumerate(ids,1) if i not in ordinals] if assessed else [],
+                                  "not_assessed_reason":None if assessed else "section boundaries missing, duplicated or out of order",
                                   "unknown_labels":[row["label"] for row in found if row["ordinal"] is None]}
     notation=""
-    if ordered:
+    if bounded("notation","solution"):
         notation="".join(line for _,line in lines[hits["notation"][0]+1:hits["solution"][0]])
     checks["notation_table_columns"]=all(token in notation for token in ("符号","含义","单位"))
     return {"profile":"user-requested CUMCM organization; recognized labels are conventions, not universal official rules",

@@ -1,0 +1,176 @@
+{
+  "case": "2021 D continuous casting online cutting",
+  "source_sha256": "e5d1447a36b0cb69d3b677aba037f617724303f13dbb2709793f63c54dc2a6ee",
+  "headline_waste_m": {
+    "Q1": [
+      0.0,
+      0.0,
+      0.9,
+      0.0,
+      2.7,
+      2.5,
+      4.9,
+      2.7,
+      1.6,
+      2.7,
+      4.8,
+      13.7
+    ],
+    "Q2": 23.8,
+    "Q3": [
+      16.0,
+      25.9
+    ]
+  },
+  "paper": {
+    "pages": 14,
+    "sha256": "e5a4215431fe1b321472174e63c9cc8480fc58e45f3326326c70f3c29c672b80",
+    "visual_review": {
+      "reviewer_type": "agent",
+      "status": "PASS",
+      "scope": "All 14 pages inspected as rendered images; pages 5, 7 and 11 inspected at full resolution for rational tail allocations, event tables and lower-bound formula. Chinese fonts, mathematical symbols, abstract page and section coverage checked; all non-page-number text bounds exceed 25 mm. Agent visual review only, not human submission approval.",
+      "pdf_sha256": "e5a4215431fe1b321472174e63c9cc8480fc58e45f3326326c70f3c29c672b80"
+    },
+    "structure": {
+      "profile": "user-requested CUMCM organization; recognized labels are conventions, not universal official rules",
+      "passed": true,
+      "checks": {
+        "extractable_text": true,
+        "abstract_and_keywords_on_page_one": true,
+        "body_starts_on_page_two": true,
+        "required_heading_order": true,
+        "all_questions_analysis": true,
+        "all_questions_solution": true,
+        "notation_table_columns": true
+      },
+      "pages": 14,
+      "question_count": 3,
+      "question_evidence": {
+        "analysis": {
+          "expected_question_ids": [
+            "Q1",
+            "Q2",
+            "Q3"
+          ],
+          "found": [
+            {
+              "ordinal": 1,
+              "label": "一",
+              "page": 2,
+              "heading": "2.1问题一的分析"
+            },
+            {
+              "ordinal": 2,
+              "label": "二",
+              "page": 2,
+              "heading": "2.2问题二的分析"
+            },
+            {
+              "ordinal": 3,
+              "label": "三",
+              "page": 3,
+              "heading": "2.3问题三的分析"
+            }
+          ],
+          "assessed": true,
+          "missing_ids": [],
+          "not_assessed_reason": null,
+          "unknown_labels": []
+        },
+        "solution": {
+          "expected_question_ids": [
+            "Q1",
+            "Q2",
+            "Q3"
+          ],
+          "found": [
+            {
+              "ordinal": 1,
+              "label": "一",
+              "page": 4,
+              "heading": "5.1问题一：尾坯的连续长度优化"
+            },
+            {
+              "ordinal": 2,
+              "label": "二",
+              "page": 6,
+              "heading": "5.2问题二：异常通知下的在线规划"
+            },
+            {
+              "ordinal": 3,
+              "label": "三",
+              "page": 8,
+              "heading": "5.3问题三：替换产品区间后的决策"
+            }
+          ],
+          "assessed": true,
+          "missing_ids": [],
+          "not_assessed_reason": null,
+          "unknown_labels": []
+        }
+      },
+      "heading_pages": {
+        "restatement": [
+          2
+        ],
+        "analysis": [
+          2
+        ],
+        "assumptions": [
+          3
+        ],
+        "notation": [
+          4
+        ],
+        "solution": [
+          4
+        ],
+        "validation": [
+          11
+        ],
+        "evaluation": [
+          13
+        ],
+        "conclusion": [
+          13
+        ],
+        "ai": [
+          13
+        ],
+        "references": [
+          13
+        ],
+        "appendix": [
+          14
+        ]
+      },
+      "scope": "actual section coverage only; no certification of substantive answers, math, visual quality or awards",
+      "question_mapping": "contract questions in listed order map to 问题一/问题1 etc.; nested outputs need semantic review",
+      "pdf_sha256": "e5a4215431fe1b321472174e63c9cc8480fc58e45f3326326c70f3c29c672b80",
+      "extractor": "pypdf layout text",
+      "contract_sha256": "95555d26a2ce22c592aa1eb328ddb1fc0d9c9da5623a29ed6e194be74491f1db"
+    }
+  },
+  "independent_checks": {
+    "tail_network_losses": 12,
+    "online_network_objective_pairs": 27,
+    "continuous_waste_bounds_attained": true
+  },
+  "elapsed_minutes": 150.0770876,
+  "source_exposure": "historical cross-family evaluation; statement read before the clock; not a blind or prospectively human-approved trial",
+  "workflow_scope": "model contract prepared before solving on clean replay; stage remains READING pending real human signoffs",
+  "conditional_scope": [
+    "initial cut at coordinate/time zero",
+    "centered defect interval",
+    "zero kerf and unconstrained offline cutting",
+    "secondary squared deviation on declared grid"
+  ],
+  "submission_ready": false,
+  "national_award_level": "NOT_ESTABLISHED",
+  "remaining": [
+    "actual team/reviewer assessment",
+    "initial-state confirmation",
+    "formal code appendix and AI-use details for contest submission",
+    "other task families"
+  ]
+}

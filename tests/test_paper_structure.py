@@ -49,6 +49,27 @@ class StructureCoverageTest(unittest.TestCase):
         self.assertFalse(report["checks"]["required_heading_order"])
         self.assertEqual(len(report["heading_pages"]["assumptions"]),2)
 
+    def test_validation_heading_variant_is_still_a_standalone_heading(self):
+        pages=manuscript(3)
+        pages[1]=pages[1].replace("模型检验与敏感性分析","验证与灵敏度分析")
+        self.assertTrue(analyze_pages(pages,question_count=3)["passed"])
+        pages[1]=pages[1].replace("6 验证与灵敏度分析","下文说明验证与灵敏度分析的作用。")
+        report=analyze_pages(pages,question_count=3)
+        self.assertFalse(report["passed"])
+        self.assertTrue(report["checks"]["all_questions_analysis"])
+        self.assertTrue(report["checks"]["notation_table_columns"])
+        self.assertFalse(report["question_evidence"]["solution"]["assessed"])
+        self.assertEqual(report["question_evidence"]["solution"]["missing_ids"],[])
+
+    def test_missing_unrelated_heading_does_not_erase_question_evidence(self):
+        pages=manuscript(3)
+        pages[1]=pages[1].replace("\n8 结论","")
+        report=analyze_pages(pages,question_count=3)
+        self.assertFalse(report["passed"])
+        self.assertTrue(report["checks"]["all_questions_analysis"])
+        self.assertTrue(report["checks"]["all_questions_solution"])
+        self.assertEqual(report["question_evidence"]["solution"]["missing_ids"],[])
+
     def test_count_is_required_and_must_match_contract(self):
         with self.assertRaises(ValueError): analyze_pages(manuscript(4))
         with self.assertRaises(ValueError): analyze_pages(manuscript(4),contract={"questions":[{"id":"A"}]},question_count=4)

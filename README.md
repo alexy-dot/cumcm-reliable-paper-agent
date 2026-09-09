@@ -1,6 +1,6 @@
 # 国赛可信论文 Agent
 
-**从原始题面到有据可查的论文，把容易漏掉的错误挡在交稿前。**
+**把题意变成模型，把计算变成有据可查的中文论文。**
 
 面向全国大学生数学建模竞赛（CUMCM）的 Codex Skill 与 Python 校验引擎。
 适合赛前训练、团队建模协作和论文复核。核心运行只需 Python 3.10+，无需 API 密钥或第三方库。
@@ -39,7 +39,9 @@ python3 examples/production/run.py --output runs/demo
 
 解压支撑包后，在解压目录运行 `python3 solver.py --output reproduced.json`，两种算法应再次得到利润121。`paper/document.json`也已包含完整源码附录，可用论文排版器生成带分页代码的PDF。
 
-## 看一次完整题目实测
+## 真实题目回放
+
+### 2020 A：连续模型与约束优化
 
 2020 A“炉温曲线”的项目内首次实测，在约30分钟内完成四问和671条采样输出，29项独立数值检查通过。原8页稿的结构、字体与公式排版不合格，先前的排版通过记录已撤回。当前22页修订稿采用摘要独页、背景与条件—逐问要求的重述、逐问分析、模型假设、符号说明与分问求解结构，并使用宋体、黑体和TeX数学公式。修订补充了完整优化约束、求解设置与同预算算法对照；数值验收与论文修订分别记录。
 
@@ -75,6 +77,28 @@ python3 benchmarks/furnace_2020a/optimizer_comparison.py runs/furnace --output r
 ```
 
 输出目录须不存在。先写入固定协议，再执行搜索；独立复核后不重新选解，保留严格可行与数值容差可行两种判定。
+
+### 2021 D：异常通知下的在线切割
+
+[连铸切割训练稿](benchmarks/reports/casting-2021d-paper.pdf)覆盖12种尾坯与三种目标长度下各9次异常决策。尾坯用有理数枚举和凸性分配，在线方案用字典序动态规划；已启动的切口保持不变，未来通知不能提前进入决策。
+
+| 目标长度 | 固定定长切割损失 | 在线调整损失 | 连续材料下界 |
+| --- | ---: | ---: | ---: |
+| 9.5 m | 76.0 m | 23.8 m | 23.8 m |
+| 8.5 m | 68.0 m | 16.0 m | 16.0 m |
+| 11.1 m | 88.8 m | 25.9 m | 25.9 m |
+
+[独立网络流验证](benchmarks/reports/casting-2021d/independent.json)核对12种尾坯损失及27次事件的两级目标；在线总损失达到连续下界，提供了比“程序能运行”更直接的最优性依据。结论限定初始切口在0、零切缝及既定异常序列；初始相位改变时结果可能改变，次优先级也不冒充连续全局最优。
+
+[全部方案与机器时刻CSV](benchmarks/reports/casting-2021d/event_plans.csv) · [原始计算记录](benchmarks/reports/casting-2021d/solution.json) · [回放边界](benchmarks/reports/casting-2021d-summary.json)
+
+```bash
+python3 -m pip install -r benchmarks/casting_2021d/requirements.txt -r requirements-paper.txt
+python3 benchmarks/casting_2021d/run_all.py \
+  --source /path/2021/D/CUMCM2021-D.pdf --output runs/casting
+```
+
+数学排版同样需要Tectonic/XeLaTeX及中文字体；支持上述`--latex-compiler`、`--cache-dir`和`--paper-python`参数。该回放是跨题型历史实测，不是严格盲测或正式提交认证。
 
 ## 用于自己的题目
 
@@ -131,7 +155,7 @@ python3 benchmarks/verify_intake.py --source-dir /path/2020/D --output runs/inta
 
 ## 当前边界
 
-当前是国奖导向的辅助工具，**历史题已完成一次限时成稿实测，但尚未证明国奖级可靠性，不保证奖项**。通用题型求解、赛区差异与更广泛的独立评阅仍在完善。规则摘录的权利归原发布者，代码适用MIT许可证。
+当前是国奖导向的辅助工具，**已完成炉温优化与在线切割两类历史题回放，但尚未证明国奖级可靠性，不保证奖项**。首次限时稿未通过论文验收，后续修订不补算为盲测成绩。通用题型求解、赛区差异与更广泛的独立评阅仍在完善。规则摘录的权利归原发布者，代码适用MIT许可证。
 
 数据读取不等于题意理解；第一存储行暂作表头候选，图示、单位、日期和公式缓存需结合原文解释。数值一致不证明两种算法真正独立；人工签核字段不认证身份，文件哈希也不是防篡改认证。项目会明确区分合成示例、历史回放和陌生题验收。
 

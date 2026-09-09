@@ -1,0 +1,5445 @@
+{
+  "facts_sha256": "c48d9e504547bc67cceec8a10901918e9adbc8ae6f364e604e184833ae1b204e",
+  "tails": [
+    {
+      "tail_m": 109.0,
+      "primary_m": [
+        9.909090909090908,
+        9.909090909090908,
+        9.909090909090908,
+        9.909090909090908,
+        9.909090909090908,
+        9.909090909090908,
+        9.909090909090908,
+        9.909090909090908,
+        9.909090909090908,
+        9.909090909090908,
+        9.909090909090908
+      ],
+      "recovered_m": [
+        9.909090909090908,
+        9.909090909090908,
+        9.909090909090908,
+        9.909090909090908,
+        9.909090909090908,
+        9.909090909090908,
+        9.909090909090908,
+        9.909090909090908,
+        9.909090909090908,
+        9.909090909090908,
+        9.909090909090908
+      ],
+      "waste_m": 0.0,
+      "squared_deviation_m2": 1.8409090909090908,
+      "accepted_count": 11,
+      "exact": {
+        "primary": [
+          "109/11",
+          "109/11",
+          "109/11",
+          "109/11",
+          "109/11",
+          "109/11",
+          "109/11",
+          "109/11",
+          "109/11",
+          "109/11",
+          "109/11"
+        ],
+        "recovered": [
+          "109/11",
+          "109/11",
+          "109/11",
+          "109/11",
+          "109/11",
+          "109/11",
+          "109/11",
+          "109/11",
+          "109/11",
+          "109/11",
+          "109/11"
+        ],
+        "waste": "0",
+        "squared_deviation": "81/44"
+      }
+    },
+    {
+      "tail_m": 93.4,
+      "primary_m": [
+        9.34,
+        9.34,
+        9.34,
+        9.34,
+        9.34,
+        9.34,
+        9.34,
+        9.34,
+        9.34,
+        9.34
+      ],
+      "recovered_m": [
+        9.34,
+        9.34,
+        9.34,
+        9.34,
+        9.34,
+        9.34,
+        9.34,
+        9.34,
+        9.34,
+        9.34
+      ],
+      "waste_m": 0.0,
+      "squared_deviation_m2": 0.256,
+      "accepted_count": 10,
+      "exact": {
+        "primary": [
+          "467/50",
+          "467/50",
+          "467/50",
+          "467/50",
+          "467/50",
+          "467/50",
+          "467/50",
+          "467/50",
+          "467/50",
+          "467/50"
+        ],
+        "recovered": [
+          "467/50",
+          "467/50",
+          "467/50",
+          "467/50",
+          "467/50",
+          "467/50",
+          "467/50",
+          "467/50",
+          "467/50",
+          "467/50"
+        ],
+        "waste": "0",
+        "squared_deviation": "32/125"
+      }
+    },
+    {
+      "tail_m": 80.9,
+      "primary_m": [
+        10.9,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "recovered_m": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "waste_m": 0.9,
+      "squared_deviation_m2": 2.0,
+      "accepted_count": 8,
+      "exact": {
+        "primary": [
+          "109/10",
+          "10",
+          "10",
+          "10",
+          "10",
+          "10",
+          "10",
+          "10"
+        ],
+        "recovered": [
+          "10",
+          "10",
+          "10",
+          "10",
+          "10",
+          "10",
+          "10",
+          "10"
+        ],
+        "waste": "9/10",
+        "squared_deviation": "2"
+      }
+    },
+    {
+      "tail_m": 72.0,
+      "primary_m": [
+        9.0,
+        9.0,
+        9.0,
+        9.0,
+        9.0,
+        9.0,
+        9.0,
+        9.0
+      ],
+      "recovered_m": [
+        9.0,
+        9.0,
+        9.0,
+        9.0,
+        9.0,
+        9.0,
+        9.0,
+        9.0
+      ],
+      "waste_m": 0.0,
+      "squared_deviation_m2": 2.0,
+      "accepted_count": 8,
+      "exact": {
+        "primary": [
+          "9",
+          "9",
+          "9",
+          "9",
+          "9",
+          "9",
+          "9",
+          "9"
+        ],
+        "recovered": [
+          "9",
+          "9",
+          "9",
+          "9",
+          "9",
+          "9",
+          "9",
+          "9"
+        ],
+        "waste": "0",
+        "squared_deviation": "2"
+      }
+    },
+    {
+      "tail_m": 62.7,
+      "primary_m": [
+        12.6,
+        10.1,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "recovered_m": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "waste_m": 2.7,
+      "squared_deviation_m2": 1.5,
+      "accepted_count": 6,
+      "exact": {
+        "primary": [
+          "63/5",
+          "101/10",
+          "10",
+          "10",
+          "10",
+          "10"
+        ],
+        "recovered": [
+          "10",
+          "10",
+          "10",
+          "10",
+          "10",
+          "10"
+        ],
+        "waste": "27/10",
+        "squared_deviation": "3/2"
+      }
+    },
+    {
+      "tail_m": 52.5,
+      "primary_m": [
+        12.5,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "recovered_m": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "waste_m": 2.5,
+      "squared_deviation_m2": 1.25,
+      "accepted_count": 5,
+      "exact": {
+        "primary": [
+          "25/2",
+          "10",
+          "10",
+          "10",
+          "10"
+        ],
+        "recovered": [
+          "10",
+          "10",
+          "10",
+          "10",
+          "10"
+        ],
+        "waste": "5/2",
+        "squared_deviation": "5/4"
+      }
+    },
+    {
+      "tail_m": 44.9,
+      "primary_m": [
+        12.6,
+        12.3,
+        10.0,
+        10.0
+      ],
+      "recovered_m": [
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "waste_m": 4.9,
+      "squared_deviation_m2": 1.0,
+      "accepted_count": 4,
+      "exact": {
+        "primary": [
+          "63/5",
+          "123/10",
+          "10",
+          "10"
+        ],
+        "recovered": [
+          "10",
+          "10",
+          "10",
+          "10"
+        ],
+        "waste": "49/10",
+        "squared_deviation": "1"
+      }
+    },
+    {
+      "tail_m": 42.7,
+      "primary_m": [
+        12.6,
+        10.1,
+        10.0,
+        10.0
+      ],
+      "recovered_m": [
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "waste_m": 2.7,
+      "squared_deviation_m2": 1.0,
+      "accepted_count": 4,
+      "exact": {
+        "primary": [
+          "63/5",
+          "101/10",
+          "10",
+          "10"
+        ],
+        "recovered": [
+          "10",
+          "10",
+          "10",
+          "10"
+        ],
+        "waste": "27/10",
+        "squared_deviation": "1"
+      }
+    },
+    {
+      "tail_m": 31.6,
+      "primary_m": [
+        11.6,
+        10.0,
+        10.0
+      ],
+      "recovered_m": [
+        10.0,
+        10.0,
+        10.0
+      ],
+      "waste_m": 1.6,
+      "squared_deviation_m2": 0.75,
+      "accepted_count": 3,
+      "exact": {
+        "primary": [
+          "58/5",
+          "10",
+          "10"
+        ],
+        "recovered": [
+          "10",
+          "10",
+          "10"
+        ],
+        "waste": "8/5",
+        "squared_deviation": "3/4"
+      }
+    },
+    {
+      "tail_m": 22.7,
+      "primary_m": [
+        12.6,
+        10.1
+      ],
+      "recovered_m": [
+        10.0,
+        10.0
+      ],
+      "waste_m": 2.7,
+      "squared_deviation_m2": 0.5,
+      "accepted_count": 2,
+      "exact": {
+        "primary": [
+          "63/5",
+          "101/10"
+        ],
+        "recovered": [
+          "10",
+          "10"
+        ],
+        "waste": "27/10",
+        "squared_deviation": "1/2"
+      }
+    },
+    {
+      "tail_m": 14.5,
+      "primary_m": [
+        9.7,
+        4.8
+      ],
+      "recovered_m": [
+        9.7,
+        0.0
+      ],
+      "waste_m": 4.8,
+      "squared_deviation_m2": 0.04,
+      "accepted_count": 1,
+      "exact": {
+        "primary": [
+          "97/10",
+          "24/5"
+        ],
+        "recovered": [
+          "97/10",
+          "0"
+        ],
+        "waste": "24/5",
+        "squared_deviation": "1/25"
+      }
+    },
+    {
+      "tail_m": 13.7,
+      "primary_m": [
+        8.9,
+        4.8
+      ],
+      "recovered_m": [
+        0.0,
+        0.0
+      ],
+      "waste_m": 13.7,
+      "squared_deviation_m2": 0.0,
+      "accepted_count": 0,
+      "exact": {
+        "primary": [
+          "89/10",
+          "24/5"
+        ],
+        "recovered": [
+          "0",
+          "0"
+        ],
+        "waste": "137/10",
+        "squared_deviation": "0"
+      }
+    }
+  ],
+  "online": {
+    "Q2": {
+      "case": {
+        "target_m": 9.5,
+        "lower_m": 9.0,
+        "upper_m": 10.0
+      },
+      "scale": 10,
+      "initial_boundary": 0,
+      "events": [
+        {
+          "event": 1,
+          "time_tick": 0,
+          "known_events": 1,
+          "locked_boundary": 0,
+          "committed_piece_count": 0,
+          "cut_in_progress": true,
+          "previous_pending": [],
+          "new_plan": {
+            "start": 0,
+            "notification": 0,
+            "defects": [
+              [
+                596,
+                604
+              ]
+            ],
+            "terminal": 604,
+            "score": [
+              8,
+              114,
+              6
+            ],
+            "pieces": [
+              {
+                "start": 0,
+                "end": 99,
+                "recovered": [
+                  0,
+                  99
+                ],
+                "waste": 0,
+                "deviation": 16
+              },
+              {
+                "start": 99,
+                "end": 198,
+                "recovered": [
+                  99,
+                  198
+                ],
+                "waste": 0,
+                "deviation": 16
+              },
+              {
+                "start": 198,
+                "end": 297,
+                "recovered": [
+                  198,
+                  297
+                ],
+                "waste": 0,
+                "deviation": 16
+              },
+              {
+                "start": 297,
+                "end": 396,
+                "recovered": [
+                  297,
+                  396
+                ],
+                "waste": 0,
+                "deviation": 16
+              },
+              {
+                "start": 396,
+                "end": 496,
+                "recovered": [
+                  396,
+                  496
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 496,
+                "end": 604,
+                "recovered": [
+                  496,
+                  596
+                ],
+                "waste": 8,
+                "deviation": 25
+              }
+            ],
+            "grid_scale_per_m": 10,
+            "evaluated_edges": 44003,
+            "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
+          },
+          "planning_seconds": 0.03585133299930021,
+          "current_next_cut_changed": null,
+          "committed_waste": 0,
+          "projected_total_waste": 8
+        },
+        {
+          "event": 2,
+          "time_tick": 456,
+          "known_events": 2,
+          "locked_boundary": 396,
+          "committed_piece_count": 4,
+          "cut_in_progress": false,
+          "previous_pending": [
+            {
+              "start": 396,
+              "end": 496,
+              "recovered": [
+                396,
+                496
+              ],
+              "waste": 0,
+              "deviation": 25,
+              "planned_at": 0,
+              "known_event_count": 1
+            },
+            {
+              "start": 496,
+              "end": 604,
+              "recovered": [
+                496,
+                596
+              ],
+              "waste": 8,
+              "deviation": 25,
+              "planned_at": 0,
+              "known_event_count": 1
+            }
+          ],
+          "new_plan": {
+            "start": 396,
+            "notification": 456,
+            "defects": [
+              [
+                596,
+                604
+              ],
+              [
+                1052,
+                1060
+              ]
+            ],
+            "terminal": 1060,
+            "score": [
+              64,
+              150,
+              6
+            ],
+            "pieces": [
+              {
+                "start": 396,
+                "end": 496,
+                "recovered": [
+                  396,
+                  496
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 496,
+                "end": 596,
+                "recovered": [
+                  496,
+                  596
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 596,
+                "end": 704,
+                "recovered": [
+                  604,
+                  704
+                ],
+                "waste": 8,
+                "deviation": 25
+              },
+              {
+                "start": 704,
+                "end": 808,
+                "recovered": [
+                  704,
+                  804
+                ],
+                "waste": 4,
+                "deviation": 25
+              },
+              {
+                "start": 808,
+                "end": 934,
+                "recovered": [
+                  808,
+                  908
+                ],
+                "waste": 26,
+                "deviation": 25
+              },
+              {
+                "start": 934,
+                "end": 1060,
+                "recovered": [
+                  934,
+                  1034
+                ],
+                "waste": 26,
+                "deviation": 25
+              }
+            ],
+            "grid_scale_per_m": 10,
+            "evaluated_edges": 47783,
+            "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
+          },
+          "planning_seconds": 0.04544904099020641,
+          "current_next_cut_changed": false,
+          "committed_waste": 0,
+          "projected_total_waste": 64
+        },
+        {
+          "event": 3,
+          "time_tick": 986,
+          "known_events": 3,
+          "locked_boundary": 934,
+          "committed_piece_count": 9,
+          "cut_in_progress": false,
+          "previous_pending": [
+            {
+              "start": 934,
+              "end": 1060,
+              "recovered": [
+                934,
+                1034
+              ],
+              "waste": 26,
+              "deviation": 25,
+              "planned_at": 456,
+              "known_event_count": 2
+            }
+          ],
+          "new_plan": {
+            "start": 934,
+            "notification": 986,
+            "defects": [
+              [
+                1052,
+                1060
+              ],
+              [
+                1582,
+                1590
+              ]
+            ],
+            "terminal": 1590,
+            "score": [
+              56,
+              150,
+              6
+            ],
+            "pieces": [
+              {
+                "start": 934,
+                "end": 1034,
+                "recovered": [
+                  934,
+                  1034
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 1034,
+                "end": 1160,
+                "recovered": [
+                  1060,
+                  1160
+                ],
+                "waste": 26,
+                "deviation": 25
+              },
+              {
+                "start": 1160,
+                "end": 1260,
+                "recovered": [
+                  1160,
+                  1260
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 1260,
+                "end": 1360,
+                "recovered": [
+                  1260,
+                  1360
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 1360,
+                "end": 1464,
+                "recovered": [
+                  1360,
+                  1460
+                ],
+                "waste": 4,
+                "deviation": 25
+              },
+              {
+                "start": 1464,
+                "end": 1590,
+                "recovered": [
+                  1464,
+                  1564
+                ],
+                "waste": 26,
+                "deviation": 25
+              }
+            ],
+            "grid_scale_per_m": 10,
+            "evaluated_edges": 47791,
+            "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
+          },
+          "planning_seconds": 0.044962667001527734,
+          "current_next_cut_changed": true,
+          "committed_waste": 38,
+          "projected_total_waste": 94
+        },
+        {
+          "event": 4,
+          "time_tick": 1315,
+          "known_events": 4,
+          "locked_boundary": 1260,
+          "committed_piece_count": 12,
+          "cut_in_progress": false,
+          "previous_pending": [
+            {
+              "start": 1260,
+              "end": 1360,
+              "recovered": [
+                1260,
+                1360
+              ],
+              "waste": 0,
+              "deviation": 25,
+              "planned_at": 986,
+              "known_event_count": 3
+            },
+            {
+              "start": 1360,
+              "end": 1464,
+              "recovered": [
+                1360,
+                1460
+              ],
+              "waste": 4,
+              "deviation": 25,
+              "planned_at": 986,
+              "known_event_count": 3
+            },
+            {
+              "start": 1464,
+              "end": 1590,
+              "recovered": [
+                1464,
+                1564
+              ],
+              "waste": 26,
+              "deviation": 25,
+              "planned_at": 986,
+              "known_event_count": 3
+            }
+          ],
+          "new_plan": {
+            "start": 1260,
+            "notification": 1315,
+            "defects": [
+              [
+                1582,
+                1590
+              ],
+              [
+                1911,
+                1919
+              ]
+            ],
+            "terminal": 1919,
+            "score": [
+              59,
+              150,
+              6
+            ],
+            "pieces": [
+              {
+                "start": 1260,
+                "end": 1360,
+                "recovered": [
+                  1260,
+                  1360
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 1360,
+                "end": 1460,
+                "recovered": [
+                  1360,
+                  1460
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 1460,
+                "end": 1564,
+                "recovered": [
+                  1460,
+                  1560
+                ],
+                "waste": 4,
+                "deviation": 25
+              },
+              {
+                "start": 1564,
+                "end": 1690,
+                "recovered": [
+                  1590,
+                  1690
+                ],
+                "waste": 26,
+                "deviation": 25
+              },
+              {
+                "start": 1690,
+                "end": 1793,
+                "recovered": [
+                  1690,
+                  1790
+                ],
+                "waste": 3,
+                "deviation": 25
+              },
+              {
+                "start": 1793,
+                "end": 1919,
+                "recovered": [
+                  1793,
+                  1893
+                ],
+                "waste": 26,
+                "deviation": 25
+              }
+            ],
+            "grid_scale_per_m": 10,
+            "evaluated_edges": 47788,
+            "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
+          },
+          "planning_seconds": 0.04189629100437742,
+          "current_next_cut_changed": false,
+          "committed_waste": 64,
+          "projected_total_waste": 123
+        },
+        {
+          "event": 5,
+          "time_tick": 1908,
+          "known_events": 5,
+          "locked_boundary": 1793,
+          "committed_piece_count": 17,
+          "cut_in_progress": false,
+          "previous_pending": [
+            {
+              "start": 1793,
+              "end": 1919,
+              "recovered": [
+                1793,
+                1893
+              ],
+              "waste": 26,
+              "deviation": 25,
+              "planned_at": 1315,
+              "known_event_count": 4
+            }
+          ],
+          "new_plan": {
+            "start": 1793,
+            "notification": 1908,
+            "defects": [
+              [
+                1911,
+                1919
+              ],
+              [
+                2504,
+                2512
+              ]
+            ],
+            "terminal": 2512,
+            "score": [
+              34,
+              64,
+              7
+            ],
+            "pieces": [
+              {
+                "start": 1793,
+                "end": 1908,
+                "recovered": [
+                  1793,
+                  1893
+                ],
+                "waste": 15,
+                "deviation": 25
+              },
+              {
+                "start": 1908,
+                "end": 2016,
+                "recovered": [
+                  1919,
+                  2016
+                ],
+                "waste": 11,
+                "deviation": 4
+              },
+              {
+                "start": 2016,
+                "end": 2113,
+                "recovered": [
+                  2016,
+                  2113
+                ],
+                "waste": 0,
+                "deviation": 4
+              },
+              {
+                "start": 2113,
+                "end": 2210,
+                "recovered": [
+                  2113,
+                  2210
+                ],
+                "waste": 0,
+                "deviation": 4
+              },
+              {
+                "start": 2210,
+                "end": 2308,
+                "recovered": [
+                  2210,
+                  2308
+                ],
+                "waste": 0,
+                "deviation": 9
+              },
+              {
+                "start": 2308,
+                "end": 2406,
+                "recovered": [
+                  2308,
+                  2406
+                ],
+                "waste": 0,
+                "deviation": 9
+              },
+              {
+                "start": 2406,
+                "end": 2512,
+                "recovered": [
+                  2406,
+                  2504
+                ],
+                "waste": 8,
+                "deviation": 9
+              }
+            ],
+            "grid_scale_per_m": 10,
+            "evaluated_edges": 44884,
+            "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
+          },
+          "planning_seconds": 0.03538429101172369,
+          "current_next_cut_changed": true,
+          "committed_waste": 97,
+          "projected_total_waste": 131
+        },
+        {
+          "event": 6,
+          "time_tick": 2333,
+          "known_events": 6,
+          "locked_boundary": 2308,
+          "committed_piece_count": 22,
+          "cut_in_progress": true,
+          "previous_pending": [
+            {
+              "start": 2308,
+              "end": 2406,
+              "recovered": [
+                2308,
+                2406
+              ],
+              "waste": 0,
+              "deviation": 9,
+              "planned_at": 1908,
+              "known_event_count": 5
+            },
+            {
+              "start": 2406,
+              "end": 2512,
+              "recovered": [
+                2406,
+                2504
+              ],
+              "waste": 8,
+              "deviation": 9,
+              "planned_at": 1908,
+              "known_event_count": 5
+            }
+          ],
+          "new_plan": {
+            "start": 2308,
+            "notification": 2333,
+            "defects": [
+              [
+                2504,
+                2512
+              ],
+              [
+                2929,
+                2937
+              ]
+            ],
+            "terminal": 2937,
+            "score": [
+              33,
+              118,
+              6
+            ],
+            "pieces": [
+              {
+                "start": 2308,
+                "end": 2406,
+                "recovered": [
+                  2308,
+                  2406
+                ],
+                "waste": 0,
+                "deviation": 9
+              },
+              {
+                "start": 2406,
+                "end": 2504,
+                "recovered": [
+                  2406,
+                  2504
+                ],
+                "waste": 0,
+                "deviation": 9
+              },
+              {
+                "start": 2504,
+                "end": 2612,
+                "recovered": [
+                  2512,
+                  2612
+                ],
+                "waste": 8,
+                "deviation": 25
+              },
+              {
+                "start": 2612,
+                "end": 2712,
+                "recovered": [
+                  2612,
+                  2712
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 2712,
+                "end": 2812,
+                "recovered": [
+                  2712,
+                  2812
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 2812,
+                "end": 2937,
+                "recovered": [
+                  2812,
+                  2912
+                ],
+                "waste": 25,
+                "deviation": 25
+              }
+            ],
+            "grid_scale_per_m": 10,
+            "evaluated_edges": 45978,
+            "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
+          },
+          "planning_seconds": 0.037981209010467865,
+          "current_next_cut_changed": false,
+          "committed_waste": 123,
+          "projected_total_waste": 156
+        },
+        {
+          "event": 7,
+          "time_tick": 2660,
+          "known_events": 7,
+          "locked_boundary": 2612,
+          "committed_piece_count": 25,
+          "cut_in_progress": false,
+          "previous_pending": [
+            {
+              "start": 2612,
+              "end": 2712,
+              "recovered": [
+                2612,
+                2712
+              ],
+              "waste": 0,
+              "deviation": 25,
+              "planned_at": 2333,
+              "known_event_count": 6
+            },
+            {
+              "start": 2712,
+              "end": 2812,
+              "recovered": [
+                2712,
+                2812
+              ],
+              "waste": 0,
+              "deviation": 25,
+              "planned_at": 2333,
+              "known_event_count": 6
+            },
+            {
+              "start": 2812,
+              "end": 2937,
+              "recovered": [
+                2812,
+                2912
+              ],
+              "waste": 25,
+              "deviation": 25,
+              "planned_at": 2333,
+              "known_event_count": 6
+            }
+          ],
+          "new_plan": {
+            "start": 2612,
+            "notification": 2660,
+            "defects": [
+              [
+                2929,
+                2937
+              ],
+              [
+                3256,
+                3264
+              ]
+            ],
+            "terminal": 3264,
+            "score": [
+              52,
+              150,
+              6
+            ],
+            "pieces": [
+              {
+                "start": 2612,
+                "end": 2712,
+                "recovered": [
+                  2612,
+                  2712
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 2712,
+                "end": 2812,
+                "recovered": [
+                  2712,
+                  2812
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 2812,
+                "end": 2912,
+                "recovered": [
+                  2812,
+                  2912
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 2912,
+                "end": 3037,
+                "recovered": [
+                  2937,
+                  3037
+                ],
+                "waste": 25,
+                "deviation": 25
+              },
+              {
+                "start": 3037,
+                "end": 3138,
+                "recovered": [
+                  3037,
+                  3137
+                ],
+                "waste": 1,
+                "deviation": 25
+              },
+              {
+                "start": 3138,
+                "end": 3264,
+                "recovered": [
+                  3138,
+                  3238
+                ],
+                "waste": 26,
+                "deviation": 25
+              }
+            ],
+            "grid_scale_per_m": 10,
+            "evaluated_edges": 47795,
+            "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
+          },
+          "planning_seconds": 0.03942070800985675,
+          "current_next_cut_changed": false,
+          "committed_waste": 131,
+          "projected_total_waste": 183
+        },
+        {
+          "event": 8,
+          "time_tick": 2707,
+          "known_events": 8,
+          "locked_boundary": 2612,
+          "committed_piece_count": 25,
+          "cut_in_progress": false,
+          "previous_pending": [
+            {
+              "start": 2612,
+              "end": 2712,
+              "recovered": [
+                2612,
+                2712
+              ],
+              "waste": 0,
+              "deviation": 25,
+              "planned_at": 2660,
+              "known_event_count": 7
+            },
+            {
+              "start": 2712,
+              "end": 2812,
+              "recovered": [
+                2712,
+                2812
+              ],
+              "waste": 0,
+              "deviation": 25,
+              "planned_at": 2660,
+              "known_event_count": 7
+            },
+            {
+              "start": 2812,
+              "end": 2912,
+              "recovered": [
+                2812,
+                2912
+              ],
+              "waste": 0,
+              "deviation": 25,
+              "planned_at": 2660,
+              "known_event_count": 7
+            },
+            {
+              "start": 2912,
+              "end": 3037,
+              "recovered": [
+                2937,
+                3037
+              ],
+              "waste": 25,
+              "deviation": 25,
+              "planned_at": 2660,
+              "known_event_count": 7
+            },
+            {
+              "start": 3037,
+              "end": 3138,
+              "recovered": [
+                3037,
+                3137
+              ],
+              "waste": 1,
+              "deviation": 25,
+              "planned_at": 2660,
+              "known_event_count": 7
+            },
+            {
+              "start": 3138,
+              "end": 3264,
+              "recovered": [
+                3138,
+                3238
+              ],
+              "waste": 26,
+              "deviation": 25,
+              "planned_at": 2660,
+              "known_event_count": 7
+            }
+          ],
+          "new_plan": {
+            "start": 2612,
+            "notification": 2707,
+            "defects": [
+              [
+                2929,
+                2937
+              ],
+              [
+                3256,
+                3264
+              ],
+              [
+                3303,
+                3311
+              ]
+            ],
+            "terminal": 3311,
+            "score": [
+              99,
+              150,
+              7
+            ],
+            "pieces": [
+              {
+                "start": 2612,
+                "end": 2712,
+                "recovered": [
+                  2612,
+                  2712
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 2712,
+                "end": 2812,
+                "recovered": [
+                  2712,
+                  2812
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 2812,
+                "end": 2912,
+                "recovered": [
+                  2812,
+                  2912
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 2912,
+                "end": 3037,
+                "recovered": [
+                  2937,
+                  3037
+                ],
+                "waste": 25,
+                "deviation": 25
+              },
+              {
+                "start": 3037,
+                "end": 3137,
+                "recovered": [
+                  3037,
+                  3137
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 3137,
+                "end": 3237,
+                "recovered": [
+                  3137,
+                  3237
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 3237,
+                "end": 3311,
+                "recovered": null,
+                "waste": 74,
+                "deviation": 0
+              }
+            ],
+            "grid_scale_per_m": 10,
+            "evaluated_edges": 46484,
+            "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
+          },
+          "planning_seconds": 0.04164674998901319,
+          "current_next_cut_changed": false,
+          "committed_waste": 131,
+          "projected_total_waste": 230
+        },
+        {
+          "event": 9,
+          "time_tick": 3279,
+          "known_events": 9,
+          "locked_boundary": 3237,
+          "committed_piece_count": 31,
+          "cut_in_progress": false,
+          "previous_pending": [
+            {
+              "start": 3237,
+              "end": 3311,
+              "recovered": null,
+              "waste": 74,
+              "deviation": 0,
+              "planned_at": 2707,
+              "known_event_count": 8
+            }
+          ],
+          "new_plan": {
+            "start": 3237,
+            "notification": 3279,
+            "defects": [
+              [
+                3256,
+                3264
+              ],
+              [
+                3303,
+                3311
+              ],
+              [
+                3875,
+                3883
+              ]
+            ],
+            "terminal": 3883,
+            "score": [
+              82,
+              6,
+              7
+            ],
+            "pieces": [
+              {
+                "start": 3237,
+                "end": 3285,
+                "recovered": null,
+                "waste": 48,
+                "deviation": 0
+              },
+              {
+                "start": 3285,
+                "end": 3405,
+                "recovered": [
+                  3311,
+                  3405
+                ],
+                "waste": 26,
+                "deviation": 1
+              },
+              {
+                "start": 3405,
+                "end": 3499,
+                "recovered": [
+                  3405,
+                  3499
+                ],
+                "waste": 0,
+                "deviation": 1
+              },
+              {
+                "start": 3499,
+                "end": 3593,
+                "recovered": [
+                  3499,
+                  3593
+                ],
+                "waste": 0,
+                "deviation": 1
+              },
+              {
+                "start": 3593,
+                "end": 3687,
+                "recovered": [
+                  3593,
+                  3687
+                ],
+                "waste": 0,
+                "deviation": 1
+              },
+              {
+                "start": 3687,
+                "end": 3781,
+                "recovered": [
+                  3687,
+                  3781
+                ],
+                "waste": 0,
+                "deviation": 1
+              },
+              {
+                "start": 3781,
+                "end": 3883,
+                "recovered": [
+                  3781,
+                  3875
+                ],
+                "waste": 8,
+                "deviation": 1
+              }
+            ],
+            "grid_scale_per_m": 10,
+            "evaluated_edges": 47321,
+            "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
+          },
+          "planning_seconds": 0.03837437499896623,
+          "current_next_cut_changed": true,
+          "committed_waste": 156,
+          "projected_total_waste": 238
+        }
+      ],
+      "executed": [
+        {
+          "start": 0,
+          "end": 99,
+          "recovered": [
+            0,
+            99
+          ],
+          "waste": 0,
+          "deviation": 16,
+          "planned_at": 0,
+          "known_event_count": 1
+        },
+        {
+          "start": 99,
+          "end": 198,
+          "recovered": [
+            99,
+            198
+          ],
+          "waste": 0,
+          "deviation": 16,
+          "planned_at": 0,
+          "known_event_count": 1
+        },
+        {
+          "start": 198,
+          "end": 297,
+          "recovered": [
+            198,
+            297
+          ],
+          "waste": 0,
+          "deviation": 16,
+          "planned_at": 0,
+          "known_event_count": 1
+        },
+        {
+          "start": 297,
+          "end": 396,
+          "recovered": [
+            297,
+            396
+          ],
+          "waste": 0,
+          "deviation": 16,
+          "planned_at": 0,
+          "known_event_count": 1
+        },
+        {
+          "start": 396,
+          "end": 496,
+          "recovered": [
+            396,
+            496
+          ],
+          "waste": 0,
+          "deviation": 25,
+          "planned_at": 456,
+          "known_event_count": 2
+        },
+        {
+          "start": 496,
+          "end": 596,
+          "recovered": [
+            496,
+            596
+          ],
+          "waste": 0,
+          "deviation": 25,
+          "planned_at": 456,
+          "known_event_count": 2
+        },
+        {
+          "start": 596,
+          "end": 704,
+          "recovered": [
+            604,
+            704
+          ],
+          "waste": 8,
+          "deviation": 25,
+          "planned_at": 456,
+          "known_event_count": 2
+        },
+        {
+          "start": 704,
+          "end": 808,
+          "recovered": [
+            704,
+            804
+          ],
+          "waste": 4,
+          "deviation": 25,
+          "planned_at": 456,
+          "known_event_count": 2
+        },
+        {
+          "start": 808,
+          "end": 934,
+          "recovered": [
+            808,
+            908
+          ],
+          "waste": 26,
+          "deviation": 25,
+          "planned_at": 456,
+          "known_event_count": 2
+        },
+        {
+          "start": 934,
+          "end": 1034,
+          "recovered": [
+            934,
+            1034
+          ],
+          "waste": 0,
+          "deviation": 25,
+          "planned_at": 986,
+          "known_event_count": 3
+        },
+        {
+          "start": 1034,
+          "end": 1160,
+          "recovered": [
+            1060,
+            1160
+          ],
+          "waste": 26,
+          "deviation": 25,
+          "planned_at": 986,
+          "known_event_count": 3
+        },
+        {
+          "start": 1160,
+          "end": 1260,
+          "recovered": [
+            1160,
+            1260
+          ],
+          "waste": 0,
+          "deviation": 25,
+          "planned_at": 986,
+          "known_event_count": 3
+        },
+        {
+          "start": 1260,
+          "end": 1360,
+          "recovered": [
+            1260,
+            1360
+          ],
+          "waste": 0,
+          "deviation": 25,
+          "planned_at": 1315,
+          "known_event_count": 4
+        },
+        {
+          "start": 1360,
+          "end": 1460,
+          "recovered": [
+            1360,
+            1460
+          ],
+          "waste": 0,
+          "deviation": 25,
+          "planned_at": 1315,
+          "known_event_count": 4
+        },
+        {
+          "start": 1460,
+          "end": 1564,
+          "recovered": [
+            1460,
+            1560
+          ],
+          "waste": 4,
+          "deviation": 25,
+          "planned_at": 1315,
+          "known_event_count": 4
+        },
+        {
+          "start": 1564,
+          "end": 1690,
+          "recovered": [
+            1590,
+            1690
+          ],
+          "waste": 26,
+          "deviation": 25,
+          "planned_at": 1315,
+          "known_event_count": 4
+        },
+        {
+          "start": 1690,
+          "end": 1793,
+          "recovered": [
+            1690,
+            1790
+          ],
+          "waste": 3,
+          "deviation": 25,
+          "planned_at": 1315,
+          "known_event_count": 4
+        },
+        {
+          "start": 1793,
+          "end": 1908,
+          "recovered": [
+            1793,
+            1893
+          ],
+          "waste": 15,
+          "deviation": 25,
+          "planned_at": 1908,
+          "known_event_count": 5
+        },
+        {
+          "start": 1908,
+          "end": 2016,
+          "recovered": [
+            1919,
+            2016
+          ],
+          "waste": 11,
+          "deviation": 4,
+          "planned_at": 1908,
+          "known_event_count": 5
+        },
+        {
+          "start": 2016,
+          "end": 2113,
+          "recovered": [
+            2016,
+            2113
+          ],
+          "waste": 0,
+          "deviation": 4,
+          "planned_at": 1908,
+          "known_event_count": 5
+        },
+        {
+          "start": 2113,
+          "end": 2210,
+          "recovered": [
+            2113,
+            2210
+          ],
+          "waste": 0,
+          "deviation": 4,
+          "planned_at": 1908,
+          "known_event_count": 5
+        },
+        {
+          "start": 2210,
+          "end": 2308,
+          "recovered": [
+            2210,
+            2308
+          ],
+          "waste": 0,
+          "deviation": 9,
+          "planned_at": 1908,
+          "known_event_count": 5
+        },
+        {
+          "start": 2308,
+          "end": 2406,
+          "recovered": [
+            2308,
+            2406
+          ],
+          "waste": 0,
+          "deviation": 9,
+          "planned_at": 2333,
+          "known_event_count": 6
+        },
+        {
+          "start": 2406,
+          "end": 2504,
+          "recovered": [
+            2406,
+            2504
+          ],
+          "waste": 0,
+          "deviation": 9,
+          "planned_at": 2333,
+          "known_event_count": 6
+        },
+        {
+          "start": 2504,
+          "end": 2612,
+          "recovered": [
+            2512,
+            2612
+          ],
+          "waste": 8,
+          "deviation": 25,
+          "planned_at": 2333,
+          "known_event_count": 6
+        },
+        {
+          "start": 2612,
+          "end": 2712,
+          "recovered": [
+            2612,
+            2712
+          ],
+          "waste": 0,
+          "deviation": 25,
+          "planned_at": 2707,
+          "known_event_count": 8
+        },
+        {
+          "start": 2712,
+          "end": 2812,
+          "recovered": [
+            2712,
+            2812
+          ],
+          "waste": 0,
+          "deviation": 25,
+          "planned_at": 2707,
+          "known_event_count": 8
+        },
+        {
+          "start": 2812,
+          "end": 2912,
+          "recovered": [
+            2812,
+            2912
+          ],
+          "waste": 0,
+          "deviation": 25,
+          "planned_at": 2707,
+          "known_event_count": 8
+        },
+        {
+          "start": 2912,
+          "end": 3037,
+          "recovered": [
+            2937,
+            3037
+          ],
+          "waste": 25,
+          "deviation": 25,
+          "planned_at": 2707,
+          "known_event_count": 8
+        },
+        {
+          "start": 3037,
+          "end": 3137,
+          "recovered": [
+            3037,
+            3137
+          ],
+          "waste": 0,
+          "deviation": 25,
+          "planned_at": 2707,
+          "known_event_count": 8
+        },
+        {
+          "start": 3137,
+          "end": 3237,
+          "recovered": [
+            3137,
+            3237
+          ],
+          "waste": 0,
+          "deviation": 25,
+          "planned_at": 2707,
+          "known_event_count": 8
+        },
+        {
+          "start": 3237,
+          "end": 3285,
+          "recovered": null,
+          "waste": 48,
+          "deviation": 0,
+          "planned_at": 3279,
+          "known_event_count": 9
+        },
+        {
+          "start": 3285,
+          "end": 3405,
+          "recovered": [
+            3311,
+            3405
+          ],
+          "waste": 26,
+          "deviation": 1,
+          "planned_at": 3279,
+          "known_event_count": 9
+        },
+        {
+          "start": 3405,
+          "end": 3499,
+          "recovered": [
+            3405,
+            3499
+          ],
+          "waste": 0,
+          "deviation": 1,
+          "planned_at": 3279,
+          "known_event_count": 9
+        },
+        {
+          "start": 3499,
+          "end": 3593,
+          "recovered": [
+            3499,
+            3593
+          ],
+          "waste": 0,
+          "deviation": 1,
+          "planned_at": 3279,
+          "known_event_count": 9
+        },
+        {
+          "start": 3593,
+          "end": 3687,
+          "recovered": [
+            3593,
+            3687
+          ],
+          "waste": 0,
+          "deviation": 1,
+          "planned_at": 3279,
+          "known_event_count": 9
+        },
+        {
+          "start": 3687,
+          "end": 3781,
+          "recovered": [
+            3687,
+            3781
+          ],
+          "waste": 0,
+          "deviation": 1,
+          "planned_at": 3279,
+          "known_event_count": 9
+        },
+        {
+          "start": 3781,
+          "end": 3883,
+          "recovered": [
+            3781,
+            3875
+          ],
+          "waste": 8,
+          "deviation": 1,
+          "planned_at": 3279,
+          "known_event_count": 9
+        }
+      ],
+      "total_waste_m": 23.8,
+      "total_deviation_m2": 6.34,
+      "last_cut_start_min": 388.3,
+      "last_cut_complete_min": 391.3,
+      "scope": "optimal current-known-defect plans on a 0.1/0.05 m grid; realized final record follows causal revisions"
+    },
+    "Q3a": {
+      "case": {
+        "target_m": 8.5,
+        "lower_m": 8.0,
+        "upper_m": 9.0
+      },
+      "scale": 10,
+      "initial_boundary": 0,
+      "events": [
+        {
+          "event": 1,
+          "time_tick": 0,
+          "known_events": 1,
+          "locked_boundary": 0,
+          "committed_piece_count": 0,
+          "cut_in_progress": true,
+          "previous_pending": [],
+          "new_plan": {
+            "start": 0,
+            "notification": 0,
+            "defects": [
+              [
+                596,
+                604
+              ]
+            ],
+            "terminal": 604,
+            "score": [
+              8,
+              1,
+              7
+            ],
+            "pieces": [
+              {
+                "start": 0,
+                "end": 85,
+                "recovered": [
+                  0,
+                  85
+                ],
+                "waste": 0,
+                "deviation": 0
+              },
+              {
+                "start": 85,
+                "end": 170,
+                "recovered": [
+                  85,
+                  170
+                ],
+                "waste": 0,
+                "deviation": 0
+              },
+              {
+                "start": 170,
+                "end": 255,
+                "recovered": [
+                  170,
+                  255
+                ],
+                "waste": 0,
+                "deviation": 0
+              },
+              {
+                "start": 255,
+                "end": 340,
+                "recovered": [
+                  255,
+                  340
+                ],
+                "waste": 0,
+                "deviation": 0
+              },
+              {
+                "start": 340,
+                "end": 425,
+                "recovered": [
+                  340,
+                  425
+                ],
+                "waste": 0,
+                "deviation": 0
+              },
+              {
+                "start": 425,
+                "end": 510,
+                "recovered": [
+                  425,
+                  510
+                ],
+                "waste": 0,
+                "deviation": 0
+              },
+              {
+                "start": 510,
+                "end": 604,
+                "recovered": [
+                  510,
+                  596
+                ],
+                "waste": 8,
+                "deviation": 1
+              }
+            ],
+            "grid_scale_per_m": 10,
+            "evaluated_edges": 44003,
+            "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
+          },
+          "planning_seconds": 0.03487612499156967,
+          "current_next_cut_changed": null,
+          "committed_waste": 0,
+          "projected_total_waste": 8
+        },
+        {
+          "event": 2,
+          "time_tick": 456,
+          "known_events": 2,
+          "locked_boundary": 425,
+          "committed_piece_count": 5,
+          "cut_in_progress": false,
+          "previous_pending": [
+            {
+              "start": 425,
+              "end": 510,
+              "recovered": [
+                425,
+                510
+              ],
+              "waste": 0,
+              "deviation": 0,
+              "planned_at": 0,
+              "known_event_count": 1
+            },
+            {
+              "start": 510,
+              "end": 604,
+              "recovered": [
+                510,
+                596
+              ],
+              "waste": 8,
+              "deviation": 1,
+              "planned_at": 0,
+              "known_event_count": 1
+            }
+          ],
+          "new_plan": {
+            "start": 425,
+            "notification": 456,
+            "defects": [
+              [
+                596,
+                604
+              ],
+              [
+                1052,
+                1060
+              ]
+            ],
+            "terminal": 1060,
+            "score": [
+              16,
+              108,
+              7
+            ],
+            "pieces": [
+              {
+                "start": 425,
+                "end": 510,
+                "recovered": [
+                  425,
+                  510
+                ],
+                "waste": 0,
+                "deviation": 0
+              },
+              {
+                "start": 510,
+                "end": 596,
+                "recovered": [
+                  510,
+                  596
+                ],
+                "waste": 0,
+                "deviation": 1
+              },
+              {
+                "start": 596,
+                "end": 693,
+                "recovered": [
+                  604,
+                  693
+                ],
+                "waste": 8,
+                "deviation": 16
+              },
+              {
+                "start": 693,
+                "end": 782,
+                "recovered": [
+                  693,
+                  782
+                ],
+                "waste": 0,
+                "deviation": 16
+              },
+              {
+                "start": 782,
+                "end": 872,
+                "recovered": [
+                  782,
+                  872
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 872,
+                "end": 962,
+                "recovered": [
+                  872,
+                  962
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 962,
+                "end": 1060,
+                "recovered": [
+                  962,
+                  1052
+                ],
+                "waste": 8,
+                "deviation": 25
+              }
+            ],
+            "grid_scale_per_m": 10,
+            "evaluated_edges": 46452,
+            "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
+          },
+          "planning_seconds": 0.0396491249994142,
+          "current_next_cut_changed": false,
+          "committed_waste": 0,
+          "projected_total_waste": 16
+        },
+        {
+          "event": 3,
+          "time_tick": 986,
+          "known_events": 3,
+          "locked_boundary": 962,
+          "committed_piece_count": 11,
+          "cut_in_progress": true,
+          "previous_pending": [
+            {
+              "start": 962,
+              "end": 1060,
+              "recovered": [
+                962,
+                1052
+              ],
+              "waste": 8,
+              "deviation": 25,
+              "planned_at": 456,
+              "known_event_count": 2
+            }
+          ],
+          "new_plan": {
+            "start": 962,
+            "notification": 986,
+            "defects": [
+              [
+                1052,
+                1060
+              ],
+              [
+                1582,
+                1590
+              ]
+            ],
+            "terminal": 1590,
+            "score": [
+              16,
+              49,
+              7
+            ],
+            "pieces": [
+              {
+                "start": 962,
+                "end": 1052,
+                "recovered": [
+                  962,
+                  1052
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 1052,
+                "end": 1147,
+                "recovered": [
+                  1060,
+                  1147
+                ],
+                "waste": 8,
+                "deviation": 4
+              },
+              {
+                "start": 1147,
+                "end": 1234,
+                "recovered": [
+                  1147,
+                  1234
+                ],
+                "waste": 0,
+                "deviation": 4
+              },
+              {
+                "start": 1234,
+                "end": 1321,
+                "recovered": [
+                  1234,
+                  1321
+                ],
+                "waste": 0,
+                "deviation": 4
+              },
+              {
+                "start": 1321,
+                "end": 1408,
+                "recovered": [
+                  1321,
+                  1408
+                ],
+                "waste": 0,
+                "deviation": 4
+              },
+              {
+                "start": 1408,
+                "end": 1495,
+                "recovered": [
+                  1408,
+                  1495
+                ],
+                "waste": 0,
+                "deviation": 4
+              },
+              {
+                "start": 1495,
+                "end": 1590,
+                "recovered": [
+                  1495,
+                  1582
+                ],
+                "waste": 8,
+                "deviation": 4
+              }
+            ],
+            "grid_scale_per_m": 10,
+            "evaluated_edges": 45899,
+            "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
+          },
+          "planning_seconds": 0.0379412920010509,
+          "current_next_cut_changed": true,
+          "committed_waste": 8,
+          "projected_total_waste": 24
+        },
+        {
+          "event": 4,
+          "time_tick": 1315,
+          "known_events": 4,
+          "locked_boundary": 1234,
+          "committed_piece_count": 14,
+          "cut_in_progress": false,
+          "previous_pending": [
+            {
+              "start": 1234,
+              "end": 1321,
+              "recovered": [
+                1234,
+                1321
+              ],
+              "waste": 0,
+              "deviation": 4,
+              "planned_at": 986,
+              "known_event_count": 3
+            },
+            {
+              "start": 1321,
+              "end": 1408,
+              "recovered": [
+                1321,
+                1408
+              ],
+              "waste": 0,
+              "deviation": 4,
+              "planned_at": 986,
+              "known_event_count": 3
+            },
+            {
+              "start": 1408,
+              "end": 1495,
+              "recovered": [
+                1408,
+                1495
+              ],
+              "waste": 0,
+              "deviation": 4,
+              "planned_at": 986,
+              "known_event_count": 3
+            },
+            {
+              "start": 1495,
+              "end": 1590,
+              "recovered": [
+                1495,
+                1582
+              ],
+              "waste": 8,
+              "deviation": 4,
+              "planned_at": 986,
+              "known_event_count": 3
+            }
+          ],
+          "new_plan": {
+            "start": 1234,
+            "notification": 1315,
+            "defects": [
+              [
+                1582,
+                1590
+              ],
+              [
+                1911,
+                1919
+              ]
+            ],
+            "terminal": 1919,
+            "score": [
+              16,
+              107,
+              8
+            ],
+            "pieces": [
+              {
+                "start": 1234,
+                "end": 1321,
+                "recovered": [
+                  1234,
+                  1321
+                ],
+                "waste": 0,
+                "deviation": 4
+              },
+              {
+                "start": 1321,
+                "end": 1408,
+                "recovered": [
+                  1321,
+                  1408
+                ],
+                "waste": 0,
+                "deviation": 4
+              },
+              {
+                "start": 1408,
+                "end": 1495,
+                "recovered": [
+                  1408,
+                  1495
+                ],
+                "waste": 0,
+                "deviation": 4
+              },
+              {
+                "start": 1495,
+                "end": 1582,
+                "recovered": [
+                  1495,
+                  1582
+                ],
+                "waste": 0,
+                "deviation": 4
+              },
+              {
+                "start": 1582,
+                "end": 1670,
+                "recovered": [
+                  1590,
+                  1670
+                ],
+                "waste": 8,
+                "deviation": 25
+              },
+              {
+                "start": 1670,
+                "end": 1750,
+                "recovered": [
+                  1670,
+                  1750
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 1750,
+                "end": 1830,
+                "recovered": [
+                  1750,
+                  1830
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 1830,
+                "end": 1919,
+                "recovered": [
+                  1830,
+                  1911
+                ],
+                "waste": 8,
+                "deviation": 16
+              }
+            ],
+            "grid_scale_per_m": 10,
+            "evaluated_edges": 47604,
+            "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
+          },
+          "planning_seconds": 0.04020954199950211,
+          "current_next_cut_changed": false,
+          "committed_waste": 16,
+          "projected_total_waste": 32
+        },
+        {
+          "event": 5,
+          "time_tick": 1908,
+          "known_events": 5,
+          "locked_boundary": 1830,
+          "committed_piece_count": 21,
+          "cut_in_progress": false,
+          "previous_pending": [
+            {
+              "start": 1830,
+              "end": 1919,
+              "recovered": [
+                1830,
+                1911
+              ],
+              "waste": 8,
+              "deviation": 16,
+              "planned_at": 1315,
+              "known_event_count": 4
+            }
+          ],
+          "new_plan": {
+            "start": 1830,
+            "notification": 1908,
+            "defects": [
+              [
+                1911,
+                1919
+              ],
+              [
+                2504,
+                2512
+              ]
+            ],
+            "terminal": 2512,
+            "score": [
+              16,
+              32,
+              8
+            ],
+            "pieces": [
+              {
+                "start": 1830,
+                "end": 1911,
+                "recovered": [
+                  1830,
+                  1911
+                ],
+                "waste": 0,
+                "deviation": 16
+              },
+              {
+                "start": 1911,
+                "end": 2002,
+                "recovered": [
+                  1919,
+                  2002
+                ],
+                "waste": 8,
+                "deviation": 4
+              },
+              {
+                "start": 2002,
+                "end": 2085,
+                "recovered": [
+                  2002,
+                  2085
+                ],
+                "waste": 0,
+                "deviation": 4
+              },
+              {
+                "start": 2085,
+                "end": 2168,
+                "recovered": [
+                  2085,
+                  2168
+                ],
+                "waste": 0,
+                "deviation": 4
+              },
+              {
+                "start": 2168,
+                "end": 2252,
+                "recovered": [
+                  2168,
+                  2252
+                ],
+                "waste": 0,
+                "deviation": 1
+              },
+              {
+                "start": 2252,
+                "end": 2336,
+                "recovered": [
+                  2252,
+                  2336
+                ],
+                "waste": 0,
+                "deviation": 1
+              },
+              {
+                "start": 2336,
+                "end": 2420,
+                "recovered": [
+                  2336,
+                  2420
+                ],
+                "waste": 0,
+                "deviation": 1
+              },
+              {
+                "start": 2420,
+                "end": 2512,
+                "recovered": [
+                  2420,
+                  2504
+                ],
+                "waste": 8,
+                "deviation": 1
+              }
+            ],
+            "grid_scale_per_m": 10,
+            "evaluated_edges": 47765,
+            "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
+          },
+          "planning_seconds": 0.039088708988856524,
+          "current_next_cut_changed": true,
+          "committed_waste": 24,
+          "projected_total_waste": 40
+        },
+        {
+          "event": 6,
+          "time_tick": 2333,
+          "known_events": 6,
+          "locked_boundary": 2252,
+          "committed_piece_count": 26,
+          "cut_in_progress": false,
+          "previous_pending": [
+            {
+              "start": 2252,
+              "end": 2336,
+              "recovered": [
+                2252,
+                2336
+              ],
+              "waste": 0,
+              "deviation": 1,
+              "planned_at": 1908,
+              "known_event_count": 5
+            },
+            {
+              "start": 2336,
+              "end": 2420,
+              "recovered": [
+                2336,
+                2420
+              ],
+              "waste": 0,
+              "deviation": 1,
+              "planned_at": 1908,
+              "known_event_count": 5
+            },
+            {
+              "start": 2420,
+              "end": 2512,
+              "recovered": [
+                2420,
+                2504
+              ],
+              "waste": 8,
+              "deviation": 1,
+              "planned_at": 1908,
+              "known_event_count": 5
+            }
+          ],
+          "new_plan": {
+            "start": 2252,
+            "notification": 2333,
+            "defects": [
+              [
+                2504,
+                2512
+              ],
+              [
+                2929,
+                2937
+              ]
+            ],
+            "terminal": 2937,
+            "score": [
+              16,
+              17,
+              8
+            ],
+            "pieces": [
+              {
+                "start": 2252,
+                "end": 2336,
+                "recovered": [
+                  2252,
+                  2336
+                ],
+                "waste": 0,
+                "deviation": 1
+              },
+              {
+                "start": 2336,
+                "end": 2420,
+                "recovered": [
+                  2336,
+                  2420
+                ],
+                "waste": 0,
+                "deviation": 1
+              },
+              {
+                "start": 2420,
+                "end": 2504,
+                "recovered": [
+                  2420,
+                  2504
+                ],
+                "waste": 0,
+                "deviation": 1
+              },
+              {
+                "start": 2504,
+                "end": 2595,
+                "recovered": [
+                  2512,
+                  2595
+                ],
+                "waste": 8,
+                "deviation": 4
+              },
+              {
+                "start": 2595,
+                "end": 2678,
+                "recovered": [
+                  2595,
+                  2678
+                ],
+                "waste": 0,
+                "deviation": 4
+              },
+              {
+                "start": 2678,
+                "end": 2761,
+                "recovered": [
+                  2678,
+                  2761
+                ],
+                "waste": 0,
+                "deviation": 4
+              },
+              {
+                "start": 2761,
+                "end": 2845,
+                "recovered": [
+                  2761,
+                  2845
+                ],
+                "waste": 0,
+                "deviation": 1
+              },
+              {
+                "start": 2845,
+                "end": 2937,
+                "recovered": [
+                  2845,
+                  2929
+                ],
+                "waste": 8,
+                "deviation": 1
+              }
+            ],
+            "grid_scale_per_m": 10,
+            "evaluated_edges": 47604,
+            "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
+          },
+          "planning_seconds": 0.040126416002749465,
+          "current_next_cut_changed": false,
+          "committed_waste": 32,
+          "projected_total_waste": 48
+        },
+        {
+          "event": 7,
+          "time_tick": 2660,
+          "known_events": 7,
+          "locked_boundary": 2595,
+          "committed_piece_count": 30,
+          "cut_in_progress": false,
+          "previous_pending": [
+            {
+              "start": 2595,
+              "end": 2678,
+              "recovered": [
+                2595,
+                2678
+              ],
+              "waste": 0,
+              "deviation": 4,
+              "planned_at": 2333,
+              "known_event_count": 6
+            },
+            {
+              "start": 2678,
+              "end": 2761,
+              "recovered": [
+                2678,
+                2761
+              ],
+              "waste": 0,
+              "deviation": 4,
+              "planned_at": 2333,
+              "known_event_count": 6
+            },
+            {
+              "start": 2761,
+              "end": 2845,
+              "recovered": [
+                2761,
+                2845
+              ],
+              "waste": 0,
+              "deviation": 1,
+              "planned_at": 2333,
+              "known_event_count": 6
+            },
+            {
+              "start": 2845,
+              "end": 2937,
+              "recovered": [
+                2845,
+                2929
+              ],
+              "waste": 8,
+              "deviation": 1,
+              "planned_at": 2333,
+              "known_event_count": 6
+            }
+          ],
+          "new_plan": {
+            "start": 2595,
+            "notification": 2660,
+            "defects": [
+              [
+                2929,
+                2937
+              ],
+              [
+                3256,
+                3264
+              ]
+            ],
+            "terminal": 3264,
+            "score": [
+              65,
+              85,
+              7
+            ],
+            "pieces": [
+              {
+                "start": 2595,
+                "end": 2678,
+                "recovered": [
+                  2595,
+                  2678
+                ],
+                "waste": 0,
+                "deviation": 4
+              },
+              {
+                "start": 2678,
+                "end": 2761,
+                "recovered": [
+                  2678,
+                  2761
+                ],
+                "waste": 0,
+                "deviation": 4
+              },
+              {
+                "start": 2761,
+                "end": 2845,
+                "recovered": [
+                  2761,
+                  2845
+                ],
+                "waste": 0,
+                "deviation": 1
+              },
+              {
+                "start": 2845,
+                "end": 2929,
+                "recovered": [
+                  2845,
+                  2929
+                ],
+                "waste": 0,
+                "deviation": 1
+              },
+              {
+                "start": 2929,
+                "end": 3027,
+                "recovered": [
+                  2937,
+                  3027
+                ],
+                "waste": 8,
+                "deviation": 25
+              },
+              {
+                "start": 3027,
+                "end": 3138,
+                "recovered": [
+                  3027,
+                  3117
+                ],
+                "waste": 21,
+                "deviation": 25
+              },
+              {
+                "start": 3138,
+                "end": 3264,
+                "recovered": [
+                  3138,
+                  3228
+                ],
+                "waste": 36,
+                "deviation": 25
+              }
+            ],
+            "grid_scale_per_m": 10,
+            "evaluated_edges": 47778,
+            "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
+          },
+          "planning_seconds": 0.04021849999844562,
+          "current_next_cut_changed": false,
+          "committed_waste": 40,
+          "projected_total_waste": 105
+        },
+        {
+          "event": 8,
+          "time_tick": 2707,
+          "known_events": 8,
+          "locked_boundary": 2678,
+          "committed_piece_count": 31,
+          "cut_in_progress": true,
+          "previous_pending": [
+            {
+              "start": 2678,
+              "end": 2761,
+              "recovered": [
+                2678,
+                2761
+              ],
+              "waste": 0,
+              "deviation": 4,
+              "planned_at": 2660,
+              "known_event_count": 7
+            },
+            {
+              "start": 2761,
+              "end": 2845,
+              "recovered": [
+                2761,
+                2845
+              ],
+              "waste": 0,
+              "deviation": 1,
+              "planned_at": 2660,
+              "known_event_count": 7
+            },
+            {
+              "start": 2845,
+              "end": 2929,
+              "recovered": [
+                2845,
+                2929
+              ],
+              "waste": 0,
+              "deviation": 1,
+              "planned_at": 2660,
+              "known_event_count": 7
+            },
+            {
+              "start": 2929,
+              "end": 3027,
+              "recovered": [
+                2937,
+                3027
+              ],
+              "waste": 8,
+              "deviation": 25,
+              "planned_at": 2660,
+              "known_event_count": 7
+            },
+            {
+              "start": 3027,
+              "end": 3138,
+              "recovered": [
+                3027,
+                3117
+              ],
+              "waste": 21,
+              "deviation": 25,
+              "planned_at": 2660,
+              "known_event_count": 7
+            },
+            {
+              "start": 3138,
+              "end": 3264,
+              "recovered": [
+                3138,
+                3228
+              ],
+              "waste": 36,
+              "deviation": 25,
+              "planned_at": 2660,
+              "known_event_count": 7
+            }
+          ],
+          "new_plan": {
+            "start": 2678,
+            "notification": 2707,
+            "defects": [
+              [
+                2929,
+                2937
+              ],
+              [
+                3256,
+                3264
+              ],
+              [
+                3303,
+                3311
+              ]
+            ],
+            "terminal": 3311,
+            "score": [
+              112,
+              81,
+              7
+            ],
+            "pieces": [
+              {
+                "start": 2678,
+                "end": 2761,
+                "recovered": [
+                  2678,
+                  2761
+                ],
+                "waste": 0,
+                "deviation": 4
+              },
+              {
+                "start": 2761,
+                "end": 2845,
+                "recovered": [
+                  2761,
+                  2845
+                ],
+                "waste": 0,
+                "deviation": 1
+              },
+              {
+                "start": 2845,
+                "end": 2929,
+                "recovered": [
+                  2845,
+                  2929
+                ],
+                "waste": 0,
+                "deviation": 1
+              },
+              {
+                "start": 2929,
+                "end": 3027,
+                "recovered": [
+                  2937,
+                  3027
+                ],
+                "waste": 8,
+                "deviation": 25
+              },
+              {
+                "start": 3027,
+                "end": 3117,
+                "recovered": [
+                  3027,
+                  3117
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 3117,
+                "end": 3207,
+                "recovered": [
+                  3117,
+                  3207
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 3207,
+                "end": 3311,
+                "recovered": null,
+                "waste": 104,
+                "deviation": 0
+              }
+            ],
+            "grid_scale_per_m": 10,
+            "evaluated_edges": 46294,
+            "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
+          },
+          "planning_seconds": 0.04201708300388418,
+          "current_next_cut_changed": false,
+          "committed_waste": 40,
+          "projected_total_waste": 152
+        },
+        {
+          "event": 9,
+          "time_tick": 3279,
+          "known_events": 9,
+          "locked_boundary": 3207,
+          "committed_piece_count": 37,
+          "cut_in_progress": false,
+          "previous_pending": [
+            {
+              "start": 3207,
+              "end": 3311,
+              "recovered": null,
+              "waste": 104,
+              "deviation": 0,
+              "planned_at": 2707,
+              "known_event_count": 8
+            }
+          ],
+          "new_plan": {
+            "start": 3207,
+            "notification": 3279,
+            "defects": [
+              [
+                3256,
+                3264
+              ],
+              [
+                3303,
+                3311
+              ],
+              [
+                3875,
+                3883
+              ]
+            ],
+            "terminal": 3883,
+            "score": [
+              112,
+              139,
+              8
+            ],
+            "pieces": [
+              {
+                "start": 3207,
+                "end": 3279,
+                "recovered": null,
+                "waste": 72,
+                "deviation": 0
+              },
+              {
+                "start": 3279,
+                "end": 3391,
+                "recovered": [
+                  3311,
+                  3391
+                ],
+                "waste": 32,
+                "deviation": 25
+              },
+              {
+                "start": 3391,
+                "end": 3471,
+                "recovered": [
+                  3391,
+                  3471
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 3471,
+                "end": 3551,
+                "recovered": [
+                  3471,
+                  3551
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 3551,
+                "end": 3632,
+                "recovered": [
+                  3551,
+                  3632
+                ],
+                "waste": 0,
+                "deviation": 16
+              },
+              {
+                "start": 3632,
+                "end": 3713,
+                "recovered": [
+                  3632,
+                  3713
+                ],
+                "waste": 0,
+                "deviation": 16
+              },
+              {
+                "start": 3713,
+                "end": 3794,
+                "recovered": [
+                  3713,
+                  3794
+                ],
+                "waste": 0,
+                "deviation": 16
+              },
+              {
+                "start": 3794,
+                "end": 3883,
+                "recovered": [
+                  3794,
+                  3875
+                ],
+                "waste": 8,
+                "deviation": 16
+              }
+            ],
+            "grid_scale_per_m": 10,
+            "evaluated_edges": 47771,
+            "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
+          },
+          "planning_seconds": 0.03988933400250971,
+          "current_next_cut_changed": true,
+          "committed_waste": 48,
+          "projected_total_waste": 160
+        }
+      ],
+      "executed": [
+        {
+          "start": 0,
+          "end": 85,
+          "recovered": [
+            0,
+            85
+          ],
+          "waste": 0,
+          "deviation": 0,
+          "planned_at": 0,
+          "known_event_count": 1
+        },
+        {
+          "start": 85,
+          "end": 170,
+          "recovered": [
+            85,
+            170
+          ],
+          "waste": 0,
+          "deviation": 0,
+          "planned_at": 0,
+          "known_event_count": 1
+        },
+        {
+          "start": 170,
+          "end": 255,
+          "recovered": [
+            170,
+            255
+          ],
+          "waste": 0,
+          "deviation": 0,
+          "planned_at": 0,
+          "known_event_count": 1
+        },
+        {
+          "start": 255,
+          "end": 340,
+          "recovered": [
+            255,
+            340
+          ],
+          "waste": 0,
+          "deviation": 0,
+          "planned_at": 0,
+          "known_event_count": 1
+        },
+        {
+          "start": 340,
+          "end": 425,
+          "recovered": [
+            340,
+            425
+          ],
+          "waste": 0,
+          "deviation": 0,
+          "planned_at": 0,
+          "known_event_count": 1
+        },
+        {
+          "start": 425,
+          "end": 510,
+          "recovered": [
+            425,
+            510
+          ],
+          "waste": 0,
+          "deviation": 0,
+          "planned_at": 456,
+          "known_event_count": 2
+        },
+        {
+          "start": 510,
+          "end": 596,
+          "recovered": [
+            510,
+            596
+          ],
+          "waste": 0,
+          "deviation": 1,
+          "planned_at": 456,
+          "known_event_count": 2
+        },
+        {
+          "start": 596,
+          "end": 693,
+          "recovered": [
+            604,
+            693
+          ],
+          "waste": 8,
+          "deviation": 16,
+          "planned_at": 456,
+          "known_event_count": 2
+        },
+        {
+          "start": 693,
+          "end": 782,
+          "recovered": [
+            693,
+            782
+          ],
+          "waste": 0,
+          "deviation": 16,
+          "planned_at": 456,
+          "known_event_count": 2
+        },
+        {
+          "start": 782,
+          "end": 872,
+          "recovered": [
+            782,
+            872
+          ],
+          "waste": 0,
+          "deviation": 25,
+          "planned_at": 456,
+          "known_event_count": 2
+        },
+        {
+          "start": 872,
+          "end": 962,
+          "recovered": [
+            872,
+            962
+          ],
+          "waste": 0,
+          "deviation": 25,
+          "planned_at": 456,
+          "known_event_count": 2
+        },
+        {
+          "start": 962,
+          "end": 1052,
+          "recovered": [
+            962,
+            1052
+          ],
+          "waste": 0,
+          "deviation": 25,
+          "planned_at": 986,
+          "known_event_count": 3
+        },
+        {
+          "start": 1052,
+          "end": 1147,
+          "recovered": [
+            1060,
+            1147
+          ],
+          "waste": 8,
+          "deviation": 4,
+          "planned_at": 986,
+          "known_event_count": 3
+        },
+        {
+          "start": 1147,
+          "end": 1234,
+          "recovered": [
+            1147,
+            1234
+          ],
+          "waste": 0,
+          "deviation": 4,
+          "planned_at": 986,
+          "known_event_count": 3
+        },
+        {
+          "start": 1234,
+          "end": 1321,
+          "recovered": [
+            1234,
+            1321
+          ],
+          "waste": 0,
+          "deviation": 4,
+          "planned_at": 1315,
+          "known_event_count": 4
+        },
+        {
+          "start": 1321,
+          "end": 1408,
+          "recovered": [
+            1321,
+            1408
+          ],
+          "waste": 0,
+          "deviation": 4,
+          "planned_at": 1315,
+          "known_event_count": 4
+        },
+        {
+          "start": 1408,
+          "end": 1495,
+          "recovered": [
+            1408,
+            1495
+          ],
+          "waste": 0,
+          "deviation": 4,
+          "planned_at": 1315,
+          "known_event_count": 4
+        },
+        {
+          "start": 1495,
+          "end": 1582,
+          "recovered": [
+            1495,
+            1582
+          ],
+          "waste": 0,
+          "deviation": 4,
+          "planned_at": 1315,
+          "known_event_count": 4
+        },
+        {
+          "start": 1582,
+          "end": 1670,
+          "recovered": [
+            1590,
+            1670
+          ],
+          "waste": 8,
+          "deviation": 25,
+          "planned_at": 1315,
+          "known_event_count": 4
+        },
+        {
+          "start": 1670,
+          "end": 1750,
+          "recovered": [
+            1670,
+            1750
+          ],
+          "waste": 0,
+          "deviation": 25,
+          "planned_at": 1315,
+          "known_event_count": 4
+        },
+        {
+          "start": 1750,
+          "end": 1830,
+          "recovered": [
+            1750,
+            1830
+          ],
+          "waste": 0,
+          "deviation": 25,
+          "planned_at": 1315,
+          "known_event_count": 4
+        },
+        {
+          "start": 1830,
+          "end": 1911,
+          "recovered": [
+            1830,
+            1911
+          ],
+          "waste": 0,
+          "deviation": 16,
+          "planned_at": 1908,
+          "known_event_count": 5
+        },
+        {
+          "start": 1911,
+          "end": 2002,
+          "recovered": [
+            1919,
+            2002
+          ],
+          "waste": 8,
+          "deviation": 4,
+          "planned_at": 1908,
+          "known_event_count": 5
+        },
+        {
+          "start": 2002,
+          "end": 2085,
+          "recovered": [
+            2002,
+            2085
+          ],
+          "waste": 0,
+          "deviation": 4,
+          "planned_at": 1908,
+          "known_event_count": 5
+        },
+        {
+          "start": 2085,
+          "end": 2168,
+          "recovered": [
+            2085,
+            2168
+          ],
+          "waste": 0,
+          "deviation": 4,
+          "planned_at": 1908,
+          "known_event_count": 5
+        },
+        {
+          "start": 2168,
+          "end": 2252,
+          "recovered": [
+            2168,
+            2252
+          ],
+          "waste": 0,
+          "deviation": 1,
+          "planned_at": 1908,
+          "known_event_count": 5
+        },
+        {
+          "start": 2252,
+          "end": 2336,
+          "recovered": [
+            2252,
+            2336
+          ],
+          "waste": 0,
+          "deviation": 1,
+          "planned_at": 2333,
+          "known_event_count": 6
+        },
+        {
+          "start": 2336,
+          "end": 2420,
+          "recovered": [
+            2336,
+            2420
+          ],
+          "waste": 0,
+          "deviation": 1,
+          "planned_at": 2333,
+          "known_event_count": 6
+        },
+        {
+          "start": 2420,
+          "end": 2504,
+          "recovered": [
+            2420,
+            2504
+          ],
+          "waste": 0,
+          "deviation": 1,
+          "planned_at": 2333,
+          "known_event_count": 6
+        },
+        {
+          "start": 2504,
+          "end": 2595,
+          "recovered": [
+            2512,
+            2595
+          ],
+          "waste": 8,
+          "deviation": 4,
+          "planned_at": 2333,
+          "known_event_count": 6
+        },
+        {
+          "start": 2595,
+          "end": 2678,
+          "recovered": [
+            2595,
+            2678
+          ],
+          "waste": 0,
+          "deviation": 4,
+          "planned_at": 2660,
+          "known_event_count": 7
+        },
+        {
+          "start": 2678,
+          "end": 2761,
+          "recovered": [
+            2678,
+            2761
+          ],
+          "waste": 0,
+          "deviation": 4,
+          "planned_at": 2707,
+          "known_event_count": 8
+        },
+        {
+          "start": 2761,
+          "end": 2845,
+          "recovered": [
+            2761,
+            2845
+          ],
+          "waste": 0,
+          "deviation": 1,
+          "planned_at": 2707,
+          "known_event_count": 8
+        },
+        {
+          "start": 2845,
+          "end": 2929,
+          "recovered": [
+            2845,
+            2929
+          ],
+          "waste": 0,
+          "deviation": 1,
+          "planned_at": 2707,
+          "known_event_count": 8
+        },
+        {
+          "start": 2929,
+          "end": 3027,
+          "recovered": [
+            2937,
+            3027
+          ],
+          "waste": 8,
+          "deviation": 25,
+          "planned_at": 2707,
+          "known_event_count": 8
+        },
+        {
+          "start": 3027,
+          "end": 3117,
+          "recovered": [
+            3027,
+            3117
+          ],
+          "waste": 0,
+          "deviation": 25,
+          "planned_at": 2707,
+          "known_event_count": 8
+        },
+        {
+          "start": 3117,
+          "end": 3207,
+          "recovered": [
+            3117,
+            3207
+          ],
+          "waste": 0,
+          "deviation": 25,
+          "planned_at": 2707,
+          "known_event_count": 8
+        },
+        {
+          "start": 3207,
+          "end": 3279,
+          "recovered": null,
+          "waste": 72,
+          "deviation": 0,
+          "planned_at": 3279,
+          "known_event_count": 9
+        },
+        {
+          "start": 3279,
+          "end": 3391,
+          "recovered": [
+            3311,
+            3391
+          ],
+          "waste": 32,
+          "deviation": 25,
+          "planned_at": 3279,
+          "known_event_count": 9
+        },
+        {
+          "start": 3391,
+          "end": 3471,
+          "recovered": [
+            3391,
+            3471
+          ],
+          "waste": 0,
+          "deviation": 25,
+          "planned_at": 3279,
+          "known_event_count": 9
+        },
+        {
+          "start": 3471,
+          "end": 3551,
+          "recovered": [
+            3471,
+            3551
+          ],
+          "waste": 0,
+          "deviation": 25,
+          "planned_at": 3279,
+          "known_event_count": 9
+        },
+        {
+          "start": 3551,
+          "end": 3632,
+          "recovered": [
+            3551,
+            3632
+          ],
+          "waste": 0,
+          "deviation": 16,
+          "planned_at": 3279,
+          "known_event_count": 9
+        },
+        {
+          "start": 3632,
+          "end": 3713,
+          "recovered": [
+            3632,
+            3713
+          ],
+          "waste": 0,
+          "deviation": 16,
+          "planned_at": 3279,
+          "known_event_count": 9
+        },
+        {
+          "start": 3713,
+          "end": 3794,
+          "recovered": [
+            3713,
+            3794
+          ],
+          "waste": 0,
+          "deviation": 16,
+          "planned_at": 3279,
+          "known_event_count": 9
+        },
+        {
+          "start": 3794,
+          "end": 3883,
+          "recovered": [
+            3794,
+            3875
+          ],
+          "waste": 8,
+          "deviation": 16,
+          "planned_at": 3279,
+          "known_event_count": 9
+        }
+      ],
+      "total_waste_m": 16.0,
+      "total_deviation_m2": 4.67,
+      "last_cut_start_min": 388.3,
+      "last_cut_complete_min": 391.3,
+      "scope": "optimal current-known-defect plans on a 0.1/0.05 m grid; realized final record follows causal revisions"
+    },
+    "Q3b": {
+      "case": {
+        "target_m": 11.1,
+        "lower_m": 10.6,
+        "upper_m": 11.6
+      },
+      "scale": 10,
+      "initial_boundary": 0,
+      "events": [
+        {
+          "event": 1,
+          "time_tick": 0,
+          "known_events": 1,
+          "locked_boundary": 0,
+          "committed_piece_count": 0,
+          "cut_in_progress": true,
+          "previous_pending": [],
+          "new_plan": {
+            "start": 0,
+            "notification": 0,
+            "defects": [
+              [
+                596,
+                604
+              ]
+            ],
+            "terminal": 604,
+            "score": [
+              24,
+              125,
+              5
+            ],
+            "pieces": [
+              {
+                "start": 0,
+                "end": 116,
+                "recovered": [
+                  0,
+                  116
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 116,
+                "end": 232,
+                "recovered": [
+                  116,
+                  232
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 232,
+                "end": 352,
+                "recovered": [
+                  232,
+                  348
+                ],
+                "waste": 4,
+                "deviation": 25
+              },
+              {
+                "start": 352,
+                "end": 478,
+                "recovered": [
+                  352,
+                  468
+                ],
+                "waste": 10,
+                "deviation": 25
+              },
+              {
+                "start": 478,
+                "end": 604,
+                "recovered": [
+                  478,
+                  594
+                ],
+                "waste": 10,
+                "deviation": 25
+              }
+            ],
+            "grid_scale_per_m": 10,
+            "evaluated_edges": 44003,
+            "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
+          },
+          "planning_seconds": 0.031130457995459437,
+          "current_next_cut_changed": null,
+          "committed_waste": 0,
+          "projected_total_waste": 24
+        },
+        {
+          "event": 2,
+          "time_tick": 456,
+          "known_events": 2,
+          "locked_boundary": 352,
+          "committed_piece_count": 3,
+          "cut_in_progress": false,
+          "previous_pending": [
+            {
+              "start": 352,
+              "end": 478,
+              "recovered": [
+                352,
+                468
+              ],
+              "waste": 10,
+              "deviation": 25,
+              "planned_at": 0,
+              "known_event_count": 1
+            },
+            {
+              "start": 478,
+              "end": 604,
+              "recovered": [
+                478,
+                594
+              ],
+              "waste": 10,
+              "deviation": 25,
+              "planned_at": 0,
+              "known_event_count": 1
+            }
+          ],
+          "new_plan": {
+            "start": 352,
+            "notification": 456,
+            "defects": [
+              [
+                596,
+                604
+              ],
+              [
+                1052,
+                1060
+              ]
+            ],
+            "terminal": 1060,
+            "score": [
+              28,
+              54,
+              6
+            ],
+            "pieces": [
+              {
+                "start": 352,
+                "end": 468,
+                "recovered": [
+                  352,
+                  468
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 468,
+                "end": 590,
+                "recovered": [
+                  468,
+                  584
+                ],
+                "waste": 6,
+                "deviation": 25
+              },
+              {
+                "start": 590,
+                "end": 716,
+                "recovered": [
+                  604,
+                  716
+                ],
+                "waste": 14,
+                "deviation": 1
+              },
+              {
+                "start": 716,
+                "end": 828,
+                "recovered": [
+                  716,
+                  828
+                ],
+                "waste": 0,
+                "deviation": 1
+              },
+              {
+                "start": 828,
+                "end": 940,
+                "recovered": [
+                  828,
+                  940
+                ],
+                "waste": 0,
+                "deviation": 1
+              },
+              {
+                "start": 940,
+                "end": 1060,
+                "recovered": [
+                  940,
+                  1052
+                ],
+                "waste": 8,
+                "deviation": 1
+              }
+            ],
+            "grid_scale_per_m": 10,
+            "evaluated_edges": 45764,
+            "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
+          },
+          "planning_seconds": 0.037225499996566214,
+          "current_next_cut_changed": true,
+          "committed_waste": 4,
+          "projected_total_waste": 32
+        },
+        {
+          "event": 3,
+          "time_tick": 986,
+          "known_events": 3,
+          "locked_boundary": 940,
+          "committed_piece_count": 8,
+          "cut_in_progress": false,
+          "previous_pending": [
+            {
+              "start": 940,
+              "end": 1060,
+              "recovered": [
+                940,
+                1052
+              ],
+              "waste": 8,
+              "deviation": 1,
+              "planned_at": 456,
+              "known_event_count": 2
+            }
+          ],
+          "new_plan": {
+            "start": 940,
+            "notification": 986,
+            "defects": [
+              [
+                1052,
+                1060
+              ],
+              [
+                1582,
+                1590
+              ]
+            ],
+            "terminal": 1590,
+            "score": [
+              74,
+              101,
+              6
+            ],
+            "pieces": [
+              {
+                "start": 940,
+                "end": 1052,
+                "recovered": [
+                  940,
+                  1052
+                ],
+                "waste": 0,
+                "deviation": 1
+              },
+              {
+                "start": 1052,
+                "end": 1100,
+                "recovered": null,
+                "waste": 48,
+                "deviation": 0
+              },
+              {
+                "start": 1100,
+                "end": 1216,
+                "recovered": [
+                  1100,
+                  1216
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 1216,
+                "end": 1338,
+                "recovered": [
+                  1216,
+                  1332
+                ],
+                "waste": 6,
+                "deviation": 25
+              },
+              {
+                "start": 1338,
+                "end": 1464,
+                "recovered": [
+                  1338,
+                  1454
+                ],
+                "waste": 10,
+                "deviation": 25
+              },
+              {
+                "start": 1464,
+                "end": 1590,
+                "recovered": [
+                  1464,
+                  1580
+                ],
+                "waste": 10,
+                "deviation": 25
+              }
+            ],
+            "grid_scale_per_m": 10,
+            "evaluated_edges": 47637,
+            "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
+          },
+          "planning_seconds": 0.037250458990456536,
+          "current_next_cut_changed": true,
+          "committed_waste": 24,
+          "projected_total_waste": 98
+        },
+        {
+          "event": 4,
+          "time_tick": 1315,
+          "known_events": 4,
+          "locked_boundary": 1216,
+          "committed_piece_count": 11,
+          "cut_in_progress": false,
+          "previous_pending": [
+            {
+              "start": 1216,
+              "end": 1338,
+              "recovered": [
+                1216,
+                1332
+              ],
+              "waste": 6,
+              "deviation": 25,
+              "planned_at": 986,
+              "known_event_count": 3
+            },
+            {
+              "start": 1338,
+              "end": 1464,
+              "recovered": [
+                1338,
+                1454
+              ],
+              "waste": 10,
+              "deviation": 25,
+              "planned_at": 986,
+              "known_event_count": 3
+            },
+            {
+              "start": 1464,
+              "end": 1590,
+              "recovered": [
+                1464,
+                1580
+              ],
+              "waste": 10,
+              "deviation": 25,
+              "planned_at": 986,
+              "known_event_count": 3
+            }
+          ],
+          "new_plan": {
+            "start": 1216,
+            "notification": 1315,
+            "defects": [
+              [
+                1582,
+                1590
+              ],
+              [
+                1911,
+                1919
+              ]
+            ],
+            "terminal": 1919,
+            "score": [
+              34,
+              123,
+              6
+            ],
+            "pieces": [
+              {
+                "start": 1216,
+                "end": 1332,
+                "recovered": [
+                  1216,
+                  1332
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 1332,
+                "end": 1448,
+                "recovered": [
+                  1332,
+                  1448
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 1448,
+                "end": 1571,
+                "recovered": [
+                  1448,
+                  1564
+                ],
+                "waste": 7,
+                "deviation": 25
+              },
+              {
+                "start": 1571,
+                "end": 1697,
+                "recovered": [
+                  1590,
+                  1697
+                ],
+                "waste": 19,
+                "deviation": 16
+              },
+              {
+                "start": 1697,
+                "end": 1804,
+                "recovered": [
+                  1697,
+                  1804
+                ],
+                "waste": 0,
+                "deviation": 16
+              },
+              {
+                "start": 1804,
+                "end": 1919,
+                "recovered": [
+                  1804,
+                  1911
+                ],
+                "waste": 8,
+                "deviation": 16
+              }
+            ],
+            "grid_scale_per_m": 10,
+            "evaluated_edges": 46164,
+            "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
+          },
+          "planning_seconds": 0.03647570799512323,
+          "current_next_cut_changed": true,
+          "committed_waste": 72,
+          "projected_total_waste": 106
+        },
+        {
+          "event": 5,
+          "time_tick": 1908,
+          "known_events": 5,
+          "locked_boundary": 1804,
+          "committed_piece_count": 16,
+          "cut_in_progress": false,
+          "previous_pending": [
+            {
+              "start": 1804,
+              "end": 1919,
+              "recovered": [
+                1804,
+                1911
+              ],
+              "waste": 8,
+              "deviation": 16,
+              "planned_at": 1315,
+              "known_event_count": 4
+            }
+          ],
+          "new_plan": {
+            "start": 1804,
+            "notification": 1908,
+            "defects": [
+              [
+                1911,
+                1919
+              ],
+              [
+                2504,
+                2512
+              ]
+            ],
+            "terminal": 2512,
+            "score": [
+              21,
+              141,
+              6
+            ],
+            "pieces": [
+              {
+                "start": 1804,
+                "end": 1911,
+                "recovered": [
+                  1804,
+                  1911
+                ],
+                "waste": 0,
+                "deviation": 16
+              },
+              {
+                "start": 1911,
+                "end": 2035,
+                "recovered": [
+                  1919,
+                  2035
+                ],
+                "waste": 8,
+                "deviation": 25
+              },
+              {
+                "start": 2035,
+                "end": 2151,
+                "recovered": [
+                  2035,
+                  2151
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 2151,
+                "end": 2267,
+                "recovered": [
+                  2151,
+                  2267
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 2267,
+                "end": 2386,
+                "recovered": [
+                  2267,
+                  2383
+                ],
+                "waste": 3,
+                "deviation": 25
+              },
+              {
+                "start": 2386,
+                "end": 2512,
+                "recovered": [
+                  2386,
+                  2502
+                ],
+                "waste": 10,
+                "deviation": 25
+              }
+            ],
+            "grid_scale_per_m": 10,
+            "evaluated_edges": 45764,
+            "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
+          },
+          "planning_seconds": 0.03436920800595544,
+          "current_next_cut_changed": true,
+          "committed_waste": 98,
+          "projected_total_waste": 119
+        },
+        {
+          "event": 6,
+          "time_tick": 2333,
+          "known_events": 6,
+          "locked_boundary": 2267,
+          "committed_piece_count": 20,
+          "cut_in_progress": false,
+          "previous_pending": [
+            {
+              "start": 2267,
+              "end": 2386,
+              "recovered": [
+                2267,
+                2383
+              ],
+              "waste": 3,
+              "deviation": 25,
+              "planned_at": 1908,
+              "known_event_count": 5
+            },
+            {
+              "start": 2386,
+              "end": 2512,
+              "recovered": [
+                2386,
+                2502
+              ],
+              "waste": 10,
+              "deviation": 25,
+              "planned_at": 1908,
+              "known_event_count": 5
+            }
+          ],
+          "new_plan": {
+            "start": 2267,
+            "notification": 2333,
+            "defects": [
+              [
+                2504,
+                2512
+              ],
+              [
+                2929,
+                2937
+              ]
+            ],
+            "terminal": 2937,
+            "score": [
+              90,
+              125,
+              6
+            ],
+            "pieces": [
+              {
+                "start": 2267,
+                "end": 2383,
+                "recovered": [
+                  2267,
+                  2383
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 2383,
+                "end": 2499,
+                "recovered": [
+                  2383,
+                  2499
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 2499,
+                "end": 2559,
+                "recovered": null,
+                "waste": 60,
+                "deviation": 0
+              },
+              {
+                "start": 2559,
+                "end": 2685,
+                "recovered": [
+                  2559,
+                  2675
+                ],
+                "waste": 10,
+                "deviation": 25
+              },
+              {
+                "start": 2685,
+                "end": 2811,
+                "recovered": [
+                  2685,
+                  2801
+                ],
+                "waste": 10,
+                "deviation": 25
+              },
+              {
+                "start": 2811,
+                "end": 2937,
+                "recovered": [
+                  2811,
+                  2927
+                ],
+                "waste": 10,
+                "deviation": 25
+              }
+            ],
+            "grid_scale_per_m": 10,
+            "evaluated_edges": 47777,
+            "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
+          },
+          "planning_seconds": 0.037093666003784165,
+          "current_next_cut_changed": true,
+          "committed_waste": 106,
+          "projected_total_waste": 196
+        },
+        {
+          "event": 7,
+          "time_tick": 2660,
+          "known_events": 7,
+          "locked_boundary": 2559,
+          "committed_piece_count": 23,
+          "cut_in_progress": false,
+          "previous_pending": [
+            {
+              "start": 2559,
+              "end": 2685,
+              "recovered": [
+                2559,
+                2675
+              ],
+              "waste": 10,
+              "deviation": 25,
+              "planned_at": 2333,
+              "known_event_count": 6
+            },
+            {
+              "start": 2685,
+              "end": 2811,
+              "recovered": [
+                2685,
+                2801
+              ],
+              "waste": 10,
+              "deviation": 25,
+              "planned_at": 2333,
+              "known_event_count": 6
+            },
+            {
+              "start": 2811,
+              "end": 2937,
+              "recovered": [
+                2811,
+                2927
+              ],
+              "waste": 10,
+              "deviation": 25,
+              "planned_at": 2333,
+              "known_event_count": 6
+            }
+          ],
+          "new_plan": {
+            "start": 2559,
+            "notification": 2660,
+            "defects": [
+              [
+                2929,
+                2937
+              ],
+              [
+                3256,
+                3264
+              ]
+            ],
+            "terminal": 3264,
+            "score": [
+              38,
+              141,
+              6
+            ],
+            "pieces": [
+              {
+                "start": 2559,
+                "end": 2675,
+                "recovered": [
+                  2559,
+                  2675
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 2675,
+                "end": 2791,
+                "recovered": [
+                  2675,
+                  2791
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 2791,
+                "end": 2917,
+                "recovered": [
+                  2791,
+                  2907
+                ],
+                "waste": 10,
+                "deviation": 25
+              },
+              {
+                "start": 2917,
+                "end": 3043,
+                "recovered": [
+                  2937,
+                  3043
+                ],
+                "waste": 20,
+                "deviation": 25
+              },
+              {
+                "start": 3043,
+                "end": 3149,
+                "recovered": [
+                  3043,
+                  3149
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 3149,
+                "end": 3264,
+                "recovered": [
+                  3149,
+                  3256
+                ],
+                "waste": 8,
+                "deviation": 16
+              }
+            ],
+            "grid_scale_per_m": 10,
+            "evaluated_edges": 46004,
+            "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
+          },
+          "planning_seconds": 0.037377999993623234,
+          "current_next_cut_changed": true,
+          "committed_waste": 166,
+          "projected_total_waste": 204
+        },
+        {
+          "event": 8,
+          "time_tick": 2707,
+          "known_events": 8,
+          "locked_boundary": 2675,
+          "committed_piece_count": 24,
+          "cut_in_progress": false,
+          "previous_pending": [
+            {
+              "start": 2675,
+              "end": 2791,
+              "recovered": [
+                2675,
+                2791
+              ],
+              "waste": 0,
+              "deviation": 25,
+              "planned_at": 2660,
+              "known_event_count": 7
+            },
+            {
+              "start": 2791,
+              "end": 2917,
+              "recovered": [
+                2791,
+                2907
+              ],
+              "waste": 10,
+              "deviation": 25,
+              "planned_at": 2660,
+              "known_event_count": 7
+            },
+            {
+              "start": 2917,
+              "end": 3043,
+              "recovered": [
+                2937,
+                3043
+              ],
+              "waste": 20,
+              "deviation": 25,
+              "planned_at": 2660,
+              "known_event_count": 7
+            },
+            {
+              "start": 3043,
+              "end": 3149,
+              "recovered": [
+                3043,
+                3149
+              ],
+              "waste": 0,
+              "deviation": 25,
+              "planned_at": 2660,
+              "known_event_count": 7
+            },
+            {
+              "start": 3149,
+              "end": 3264,
+              "recovered": [
+                3149,
+                3256
+              ],
+              "waste": 8,
+              "deviation": 16,
+              "planned_at": 2660,
+              "known_event_count": 7
+            }
+          ],
+          "new_plan": {
+            "start": 2675,
+            "notification": 2707,
+            "defects": [
+              [
+                2929,
+                2937
+              ],
+              [
+                3256,
+                3264
+              ],
+              [
+                3303,
+                3311
+              ]
+            ],
+            "terminal": 3311,
+            "score": [
+              85,
+              116,
+              6
+            ],
+            "pieces": [
+              {
+                "start": 2675,
+                "end": 2791,
+                "recovered": [
+                  2675,
+                  2791
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 2791,
+                "end": 2917,
+                "recovered": [
+                  2791,
+                  2907
+                ],
+                "waste": 10,
+                "deviation": 25
+              },
+              {
+                "start": 2917,
+                "end": 3043,
+                "recovered": [
+                  2937,
+                  3043
+                ],
+                "waste": 20,
+                "deviation": 25
+              },
+              {
+                "start": 3043,
+                "end": 3149,
+                "recovered": [
+                  3043,
+                  3149
+                ],
+                "waste": 0,
+                "deviation": 25
+              },
+              {
+                "start": 3149,
+                "end": 3256,
+                "recovered": [
+                  3149,
+                  3256
+                ],
+                "waste": 0,
+                "deviation": 16
+              },
+              {
+                "start": 3256,
+                "end": 3311,
+                "recovered": null,
+                "waste": 55,
+                "deviation": 0
+              }
+            ],
+            "grid_scale_per_m": 10,
+            "evaluated_edges": 46531,
+            "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
+          },
+          "planning_seconds": 0.04577475000405684,
+          "current_next_cut_changed": false,
+          "committed_waste": 166,
+          "projected_total_waste": 251
+        },
+        {
+          "event": 9,
+          "time_tick": 3279,
+          "known_events": 9,
+          "locked_boundary": 3256,
+          "committed_piece_count": 29,
+          "cut_in_progress": true,
+          "previous_pending": [
+            {
+              "start": 3256,
+              "end": 3311,
+              "recovered": null,
+              "waste": 55,
+              "deviation": 0,
+              "planned_at": 2707,
+              "known_event_count": 8
+            }
+          ],
+          "new_plan": {
+            "start": 3256,
+            "notification": 3279,
+            "defects": [
+              [
+                3256,
+                3264
+              ],
+              [
+                3303,
+                3311
+              ],
+              [
+                3875,
+                3883
+              ]
+            ],
+            "terminal": 3883,
+            "score": [
+              63,
+              17,
+              6
+            ],
+            "pieces": [
+              {
+                "start": 3256,
+                "end": 3304,
+                "recovered": null,
+                "waste": 48,
+                "deviation": 0
+              },
+              {
+                "start": 3304,
+                "end": 3423,
+                "recovered": [
+                  3311,
+                  3423
+                ],
+                "waste": 7,
+                "deviation": 1
+              },
+              {
+                "start": 3423,
+                "end": 3536,
+                "recovered": [
+                  3423,
+                  3536
+                ],
+                "waste": 0,
+                "deviation": 4
+              },
+              {
+                "start": 3536,
+                "end": 3649,
+                "recovered": [
+                  3536,
+                  3649
+                ],
+                "waste": 0,
+                "deviation": 4
+              },
+              {
+                "start": 3649,
+                "end": 3762,
+                "recovered": [
+                  3649,
+                  3762
+                ],
+                "waste": 0,
+                "deviation": 4
+              },
+              {
+                "start": 3762,
+                "end": 3883,
+                "recovered": [
+                  3762,
+                  3875
+                ],
+                "waste": 8,
+                "deviation": 4
+              }
+            ],
+            "grid_scale_per_m": 10,
+            "evaluated_edges": 45820,
+            "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
+          },
+          "planning_seconds": 0.054912749998038635,
+          "current_next_cut_changed": true,
+          "committed_waste": 196,
+          "projected_total_waste": 259
+        }
+      ],
+      "executed": [
+        {
+          "start": 0,
+          "end": 116,
+          "recovered": [
+            0,
+            116
+          ],
+          "waste": 0,
+          "deviation": 25,
+          "planned_at": 0,
+          "known_event_count": 1
+        },
+        {
+          "start": 116,
+          "end": 232,
+          "recovered": [
+            116,
+            232
+          ],
+          "waste": 0,
+          "deviation": 25,
+          "planned_at": 0,
+          "known_event_count": 1
+        },
+        {
+          "start": 232,
+          "end": 352,
+          "recovered": [
+            232,
+            348
+          ],
+          "waste": 4,
+          "deviation": 25,
+          "planned_at": 0,
+          "known_event_count": 1
+        },
+        {
+          "start": 352,
+          "end": 468,
+          "recovered": [
+            352,
+            468
+          ],
+          "waste": 0,
+          "deviation": 25,
+          "planned_at": 456,
+          "known_event_count": 2
+        },
+        {
+          "start": 468,
+          "end": 590,
+          "recovered": [
+            468,
+            584
+          ],
+          "waste": 6,
+          "deviation": 25,
+          "planned_at": 456,
+          "known_event_count": 2
+        },
+        {
+          "start": 590,
+          "end": 716,
+          "recovered": [
+            604,
+            716
+          ],
+          "waste": 14,
+          "deviation": 1,
+          "planned_at": 456,
+          "known_event_count": 2
+        },
+        {
+          "start": 716,
+          "end": 828,
+          "recovered": [
+            716,
+            828
+          ],
+          "waste": 0,
+          "deviation": 1,
+          "planned_at": 456,
+          "known_event_count": 2
+        },
+        {
+          "start": 828,
+          "end": 940,
+          "recovered": [
+            828,
+            940
+          ],
+          "waste": 0,
+          "deviation": 1,
+          "planned_at": 456,
+          "known_event_count": 2
+        },
+        {
+          "start": 940,
+          "end": 1052,
+          "recovered": [
+            940,
+            1052
+          ],
+          "waste": 0,
+          "deviation": 1,
+          "planned_at": 986,
+          "known_event_count": 3
+        },
+        {
+          "start": 1052,
+          "end": 1100,
+          "recovered": null,
+          "waste": 48,
+          "deviation": 0,
+          "planned_at": 986,
+          "known_event_count": 3
+        },
+        {
+          "start": 1100,
+          "end": 1216,
+          "recovered": [
+            1100,
+            1216
+          ],
+          "waste": 0,
+          "deviation": 25,
+          "planned_at": 986,
+          "known_event_count": 3
+        },
+        {
+          "start": 1216,
+          "end": 1332,
+          "recovered": [
+            1216,
+            1332
+          ],
+          "waste": 0,
+          "deviation": 25,
+          "planned_at": 1315,
+          "known_event_count": 4
+        },
+        {
+          "start": 1332,
+          "end": 1448,
+          "recovered": [
+            1332,
+            1448
+          ],
+          "waste": 0,
+          "deviation": 25,
+          "planned_at": 1315,
+          "known_event_count": 4
+        },
+        {
+          "start": 1448,
+          "end": 1571,
+          "recovered": [
+            1448,
+            1564
+          ],
+          "waste": 7,
+          "deviation": 25,
+          "planned_at": 1315,
+          "known_event_count": 4
+        },
+        {
+          "start": 1571,
+          "end": 1697,
+          "recovered": [
+            1590,
+            1697
+          ],
+          "waste": 19,
+          "deviation": 16,
+          "planned_at": 1315,
+          "known_event_count": 4
+        },
+        {
+          "start": 1697,
+          "end": 1804,
+          "recovered": [
+            1697,
+            1804
+          ],
+          "waste": 0,
+          "deviation": 16,
+          "planned_at": 1315,
+          "known_event_count": 4
+        },
+        {
+          "start": 1804,
+          "end": 1911,
+          "recovered": [
+            1804,
+            1911
+          ],
+          "waste": 0,
+          "deviation": 16,
+          "planned_at": 1908,
+          "known_event_count": 5
+        },
+        {
+          "start": 1911,
+          "end": 2035,
+          "recovered": [
+            1919,
+            2035
+          ],
+          "waste": 8,
+          "deviation": 25,
+          "planned_at": 1908,
+          "known_event_count": 5
+        },
+        {
+          "start": 2035,
+          "end": 2151,
+          "recovered": [
+            2035,
+            2151
+          ],
+          "waste": 0,
+          "deviation": 25,
+          "planned_at": 1908,
+          "known_event_count": 5
+        },
+        {
+          "start": 2151,
+          "end": 2267,
+          "recovered": [
+            2151,
+            2267
+          ],
+          "waste": 0,
+          "deviation": 25,
+          "planned_at": 1908,
+          "known_event_count": 5
+        },
+        {
+          "start": 2267,
+          "end": 2383,
+          "recovered": [
+            2267,
+            2383
+          ],
+          "waste": 0,
+          "deviation": 25,
+          "planned_at": 2333,
+          "known_event_count": 6
+        },
+        {
+          "start": 2383,
+          "end": 2499,
+          "recovered": [
+            2383,
+            2499
+          ],
+          "waste": 0,
+          "deviation": 25,
+          "planned_at": 2333,
+          "known_event_count": 6
+        },
+        {
+          "start": 2499,
+          "end": 2559,
+          "recovered": null,
+          "waste": 60,
+          "deviation": 0,
+          "planned_at": 2333,
+          "known_event_count": 6
+        },
+        {
+          "start": 2559,
+          "end": 2675,
+          "recovered": [
+            2559,
+            2675
+          ],
+          "waste": 0,
+          "deviation": 25,
+          "planned_at": 2660,
+          "known_event_count": 7
+        },
+        {
+          "start": 2675,
+          "end": 2791,
+          "recovered": [
+            2675,
+            2791
+          ],
+          "waste": 0,
+          "deviation": 25,
+          "planned_at": 2707,
+          "known_event_count": 8
+        },
+        {
+          "start": 2791,
+          "end": 2917,
+          "recovered": [
+            2791,
+            2907
+          ],
+          "waste": 10,
+          "deviation": 25,
+          "planned_at": 2707,
+          "known_event_count": 8
+        },
+        {
+          "start": 2917,
+          "end": 3043,
+          "recovered": [
+            2937,
+            3043
+          ],
+          "waste": 20,
+          "deviation": 25,
+          "planned_at": 2707,
+          "known_event_count": 8
+        },
+        {
+          "start": 3043,
+          "end": 3149,
+          "recovered": [
+            3043,
+            3149
+          ],
+          "waste": 0,
+          "deviation": 25,
+          "planned_at": 2707,
+          "known_event_count": 8
+        },
+        {
+          "start": 3149,
+          "end": 3256,
+          "recovered": [
+            3149,
+            3256
+          ],
+          "waste": 0,
+          "deviation": 16,
+          "planned_at": 2707,
+          "known_event_count": 8
+        },
+        {
+          "start": 3256,
+          "end": 3304,
+          "recovered": null,
+          "waste": 48,
+          "deviation": 0,
+          "planned_at": 3279,
+          "known_event_count": 9
+        },
+        {
+          "start": 3304,
+          "end": 3423,
+          "recovered": [
+            3311,
+            3423
+          ],
+          "waste": 7,
+          "deviation": 1,
+          "planned_at": 3279,
+          "known_event_count": 9
+        },
+        {
+          "start": 3423,
+          "end": 3536,
+          "recovered": [
+            3423,
+            3536
+          ],
+          "waste": 0,
+          "deviation": 4,
+          "planned_at": 3279,
+          "known_event_count": 9
+        },
+        {
+          "start": 3536,
+          "end": 3649,
+          "recovered": [
+            3536,
+            3649
+          ],
+          "waste": 0,
+          "deviation": 4,
+          "planned_at": 3279,
+          "known_event_count": 9
+        },
+        {
+          "start": 3649,
+          "end": 3762,
+          "recovered": [
+            3649,
+            3762
+          ],
+          "waste": 0,
+          "deviation": 4,
+          "planned_at": 3279,
+          "known_event_count": 9
+        },
+        {
+          "start": 3762,
+          "end": 3883,
+          "recovered": [
+            3762,
+            3875
+          ],
+          "waste": 8,
+          "deviation": 4,
+          "planned_at": 3279,
+          "known_event_count": 9
+        }
+      ],
+      "total_waste_m": 25.9,
+      "total_deviation_m2": 5.6,
+      "last_cut_start_min": 388.3,
+      "last_cut_complete_min": 391.3,
+      "scope": "optimal current-known-defect plans on a 0.1/0.05 m grid; realized final record follows causal revisions"
+    }
+  }
+}
