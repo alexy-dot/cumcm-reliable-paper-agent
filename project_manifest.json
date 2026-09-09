@@ -6,6 +6,7 @@
   "skill": "skill/cumcm-reliable-paper",
   "entrypoint": "python3 skill/cumcm-reliable-paper/scripts/cumcm_agent.py",
   "commands": [
+    "doctor",
     "init",
     "inspect",
     "signoffs",

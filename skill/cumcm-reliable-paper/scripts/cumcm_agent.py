@@ -33,6 +33,12 @@ def build_parser() -> argparse.ArgumentParser:
     )
     commands = parser.add_subparsers(dest="command", required=True)
 
+    doctor = commands.add_parser("doctor", help="check selected dependencies and optional offline paper compilation")
+    doctor.add_argument("--profile", action="append", choices=("core", "paper", "statistics", "submission", "all"))
+    doctor.add_argument("--latex-compiler")
+    doctor.add_argument("--smoke", action="store_true")
+    doctor.add_argument("--cache-dir", type=Path)
+
     initialize = commands.add_parser("init", help="freeze sources and create run ledgers")
     initialize.add_argument("--problem", type=Path, required=True)
     initialize.add_argument("--attachment", type=Path, action="append", default=[])
@@ -78,7 +84,13 @@ def build_parser() -> argparse.ArgumentParser:
 def main() -> int:
     args = build_parser().parse_args()
     try:
-        if args.command == "init":
+        if args.command == "doctor":
+            from environment_check import check_environment
+            try:
+                result = check_environment(args.profile, args.latex_compiler, args.smoke, args.cache_dir)
+            except ValueError as exc:
+                raise WorkflowError(str(exc)) from exc
+        elif args.command == "init":
             result = initialize_run(
                 output_dir=args.output,
                 problem=args.problem,

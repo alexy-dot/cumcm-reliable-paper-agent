@@ -16,6 +16,8 @@ python3 scripts/cumcm_agent.py init --problem /path/problem.docx --attachment /p
 python3 scripts/cumcm_agent.py status /path/run
 ```
 
+On a new runtime, `python3 scripts/cumcm_agent.py doctor --profile paper --smoke --cache-dir /path/cache` checks imports and performs an offline Chinese/math/code compilation. Use `core`, `statistics`, `submission` or `all` for other dependency profiles. It installs nothing and does not certify a paper; missing cached TeX resources need a normal compile with network access before retrying.
+
 Initialize before modeling. Read the original statement, including diagrams, then inspect `source_audit.json`. CSV/XLSX audits scan every stored row; DOCX extraction covers paragraph text only. A successful scan establishes readability, not semantic understanding or model validity.
 
 Use the current stage to select the work:
