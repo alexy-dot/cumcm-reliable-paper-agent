@@ -50,6 +50,18 @@ prediction, support = predict_response(model, future_orders)
 .venv/bin/python benchmarks/supply_2021c/verify_response_study.py RUN NEW_DIRECTORY
 ```
 
+### 发运前调整
+
+`transport_recourse.py`在实际供货量已知、尚未发运时重分配运输，保留全部收购量，并分别报告运力不足、到货不足和库存缺口。[12个既有计划扰动案例](reports/transport-recourse.json)由独立排序构造核对最大产品到货及最小原料损耗，具体输入与分配见[案例包](reports/transport-recourse-cases.zip)。第二问供货增加10%时，原计划三家各超载600立方米，改派1800立方米后可运走全部货物；T3停运时虽能运走原料，仍无法满足原两周库存目标。
+
+```python
+from transport_recourse import reallocate, inventory_step
+result = reallocate(actual_supply, carrier_capacities, estimated_losses,
+                    material_conversion, required_receipt=target, reference=proposal)
+```
+
+适用于可拆分、无禁配路线的连续运输；损耗是发运前估计，不是预知的实际损耗。供货不足不会因重排运输自动消失。次级最小改派量由线性规划证书支持，目标数值容差为1e-7。原稿未修改，本模块作为赛前辅助功能补充。
+
 ## 2020 A：连续模型与约束优化
 
 2020 A“炉温曲线”的项目内首次实测，在约30分钟内完成四问和671条采样输出，29项独立数值检查通过。原8页稿的结构、字体与公式排版不合格，先前的排版通过记录已撤回。当前22页修订稿采用摘要独页、背景与条件—逐问要求的重述、逐问分析、模型假设、符号说明与分问求解结构，并使用宋体、黑体和TeX数学公式。修订补充了完整优化约束、求解设置与同预算算法对照；数值验收与论文修订分别记录。

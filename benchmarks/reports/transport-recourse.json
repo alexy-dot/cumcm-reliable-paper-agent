@@ -1,0 +1,202 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "question": "Q2",
+      "scenario": "supply_minus_10pct",
+      "status": "TARGET_SHORTFALL",
+      "original_proposal_overload": 0.0,
+      "rerouted_quantity": 1969.2233164987106,
+      "receipt_shortfall": 2809.2184877666296,
+      "minimum_extra_capacity": 0.0,
+      "inventory": {
+        "produced": 28200.0,
+        "unmet_production": 0.0,
+        "ending_inventory": 53590.78151223337,
+        "reserve_shortfall": 2809.2184877666296
+      },
+      "artifact": "Q2-supply_minus_10pct.json",
+      "sha256": "360e4a522509b842e79997221072f67b8cc50ce4ca93510b912d01ea7ab92165"
+    },
+    {
+      "question": "Q2",
+      "scenario": "supply_plus_10pct",
+      "status": "FEASIBLE",
+      "original_proposal_overload": 600.0000000000009,
+      "rerouted_quantity": 1800.0000000000011,
+      "receipt_shortfall": 0.0,
+      "minimum_extra_capacity": 0.0,
+      "inventory": {
+        "produced": 28200.0,
+        "unmet_production": 0.0,
+        "ending_inventory": 59206.50747793028,
+        "reserve_shortfall": 0.0
+      },
+      "artifact": "Q2-supply_plus_10pct.json",
+      "sha256": "04965fbb0429342386f309503f2b9900769a9779bb8fe3d9d983f3e02b8bc790"
+    },
+    {
+      "question": "Q2",
+      "scenario": "carrier_T3_unavailable",
+      "status": "TARGET_SHORTFALL",
+      "original_proposal_overload": 6000.0,
+      "rerouted_quantity": 15148.81567915891,
+      "receipt_shortfall": 81.55744953235262,
+      "minimum_extra_capacity": 0.0,
+      "inventory": {
+        "produced": 28200.0,
+        "unmet_production": 0.0,
+        "ending_inventory": 56318.44255046763,
+        "reserve_shortfall": 81.55744953236717
+      },
+      "artifact": "Q2-carrier_T3_unavailable.json",
+      "sha256": "92355808b0a47d93015370024bc29242010d6213352d45a22088f49e38203118"
+    },
+    {
+      "question": "Q2",
+      "scenario": "total_capacity_shortfall",
+      "status": "TRANSPORT_CAPACITY_SHORTFALL",
+      "original_proposal_overload": 5000.000000000001,
+      "rerouted_quantity": null,
+      "receipt_shortfall": null,
+      "minimum_extra_capacity": 10378.35217468813,
+      "inventory": null,
+      "artifact": "Q2-total_capacity_shortfall.json",
+      "sha256": "3b6c438be97700f87ac594863d7e141bb179bd801055d3f5e827c074636aa21d"
+    },
+    {
+      "question": "Q3",
+      "scenario": "supply_minus_10pct",
+      "status": "TARGET_SHORTFALL",
+      "original_proposal_overload": 0.0,
+      "rerouted_quantity": 1881.821492549277,
+      "receipt_shortfall": 2809.456279706923,
+      "minimum_extra_capacity": 0.0,
+      "inventory": {
+        "produced": 28200.0,
+        "unmet_production": 0.0,
+        "ending_inventory": 53590.54372029306,
+        "reserve_shortfall": 2809.4562797069375
+      },
+      "artifact": "Q3-supply_minus_10pct.json",
+      "sha256": "089bac0037e1d0b91c4b0c1c6c76755bf3b31e2bc44589022e871d3e50e7ac26"
+    },
+    {
+      "question": "Q3",
+      "scenario": "supply_plus_10pct",
+      "status": "FEASIBLE",
+      "original_proposal_overload": 600.0000000004184,
+      "rerouted_quantity": 1800.0000000004281,
+      "receipt_shortfall": 0.0,
+      "minimum_extra_capacity": 0.0,
+      "inventory": {
+        "produced": 28200.0,
+        "unmet_production": 0.0,
+        "ending_inventory": 59206.77178933505,
+        "reserve_shortfall": 0.0
+      },
+      "artifact": "Q3-supply_plus_10pct.json",
+      "sha256": "8dd3e96fe4c406ba91013070f85283df1267a4b72d832b3ab3adf5bfcd596c34"
+    },
+    {
+      "question": "Q3",
+      "scenario": "carrier_T3_unavailable",
+      "status": "TARGET_SHORTFALL",
+      "original_proposal_overload": 6000.00000000038,
+      "rerouted_quantity": 12177.866764168717,
+      "receipt_shortfall": 80.07725857821788,
+      "minimum_extra_capacity": 0.0,
+      "inventory": {
+        "produced": 28200.0,
+        "unmet_production": 0.0,
+        "ending_inventory": 56319.92274142179,
+        "reserve_shortfall": 80.0772585782106
+      },
+      "artifact": "Q3-carrier_T3_unavailable.json",
+      "sha256": "908fbc25e5af6599bf87c691ad0c1788fac5213a4bbb5d9dfe8c491bfb96c214"
+    },
+    {
+      "question": "Q3",
+      "scenario": "total_capacity_shortfall",
+      "status": "TRANSPORT_CAPACITY_SHORTFALL",
+      "original_proposal_overload": 5000.00000000038,
+      "rerouted_quantity": null,
+      "receipt_shortfall": null,
+      "minimum_extra_capacity": 10090.91300255742,
+      "inventory": null,
+      "artifact": "Q3-total_capacity_shortfall.json",
+      "sha256": "c57ab51139760db76cc1baef5c374fec4d542d263ce42348eed02b82f1bd0687"
+    },
+    {
+      "question": "Q4",
+      "scenario": "supply_minus_10pct",
+      "status": "TARGET_SHORTFALL",
+      "original_proposal_overload": 0.0,
+      "rerouted_quantity": 3599.9997901978945,
+      "receipt_shortfall": 3320.927058445566,
+      "minimum_extra_capacity": 0.0,
+      "inventory": {
+        "produced": 29911.975153957672,
+        "unmet_production": 0.0,
+        "ending_inventory": 56503.02324946977,
+        "reserve_shortfall": 3320.9270584455735
+      },
+      "artifact": "Q4-supply_minus_10pct.json",
+      "sha256": "cd79c736ff90f24598fdcd77690ae5c857b3ebd6ce4a873176412b63abf8b268"
+    },
+    {
+      "question": "Q4",
+      "scenario": "supply_plus_10pct",
+      "status": "FEASIBLE",
+      "original_proposal_overload": 600.0000000000045,
+      "rerouted_quantity": 1800.00000000001,
+      "receipt_shortfall": 0.0,
+      "minimum_extra_capacity": 0.0,
+      "inventory": {
+        "produced": 29911.975153957672,
+        "unmet_production": 0.0,
+        "ending_inventory": 63144.23271733371,
+        "reserve_shortfall": 0.0
+      },
+      "artifact": "Q4-supply_plus_10pct.json",
+      "sha256": "f17095475667e959d28279cdc040b7d5c10790ea52f1e6be011ca97779914e2a"
+    },
+    {
+      "question": "Q4",
+      "scenario": "carrier_T3_unavailable",
+      "status": "TARGET_SHORTFALL",
+      "original_proposal_overload": 6000.0000000000055,
+      "rerouted_quantity": 13199.139980527612,
+      "receipt_shortfall": 109.14233160239382,
+      "minimum_extra_capacity": 0.0,
+      "inventory": {
+        "produced": 29911.975153957672,
+        "unmet_production": 0.0,
+        "ending_inventory": 59714.807976312935,
+        "reserve_shortfall": 109.14233160240838
+      },
+      "artifact": "Q4-carrier_T3_unavailable.json",
+      "sha256": "31dbcd7a66c6826695e4bddac27b2208d6c96cf36d90d5999be7eb57c161dfae"
+    },
+    {
+      "question": "Q4",
+      "scenario": "total_capacity_shortfall",
+      "status": "TRANSPORT_CAPACITY_SHORTFALL",
+      "original_proposal_overload": 5000.0000000000055,
+      "rerouted_quantity": null,
+      "receipt_shortfall": null,
+      "minimum_extra_capacity": 13826.519523718813,
+      "inventory": null,
+      "artifact": "Q4-total_capacity_shortfall.json",
+      "sha256": "65056f408d782cf995bab5c423b5de9d80f91f3149425855d8c68a0a3d40a951"
+    }
+  ],
+  "source_plans_sha256": "2eca6c07e8c8c9b9d358f5194f7008d8189d6986ded228c00a6bf170f03e434a",
+  "source_code_sha256": {
+    "benchmarks/supply_2021c/recourse_check.py": "74ddd6af8e7fea590a06e4cb9ae0988dfd923a3737e134073ab7a2367c12fc52",
+    "skill/cumcm-reliable-paper/scripts/transport_recourse.py": "58848e587b9107c19517273a61008b7df50cf6d1e2c820e0cad99bb906bb9dec"
+  },
+  "scope": "first week of each frozen plan, four deterministic disruptions. Supply is known before dispatch; losses are original planning estimates. Independent exchange construction checks maximum product and minimum raw loss; minimum L1 rerouting relies on LP certificate. Not real performance or calibrated risk probabilities.",
+  "timed_trial_changed": false,
+  "submission_ready": false
+}

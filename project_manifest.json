@@ -37,6 +37,12 @@
   "supervision": {
     "updated_on": "2026-09-10",
     "readiness": "NOT_ESTABLISHED",
+    "release_handoff": {
+      "status": "READY_FOR_USER_TRIAL_WITH_DOCUMENTED_LIMITATIONS",
+      "scope": "Finish the already-started transport adjustment module; further feature expansion awaits concrete usage feedback.",
+      "transport_evidence": "benchmarks/reports/transport-recourse.json",
+      "award_guarantee": false
+    },
     "latest_response_study": {
       "case": "2021 C retrospective rolling-origin supply response study",
       "evidence": "benchmarks/reports/supply-response/report.json",
