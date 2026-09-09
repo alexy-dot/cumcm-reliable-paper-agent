@@ -256,7 +256,1581 @@
       "yield_pct": 17.264309323382783
     }
   ],
-  "decisions_sha256": "4b69731c1d5aeca658e105155d987cee57bfdad23c9d16e949986ab019a643cb",
+  "material_series_verification": {
+    "series": 4,
+    "source_value_checks": 174,
+    "passed": true,
+    "comparisons": [
+      {
+        "factor": "co_mass_fraction",
+        "group": "A14",
+        "temperature_c": 250,
+        "source_row": 71,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A14",
+        "temperature_c": 250,
+        "source_row": 71,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A14",
+        "temperature_c": 250,
+        "source_row": 71,
+        "target": "yield_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A14",
+        "temperature_c": 275,
+        "source_row": 72,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A14",
+        "temperature_c": 275,
+        "source_row": 72,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A14",
+        "temperature_c": 275,
+        "source_row": 72,
+        "target": "yield_pct",
+        "error": 2.7755575615628914e-17,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A14",
+        "temperature_c": 300,
+        "source_row": 73,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A14",
+        "temperature_c": 300,
+        "source_row": 73,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A14",
+        "temperature_c": 300,
+        "source_row": 73,
+        "target": "yield_pct",
+        "error": 5.551115123125783e-17,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A14",
+        "temperature_c": 350,
+        "source_row": 74,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A14",
+        "temperature_c": 350,
+        "source_row": 74,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A14",
+        "temperature_c": 350,
+        "source_row": 74,
+        "target": "yield_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A14",
+        "temperature_c": 400,
+        "source_row": 75,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A14",
+        "temperature_c": 400,
+        "source_row": 75,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A14",
+        "temperature_c": 400,
+        "source_row": 75,
+        "target": "yield_pct",
+        "error": 1.7763568394002505e-15,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A12",
+        "temperature_c": 250,
+        "source_row": 61,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A12",
+        "temperature_c": 250,
+        "source_row": 61,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A12",
+        "temperature_c": 250,
+        "source_row": 61,
+        "target": "yield_pct",
+        "error": 1.3877787807814457e-17,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A12",
+        "temperature_c": 275,
+        "source_row": 62,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A12",
+        "temperature_c": 275,
+        "source_row": 62,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A12",
+        "temperature_c": 275,
+        "source_row": 62,
+        "target": "yield_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A12",
+        "temperature_c": 300,
+        "source_row": 63,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A12",
+        "temperature_c": 300,
+        "source_row": 63,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A12",
+        "temperature_c": 300,
+        "source_row": 63,
+        "target": "yield_pct",
+        "error": 1.1102230246251565e-16,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A12",
+        "temperature_c": 350,
+        "source_row": 64,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A12",
+        "temperature_c": 350,
+        "source_row": 64,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A12",
+        "temperature_c": 350,
+        "source_row": 64,
+        "target": "yield_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A12",
+        "temperature_c": 400,
+        "source_row": 65,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A12",
+        "temperature_c": 400,
+        "source_row": 65,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A12",
+        "temperature_c": 400,
+        "source_row": 65,
+        "target": "yield_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A13",
+        "temperature_c": 250,
+        "source_row": 66,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A13",
+        "temperature_c": 250,
+        "source_row": 66,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A13",
+        "temperature_c": 250,
+        "source_row": 66,
+        "target": "yield_pct",
+        "error": 1.3877787807814457e-17,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A13",
+        "temperature_c": 275,
+        "source_row": 67,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A13",
+        "temperature_c": 275,
+        "source_row": 67,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A13",
+        "temperature_c": 275,
+        "source_row": 67,
+        "target": "yield_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A13",
+        "temperature_c": 300,
+        "source_row": 68,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A13",
+        "temperature_c": 300,
+        "source_row": 68,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A13",
+        "temperature_c": 300,
+        "source_row": 68,
+        "target": "yield_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A13",
+        "temperature_c": 350,
+        "source_row": 69,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A13",
+        "temperature_c": 350,
+        "source_row": 69,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A13",
+        "temperature_c": 350,
+        "source_row": 69,
+        "target": "yield_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A13",
+        "temperature_c": 400,
+        "source_row": 70,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A13",
+        "temperature_c": 400,
+        "source_row": 70,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "co_mass_fraction",
+        "group": "A13",
+        "temperature_c": 400,
+        "source_row": 70,
+        "target": "yield_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A8",
+        "temperature_c": 250,
+        "source_row": 41,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A8",
+        "temperature_c": 250,
+        "source_row": 41,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A8",
+        "temperature_c": 250,
+        "source_row": 41,
+        "target": "yield_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A8",
+        "temperature_c": 275,
+        "source_row": 42,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A8",
+        "temperature_c": 275,
+        "source_row": 42,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A8",
+        "temperature_c": 275,
+        "source_row": 42,
+        "target": "yield_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A8",
+        "temperature_c": 300,
+        "source_row": 43,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A8",
+        "temperature_c": 300,
+        "source_row": 43,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A8",
+        "temperature_c": 300,
+        "source_row": 43,
+        "target": "yield_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A8",
+        "temperature_c": 350,
+        "source_row": 44,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A8",
+        "temperature_c": 350,
+        "source_row": 44,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A8",
+        "temperature_c": 350,
+        "source_row": 44,
+        "target": "yield_pct",
+        "error": 1.7763568394002505e-15,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A8",
+        "temperature_c": 400,
+        "source_row": 45,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A8",
+        "temperature_c": 400,
+        "source_row": 45,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A8",
+        "temperature_c": 400,
+        "source_row": 45,
+        "target": "yield_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A3",
+        "temperature_c": 250,
+        "source_row": 12,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A3",
+        "temperature_c": 250,
+        "source_row": 12,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A3",
+        "temperature_c": 250,
+        "source_row": 12,
+        "target": "yield_pct",
+        "error": 1.1102230246251565e-16,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A3",
+        "temperature_c": 275,
+        "source_row": 13,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A3",
+        "temperature_c": 275,
+        "source_row": 13,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A3",
+        "temperature_c": 275,
+        "source_row": 13,
+        "target": "yield_pct",
+        "error": 2.220446049250313e-16,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A3",
+        "temperature_c": 300,
+        "source_row": 14,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A3",
+        "temperature_c": 300,
+        "source_row": 14,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A3",
+        "temperature_c": 300,
+        "source_row": 14,
+        "target": "yield_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A3",
+        "temperature_c": 350,
+        "source_row": 16,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A3",
+        "temperature_c": 350,
+        "source_row": 16,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A3",
+        "temperature_c": 350,
+        "source_row": 16,
+        "target": "yield_pct",
+        "error": 3.552713678800501e-15,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A3",
+        "temperature_c": 400,
+        "source_row": 17,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A3",
+        "temperature_c": 400,
+        "source_row": 17,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A3",
+        "temperature_c": 400,
+        "source_row": 17,
+        "target": "yield_pct",
+        "error": 7.105427357601002e-15,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A12",
+        "temperature_c": 250,
+        "source_row": 61,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A12",
+        "temperature_c": 250,
+        "source_row": 61,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A12",
+        "temperature_c": 250,
+        "source_row": 61,
+        "target": "yield_pct",
+        "error": 1.3877787807814457e-17,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A12",
+        "temperature_c": 275,
+        "source_row": 62,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A12",
+        "temperature_c": 275,
+        "source_row": 62,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A12",
+        "temperature_c": 275,
+        "source_row": 62,
+        "target": "yield_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A12",
+        "temperature_c": 300,
+        "source_row": 63,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A12",
+        "temperature_c": 300,
+        "source_row": 63,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A12",
+        "temperature_c": 300,
+        "source_row": 63,
+        "target": "yield_pct",
+        "error": 1.1102230246251565e-16,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A12",
+        "temperature_c": 350,
+        "source_row": 64,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A12",
+        "temperature_c": 350,
+        "source_row": 64,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A12",
+        "temperature_c": 350,
+        "source_row": 64,
+        "target": "yield_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A1",
+        "temperature_c": 250,
+        "source_row": 2,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A1",
+        "temperature_c": 250,
+        "source_row": 2,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A1",
+        "temperature_c": 250,
+        "source_row": 2,
+        "target": "yield_pct",
+        "error": 1.1102230246251565e-16,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A1",
+        "temperature_c": 275,
+        "source_row": 3,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A1",
+        "temperature_c": 275,
+        "source_row": 3,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A1",
+        "temperature_c": 275,
+        "source_row": 3,
+        "target": "yield_pct",
+        "error": 4.440892098500626e-16,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A1",
+        "temperature_c": 300,
+        "source_row": 4,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A1",
+        "temperature_c": 300,
+        "source_row": 4,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A1",
+        "temperature_c": 300,
+        "source_row": 4,
+        "target": "yield_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A1",
+        "temperature_c": 350,
+        "source_row": 6,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A1",
+        "temperature_c": 350,
+        "source_row": 6,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "A1",
+        "temperature_c": 350,
+        "source_row": 6,
+        "target": "yield_pct",
+        "error": 3.552713678800501e-15,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B3",
+        "temperature_c": 250,
+        "source_row": 86,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B3",
+        "temperature_c": 250,
+        "source_row": 86,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B3",
+        "temperature_c": 250,
+        "source_row": 86,
+        "target": "yield_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B3",
+        "temperature_c": 275,
+        "source_row": 87,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B3",
+        "temperature_c": 275,
+        "source_row": 87,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B3",
+        "temperature_c": 275,
+        "source_row": 87,
+        "target": "yield_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B3",
+        "temperature_c": 300,
+        "source_row": 88,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B3",
+        "temperature_c": 300,
+        "source_row": 88,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B3",
+        "temperature_c": 300,
+        "source_row": 88,
+        "target": "yield_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B3",
+        "temperature_c": 350,
+        "source_row": 90,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B3",
+        "temperature_c": 350,
+        "source_row": 90,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B3",
+        "temperature_c": 350,
+        "source_row": 90,
+        "target": "yield_pct",
+        "error": 1.1102230246251565e-16,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B3",
+        "temperature_c": 400,
+        "source_row": 91,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B3",
+        "temperature_c": 400,
+        "source_row": 91,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B3",
+        "temperature_c": 400,
+        "source_row": 91,
+        "target": "yield_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B4",
+        "temperature_c": 250,
+        "source_row": 92,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B4",
+        "temperature_c": 250,
+        "source_row": 92,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B4",
+        "temperature_c": 250,
+        "source_row": 92,
+        "target": "yield_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B4",
+        "temperature_c": 275,
+        "source_row": 93,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B4",
+        "temperature_c": 275,
+        "source_row": 93,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B4",
+        "temperature_c": 275,
+        "source_row": 93,
+        "target": "yield_pct",
+        "error": 1.3877787807814457e-17,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B4",
+        "temperature_c": 300,
+        "source_row": 94,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B4",
+        "temperature_c": 300,
+        "source_row": 94,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B4",
+        "temperature_c": 300,
+        "source_row": 94,
+        "target": "yield_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B4",
+        "temperature_c": 350,
+        "source_row": 96,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B4",
+        "temperature_c": 350,
+        "source_row": 96,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B4",
+        "temperature_c": 350,
+        "source_row": 96,
+        "target": "yield_pct",
+        "error": 2.220446049250313e-16,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B4",
+        "temperature_c": 400,
+        "source_row": 97,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B4",
+        "temperature_c": 400,
+        "source_row": 97,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B4",
+        "temperature_c": 400,
+        "source_row": 97,
+        "target": "yield_pct",
+        "error": 8.881784197001252e-16,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B1",
+        "temperature_c": 250,
+        "source_row": 76,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B1",
+        "temperature_c": 250,
+        "source_row": 76,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B1",
+        "temperature_c": 250,
+        "source_row": 76,
+        "target": "yield_pct",
+        "error": 1.3877787807814457e-17,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B1",
+        "temperature_c": 275,
+        "source_row": 77,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B1",
+        "temperature_c": 275,
+        "source_row": 77,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B1",
+        "temperature_c": 275,
+        "source_row": 77,
+        "target": "yield_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B1",
+        "temperature_c": 300,
+        "source_row": 78,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B1",
+        "temperature_c": 300,
+        "source_row": 78,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B1",
+        "temperature_c": 300,
+        "source_row": 78,
+        "target": "yield_pct",
+        "error": 1.1102230246251565e-16,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B1",
+        "temperature_c": 350,
+        "source_row": 79,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B1",
+        "temperature_c": 350,
+        "source_row": 79,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B1",
+        "temperature_c": 350,
+        "source_row": 79,
+        "target": "yield_pct",
+        "error": 8.881784197001252e-16,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B1",
+        "temperature_c": 400,
+        "source_row": 80,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B1",
+        "temperature_c": 400,
+        "source_row": 80,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B1",
+        "temperature_c": 400,
+        "source_row": 80,
+        "target": "yield_pct",
+        "error": 3.552713678800501e-15,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B6",
+        "temperature_c": 250,
+        "source_row": 104,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B6",
+        "temperature_c": 250,
+        "source_row": 104,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B6",
+        "temperature_c": 250,
+        "source_row": 104,
+        "target": "yield_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B6",
+        "temperature_c": 275,
+        "source_row": 105,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B6",
+        "temperature_c": 275,
+        "source_row": 105,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B6",
+        "temperature_c": 275,
+        "source_row": 105,
+        "target": "yield_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B6",
+        "temperature_c": 300,
+        "source_row": 106,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B6",
+        "temperature_c": 300,
+        "source_row": 106,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B6",
+        "temperature_c": 300,
+        "source_row": 106,
+        "target": "yield_pct",
+        "error": 2.220446049250313e-16,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B6",
+        "temperature_c": 350,
+        "source_row": 108,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B6",
+        "temperature_c": 350,
+        "source_row": 108,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B6",
+        "temperature_c": 350,
+        "source_row": 108,
+        "target": "yield_pct",
+        "error": 8.881784197001252e-16,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B6",
+        "temperature_c": 400,
+        "source_row": 109,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B6",
+        "temperature_c": 400,
+        "source_row": 109,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B6",
+        "temperature_c": 400,
+        "source_row": 109,
+        "target": "yield_pct",
+        "error": 3.552713678800501e-15,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B2",
+        "temperature_c": 250,
+        "source_row": 81,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B2",
+        "temperature_c": 250,
+        "source_row": 81,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B2",
+        "temperature_c": 250,
+        "source_row": 81,
+        "target": "yield_pct",
+        "error": 1.3877787807814457e-17,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B2",
+        "temperature_c": 275,
+        "source_row": 82,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B2",
+        "temperature_c": 275,
+        "source_row": 82,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B2",
+        "temperature_c": 275,
+        "source_row": 82,
+        "target": "yield_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B2",
+        "temperature_c": 300,
+        "source_row": 83,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B2",
+        "temperature_c": 300,
+        "source_row": 83,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B2",
+        "temperature_c": 300,
+        "source_row": 83,
+        "target": "yield_pct",
+        "error": 1.1102230246251565e-16,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B2",
+        "temperature_c": 350,
+        "source_row": 84,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B2",
+        "temperature_c": 350,
+        "source_row": 84,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B2",
+        "temperature_c": 350,
+        "source_row": 84,
+        "target": "yield_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B2",
+        "temperature_c": 400,
+        "source_row": 85,
+        "target": "conversion_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B2",
+        "temperature_c": 400,
+        "source_row": 85,
+        "target": "selectivity_pct",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "factor": "total_mass_mg",
+        "group": "B2",
+        "temperature_c": 400,
+        "source_row": 85,
+        "target": "yield_pct",
+        "error": 0.0,
+        "passed": true
+      }
+    ],
+    "scope": "independent regex/Decimal extraction from original workbook, eligible member/common-temperature coverage and response checks; not causal identification"
+  },
+  "decisions_sha256": "f43ee70b87524b54f6ae5668266773ae843ece9fcca0f482659432ab99f8df86",
   "results_sha256": "4ca8dca3e32d4b5d1672ae3ed47360bbe41372a33b34d46be6be820a19810501",
   "scope": "independent scalar metric recomputation and source-row group separation; selection isolation additionally tested by held-out label perturbation"
 }

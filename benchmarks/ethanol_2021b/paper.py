@@ -78,6 +78,25 @@ def compose(run):
         text("为回答因素影响，枚举只在一个记录特征上不同的组合对，在共同温度点逐一相减；下表是较大特征值组合减去较小值组合的平均差，单位百分点。其他记录条件虽然一致，批次、老化及顺序信息仍未知，故这些是受条件约束的描述对照。"),
         table([["组合对","变化因素","由→至","转化率均差","选择性均差"]]+[[p["from_group"]+"/"+p["to_group"],{"co_loading_pct":"Co负载","feed_ml_min":"进料","mode_II":"装料方式","co_mass_mg":"Co/SiO2质量","hap_mass_mg":"HAP质量","quartz_mass_mg":"石英砂质量"}[p["changed_feature"]],f"{p['from_value']:g}→{p['to_value']:g}",f"{p['mean_differences']['conversion_pct']:.3f}",f"{p['mean_differences']['selectivity_pct']:.3f}"] for p in decision["matched_contrasts"]]),
         text("A12/B1与A9/B5两组方式I→II对照的选择性变化方向不同，不能笼统宣布某一种装料方式总是更好。模型解释另采用整块配方描述在外层留出组合间的联合交换，保留一组配方内部的质量关系与模式标签。其误差变化只说明模型对整个配方块的预测依赖；温度与新配方的组合可能尚未测量，也不能解释为单因素因果效应。")],3)
+    material=decision["material_series"]
+    at350=lambda p:next(row for row in p["observations"] if row["temperature_c"]==350)
+    mass=[s for s in material if s["factor"]=="total_mass_mg"]
+    ratio=next(s for s in material if s["factor"]=="co_mass_fraction")
+    section("5.2.2 固定装料比下的总装料量",[
+        text("只比较一个原始质量列会漏掉题目的物理因素：当Co/SiO2与HAP同比例增加时，两列同时变化，但改变的是总装料量。因此令M为二者质量之和，q为Co/SiO2在其中的质量份额，分别控制比例与总量进行比较。石英砂单独记录，不并入此处M。"),
+        eq(r"M=m_{\mathrm{Co/SiO_2}}+m_{\mathrm{HAP}},\qquad q=\frac{m_{\mathrm{Co/SiO_2}}}{M}."),
+        text("附件中共有三组固定q=0.5的总量系列：方式I、进料0.9ml/min的A8/A3；方式I、进料1.68ml/min的A12/A1；方式II、进料1.68ml/min的B3/B4/B1/B6/B2。各系列Co负载均为1wt%，且不含石英砂。同一系列内只比较所有成员共同测过的温度；下表选共同的350℃展示，全部共同温度记录另行保留。"),
+        table([["方式/进料","组合","总量/mg","转化率/%","选择性/%","收率/%"]]+[
+            [("II" if s["controls"]["mode_II"] else "I")+f"/{s['controls']['feed_ml_min']:g}",p["group"],f"{p['factor_value']:g}",
+             *[f"{at350(p)[key]:.3f}" for key in ("conversion_pct","selectivity_pct","yield_pct")]] for s in mass for p in s["points"]]),
+        text("方式I的两个系列中，350℃时由100mg增至400mg，转化率、C4选择性和收率都提高。但方式II的结果不呈统一单调关系：由150mg增至200mg时，转化率和收率反而下降，选择性也不是随质量一直上升。因此支持的是这些已测条件下的总量关联，不是“增加催化剂必然提高性能”的普遍规律。改变总量同时影响两种材料的绝对用量及床层状态，不能将其归因于某一种材料单独的作用。")],3)
+    section("5.2.3 固定总量下的Co/SiO2与HAP比例",[
+        text("A14、A12、A13均采用方式I、总量100mg、Co负载1wt%、进料1.68ml/min且无石英砂，分别对应33:67、50:50、67:33的装料比。这里固定总量，改变q才可以讨论比例关联。不能把增加Co/SiO2而不说明HAP相应减少的比较，解读为单独增加Co的效果。"),
+        table([["组合","装料质量比","q","转化率/%","选择性/%","收率/%"]]+[
+            [p["group"],f"{p['co_mass_mg']:g}:{p['hap_mass_mg']:g}",f"{p['factor_value']:.2f}",
+             *[f"{at350(p)[key]:.3f}" for key in ("conversion_pct","selectivity_pct","yield_pct")]] for p in ratio["points"]]),
+        text("在350℃这一共同温度下，q从0.33增至0.67时，转化率下降而C4选择性上升，两者存在权衡。三种已测比例中，q=0.50的收率最高；这只确定了三个观测候选的排序，不能证明q=0.50是连续比例域的最优值。上述比例系列在250、275、300、350和400℃均有共同观测，不把高温结果未经核对地套到低温条件。"),
+        text(f"四个材料系列的成员、共同温度及{check['material_series_verification']['source_value_checks']}个响应值已通过直接读取原工作表的独立核对。题面没有批次、随机化和老化对齐信息，因此这些结构化对照加强了因素分析，但仍不能给出无混杂的因果结论。")],3)
     section("5.3 问题三：观测候选与严格低温边界",[
         table([["范围","组合","温度/℃","转化率/%","选择性/%","观测收率/%"]]+[[label,row["group"],str(row["temperature_c"]),f"{row['conversion_pct']:.4f}",f"{row['selectivity_pct']:.2f}",f"{row['yield_pct']:.4f}"] for label,row in [("全部观测",observed),("严格低温",low)]]),
         text("A3的配方为200mg 1wt%Co/SiO2与200mg HAP，进料0.9ml/min、方式I；A2为200mg 2wt%Co/SiO2与200mg HAP，进料1.68ml/min、方式I。上述表格直接回答当前已经测得的候选，不等于在所有连续配方中的最优。"),

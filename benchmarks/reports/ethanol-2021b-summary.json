@@ -85,7 +85,9 @@
         "yield_pct": 17.264309323382783
       }
     ],
-    "passed": true
+    "passed": true,
+    "material_series": 4,
+    "material_source_value_checks": 174
   },
   "independent_linear_models": {
     "fold_models": 120,
@@ -296,13 +298,13 @@
     "report_sha256": "a35371961c26448973ef741c2249cae456e022ea3181705dc31288e06b14fd58"
   },
   "paper": {
-    "pages": 15,
-    "sha256": "589bb6332647a1d2347230205c7fff2a7852a5696c6cb00178475ce6164b80fd",
+    "pages": 17,
+    "sha256": "e54e1ff1c17a8cfdcfa183b24bfd3258163f29f4c165bd21340e6bd79b8e24cc",
     "visual_review": {
       "reviewer_type": "agent",
       "status": "PASS",
-      "scope": "First 12 pages pixel-identical to previously reviewed published paper. Pages 13-15 inspected at full resolution after adding independent regression reconstruction evidence; Chinese text and formulas legible, content margins and four-question structure pass. Agent visual review only; formal submission and human assessment remain pending.",
-      "pdf_sha256": "589bb6332647a1d2347230205c7fff2a7852a5696c6cb00178475ce6164b80fd"
+      "scope": "First 10 pages identical to previously reviewed manuscript; pages 11-17 reviewed as rendered pages, with new tables checked at full resolution and corrected material-ratio header on page 12 inspected. All other pages pixel-identical after that header revision. No missing glyphs; content margins and four-question structure pass. Agent visual review only.",
+      "pdf_sha256": "e54e1ff1c17a8cfdcfa183b24bfd3258163f29f4c165bd21340e6bd79b8e24cc"
     },
     "structure_review": {
       "profile": "user-requested CUMCM organization; recognized labels are conventions, not universal official rules",
@@ -316,7 +318,7 @@
         "all_questions_solution": true,
         "notation_table_columns": true
       },
-      "pages": 15,
+      "pages": 17,
       "question_count": 4,
       "question_evidence": {
         "analysis": {
@@ -380,13 +382,13 @@
             {
               "ordinal": 3,
               "label": "三",
-              "page": 11,
+              "page": 12,
               "heading": "5.3问题三：观测候选与严格低温边界"
             },
             {
               "ordinal": 4,
               "label": "四",
-              "page": 12,
+              "page": 14,
               "heading": "5.4问题四：五次补充实验"
             }
           ],
@@ -413,27 +415,27 @@
           4
         ],
         "validation": [
-          13
+          14
         ],
         "evaluation": [
-          15
+          17
         ],
         "conclusion": [
-          15
+          17
         ],
         "ai": [
-          15
+          17
         ],
         "references": [
-          15
+          17
         ],
         "appendix": [
-          15
+          17
         ]
       },
       "scope": "actual section coverage only; no certification of substantive answers, math, visual quality or awards",
       "question_mapping": "contract questions in listed order map to 问题一/问题1 etc.; nested outputs need semantic review",
-      "pdf_sha256": "589bb6332647a1d2347230205c7fff2a7852a5696c6cb00178475ce6164b80fd",
+      "pdf_sha256": "e54e1ff1c17a8cfdcfa183b24bfd3258163f29f4c165bd21340e6bd79b8e24cc",
       "extractor": "pypdf layout text",
       "contract_sha256": "fe2d1aedbb634b1e6a9e1013ec61d30f8e837ccde8fd93a400ab57f739f1605f"
     }

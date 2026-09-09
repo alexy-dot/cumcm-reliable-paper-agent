@@ -3507,6 +3507,609 @@
       "scope": "all recorded formulation fields except one and temperature matched; batch/randomization unknown, so descriptive contrast rather than causal estimate"
     }
   ],
+  "material_series": [
+    {
+      "factor": "co_mass_fraction",
+      "fixed_factor": "total_mass_mg",
+      "fixed_value": 100.0,
+      "fixed_exact": "100",
+      "controls": {
+        "co_loading_pct": 1.0,
+        "feed_ml_min": 1.68,
+        "mode_II": 0,
+        "quartz_mass_mg": 0.0
+      },
+      "common_temperatures": [
+        250,
+        275,
+        300,
+        350,
+        400
+      ],
+      "points": [
+        {
+          "group": "A14",
+          "factor_value": 0.33,
+          "factor_exact": "33/100",
+          "co_mass_mg": 33.0,
+          "hap_mass_mg": 67.0,
+          "observations": [
+            {
+              "temperature_c": 250,
+              "source_row": 71,
+              "conversion_pct": 2.49268861247491,
+              "selectivity_pct": 1.89,
+              "yield_pct": 0.0471118147757758
+            },
+            {
+              "temperature_c": 275,
+              "source_row": 72,
+              "conversion_pct": 5.33483516226759,
+              "selectivity_pct": 2.55,
+              "yield_pct": 0.13603829663782352
+            },
+            {
+              "temperature_c": 300,
+              "source_row": 73,
+              "conversion_pct": 10.1520362574393,
+              "selectivity_pct": 3.61,
+              "yield_pct": 0.3664885088935588
+            },
+            {
+              "temperature_c": 350,
+              "source_row": 74,
+              "conversion_pct": 24.0318985551102,
+              "selectivity_pct": 10.83,
+              "yield_pct": 2.6026546135184345
+            },
+            {
+              "temperature_c": 400,
+              "source_row": 75,
+              "conversion_pct": 53.6152568624797,
+              "selectivity_pct": 22.3,
+              "yield_pct": 11.956202280332972
+            }
+          ]
+        },
+        {
+          "group": "A12",
+          "factor_value": 0.5,
+          "factor_exact": "1/2",
+          "co_mass_mg": 50.0,
+          "hap_mass_mg": 50.0,
+          "observations": [
+            {
+              "temperature_c": 250,
+              "source_row": 61,
+              "conversion_pct": 1.44170934251802,
+              "selectivity_pct": 6.17,
+              "yield_pct": 0.08895346643336184
+            },
+            {
+              "temperature_c": 275,
+              "source_row": 62,
+              "conversion_pct": 3.47363039678394,
+              "selectivity_pct": 8.11,
+              "yield_pct": 0.2817114251791775
+            },
+            {
+              "temperature_c": 300,
+              "source_row": 63,
+              "conversion_pct": 6.914387607182,
+              "selectivity_pct": 11.22,
+              "yield_pct": 0.7757942895258205
+            },
+            {
+              "temperature_c": 350,
+              "source_row": 64,
+              "conversion_pct": 19.9122976584978,
+              "selectivity_pct": 22.26,
+              "yield_pct": 4.4324774587816105
+            },
+            {
+              "temperature_c": 400,
+              "source_row": 65,
+              "conversion_pct": 44.534966735128,
+              "selectivity_pct": 36.3,
+              "yield_pct": 16.166192924851465
+            }
+          ]
+        },
+        {
+          "group": "A13",
+          "factor_value": 0.67,
+          "factor_exact": "67/100",
+          "co_mass_mg": 67.0,
+          "hap_mass_mg": 33.0,
+          "observations": [
+            {
+              "temperature_c": 250,
+              "source_row": 66,
+              "conversion_pct": 1.34694843685351,
+              "selectivity_pct": 5.19,
+              "yield_pct": 0.06990662387269718
+            },
+            {
+              "temperature_c": 275,
+              "source_row": 67,
+              "conversion_pct": 2.30545598480325,
+              "selectivity_pct": 7.62,
+              "yield_pct": 0.17567574604200764
+            },
+            {
+              "temperature_c": 300,
+              "source_row": 68,
+              "conversion_pct": 4.06672930913986,
+              "selectivity_pct": 12.74,
+              "yield_pct": 0.5181013139844182
+            },
+            {
+              "temperature_c": 350,
+              "source_row": 69,
+              "conversion_pct": 14.6387758329042,
+              "selectivity_pct": 23.46,
+              "yield_pct": 3.4342568103993254
+            },
+            {
+              "temperature_c": 400,
+              "source_row": 70,
+              "conversion_pct": 40.047154305474,
+              "selectivity_pct": 27.91,
+              "yield_pct": 11.177160766657794
+            }
+          ]
+        }
+      ],
+      "scope": "recorded-condition matched material series; no batch, aging or randomized causal identification"
+    },
+    {
+      "factor": "total_mass_mg",
+      "fixed_factor": "co_mass_fraction",
+      "fixed_value": 0.5,
+      "fixed_exact": "1/2",
+      "controls": {
+        "co_loading_pct": 1.0,
+        "feed_ml_min": 0.9,
+        "mode_II": 0,
+        "quartz_mass_mg": 0.0
+      },
+      "common_temperatures": [
+        250,
+        275,
+        300,
+        350,
+        400
+      ],
+      "points": [
+        {
+          "group": "A8",
+          "factor_value": 100.0,
+          "factor_exact": "100",
+          "co_mass_mg": 50.0,
+          "hap_mass_mg": 50.0,
+          "observations": [
+            {
+              "temperature_c": 250,
+              "source_row": 41,
+              "conversion_pct": 6.26573693340327,
+              "selectivity_pct": 5.63,
+              "yield_pct": 0.3527609893506041
+            },
+            {
+              "temperature_c": 275,
+              "source_row": 42,
+              "conversion_pct": 8.76156996024858,
+              "selectivity_pct": 8.52,
+              "yield_pct": 0.7464857606131791
+            },
+            {
+              "temperature_c": 300,
+              "source_row": 43,
+              "conversion_pct": 13.1790478809351,
+              "selectivity_pct": 13.82,
+              "yield_pct": 1.8213444171452309
+            },
+            {
+              "temperature_c": 350,
+              "source_row": 44,
+              "conversion_pct": 31.7206628928351,
+              "selectivity_pct": 25.89,
+              "yield_pct": 8.212479622955009
+            },
+            {
+              "temperature_c": 400,
+              "source_row": 45,
+              "conversion_pct": 56.1163898081809,
+              "selectivity_pct": 41.42,
+              "yield_pct": 23.243408658548528
+            }
+          ]
+        },
+        {
+          "group": "A3",
+          "factor_value": 400.0,
+          "factor_exact": "400",
+          "co_mass_mg": 200.0,
+          "hap_mass_mg": 200.0,
+          "observations": [
+            {
+              "temperature_c": 250,
+              "source_row": 12,
+              "conversion_pct": 9.6693729570379,
+              "selectivity_pct": 5.5,
+              "yield_pct": 0.5318155126370846
+            },
+            {
+              "temperature_c": 275,
+              "source_row": 13,
+              "conversion_pct": 19.2369353731673,
+              "selectivity_pct": 8.04,
+              "yield_pct": 1.5466496040026507
+            },
+            {
+              "temperature_c": 300,
+              "source_row": 14,
+              "conversion_pct": 29.2502335391358,
+              "selectivity_pct": 17.01,
+              "yield_pct": 4.975464725007
+            },
+            {
+              "temperature_c": 350,
+              "source_row": 16,
+              "conversion_pct": 48.9370446484212,
+              "selectivity_pct": 36.85,
+              "yield_pct": 18.033300952943215
+            },
+            {
+              "temperature_c": 400,
+              "source_row": 17,
+              "conversion_pct": 83.7133815760754,
+              "selectivity_pct": 53.43,
+              "yield_pct": 44.72805977609709
+            }
+          ]
+        }
+      ],
+      "scope": "recorded-condition matched material series; no batch, aging or randomized causal identification"
+    },
+    {
+      "factor": "total_mass_mg",
+      "fixed_factor": "co_mass_fraction",
+      "fixed_value": 0.5,
+      "fixed_exact": "1/2",
+      "controls": {
+        "co_loading_pct": 1.0,
+        "feed_ml_min": 1.68,
+        "mode_II": 0,
+        "quartz_mass_mg": 0.0
+      },
+      "common_temperatures": [
+        250,
+        275,
+        300,
+        350
+      ],
+      "points": [
+        {
+          "group": "A12",
+          "factor_value": 100.0,
+          "factor_exact": "100",
+          "co_mass_mg": 50.0,
+          "hap_mass_mg": 50.0,
+          "observations": [
+            {
+              "temperature_c": 250,
+              "source_row": 61,
+              "conversion_pct": 1.44170934251802,
+              "selectivity_pct": 6.17,
+              "yield_pct": 0.08895346643336184
+            },
+            {
+              "temperature_c": 275,
+              "source_row": 62,
+              "conversion_pct": 3.47363039678394,
+              "selectivity_pct": 8.11,
+              "yield_pct": 0.2817114251791775
+            },
+            {
+              "temperature_c": 300,
+              "source_row": 63,
+              "conversion_pct": 6.914387607182,
+              "selectivity_pct": 11.22,
+              "yield_pct": 0.7757942895258205
+            },
+            {
+              "temperature_c": 350,
+              "source_row": 64,
+              "conversion_pct": 19.9122976584978,
+              "selectivity_pct": 22.26,
+              "yield_pct": 4.4324774587816105
+            }
+          ]
+        },
+        {
+          "group": "A1",
+          "factor_value": 400.0,
+          "factor_exact": "400",
+          "co_mass_mg": 200.0,
+          "hap_mass_mg": 200.0,
+          "observations": [
+            {
+              "temperature_c": 250,
+              "source_row": 2,
+              "conversion_pct": 2.06716944958221,
+              "selectivity_pct": 34.05,
+              "yield_pct": 0.7038711975827424
+            },
+            {
+              "temperature_c": 275,
+              "source_row": 3,
+              "conversion_pct": 5.8517209865374,
+              "selectivity_pct": 37.43,
+              "yield_pct": 2.1902991652609485
+            },
+            {
+              "temperature_c": 300,
+              "source_row": 4,
+              "conversion_pct": 14.9688914921879,
+              "selectivity_pct": 46.94,
+              "yield_pct": 7.026397666433001
+            },
+            {
+              "temperature_c": 350,
+              "source_row": 6,
+              "conversion_pct": 36.801016971268,
+              "selectivity_pct": 47.21,
+              "yield_pct": 17.37376011213562
+            }
+          ]
+        }
+      ],
+      "scope": "recorded-condition matched material series; no batch, aging or randomized causal identification"
+    },
+    {
+      "factor": "total_mass_mg",
+      "fixed_factor": "co_mass_fraction",
+      "fixed_value": 0.5,
+      "fixed_exact": "1/2",
+      "controls": {
+        "co_loading_pct": 1.0,
+        "feed_ml_min": 1.68,
+        "mode_II": 1,
+        "quartz_mass_mg": 0.0
+      },
+      "common_temperatures": [
+        250,
+        275,
+        300,
+        350,
+        400
+      ],
+      "points": [
+        {
+          "group": "B3",
+          "factor_value": 20.0,
+          "factor_exact": "20",
+          "co_mass_mg": 10.0,
+          "hap_mass_mg": 10.0,
+          "observations": [
+            {
+              "temperature_c": 250,
+              "source_row": 86,
+              "conversion_pct": 0.394774301814516,
+              "selectivity_pct": 2.85,
+              "yield_pct": 0.011251067601713707
+            },
+            {
+              "temperature_c": 275,
+              "source_row": 87,
+              "conversion_pct": 0.615197832146397,
+              "selectivity_pct": 5.35,
+              "yield_pct": 0.03291308401983224
+            },
+            {
+              "temperature_c": 300,
+              "source_row": 88,
+              "conversion_pct": 1.14894845380593,
+              "selectivity_pct": 7.61,
+              "yield_pct": 0.08743497733463128
+            },
+            {
+              "temperature_c": 350,
+              "source_row": 90,
+              "conversion_pct": 6.01029955582901,
+              "selectivity_pct": 13.81,
+              "yield_pct": 0.8300223686599864
+            },
+            {
+              "temperature_c": 400,
+              "source_row": 91,
+              "conversion_pct": 21.1001303126785,
+              "selectivity_pct": 21.21,
+              "yield_pct": 4.47533763931911
+            }
+          ]
+        },
+        {
+          "group": "B4",
+          "factor_value": 50.0,
+          "factor_exact": "50",
+          "co_mass_mg": 25.0,
+          "hap_mass_mg": 25.0,
+          "observations": [
+            {
+              "temperature_c": 250,
+              "source_row": 92,
+              "conversion_pct": 0.543983713140717,
+              "selectivity_pct": 6.62,
+              "yield_pct": 0.036011721809915465
+            },
+            {
+              "temperature_c": 275,
+              "source_row": 93,
+              "conversion_pct": 1.11315662843161,
+              "selectivity_pct": 6.62,
+              "yield_pct": 0.07369096880217257
+            },
+            {
+              "temperature_c": 300,
+              "source_row": 94,
+              "conversion_pct": 3.01498497672866,
+              "selectivity_pct": 5.05,
+              "yield_pct": 0.15225674132479733
+            },
+            {
+              "temperature_c": 350,
+              "source_row": 96,
+              "conversion_pct": 9.64336126696237,
+              "selectivity_pct": 13.1,
+              "yield_pct": 1.2632803259720702
+            },
+            {
+              "temperature_c": 400,
+              "source_row": 97,
+              "conversion_pct": 33.4895955281135,
+              "selectivity_pct": 21.45,
+              "yield_pct": 7.183518240780345
+            }
+          ]
+        },
+        {
+          "group": "B1",
+          "factor_value": 100.0,
+          "factor_exact": "100",
+          "co_mass_mg": 50.0,
+          "hap_mass_mg": 50.0,
+          "observations": [
+            {
+              "temperature_c": 250,
+              "source_row": 76,
+              "conversion_pct": 1.40818182615844,
+              "selectivity_pct": 6.32,
+              "yield_pct": 0.08899709141321342
+            },
+            {
+              "temperature_c": 275,
+              "source_row": 77,
+              "conversion_pct": 3.41791391326378,
+              "selectivity_pct": 8.25,
+              "yield_pct": 0.28197789784426186
+            },
+            {
+              "temperature_c": 300,
+              "source_row": 78,
+              "conversion_pct": 6.72372576152924,
+              "selectivity_pct": 12.28,
+              "yield_pct": 0.8256735235157906
+            },
+            {
+              "temperature_c": 350,
+              "source_row": 79,
+              "conversion_pct": 19.3092626251229,
+              "selectivity_pct": 25.97,
+              "yield_pct": 5.014615503744418
+            },
+            {
+              "temperature_c": 400,
+              "source_row": 80,
+              "conversion_pct": 43.595444389466,
+              "selectivity_pct": 41.08,
+              "yield_pct": 17.909008555192635
+            }
+          ]
+        },
+        {
+          "group": "B6",
+          "factor_value": 150.0,
+          "factor_exact": "150",
+          "co_mass_mg": 75.0,
+          "hap_mass_mg": 75.0,
+          "observations": [
+            {
+              "temperature_c": 250,
+              "source_row": 104,
+              "conversion_pct": 2.7681694785164,
+              "selectivity_pct": 4.5,
+              "yield_pct": 0.124567626533238
+            },
+            {
+              "temperature_c": 275,
+              "source_row": 105,
+              "conversion_pct": 7.51025282890253,
+              "selectivity_pct": 4.79,
+              "yield_pct": 0.3597411105044312
+            },
+            {
+              "temperature_c": 300,
+              "source_row": 106,
+              "conversion_pct": 12.6192375239931,
+              "selectivity_pct": 8.77,
+              "yield_pct": 1.1067071308541947
+            },
+            {
+              "temperature_c": 350,
+              "source_row": 108,
+              "conversion_pct": 27.0309632091066,
+              "selectivity_pct": 22.41,
+              "yield_pct": 6.057638855160788
+            },
+            {
+              "temperature_c": 400,
+              "source_row": 109,
+              "conversion_pct": 63.2452382390403,
+              "selectivity_pct": 30.48,
+              "yield_pct": 19.27714861525948
+            }
+          ]
+        },
+        {
+          "group": "B2",
+          "factor_value": 200.0,
+          "factor_exact": "200",
+          "co_mass_mg": 100.0,
+          "hap_mass_mg": 100.0,
+          "observations": [
+            {
+              "temperature_c": 250,
+              "source_row": 81,
+              "conversion_pct": 2.76302415733759,
+              "selectivity_pct": 3.26,
+              "yield_pct": 0.09007458752920544
+            },
+            {
+              "temperature_c": 275,
+              "source_row": 82,
+              "conversion_pct": 4.40266107173201,
+              "selectivity_pct": 4.97,
+              "yield_pct": 0.21881225526508088
+            },
+            {
+              "temperature_c": 300,
+              "source_row": 83,
+              "conversion_pct": 6.22356275018717,
+              "selectivity_pct": 9.32,
+              "yield_pct": 0.5800360483174444
+            },
+            {
+              "temperature_c": 350,
+              "source_row": 84,
+              "conversion_pct": 16.1870321046694,
+              "selectivity_pct": 22.88,
+              "yield_pct": 3.7035929455483587
+            },
+            {
+              "temperature_c": 400,
+              "source_row": 85,
+              "conversion_pct": 45.1352390825493,
+              "selectivity_pct": 38.7,
+              "yield_pct": 17.46733752494658
+            }
+          ]
+        }
+      ],
+      "scope": "recorded-condition matched material series; no batch, aging or randomized causal identification"
+    }
+  ],
   "stability": {
     "measurements": [
       {

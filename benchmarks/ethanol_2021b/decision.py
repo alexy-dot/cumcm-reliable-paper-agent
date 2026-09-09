@@ -2,6 +2,7 @@
 import argparse
 import math
 from itertools import combinations
+from fractions import Fraction
 from pathlib import Path
 import numpy as np
 import openpyxl
@@ -61,6 +62,49 @@ def matched_contrasts(rows):
     return result
 
 
+def material_series(rows):
+    """Vary total charge at fixed composition, or composition at fixed total charge.
+
+    A raw-column-only contrast misses both cases because two masses change together.
+    Compare only common measured temperatures, never interpolated values.
+    """
+    grouped={g:[r for r in rows if r["group"]==g] for g in sorted({r["group"] for r in rows})}
+    buckets={}
+    for group,points in grouped.items():
+        first=points[0]
+        controls=(first["co_loading_pct"],first["feed_ml_min"],first["mode_II"],first["quartz_mass_mg"])
+        if any(any(p[k]!=first[k] for k in FEATURES[1:]) for p in points):
+            raise ValueError("formulation changes within a group")
+        co,hap=Fraction(str(first["co_mass_mg"])),Fraction(str(first["hap_mass_mg"]))
+        total=co+hap
+        if co<=0 or hap<=0:
+            continue  # Ratios involving absent HAP are a different material comparison.
+        for factor,fixed,value in [("total_mass_mg",co/total,total),("co_mass_fraction",total,co/total)]:
+            key=(factor,controls,fixed)
+            buckets.setdefault(key,[]).append((value,group))
+    result=[]
+    for (factor,controls,fixed),items in sorted(buckets.items(),key=lambda x:str(x[0])):
+        if len({value for value,_ in items})<2:continue
+        items.sort()
+        temperatures=sorted(set.intersection(*[{p["temperature_c"] for p in grouped[g]} for _,g in items]))
+        if not temperatures:continue
+        points=[]
+        for value,group in items:
+            by_temperature={p["temperature_c"]:p for p in grouped[group]}
+            if len(by_temperature)!=len(grouped[group]):raise ValueError("duplicate group temperature requires a replicate policy")
+            source=grouped[group][0]
+            points.append({"group":group,"factor_value":float(value),"factor_exact":str(value),
+                "co_mass_mg":source["co_mass_mg"],"hap_mass_mg":source["hap_mass_mg"],
+                "observations":[{"temperature_c":t,"source_row":by_temperature[t]["source_row"],
+                    **{target:by_temperature[t][target] for target in ("conversion_pct","selectivity_pct","yield_pct")}} for t in temperatures]})
+        result.append({"factor":factor,"fixed_factor":"co_mass_fraction" if factor=="total_mass_mg" else "total_mass_mg",
+            "fixed_value":float(fixed),"fixed_exact":str(fixed),
+            "controls":dict(zip(("co_loading_pct","feed_ml_min","mode_II","quartz_mass_mg"),controls)),
+            "common_temperatures":temperatures,"points":points,
+            "scope":"recorded-condition matched material series; no batch, aging or randomized causal identification"})
+    return result
+
+
 def decision(run):
     rows=read_json(run/"artifacts/observations.json")["rows"]
     models=[]
@@ -95,6 +139,7 @@ def decision(run):
         source=next(r for r in rows if r["group"]==group)
         design.append({"slot":slot,"group":group,"temperature_c":temperature,"formula":source["formula"],"reason":reason})
     result={"observations_sha256":sha256_file(run/"artifacts/observations.json"),"local_models":models,"matched_contrasts":matched_contrasts(rows),
+            "material_series":material_series(rows),
             "stability":{"measurements":stability,"summary":summary,"scope":"seven time points in one experiment; not seven independent experimental replicates"},
             "observed_best":observed,"observed_below_350_best":low_observed,
             "polynomial_best":max(models,key=lambda m:m["unrestricted"]["predicted_yield_pct"])["group"],
