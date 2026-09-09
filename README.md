@@ -90,7 +90,16 @@ python3 benchmarks/furnace_2020a/optimizer_comparison.py runs/furnace --output r
 
 [独立网络流验证](benchmarks/reports/casting-2021d/independent.json)核对12种尾坯损失及27次事件的两级目标；在线总损失达到连续下界，提供了比“程序能运行”更直接的最优性依据。结论限定初始切口在0、零切缝及既定异常序列；初始相位改变时结果可能改变，次优先级也不冒充连续全局最优。
 
-[全部方案与机器时刻CSV](benchmarks/reports/casting-2021d/event_plans.csv) · [原始计算记录](benchmarks/reports/casting-2021d/solution.json) · [回放边界](benchmarks/reports/casting-2021d-summary.json)
+[独立复算支撑包](benchmarks/reports/casting-2021d-support.zip) · [全部方案与机器时刻CSV](benchmarks/reports/casting-2021d/event_plans.csv) · [回放边界](benchmarks/reports/casting-2021d-summary.json)
+
+支撑包不依赖仓库目录：解压后安装依赖，运行以下命令即可重新求解、独立验证并比较全部切口与回收区间。论文附录从同一包中的8份完整源码生成。实际解压到仓库外、以Python隔离模式运行的证据见[复算记录](benchmarks/reports/casting-2021d/support_reproduction.json)。
+
+```bash
+python3 -m pip install -r requirements.txt
+python3 -I reproduce.py --output reproduced
+```
+
+加`--paper --latex-compiler /path/to/tectonic`可重建图表、正文及源码附录。输出目录必须不存在。包内保留已核对的题面参数和原PDF指纹，原题需自行提供；复算不会自动重新理解题目，正式AI使用详情与人工审查仍待完成。
 
 ```bash
 python3 -m pip install -r benchmarks/casting_2021d/requirements.txt -r requirements-paper.txt

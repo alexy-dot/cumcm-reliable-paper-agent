@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "checks": {
+    "all_tail_and_online_decisions": true,
+    "baseline_grid_and_phase_sensitivity": true,
+    "independent_network_and_interval_verification": true
+  },
+  "source_pdf_checked": false,
+  "input_scope": "reviewed statement parameters in facts.json; optional original PDF checked by hash, not reinterpreted automatically",
+  "comparison_scope": "all deterministic solution fields including cuts, recovered intervals and objectives; only planning_seconds excluded; sensitivity source hash excluded because timings change solution hash",
+  "manifest_sha256": "5a54ad4f0c896e1c4d2d6c068063f8be86850f7001c288b6885de0d636656338",
+  "solution_sha256": "3c85d0ee75adb6d101d52b6b2c5ea3abaf3959732883d763ae7518913831a995",
+  "submission_ready": false,
+  "archive_sha256": "023643aa1c0c92809d47fa3333ad0b81afefc8baf4813508bdd54229c9fd4cb1",
+  "original_solution_sha256": "ac0be17b3392266dbd83b51f5c58f72513b60c4e0508aa5aba384b151b6e4832",
+  "execution_scope": "ZIP extracted in a fresh system temporary directory outside repository; Python -I, no PYTHONPATH/PYTHONHOME, no expected-results read until solving/verification complete",
+  "preserved_recomputed_artifacts": "artifacts/isolated_reproduction"
+}

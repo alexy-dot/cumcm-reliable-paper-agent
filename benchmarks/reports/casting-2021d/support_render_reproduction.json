@@ -1,0 +1,44 @@
+{
+  "archive_sha256": "023643aa1c0c92809d47fa3333ad0b81afefc8baf4813508bdd54229c9fd4cb1",
+  "numeric_reproduction_report": "support_reproduction.json",
+  "render_status": "COMPILED",
+  "rendered_pages": 48,
+  "rendered_pdf_sha256": "42b6e33c5d093d2a1d48b4385f8f5fa0abeaad9d47d9f8949c1b34bec770fc28",
+  "source_code_files": [
+    {
+      "filename": "artifact_io.py",
+      "utf8_sha256": "07fe5a56df9482b0e352c7d2bc4a19e0a2f70e4dcc21b34ddfd8cf0b290bee7f"
+    },
+    {
+      "filename": "paper.py",
+      "utf8_sha256": "1082c79fde254acb1a5f1737ab032980f47a61ee03a5b049109c179c6a77447d"
+    },
+    {
+      "filename": "plots.py",
+      "utf8_sha256": "7c970c231b38a5c10de0154477f68d074ee081456568c0648481f7129d38a34f"
+    },
+    {
+      "filename": "render_latex.py",
+      "utf8_sha256": "5d6422538d6d1165d7b7e35e0cee898c75d3153d125a4c3c1960eab9a25e7b1d"
+    },
+    {
+      "filename": "reproduce.py",
+      "utf8_sha256": "e6ef7fd52f8a2dc188682f1697178056ca7e681dc90fc3a25ae05c3341211836"
+    },
+    {
+      "filename": "sensitivity.py",
+      "utf8_sha256": "a206731b55cd668e4bca5a5edbd5cc9d1d57b6728135c6ef5a5f1f38b0b5dbc0"
+    },
+    {
+      "filename": "solve.py",
+      "utf8_sha256": "cb6262c67d18e4995cecb14c76faf7a89331c73687839a92630afed790b706ee"
+    },
+    {
+      "filename": "verify.py",
+      "utf8_sha256": "680c7e7e5426b703d87885b86a713d57a9f646b049f7a2d46c819e2487022d66"
+    }
+  ],
+  "scope": "Portable --paper entry point completed outside the repository. The final continuation-indentation-only renderer revision was recompiled there using the already reproduced numerical artifacts; every other manifest file was checked byte-identical to that successful entry-point run.",
+  "visual_review": "Only the published primary PDF underwent the full visual review; this separately reproduced PDF has compile/source checks.",
+  "submission_ready": false
+}

@@ -51,6 +51,13 @@ def render_latex(run, source, *, compiler=None, cache_dir=None, compile_pdf=True
     has_code = any("code" in block for section in data["sections"] for block in section["blocks"])
     if has_code:
         fonts += r"\usepackage{fvextra}"
+        if platform.system() == "Darwin":
+            fonts += r"\setmonofont{Menlo}"
+        else:
+            fonts += r"\IfFontExistsTF{DejaVu Sans Mono}{\setmonofont{DejaVu Sans Mono}}{}"
+        # Celsius is present in Chinese fonts but absent from Menlo/DejaVu Sans Mono.
+        # Preserve the literal source character in code instead of replacing it.
+        fonts += r'\xeCJKDeclareCharClass{CJK}{"2103}'
     code_receipts = []
     preamble = r"""\documentclass[12pt,a4paper]{article}
 \usepackage{fontspec,xeCJK,amsmath,amssymb,geometry,graphicx,booktabs,tabularx,array}
@@ -105,7 +112,7 @@ FONTS
                 code_file.write_text(code, encoding="utf-8")
                 code_receipts.append({"filename": name, "utf8_sha256": hashlib.sha256(code.encode("utf-8")).hexdigest()})
                 lines.extend([r"\subsubsection*{" + escape_text(name) + "}",
-                              r"\VerbatimInput[fontsize=\footnotesize,breaklines=true,breakanywhere=true,breaksymbolleft={},breaksymbolright={}]{" + code_file.name + "}"])
+                              r"\VerbatimInput[fontsize=\footnotesize,breaklines=true,breakanywhere=true,breakautoindent=false,breakindent=0pt,breaksymbolleft={},breaksymbolright={},breakanywheresymbolpre={},breakanywheresymbolpost={}]{" + code_file.name + "}"])
                 longest = max((len(match.group()) for match in re.finditer(r"`+", code)), default=0)
                 fence = "`" * max(3, longest+1)
                 markdown.extend(["### " + name, "", fence, code.rstrip("\n"), fence, ""])

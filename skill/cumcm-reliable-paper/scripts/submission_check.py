@@ -22,7 +22,20 @@ def _inside(root, value):
 def _heading_pages(pages, label):
     pattern = re.compile(r"^\s*(?:\d+(?:\.\d+)*[.、\s]*)?" + label + r"\s*(?:[：:].*)?$")
     return [(page_index, line_index) for page_index, page in enumerate(pages)
-            for line_index, line in enumerate(page.splitlines()) if pattern.fullmatch(line)]
+            for line_index, line in enumerate(page.splitlines()) if pattern.fullmatch(_normalize(line))]
+
+
+def _without_page_footer(page, page_number):
+    """Exclude only an actual centered footer, preserving numeric source-code lines."""
+    limit = 25 * 72 / 25.4
+    text = []
+    for block in page.get_text("blocks", sort=True):
+        x0, y0, x1, _, value = block[:5]
+        footer = (value.strip() == str(page_number) and y0 > page.rect.height - limit
+                  and abs((x0 + x1) / 2 - page.rect.width / 2) < 18)
+        if not footer:
+            text.append(value)
+    return "\n".join(text)
 
 
 def check_submission(run_dir, paper, support, *, year, ai_used, identity_terms=(), no_code=False):
@@ -77,8 +90,11 @@ def check_submission(run_dir, paper, support, *, year, ai_used, identity_terms=(
     appendix = appendix_matches[0] if appendix_matches else None
     appendix_text = ""
     if appendix:
-        page_index, line_index = appendix
-        appendix_text = "\n".join(pages[page_index].splitlines()[line_index:]) + "\n" + "\n".join(pages[page_index + 1:])
+        code_pages = [_without_page_footer(page, i + 1) for i, page in enumerate(pdf)]
+        code_headings = _heading_pages(code_pages, r"附录(?:\s*[A-Z一二三四五六七八九十0-9]+)?")
+        if code_headings:
+            page_index, line_index = code_headings[0]
+            appendix_text = "\n".join(code_pages[page_index].splitlines()[line_index:]) + "\n" + "\n".join(code_pages[page_index + 1:])
     if pages:
         add("TEXT-EXTRACTION", all(page.strip() for page in pages), "text extraction required; scanned pages require OCR and manual review", status=None if all(page.strip() for page in pages) else "UNAVAILABLE")
         add("ABSTRACT-MARKERS", "摘要" in pages[0] and "关键词" in pages[0], "first page must contain abstract and keyword markers; semantics still need review", anchor="abstract")

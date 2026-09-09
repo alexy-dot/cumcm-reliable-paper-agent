@@ -3,7 +3,7 @@ import argparse
 from pathlib import Path
 from solve import online, recover
 from verify import verify_trace, continuous_lower_bound
-from engine import read_json, write_json, sha256_file
+from artifact_io import read_json, write_json, sha256_file
 
 
 def assess(run):

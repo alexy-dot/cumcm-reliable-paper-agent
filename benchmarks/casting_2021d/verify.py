@@ -1,6 +1,5 @@
 """Independent cell-occupancy network LP, interval checks and a continuous waste bound."""
 import argparse
-import sys
 from fractions import Fraction
 from pathlib import Path
 
@@ -8,8 +7,7 @@ import numpy as np
 from scipy.optimize import linprog
 from scipy.sparse import coo_matrix, csr_matrix, vstack
 
-sys.path.insert(0,str(Path(__file__).resolve().parents[2]/"skill/cumcm-reliable-paper/scripts"))
-from engine import read_json, write_json, sha256_file
+from artifact_io import read_json, write_json, sha256_file
 
 
 def network_optimum(start, notification, defects, target, lower, upper, scale=10, fixed_end=None):
@@ -142,6 +140,8 @@ def verify_trace(record, event_times):
 
 
 def verify(run):
+    if not __debug__:
+        raise ValueError("Verification requires Python assertions; do not use -O or PYTHONOPTIMIZE")
     facts=read_json(run/"artifacts/facts.json")
     solution=read_json(run/"artifacts/solution.json")
     if solution["facts_sha256"]!=sha256_file(run/"artifacts/facts.json"):

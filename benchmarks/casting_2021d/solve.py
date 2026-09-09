@@ -1,13 +1,11 @@
 """Exact continuous tail enumeration and causal grid-optimal primary-cut planning."""
 import argparse
 import csv
-import sys
 from fractions import Fraction
 from pathlib import Path
 from time import perf_counter
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "skill/cumcm-reliable-paper/scripts"))
-from engine import read_json, write_json, sha256_file
+from artifact_io import read_json, write_json, sha256_file
 
 
 def exact_tail(length, target=9.5, lower=9., upper=10.):

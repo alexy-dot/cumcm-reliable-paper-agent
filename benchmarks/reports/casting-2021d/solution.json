@@ -577,7 +577,7 @@
             "evaluated_edges": 44003,
             "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
           },
-          "planning_seconds": 0.03585133299930021,
+          "planning_seconds": 0.0331938339950284,
           "current_next_cut_changed": null,
           "committed_waste": 0,
           "projected_total_waste": 8
@@ -700,7 +700,7 @@
             "evaluated_edges": 47783,
             "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
           },
-          "planning_seconds": 0.04544904099020641,
+          "planning_seconds": 0.03925324999727309,
           "current_next_cut_changed": false,
           "committed_waste": 0,
           "projected_total_waste": 64
@@ -811,7 +811,7 @@
             "evaluated_edges": 47791,
             "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
           },
-          "planning_seconds": 0.044962667001527734,
+          "planning_seconds": 0.03948787499393802,
           "current_next_cut_changed": true,
           "committed_waste": 38,
           "projected_total_waste": 94
@@ -946,7 +946,7 @@
             "evaluated_edges": 47788,
             "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
           },
-          "planning_seconds": 0.04189629100437742,
+          "planning_seconds": 0.03972208400955424,
           "current_next_cut_changed": false,
           "committed_waste": 64,
           "projected_total_waste": 123
@@ -1067,7 +1067,7 @@
             "evaluated_edges": 44884,
             "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
           },
-          "planning_seconds": 0.03538429101172369,
+          "planning_seconds": 0.03591512500133831,
           "current_next_cut_changed": true,
           "committed_waste": 97,
           "projected_total_waste": 131
@@ -1190,7 +1190,7 @@
             "evaluated_edges": 45978,
             "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
           },
-          "planning_seconds": 0.037981209010467865,
+          "planning_seconds": 0.03808800000115298,
           "current_next_cut_changed": false,
           "committed_waste": 123,
           "projected_total_waste": 156
@@ -1325,7 +1325,7 @@
             "evaluated_edges": 47795,
             "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
           },
-          "planning_seconds": 0.03942070800985675,
+          "planning_seconds": 0.03951754199806601,
           "current_next_cut_changed": false,
           "committed_waste": 131,
           "projected_total_waste": 183
@@ -1507,7 +1507,7 @@
             "evaluated_edges": 46484,
             "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
           },
-          "planning_seconds": 0.04164674998901319,
+          "planning_seconds": 0.04164704198774416,
           "current_next_cut_changed": false,
           "committed_waste": 131,
           "projected_total_waste": 230
@@ -1626,7 +1626,7 @@
             "evaluated_edges": 47321,
             "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
           },
-          "planning_seconds": 0.03837437499896623,
+          "planning_seconds": 0.03876433400728274,
           "current_next_cut_changed": true,
           "committed_waste": 156,
           "projected_total_waste": 238
@@ -2201,7 +2201,7 @@
             "evaluated_edges": 44003,
             "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
           },
-          "planning_seconds": 0.03487612499156967,
+          "planning_seconds": 0.03413575000013225,
           "current_next_cut_changed": null,
           "committed_waste": 0,
           "projected_total_waste": 8
@@ -2334,7 +2334,7 @@
             "evaluated_edges": 46452,
             "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
           },
-          "planning_seconds": 0.0396491249994142,
+          "planning_seconds": 0.0394535000086762,
           "current_next_cut_changed": false,
           "committed_waste": 0,
           "projected_total_waste": 16
@@ -2455,7 +2455,7 @@
             "evaluated_edges": 45899,
             "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
           },
-          "planning_seconds": 0.0379412920010509,
+          "planning_seconds": 0.0384881670033792,
           "current_next_cut_changed": true,
           "committed_waste": 8,
           "projected_total_waste": 24
@@ -2622,7 +2622,7 @@
             "evaluated_edges": 47604,
             "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
           },
-          "planning_seconds": 0.04020954199950211,
+          "planning_seconds": 0.04046558300615288,
           "current_next_cut_changed": false,
           "committed_waste": 16,
           "projected_total_waste": 32
@@ -2753,7 +2753,7 @@
             "evaluated_edges": 47765,
             "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
           },
-          "planning_seconds": 0.039088708988856524,
+          "planning_seconds": 0.03909533401019871,
           "current_next_cut_changed": true,
           "committed_waste": 24,
           "projected_total_waste": 40
@@ -2908,7 +2908,7 @@
             "evaluated_edges": 47604,
             "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
           },
-          "planning_seconds": 0.040126416002749465,
+          "planning_seconds": 0.04047229199204594,
           "current_next_cut_changed": false,
           "committed_waste": 32,
           "projected_total_waste": 48
@@ -3065,7 +3065,7 @@
             "evaluated_edges": 47778,
             "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
           },
-          "planning_seconds": 0.04021849999844562,
+          "planning_seconds": 0.04040445799182635,
           "current_next_cut_changed": false,
           "committed_waste": 40,
           "projected_total_waste": 105
@@ -3247,7 +3247,7 @@
             "evaluated_edges": 46294,
             "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
           },
-          "planning_seconds": 0.04201708300388418,
+          "planning_seconds": 0.04217962500115391,
           "current_next_cut_changed": false,
           "committed_waste": 40,
           "projected_total_waste": 152
@@ -3376,7 +3376,7 @@
             "evaluated_edges": 47771,
             "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
           },
-          "planning_seconds": 0.03988933400250971,
+          "planning_seconds": 0.040315416001249105,
           "current_next_cut_changed": true,
           "committed_waste": 48,
           "projected_total_waste": 160
@@ -4015,7 +4015,7 @@
             "evaluated_edges": 44003,
             "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
           },
-          "planning_seconds": 0.031130457995459437,
+          "planning_seconds": 0.03153179200307932,
           "current_next_cut_changed": null,
           "committed_waste": 0,
           "projected_total_waste": 24
@@ -4138,7 +4138,7 @@
             "evaluated_edges": 45764,
             "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
           },
-          "planning_seconds": 0.037225499996566214,
+          "planning_seconds": 0.03639733399904799,
           "current_next_cut_changed": true,
           "committed_waste": 4,
           "projected_total_waste": 32
@@ -4246,7 +4246,7 @@
             "evaluated_edges": 47637,
             "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
           },
-          "planning_seconds": 0.037250458990456536,
+          "planning_seconds": 0.03685729199787602,
           "current_next_cut_changed": true,
           "committed_waste": 24,
           "projected_total_waste": 98
@@ -4381,7 +4381,7 @@
             "evaluated_edges": 46164,
             "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
           },
-          "planning_seconds": 0.03647570799512323,
+          "planning_seconds": 0.036763957992661744,
           "current_next_cut_changed": true,
           "committed_waste": 72,
           "projected_total_waste": 106
@@ -4492,7 +4492,7 @@
             "evaluated_edges": 45764,
             "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
           },
-          "planning_seconds": 0.03436920800595544,
+          "planning_seconds": 0.03448220899736043,
           "current_next_cut_changed": true,
           "committed_waste": 98,
           "projected_total_waste": 119
@@ -4612,7 +4612,7 @@
             "evaluated_edges": 47777,
             "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
           },
-          "planning_seconds": 0.037093666003784165,
+          "planning_seconds": 0.03847287500684615,
           "current_next_cut_changed": true,
           "committed_waste": 106,
           "projected_total_waste": 196
@@ -4747,7 +4747,7 @@
             "evaluated_edges": 46004,
             "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
           },
-          "planning_seconds": 0.037377999993623234,
+          "planning_seconds": 0.03736837499309331,
           "current_next_cut_changed": true,
           "committed_waste": 166,
           "projected_total_waste": 204
@@ -4907,7 +4907,7 @@
             "evaluated_edges": 46531,
             "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
           },
-          "planning_seconds": 0.04577475000405684,
+          "planning_seconds": 0.04007079199072905,
           "current_next_cut_changed": false,
           "committed_waste": 166,
           "projected_total_waste": 251
@@ -5016,7 +5016,7 @@
             "evaluated_edges": 45820,
             "optimality": "exact lexicographic optimum of the declared finite grid graph; continuous/global online optimality not implied"
           },
-          "planning_seconds": 0.054912749998038635,
+          "planning_seconds": 0.03560129199468065,
           "current_next_cut_changed": true,
           "committed_waste": 196,
           "projected_total_waste": 259

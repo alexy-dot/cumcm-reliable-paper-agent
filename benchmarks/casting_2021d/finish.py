@@ -1,8 +1,10 @@
 """Link verified waste claims, preserving pending human review and conditional scope."""
 import argparse
+import sys
 from datetime import datetime,timezone
 from pathlib import Path
 from solve import read_json,write_json,sha256_file
+sys.path.insert(0,str(Path(__file__).resolve().parents[2]/"skill/cumcm-reliable-paper/scripts"))
 from engine import validate_run
 
 
@@ -11,6 +13,17 @@ def finish(run,visual_note=""):
     independent=read_json(run/"artifacts/independent.json")
     rendering=read_json(run/"paper/render_report.json")
     structure=read_json(run/"paper/structure_review.json")
+    package=read_json(run/"artifacts/submission-package/package_receipt.json")
+    reproduction=read_json(run/"artifacts/support_reproduction.json")
+    archive=run/"artifacts/submission-package/support.zip"
+    if (package["sha256"]!=sha256_file(archive) or not reproduction.get("passed")
+            or reproduction["archive_sha256"]!=package["sha256"]
+            or reproduction["original_solution_sha256"]!=sha256_file(run/"artifacts/solution.json")):
+        raise ValueError("support package has not been reproduced or results changed")
+    expected_code={item["path"]:item["sha256"] for item in package["manifest"]["files"] if item["role"]=="code"}
+    rendered_code={item["filename"]:item["utf8_sha256"] for item in rendering.get("code_blocks",[])}
+    if expected_code!=rendered_code:
+        raise ValueError("paper source appendix differs from the packaged code")
     if (rendering.get("render_status")!="COMPILED" or rendering["pdf_sha256"]!=sha256_file(run/"paper/main.pdf")
             or rendering["document_sha256"]!=sha256_file(run/"paper/document.json")
             or not structure["passed"] or structure["pdf_sha256"]!=rendering["pdf_sha256"]
@@ -63,8 +76,10 @@ def finish(run,visual_note=""):
              "elapsed_minutes":(ended-datetime.fromisoformat(clock["started_at"])).total_seconds()/60,
              "source_exposure":clock["scope"],"workflow_scope":"model contract prepared before solving on clean replay; stage remains READING pending real human signoffs",
              "conditional_scope":["initial cut at coordinate/time zero","centered defect interval","zero kerf and unconstrained offline cutting","secondary squared deviation on declared grid"],
+             "support":{"archive_sha256":package["sha256"],"code_files":package["code_count"],
+                        "isolated_reproduction":reproduction,"complete_source_appendix":True},
              "submission_ready":False,"national_award_level":"NOT_ESTABLISHED",
-             "remaining":["actual team/reviewer assessment","initial-state confirmation","formal code appendix and AI-use details for contest submission","other task families"]}
+             "remaining":["actual team/reviewer assessment","initial-state confirmation","complete actual AI-use details and current contest submission review","other task families"]}
     write_json(run/"trial_summary.json",summary)
     clock.update(status="ARTIFACTS_READY_REVIEW_PENDING",finished_at=ended.isoformat())
     write_json(run/"trial_clock.json",clock)

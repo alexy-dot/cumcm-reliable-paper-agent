@@ -1,5 +1,8 @@
 """Write the three-question manuscript from computed, independently checked artifacts."""
 import argparse
+import hashlib
+import json
+import zipfile
 from fractions import Fraction
 from itertools import groupby
 from pathlib import Path
@@ -24,7 +27,37 @@ def plan_text(pieces):
     return "、".join(parts)
 
 
-def compose(run):
+def support_appendix(run, support_root=None):
+    archive = None
+    if support_root is None:
+        folder = run / "artifacts/submission-package"
+        receipt = read_json(folder / "package_receipt.json")
+        if receipt["sha256"] != sha256_file(folder / "support.zip"):
+            raise ValueError("support ZIP changed after packaging")
+        archive = zipfile.ZipFile(folder / "support.zip")
+        read = archive.read
+    else:
+        root = Path(support_root).resolve()
+        from reproduce import check_manifest
+        check_manifest(root)
+        read = lambda name: (root / name).read_bytes()
+    try:
+        manifest = json.loads(read("manifest.json"))
+        blocks = [{"text": "下列文件与支撑包使用同一份源码，逐文件列出完整程序。独立复算命令为python3 -I reproduce.py --output reproduced；可选--paper重新生成图表和论文。复算从已核对的facts.json参数开始，不自动重新解释原题。"},
+                  {"table": [["文件", "类别", "字节数"]] + [[item["path"], item["role"], item["bytes"]] for item in manifest["files"]] + [["manifest.json", "文件指纹清单", "随包生成"]]}]
+        for item in manifest["files"]:
+            content = read(item["path"])
+            if hashlib.sha256(content).hexdigest() != item["sha256"]:
+                raise ValueError("support source content differs: " + item["path"])
+            if item["role"] == "code":
+                blocks.append({"code": content.decode("utf-8-sig"), "filename": item["path"], "source_sha256": item["sha256"]})
+        return {"id": "support-appendix", "title": "附录：支撑文件与完整源程序", "page_break_before": True, "blocks": blocks}
+    finally:
+        if archive is not None:
+            archive.close()
+
+
+def compose(run, support_root=None):
     data=read_json(run/"artifacts/solution.json")
     verified=read_json(run/"artifacts/independent.json")
     sensitivity=read_json(run/"artifacts/sensitivity.json")
@@ -126,9 +159,7 @@ def compose(run):
         text(f"在声明的初始状态及加工假设下，本文完成12种尾坯和三种目标下各9次异常决策。9.5、8.5、11.1米目标的在线累计损失分别为{losses['Q2']:.1f}、{losses['Q3a']:.1f}、{losses['Q3b']:.1f}米，均达到相应连续材料下界。方程、逐次方案与独立计算共同支撑这些条件结论；对初始相位与次优先级的边界已经明确。")])
     section("AI工具使用声明",[text("本训练稿使用AI工具参与题意分析、模型推导、代码编写、验证和文字排版。尚未完成参赛团队的人工审核、正式AI使用详情与比赛提交材料审查，不能作为已经获准提交的论文。")])
     section("参考文献",[text("[1] 全国大学生数学建模竞赛组委会. 2021年高教社杯全国大学生数学建模竞赛D题：连铸切割的在线优化[Z]. 2021. 原题两页及图1、图2；使用本项目冻结的原始PDF。")])
-    section("附录",[
-        text("程序与完整结果：prepare.py冻结原题和解释；solve.py生成精确尾坯与因果在线方案；verify.py独立网络流与连续下界复核；sensitivity.py复算网格及初始相位；plots.py和paper.py生成图与正文。run_all.py为统一回放入口。"),
-        text("solution.json保存全部一次切口、合格回收区间、各次锁定边界和两级目标；event_plans.csv以米和分钟列出全部原/新方案。独立LP结果见independent.json。上述程序随项目提供；正式提交仍需按当年要求附完整源代码、支撑包及AI使用详情。")])
+    sections.append(support_appendix(run, support_root))
     output=run/"paper";output.mkdir(exist_ok=True)
     write_json(output/"document.json",{"title":"连铸切割的在线优化与最优性验证","sections":sections})
     print({"sections":len(sections),"paragraph_characters":sum(len(b.get("text","")) for s in sections for b in s["blocks"])},flush=True)

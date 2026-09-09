@@ -69,11 +69,31 @@ class SubmissionCheckTest(unittest.TestCase):
         self.assertEqual(statuses["CONTENT-MARGINS"], "FAIL")
         self.assertEqual(statuses["AI-DECLARATION-ORDER"], "FAIL")
 
+    def test_pdf_spacing_in_ai_heading_does_not_imply_missing_declaration(self):
+        self.fixture()
+        pages = [["摘要", "关键词：测试"], ["AI 工具 使用声明", "本参赛队在竞赛过程中使用了AI工具，主要用于代码核验，详细使用情况见支撑材料。",
+                  "参考文献", "合成测试资料", "附录", "model.py", "AI工具使用详情.pdf", "print(1)"]]
+        (self.root / "paper.pdf").write_bytes(self.pdf(pages))
+        self.assertEqual(self.statuses(self.check())["AI-DECLARATION-ORDER"], "PASS")
+        pages[1][0] = "下文讨论AI 工具 使用声明的内容"
+        (self.root / "paper.pdf").write_bytes(self.pdf(pages))
+        self.assertEqual(self.statuses(self.check())["AI-DECLARATION-ORDER"], "FAIL")
+
     def test_source_code_mismatch_and_required_ai_filename(self):
         self.fixture(appendix_code="print(2)", detail_name="AI使用记录.pdf")
         statuses = self.statuses(self.check())
         self.assertEqual(statuses["APPENDIX-SOURCE-CODE"], "REVIEW_REQUIRED")
         self.assertEqual(statuses["AI-DETAIL-FILE"], "FAIL")
+
+    def test_code_spanning_pages_ignores_footer_but_preserves_numeric_source(self):
+        self.fixture(code="value = (\n3\n)\nprint(value)\n")
+        pages = [["摘要", "关键词：测试"], ["附录", "model.py", "value = ("], ["3", ")", "print(value)"]]
+        (self.root / "paper.pdf").write_bytes(self.pdf(pages))
+        self.assertEqual(self.statuses(self.check())["APPENDIX-SOURCE-CODE"], "PASS")
+        # Page 3's footer must not substitute for the missing literal 3 in the code.
+        pages[2] = [")", "print(value)"]
+        (self.root / "paper.pdf").write_bytes(self.pdf(pages))
+        self.assertEqual(self.statuses(self.check())["APPENDIX-SOURCE-CODE"], "REVIEW_REQUIRED")
 
     def test_identity_is_detected_inside_support_and_redacted_in_report(self):
         self.fixture(code="print(1)\n# Synthetic University\n")

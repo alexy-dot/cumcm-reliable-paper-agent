@@ -21,7 +21,7 @@ if __name__=="__main__":
     def execute(name,*extra,python=sys.executable):
         subprocess.run([python,str(scripts/name),*map(str,extra)],check=True)
     execute("prepare.py","--source",args.source.resolve(),"--output",output)
-    for name in ("solve.py","verify.py","sensitivity.py","plots.py","paper.py"):
+    for name in ("solve.py","verify.py","sensitivity.py","plots.py","package.py","check_package.py","paper.py"):
         execute(name,output)
     renderer=project/"skill/cumcm-reliable-paper/scripts/render_paper.py"
     command=[args.paper_python,str(renderer),"--run",str(output),"--source",str(output/"paper/document.json"),"--latex-compiler",compiler]

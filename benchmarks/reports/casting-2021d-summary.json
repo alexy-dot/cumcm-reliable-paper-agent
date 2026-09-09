@@ -23,13 +23,13 @@
     ]
   },
   "paper": {
-    "pages": 14,
-    "sha256": "e5a4215431fe1b321472174e63c9cc8480fc58e45f3326326c70f3c29c672b80",
+    "pages": 48,
+    "sha256": "e2d2f20b3ae28322599c00cacb489ace3f5887fc4e5b5eaabd9702110874a482",
     "visual_review": {
       "reviewer_type": "agent",
       "status": "PASS",
-      "scope": "All 14 pages inspected as rendered images; pages 5, 7 and 11 inspected at full resolution for rational tail allocations, event tables and lower-bound formula. Chinese fonts, mathematical symbols, abstract page and section coverage checked; all non-page-number text bounds exceed 25 mm. Agent visual review only, not human submission approval.",
-      "pdf_sha256": "e5a4215431fe1b321472174e63c9cc8480fc58e45f3326326c70f3c29c672b80"
+      "scope": "All 48 pages inspected: 13 unchanged manuscript pages and 35 appendix pages; source pages 26 and 37 inspected at full resolution. Code uses Menlo plus Chinese glyph fallback, no inserted wrap symbols, and readable continuation widths. Eight complete source files match PDF extraction after excluding actual footers. A4, content margins and three-question structure pass. Agent visual review only; formal AI details and human review remain pending.",
+      "pdf_sha256": "e2d2f20b3ae28322599c00cacb489ace3f5887fc4e5b5eaabd9702110874a482"
     },
     "structure": {
       "profile": "user-requested CUMCM organization; recognized labels are conventions, not universal official rules",
@@ -43,7 +43,7 @@
         "all_questions_solution": true,
         "notation_table_columns": true
       },
-      "pages": 14,
+      "pages": 48,
       "question_count": 3,
       "question_evidence": {
         "analysis": {
@@ -146,7 +146,7 @@
       },
       "scope": "actual section coverage only; no certification of substantive answers, math, visual quality or awards",
       "question_mapping": "contract questions in listed order map to 问题一/问题1 etc.; nested outputs need semantic review",
-      "pdf_sha256": "e5a4215431fe1b321472174e63c9cc8480fc58e45f3326326c70f3c29c672b80",
+      "pdf_sha256": "e2d2f20b3ae28322599c00cacb489ace3f5887fc4e5b5eaabd9702110874a482",
       "extractor": "pypdf layout text",
       "contract_sha256": "95555d26a2ce22c592aa1eb328ddb1fc0d9c9da5623a29ed6e194be74491f1db"
     }
@@ -156,7 +156,7 @@
     "online_network_objective_pairs": 27,
     "continuous_waste_bounds_attained": true
   },
-  "elapsed_minutes": 150.0770876,
+  "elapsed_minutes": 13.935449400000001,
   "source_exposure": "historical cross-family evaluation; statement read before the clock; not a blind or prospectively human-approved trial",
   "workflow_scope": "model contract prepared before solving on clean replay; stage remains READING pending real human signoffs",
   "conditional_scope": [
@@ -165,12 +165,35 @@
     "zero kerf and unconstrained offline cutting",
     "secondary squared deviation on declared grid"
   ],
+  "support": {
+    "archive_sha256": "023643aa1c0c92809d47fa3333ad0b81afefc8baf4813508bdd54229c9fd4cb1",
+    "code_files": 8,
+    "isolated_reproduction": {
+      "passed": true,
+      "checks": {
+        "all_tail_and_online_decisions": true,
+        "baseline_grid_and_phase_sensitivity": true,
+        "independent_network_and_interval_verification": true
+      },
+      "source_pdf_checked": false,
+      "input_scope": "reviewed statement parameters in facts.json; optional original PDF checked by hash, not reinterpreted automatically",
+      "comparison_scope": "all deterministic solution fields including cuts, recovered intervals and objectives; only planning_seconds excluded; sensitivity source hash excluded because timings change solution hash",
+      "manifest_sha256": "5a54ad4f0c896e1c4d2d6c068063f8be86850f7001c288b6885de0d636656338",
+      "solution_sha256": "3c85d0ee75adb6d101d52b6b2c5ea3abaf3959732883d763ae7518913831a995",
+      "submission_ready": false,
+      "archive_sha256": "023643aa1c0c92809d47fa3333ad0b81afefc8baf4813508bdd54229c9fd4cb1",
+      "original_solution_sha256": "ac0be17b3392266dbd83b51f5c58f72513b60c4e0508aa5aba384b151b6e4832",
+      "execution_scope": "ZIP extracted in a fresh system temporary directory outside repository; Python -I, no PYTHONPATH/PYTHONHOME, no expected-results read until solving/verification complete",
+      "preserved_recomputed_artifacts": "artifacts/isolated_reproduction"
+    },
+    "complete_source_appendix": true
+  },
   "submission_ready": false,
   "national_award_level": "NOT_ESTABLISHED",
   "remaining": [
     "actual team/reviewer assessment",
     "initial-state confirmation",
-    "formal code appendix and AI-use details for contest submission",
+    "complete actual AI-use details and current contest submission review",
     "other task families"
   ]
 }

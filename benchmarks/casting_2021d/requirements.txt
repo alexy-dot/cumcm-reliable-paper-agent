@@ -2,3 +2,4 @@ numpy>=2,<3
 scipy>=1.14,<2
 matplotlib>=3.8,<4
 fonttools>=4,<5
+pypdf>=5,<7
