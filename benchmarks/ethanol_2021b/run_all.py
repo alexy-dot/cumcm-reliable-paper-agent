@@ -15,7 +15,7 @@ if __name__=="__main__":
     root=Path(__file__).resolve().parent;project=root.parents[1];run=args.output.resolve()
     def execute(name,*extra):subprocess.run([sys.executable,str(root/name),*map(str,extra)],check=True)
     execute("prepare.py","--source-dir",args.source_dir.resolve(),"--output",run)
-    for name in ("analyze.py","decision.py","verify.py","split_sensitivity.py","plots.py","paper.py"):execute(name,run)
+    for name in ("analyze.py","decision.py","verify.py","split_sensitivity.py","verify_linear_models.py","plots.py","paper.py"):execute(name,run)
     if args.legacy_predictions:execute("legacy_audit.py",run,"--legacy-predictions",args.legacy_predictions.resolve())
     renderer=project/"skill/cumcm-reliable-paper/scripts/render_paper.py"
     command=[args.paper_python,str(renderer),"--run",str(run),"--source",str(run/"paper/document.json"),"--latex-compiler",compiler]

@@ -1,0 +1,29 @@
+{
+  "atol_percentage_points": 1e-07,
+  "rtol": 0,
+  "families": [
+    "temperature_only",
+    "ridge"
+  ],
+  "observations_sha256": "71c2c9f6779511fad8eff69197ac8e2c547c429da4af23de7493a48a3f171a35",
+  "sources": {
+    "original": {
+      "path": "artifacts/statistical_results.json",
+      "sha256": "4ca8dca3e32d4b5d1672ae3ed47360bbe41372a33b34d46be6be820a19810501"
+    },
+    "17": {
+      "path": "artifacts/split_sensitivity/seed-17.json",
+      "sha256": "cb38396294896e6c9fba692d619335cd51869c994be5fd7d14d01e485e465f31"
+    },
+    "43": {
+      "path": "artifacts/split_sensitivity/seed-43.json",
+      "sha256": "7b5a96645f03b5a1054997d2e7acea9cc75dc3a7b9646dc18ec5ae4157537ff9"
+    },
+    "97": {
+      "path": "artifacts/split_sensitivity/seed-97.json",
+      "sha256": "2fc7f3d44c1fffcf3c2d2aa7e5eb759d7ca2e02030dfa352b325e8405d792dd7"
+    }
+  },
+  "reference_code_sha256": "7cb2596ead473ac040e66970b579800708ee8f292de4095c6c9292cdb0d30022",
+  "scope": "independent re-fitting conditional on recorded selected hyperparameters and outer indices; does not independently reselect inner folds or reimplement random forests"
+}

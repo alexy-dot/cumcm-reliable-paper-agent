@@ -3,10 +3,12 @@ import argparse
 from pathlib import Path
 from prepare import read_json,write_json,sha256_file
 from split_sensitivity import checked_report
+from verify_linear_models import checked_report as checked_linear_report
 
 
 def finish(run,visual_note=""):
     partitions=checked_report(run)
+    linear=checked_linear_report(run)
     result=read_json(run/"artifacts/statistical_results.json");verification=read_json(run/"artifacts/independent_statistics.json")
     decisions=read_json(run/"artifacts/decisions.json");render=read_json(run/"paper/render_report.json");structure=read_json(run/"paper/structure_review.json")
     if (verification["results_sha256"]!=sha256_file(run/"artifacts/statistical_results.json") or verification["decisions_sha256"]!=sha256_file(run/"artifacts/decisions.json")
@@ -22,6 +24,9 @@ def finish(run,visual_note=""):
         "observed_candidates":{key:decisions[key] for key in ("observed_best","observed_below_350_best")},
         "low_temperature_boundary":next(x["below_350"] for x in decisions["local_models"] if x["group"]==decisions["polynomial_low_best"]),
         "verification":{"metric_comparisons":len(verification["comparisons"]),"source_anchors":verification["direct_workbook_anchors"],"passed":verification["passed"]},
+        "independent_linear_models":{"fold_models":linear["fold_models"],"heldout_predictions":linear["heldout_predictions"],
+            "max_raw_error":linear["max_raw_error"],"scope":linear["scope"],
+            "report_sha256":sha256_file(run/"artifacts/linear_model_verification/report.json")},
         "split_sensitivity":{"summary":partitions["summary"],"additional_metric_checks":partitions["independent_metric_checks"],
                              "report_sha256":sha256_file(run/"artifacts/split_sensitivity/report.json")},
         "paper":{"pages":render["pages"],"sha256":render["pdf_sha256"],"visual_review":render["visual_review"],"structure_review":structure},

@@ -87,6 +87,13 @@
     ],
     "passed": true
   },
+  "independent_linear_models": {
+    "fold_models": 120,
+    "heldout_predictions": 2736,
+    "max_raw_error": 8.544720486725055e-10,
+    "scope": "independent re-fitting conditional on recorded selected hyperparameters and outer indices; does not independently reselect inner folds or reimplement random forests",
+    "report_sha256": "f93d138b31a7a07af11b88b0adf51030d7dd33b0d2df40a480bdbb8ca1ab9f08"
+  },
   "split_sensitivity": {
     "summary": {
       "conversion_pct": {
@@ -290,12 +297,12 @@
   },
   "paper": {
     "pages": 15,
-    "sha256": "a363d07b691e28b7ba8b17f9ec6169d94ddd7f62803d57ec631cd7202c279399",
+    "sha256": "589bb6332647a1d2347230205c7fff2a7852a5696c6cb00178475ce6164b80fd",
     "visual_review": {
       "reviewer_type": "agent",
       "status": "PASS",
-      "scope": "All 15 pages visually inspected; the new split-sensitivity table and its interpretation on page 14 reviewed, along with the final appendix layout. First 14 pages matched the reviewed render after shortening only the final appendix paragraph. No missing glyphs; content bounds and four-question structure checked. Agent review only, not formal submission or human assessment.",
-      "pdf_sha256": "a363d07b691e28b7ba8b17f9ec6169d94ddd7f62803d57ec631cd7202c279399"
+      "scope": "First 12 pages pixel-identical to previously reviewed published paper. Pages 13-15 inspected at full resolution after adding independent regression reconstruction evidence; Chinese text and formulas legible, content margins and four-question structure pass. Agent visual review only; formal submission and human assessment remain pending.",
+      "pdf_sha256": "589bb6332647a1d2347230205c7fff2a7852a5696c6cb00178475ce6164b80fd"
     },
     "structure_review": {
       "profile": "user-requested CUMCM organization; recognized labels are conventions, not universal official rules",
@@ -426,7 +433,7 @@
       },
       "scope": "actual section coverage only; no certification of substantive answers, math, visual quality or awards",
       "question_mapping": "contract questions in listed order map to 问题一/问题1 etc.; nested outputs need semantic review",
-      "pdf_sha256": "a363d07b691e28b7ba8b17f9ec6169d94ddd7f62803d57ec631cd7202c279399",
+      "pdf_sha256": "589bb6332647a1d2347230205c7fff2a7852a5696c6cb00178475ce6164b80fd",
       "extractor": "pypdf layout text",
       "contract_sha256": "fe2d1aedbb634b1e6a9e1013ec61d30f8e837ccde8fd93a400ab57f739f1605f"
     }

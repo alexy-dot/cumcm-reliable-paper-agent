@@ -3,12 +3,14 @@ import argparse
 from pathlib import Path
 from prepare import read_json,write_json,sha256_file
 from split_sensitivity import checked_report
+from verify_linear_models import checked_report as checked_linear_report
 
 
 def compose(run):
     data=read_json(run/"artifacts/observations.json");statistics=read_json(run/"artifacts/statistical_results.json")
     decision=read_json(run/"artifacts/decisions.json");check=read_json(run/"artifacts/independent_statistics.json")
     partitions=checked_report(run)
+    linear=checked_linear_report(run)
     if not check["passed"] or check["results_sha256"]!=sha256_file(run/"artifacts/statistical_results.json") or check["decisions_sha256"]!=sha256_file(run/"artifacts/decisions.json"):
         raise ValueError("statistical or decision evidence is stale")
     sections=[];text=lambda s:{"text":s};eq=lambda s:{"equation":s};table=lambda rows:{"table":rows}
@@ -90,6 +92,7 @@ def compose(run):
         text("先由实验室预先规定重复性容限和统一采样反应时间。若前两次重复不满足容限，将剩余三个名额改为重复或批次对照，总新增次数仍为五次，不再沿用旧方案中凭空指定的10%阈值。通过重复性检查后，其余三次的执行顺序随机安排并记录批次；本设计针对当前决策不确定性，不声称信息量或收益全局最优。")],2)
     section("六、模型检验与灵敏度分析",[
         text("独立验证按原始行索引检查训练/测试组合不相交，再用标准库math.fsum逐项重算15组模型结果的行等权和组等权RMSE，共30项数值比较，误差均不超过预定的10⁻¹⁰。观测最高收率另从原Excel单元格用Decimal计算确认，未调用主提取函数的收率结果。"),
+        text(f"进一步独立重建仅温度回归与岭回归：显式展开单项式，只用训练行计算中心和总体方差，再用NumPy奇异值分解求解；不调用主程序的特征展开、标准化器或scikit-learn回归估计器。原划分及三套额外划分共{linear['fold_models']}个折内模型、{linear['heldout_predictions']}个留出预测均吻合，未截断预测的最大绝对差为{linear['max_raw_error']:.12f}个百分点，小于事先确定的$10^{{-7}}$容差。截断前后均作比较，避免物理截断掩盖模型实现差异。这项复核以已记录的超参数为条件，没有独立重新选择内层参数，也没有重写随机森林。"),
         text("反例测试将某个外层测试折的响应大幅改变，该折选中的超参数、内层分数及预测必须保持不变；若改变则意味着测试标签参与了训练或选择。整组配方交换也检查质量加和与比例恒等式，禁止把温度这种组内变化特征当作组常量交换。"),
         text("每组只有5—7条温度记录，21个独立组合也不足以支持复杂模型稳定的普遍排名。留出组残差及家族选择结果需要与新实验持续对照。组间预测误差不是同一工况的重复实验噪声，不能拿它直接给A3/400℃与450℃的观测差异计算显著性。")])
     section("6.1 外层组划分对模型比较的影响",[
