@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "sheets": [
+    {
+      "workbook": "附件A 订购方案数据结果.xlsx",
+      "sheet": "问题2的订购方案结果",
+      "numeric_cells": 624,
+      "max_numeric_error": 0.0,
+      "non_numeric_output_cells": [],
+      "changed_existing_information": [],
+      "merged_ranges_preserved": true,
+      "blank_zero_outputs": true,
+      "passed": true
+    },
+    {
+      "workbook": "附件A 订购方案数据结果.xlsx",
+      "sheet": "问题3的订购方案结果",
+      "numeric_cells": 7440,
+      "max_numeric_error": 0.0,
+      "non_numeric_output_cells": [],
+      "changed_existing_information": [],
+      "merged_ranges_preserved": true,
+      "blank_zero_outputs": true,
+      "passed": true
+    },
+    {
+      "workbook": "附件A 订购方案数据结果.xlsx",
+      "sheet": "问题4的订购方案结果",
+      "numeric_cells": 9303,
+      "max_numeric_error": 0.0,
+      "non_numeric_output_cells": [],
+      "changed_existing_information": [],
+      "merged_ranges_preserved": true,
+      "blank_zero_outputs": true,
+      "passed": true
+    },
+    {
+      "workbook": "附件B 转运方案数据结果.xlsx",
+      "sheet": "问题2的转运方案结果",
+      "numeric_cells": 696,
+      "max_numeric_error": 0.0,
+      "non_numeric_output_cells": [],
+      "changed_existing_information": [],
+      "merged_ranges_preserved": true,
+      "blank_zero_outputs": true,
+      "passed": true
+    },
+    {
+      "workbook": "附件B 转运方案数据结果.xlsx",
+      "sheet": "问题3的转运方案结果",
+      "numeric_cells": 7488,
+      "max_numeric_error": 3.8107235126889546e-10,
+      "non_numeric_output_cells": [],
+      "changed_existing_information": [],
+      "merged_ranges_preserved": true,
+      "blank_zero_outputs": true,
+      "passed": true
+    },
+    {
+      "workbook": "附件B 转运方案数据结果.xlsx",
+      "sheet": "问题4的转运方案结果",
+      "numeric_cells": 9375,
+      "max_numeric_error": 0.0,
+      "non_numeric_output_cells": [],
+      "changed_existing_information": [],
+      "merged_ranges_preserved": true,
+      "blank_zero_outputs": true,
+      "passed": true
+    }
+  ],
+  "workbook_sha256": {
+    "附件B 转运方案数据结果.xlsx": "e6e750220f81092965e6c019cd796db1beae710081b397ca9a221f7c1a53a174",
+    "附件A 订购方案数据结果.xlsx": "53fded38b27c0475640f230ec2220c96fa895325ad54d2e4e9862abf4f5b58df"
+  },
+  "plans_sha256": "2eca6c07e8c8c9b9d358f5194f7008d8189d6986ded228c00a6bf170f03e434a"
+}

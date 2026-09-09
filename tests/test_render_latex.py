@@ -1,5 +1,6 @@
 """Math is preserved as TeX, and never silently routed through the plain-text renderer."""
 import json
+import os
 import sys
 import tempfile
 import unittest
@@ -65,3 +66,27 @@ class LatexSourceTest(unittest.TestCase):
         self.assertIn("\\VerbatimInput",tex)
         self.assertNotIn(code,tex)
         self.assertIn("````",(self.root/"paper/main.md").read_text())
+
+
+@unittest.skipUnless(os.environ.get("CUMCM_TEST_TECTONIC"), "optional actual TeX pagination test requires CUMCM_TEST_TECTONIC")
+class LongTablePaginationTest(unittest.TestCase):
+    def test_all_rows_remain_on_visible_pages_and_headers_repeat(self):
+        import fitz
+        with tempfile.TemporaryDirectory() as folder:
+            run=Path(folder);source=run/"document.json"
+            names=[f"ENTRY{i:03d}" for i in range(85)]
+            source.write_text(json.dumps({"title":"长表分页验证","sections":[{"title":"文件清单","blocks":[
+                {"text":r"使用模型$x=1$。"},
+                {"table":[["条目","内容","值"]]+[[name,"需要跨页保留的文件条目及说明",str(i)] for i,name in enumerate(names)],
+                 "long_table":True,"caption":"全部条目清单"}]}]},ensure_ascii=False),encoding="utf-8")
+            render_latex(run,source,compiler=os.environ["CUMCM_TEST_TECTONIC"],cache_dir=os.environ.get("CUMCM_TEST_TEX_CACHE"))
+            with fitz.open(run/"paper/main.pdf") as pdf:
+                self.assertGreater(len(pdf),1)
+                text="".join(p.get_text() for p in pdf)
+                for name in names:self.assertIn(name,text)
+                for page in pdf:
+                    for block in page.get_text("blocks"):
+                        self.assertGreaterEqual(block[1],28)
+                        self.assertLessEqual(block[3],page.rect.height-18)
+                self.assertGreaterEqual(text.count("条目"),len(pdf))
+            self.assertIn("全部条目清单",(run/"paper/main.md").read_text())

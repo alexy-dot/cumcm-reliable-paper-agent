@@ -1,0 +1,285 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "source-derived supply envelopes",
+      "error": 2.2737367544323206e-13,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "source-derived conditional loss means",
+      "error": 3.469446951953614e-18,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "n-1 suppliers impossible even at best carrier loss",
+      "error": 0.0,
+      "tolerance": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Q2 all expected supply transported",
+      "error": 0.0,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Q2 contract capacity",
+      "error": 2.2737367544323206e-13,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Q2 carrier capacity",
+      "error": 9.094947017729282e-13,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Q2 nonnegative shipments and orders",
+      "error": 0.0,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Q2 reserve floor",
+      "error": 1.7462298274040222e-10,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "Q2 inventory reconstruction",
+      "error": 8.731149137020111e-11,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "Q2 purchase cost accounting",
+      "error": 1.1059455573558807e-09,
+      "tolerance": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "Q2 physical transport loss accounting",
+      "error": 4.547473508864641e-12,
+      "tolerance": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "Q3 all expected supply transported",
+      "error": 4.440892098500626e-16,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Q3 contract capacity",
+      "error": 2.4197310821705287e-13,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Q3 carrier capacity",
+      "error": 1.8189894035458565e-12,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Q3 nonnegative shipments and orders",
+      "error": 3.8107235126889546e-10,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Q3 reserve floor",
+      "error": 3.4924596548080444e-10,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "Q3 inventory reconstruction",
+      "error": 1.7462298274040222e-10,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "Q3 purchase cost accounting",
+      "error": 3.2014213502407074e-09,
+      "tolerance": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "Q3 physical transport loss accounting",
+      "error": 6.366462912410498e-12,
+      "tolerance": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "Q4 all expected supply transported",
+      "error": 4.440892098500626e-16,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Q4 contract capacity",
+      "error": 4.834248557017418e-10,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Q4 carrier capacity",
+      "error": 5.4569682106375694e-12,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Q4 nonnegative shipments and orders",
+      "error": 0.0,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Q4 reserve floor",
+      "error": 7.057678885757923e-10,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "Q4 inventory reconstruction",
+      "error": 4.43833414465189e-10,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "Q4 purchase cost accounting",
+      "error": 2.561137080192566e-09,
+      "tolerance": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "Q4 physical transport loss accounting",
+      "error": 4.0472514228895307e-11,
+      "tolerance": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "Q4 steady capacity independent rearrangement construction",
+      "error": 1.4551915228366852e-11,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "Q4 first-week inventory upper bound attained",
+      "error": 3.637978807091713e-12,
+      "tolerance": 1e-06,
+      "passed": true
+    }
+  ],
+  "minimum_count_proof": {
+    "count": 26,
+    "best_possible_output_with_n_minus_one": 28044.40580420685,
+    "required": 28200.0,
+    "scope": "conditional on the declared supplier envelopes"
+  },
+  "capacity_bound": {
+    "greedy_steady": 33335.925461873005,
+    "immediate_uniform": 29911.97515395767,
+    "proof": "rearrangement for divisible raw material plus first-week inventory inequality"
+  },
+  "stress": {
+    "Q2": [
+      {
+        "supply_multiplier": 0.8,
+        "terminal_inventory": -78960.00000000003,
+        "reserve_shortfall_weeks": 24,
+        "first_production_shortage_week": 10,
+        "fixed_carrier_overload_weeks": 0
+      },
+      {
+        "supply_multiplier": 0.9,
+        "terminal_inventory": -11280.000000000175,
+        "reserve_shortfall_weeks": 24,
+        "first_production_shortage_week": 20,
+        "fixed_carrier_overload_weeks": 0
+      },
+      {
+        "supply_multiplier": 1.0,
+        "terminal_inventory": 56399.99999999974,
+        "reserve_shortfall_weeks": 0,
+        "first_production_shortage_week": null,
+        "fixed_carrier_overload_weeks": 0
+      },
+      {
+        "supply_multiplier": 1.1,
+        "terminal_inventory": 124079.99999999983,
+        "reserve_shortfall_weeks": 0,
+        "first_production_shortage_week": null,
+        "fixed_carrier_overload_weeks": 24
+      }
+    ],
+    "Q3": [
+      {
+        "supply_multiplier": 0.8,
+        "terminal_inventory": -78960.00000000003,
+        "reserve_shortfall_weeks": 24,
+        "first_production_shortage_week": 10,
+        "fixed_carrier_overload_weeks": 0
+      },
+      {
+        "supply_multiplier": 0.9,
+        "terminal_inventory": -11280.000000000044,
+        "reserve_shortfall_weeks": 24,
+        "first_production_shortage_week": 20,
+        "fixed_carrier_overload_weeks": 0
+      },
+      {
+        "supply_multiplier": 1.0,
+        "terminal_inventory": 56399.999999999825,
+        "reserve_shortfall_weeks": 0,
+        "first_production_shortage_week": null,
+        "fixed_carrier_overload_weeks": 0
+      },
+      {
+        "supply_multiplier": 1.1,
+        "terminal_inventory": 124080.0,
+        "reserve_shortfall_weeks": 0,
+        "first_production_shortage_week": null,
+        "fixed_carrier_overload_weeks": 24
+      }
+    ],
+    "Q4": [
+      {
+        "supply_multiplier": 0.8,
+        "terminal_inventory": -84438.32049266464,
+        "reserve_shortfall_weeks": 24,
+        "first_production_shortage_week": 10,
+        "fixed_carrier_overload_weeks": 0
+      },
+      {
+        "supply_multiplier": 0.9,
+        "terminal_inventory": -12307.185092374755,
+        "reserve_shortfall_weeks": 24,
+        "first_production_shortage_week": 20,
+        "fixed_carrier_overload_weeks": 0
+      },
+      {
+        "supply_multiplier": 1.0,
+        "terminal_inventory": 59823.95030791508,
+        "reserve_shortfall_weeks": 0,
+        "first_production_shortage_week": null,
+        "fixed_carrier_overload_weeks": 0
+      },
+      {
+        "supply_multiplier": 1.1,
+        "terminal_inventory": 131955.08570820518,
+        "reserve_shortfall_weeks": 0,
+        "first_production_shortage_week": null,
+        "fixed_carrier_overload_weeks": 24
+      }
+    ]
+  },
+  "stress_scope": "deterministic response perturbations, not estimated event probabilities; negative inventory denotes unmet production, never physical negative stock",
+  "plans_sha256": "2eca6c07e8c8c9b9d358f5194f7008d8189d6986ded228c00a6bf170f03e434a",
+  "source_recomputed": true
+}

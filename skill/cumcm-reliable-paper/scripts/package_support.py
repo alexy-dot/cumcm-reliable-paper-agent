@@ -53,7 +53,7 @@ def package_support(run, selection, output="artifacts/submission-package"):
     manifest = {"schema_version": "1.0", "scope": "explicitly selected support files; completeness requires task review",
                 "files": [{key: row[key] for key in ("path", "role", "bytes", "sha256")} for row in entries]}
     blocks = [{"text": "以下文件与支撑包同源生成，完整代码逐文件列出。此清单不表示人工核验或正式提交已经完成。"},
-              {"table": [["文件", "用途类别", "字节数"]] + [[row["path"], row["role"], row["bytes"]] for row in entries] + [["manifest.json", "文件校验清单", "随包生成"]]}]
+              {"table": [["文件", "用途类别", "字节数"]] + [[row["path"], row["role"], row["bytes"]] for row in entries] + [["manifest.json", "文件校验清单", "随包生成"]], "long_table": True}]
     blocks.extend({"code": row["code"], "filename": row["path"], "source_sha256": row["sha256"]}
                   for row in entries if row["role"] == "code")
     appendix = {"id": "support-appendix", "title": "附录：支撑文件与完整源程序", "page_break_before": True, "blocks": blocks}

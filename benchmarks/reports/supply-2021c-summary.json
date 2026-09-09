@@ -1,0 +1,94 @@
+{
+  "case": "2021 C source-only timed trial",
+  "paper": {
+    "sha256": "e48e348328578464ec2bba6522241808c0a6fab15c23c3ec48e4aace40fd55ae",
+    "pages": 69,
+    "body_and_front_matter_pages": 17,
+    "appendix_pages": 52,
+    "bounds_issues": [],
+    "agent_visual_review": "Agent inspected all 17 main/front-matter pages and the file inventory at full-page resolution; source pages checked by contact sheets with representative full-resolution code pages. Abstract is separate, formulas are typeset, table captions remain attached, repeated long-table headers are visible, and all 69 pages pass geometric bounds. Six workbook sheets reviewed in the edited regions; unchanged source headers retained. No human approval is claimed."
+  },
+  "numerical_checks": 29,
+  "official_workbook_sheets": 6,
+  "full_source_files": 14,
+  "external_reproduction": {
+    "scope": "isolated extracted support package on the same interpreter/runtime; re-read official files, regenerated decisions, official workbooks and PDF; only a final paper page-break edit required repeating the dependent packaging/render stages",
+    "max_absolute_differences": {
+      "Q2": {
+        "orders": 0.0,
+        "shipments": 0.0,
+        "ending_inventory_product_equivalent": 0.0
+      },
+      "Q3": {
+        "orders": 0.0,
+        "shipments": 0.0,
+        "ending_inventory_product_equivalent": 0.0
+      },
+      "Q4": {
+        "orders": 0.0,
+        "shipments": 0.0,
+        "ending_inventory_product_equivalent": 0.0
+      }
+    },
+    "main_paper_pages_pixel_identical": true,
+    "reproduced_plans_sha256": "2eca6c07e8c8c9b9d358f5194f7008d8189d6986ded228c00a6bf170f03e434a"
+  },
+  "results": {
+    "Q2": {
+      "production_per_week": 28200.0,
+      "active_suppliers": 26,
+      "purchase_cost_index": 491123.29242452054,
+      "raw_material_volume": 441080.45219251513,
+      "expected_transport_loss": 2469.4476429057745
+    },
+    "Q3": {
+      "production_per_week": 28200.0,
+      "active_suppliers": 310,
+      "purchase_cost_index": 491355.02968939056,
+      "raw_material_volume": 434181.91206136893,
+      "expected_transport_loss": 2399.7528813642757
+    },
+    "Q4": {
+      "production_per_week": 29911.975153957672,
+      "active_suppliers": 402,
+      "purchase_cost_index": 523257.28145541274,
+      "raw_material_volume": 471334.37334937946,
+      "expected_transport_loss": 2775.0977921602716
+    }
+  },
+  "capacity": {
+    "greedy_steady": 33335.925461873005,
+    "immediate_uniform": 29911.97515395767,
+    "proof": "rearrangement for divisible raw material plus first-week inventory inequality"
+  },
+  "supplier_count_proof": {
+    "count": 26,
+    "best_possible_output_with_n_minus_one": 28044.40580420685,
+    "required": 28200.0,
+    "scope": "conditional on the declared supplier envelopes"
+  },
+  "current_2026_format_diagnostic": {
+    "passed": false,
+    "failed_checks": [
+      "AI-DECLARATION-TEXT",
+      "AI-DETAIL-FILE"
+    ],
+    "scope": "current submission-format comparison, not retrospective application of 2026 rules to 2021 contestants"
+  },
+  "artifact_sha256": {
+    "support_zip": "1ec823c173f6fd12a78127c0ce24aed2d217b195dbf405a35d249eb6155e1aa5",
+    "plans": "2eca6c07e8c8c9b9d358f5194f7008d8189d6986ded228c00a6bf170f03e434a",
+    "verification": "1dbcdffbc48bf5cc94064f5bec51095a934b590fdbeb79621bdcecd4c643f3ce",
+    "workbook_verification": "0a32a9cdc8bebce8d29f2a42ef7545bd4b20908a2672179e43c878f61ea6c447",
+    "document": "e4488803c8f63f1ac3d1be15ffcc62b428c51cfe015fba8838f79bbaf7ef2031"
+  },
+  "completed": "four conditional problem answers, complete original-template results, independent numerical checks, Chinese paper and same-source code appendix",
+  "not_established": [
+    "continuous supplier availability and physical maximum capacity",
+    "calibrated future supply reliability",
+    "same-problem award-paper comparison or real expert assessment",
+    "2026 submission readiness and actual team approval"
+  ],
+  "submission_ready": false,
+  "national_award_level": "NOT_ESTABLISHED"
+}

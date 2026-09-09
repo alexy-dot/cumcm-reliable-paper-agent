@@ -61,7 +61,7 @@ def render_latex(run, source, *, compiler=None, cache_dir=None, compile_pdf=True
     code_receipts = []
     preamble = r"""\documentclass[12pt,a4paper]{article}
 \usepackage{fontspec,xeCJK,amsmath,amssymb,geometry,graphicx,booktabs,tabularx,array}
-\usepackage{titlesec,caption,placeins,indentfirst,float}
+\usepackage{titlesec,caption,placeins,indentfirst,float,longtable}
 \geometry{margin=28mm,footskip=12mm}
 FONTS
 \XeTeXlinebreaklocale "zh"
@@ -121,8 +121,21 @@ FONTS
                 columns = len(rows[0])
                 if any(len(row) != columns for row in rows):
                     raise ValueError("ragged paper table")
-                lines.extend([r"\begin{table}[H]\centering\small",
-                              r"\begin{tabularx}{\linewidth}{" + r">{\raggedright\arraybackslash}X" * columns + "}", r"\toprule"])
+                if block.get("caption"):
+                    markdown.extend([block["caption"], ""])
+                long_table = block.get("long_table", False)
+                if long_table:
+                    width = r"\dimexpr(\linewidth-" + str(2*columns) + r"\tabcolsep)/" + str(columns) + r"\relax"
+                    lines.extend([r"\begingroup\small\linespread{1.1}\selectfont\renewcommand{\arraystretch}{1.15}",
+                                  r"\begin{longtable}{" + (r">{\raggedright\arraybackslash}p{"+width+"}")*columns + "}"])
+                    if block.get("caption"):
+                        lines.append(r"\caption*{" + inline(block["caption"]) + r"}\\")
+                    lines.append(r"\toprule")
+                else:
+                    lines.append(r"\begin{table}[H]\centering\small")
+                    if block.get("caption"):
+                        lines.append(r"\caption*{" + inline(block["caption"]) + "}")
+                    lines.extend([r"\begin{tabularx}{\linewidth}{" + r">{\raggedright\arraybackslash}X" * columns + "}", r"\toprule"])
                 for index, row in enumerate(rows):
                     formatted = []
                     for cell in row:
@@ -134,10 +147,16 @@ FONTS
                     lines.append(" & ".join(formatted) + r" \\")
                     if index == 0:
                         lines.append(r"\midrule")
+                        if long_table:
+                            lines.extend([r"\endfirsthead\toprule", " & ".join(formatted) + r" \\",
+                                          r"\midrule\endhead\bottomrule\endfoot"])
                     markdown.append("| " + " | ".join(str(cell) for cell in row) + " |")
                     if index == 0:
                         markdown.append("| " + " | ".join("---" for _ in row) + " |")
-                lines.extend([r"\bottomrule\end{tabularx}\end{table}"])
+                if long_table:
+                    lines.append(r"\end{longtable}\endgroup")
+                else:
+                    lines.append(r"\bottomrule\end{tabularx}\end{table}")
                 markdown.append("")
             elif "image" in block:
                 image = (run / block["image"]).resolve()

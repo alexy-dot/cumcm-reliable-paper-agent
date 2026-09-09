@@ -37,13 +37,24 @@
   "supervision": {
     "updated_on": "2026-09-09",
     "readiness": "NOT_ESTABLISHED",
+    "latest_timed_trial": {
+      "case": "2021 C supply ordering and transport",
+      "local_elapsed_minutes": 52.45245794852575,
+      "status": "COMPLETE_CONDITIONAL_TRAINING_DELIVERY",
+      "evidence": "benchmarks/reports/supply-2021c-summary.json",
+      "review": "benchmarks/reports/supply-2021c-review.md",
+      "exposure_scope": "no same-problem solution/review located or consulted during the trial; pretraining exposure and external isolation not attested",
+      "submission_ready": false,
+      "remaining": "sustained supplier-capacity evidence, predictive validation, actual expert/team review and formal AI submission materials"
+    },
     "latest_readiness_review": {
-      "case": "2020 D archived timed trial",
-      "decision": "NOT_ACCEPTED_AS_COMPLETE_TIMED_PAPER",
-      "evidence": "benchmarks/reports/profilometer-2020d-legacy-audit.json",
-      "reason": "The archived 93/100 score does not establish complete Q3/Q4 outputs or acceptable paper structure; full-curve coverage contradicts the observed-union claim.",
+      "case": "2021 C local timed trial",
+      "decision": "COMPLETE_TRAINING_DELIVERY_NOT_AWARD_CERTIFIED",
+      "evidence": "benchmarks/reports/supply-2021c-review.md",
+      "reason": "All conditional outputs and isolated reproduction completed; supply-capacity assumptions, predictive validity and current formal submission materials remain insufficient.",
+      "previous_rejection_evidence": "benchmarks/reports/profilometer-2020d-legacy-audit.json",
       "original_artifacts_preserved": true,
-      "new_blind_trial_started": false
+      "new_blind_trial_started": true
     },
     "latest_accepted_increment": {
       "name": "2024 B exact posterior expectation within declared independent-Beta policy classes",
@@ -56,7 +67,7 @@
     "next_priorities": [
       {
         "work": "Complete an unfamiliar-problem timed trial with input and time boundaries recorded before solving",
-        "status": "PENDING",
+        "status": "COMPLETED_LOCAL_TRIAL_WITH_LIMITATIONS",
         "acceptance": "Deliver all requested answers, executable code, independent numerical checks and a visually reviewed paper; preserve failures and distinguish within-time output from later repairs."
       },
       {

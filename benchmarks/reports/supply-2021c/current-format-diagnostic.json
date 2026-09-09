@@ -1,0 +1,468 @@
+{
+  "year": 2026,
+  "profile_verified_on": "2026-09-08",
+  "profile_sha256": "69d278a7ff8fabc291dab53bb4eaa0938b37d1d2a72b967a6d2cbb9665958be6",
+  "scope": "National PDF/ZIP submission checks only; regional rules and substantive human verification remain separate.",
+  "passed": false,
+  "submission_ready": false,
+  "checks": [
+    {
+      "id": "PAPER-SIZE",
+      "status": "PASS",
+      "detail": "bytes=492216; cap=20000000",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "file"
+    },
+    {
+      "id": "PAPER-PDF-INSPECTION",
+      "status": "PASS",
+      "detail": "pages=69",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "file"
+    },
+    {
+      "id": "TEXT-EXTRACTION",
+      "status": "PASS",
+      "detail": "text extraction required; scanned pages require OCR and manual review",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "file"
+    },
+    {
+      "id": "ABSTRACT-MARKERS",
+      "status": "PASS",
+      "detail": "first page must contain abstract and keyword markers; semantics still need review",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "abstract"
+    },
+    {
+      "id": "NO-COVER-PAGES",
+      "status": "PASS",
+      "detail": "no commitment/numbering cover headings in electronic paper",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "abstract"
+    },
+    {
+      "id": "NO-TOC",
+      "status": "PASS",
+      "detail": "no contents heading before appendix",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "body"
+    },
+    {
+      "id": "BODY-PAGE-UPPER-BOUND",
+      "status": "PASS",
+      "detail": "conservative body-page upper bound=17; appendix detection needs review",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "body"
+    },
+    {
+      "id": "APPENDIX",
+      "status": "PASS",
+      "detail": "appendix heading found",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "AI-DECLARATION-ORDER",
+      "status": "PASS",
+      "detail": "AI declaration heading must precede references",
+      "source_url": "https://www.mcm.edu.cn/upload_cn/node/785/Glps6mBh6563c55c45300fede72ddbf6eb33d3a8.pdf",
+      "source_anchor": "declaration"
+    },
+    {
+      "id": "AI-DECLARATION-TEXT",
+      "status": "FAIL",
+      "detail": "declared use must match official wording and contain no unfilled purpose placeholder",
+      "source_url": "https://www.mcm.edu.cn/upload_cn/node/785/Glps6mBh6563c55c45300fede72ddbf6eb33d3a8.pdf",
+      "source_anchor": "declaration"
+    },
+    {
+      "id": "A4-PAGES",
+      "status": "PASS",
+      "detail": "non-A4 pages=[]",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "page"
+    },
+    {
+      "id": "CONTENT-MARGINS",
+      "status": "PASS",
+      "detail": {
+        "minimum_mm": 25,
+        "tolerance_pt": 1,
+        "offending_blocks": [],
+        "count": 0,
+        "scope": "extracted text and image bounds; vector drawings need visual review"
+      },
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "page"
+    },
+    {
+      "id": "SUPPORT-SIZE",
+      "status": "PASS",
+      "detail": "bytes=641834",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "support"
+    },
+    {
+      "id": "SUPPORT-INSPECTION",
+      "status": "PASS",
+      "detail": "nonempty ZIP with unique relative unencrypted regular entries",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "support"
+    },
+    {
+      "id": "APPENDIX-FILE-LIST",
+      "status": "PASS",
+      "detail": "member #1: support inventory in appendix",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "APPENDIX-SOURCE-CODE",
+      "status": "PASS",
+      "detail": "member #1: full normalized source and filename comparison",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "APPENDIX-FILE-LIST",
+      "status": "PASS",
+      "detail": "member #2: support inventory in appendix",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "APPENDIX-SOURCE-CODE",
+      "status": "PASS",
+      "detail": "member #2: full normalized source and filename comparison",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "APPENDIX-FILE-LIST",
+      "status": "PASS",
+      "detail": "member #3: support inventory in appendix",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "APPENDIX-SOURCE-CODE",
+      "status": "PASS",
+      "detail": "member #3: full normalized source and filename comparison",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "APPENDIX-FILE-LIST",
+      "status": "PASS",
+      "detail": "member #4: support inventory in appendix",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "APPENDIX-SOURCE-CODE",
+      "status": "PASS",
+      "detail": "member #4: full normalized source and filename comparison",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "APPENDIX-FILE-LIST",
+      "status": "PASS",
+      "detail": "member #5: support inventory in appendix",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "APPENDIX-SOURCE-CODE",
+      "status": "PASS",
+      "detail": "member #5: full normalized source and filename comparison",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "APPENDIX-FILE-LIST",
+      "status": "PASS",
+      "detail": "member #6: support inventory in appendix",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "APPENDIX-SOURCE-CODE",
+      "status": "PASS",
+      "detail": "member #6: full normalized source and filename comparison",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "APPENDIX-FILE-LIST",
+      "status": "PASS",
+      "detail": "member #7: support inventory in appendix",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "APPENDIX-SOURCE-CODE",
+      "status": "PASS",
+      "detail": "member #7: full normalized source and filename comparison",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "APPENDIX-FILE-LIST",
+      "status": "PASS",
+      "detail": "member #8: support inventory in appendix",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "APPENDIX-SOURCE-CODE",
+      "status": "PASS",
+      "detail": "member #8: full normalized source and filename comparison",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "APPENDIX-FILE-LIST",
+      "status": "PASS",
+      "detail": "member #9: support inventory in appendix",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "APPENDIX-SOURCE-CODE",
+      "status": "PASS",
+      "detail": "member #9: full normalized source and filename comparison",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "APPENDIX-FILE-LIST",
+      "status": "PASS",
+      "detail": "member #10: support inventory in appendix",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "APPENDIX-FILE-LIST",
+      "status": "PASS",
+      "detail": "member #11: support inventory in appendix",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "APPENDIX-FILE-LIST",
+      "status": "PASS",
+      "detail": "member #12: support inventory in appendix",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "APPENDIX-FILE-LIST",
+      "status": "PASS",
+      "detail": "member #13: support inventory in appendix",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "APPENDIX-FILE-LIST",
+      "status": "PASS",
+      "detail": "member #14: support inventory in appendix",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "APPENDIX-FILE-LIST",
+      "status": "PASS",
+      "detail": "member #15: support inventory in appendix",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "APPENDIX-FILE-LIST",
+      "status": "PASS",
+      "detail": "member #16: support inventory in appendix",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "APPENDIX-FILE-LIST",
+      "status": "PASS",
+      "detail": "member #17: support inventory in appendix",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "APPENDIX-FILE-LIST",
+      "status": "PASS",
+      "detail": "member #18: support inventory in appendix",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "APPENDIX-FILE-LIST",
+      "status": "PASS",
+      "detail": "member #19: support inventory in appendix",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "APPENDIX-SOURCE-CODE",
+      "status": "PASS",
+      "detail": "member #19: full normalized source and filename comparison",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "APPENDIX-FILE-LIST",
+      "status": "PASS",
+      "detail": "member #20: support inventory in appendix",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "APPENDIX-SOURCE-CODE",
+      "status": "PASS",
+      "detail": "member #20: full normalized source and filename comparison",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "APPENDIX-FILE-LIST",
+      "status": "PASS",
+      "detail": "member #21: support inventory in appendix",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "APPENDIX-SOURCE-CODE",
+      "status": "PASS",
+      "detail": "member #21: full normalized source and filename comparison",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "APPENDIX-FILE-LIST",
+      "status": "PASS",
+      "detail": "member #22: support inventory in appendix",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "APPENDIX-SOURCE-CODE",
+      "status": "PASS",
+      "detail": "member #22: full normalized source and filename comparison",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "APPENDIX-FILE-LIST",
+      "status": "PASS",
+      "detail": "member #23: support inventory in appendix",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "SUPPORT-VISUAL-OR-BINARY",
+      "status": "REVIEW_REQUIRED",
+      "detail": "member #23: binary/image/spreadsheet content requires a suitable reader or visual review",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "identity"
+    },
+    {
+      "id": "APPENDIX-FILE-LIST",
+      "status": "PASS",
+      "detail": "member #24: support inventory in appendix",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "APPENDIX-FILE-LIST",
+      "status": "PASS",
+      "detail": "member #25: support inventory in appendix",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "SUPPORT-VISUAL-OR-BINARY",
+      "status": "REVIEW_REQUIRED",
+      "detail": "member #25: binary/image/spreadsheet content requires a suitable reader or visual review",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "identity"
+    },
+    {
+      "id": "APPENDIX-FILE-LIST",
+      "status": "PASS",
+      "detail": "member #26: support inventory in appendix",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "SUPPORT-VISUAL-OR-BINARY",
+      "status": "REVIEW_REQUIRED",
+      "detail": "member #26: binary/image/spreadsheet content requires a suitable reader or visual review",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "identity"
+    },
+    {
+      "id": "APPENDIX-FILE-LIST",
+      "status": "PASS",
+      "detail": "member #27: support inventory in appendix",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "SOURCE-PRESENCE",
+      "status": "PASS",
+      "detail": "source files found=13; no-code declaration=False",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "code"
+    },
+    {
+      "id": "AI-DETAIL-FILE",
+      "status": "FAIL",
+      "detail": "required named PDF count=0",
+      "source_url": "https://www.mcm.edu.cn/upload_cn/node/785/Glps6mBh6563c55c45300fede72ddbf6eb33d3a8.pdf",
+      "source_anchor": "detail"
+    },
+    {
+      "id": "KNOWN-IDENTITY-SCAN",
+      "status": "REVIEW_REQUIRED",
+      "detail": "no team/school/region identifiers supplied; no anonymity pass is inferred",
+      "source_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "source_anchor": "identity"
+    }
+  ],
+  "manual_review_remaining": [
+    "Regional submission requirements and latest notices",
+    "Team-led modeling and actual human verification of AI contributions",
+    "Semantic completeness, citation accuracy, actual executability and paper/support consistency",
+    "Dedicated one-page abstract, correct appendix boundary and unknown identity disclosures"
+  ],
+  "files": {
+    "paper": {
+      "path": "paper/main.pdf",
+      "bytes": 492216,
+      "sha256": "e48e348328578464ec2bba6522241808c0a6fab15c23c3ec48e4aace40fd55ae",
+      "md5": "1f3a8cc115a12d4771929627bc815021"
+    },
+    "support": {
+      "path": "artifacts/submission-package/support.zip",
+      "bytes": 641834,
+      "sha256": "1ec823c173f6fd12a78127c0ce24aed2d217b195dbf405a35d249eb6155e1aa5",
+      "md5": "ea9d219d1255e167d79d9b288a70420a"
+    }
+  },
+  "failed_checks": [
+    "AI-DECLARATION-TEXT",
+    "AI-DETAIL-FILE"
+  ],
+  "unavailable_checks": [],
+  "review_checks": [
+    "SUPPORT-VISUAL-OR-BINARY",
+    "SUPPORT-VISUAL-OR-BINARY",
+    "SUPPORT-VISUAL-OR-BINARY",
+    "KNOWN-IDENTITY-SCAN"
+  ],
+  "note": "PASS covers only the named mechanical checks. Refresh official sources and complete substantive review before submission."
+}

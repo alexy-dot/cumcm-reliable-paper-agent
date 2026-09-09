@@ -1,0 +1,32 @@
+{
+  "started_at": "2026-09-09T14:38:01.543420+00:00",
+  "start_epoch": 1788964681.543411,
+  "limit_seconds": 10800,
+  "deadline_epoch": 1788975481.543411,
+  "exposure_scope": "No prior solution/review located in workspace; title/taxonomy metadata previously available. Model pretraining exposure cannot be excluded.",
+  "allowed": "Official problem, all four official workbooks, generic libraries and existing generic skill tools only until final snapshot.",
+  "forbidden": "Same-problem papers, worked answers, public solution code, online answer searches.",
+  "acceptance": "PENDING_CONTENT_REVIEW; timing alone is not acceptance",
+  "status": "FINISHED_WITHIN_TIME",
+  "events": [
+    {
+      "stage": "modeling",
+      "epoch": 1788964953.823979,
+      "elapsed_seconds": 272.2805678844452,
+      "note": "Read all official requests. Pilot compares conditional median/mean predictors; median is not an expected-supply estimator. Preserve pilot and use volume ratio for mean accounting, with historical sustained-throughput and positive-order caps distinguished."
+    },
+    {
+      "stage": "writing",
+      "epoch": 1788965846.801137,
+      "elapsed_seconds": 1165.2577259540558,
+      "note": "Four-question base plans computed. Independent source accounting, supplier lower bound and capacity rearrangement verified. Official result templates populated and every output cell reconciled; bounded-response and top50 alternatives recorded."
+    },
+    {
+      "stage": "final",
+      "epoch": 1788967828.690888,
+      "elapsed_seconds": 3147.147476911545,
+      "note": "Four conditional answers, official 24-week workbooks, 17-page main paper plus full source appendix, source-based independent checks and isolated full reproduction completed. Local timing only; predictive reliability and 2026 submission readiness are not established. Two current-format AI-document failures retained explicitly.",
+      "snapshot_sha256": "97bab4e6fed8531d0c096a92bd3d7151f4c824872ef0f9f40e2396e3315dc058"
+    }
+  ]
+}

@@ -84,6 +84,7 @@ python3.12 -m venv .venv
 | 2021 D 连铸切割 | 在线决策、精确尾坯分配、独立网络流与连续下界 | [论文](benchmarks/reports/casting-2021d-paper.pdf) · [独立复算包](benchmarks/reports/casting-2021d-support.zip) |
 | 2021 B 乙醇偶合 | 组合外预测、嵌套选模、开放温度边界与实验设计 | [论文](benchmarks/reports/ethanol-2021b-paper.pdf) · [记录](benchmarks/reports/ethanol-2021b-summary.json) |
 | 2024 B 生产决策 | 序贯检验、质量状态返工、多层条件成本与抽样率决策 | [论文](benchmarks/reports/production-2024b-paper.pdf) · [样本量情景](benchmarks/reports/production-2024b/q4-report.md) |
+| 2021 C 订购与运输 | 选商整数规划、库存与增产上界、官方结果表自动填报 | [论文](benchmarks/reports/supply-2021c-paper.pdf) · [支撑包](benchmarks/reports/supply-2021c-support.zip) · [限时验收](benchmarks/reports/supply-2021c-review.md) |
 
 [完整结果、反例与回放命令](benchmarks/README.md)保留初稿失败记录和适用边界；历史重分析不等于新盲测。
 
@@ -101,7 +102,7 @@ GitHub Actions覆盖Python 3.10/3.12/3.13、数值内核、分组统计、PDF和
 
 ## 当前边界
 
-当前是国奖导向的辅助工具，**已覆盖炉温、切割、实验统计和生产决策历史题，但尚未证明国奖级可靠性，不保证奖项**。首次限时稿未通过论文验收，后续修订不补算为盲测成绩。2024 B第四问数值为明确标注的样本量情景，实际抽样记录未给定。通用题型求解、赛区差异与更广泛的独立评阅仍在完善。规则摘录的权利归原发布者，代码适用MIT许可证。
+当前是国奖导向的辅助工具，**已覆盖五类历史题，但尚未证明国奖级可靠性，不保证奖项**。旧限时稿失败不由后续修订补算；2021 C新增演练在本地计时52.5分钟内完成四问、官方结果表和论文，但预测可靠性及正式提交材料仍有缺口。2024 B第四问数值为明确标注的样本量情景，实际抽样记录未给定。通用题型求解、赛区差异与更广泛的独立评阅仍在完善。规则摘录的权利归原发布者，代码适用MIT许可证。
 
 数据读取不等于题意理解；第一存储行暂作表头候选，图示、单位、日期和公式缓存需结合原文解释。数值一致不证明两种算法真正独立；人工签核字段不认证身份，文件哈希也不是防篡改认证。项目会明确区分合成示例、历史回放和陌生题验收。
 
