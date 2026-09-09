@@ -14,6 +14,11 @@ def compose(run):
     sensitivity = read_json(run / "artifacts/sensitivity.json")
     structural = read_json(run / "artifacts/structural_evidence.json")
     decision = read_json(run / "artifacts/decision_evidence.json")
+    scenario = read_json(run / "artifacts/scenario_design.json")
+    if not scenario.get("passed") or scenario["candidates"]["source_sha256"] != sha256_file(run/"artifacts/solution.json"):
+        raise ValueError("scenario design is incomplete, failed or bound to an earlier solution")
+    if scenario["candidate_sha256"] != sha256_file(run/"artifacts/scenario_candidates.json"):
+        raise ValueError("candidate record changed after held-out validation")
     if decision.get("status") != "COMPLETE" or not decision.get("passed"):
         raise ValueError("decision sensitivity evidence is incomplete or failed")
     for name in ("solution.json","calibration.json","sensitivity.json"):
@@ -204,9 +209,23 @@ def compose(run):
                 f(row["peak_range_c"][0],3)+"—"+f(row["peak_range_c"][1],3)] for row in decision["joint_scenarios"]["cases"]]),
         text("联合扰动下，原先逐参数检验通过的三组留余量方案仍出现越界，说明逐个参数变化的结论不能外推为同时变化时的保证。问题四备选方案还会在大量设计点中超过原5%的面积上限，故其用途仅是制程余量的局部参考，不满足对原优化目标的普遍保证。后续应以新增工况测量约束参数相关性，并重新进行有明确不确定集合的稳健优化。")],level=2)
 
+    section("6.3 由反例驱动的情景约束工艺设计", [
+        text("为回应上述越界反例，在相同参数变化范围内另建情景约束决策。设计集包含名义参数、七维盒形集合的128个顶点及32个内部Sobol点，共161组。要求所有设计情景均满足制程限制，并预留升降温速率0.005℃/s、各时间界限0.1s及峰值上下限0.02℃的数值余量。这些余量是显式设计选择，不是已测得的仪器误差。"),
+        text(r"令$\mathcal S$为有限设计情景集合，$\boldsymbol u$为温区与速度控制。问题二保持指定温区不变并最大化速度；问题三最小化设计集中的最坏上升面积；问题四在新的面积上限内最小化最坏不对称性，可写为"),
+        equation(r"\min_{\boldsymbol u,\eta_A}\eta_A,\quad A(\boldsymbol u,\boldsymbol\theta)\le\eta_A,\quad \boldsymbol\theta\in\mathcal S;"),
+        equation(r"\min_{\boldsymbol u,\eta_J}\eta_J,\quad J(\boldsymbol u,\boldsymbol\theta)\le\eta_J,\quad A(\boldsymbol u,\boldsymbol\theta)\le1.05\eta_A^*,\quad\boldsymbol\theta\in\mathcal S."),
+        text(r"两式均同时施加所有设计情景下的制程与控制约束。这里$\eta_A^*$指情景问题三找到的最坏面积，不是名义问题三的面积，故这是一组额外的风险折中方案，不能替代前文原题的名义解。采用多起点SLSQP进行局部求解；结果只能称为找到的情景可行候选。"),
+        table([["情景方案","1—5区/℃","6区/℃","7区/℃","8—9区/℃","速度/cm·min⁻¹"]] +
+              [[name,*[f(v,3) for v in scenario["candidates"][name]["controls"][:4]],f(scenario["candidates"][name]["controls"][4],3)] for name in ("Q2","Q3","Q4")]),
+        text("在读入验证情景之前，将三组控制参数写入文件并冻结哈希。随后另用独立种子的512个Sobol点作留出验证，整个验证期间未修改控制参数。并对留出集中峰值下界或保温时间下界最不利的点进行独立连续ODE复算。"),
+        table([["方案","留出越界数/512","名义面积/℃·s","设计最坏面积/℃·s","留出最坏面积/℃·s"]] +
+              [[name,str(scenario["checks"][name]["process_violations"]),f(scenario["checks"][name]["nominal_metrics"]["area_rising_above_217"],2),f(scenario["candidates"][name]["design_worst_area"],2),f(scenario["checks"][name]["worst_area"],2)] for name in ("Q2","Q3","Q4")]),
+        text(f"三组方案在512个留出情景中均未发生制程越界；情景Q4在新的面积上限{f(scenario['candidates']['Q4']['q4_area_cap'],2)}℃·s下也未越界。代价是相对名义最优值降低传送速度并增加面积，不能只展示零越界而隐去性能损失。原来的逐参数备选只通过逐个变化的检查，这里的结果对应更广的联合设计与留出检验，两者不应混为同一种保证。"),
+        text("虽然设计集包含全部顶点，但各时间指标和面积对参数并不一定单调，顶点检查不能证明盒内所有点安全；512点留出也不能推出真实失败概率为零。这项验证仅证明有限设计集和固定留出集上的可行性，仍需考虑模型形式误差、新工况实验、控制精度及整体参数集合的进一步检验。")],level=2)
+
     section("七、模型评价与改进", [
         text("模型的优点在于：从题面几何与实验时间直接建立位置—时间关系，参数和控制变量含义明确；四问共用同一响应模型与制程指标，避免前后口径不一致；保留失败模型、多起点结果与独立计算路径，使拟合误差、数值误差和方案非唯一性均可检查。"),
-        text("模型的局限及改进方向包括三点。第一，不同候选对速度决策给出不同判断，一条中心曲线不足以验证工况迁移，建议补充改变速度与高温平台的实验。第二，入口参数顶到边界及早期残差说明驱动形式有偏差，应增加炉口附近测点或实测空气场。第三，联合扰动已使原留余量建议出现反例，后续必须以可信的不确定集合重新优化，而不能仅降低一点速度便称为稳健工艺。")])
+        text("模型的局限及改进方向包括三点。第一，不同候选对速度决策给出不同判断，一条中心曲线不足以验证工况迁移，建议补充改变速度与高温平台的实验。第二，入口参数顶到边界及早期残差说明驱动形式有偏差，应增加炉口附近测点或实测空气场。第三，有限情景设计虽修复了所测联合扰动下的越界，但无法覆盖全部模型形式和参数不确定性；新增实验后应更新不确定集合并重新设计。")])
 
     section("八、结论", [
         text("本文完成四问所需的温度预测、速度边界、上升回流面积和对称性方案，并给出原始计算产物、独立复核与情景分析。结论的适用范围始终限定在明确的有效传热模型与输入数据；拟合良好和两套算法一致都不能替代新工况实验。"),

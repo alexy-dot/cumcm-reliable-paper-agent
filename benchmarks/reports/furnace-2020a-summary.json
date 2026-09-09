@@ -54,8 +54,8 @@
     "passed": true
   },
   "paper": {
-    "pages": 19,
-    "sha256": "90a46877920cbc9dec8a5abf66a464f5476602d15cbf7a4c8233cd5ce5f30158",
+    "pages": 20,
+    "sha256": "69a41cf9e4df677e124ae5a383e58e42be9f2ee122374c8b547576b9520ed4f1",
     "backend": "latex",
     "fonts": [
       "/AKHCZK+STHeitiSC-Light",
@@ -70,14 +70,16 @@
       "/IXFAWU+TimesNewRomanPSMT",
       "/JAGKKY+CMR8",
       "/KPXLOM+CMMI12",
+      "/NITCSQ+CMMIB10",
       "/NOMARO+CMMI8",
       "/PVTTLK+CMR10",
       "/TQTHRL+LMSans10-Bold-Identity-H",
+      "/UBBQTN+CMMIB8",
       "/UTACNV+CMEX10",
       "/VDVGTR+CMSY8",
       "/YEUUOC+LMSans12-Regular-Identity-H"
     ],
-    "revision_at": "2026-09-09T01:35:50Z",
+    "revision_at": "2026-09-09T02:11:30Z",
     "structure_review": {
       "profile": "user-requested CUMCM paper structure; not an official universal chapter-order rule",
       "passed": true,
@@ -89,7 +91,7 @@
         "four_question_solution_subsections": true,
         "notation_table_columns": true
       },
-      "pages": 19,
+      "pages": 20,
       "heading_pages": {
         "一、问题重述": 2,
         "二、问题分析": 2,
@@ -97,20 +99,20 @@
         "四、符号说明": 5,
         "五、模型的建立与求解": 5,
         "六、模型检验与灵敏度分析": 15,
-        "七、模型评价与改进": 17,
-        "八、结论": 18,
-        "AI工具使用声明": 18,
-        "参考文献": 18,
-        "附录": 19
+        "七、模型评价与改进": 19,
+        "八、结论": 19,
+        "AI工具使用声明": 19,
+        "参考文献": 19,
+        "附录": 20
       },
-      "pdf_sha256": "90a46877920cbc9dec8a5abf66a464f5476602d15cbf7a4c8233cd5ce5f30158",
+      "pdf_sha256": "69a41cf9e4df677e124ae5a383e58e42be9f2ee122374c8b547576b9520ed4f1",
       "scope": "actual page-one contents and required structure; substantive writing and scientific quality still require review"
     },
     "visual_review": {
       "status": "TARGETED_REVISION_REVIEWED",
       "reviewer_type": "agent",
-      "scope": "New decision-tradeoff/model-form/joint-scenario sections on pages 14-17 inspected at readable scale. Page-one abstract, expected section order, A4 and content margins checked mechanically. No research-quality or award certification.",
-      "pdf_sha256": "90a46877920cbc9dec8a5abf66a464f5476602d15cbf7a4c8233cd5ce5f30158"
+      "scope": "Scenario-design mathematical formulation, finite-design/holdout distinction and numerical tables inspected on pages 17-19. Structure, abstract page and content margins pass. Not whole-box or physical reliability certification.",
+      "pdf_sha256": "69a41cf9e4df677e124ae5a383e58e42be9f2ee122374c8b547576b9520ed4f1"
     },
     "restatement_revision": {
       "evidence": [
@@ -341,5 +343,42 @@
         "q4_area_cap_violations": 169
       }
     ]
+  },
+  "scenario_design": {
+    "report": "furnace-2020a-scenario-design.json",
+    "passed": true,
+    "claim_scope": "finite-design and held-out scenario feasibility only; neither whole-box nor physical reliability is certified",
+    "design_count": 161,
+    "holdout_count": 512,
+    "controls": {
+      "Q2": [
+        182,
+        203,
+        237,
+        254,
+        77.51136810485937
+      ],
+      "Q3": [
+        185,
+        197.6564345933183,
+        225,
+        265,
+        95.39642810843752
+      ],
+      "Q4": [
+        169.9853688567689,
+        185,
+        225,
+        265,
+        89.30358720602939
+      ]
+    },
+    "q4_new_area_cap": 501.69556135490683,
+    "process_violations": {
+      "Q2": 0,
+      "Q3": 0,
+      "Q4": 0
+    },
+    "candidate_sha256": "d3d6c3d1f4b2989e691927308fc72d38a08df62035eb158149b588007aa8d952"
   }
 }

@@ -64,6 +64,28 @@ class FurnaceNumericsTest(unittest.TestCase):
         np.testing.assert_allclose(p[1,[0,1,2,3,4,6]],1.02*base[[0,1,2,3,4,6]])
         with self.assertRaises(ValueError): joint_parameters(base,np.array([[2.]*7]))
 
+    def test_scenario_design_includes_all_parameter_box_vertices(self):
+        from scenario_design import design_parameters
+        base=np.array([50,70,40,45,24,30.5,99.])
+        design=design_parameters(base)
+        self.assertEqual(design.shape,(161,7))
+        np.testing.assert_array_equal(design[0],base)
+        ratios=design[1:129]/base
+        self.assertEqual(len(np.unique(ratios,axis=0)),128)
+        np.testing.assert_allclose(ratios.min(axis=0),np.full(7,.98))
+        np.testing.assert_allclose(ratios.max(axis=0),[1.02,1.02,1.02,1.02,1.02,1,1.02])
+
+    def test_holdout_reports_process_and_area_failures_separately(self):
+        from scenario_design import holdout_summary
+        data=[{"area_rising_above_217":430.,"symmetry":.03}, {"area_rising_above_217":450.,"symmetry":.04}]
+        slacks=np.ones((2,8));slacks[0,6]=-.2
+        with patch("scenario_design.evaluate_controls",return_value=(data,slacks)):
+            result=holdout_summary([175,195,235,255,80],np.ones((2,7)),area_cap=440.)
+        self.assertEqual(result["process_violations"],1)
+        self.assertEqual(result["area_cap_violations"],1)
+        self.assertEqual(result["worst_peak_index"],0)
+        self.assertEqual(result["worst_area"],450.)
+
 
 if __name__ == "__main__":
     unittest.main()
