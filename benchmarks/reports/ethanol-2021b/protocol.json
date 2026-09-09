@@ -1,0 +1,312 @@
+{
+  "features": [
+    "temperature_c",
+    "co_mass_mg",
+    "hap_mass_mg",
+    "quartz_mass_mg",
+    "co_loading_pct",
+    "feed_ml_min",
+    "mode_II"
+  ],
+  "targets": [
+    "conversion_pct",
+    "selectivity_pct",
+    "yield_pct"
+  ],
+  "families": {
+    "training_mean": [
+      {
+        "name": "training_mean",
+        "kind": "mean"
+      }
+    ],
+    "temperature_only": [
+      {
+        "name": "temperature_quadratic",
+        "kind": "polynomial",
+        "degree": 2,
+        "columns": [
+          0
+        ]
+      }
+    ],
+    "ridge": [
+      {
+        "name": "ridge_d1_a1.0",
+        "kind": "polynomial",
+        "degree": 1,
+        "alpha": 1.0,
+        "columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "name": "ridge_d1_a10.0",
+        "kind": "polynomial",
+        "degree": 1,
+        "alpha": 10.0,
+        "columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "name": "ridge_d1_a100.0",
+        "kind": "polynomial",
+        "degree": 1,
+        "alpha": 100.0,
+        "columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "name": "ridge_d2_a1.0",
+        "kind": "polynomial",
+        "degree": 2,
+        "alpha": 1.0,
+        "columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "name": "ridge_d2_a10.0",
+        "kind": "polynomial",
+        "degree": 2,
+        "alpha": 10.0,
+        "columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "name": "ridge_d2_a100.0",
+        "kind": "polynomial",
+        "degree": 2,
+        "alpha": 100.0,
+        "columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "random_forest": [
+      {
+        "name": "forest_leaf2",
+        "kind": "forest",
+        "trees": 200,
+        "leaf": 2,
+        "seed": 20210904,
+        "columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "name": "forest_leaf4",
+        "kind": "forest",
+        "trees": 200,
+        "leaf": 4,
+        "seed": 20210904,
+        "columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "nested_selection": [
+      {
+        "name": "training_mean",
+        "kind": "mean"
+      },
+      {
+        "name": "temperature_quadratic",
+        "kind": "polynomial",
+        "degree": 2,
+        "columns": [
+          0
+        ]
+      },
+      {
+        "name": "ridge_d1_a1.0",
+        "kind": "polynomial",
+        "degree": 1,
+        "alpha": 1.0,
+        "columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "name": "ridge_d1_a10.0",
+        "kind": "polynomial",
+        "degree": 1,
+        "alpha": 10.0,
+        "columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "name": "ridge_d1_a100.0",
+        "kind": "polynomial",
+        "degree": 1,
+        "alpha": 100.0,
+        "columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "name": "ridge_d2_a1.0",
+        "kind": "polynomial",
+        "degree": 2,
+        "alpha": 1.0,
+        "columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "name": "ridge_d2_a10.0",
+        "kind": "polynomial",
+        "degree": 2,
+        "alpha": 10.0,
+        "columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "name": "ridge_d2_a100.0",
+        "kind": "polynomial",
+        "degree": 2,
+        "alpha": 100.0,
+        "columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "name": "forest_leaf2",
+        "kind": "forest",
+        "trees": 200,
+        "leaf": 2,
+        "seed": 20210904,
+        "columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "name": "forest_leaf4",
+        "kind": "forest",
+        "trees": 200,
+        "leaf": 4,
+        "seed": 20210904,
+        "columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ]
+  },
+  "outer_folds": 5,
+  "inner_folds": 4,
+  "independent_unit": "catalyst combination, never individual temperature row",
+  "physical_bounds": [
+    0,
+    100
+  ],
+  "selection_metric": "root of mean per-group mean squared error",
+  "permutation": "entire composition descriptor block exchanged among held-out groups, temperature retained; 20 seeds, predictive dependence only",
+  "history_scope": "retrospective reanalysis after inspecting prior 2021 B solution; old files preserved; not a blind trial",
+  "old_issues": [
+    "global target mean was labeled as a held-out mean baseline",
+    "independently permuting mass, total mass and ratio creates inconsistent descriptors",
+    "349.75 C is a grid-specific candidate, not a continuous maximum under strict T<350"
+  ],
+  "observations_sha256": "71c2c9f6779511fad8eff69197ac8e2c547c429da4af23de7493a48a3f171a35"
+}

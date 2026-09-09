@@ -1,0 +1,3662 @@
+{
+  "observations_sha256": "71c2c9f6779511fad8eff69197ac8e2c547c429da4af23de7493a48a3f171a35",
+  "local_models": [
+    {
+      "group": "A1",
+      "response_models": {
+        "conversion_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 5.292057234514979,
+          "coefficients": [
+            3.180787110589247,
+            11.78002182551851,
+            12.693244488658346
+          ],
+          "center": 300.0,
+          "scale": 35.35533905932738,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 6.53524994008682,
+              "coefficients": [
+                11.780021825518507,
+                15.8740315992476
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 5.292057234514979,
+              "coefficients": [
+                3.180787110589247,
+                11.78002182551851,
+                12.693244488658346
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "selectivity_pct": {
+          "degree": 1,
+          "selection_loocv_rmse": 5.2148626515460546,
+          "coefficients": [
+            5.457450137197774,
+            43.066
+          ],
+          "center": 300.0,
+          "scale": 35.35533905932738,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 5.2148626515460546,
+              "coefficients": [
+                5.457450137197774,
+                43.066
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 6.930361107003147,
+              "coefficients": [
+                -2.641428571428573,
+                5.45745013719778,
+                45.70742857142856
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "yield_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 1.7524593684464034,
+          "coefficients": [
+            1.4472189500383597,
+            5.7885336732597015,
+            5.9679737724523525
+          ],
+          "center": 300.0,
+          "scale": 35.35533905932738,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 2.903899530837223,
+              "coefficients": [
+                5.788533673259698,
+                7.415192722490714
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 1.7524593684464034,
+              "coefficients": [
+                1.4472189500383597,
+                5.7885336732597015,
+                5.9679737724523525
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        }
+      },
+      "unrestricted": {
+        "temperature_c": 350.0,
+        "predicted_yield_pct": 17.048634499506292,
+        "attained": true,
+        "kind": "maximum",
+        "domain_lower_c": 250,
+        "domain_upper_c": 350,
+        "upper_open": false
+      },
+      "below_350": {
+        "temperature_c": 350.0,
+        "predicted_yield_pct": 17.048634499506292,
+        "attained": false,
+        "kind": "supremum_not_attained",
+        "domain_lower_c": 250,
+        "domain_upper_c": 350,
+        "upper_open": true
+      },
+      "one_degree_control_grid": {
+        "temperature_c": 349.0,
+        "predicted_yield_pct": 16.77029030212371,
+        "scope": "illustrative 1 C control resolution, not stated by the problem; requires experimental confirmation"
+      }
+    },
+    {
+      "group": "A10",
+      "response_models": {
+        "conversion_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 3.893937020679776,
+          "coefficients": [
+            5.208678529308063,
+            7.775904867998522,
+            2.9179864333258174
+          ],
+          "center": 315.0,
+          "scale": 53.85164807134504,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 9.041087646404447,
+              "coefficients": [
+                9.87712284110855,
+                8.12666496263388
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 3.893937020679776,
+              "coefficients": [
+                5.208678529308063,
+                7.775904867998522,
+                2.9179864333258174
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "selectivity_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 2.1518744739053535,
+          "coefficients": [
+            2.025795309168445,
+            1.96542440341582,
+            1.8942046908315557
+          ],
+          "center": 315.0,
+          "scale": 53.85164807134504,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 3.6434885943544346,
+              "coefficients": [
+                2.7826446425831217,
+                3.9199999999999995
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 2.1518744739053535,
+              "coefficients": [
+                2.025795309168445,
+                1.96542440341582,
+                1.8942046908315557
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "yield_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 1.135733185949461,
+          "coefficients": [
+            0.7452456304642071,
+            0.6606834967497902,
+            -0.0851847873864299
+          ],
+          "center": 315.0,
+          "scale": 53.85164807134504,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 1.3814509407082836,
+              "coefficients": [
+                0.9613208857347327,
+                0.6600608430777767
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 1.135733185949461,
+              "coefficients": [
+                0.7452456304642071,
+                0.6606834967497902,
+                -0.0851847873864299
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        }
+      },
+      "unrestricted": {
+        "temperature_c": 400.0,
+        "predicted_yield_pct": 2.814334443011053,
+        "attained": true,
+        "kind": "maximum",
+        "domain_lower_c": 250,
+        "domain_upper_c": 400,
+        "upper_open": false
+      },
+      "below_350": {
+        "temperature_c": 350.0,
+        "predicted_yield_pct": 0.6590177049210496,
+        "attained": false,
+        "kind": "supremum_not_attained",
+        "domain_lower_c": 250,
+        "domain_upper_c": 350,
+        "upper_open": true
+      },
+      "one_degree_control_grid": {
+        "temperature_c": 349.0,
+        "predicted_yield_pct": 0.6290174140053442,
+        "scope": "illustrative 1 C control resolution, not stated by the problem; requires experimental confirmation"
+      }
+    },
+    {
+      "group": "A11",
+      "response_models": {
+        "conversion_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 6.721619114633172,
+          "coefficients": [
+            6.589400899788537,
+            8.47662705444175,
+            2.0411262235999614
+          ],
+          "center": 315.0,
+          "scale": 53.85164807134504,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 11.712469400314417,
+              "coefficients": [
+                11.134838254222283,
+                8.630527123388495
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 6.721619114633172,
+              "coefficients": [
+                6.589400899788537,
+                8.47662705444175,
+                2.0411262235999614
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "selectivity_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 0.2559926254037044,
+          "coefficients": [
+            0.5310771855010684,
+            2.5804745248658905,
+            2.5089228144989324
+          ],
+          "center": 315.0,
+          "scale": 53.85164807134504,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 0.9015714459174634,
+              "coefficients": [
+                2.79471483956463,
+                3.0399999999999996
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 0.2559926254037044,
+              "coefficients": [
+                0.5310771855010684,
+                2.5804745248658905,
+                2.5089228144989324
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "yield_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 0.853013174292691,
+          "coefficients": [
+            0.6273117557125798,
+            0.6068274601174278,
+            -0.032043265274626864
+          ],
+          "center": 315.0,
+          "scale": 53.85164807134504,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 1.1460166057819383,
+              "coefficients": [
+                0.8598894850494182,
+                0.5952684904379526
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 0.853013174292691,
+              "coefficients": [
+                0.6273117557125798,
+                0.6068274601174278,
+                -0.032043265274626864
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        }
+      },
+      "unrestricted": {
+        "temperature_c": 400.0,
+        "predicted_yield_pct": 2.4886510226276144,
+        "attained": true,
+        "kind": "maximum",
+        "domain_lower_c": 250,
+        "domain_upper_c": 400,
+        "upper_open": false
+      },
+      "below_350": {
+        "temperature_c": 350.0,
+        "predicted_yield_pct": 0.627339479390003,
+        "attained": false,
+        "kind": "supremum_not_attained",
+        "domain_lower_c": 250,
+        "domain_upper_c": 350,
+        "upper_open": true
+      },
+      "one_degree_control_grid": {
+        "temperature_c": 349.0,
+        "predicted_yield_pct": 0.6011452828498511,
+        "scope": "illustrative 1 C control resolution, not stated by the problem; requires experimental confirmation"
+      }
+    },
+    {
+      "group": "A12",
+      "response_models": {
+        "conversion_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 2.320802175221726,
+          "coefficients": [
+            5.518997465826152,
+            13.171567702621575,
+            9.736400882195804
+          ],
+          "center": 315.0,
+          "scale": 53.85164807134504,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 9.41039235807996,
+              "coefficients": [
+                15.397970542322865,
+                15.25539834802195
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 2.320802175221726,
+              "coefficients": [
+                5.518997465826152,
+                13.171567702621575,
+                9.736400882195804
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "selectivity_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 1.425076712515726,
+          "coefficients": [
+            2.6156392324093902,
+            9.978292434530724,
+            14.196360767590614
+          ],
+          "center": 315.0,
+          "scale": 53.85164807134504,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 4.278051755428282,
+              "coefficients": [
+                11.033459908465886,
+                16.811999999999998
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 1.425076712515726,
+              "coefficients": [
+                2.6156392324093902,
+                9.978292434530724,
+                14.196360767590614
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "yield_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 2.8294895950906254,
+          "coefficients": [
+            3.1642611524973447,
+            4.296513016038064,
+            1.184764760456944
+          ],
+          "center": 315.0,
+          "scale": 53.85164807134504,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 5.565137407280962,
+              "coefficients": [
+                5.572998475417053,
+                4.349025912954287
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 2.8294895950906254,
+              "coefficients": [
+                3.1642611524973447,
+                4.296513016038064,
+                1.184764760456944
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        }
+      },
+      "unrestricted": {
+        "temperature_c": 400.0,
+        "predicted_yield_pct": 15.849800247026703,
+        "attained": true,
+        "kind": "maximum",
+        "domain_lower_c": 250,
+        "domain_upper_c": 400,
+        "upper_open": false
+      },
+      "below_350": {
+        "temperature_c": 350.0,
+        "predicted_yield_pct": 5.313840847486762,
+        "attained": false,
+        "kind": "supremum_not_attained",
+        "domain_lower_c": 250,
+        "domain_upper_c": 350,
+        "upper_open": true
+      },
+      "one_degree_control_grid": {
+        "temperature_c": 349.0,
+        "predicted_yield_pct": 5.158769010798503,
+        "scope": "illustrative 1 C control resolution, not stated by the problem; requires experimental confirmation"
+      }
+    },
+    {
+      "group": "A13",
+      "response_models": {
+        "conversion_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 4.1050425917113635,
+          "coefficients": [
+            6.512128484425014,
+            11.023776103039356,
+            5.9688842894099565
+          ],
+          "center": 315.0,
+          "scale": 53.85164807134504,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 11.233770243734876,
+              "coefficients": [
+                13.650815060748524,
+                12.481012773834966
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 4.1050425917113635,
+              "coefficients": [
+                6.512128484425014,
+                11.023776103039356,
+                5.9688842894099565
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "selectivity_pct": {
+          "degree": 1,
+          "selection_loocv_rmse": 2.6015233169921124,
+          "coefficients": [
+            8.765562743309555,
+            15.383999999999999
+          ],
+          "center": 315.0,
+          "scale": 53.85164807134504,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 2.6015233169921124,
+              "coefficients": [
+                8.765562743309555,
+                15.383999999999999
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 5.6908904352480345,
+              "coefficients": [
+                -0.7995343283582008,
+                9.088100579233151,
+                16.183534328358203
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "yield_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 1.3814743418677342,
+          "coefficients": [
+            2.092931982826372,
+            3.0586973195681386,
+            0.9820882693648771
+          ],
+          "center": 315.0,
+          "scale": 53.85164807134504,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 3.617449778256278,
+              "coefficients": [
+                3.9030009704973856,
+                3.0750202521912477
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 1.3814743418677342,
+              "coefficients": [
+                2.092931982826372,
+                3.0586973195681386,
+                0.9820882693648771
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        }
+      },
+      "unrestricted": {
+        "temperature_c": 400.0,
+        "predicted_yield_pct": 11.024255291014281,
+        "attained": true,
+        "kind": "maximum",
+        "domain_lower_c": 250,
+        "domain_upper_c": 400,
+        "upper_open": false
+      },
+      "below_350": {
+        "temperature_c": 350.0,
+        "predicted_yield_pct": 3.8541220229226525,
+        "attained": false,
+        "kind": "supremum_not_attained",
+        "domain_lower_c": 250,
+        "domain_upper_c": 350,
+        "upper_open": true
+      },
+      "one_degree_control_grid": {
+        "temperature_c": 349.0,
+        "predicted_yield_pct": 3.747526092431215,
+        "scope": "illustrative 1 C control resolution, not stated by the problem; requires experimental confirmation"
+      }
+    },
+    {
+      "group": "A14",
+      "response_models": {
+        "conversion_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 4.754593599503961,
+          "coefficients": [
+            6.315576224062948,
+            15.541631416757573,
+            12.809766865891394
+          ],
+          "center": 315.0,
+          "scale": 53.85164807134504,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 11.03547331351276,
+              "coefficients": [
+                18.089379794369638,
+                19.125343089954338
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 4.754593599503961,
+              "coefficients": [
+                6.315576224062948,
+                15.541631416757573,
+                12.809766865891394
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "selectivity_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 0.42234746588554967,
+          "coefficients": [
+            2.8103411513859333,
+            6.277575028830238,
+            5.425658848614069
+          ],
+          "center": 315.0,
+          "scale": 53.85164807134504,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 4.647435152418223,
+              "coefficients": [
+                7.411286641984316,
+                8.236
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 0.42234746588554967,
+              "coefficients": [
+                2.8103411513859333,
+                6.277575028830238,
+                5.425658848614069
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "yield_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 2.835039208741733,
+          "coefficients": [
+            2.5826162781720496,
+            3.018824662582257,
+            0.439082824659664
+          ],
+          "center": 315.0,
+          "scale": 53.85164807134504,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 4.614479071478806,
+              "coefficients": [
+                4.060670441853748,
+                3.0216991028317124
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 2.835039208741733,
+              "coefficients": [
+                2.5826162781720496,
+                3.018824662582257,
+                0.439082824659664
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        }
+      },
+      "unrestricted": {
+        "temperature_c": 400.0,
+        "predicted_yield_pct": 11.638303752888485,
+        "attained": true,
+        "kind": "maximum",
+        "domain_lower_c": 250,
+        "domain_upper_c": 400,
+        "upper_open": false
+      },
+      "below_350": {
+        "temperature_c": 350.0,
+        "predicted_yield_pct": 3.4920513960070583,
+        "attained": false,
+        "kind": "supremum_not_attained",
+        "domain_lower_c": 250,
+        "domain_upper_c": 350,
+        "upper_open": true
+      },
+      "one_degree_control_grid": {
+        "temperature_c": 349.0,
+        "predicted_yield_pct": 3.374544773071766,
+        "scope": "illustrative 1 C control resolution, not stated by the problem; requires experimental confirmation"
+      }
+    },
+    {
+      "group": "A2",
+      "response_models": {
+        "conversion_pct": {
+          "degree": 1,
+          "selection_loocv_rmse": 3.9700970742338875,
+          "coefficients": [
+            23.43910746671668,
+            36.996507485294025
+          ],
+          "center": 300.0,
+          "scale": 35.35533905932738,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 3.9700970742338875,
+              "coefficients": [
+                23.43910746671668,
+                36.996507485294025
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 9.005872218776895,
+              "coefficients": [
+                -0.9225576842740794,
+                23.439107466716695,
+                37.919065169568086
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "selectivity_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 3.9178138787904375,
+          "coefficients": [
+            3.891428571428569,
+            7.834743135546955,
+            21.042571428571424
+          ],
+          "center": 300.0,
+          "scale": 35.35533905932738,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 6.696749708490181,
+              "coefficients": [
+                7.834743135546947,
+                24.933999999999997
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 3.9178138787904375,
+              "coefficients": [
+                3.891428571428569,
+                7.834743135546955,
+                21.042571428571424
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "yield_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 1.9464018314087927,
+          "coefficients": [
+            2.750273409650485,
+            9.292939626774967,
+            8.297131543013437
+          ],
+          "center": 300.0,
+          "scale": 35.35533905932738,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 4.716346567139019,
+              "coefficients": [
+                9.292939626774961,
+                11.047404952663925
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 1.9464018314087927,
+              "coefficients": [
+                2.750273409650485,
+                9.292939626774967,
+                8.297131543013437
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        }
+      },
+      "unrestricted": {
+        "temperature_c": 350.0,
+        "predicted_yield_pct": 26.939879616813933,
+        "attained": true,
+        "kind": "maximum",
+        "domain_lower_c": 250,
+        "domain_upper_c": 350,
+        "upper_open": false
+      },
+      "below_350": {
+        "temperature_c": 350.0,
+        "predicted_yield_pct": 26.939879616813933,
+        "attained": false,
+        "kind": "supremum_not_attained",
+        "domain_lower_c": 250,
+        "domain_upper_c": 350,
+        "upper_open": true
+      },
+      "one_degree_control_grid": {
+        "temperature_c": 349.0,
+        "predicted_yield_pct": 26.45921393767962,
+        "scope": "illustrative 1 C control resolution, not stated by the problem; requires experimental confirmation"
+      }
+    },
+    {
+      "group": "A3",
+      "response_models": {
+        "conversion_pct": {
+          "degree": 1,
+          "selection_loocv_rmse": 8.692884570392062,
+          "coefficients": [
+            27.385100277799225,
+            44.97083656689964
+          ],
+          "center": 335.7142857142857,
+          "scale": 65.27023886606095,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 8.692884570392062,
+              "coefficients": [
+                27.385100277799225,
+                44.97083656689964
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 15.545888855540507,
+              "coefficients": [
+                -1.3869526147711908,
+                27.998587734478278,
+                46.35778918167082
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "selectivity_pct": {
+          "degree": 1,
+          "selection_loocv_rmse": 9.439358290571985,
+          "coefficients": [
+            17.04843005591364,
+            28.49285714285715
+          ],
+          "center": 335.7142857142857,
+          "scale": 65.27023886606095,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 9.439358290571985,
+              "coefficients": [
+                17.04843005591364,
+                28.49285714285715
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 11.726647096513972,
+              "coefficients": [
+                -4.034628277610648,
+                18.83305760145176,
+                32.527485420467784
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "yield_pct": {
+          "degree": 1,
+          "selection_loocv_rmse": 7.740728708457126,
+          "coefficients": [
+            16.69541518268027,
+            17.675210601232322
+          ],
+          "center": 335.7142857142857,
+          "scale": 65.27023886606095,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 7.740728708457126,
+              "coefficients": [
+                16.69541518268027,
+                17.675210601232322
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 16.29316467543588,
+              "coefficients": [
+                0.8751089004977066,
+                16.30833034072832,
+                16.800101700734615
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        }
+      },
+      "unrestricted": {
+        "temperature_c": 450.0,
+        "predicted_yield_pct": 46.90824977188128,
+        "attained": true,
+        "kind": "maximum",
+        "domain_lower_c": 250,
+        "domain_upper_c": 450,
+        "upper_open": false
+      },
+      "below_350": {
+        "temperature_c": 350.0,
+        "predicted_yield_pct": 21.32934049756344,
+        "attained": false,
+        "kind": "supremum_not_attained",
+        "domain_lower_c": 250,
+        "domain_upper_c": 350,
+        "upper_open": true
+      },
+      "one_degree_control_grid": {
+        "temperature_c": 349.0,
+        "predicted_yield_pct": 21.07355140482026,
+        "scope": "illustrative 1 C control resolution, not stated by the problem; requires experimental confirmation"
+      }
+    },
+    {
+      "group": "A4",
+      "response_models": {
+        "conversion_pct": {
+          "degree": 1,
+          "selection_loocv_rmse": 3.2634623744932325,
+          "coefficients": [
+            28.678780797723977,
+            39.63785134544185
+          ],
+          "center": 316.6666666666667,
+          "scale": 49.30066485916347,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 3.2634623744932325,
+              "coefficients": [
+                28.678780797723977,
+                39.63785134544185
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 7.027432825814158,
+              "coefficients": [
+                0.8868617381555942,
+                28.378966809180735,
+                38.75098960728626
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "selectivity_pct": {
+          "degree": 1,
+          "selection_loocv_rmse": 5.932238650408313,
+          "coefficients": [
+            11.172657529426077,
+            19.353333333333335
+          ],
+          "center": 316.6666666666667,
+          "scale": 49.30066485916347,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 5.932238650408313,
+              "coefficients": [
+                11.172657529426077,
+                19.353333333333335
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 7.851839952537745,
+              "coefficients": [
+                2.9504629629629533,
+                10.175218998799263,
+                16.40287037037038
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "yield_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 1.5611117267070571,
+          "coefficients": [
+            4.244119422213687,
+            10.460652318308952,
+            6.677389853508702
+          ],
+          "center": 316.6666666666667,
+          "scale": 49.30066485916347,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 8.073590899359663,
+              "coefficients": [
+                11.895426553212888,
+                10.921509275722387
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 1.5611117267070571,
+              "coefficients": [
+                4.244119422213687,
+                10.460652318308952,
+                6.677389853508702
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        }
+      },
+      "unrestricted": {
+        "temperature_c": 400.0,
+        "predicted_yield_pct": 36.48517497365686,
+        "attained": true,
+        "kind": "maximum",
+        "domain_lower_c": 250,
+        "domain_upper_c": 400,
+        "upper_open": false
+      },
+      "below_350": {
+        "temperature_c": 350.0,
+        "predicted_yield_pct": 15.690250583478578,
+        "attained": false,
+        "kind": "supremum_not_attained",
+        "domain_lower_c": 250,
+        "domain_upper_c": 350,
+        "upper_open": true
+      },
+      "one_degree_control_grid": {
+        "temperature_c": 349.0,
+        "predicted_yield_pct": 15.363405847208547,
+        "scope": "illustrative 1 C control resolution, not stated by the problem; requires experimental confirmation"
+      }
+    },
+    {
+      "group": "A5",
+      "response_models": {
+        "conversion_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 4.332255042234384,
+          "coefficients": [
+            7.76754943232039,
+            17.481966626974007,
+            23.765795167757457
+          ],
+          "center": 316.6666666666667,
+          "scale": 49.30066485916347,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 15.65414889615686,
+              "coefficients": [
+                20.10787760758987,
+                31.533344600077854
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 4.332255042234384,
+              "coefficients": [
+                7.76754943232039,
+                17.481966626974007,
+                23.765795167757457
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "selectivity_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 5.142847123562957,
+          "coefficients": [
+            2.7268518518518485,
+            10.40294111743444,
+            12.201481481481485
+          ],
+          "center": 316.6666666666667,
+          "scale": 49.30066485916347,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 5.754157249509692,
+              "coefficients": [
+                11.324785295277206,
+                14.928333333333335
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 5.142847123562957,
+              "coefficients": [
+                2.7268518518518485,
+                10.40294111743444,
+                12.201481481481485
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "yield_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 6.516638820468628,
+          "coefficients": [
+            4.815760823920755,
+            7.147504982119583,
+            2.3701661615247467
+          ],
+          "center": 316.6666666666667,
+          "scale": 49.30066485916347,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 9.886148199351366,
+              "coefficients": [
+                8.775529282156196,
+                7.1859269854455015
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 6.516638820468628,
+              "coefficients": [
+                4.815760823920755,
+                7.147504982119583,
+                2.3701661615247467
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        }
+      },
+      "unrestricted": {
+        "temperature_c": 400.0,
+        "predicted_yield_pct": 28.21097129396159,
+        "attained": true,
+        "kind": "maximum",
+        "domain_lower_c": 250,
+        "domain_upper_c": 400,
+        "upper_open": false
+      },
+      "below_350": {
+        "temperature_c": 350.0,
+        "predicted_yield_pct": 9.404252220953822,
+        "attained": false,
+        "kind": "supremum_not_attained",
+        "domain_lower_c": 250,
+        "domain_upper_c": 350,
+        "upper_open": true
+      },
+      "one_degree_control_grid": {
+        "temperature_c": 349.0,
+        "predicted_yield_pct": 9.129166260896167,
+        "scope": "illustrative 1 C control resolution, not stated by the problem; requires experimental confirmation"
+      }
+    },
+    {
+      "group": "A6",
+      "response_models": {
+        "conversion_pct": {
+          "degree": 1,
+          "selection_loocv_rmse": 9.079651010368341,
+          "coefficients": [
+            27.00840151680041,
+            38.15044942324683
+          ],
+          "center": 315.0,
+          "scale": 53.85164807134504,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 9.079651010368341,
+              "coefficients": [
+                27.00840151680041,
+                38.15044942324683
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 14.628066298791266,
+              "coefficients": [
+                4.8286095324224,
+                25.06050608083382,
+                33.32183989082446
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "selectivity_pct": {
+          "degree": 1,
+          "selection_loocv_rmse": 12.498849477576199,
+          "coefficients": [
+            10.91740032210523,
+            13.111999999999998
+          ],
+          "center": 315.0,
+          "scale": 53.85164807134504,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 12.498849477576199,
+              "coefficients": [
+                10.91740032210523,
+                13.111999999999998
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 13.751742078024234,
+              "coefficients": [
+                6.391080597014929,
+                8.339192943308426,
+                6.720919402985071
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "yield_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 9.60769975597289,
+          "coefficients": [
+            6.790942060651725,
+            7.510976082956715,
+            1.255114675261928
+          ],
+          "center": 315.0,
+          "scale": 53.85164807134504,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 12.475101625814464,
+              "coefficients": [
+                10.250490420787397,
+                8.046056735913645
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 9.60769975597289,
+              "coefficients": [
+                6.790942060651725,
+                7.510976082956715,
+                1.255114675261928
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        }
+      },
+      "unrestricted": {
+        "temperature_c": 400.0,
+        "predicted_yield_pct": 30.02932979491747,
+        "attained": true,
+        "kind": "maximum",
+        "domain_lower_c": 250,
+        "domain_upper_c": 400,
+        "upper_open": false
+      },
+      "below_350": {
+        "temperature_c": 350.0,
+        "predicted_yield_pct": 9.005338623022954,
+        "attained": false,
+        "kind": "supremum_not_attained",
+        "domain_lower_c": 250,
+        "domain_upper_c": 350,
+        "upper_open": true
+      },
+      "one_degree_control_grid": {
+        "temperature_c": 349.0,
+        "predicted_yield_pct": 8.704285711686179,
+        "scope": "illustrative 1 C control resolution, not stated by the problem; requires experimental confirmation"
+      }
+    },
+    {
+      "group": "A7",
+      "response_models": {
+        "conversion_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 0.8548249721831584,
+          "coefficients": [
+            -0.7965608776428157,
+            20.652313419702207,
+            45.460166245901135
+          ],
+          "center": 315.0,
+          "scale": 53.85164807134504,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 1.4011684236550979,
+              "coefficients": [
+                20.33097509495024,
+                44.66360536825831
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 0.8548249721831584,
+              "coefficients": [
+                -0.7965608776428157,
+                20.652313419702207,
+                45.460166245901135
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "selectivity_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 0.9057933625065409,
+          "coefficients": [
+            3.3462413646055524,
+            8.714418366974499,
+            11.261758635394452
+          ],
+          "center": 315.0,
+          "scale": 53.85164807134504,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 5.523780630917086,
+              "coefficients": [
+                10.064315938519856,
+                14.607999999999997
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 0.9057933625065409,
+              "coefficients": [
+                3.3462413646055524,
+                8.714418366974499,
+                11.261758635394452
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "yield_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 1.1914950375932554,
+          "coefficients": [
+            3.445000364521373,
+            7.2575937036059175,
+            5.109657864181533
+          ],
+          "center": 315.0,
+          "scale": 53.85164807134504,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 5.844973185038743,
+              "coefficients": [
+                8.647331358285967,
+                8.554658228702902
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 1.1914950375932554,
+              "coefficients": [
+                3.445000364521373,
+                7.2575937036059175,
+                5.109657864181533
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        }
+      },
+      "unrestricted": {
+        "temperature_c": 400.0,
+        "predicted_yield_pct": 25.147921692193787,
+        "attained": true,
+        "kind": "maximum",
+        "domain_lower_c": 250,
+        "domain_upper_c": 400,
+        "upper_open": false
+      },
+      "below_350": {
+        "temperature_c": 350.0,
+        "predicted_yield_pct": 11.28182814540137,
+        "attained": false,
+        "kind": "supremum_not_attained",
+        "domain_lower_c": 250,
+        "domain_upper_c": 350,
+        "upper_open": true
+      },
+      "one_degree_control_grid": {
+        "temperature_c": 349.0,
+        "predicted_yield_pct": 11.06509076363469,
+        "scope": "illustrative 1 C control resolution, not stated by the problem; requires experimental confirmation"
+      }
+    },
+    {
+      "group": "A8",
+      "response_models": {
+        "conversion_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 2.624537721598258,
+          "coefficients": [
+            5.077661058218089,
+            16.2414931698165,
+            18.131020436902507
+          ],
+          "center": 315.0,
+          "scale": 53.85164807134504,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 8.299718478441488,
+              "coefficients": [
+                18.289857763034362,
+                23.208681495120583
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 2.624537721598258,
+              "coefficients": [
+                5.077661058218089,
+                16.2414931698165,
+                18.131020436902507
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "selectivity_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 0.9321472636709494,
+          "coefficients": [
+            2.1665535181236697,
+            12.172208576957328,
+            16.889446481876334
+          ],
+          "center": 315.0,
+          "scale": 53.85164807134504,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 3.6404734260768103,
+              "coefficients": [
+                13.046211678966957,
+                19.056
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 0.9321472636709494,
+              "coefficients": [
+                2.1665535181236697,
+                12.172208576957328,
+                16.889446481876334
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "yield_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 2.155743914877609,
+          "coefficients": [
+            3.8988025101801616,
+            6.534718647698098,
+            2.976493379542351
+          ],
+          "center": 315.0,
+          "scale": 53.85164807134504,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 6.695910726009063,
+              "coefficients": [
+                8.10752331627213,
+                6.875295889722509
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 2.155743914877609,
+              "coefficients": [
+                3.8988025101801616,
+                6.534718647698098,
+                2.976493379542351
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        }
+      },
+      "unrestricted": {
+        "temperature_c": 400.0,
+        "predicted_yield_pct": 23.00435699652326,
+        "attained": true,
+        "kind": "maximum",
+        "domain_lower_c": 250,
+        "domain_upper_c": 400,
+        "upper_open": false
+      },
+      "below_350": {
+        "temperature_c": 350.0,
+        "predicted_yield_pct": 8.870535098545446,
+        "attained": false,
+        "kind": "supremum_not_attained",
+        "domain_lower_c": 250,
+        "domain_upper_c": 350,
+        "upper_open": true
+      },
+      "one_degree_control_grid": {
+        "temperature_c": 349.0,
+        "predicted_yield_pct": 8.656423808178713,
+        "scope": "illustrative 1 C control resolution, not stated by the problem; requires experimental confirmation"
+      }
+    },
+    {
+      "group": "A9",
+      "response_models": {
+        "conversion_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 6.907746756511222,
+          "coefficients": [
+            7.0824574107380736,
+            10.557549222449406,
+            5.712510894797119
+          ],
+          "center": 315.0,
+          "scale": 53.85164807134504,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 12.540435773117036,
+              "coefficients": [
+                13.41466292633661,
+                12.794968305535189
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 6.907746756511222,
+              "coefficients": [
+                7.0824574107380736,
+                10.557549222449406,
+                5.712510894797119
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "selectivity_pct": {
+          "degree": 1,
+          "selection_loocv_rmse": 1.6009027127336946,
+          "coefficients": [
+            13.667548280507368,
+            20.852
+          ],
+          "center": 315.0,
+          "scale": 53.85164807134504,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 1.6009027127336946,
+              "coefficients": [
+                13.667548280507368,
+                20.852
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 4.688850246951876,
+              "coefficients": [
+                0.15923411513860392,
+                13.60331210567361,
+                20.6927658848614
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "yield_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 3.715473064124955,
+          "coefficients": [
+            3.5316961743156545,
+            4.417602033133447,
+            0.9625350697586049
+          ],
+          "center": 315.0,
+          "scale": 53.85164807134504,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 6.289439244852981,
+              "coefficients": [
+                5.84231339423597,
+                4.494231244074257
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 3.715473064124955,
+              "coefficients": [
+                3.5316961743156545,
+                4.417602033133447,
+                0.9625350697586049
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        }
+      },
+      "unrestricted": {
+        "temperature_c": 400.0,
+        "predicted_yield_pct": 16.73411872840456,
+        "attained": true,
+        "kind": "maximum",
+        "domain_lower_c": 250,
+        "domain_upper_c": 400,
+        "upper_open": false
+      },
+      "below_350": {
+        "temperature_c": 350.0,
+        "predicted_yield_pct": 5.325520609000432,
+        "attained": false,
+        "kind": "supremum_not_attained",
+        "domain_lower_c": 250,
+        "domain_upper_c": 350,
+        "upper_open": true
+      },
+      "one_degree_control_grid": {
+        "temperature_c": 349.0,
+        "predicted_yield_pct": 5.159457786229626,
+        "scope": "illustrative 1 C control resolution, not stated by the problem; requires experimental confirmation"
+      }
+    },
+    {
+      "group": "B1",
+      "response_models": {
+        "conversion_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 2.5128033945625585,
+          "coefficients": [
+            5.463931759504999,
+            12.845796892980774,
+            9.426973943603077
+          ],
+          "center": 315.0,
+          "scale": 53.85164807134504,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 9.337041889812614,
+              "coefficients": [
+                15.04998583501628,
+                14.890905703108073
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 2.5128033945625585,
+              "coefficients": [
+                5.463931759504999,
+                12.845796892980774,
+                9.426973943603077
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "selectivity_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 3.3409162164222974,
+          "coefficients": [
+            2.6927582089552327,
+            11.822333615681853,
+            16.08724179104477
+          ],
+          "center": 315.0,
+          "scale": 53.85164807134504,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 4.3985372872766515,
+              "coefficients": [
+                12.908611433377759,
+                18.78
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 3.3409162164222974,
+              "coefficients": [
+                2.6927582089552327,
+                11.822333615681853,
+                16.08724179104477
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "yield_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 2.9348270883272685,
+          "coefficients": [
+            3.483831439222925,
+            4.790613148308344,
+            1.340223075119139
+          ],
+          "center": 315.0,
+          "scale": 53.85164807134504,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 6.1030723315755315,
+              "coefficients": [
+                6.196015534766131,
+                4.8240545143420634
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 2.9348270883272685,
+              "coefficients": [
+                3.483831439222925,
+                4.790613148308344,
+                1.340223075119139
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        }
+      },
+      "unrestricted": {
+        "temperature_c": 400.0,
+        "predicted_yield_pct": 17.581322137057644,
+        "attained": true,
+        "kind": "maximum",
+        "domain_lower_c": 250,
+        "domain_upper_c": 400,
+        "upper_open": false
+      },
+      "below_350": {
+        "temperature_c": 350.0,
+        "predicted_yield_pct": 5.925422378171262,
+        "attained": false,
+        "kind": "supremum_not_attained",
+        "domain_lower_c": 250,
+        "domain_upper_c": 350,
+        "upper_open": true
+      },
+      "one_degree_control_grid": {
+        "temperature_c": 349.0,
+        "predicted_yield_pct": 5.75357176347642,
+        "scope": "illustrative 1 C control resolution, not stated by the problem; requires experimental confirmation"
+      }
+    },
+    {
+      "group": "B2",
+      "response_models": {
+        "conversion_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 7.068634457063413,
+          "coefficients": [
+            7.286235465230577,
+            11.745412381503654,
+            7.656068368064518
+          ],
+          "center": 315.0,
+          "scale": 53.85164807134504,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 12.876069306996547,
+              "coefficients": [
+                14.684731602244275,
+                14.94230383329509
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 7.068634457063413,
+              "coefficients": [
+                7.286235465230577,
+                11.745412381503654,
+                7.656068368064518
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "selectivity_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 3.0347394586172007,
+          "coefficients": [
+            2.878481876332634,
+            11.98528709523386,
+            12.947518123667376
+          ],
+          "center": 315.0,
+          "scale": 53.85164807134504,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 4.725748594846384,
+              "coefficients": [
+                13.146487161582565,
+                15.825999999999997
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 3.0347394586172007,
+              "coefficients": [
+                2.878481876332634,
+                11.98528709523386,
+                12.947518123667376
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "yield_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 4.326078597043465,
+          "coefficients": [
+            3.7943058603172526,
+            4.378330047458179,
+            0.6176648120040834
+          ],
+          "center": 315.0,
+          "scale": 53.85164807134504,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 6.804438030819477,
+              "coefficients": [
+                5.908980024091394,
+                4.411970672321333
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 4.326078597043465,
+              "coefficients": [
+                3.7943058603172526,
+                4.378330047458179,
+                0.6176648120040834
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        }
+      },
+      "unrestricted": {
+        "temperature_c": 400.0,
+        "predicted_yield_pct": 16.98152149943332,
+        "attained": true,
+        "kind": "maximum",
+        "domain_lower_c": 250,
+        "domain_upper_c": 400,
+        "upper_open": false
+      },
+      "below_350": {
+        "temperature_c": 350.0,
+        "predicted_yield_pct": 5.066056118502566,
+        "attained": false,
+        "kind": "supremum_not_attained",
+        "domain_lower_c": 250,
+        "domain_upper_c": 350,
+        "upper_open": true
+      },
+      "one_degree_control_grid": {
+        "temperature_c": 349.0,
+        "predicted_yield_pct": 4.894474258772288,
+        "scope": "illustrative 1 C control resolution, not stated by the problem; requires experimental confirmation"
+      }
+    },
+    {
+      "group": "B3",
+      "response_models": {
+        "conversion_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 3.0544994035170783,
+          "coefficients": [
+            3.372959614250465,
+            5.333490117363449,
+            2.0528009357848562
+          ],
+          "center": 316.6666666666667,
+          "scale": 49.30066485916347,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 6.744261115201305,
+              "coefficients": [
+                6.473758584967944,
+                5.425760550035321
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 3.0544994035170783,
+              "coefficients": [
+                3.372959614250465,
+                5.333490117363449,
+                2.0528009357848562
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "selectivity_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 1.6326167222208865,
+          "coefficients": [
+            1.1611111111111097,
+            5.532285845424562,
+            8.600555555555555
+          ],
+          "center": 316.6666666666667,
+          "scale": 49.30066485916347,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 2.3975231283632352,
+              "coefficients": [
+                5.924813043731809,
+                9.761666666666668
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 1.6326167222208865,
+              "coefficients": [
+                1.1611111111111097,
+                5.532285845424562,
+                8.600555555555555
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "yield_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 1.0514884396111406,
+          "coefficients": [
+            0.8640495185248709,
+            1.057279611387308,
+            0.08448958331780289
+          ],
+          "center": 316.6666666666667,
+          "scale": 49.30066485916347,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 1.7525318004107837,
+              "coefficients": [
+                1.3493816621382762,
+                0.9485391018426741
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 1.0514884396111406,
+              "coefficients": [
+                0.8640495185248709,
+                1.057279611387308,
+                0.08448958331780289
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        }
+      },
+      "unrestricted": {
+        "temperature_c": 400.0,
+        "predicted_yield_pct": 4.340331217392253,
+        "attained": true,
+        "kind": "maximum",
+        "domain_lower_c": 250,
+        "domain_upper_c": 400,
+        "upper_open": false
+      },
+      "below_350": {
+        "temperature_c": 350.0,
+        "predicted_yield_pct": 1.1943351385305285,
+        "attained": false,
+        "kind": "supremum_not_attained",
+        "domain_lower_c": 250,
+        "domain_upper_c": 350,
+        "upper_open": true
+      },
+      "one_degree_control_grid": {
+        "temperature_c": 349.0,
+        "predicted_yield_pct": 1.1495454445648559,
+        "scope": "illustrative 1 C control resolution, not stated by the problem; requires experimental confirmation"
+      }
+    },
+    {
+      "group": "B4",
+      "response_models": {
+        "conversion_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 5.8709156310424655,
+          "coefficients": [
+            4.99871049618488,
+            8.552747777075123,
+            3.9779994709447912
+          ],
+          "center": 316.6666666666667,
+          "scale": 49.30066485916347,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 10.181411955730901,
+              "coefficients": [
+                10.24262035467782,
+                8.976709967129674
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 5.8709156310424655,
+              "coefficients": [
+                4.99871049618488,
+                8.552747777075123,
+                3.9779994709447912
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "selectivity_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 3.061055366175481,
+          "coefficients": [
+            2.4342592592592585,
+            4.221795918444415,
+            7.7607407407407445
+          ],
+          "center": 316.6666666666667,
+          "scale": 49.30066485916347,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 4.583395100202843,
+              "coefficients": [
+                5.044725746474513,
+                10.194999999999999
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 3.061055366175481,
+              "coefficients": [
+                2.4342592592592585,
+                4.221795918444415,
+                7.7607407407407445
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "yield_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 1.7970334747249446,
+          "coefficients": [
+            1.3811783983774195,
+            1.6862939459376496,
+            0.15434731832531734
+          ],
+          "center": 316.6666666666667,
+          "scale": 49.30066485916347,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 2.819709406319895,
+              "coefficients": [
+                2.1532174659087673,
+                1.535525716702737
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 1.7970334747249446,
+              "coefficients": [
+                1.3811783983774195,
+                1.6862939459376496,
+                0.15434731832531734
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        }
+      },
+      "unrestricted": {
+        "temperature_c": 400.0,
+        "predicted_yield_pct": 6.950928319953658,
+        "attained": true,
+        "kind": "maximum",
+        "domain_lower_c": 250,
+        "domain_upper_c": 400,
+        "upper_open": false
+      },
+      "below_350": {
+        "temperature_c": 350.0,
+        "predicted_yield_pct": 1.9258859600892801,
+        "attained": false,
+        "kind": "supremum_not_attained",
+        "domain_lower_c": 250,
+        "domain_upper_c": 350,
+        "upper_open": true
+      },
+      "one_degree_control_grid": {
+        "temperature_c": 349.0,
+        "predicted_yield_pct": 1.8543661819139459,
+        "scope": "illustrative 1 C control resolution, not stated by the problem; requires experimental confirmation"
+      }
+    },
+    {
+      "group": "B5",
+      "response_models": {
+        "conversion_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 6.210887862396879,
+          "coefficients": [
+            6.081127657392894,
+            11.334097352248536,
+            7.65159994052419
+          ],
+          "center": 316.6666666666667,
+          "scale": 49.30066485916347,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 12.207380906637644,
+              "coefficients": [
+                13.38989371752568,
+                13.732727597917087
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 6.210887862396879,
+              "coefficients": [
+                6.081127657392894,
+                11.334097352248536,
+                7.65159994052419
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "selectivity_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 0.8596466577112647,
+          "coefficients": [
+            1.579166666666665,
+            6.672774559166545,
+            10.110833333333336
+          ],
+          "center": 316.6666666666667,
+          "scale": 49.30066485916347,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 3.107752235706096,
+              "coefficients": [
+                7.206630330070056,
+                11.69
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 0.8596466577112647,
+              "coefficients": [
+                1.579166666666665,
+                6.672774559166545,
+                10.110833333333336
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "yield_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 2.619695708295163,
+          "coefficients": [
+            2.0969353616368878,
+            2.7969595082129097,
+            0.5599878744436225
+          ],
+          "center": 316.6666666666667,
+          "scale": 49.30066485916347,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 4.270469718981446,
+              "coefficients": [
+                3.505853045324149,
+                2.6569232360805106
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 2.619695708295163,
+              "coefficients": [
+                2.0969353616368878,
+                2.7969595082129097,
+                0.5599878744436225
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        }
+      },
+      "unrestricted": {
+        "temperature_c": 400.0,
+        "predicted_yield_pct": 11.278956222173766,
+        "attained": true,
+        "kind": "maximum",
+        "domain_lower_c": 250,
+        "domain_upper_c": 400,
+        "upper_open": false
+      },
+      "below_350": {
+        "temperature_c": 350.0,
+        "predicted_yield_pct": 3.4096766798418137,
+        "attained": false,
+        "kind": "supremum_not_attained",
+        "domain_lower_c": 250,
+        "domain_upper_c": 350,
+        "upper_open": true
+      },
+      "one_degree_control_grid": {
+        "temperature_c": 349.0,
+        "predicted_yield_pct": 3.2962907841262066,
+        "scope": "illustrative 1 C control resolution, not stated by the problem; requires experimental confirmation"
+      }
+    },
+    {
+      "group": "B6",
+      "response_models": {
+        "conversion_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 7.9479048128464385,
+          "coefficients": [
+            6.837063882230132,
+            16.606022889132465,
+            14.668407019876101
+          ],
+          "center": 316.6666666666667,
+          "scale": 49.30066485916347,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 13.772845204171668,
+              "coefficients": [
+                18.91737234109944,
+                21.50547090210622
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 7.9479048128464385,
+              "coefficients": [
+                6.837063882230132,
+                16.606022889132465,
+                14.668407019876101
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "selectivity_pct": {
+          "degree": 1,
+          "selection_loocv_rmse": 2.777797559699474,
+          "coefficients": [
+            9.38149394557144,
+            14.501666666666669
+          ],
+          "center": 316.6666666666667,
+          "scale": 49.30066485916347,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 2.777797559699474,
+              "coefficients": [
+                9.38149394557144,
+                14.501666666666669
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 7.145264936960966,
+              "coefficients": [
+                0.7925925925925893,
+                9.113548744813066,
+                13.709074074074078
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "yield_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 2.0889643685176864,
+          "coefficients": [
+            3.024432624621719,
+            5.021544260898616,
+            1.8876928717257027
+          ],
+          "center": 316.6666666666667,
+          "scale": 49.30066485916347,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 5.958932539608894,
+              "coefficients": [
+                6.0439891012341285,
+                4.9121254963474215
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 2.0889643685176864,
+              "coefficients": [
+                3.024432624621719,
+                5.021544260898616,
+                1.8876928717257027
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        }
+      },
+      "unrestricted": {
+        "temperature_c": 400.0,
+        "predicted_yield_pct": 19.016887936885524,
+        "attained": true,
+        "kind": "maximum",
+        "domain_lower_c": 250,
+        "domain_upper_c": 400,
+        "upper_open": false
+      },
+      "below_350": {
+        "temperature_c": 350.0,
+        "predicted_yield_pct": 6.665474240906166,
+        "attained": false,
+        "kind": "supremum_not_attained",
+        "domain_lower_c": 250,
+        "domain_upper_c": 350,
+        "upper_open": true
+      },
+      "one_degree_control_grid": {
+        "temperature_c": 349.0,
+        "predicted_yield_pct": 6.481907204687213,
+        "scope": "illustrative 1 C control resolution, not stated by the problem; requires experimental confirmation"
+      }
+    },
+    {
+      "group": "B7",
+      "response_models": {
+        "conversion_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 5.171149870498884,
+          "coefficients": [
+            7.967592592592598,
+            17.998655424773954,
+            15.599074074074075
+          ],
+          "center": 316.6666666666667,
+          "scale": 49.30066485916347,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 15.62031633875838,
+              "coefficients": [
+                20.69219333660318,
+                23.56666666666667
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 5.171149870498884,
+              "coefficients": [
+                7.967592592592598,
+                17.998655424773954,
+                15.599074074074075
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "selectivity_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 2.2623410659160754,
+          "coefficients": [
+            1.098148148148141,
+            11.14792894197291,
+            16.44018518518519
+          ],
+          "center": 316.6666666666667,
+          "scale": 49.30066485916347,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 2.3090453639726336,
+              "coefficients": [
+                11.519170773864769,
+                17.53833333333333
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 2.2623410659160754,
+              "coefficients": [
+                1.098148148148141,
+                11.14792894197291,
+                16.44018518518519
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        },
+        "yield_pct": {
+          "degree": 2,
+          "selection_loocv_rmse": 3.8296210683957512,
+          "coefficients": [
+            4.3056453703703745,
+            6.75324044367887,
+            2.285404629629627
+          ],
+          "center": 316.6666666666667,
+          "scale": 49.30066485916347,
+          "candidates": [
+            {
+              "degree": 1,
+              "selection_loocv_rmse": 8.57627106478099,
+              "coefficients": [
+                8.208814245327137,
+                6.591050000000003
+              ]
+            },
+            {
+              "degree": 2,
+              "selection_loocv_rmse": 3.8296210683957512,
+              "coefficients": [
+                4.3056453703703745,
+                6.75324044367887,
+                2.285404629629627
+              ]
+            }
+          ],
+          "scope": "LOOCV chooses degree; selected LOOCV error is model-selection evidence, not a fresh independent test"
+        }
+      },
+      "unrestricted": {
+        "temperature_c": 400.0,
+        "predicted_yield_pct": 26.00230833333333,
+        "attained": true,
+        "kind": "maximum",
+        "domain_lower_c": 250,
+        "domain_upper_c": 400,
+        "upper_open": false
+      },
+      "below_350": {
+        "temperature_c": 350.0,
+        "predicted_yield_pct": 8.819723571428565,
+        "attained": false,
+        "kind": "supremum_not_attained",
+        "domain_lower_c": 250,
+        "domain_upper_c": 350,
+        "upper_open": true
+      },
+      "one_degree_control_grid": {
+        "temperature_c": 349.0,
+        "predicted_yield_pct": 8.566416617904753,
+        "scope": "illustrative 1 C control resolution, not stated by the problem; requires experimental confirmation"
+      }
+    }
+  ],
+  "matched_contrasts": [
+    {
+      "from_group": "A1",
+      "to_group": "A2",
+      "changed_feature": "co_loading_pct",
+      "from_value": 1.0,
+      "to_value": 2.0,
+      "matched_temperatures": [
+        250,
+        275,
+        300,
+        325,
+        350
+      ],
+      "differences": [
+        {
+          "temperature_c": 250,
+          "conversion_pct": 2.5358277853080797,
+          "selectivity_pct": -15.979999999999997,
+          "yield_pct": 0.12789040276193286
+        },
+        {
+          "temperature_c": 275,
+          "conversion_pct": 11.3438179212999,
+          "selectivity_pct": -20.15,
+          "yield_pct": 0.7810899580133372
+        },
+        {
+          "temperature_c": 300,
+          "conversion_pct": 23.953353812805297,
+          "selectivity_pct": -27.339999999999996,
+          "yield_pct": 0.6023624133456664
+        },
+        {
+          "temperature_c": 325,
+          "conversion_pct": 36.7011011364622,
+          "selectivity_pct": -19.080000000000002,
+          "yield_pct": 7.48267385234152
+        },
+        {
+          "temperature_c": 350,
+          "conversion_pct": 31.078278774356605,
+          "selectivity_pct": -8.11,
+          "yield_pct": 9.1670445244036
+        }
+      ],
+      "mean_differences": {
+        "conversion_pct": 21.122475886046416,
+        "selectivity_pct": -18.131999999999998,
+        "yield_pct": 3.6322122301732116
+      },
+      "scope": "all recorded formulation fields except one and temperature matched; batch/randomization unknown, so descriptive contrast rather than causal estimate"
+    },
+    {
+      "from_group": "A3",
+      "to_group": "A1",
+      "changed_feature": "feed_ml_min",
+      "from_value": 0.9,
+      "to_value": 1.68,
+      "matched_temperatures": [
+        250,
+        275,
+        300,
+        325,
+        350
+      ],
+      "differences": [
+        {
+          "temperature_c": 250,
+          "conversion_pct": -7.602203507455691,
+          "selectivity_pct": 28.549999999999997,
+          "yield_pct": 0.17205568494565782
+        },
+        {
+          "temperature_c": 275,
+          "conversion_pct": -13.3852143866299,
+          "selectivity_pct": 29.39,
+          "yield_pct": 0.6436495612582978
+        },
+        {
+          "temperature_c": 300,
+          "conversion_pct": -14.281342046947898,
+          "selectivity_pct": 29.929999999999996,
+          "yield_pct": 2.0509329414260007
+        },
+        {
+          "temperature_c": 325,
+          "conversion_pct": -17.8978260375029,
+          "selectivity_pct": 20.980000000000004,
+          "yield_pct": -1.0111064994910386
+        },
+        {
+          "temperature_c": 350,
+          "conversion_pct": -12.136027677153201,
+          "selectivity_pct": 10.36,
+          "yield_pct": -0.659540840807594
+        }
+      ],
+      "mean_differences": {
+        "conversion_pct": -13.060522731137917,
+        "selectivity_pct": 23.842,
+        "yield_pct": 0.23919816946626468
+      },
+      "scope": "all recorded formulation fields except one and temperature matched; batch/randomization unknown, so descriptive contrast rather than causal estimate"
+    },
+    {
+      "from_group": "A4",
+      "to_group": "A1",
+      "changed_feature": "co_loading_pct",
+      "from_value": 0.5,
+      "to_value": 1.0,
+      "matched_temperatures": [
+        250,
+        275,
+        300,
+        325,
+        350
+      ],
+      "differences": [
+        {
+          "temperature_c": 250,
+          "conversion_pct": -1.9522218741076904,
+          "selectivity_pct": 24.43,
+          "yield_pct": 0.317205752243774
+        },
+        {
+          "temperature_c": 275,
+          "conversion_pct": -6.246036879159901,
+          "selectivity_pct": 28.810000000000002,
+          "yield_pct": 1.1474724372378413
+        },
+        {
+          "temperature_c": 300,
+          "conversion_pct": -14.5076726181006,
+          "selectivity_pct": 36.22,
+          "yield_pct": 3.866509993810073
+        },
+        {
+          "temperature_c": 325,
+          "conversion_pct": -23.644262879686,
+          "selectivity_pct": 30.810000000000002,
+          "yield_pct": 1.597425479709031
+        },
+        {
+          "temperature_c": 350,
+          "conversion_pct": -23.6674113813774,
+          "selectivity_pct": 19.96,
+          "yield_pct": 0.896113386039751
+        }
+      ],
+      "mean_differences": {
+        "conversion_pct": -14.003521126486316,
+        "selectivity_pct": 28.046000000000003,
+        "yield_pct": 1.5649454098080942
+      },
+      "scope": "all recorded formulation fields except one and temperature matched; batch/randomization unknown, so descriptive contrast rather than causal estimate"
+    },
+    {
+      "from_group": "A1",
+      "to_group": "A6",
+      "changed_feature": "co_loading_pct",
+      "from_value": 1.0,
+      "to_value": 5.0,
+      "matched_temperatures": [
+        250,
+        275,
+        300,
+        350
+      ],
+      "differences": [
+        {
+          "temperature_c": 250,
+          "conversion_pct": 11.32222727875289,
+          "selectivity_pct": -30.749999999999996,
+          "yield_pct": -0.26202110554768415
+        },
+        {
+          "temperature_c": 275,
+          "conversion_pct": 6.929269782461601,
+          "selectivity_pct": -30.33,
+          "yield_pct": -1.2828488206620194
+        },
+        {
+          "temperature_c": 300,
+          "conversion_pct": 10.5103247096581,
+          "selectivity_pct": -39.76,
+          "yield_pct": -5.196989943140458
+        },
+        {
+          "temperature_c": 350,
+          "conversion_pct": 18.9540102699036,
+          "selectivity_pct": -36.56,
+          "yield_pct": -11.435849710950844
+        }
+      ],
+      "mean_differences": {
+        "conversion_pct": 11.928958010194048,
+        "selectivity_pct": -34.35,
+        "yield_pct": -4.544427395075251
+      },
+      "scope": "all recorded formulation fields except one and temperature matched; batch/randomization unknown, so descriptive contrast rather than causal estimate"
+    },
+    {
+      "from_group": "A9",
+      "to_group": "A10",
+      "changed_feature": "co_loading_pct",
+      "from_value": 1.0,
+      "to_value": 5.0,
+      "matched_temperatures": [
+        250,
+        275,
+        300,
+        350,
+        400
+      ],
+      "differences": [
+        {
+          "temperature_c": 250,
+          "conversion_pct": -1.733197643315772,
+          "selectivity_pct": -3.2100000000000004,
+          "yield_pct": -0.10386351604552597
+        },
+        {
+          "temperature_c": 275,
+          "conversion_pct": -1.9871181921004402,
+          "selectivity_pct": -8.03,
+          "yield_pct": -0.27389395126560884
+        },
+        {
+          "temperature_c": 300,
+          "conversion_pct": -3.0445248974256196,
+          "selectivity_pct": -13.930000000000001,
+          "yield_pct": -0.7248438380485382
+        },
+        {
+          "temperature_c": 350,
+          "conversion_pct": -4.373903838813719,
+          "selectivity_pct": -27.74,
+          "yield_pct": -3.859486225404387
+        },
+        {
+          "temperature_c": 400,
+          "conversion_pct": -12.202772142850996,
+          "selectivity_pct": -31.75,
+          "yield_pct": -14.208764474218345
+        }
+      ],
+      "mean_differences": {
+        "conversion_pct": -4.668303342901309,
+        "selectivity_pct": -16.932,
+        "yield_pct": -3.8341704009964817
+      },
+      "scope": "all recorded formulation fields except one and temperature matched; batch/randomization unknown, so descriptive contrast rather than causal estimate"
+    },
+    {
+      "from_group": "A7",
+      "to_group": "A12",
+      "changed_feature": "feed_ml_min",
+      "from_value": 0.3,
+      "to_value": 1.68,
+      "matched_temperatures": [
+        250,
+        275,
+        300,
+        350,
+        400
+      ],
+      "differences": [
+        {
+          "temperature_c": 250,
+          "conversion_pct": -18.214582076093578,
+          "selectivity_pct": 0.41999999999999993,
+          "yield_pct": -1.0412832901368052
+        },
+        {
+          "temperature_c": 275,
+          "conversion_pct": -25.571325857299062,
+          "selectivity_pct": 1.5499999999999998,
+          "yield_pct": -1.6236377050886672
+        },
+        {
+          "temperature_c": 300,
+          "conversion_pct": -33.0699785850595,
+          "selectivity_pct": 2.380000000000001,
+          "yield_pct": -2.7588236818683285
+        },
+        {
+          "temperature_c": 350,
+          "conversion_pct": -38.6926991201185,
+          "selectivity_pct": 3.620000000000001,
+          "yield_pct": -6.491493940752466
+        },
+        {
+          "temperature_c": 400,
+          "conversion_pct": -31.492449462611198,
+          "selectivity_pct": 3.049999999999997,
+          "yield_pct": -9.112922960896817
+        }
+      ],
+      "mean_differences": {
+        "conversion_pct": -29.408207020236368,
+        "selectivity_pct": 2.2039999999999997,
+        "yield_pct": -4.205632315748617
+      },
+      "scope": "all recorded formulation fields except one and temperature matched; batch/randomization unknown, so descriptive contrast rather than causal estimate"
+    },
+    {
+      "from_group": "A8",
+      "to_group": "A12",
+      "changed_feature": "feed_ml_min",
+      "from_value": 0.9,
+      "to_value": 1.68,
+      "matched_temperatures": [
+        250,
+        275,
+        300,
+        350,
+        400
+      ],
+      "differences": [
+        {
+          "temperature_c": 250,
+          "conversion_pct": -4.824027590885249,
+          "selectivity_pct": 0.54,
+          "yield_pct": -0.2638075229172423
+        },
+        {
+          "temperature_c": 275,
+          "conversion_pct": -5.287939563464641,
+          "selectivity_pct": -0.41000000000000014,
+          "yield_pct": -0.46477433543400154
+        },
+        {
+          "temperature_c": 300,
+          "conversion_pct": -6.264660273753099,
+          "selectivity_pct": -2.5999999999999996,
+          "yield_pct": -1.0455501276194104
+        },
+        {
+          "temperature_c": 350,
+          "conversion_pct": -11.808365234337302,
+          "selectivity_pct": -3.629999999999999,
+          "yield_pct": -3.780002164173398
+        },
+        {
+          "temperature_c": 400,
+          "conversion_pct": -11.581423073052896,
+          "selectivity_pct": -5.1200000000000045,
+          "yield_pct": -7.077215733697063
+        }
+      ],
+      "mean_differences": {
+        "conversion_pct": -7.953283147098638,
+        "selectivity_pct": -2.2440000000000007,
+        "yield_pct": -2.526269976768223
+      },
+      "scope": "all recorded formulation fields except one and temperature matched; batch/randomization unknown, so descriptive contrast rather than causal estimate"
+    },
+    {
+      "from_group": "A12",
+      "to_group": "A9",
+      "changed_feature": "feed_ml_min",
+      "from_value": 1.68,
+      "to_value": 2.1,
+      "matched_temperatures": [
+        250,
+        275,
+        300,
+        350,
+        400
+      ],
+      "differences": [
+        {
+          "temperature_c": 250,
+          "conversion_pct": 0.6114522667315301,
+          "selectivity_pct": -0.7699999999999996,
+          "yield_pct": 0.021917260466113878
+        },
+        {
+          "temperature_c": 275,
+          "conversion_pct": -0.47105877666000984,
+          "selectivity_pct": 1.5700000000000003,
+          "yield_pct": 0.008937507648818899
+        },
+        {
+          "temperature_c": 300,
+          "conversion_pct": -2.1851869770714307,
+          "selectivity_pct": 4.880000000000001,
+          "yield_pct": -0.014392988078018809
+        },
+        {
+          "temperature_c": 350,
+          "conversion_pct": -6.5195528902082,
+          "selectivity_pct": 8.779999999999998,
+          "yield_pct": -0.27536948270451944
+        },
+        {
+          "temperature_c": 400,
+          "conversion_pct": -3.737803835225705,
+          "selectivity_pct": 5.740000000000002,
+          "yield_pct": 0.9849343582674592
+        }
+      ],
+      "mean_differences": {
+        "conversion_pct": -2.460430042486763,
+        "selectivity_pct": 4.040000000000001,
+        "yield_pct": 0.14520533111997075
+      },
+      "scope": "all recorded formulation fields except one and temperature matched; batch/randomization unknown, so descriptive contrast rather than causal estimate"
+    },
+    {
+      "from_group": "A12",
+      "to_group": "B1",
+      "changed_feature": "mode_II",
+      "from_value": 0,
+      "to_value": 1,
+      "matched_temperatures": [
+        250,
+        275,
+        300,
+        350,
+        400
+      ],
+      "differences": [
+        {
+          "temperature_c": 250,
+          "conversion_pct": -0.03352751635958007,
+          "selectivity_pct": 0.15000000000000036,
+          "yield_pct": 4.362497985158087e-05
+        },
+        {
+          "temperature_c": 275,
+          "conversion_pct": -0.05571648352015979,
+          "selectivity_pct": 0.14000000000000057,
+          "yield_pct": 0.00026647266508433853
+        },
+        {
+          "temperature_c": 300,
+          "conversion_pct": -0.19066184565276068,
+          "selectivity_pct": 1.0599999999999987,
+          "yield_pct": 0.04987923398997007
+        },
+        {
+          "temperature_c": 350,
+          "conversion_pct": -0.6030350333748977,
+          "selectivity_pct": 3.7099999999999973,
+          "yield_pct": 0.5821380449628073
+        },
+        {
+          "temperature_c": 400,
+          "conversion_pct": -0.9395223456619988,
+          "selectivity_pct": 4.780000000000001,
+          "yield_pct": 1.7428156303411697
+        }
+      ],
+      "mean_differences": {
+        "conversion_pct": -0.3644926449138794,
+        "selectivity_pct": 1.9679999999999995,
+        "yield_pct": 0.4750286013877766
+      },
+      "scope": "all recorded formulation fields except one and temperature matched; batch/randomization unknown, so descriptive contrast rather than causal estimate"
+    },
+    {
+      "from_group": "A4",
+      "to_group": "A2",
+      "changed_feature": "co_loading_pct",
+      "from_value": 0.5,
+      "to_value": 2.0,
+      "matched_temperatures": [
+        250,
+        275,
+        300,
+        325,
+        350
+      ],
+      "differences": [
+        {
+          "temperature_c": 250,
+          "conversion_pct": 0.5836059112003893,
+          "selectivity_pct": 8.450000000000001,
+          "yield_pct": 0.4450961550057069
+        },
+        {
+          "temperature_c": 275,
+          "conversion_pct": 5.097781042139999,
+          "selectivity_pct": 8.660000000000002,
+          "yield_pct": 1.9285623952511786
+        },
+        {
+          "temperature_c": 300,
+          "conversion_pct": 9.445681194704697,
+          "selectivity_pct": 8.88,
+          "yield_pct": 4.4688724071557395
+        },
+        {
+          "temperature_c": 325,
+          "conversion_pct": 13.056838256776196,
+          "selectivity_pct": 11.73,
+          "yield_pct": 9.080099332050551
+        },
+        {
+          "temperature_c": 350,
+          "conversion_pct": 7.410867392979206,
+          "selectivity_pct": 11.850000000000001,
+          "yield_pct": 10.063157910443351
+        }
+      ],
+      "mean_differences": {
+        "conversion_pct": 7.118954759560097,
+        "selectivity_pct": 9.914,
+        "yield_pct": 5.197157639981305
+      },
+      "scope": "all recorded formulation fields except one and temperature matched; batch/randomization unknown, so descriptive contrast rather than causal estimate"
+    },
+    {
+      "from_group": "A5",
+      "to_group": "A2",
+      "changed_feature": "feed_ml_min",
+      "from_value": 0.3,
+      "to_value": 1.68,
+      "matched_temperatures": [
+        250,
+        275,
+        300,
+        325,
+        350
+      ],
+      "differences": [
+        {
+          "temperature_c": 250,
+          "conversion_pct": -10.184186126228411,
+          "selectivity_pct": 16.11,
+          "yield_pct": 0.5419328064667488
+        },
+        {
+          "temperature_c": 275,
+          "conversion_pct": 4.7715280994484,
+          "selectivity_pct": 10.63,
+          "yield_pct": 2.1451924045164237
+        },
+        {
+          "temperature_c": 300,
+          "conversion_pct": 18.113668835063997,
+          "selectivity_pct": 9.480000000000002,
+          "yield_pct": 5.522932141021832
+        },
+        {
+          "temperature_c": 325,
+          "conversion_pct": 28.033574357302896,
+          "selectivity_pct": 16.76,
+          "yield_pct": 13.335153740993881
+        },
+        {
+          "temperature_c": 350,
+          "conversion_pct": 31.067716798069505,
+          "selectivity_pct": 20.35,
+          "yield_pct": 19.63863358387264
+        }
+      ],
+      "mean_differences": {
+        "conversion_pct": 14.360460392731278,
+        "selectivity_pct": 14.666000000000002,
+        "yield_pct": 8.236768935374306
+      },
+      "scope": "all recorded formulation fields except one and temperature matched; batch/randomization unknown, so descriptive contrast rather than causal estimate"
+    },
+    {
+      "from_group": "A2",
+      "to_group": "A6",
+      "changed_feature": "co_loading_pct",
+      "from_value": 2.0,
+      "to_value": 5.0,
+      "matched_temperatures": [
+        250,
+        275,
+        300,
+        350
+      ],
+      "differences": [
+        {
+          "temperature_c": 250,
+          "conversion_pct": 8.786399493444812,
+          "selectivity_pct": -14.77,
+          "yield_pct": -0.389911508309617
+        },
+        {
+          "temperature_c": 275,
+          "conversion_pct": -4.414548138838299,
+          "selectivity_pct": -10.180000000000001,
+          "yield_pct": -2.0639387786753565
+        },
+        {
+          "temperature_c": 300,
+          "conversion_pct": -13.443029103147197,
+          "selectivity_pct": -12.420000000000002,
+          "yield_pct": -5.799352356486124
+        },
+        {
+          "temperature_c": 350,
+          "conversion_pct": -12.124268504453006,
+          "selectivity_pct": -28.450000000000003,
+          "yield_pct": -20.602894235354444
+        }
+      ],
+      "mean_differences": {
+        "conversion_pct": -5.298861563248423,
+        "selectivity_pct": -16.455000000000002,
+        "yield_pct": -7.214024219706386
+      },
+      "scope": "all recorded formulation fields except one and temperature matched; batch/randomization unknown, so descriptive contrast rather than causal estimate"
+    },
+    {
+      "from_group": "A4",
+      "to_group": "A6",
+      "changed_feature": "co_loading_pct",
+      "from_value": 0.5,
+      "to_value": 5.0,
+      "matched_temperatures": [
+        250,
+        275,
+        300,
+        350,
+        400
+      ],
+      "differences": [
+        {
+          "temperature_c": 250,
+          "conversion_pct": 9.3700054046452,
+          "selectivity_pct": -6.319999999999999,
+          "yield_pct": 0.055184646696089856
+        },
+        {
+          "temperature_c": 275,
+          "conversion_pct": 0.6832329033017004,
+          "selectivity_pct": -1.5199999999999996,
+          "yield_pct": -0.13537638342417813
+        },
+        {
+          "temperature_c": 300,
+          "conversion_pct": -3.9973479084424994,
+          "selectivity_pct": -3.540000000000001,
+          "yield_pct": -1.3304799493303845
+        },
+        {
+          "temperature_c": 350,
+          "conversion_pct": -4.7134011114738,
+          "selectivity_pct": -16.6,
+          "yield_pct": -10.539736324911093
+        },
+        {
+          "temperature_c": 400,
+          "conversion_pct": -5.091728268099004,
+          "selectivity_pct": -3.690000000000005,
+          "yield_pct": -5.16415397246428
+        }
+      ],
+      "mean_differences": {
+        "conversion_pct": -0.7498477960136807,
+        "selectivity_pct": -6.334000000000001,
+        "yield_pct": -3.422912396686769
+      },
+      "scope": "all recorded formulation fields except one and temperature matched; batch/randomization unknown, so descriptive contrast rather than causal estimate"
+    },
+    {
+      "from_group": "A7",
+      "to_group": "A8",
+      "changed_feature": "feed_ml_min",
+      "from_value": 0.3,
+      "to_value": 0.9,
+      "matched_temperatures": [
+        250,
+        275,
+        300,
+        350,
+        400
+      ],
+      "differences": [
+        {
+          "temperature_c": 250,
+          "conversion_pct": -13.390554485208328,
+          "selectivity_pct": -0.1200000000000001,
+          "yield_pct": -0.7774757672195629
+        },
+        {
+          "temperature_c": 275,
+          "conversion_pct": -20.28338629383442,
+          "selectivity_pct": 1.96,
+          "yield_pct": -1.1588633696546657
+        },
+        {
+          "temperature_c": 300,
+          "conversion_pct": -26.8053183113064,
+          "selectivity_pct": 4.98,
+          "yield_pct": -1.7132735542489181
+        },
+        {
+          "temperature_c": 350,
+          "conversion_pct": -26.884333885781196,
+          "selectivity_pct": 7.25,
+          "yield_pct": -2.7114917765790683
+        },
+        {
+          "temperature_c": 400,
+          "conversion_pct": -19.9110263895583,
+          "selectivity_pct": 8.170000000000002,
+          "yield_pct": -2.0357072271997545
+        }
+      ],
+      "mean_differences": {
+        "conversion_pct": -21.45492387313773,
+        "selectivity_pct": 4.448,
+        "yield_pct": -1.679362338980394
+      },
+      "scope": "all recorded formulation fields except one and temperature matched; batch/randomization unknown, so descriptive contrast rather than causal estimate"
+    },
+    {
+      "from_group": "A7",
+      "to_group": "A9",
+      "changed_feature": "feed_ml_min",
+      "from_value": 0.3,
+      "to_value": 2.1,
+      "matched_temperatures": [
+        250,
+        275,
+        300,
+        350,
+        400
+      ],
+      "differences": [
+        {
+          "temperature_c": 250,
+          "conversion_pct": -17.60312980936205,
+          "selectivity_pct": -0.34999999999999964,
+          "yield_pct": -1.0193660296706912
+        },
+        {
+          "temperature_c": 275,
+          "conversion_pct": -26.04238463395907,
+          "selectivity_pct": 3.12,
+          "yield_pct": -1.6147001974398483
+        },
+        {
+          "temperature_c": 300,
+          "conversion_pct": -35.255165562130934,
+          "selectivity_pct": 7.260000000000002,
+          "yield_pct": -2.7732166699463474
+        },
+        {
+          "temperature_c": 350,
+          "conversion_pct": -45.212252010326694,
+          "selectivity_pct": 12.399999999999999,
+          "yield_pct": -6.766863423456986
+        },
+        {
+          "temperature_c": 400,
+          "conversion_pct": -35.2302532978369,
+          "selectivity_pct": 8.79,
+          "yield_pct": -8.127988602629358
+        }
+      ],
+      "mean_differences": {
+        "conversion_pct": -31.868637062723128,
+        "selectivity_pct": 6.244,
+        "yield_pct": -4.060426984628647
+      },
+      "scope": "all recorded formulation fields except one and temperature matched; batch/randomization unknown, so descriptive contrast rather than causal estimate"
+    },
+    {
+      "from_group": "A8",
+      "to_group": "A9",
+      "changed_feature": "feed_ml_min",
+      "from_value": 0.9,
+      "to_value": 2.1,
+      "matched_temperatures": [
+        250,
+        275,
+        300,
+        350,
+        400
+      ],
+      "differences": [
+        {
+          "temperature_c": 250,
+          "conversion_pct": -4.21257532415372,
+          "selectivity_pct": -0.22999999999999954,
+          "yield_pct": -0.2418902624511284
+        },
+        {
+          "temperature_c": 275,
+          "conversion_pct": -5.75899834012465,
+          "selectivity_pct": 1.1600000000000001,
+          "yield_pct": -0.45583682778518264
+        },
+        {
+          "temperature_c": 300,
+          "conversion_pct": -8.44984725082453,
+          "selectivity_pct": 2.280000000000001,
+          "yield_pct": -1.059943115697429
+        },
+        {
+          "temperature_c": 350,
+          "conversion_pct": -18.3279181245455,
+          "selectivity_pct": 5.149999999999999,
+          "yield_pct": -4.0553716468779175
+        },
+        {
+          "temperature_c": 400,
+          "conversion_pct": -15.319226908278601,
+          "selectivity_pct": 0.6199999999999974,
+          "yield_pct": -6.092281375429604
+        }
+      ],
+      "mean_differences": {
+        "conversion_pct": -10.413713189585401,
+        "selectivity_pct": 1.7959999999999994,
+        "yield_pct": -2.3810646456482525
+      },
+      "scope": "all recorded formulation fields except one and temperature matched; batch/randomization unknown, so descriptive contrast rather than causal estimate"
+    },
+    {
+      "from_group": "A9",
+      "to_group": "B5",
+      "changed_feature": "mode_II",
+      "from_value": 0,
+      "to_value": 1,
+      "matched_temperatures": [
+        250,
+        275,
+        300,
+        350,
+        400
+      ],
+      "differences": [
+        {
+          "temperature_c": 250,
+          "conversion_pct": 0.06808528560766991,
+          "selectivity_pct": -1.1000000000000005,
+          "yield_pct": -0.01965711042061527
+        },
+        {
+          "temperature_c": 275,
+          "conversion_pct": 0.8309989016385897,
+          "selectivity_pct": -4.62,
+          "yield_pct": -0.09667026442681295
+        },
+        {
+          "temperature_c": 300,
+          "conversion_pct": 1.0829197357211902,
+          "selectivity_pct": -8.180000000000001,
+          "yield_pct": -0.30108136847392636
+        },
+        {
+          "temperature_c": 350,
+          "conversion_pct": 2.4705165176208013,
+          "selectivity_pct": -15.7,
+          "yield_pct": -1.7236836948184355
+        },
+        {
+          "temperature_c": 400,
+          "conversion_pct": 4.184718650896507,
+          "selectivity_pct": -16.21,
+          "yield_pct": -5.532307278547595
+        }
+      ],
+      "mean_differences": {
+        "conversion_pct": 1.7274478182969517,
+        "selectivity_pct": -9.162,
+        "yield_pct": -1.534679943337477
+      },
+      "scope": "all recorded formulation fields except one and temperature matched; batch/randomization unknown, so descriptive contrast rather than causal estimate"
+    },
+    {
+      "from_group": "B1",
+      "to_group": "B5",
+      "changed_feature": "feed_ml_min",
+      "from_value": 1.68,
+      "to_value": 2.1,
+      "matched_temperatures": [
+        250,
+        275,
+        300,
+        350,
+        400
+      ],
+      "differences": [
+        {
+          "temperature_c": 250,
+          "conversion_pct": 0.7130650686987801,
+          "selectivity_pct": -2.0200000000000005,
+          "yield_pct": 0.0022165250656470264
+        },
+        {
+          "temperature_c": 275,
+          "conversion_pct": 0.41565660849873964,
+          "selectivity_pct": -3.1900000000000004,
+          "yield_pct": -0.08799922944307839
+        },
+        {
+          "temperature_c": 300,
+          "conversion_pct": -0.9116053956974799,
+          "selectivity_pct": -4.359999999999999,
+          "yield_pct": -0.36535359054191524
+        },
+        {
+          "temperature_c": 350,
+          "conversion_pct": -3.4460013392125006,
+          "selectivity_pct": -10.629999999999999,
+          "yield_pct": -2.5811912224857623
+        },
+        {
+          "temperature_c": 400,
+          "conversion_pct": 1.3864371613328004,
+          "selectivity_pct": -15.25,
+          "yield_pct": -6.2901885506213056
+        }
+      ],
+      "mean_differences": {
+        "conversion_pct": -0.36848957927593207,
+        "selectivity_pct": -7.090000000000001,
+        "yield_pct": -1.864503213605283
+      },
+      "scope": "all recorded formulation fields except one and temperature matched; batch/randomization unknown, so descriptive contrast rather than causal estimate"
+    },
+    {
+      "from_group": "B7",
+      "to_group": "B2",
+      "changed_feature": "feed_ml_min",
+      "from_value": 0.9,
+      "to_value": 1.68,
+      "matched_temperatures": [
+        250,
+        275,
+        300,
+        350,
+        400
+      ],
+      "differences": [
+        {
+          "temperature_c": 250,
+          "conversion_pct": -1.6369758426624101,
+          "selectivity_pct": -0.8200000000000003,
+          "yield_pct": -0.08944541247079457
+        },
+        {
+          "temperature_c": 275,
+          "conversion_pct": -3.4973389282679905,
+          "selectivity_pct": -1.6500000000000004,
+          "yield_pct": -0.30416774473491914
+        },
+        {
+          "temperature_c": 300,
+          "conversion_pct": -5.476437249812829,
+          "selectivity_pct": -3.539999999999999,
+          "yield_pct": -0.9245839516825555
+        },
+        {
+          "temperature_c": 350,
+          "conversion_pct": -14.0129678953306,
+          "selectivity_pct": -2.1700000000000017,
+          "yield_pct": -3.8615070544516414
+        },
+        {
+          "temperature_c": 400,
+          "conversion_pct": -24.264760917450708,
+          "selectivity_pct": 0.5300000000000011,
+          "yield_pct": -9.022642475053427
+        }
+      ],
+      "mean_differences": {
+        "conversion_pct": -9.777696166704908,
+        "selectivity_pct": -1.53,
+        "yield_pct": -2.8404693276786674
+      },
+      "scope": "all recorded formulation fields except one and temperature matched; batch/randomization unknown, so descriptive contrast rather than causal estimate"
+    }
+  ],
+  "stability": {
+    "measurements": [
+      {
+        "source_row": 4,
+        "time_min": 20,
+        "conversion_pct": 43.5473885704829,
+        "selectivity_pct": 39.9,
+        "yield_pct": 17.375408039622677
+      },
+      {
+        "source_row": 5,
+        "time_min": 70,
+        "conversion_pct": 37.7881464951316,
+        "selectivity_pct": 38.55,
+        "yield_pct": 14.56733047387323
+      },
+      {
+        "source_row": 6,
+        "time_min": 110,
+        "conversion_pct": 36.556360146903,
+        "selectivity_pct": 36.72,
+        "yield_pct": 13.423495445942784
+      },
+      {
+        "source_row": 7,
+        "time_min": 163,
+        "conversion_pct": 32.7218573637603,
+        "selectivity_pct": 39.53,
+        "yield_pct": 12.934950215894446
+      },
+      {
+        "source_row": 8,
+        "time_min": 197,
+        "conversion_pct": 31.7100969883427,
+        "selectivity_pct": 38.96,
+        "yield_pct": 12.354253786658317
+      },
+      {
+        "source_row": 9,
+        "time_min": 240,
+        "conversion_pct": 29.8542302857545,
+        "selectivity_pct": 40.32,
+        "yield_pct": 12.037225651216215
+      },
+      {
+        "source_row": 10,
+        "time_min": 273,
+        "conversion_pct": 29.9060085761557,
+        "selectivity_pct": 39.04,
+        "yield_pct": 11.675305748131183
+      }
+    ],
+    "summary": {
+      "conversion_pct": {
+        "first": 43.5473885704829,
+        "last": 29.9060085761557,
+        "relative_change_pct": -31.3253686205504,
+        "mean": 34.5834412037901,
+        "cv_pct": 14.480915166248053
+      },
+      "selectivity_pct": {
+        "first": 39.9,
+        "last": 39.04,
+        "relative_change_pct": -2.1553884711779436,
+        "mean": 39.00285714285714,
+        "cv_pct": 3.0041493791596725
+      },
+      "yield_pct": {
+        "first": 17.375408039622677,
+        "last": 11.675305748131183,
+        "relative_change_pct": -32.80557370792702,
+        "mean": 13.481138480191264,
+        "cv_pct": 14.605846303060511
+      }
+    },
+    "scope": "seven time points in one experiment; not seven independent experimental replicates"
+  },
+  "observed_best": {
+    "source_row": 17,
+    "group": "A3",
+    "formula": "200mg 1wt%Co/SiO2- 200mg HAP-乙醇浓度0.9ml/min",
+    "temperature_c": 400,
+    "conversion_pct": 83.7133815760754,
+    "selectivity_pct": 53.43,
+    "yield_pct": 44.72805977609709,
+    "mode_II": 0,
+    "co_mass_mg": 200.0,
+    "co_loading_pct": 1.0,
+    "hap_mass_mg": 200.0,
+    "quartz_mass_mg": 0.0,
+    "feed_ml_min": 0.9
+  },
+  "observed_below_350_best": {
+    "source_row": 10,
+    "group": "A2",
+    "formula": "200mg 2wt%Co/SiO2- 200mg HAP-乙醇浓度1.68ml/min",
+    "temperature_c": 325,
+    "conversion_pct": 56.3824602331247,
+    "selectivity_pct": 30.62,
+    "yield_pct": 17.264309323382783,
+    "mode_II": 0,
+    "co_mass_mg": 200.0,
+    "co_loading_pct": 2.0,
+    "hap_mass_mg": 200.0,
+    "quartz_mass_mg": 0.0,
+    "feed_ml_min": 1.68
+  },
+  "polynomial_best": "A3",
+  "polynomial_low_best": "A2",
+  "experiment_design": {
+    "total_new_runs": 5,
+    "base_plan": [
+      {
+        "slot": 1,
+        "group": "A3",
+        "temperature_c": 400,
+        "formula": "200mg 1wt%Co/SiO2- 200mg HAP-乙醇浓度0.9ml/min",
+        "reason": "重复最高观测点，检查其可重复性"
+      },
+      {
+        "slot": 2,
+        "group": "A3",
+        "temperature_c": 400,
+        "formula": "200mg 1wt%Co/SiO2- 200mg HAP-乙醇浓度0.9ml/min",
+        "reason": "再重复一次，与原观测及第一次新增重复形成三个测量值"
+      },
+      {
+        "slot": 3,
+        "group": "A3",
+        "temperature_c": 425,
+        "formula": "200mg 1wt%Co/SiO2- 200mg HAP-乙醇浓度0.9ml/min",
+        "reason": "补测400至450之间，区分上升、平台和下降趋势"
+      },
+      {
+        "slot": 4,
+        "group": "A2",
+        "temperature_c": 349,
+        "formula": "200mg 2wt%Co/SiO2- 200mg HAP-乙醇浓度1.68ml/min",
+        "reason": "在声明的1℃控制示例下检验严格低于350℃的高端候选"
+      },
+      {
+        "slot": 5,
+        "group": "A2",
+        "temperature_c": 325,
+        "formula": "200mg 2wt%Co/SiO2- 200mg HAP-乙醇浓度1.68ml/min",
+        "reason": "重复低温域当前最高观测点，与349℃新点作参照"
+      }
+    ],
+    "branch": "If the first two repeated A3/400 runs fail the laboratory predeclared repeatability criterion, use the remaining three slots as repeats/control checks instead of adding runs beyond five. This dataset does not identify that laboratory tolerance.",
+    "sequence": "Randomize the last three run order after the initial repeatability check, record batch and reaction time; do not compare unmatched aging times.",
+    "scope": "proposal targeted at current decision uncertainty, not a D-optimal or proven globally optimal design; no invented repeatability threshold"
+  }
+}

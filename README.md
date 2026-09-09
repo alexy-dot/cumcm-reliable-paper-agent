@@ -109,6 +109,27 @@ python3 benchmarks/casting_2021d/run_all.py \
 
 数学排版同样需要Tectonic/XeLaTeX及中文字体；支持上述`--latex-compiler`、`--cache-dir`和`--paper-python`参数。该回放是跨题型历史实测，不是严格盲测或正式提交认证。
 
+### 2021 B：实验数据中的模型选择
+
+[乙醇偶合训练稿](benchmarks/reports/ethanol-2021b-paper.pdf)完成21组温度关系、组合外预测、低温候选与五次实验设计。以催化剂组合整体留出，在训练组内部选择参数，比较训练均值、仅温度、岭回归与随机森林。复杂算法的收益随响应变化：
+
+| 按组等权RMSE / 百分点 | 仅温度二次式 | 岭回归 | 随机森林 |
+| --- | ---: | ---: | ---: |
+| 转化率 | 14.264 | 13.047 | 10.248 |
+| C4选择性 | 10.183 | 9.335 | 10.860 |
+| C4收率 | 5.905 | 4.758 | 4.429 |
+
+[计算与边界](benchmarks/reports/ethanol-2021b-summary.json) · [全部外层预测及内层选择](benchmarks/reports/ethanol-2021b/statistical_results.json) · [历史练习错误的复核](benchmarks/reports/ethanol-2021b/legacy_audit.json)
+
+这次复核纠正了全样本均值基线、逐列打乱依赖配方变量，以及把349.75℃网格候选当作连续最优的问题。严格`T < 350`时，A2经验曲线只有趋近350℃的上确界。最高已测点仍为A3/400℃的44.7281%；不据此承诺新配方或新批次的化学全局最优。
+
+```bash
+python3 -m pip install -r benchmarks/ethanol_2021b/requirements.txt -r requirements-paper.txt
+python3 benchmarks/ethanol_2021b/run_all.py --source-dir /path/2021/B --output runs/ethanol
+```
+
+通用分组比较已放入Skill的`grouped_regression.py`，可用于已审计的数值特征和明确的组编号。历史题重分析不算新盲测；正式源码附录、实验室复验和人工审查仍待完成。
+
 ## 用于自己的题目
 
 将 `skill/cumcm-reliable-paper` 整个目录放入个人 Codex skills 目录，或在 Codex 中指定该目录下的 `SKILL.md`：
@@ -164,7 +185,7 @@ python3 benchmarks/verify_intake.py --source-dir /path/2020/D --output runs/inta
 
 ## 当前边界
 
-当前是国奖导向的辅助工具，**已完成炉温优化与在线切割两类历史题回放，但尚未证明国奖级可靠性，不保证奖项**。首次限时稿未通过论文验收，后续修订不补算为盲测成绩。通用题型求解、赛区差异与更广泛的独立评阅仍在完善。规则摘录的权利归原发布者，代码适用MIT许可证。
+当前是国奖导向的辅助工具，**已覆盖炉温优化、在线切割与实验数据统计建模三类历史题，但尚未证明国奖级可靠性，不保证奖项**。首次限时稿未通过论文验收，后续修订不补算为盲测成绩。通用题型求解、赛区差异与更广泛的独立评阅仍在完善。规则摘录的权利归原发布者，代码适用MIT许可证。
 
 数据读取不等于题意理解；第一存储行暂作表头候选，图示、单位、日期和公式缓存需结合原文解释。数值一致不证明两种算法真正独立；人工签核字段不认证身份，文件哈希也不是防篡改认证。项目会明确区分合成示例、历史回放和陌生题验收。
 

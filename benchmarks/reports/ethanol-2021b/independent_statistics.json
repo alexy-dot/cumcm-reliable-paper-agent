@@ -1,0 +1,262 @@
+{
+  "passed": true,
+  "comparisons": [
+    {
+      "target": "conversion_pct",
+      "family": "training_mean",
+      "metric": "row_rmse",
+      "value": 22.819190271537437,
+      "error": 0.0,
+      "passed": true
+    },
+    {
+      "target": "conversion_pct",
+      "family": "training_mean",
+      "metric": "group_rmse",
+      "value": 22.504134849306677,
+      "error": 0.0,
+      "passed": true
+    },
+    {
+      "target": "conversion_pct",
+      "family": "temperature_only",
+      "metric": "row_rmse",
+      "value": 14.280072494950277,
+      "error": 0.0,
+      "passed": true
+    },
+    {
+      "target": "conversion_pct",
+      "family": "temperature_only",
+      "metric": "group_rmse",
+      "value": 14.26359525662485,
+      "error": 3.552713678800501e-15,
+      "passed": true
+    },
+    {
+      "target": "conversion_pct",
+      "family": "ridge",
+      "metric": "row_rmse",
+      "value": 12.944976236879636,
+      "error": 0.0,
+      "passed": true
+    },
+    {
+      "target": "conversion_pct",
+      "family": "ridge",
+      "metric": "group_rmse",
+      "value": 13.046620526770843,
+      "error": 0.0,
+      "passed": true
+    },
+    {
+      "target": "conversion_pct",
+      "family": "random_forest",
+      "metric": "row_rmse",
+      "value": 10.158345866150235,
+      "error": 0.0,
+      "passed": true
+    },
+    {
+      "target": "conversion_pct",
+      "family": "random_forest",
+      "metric": "group_rmse",
+      "value": 10.24759777165527,
+      "error": 1.7763568394002505e-15,
+      "passed": true
+    },
+    {
+      "target": "conversion_pct",
+      "family": "nested_selection",
+      "metric": "row_rmse",
+      "value": 10.158345866150235,
+      "error": 0.0,
+      "passed": true
+    },
+    {
+      "target": "conversion_pct",
+      "family": "nested_selection",
+      "metric": "group_rmse",
+      "value": 10.24759777165527,
+      "error": 1.7763568394002505e-15,
+      "passed": true
+    },
+    {
+      "target": "selectivity_pct",
+      "family": "training_mean",
+      "metric": "row_rmse",
+      "value": 13.561482422316406,
+      "error": 1.7763568394002505e-15,
+      "passed": true
+    },
+    {
+      "target": "selectivity_pct",
+      "family": "training_mean",
+      "metric": "group_rmse",
+      "value": 13.547643727641667,
+      "error": 0.0,
+      "passed": true
+    },
+    {
+      "target": "selectivity_pct",
+      "family": "temperature_only",
+      "metric": "row_rmse",
+      "value": 9.97896353875171,
+      "error": 0.0,
+      "passed": true
+    },
+    {
+      "target": "selectivity_pct",
+      "family": "temperature_only",
+      "metric": "group_rmse",
+      "value": 10.183089721839012,
+      "error": 1.7763568394002505e-15,
+      "passed": true
+    },
+    {
+      "target": "selectivity_pct",
+      "family": "ridge",
+      "metric": "row_rmse",
+      "value": 9.213343731634673,
+      "error": 0.0,
+      "passed": true
+    },
+    {
+      "target": "selectivity_pct",
+      "family": "ridge",
+      "metric": "group_rmse",
+      "value": 9.33547939185351,
+      "error": 1.7763568394002505e-15,
+      "passed": true
+    },
+    {
+      "target": "selectivity_pct",
+      "family": "random_forest",
+      "metric": "row_rmse",
+      "value": 10.67815360627216,
+      "error": 0.0,
+      "passed": true
+    },
+    {
+      "target": "selectivity_pct",
+      "family": "random_forest",
+      "metric": "group_rmse",
+      "value": 10.859999153864155,
+      "error": 1.7763568394002505e-15,
+      "passed": true
+    },
+    {
+      "target": "selectivity_pct",
+      "family": "nested_selection",
+      "metric": "row_rmse",
+      "value": 10.631331100733693,
+      "error": 0.0,
+      "passed": true
+    },
+    {
+      "target": "selectivity_pct",
+      "family": "nested_selection",
+      "metric": "group_rmse",
+      "value": 10.784490248581845,
+      "error": 0.0,
+      "passed": true
+    },
+    {
+      "target": "yield_pct",
+      "family": "training_mean",
+      "metric": "row_rmse",
+      "value": 9.354292843182188,
+      "error": 0.0,
+      "passed": true
+    },
+    {
+      "target": "yield_pct",
+      "family": "training_mean",
+      "metric": "group_rmse",
+      "value": 9.026981210424006,
+      "error": 0.0,
+      "passed": true
+    },
+    {
+      "target": "yield_pct",
+      "family": "temperature_only",
+      "metric": "row_rmse",
+      "value": 6.027571222680567,
+      "error": 0.0,
+      "passed": true
+    },
+    {
+      "target": "yield_pct",
+      "family": "temperature_only",
+      "metric": "group_rmse",
+      "value": 5.905063324666808,
+      "error": 0.0,
+      "passed": true
+    },
+    {
+      "target": "yield_pct",
+      "family": "ridge",
+      "metric": "row_rmse",
+      "value": 4.917670372564027,
+      "error": 0.0,
+      "passed": true
+    },
+    {
+      "target": "yield_pct",
+      "family": "ridge",
+      "metric": "group_rmse",
+      "value": 4.757866108570766,
+      "error": 8.881784197001252e-16,
+      "passed": true
+    },
+    {
+      "target": "yield_pct",
+      "family": "random_forest",
+      "metric": "row_rmse",
+      "value": 4.479450619323504,
+      "error": 0.0,
+      "passed": true
+    },
+    {
+      "target": "yield_pct",
+      "family": "random_forest",
+      "metric": "group_rmse",
+      "value": 4.428879929284824,
+      "error": 0.0,
+      "passed": true
+    },
+    {
+      "target": "yield_pct",
+      "family": "nested_selection",
+      "metric": "row_rmse",
+      "value": 4.479450619323504,
+      "error": 0.0,
+      "passed": true
+    },
+    {
+      "target": "yield_pct",
+      "family": "nested_selection",
+      "metric": "group_rmse",
+      "value": 4.428879929284824,
+      "error": 0.0,
+      "passed": true
+    }
+  ],
+  "direct_workbook_anchors": [
+    {
+      "claim": "observed_best",
+      "group": "A3",
+      "temperature_c": 400,
+      "yield_pct": 44.72805977609708
+    },
+    {
+      "claim": "observed_below_350_best",
+      "group": "A2",
+      "temperature_c": 325,
+      "yield_pct": 17.264309323382783
+    }
+  ],
+  "decisions_sha256": "4b69731c1d5aeca658e105155d987cee57bfdad23c9d16e949986ab019a643cb",
+  "results_sha256": "4ca8dca3e32d4b5d1672ae3ed47360bbe41372a33b34d46be6be820a19810501",
+  "scope": "independent scalar metric recomputation and source-row group separation; selection isolation additionally tested by held-out label perturbation"
+}

@@ -37,6 +37,15 @@ jobs:
       - run: python -m pip install -r requirements-paper.txt
       - run: python -m unittest discover -s tests -p 'test_render_paper.py' -v
       - run: python -m unittest discover -s tests -p 'test_paper_structure.py' -v
+  grouped-statistics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r benchmarks/ethanol_2021b/requirements.txt
+      - run: python -m unittest discover -s benchmarks/ethanol_2021b -p 'test_*.py' -v
   submission-checks:
     runs-on: ubuntu-latest
     steps:

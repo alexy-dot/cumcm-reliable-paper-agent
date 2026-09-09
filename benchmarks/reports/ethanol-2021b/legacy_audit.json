@@ -1,0 +1,53 @@
+{
+  "legacy_predictions_sha256": "a683563e0bc552a0691ab6d85d43cffda2209697217797a0cdb85948fa9b9174",
+  "baseline_comparisons": [
+    {
+      "target": "conversion_pct",
+      "recorded_model_rmse": 10.869997448308066,
+      "global_mean_rmse": 22.73066967319291,
+      "training_fold_mean_rmse": 22.819190271537437,
+      "old_improvement_pct": 52.179158799146855,
+      "corrected_improvement_pct": 52.364666235040325
+    },
+    {
+      "target": "selectivity_pct",
+      "recorded_model_rmse": 10.786792951184424,
+      "global_mean_rmse": 13.472197045633663,
+      "training_fold_mean_rmse": 13.561482422316406,
+      "old_improvement_pct": 19.932933621391612,
+      "corrected_improvement_pct": 20.460074973559152
+    },
+    {
+      "target": "yield_pct",
+      "recorded_model_rmse": 4.809480941081818,
+      "global_mean_rmse": 9.302667094511428,
+      "training_fold_mean_rmse": 9.354292843182186,
+      "old_improvement_pct": 48.299977928701644,
+      "corrected_improvement_pct": 48.58530707014186
+    }
+  ],
+  "single_column_permutation_counterexample": [
+    {
+      "column": "co_mass",
+      "inconsistent_rows": 88,
+      "rows": 114
+    },
+    {
+      "column": "hap_mass",
+      "inconsistent_rows": 96,
+      "rows": 114
+    },
+    {
+      "column": "total_mass",
+      "inconsistent_rows": 81,
+      "rows": 114
+    },
+    {
+      "column": "co_fraction",
+      "inconsistent_rows": 26,
+      "rows": 114
+    }
+  ],
+  "scope": "recorded old OOF predictions aligned to source observations; no claim to revalidate the old estimator implementation. Counterexample illustrates structural inconsistency, not the exact old permutation draws.",
+  "correction": "Using all labels gives the mean baseline unavailable information; here it understates, rather than inflates, the model improvement percentage. Independent permutation of derived composition fields is not a valid physical component intervention."
+}
