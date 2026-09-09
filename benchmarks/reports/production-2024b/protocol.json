@@ -1,0 +1,18 @@
+{
+  "facts_sha256": "e6834a60d17866a05361f2743e103ab9c01707b8466856448e3e31e3359f81c4",
+  "sampling": "directional uniform-mixture likelihood-ratio martingales; stop at E_reject>=20 or E_accept>=10; unresolved at 300 remains unresolved",
+  "policy_bits": [
+    "inspect_fresh_1",
+    "inspect_fresh_2",
+    "inspect_recovered_1",
+    "inspect_recovered_2",
+    "inspect_final",
+    "disassemble"
+  ],
+  "verification": {
+    "simulation_orders_per_case": 50000,
+    "simulation_seed": 20240906,
+    "cost_agreement": "absolute mean error <= 6*sample_standard_error + 0.02 yuan; numerical check, not inference of real process risk"
+  },
+  "scope": "Q1/Q2 development only; Q3 multi-stage production and Q4 sampled-rate propagation are not yet solved; previously studied historical topic, not a blind trial"
+}

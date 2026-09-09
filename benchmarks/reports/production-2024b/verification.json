@@ -1,0 +1,153 @@
+{
+  "passed": true,
+  "simulations": [
+    {
+      "case": 1,
+      "exact_expected_cost": 37.15888888888889,
+      "orders": 50000,
+      "mean_cost": 37.15232,
+      "cost_standard_error": 0.06649347937962038,
+      "mean_customer_returns": 0.21004,
+      "mean_assemblies": 1.21004,
+      "error": 0.006568888888885738,
+      "threshold": 0.4189608762777223,
+      "passed": true
+    },
+    {
+      "case": 2,
+      "exact_expected_cost": 44.0,
+      "orders": 50000,
+      "mean_cost": 43.95022,
+      "cost_standard_error": 0.06879386521303929,
+      "mean_customer_returns": 0.24794,
+      "mean_assemblies": 1.24794,
+      "error": 0.04977999999999838,
+      "threshold": 0.43276319127823576,
+      "passed": true
+    },
+    {
+      "case": 3,
+      "exact_expected_cost": 39.525555555555556,
+      "orders": 50000,
+      "mean_cost": 39.40516,
+      "cost_standard_error": 0.060763511679091026,
+      "mean_customer_returns": 0.0,
+      "mean_assemblies": 1.20612,
+      "error": 0.12039555555555381,
+      "threshold": 0.38458107007454617,
+      "passed": true
+    },
+    {
+      "case": 4,
+      "exact_expected_cost": 41.25,
+      "orders": 50000,
+      "mean_cost": 41.26484,
+      "cost_standard_error": 0.058666116538872715,
+      "mean_customer_returns": 0.0,
+      "mean_assemblies": 1.24984,
+      "error": 0.01483999999999952,
+      "threshold": 0.3719966992332363,
+      "passed": true
+    },
+    {
+      "case": 5,
+      "exact_expected_cost": 41.03666666666667,
+      "orders": 50000,
+      "mean_cost": 41.05482,
+      "cost_standard_error": 0.08538745877302073,
+      "mean_customer_returns": 0.2117,
+      "mean_assemblies": 1.2117,
+      "error": 0.01815333333333058,
+      "threshold": 0.5323247526381244,
+      "passed": true
+    },
+    {
+      "case": 6,
+      "exact_expected_cost": 34.3213296398892,
+      "orders": 50000,
+      "mean_cost": 34.36652,
+      "cost_standard_error": 0.07540377561090378,
+      "mean_customer_returns": 0.16754,
+      "mean_assemblies": 1.16754,
+      "error": 0.045190360110801464,
+      "threshold": 0.4724226536654227,
+      "passed": true
+    }
+  ],
+  "quadrature_checks": [
+    {
+      "n": 2,
+      "k": 2,
+      "direction": "accept",
+      "log_error": 6.661338147750939e-16,
+      "passed": true
+    },
+    {
+      "n": 2,
+      "k": 2,
+      "direction": "reject",
+      "log_error": 4.440892098500626e-16,
+      "passed": true
+    },
+    {
+      "n": 22,
+      "k": 0,
+      "direction": "accept",
+      "log_error": 6.661338147750939e-16,
+      "passed": true
+    },
+    {
+      "n": 22,
+      "k": 0,
+      "direction": "reject",
+      "log_error": 0.0,
+      "passed": true
+    },
+    {
+      "n": 50,
+      "k": 3,
+      "direction": "accept",
+      "log_error": 1.27675647831893e-15,
+      "passed": true
+    },
+    {
+      "n": 50,
+      "k": 3,
+      "direction": "reject",
+      "log_error": 3.9968028886505635e-15,
+      "passed": true
+    },
+    {
+      "n": 100,
+      "k": 10,
+      "direction": "accept",
+      "log_error": 3.1086244689504383e-15,
+      "passed": true
+    },
+    {
+      "n": 100,
+      "k": 10,
+      "direction": "reject",
+      "log_error": 4.440892098500626e-16,
+      "passed": true
+    },
+    {
+      "n": 300,
+      "k": 40,
+      "direction": "accept",
+      "log_error": 1.816324868286756e-13,
+      "passed": true
+    },
+    {
+      "n": 300,
+      "k": 40,
+      "direction": "reject",
+      "log_error": 1.8895995879120164e-13,
+      "passed": true
+    }
+  ],
+  "boundary_probabilities_within_bounds": true,
+  "rework_sha256": "d9452feea6d994b5cb22806370cd57a0dfa1d0610e5eabab339e9b29c489947b",
+  "sampling_sha256": "1fe8f9c967b984adf9f0e0d6d00c41e7f94f827c2575745e7b0800e280cc7975",
+  "scope": "item-level simulation of selected policies, independent likelihood integration, and boundary operating probabilities; analytic test validity and policy limits require stated assumptions"
+}

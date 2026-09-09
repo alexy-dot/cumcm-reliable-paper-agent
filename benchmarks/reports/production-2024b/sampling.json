@@ -1,0 +1,1563 @@
+{
+  "boundaries": [
+    {
+      "n": 1,
+      "accept_at_most": null,
+      "reject_at_least": null
+    },
+    {
+      "n": 2,
+      "accept_at_most": null,
+      "reject_at_least": 2
+    },
+    {
+      "n": 3,
+      "accept_at_most": null,
+      "reject_at_least": 3
+    },
+    {
+      "n": 4,
+      "accept_at_most": null,
+      "reject_at_least": 3
+    },
+    {
+      "n": 5,
+      "accept_at_most": null,
+      "reject_at_least": 3
+    },
+    {
+      "n": 6,
+      "accept_at_most": null,
+      "reject_at_least": 4
+    },
+    {
+      "n": 7,
+      "accept_at_most": null,
+      "reject_at_least": 4
+    },
+    {
+      "n": 8,
+      "accept_at_most": null,
+      "reject_at_least": 4
+    },
+    {
+      "n": 9,
+      "accept_at_most": null,
+      "reject_at_least": 5
+    },
+    {
+      "n": 10,
+      "accept_at_most": null,
+      "reject_at_least": 5
+    },
+    {
+      "n": 11,
+      "accept_at_most": null,
+      "reject_at_least": 5
+    },
+    {
+      "n": 12,
+      "accept_at_most": null,
+      "reject_at_least": 5
+    },
+    {
+      "n": 13,
+      "accept_at_most": null,
+      "reject_at_least": 6
+    },
+    {
+      "n": 14,
+      "accept_at_most": null,
+      "reject_at_least": 6
+    },
+    {
+      "n": 15,
+      "accept_at_most": null,
+      "reject_at_least": 6
+    },
+    {
+      "n": 16,
+      "accept_at_most": null,
+      "reject_at_least": 6
+    },
+    {
+      "n": 17,
+      "accept_at_most": null,
+      "reject_at_least": 7
+    },
+    {
+      "n": 18,
+      "accept_at_most": null,
+      "reject_at_least": 7
+    },
+    {
+      "n": 19,
+      "accept_at_most": null,
+      "reject_at_least": 7
+    },
+    {
+      "n": 20,
+      "accept_at_most": null,
+      "reject_at_least": 7
+    },
+    {
+      "n": 21,
+      "accept_at_most": null,
+      "reject_at_least": 8
+    },
+    {
+      "n": 22,
+      "accept_at_most": null,
+      "reject_at_least": 8
+    },
+    {
+      "n": 23,
+      "accept_at_most": null,
+      "reject_at_least": 8
+    },
+    {
+      "n": 24,
+      "accept_at_most": null,
+      "reject_at_least": 8
+    },
+    {
+      "n": 25,
+      "accept_at_most": null,
+      "reject_at_least": 8
+    },
+    {
+      "n": 26,
+      "accept_at_most": null,
+      "reject_at_least": 9
+    },
+    {
+      "n": 27,
+      "accept_at_most": null,
+      "reject_at_least": 9
+    },
+    {
+      "n": 28,
+      "accept_at_most": null,
+      "reject_at_least": 9
+    },
+    {
+      "n": 29,
+      "accept_at_most": null,
+      "reject_at_least": 9
+    },
+    {
+      "n": 30,
+      "accept_at_most": null,
+      "reject_at_least": 9
+    },
+    {
+      "n": 31,
+      "accept_at_most": null,
+      "reject_at_least": 10
+    },
+    {
+      "n": 32,
+      "accept_at_most": null,
+      "reject_at_least": 10
+    },
+    {
+      "n": 33,
+      "accept_at_most": null,
+      "reject_at_least": 10
+    },
+    {
+      "n": 34,
+      "accept_at_most": 0,
+      "reject_at_least": 10
+    },
+    {
+      "n": 35,
+      "accept_at_most": 0,
+      "reject_at_least": 10
+    },
+    {
+      "n": 36,
+      "accept_at_most": 0,
+      "reject_at_least": 11
+    },
+    {
+      "n": 37,
+      "accept_at_most": 0,
+      "reject_at_least": 11
+    },
+    {
+      "n": 38,
+      "accept_at_most": 0,
+      "reject_at_least": 11
+    },
+    {
+      "n": 39,
+      "accept_at_most": 0,
+      "reject_at_least": 11
+    },
+    {
+      "n": 40,
+      "accept_at_most": 0,
+      "reject_at_least": 11
+    },
+    {
+      "n": 41,
+      "accept_at_most": 0,
+      "reject_at_least": 12
+    },
+    {
+      "n": 42,
+      "accept_at_most": 0,
+      "reject_at_least": 12
+    },
+    {
+      "n": 43,
+      "accept_at_most": 0,
+      "reject_at_least": 12
+    },
+    {
+      "n": 44,
+      "accept_at_most": 0,
+      "reject_at_least": 12
+    },
+    {
+      "n": 45,
+      "accept_at_most": 0,
+      "reject_at_least": 12
+    },
+    {
+      "n": 46,
+      "accept_at_most": 0,
+      "reject_at_least": 12
+    },
+    {
+      "n": 47,
+      "accept_at_most": 0,
+      "reject_at_least": 13
+    },
+    {
+      "n": 48,
+      "accept_at_most": 0,
+      "reject_at_least": 13
+    },
+    {
+      "n": 49,
+      "accept_at_most": 0,
+      "reject_at_least": 13
+    },
+    {
+      "n": 50,
+      "accept_at_most": 0,
+      "reject_at_least": 13
+    },
+    {
+      "n": 51,
+      "accept_at_most": 0,
+      "reject_at_least": 13
+    },
+    {
+      "n": 52,
+      "accept_at_most": 0,
+      "reject_at_least": 13
+    },
+    {
+      "n": 53,
+      "accept_at_most": 0,
+      "reject_at_least": 14
+    },
+    {
+      "n": 54,
+      "accept_at_most": 0,
+      "reject_at_least": 14
+    },
+    {
+      "n": 55,
+      "accept_at_most": 0,
+      "reject_at_least": 14
+    },
+    {
+      "n": 56,
+      "accept_at_most": 1,
+      "reject_at_least": 14
+    },
+    {
+      "n": 57,
+      "accept_at_most": 1,
+      "reject_at_least": 14
+    },
+    {
+      "n": 58,
+      "accept_at_most": 1,
+      "reject_at_least": 15
+    },
+    {
+      "n": 59,
+      "accept_at_most": 1,
+      "reject_at_least": 15
+    },
+    {
+      "n": 60,
+      "accept_at_most": 1,
+      "reject_at_least": 15
+    },
+    {
+      "n": 61,
+      "accept_at_most": 1,
+      "reject_at_least": 15
+    },
+    {
+      "n": 62,
+      "accept_at_most": 1,
+      "reject_at_least": 15
+    },
+    {
+      "n": 63,
+      "accept_at_most": 1,
+      "reject_at_least": 15
+    },
+    {
+      "n": 64,
+      "accept_at_most": 1,
+      "reject_at_least": 16
+    },
+    {
+      "n": 65,
+      "accept_at_most": 1,
+      "reject_at_least": 16
+    },
+    {
+      "n": 66,
+      "accept_at_most": 1,
+      "reject_at_least": 16
+    },
+    {
+      "n": 67,
+      "accept_at_most": 1,
+      "reject_at_least": 16
+    },
+    {
+      "n": 68,
+      "accept_at_most": 1,
+      "reject_at_least": 16
+    },
+    {
+      "n": 69,
+      "accept_at_most": 1,
+      "reject_at_least": 16
+    },
+    {
+      "n": 70,
+      "accept_at_most": 1,
+      "reject_at_least": 17
+    },
+    {
+      "n": 71,
+      "accept_at_most": 1,
+      "reject_at_least": 17
+    },
+    {
+      "n": 72,
+      "accept_at_most": 1,
+      "reject_at_least": 17
+    },
+    {
+      "n": 73,
+      "accept_at_most": 1,
+      "reject_at_least": 17
+    },
+    {
+      "n": 74,
+      "accept_at_most": 1,
+      "reject_at_least": 17
+    },
+    {
+      "n": 75,
+      "accept_at_most": 2,
+      "reject_at_least": 17
+    },
+    {
+      "n": 76,
+      "accept_at_most": 2,
+      "reject_at_least": 18
+    },
+    {
+      "n": 77,
+      "accept_at_most": 2,
+      "reject_at_least": 18
+    },
+    {
+      "n": 78,
+      "accept_at_most": 2,
+      "reject_at_least": 18
+    },
+    {
+      "n": 79,
+      "accept_at_most": 2,
+      "reject_at_least": 18
+    },
+    {
+      "n": 80,
+      "accept_at_most": 2,
+      "reject_at_least": 18
+    },
+    {
+      "n": 81,
+      "accept_at_most": 2,
+      "reject_at_least": 18
+    },
+    {
+      "n": 82,
+      "accept_at_most": 2,
+      "reject_at_least": 19
+    },
+    {
+      "n": 83,
+      "accept_at_most": 2,
+      "reject_at_least": 19
+    },
+    {
+      "n": 84,
+      "accept_at_most": 2,
+      "reject_at_least": 19
+    },
+    {
+      "n": 85,
+      "accept_at_most": 2,
+      "reject_at_least": 19
+    },
+    {
+      "n": 86,
+      "accept_at_most": 2,
+      "reject_at_least": 19
+    },
+    {
+      "n": 87,
+      "accept_at_most": 2,
+      "reject_at_least": 19
+    },
+    {
+      "n": 88,
+      "accept_at_most": 2,
+      "reject_at_least": 19
+    },
+    {
+      "n": 89,
+      "accept_at_most": 2,
+      "reject_at_least": 20
+    },
+    {
+      "n": 90,
+      "accept_at_most": 2,
+      "reject_at_least": 20
+    },
+    {
+      "n": 91,
+      "accept_at_most": 2,
+      "reject_at_least": 20
+    },
+    {
+      "n": 92,
+      "accept_at_most": 2,
+      "reject_at_least": 20
+    },
+    {
+      "n": 93,
+      "accept_at_most": 3,
+      "reject_at_least": 20
+    },
+    {
+      "n": 94,
+      "accept_at_most": 3,
+      "reject_at_least": 20
+    },
+    {
+      "n": 95,
+      "accept_at_most": 3,
+      "reject_at_least": 21
+    },
+    {
+      "n": 96,
+      "accept_at_most": 3,
+      "reject_at_least": 21
+    },
+    {
+      "n": 97,
+      "accept_at_most": 3,
+      "reject_at_least": 21
+    },
+    {
+      "n": 98,
+      "accept_at_most": 3,
+      "reject_at_least": 21
+    },
+    {
+      "n": 99,
+      "accept_at_most": 3,
+      "reject_at_least": 21
+    },
+    {
+      "n": 100,
+      "accept_at_most": 3,
+      "reject_at_least": 21
+    },
+    {
+      "n": 101,
+      "accept_at_most": 3,
+      "reject_at_least": 22
+    },
+    {
+      "n": 102,
+      "accept_at_most": 3,
+      "reject_at_least": 22
+    },
+    {
+      "n": 103,
+      "accept_at_most": 3,
+      "reject_at_least": 22
+    },
+    {
+      "n": 104,
+      "accept_at_most": 3,
+      "reject_at_least": 22
+    },
+    {
+      "n": 105,
+      "accept_at_most": 3,
+      "reject_at_least": 22
+    },
+    {
+      "n": 106,
+      "accept_at_most": 3,
+      "reject_at_least": 22
+    },
+    {
+      "n": 107,
+      "accept_at_most": 3,
+      "reject_at_least": 22
+    },
+    {
+      "n": 108,
+      "accept_at_most": 3,
+      "reject_at_least": 23
+    },
+    {
+      "n": 109,
+      "accept_at_most": 4,
+      "reject_at_least": 23
+    },
+    {
+      "n": 110,
+      "accept_at_most": 4,
+      "reject_at_least": 23
+    },
+    {
+      "n": 111,
+      "accept_at_most": 4,
+      "reject_at_least": 23
+    },
+    {
+      "n": 112,
+      "accept_at_most": 4,
+      "reject_at_least": 23
+    },
+    {
+      "n": 113,
+      "accept_at_most": 4,
+      "reject_at_least": 23
+    },
+    {
+      "n": 114,
+      "accept_at_most": 4,
+      "reject_at_least": 24
+    },
+    {
+      "n": 115,
+      "accept_at_most": 4,
+      "reject_at_least": 24
+    },
+    {
+      "n": 116,
+      "accept_at_most": 4,
+      "reject_at_least": 24
+    },
+    {
+      "n": 117,
+      "accept_at_most": 4,
+      "reject_at_least": 24
+    },
+    {
+      "n": 118,
+      "accept_at_most": 4,
+      "reject_at_least": 24
+    },
+    {
+      "n": 119,
+      "accept_at_most": 4,
+      "reject_at_least": 24
+    },
+    {
+      "n": 120,
+      "accept_at_most": 4,
+      "reject_at_least": 24
+    },
+    {
+      "n": 121,
+      "accept_at_most": 4,
+      "reject_at_least": 25
+    },
+    {
+      "n": 122,
+      "accept_at_most": 4,
+      "reject_at_least": 25
+    },
+    {
+      "n": 123,
+      "accept_at_most": 4,
+      "reject_at_least": 25
+    },
+    {
+      "n": 124,
+      "accept_at_most": 4,
+      "reject_at_least": 25
+    },
+    {
+      "n": 125,
+      "accept_at_most": 5,
+      "reject_at_least": 25
+    },
+    {
+      "n": 126,
+      "accept_at_most": 5,
+      "reject_at_least": 25
+    },
+    {
+      "n": 127,
+      "accept_at_most": 5,
+      "reject_at_least": 26
+    },
+    {
+      "n": 128,
+      "accept_at_most": 5,
+      "reject_at_least": 26
+    },
+    {
+      "n": 129,
+      "accept_at_most": 5,
+      "reject_at_least": 26
+    },
+    {
+      "n": 130,
+      "accept_at_most": 5,
+      "reject_at_least": 26
+    },
+    {
+      "n": 131,
+      "accept_at_most": 5,
+      "reject_at_least": 26
+    },
+    {
+      "n": 132,
+      "accept_at_most": 5,
+      "reject_at_least": 26
+    },
+    {
+      "n": 133,
+      "accept_at_most": 5,
+      "reject_at_least": 26
+    },
+    {
+      "n": 134,
+      "accept_at_most": 5,
+      "reject_at_least": 27
+    },
+    {
+      "n": 135,
+      "accept_at_most": 5,
+      "reject_at_least": 27
+    },
+    {
+      "n": 136,
+      "accept_at_most": 5,
+      "reject_at_least": 27
+    },
+    {
+      "n": 137,
+      "accept_at_most": 5,
+      "reject_at_least": 27
+    },
+    {
+      "n": 138,
+      "accept_at_most": 5,
+      "reject_at_least": 27
+    },
+    {
+      "n": 139,
+      "accept_at_most": 5,
+      "reject_at_least": 27
+    },
+    {
+      "n": 140,
+      "accept_at_most": 6,
+      "reject_at_least": 27
+    },
+    {
+      "n": 141,
+      "accept_at_most": 6,
+      "reject_at_least": 28
+    },
+    {
+      "n": 142,
+      "accept_at_most": 6,
+      "reject_at_least": 28
+    },
+    {
+      "n": 143,
+      "accept_at_most": 6,
+      "reject_at_least": 28
+    },
+    {
+      "n": 144,
+      "accept_at_most": 6,
+      "reject_at_least": 28
+    },
+    {
+      "n": 145,
+      "accept_at_most": 6,
+      "reject_at_least": 28
+    },
+    {
+      "n": 146,
+      "accept_at_most": 6,
+      "reject_at_least": 28
+    },
+    {
+      "n": 147,
+      "accept_at_most": 6,
+      "reject_at_least": 28
+    },
+    {
+      "n": 148,
+      "accept_at_most": 6,
+      "reject_at_least": 29
+    },
+    {
+      "n": 149,
+      "accept_at_most": 6,
+      "reject_at_least": 29
+    },
+    {
+      "n": 150,
+      "accept_at_most": 6,
+      "reject_at_least": 29
+    },
+    {
+      "n": 151,
+      "accept_at_most": 6,
+      "reject_at_least": 29
+    },
+    {
+      "n": 152,
+      "accept_at_most": 6,
+      "reject_at_least": 29
+    },
+    {
+      "n": 153,
+      "accept_at_most": 6,
+      "reject_at_least": 29
+    },
+    {
+      "n": 154,
+      "accept_at_most": 6,
+      "reject_at_least": 29
+    },
+    {
+      "n": 155,
+      "accept_at_most": 7,
+      "reject_at_least": 30
+    },
+    {
+      "n": 156,
+      "accept_at_most": 7,
+      "reject_at_least": 30
+    },
+    {
+      "n": 157,
+      "accept_at_most": 7,
+      "reject_at_least": 30
+    },
+    {
+      "n": 158,
+      "accept_at_most": 7,
+      "reject_at_least": 30
+    },
+    {
+      "n": 159,
+      "accept_at_most": 7,
+      "reject_at_least": 30
+    },
+    {
+      "n": 160,
+      "accept_at_most": 7,
+      "reject_at_least": 30
+    },
+    {
+      "n": 161,
+      "accept_at_most": 7,
+      "reject_at_least": 30
+    },
+    {
+      "n": 162,
+      "accept_at_most": 7,
+      "reject_at_least": 31
+    },
+    {
+      "n": 163,
+      "accept_at_most": 7,
+      "reject_at_least": 31
+    },
+    {
+      "n": 164,
+      "accept_at_most": 7,
+      "reject_at_least": 31
+    },
+    {
+      "n": 165,
+      "accept_at_most": 7,
+      "reject_at_least": 31
+    },
+    {
+      "n": 166,
+      "accept_at_most": 7,
+      "reject_at_least": 31
+    },
+    {
+      "n": 167,
+      "accept_at_most": 7,
+      "reject_at_least": 31
+    },
+    {
+      "n": 168,
+      "accept_at_most": 7,
+      "reject_at_least": 32
+    },
+    {
+      "n": 169,
+      "accept_at_most": 7,
+      "reject_at_least": 32
+    },
+    {
+      "n": 170,
+      "accept_at_most": 8,
+      "reject_at_least": 32
+    },
+    {
+      "n": 171,
+      "accept_at_most": 8,
+      "reject_at_least": 32
+    },
+    {
+      "n": 172,
+      "accept_at_most": 8,
+      "reject_at_least": 32
+    },
+    {
+      "n": 173,
+      "accept_at_most": 8,
+      "reject_at_least": 32
+    },
+    {
+      "n": 174,
+      "accept_at_most": 8,
+      "reject_at_least": 32
+    },
+    {
+      "n": 175,
+      "accept_at_most": 8,
+      "reject_at_least": 33
+    },
+    {
+      "n": 176,
+      "accept_at_most": 8,
+      "reject_at_least": 33
+    },
+    {
+      "n": 177,
+      "accept_at_most": 8,
+      "reject_at_least": 33
+    },
+    {
+      "n": 178,
+      "accept_at_most": 8,
+      "reject_at_least": 33
+    },
+    {
+      "n": 179,
+      "accept_at_most": 8,
+      "reject_at_least": 33
+    },
+    {
+      "n": 180,
+      "accept_at_most": 8,
+      "reject_at_least": 33
+    },
+    {
+      "n": 181,
+      "accept_at_most": 8,
+      "reject_at_least": 33
+    },
+    {
+      "n": 182,
+      "accept_at_most": 8,
+      "reject_at_least": 34
+    },
+    {
+      "n": 183,
+      "accept_at_most": 8,
+      "reject_at_least": 34
+    },
+    {
+      "n": 184,
+      "accept_at_most": 8,
+      "reject_at_least": 34
+    },
+    {
+      "n": 185,
+      "accept_at_most": 9,
+      "reject_at_least": 34
+    },
+    {
+      "n": 186,
+      "accept_at_most": 9,
+      "reject_at_least": 34
+    },
+    {
+      "n": 187,
+      "accept_at_most": 9,
+      "reject_at_least": 34
+    },
+    {
+      "n": 188,
+      "accept_at_most": 9,
+      "reject_at_least": 34
+    },
+    {
+      "n": 189,
+      "accept_at_most": 9,
+      "reject_at_least": 34
+    },
+    {
+      "n": 190,
+      "accept_at_most": 9,
+      "reject_at_least": 35
+    },
+    {
+      "n": 191,
+      "accept_at_most": 9,
+      "reject_at_least": 35
+    },
+    {
+      "n": 192,
+      "accept_at_most": 9,
+      "reject_at_least": 35
+    },
+    {
+      "n": 193,
+      "accept_at_most": 9,
+      "reject_at_least": 35
+    },
+    {
+      "n": 194,
+      "accept_at_most": 9,
+      "reject_at_least": 35
+    },
+    {
+      "n": 195,
+      "accept_at_most": 9,
+      "reject_at_least": 35
+    },
+    {
+      "n": 196,
+      "accept_at_most": 9,
+      "reject_at_least": 35
+    },
+    {
+      "n": 197,
+      "accept_at_most": 9,
+      "reject_at_least": 36
+    },
+    {
+      "n": 198,
+      "accept_at_most": 9,
+      "reject_at_least": 36
+    },
+    {
+      "n": 199,
+      "accept_at_most": 10,
+      "reject_at_least": 36
+    },
+    {
+      "n": 200,
+      "accept_at_most": 10,
+      "reject_at_least": 36
+    },
+    {
+      "n": 201,
+      "accept_at_most": 10,
+      "reject_at_least": 36
+    },
+    {
+      "n": 202,
+      "accept_at_most": 10,
+      "reject_at_least": 36
+    },
+    {
+      "n": 203,
+      "accept_at_most": 10,
+      "reject_at_least": 36
+    },
+    {
+      "n": 204,
+      "accept_at_most": 10,
+      "reject_at_least": 37
+    },
+    {
+      "n": 205,
+      "accept_at_most": 10,
+      "reject_at_least": 37
+    },
+    {
+      "n": 206,
+      "accept_at_most": 10,
+      "reject_at_least": 37
+    },
+    {
+      "n": 207,
+      "accept_at_most": 10,
+      "reject_at_least": 37
+    },
+    {
+      "n": 208,
+      "accept_at_most": 10,
+      "reject_at_least": 37
+    },
+    {
+      "n": 209,
+      "accept_at_most": 10,
+      "reject_at_least": 37
+    },
+    {
+      "n": 210,
+      "accept_at_most": 10,
+      "reject_at_least": 37
+    },
+    {
+      "n": 211,
+      "accept_at_most": 10,
+      "reject_at_least": 38
+    },
+    {
+      "n": 212,
+      "accept_at_most": 10,
+      "reject_at_least": 38
+    },
+    {
+      "n": 213,
+      "accept_at_most": 11,
+      "reject_at_least": 38
+    },
+    {
+      "n": 214,
+      "accept_at_most": 11,
+      "reject_at_least": 38
+    },
+    {
+      "n": 215,
+      "accept_at_most": 11,
+      "reject_at_least": 38
+    },
+    {
+      "n": 216,
+      "accept_at_most": 11,
+      "reject_at_least": 38
+    },
+    {
+      "n": 217,
+      "accept_at_most": 11,
+      "reject_at_least": 38
+    },
+    {
+      "n": 218,
+      "accept_at_most": 11,
+      "reject_at_least": 39
+    },
+    {
+      "n": 219,
+      "accept_at_most": 11,
+      "reject_at_least": 39
+    },
+    {
+      "n": 220,
+      "accept_at_most": 11,
+      "reject_at_least": 39
+    },
+    {
+      "n": 221,
+      "accept_at_most": 11,
+      "reject_at_least": 39
+    },
+    {
+      "n": 222,
+      "accept_at_most": 11,
+      "reject_at_least": 39
+    },
+    {
+      "n": 223,
+      "accept_at_most": 11,
+      "reject_at_least": 39
+    },
+    {
+      "n": 224,
+      "accept_at_most": 11,
+      "reject_at_least": 39
+    },
+    {
+      "n": 225,
+      "accept_at_most": 11,
+      "reject_at_least": 40
+    },
+    {
+      "n": 226,
+      "accept_at_most": 11,
+      "reject_at_least": 40
+    },
+    {
+      "n": 227,
+      "accept_at_most": 12,
+      "reject_at_least": 40
+    },
+    {
+      "n": 228,
+      "accept_at_most": 12,
+      "reject_at_least": 40
+    },
+    {
+      "n": 229,
+      "accept_at_most": 12,
+      "reject_at_least": 40
+    },
+    {
+      "n": 230,
+      "accept_at_most": 12,
+      "reject_at_least": 40
+    },
+    {
+      "n": 231,
+      "accept_at_most": 12,
+      "reject_at_least": 40
+    },
+    {
+      "n": 232,
+      "accept_at_most": 12,
+      "reject_at_least": 40
+    },
+    {
+      "n": 233,
+      "accept_at_most": 12,
+      "reject_at_least": 41
+    },
+    {
+      "n": 234,
+      "accept_at_most": 12,
+      "reject_at_least": 41
+    },
+    {
+      "n": 235,
+      "accept_at_most": 12,
+      "reject_at_least": 41
+    },
+    {
+      "n": 236,
+      "accept_at_most": 12,
+      "reject_at_least": 41
+    },
+    {
+      "n": 237,
+      "accept_at_most": 12,
+      "reject_at_least": 41
+    },
+    {
+      "n": 238,
+      "accept_at_most": 12,
+      "reject_at_least": 41
+    },
+    {
+      "n": 239,
+      "accept_at_most": 12,
+      "reject_at_least": 41
+    },
+    {
+      "n": 240,
+      "accept_at_most": 12,
+      "reject_at_least": 42
+    },
+    {
+      "n": 241,
+      "accept_at_most": 13,
+      "reject_at_least": 42
+    },
+    {
+      "n": 242,
+      "accept_at_most": 13,
+      "reject_at_least": 42
+    },
+    {
+      "n": 243,
+      "accept_at_most": 13,
+      "reject_at_least": 42
+    },
+    {
+      "n": 244,
+      "accept_at_most": 13,
+      "reject_at_least": 42
+    },
+    {
+      "n": 245,
+      "accept_at_most": 13,
+      "reject_at_least": 42
+    },
+    {
+      "n": 246,
+      "accept_at_most": 13,
+      "reject_at_least": 42
+    },
+    {
+      "n": 247,
+      "accept_at_most": 13,
+      "reject_at_least": 43
+    },
+    {
+      "n": 248,
+      "accept_at_most": 13,
+      "reject_at_least": 43
+    },
+    {
+      "n": 249,
+      "accept_at_most": 13,
+      "reject_at_least": 43
+    },
+    {
+      "n": 250,
+      "accept_at_most": 13,
+      "reject_at_least": 43
+    },
+    {
+      "n": 251,
+      "accept_at_most": 13,
+      "reject_at_least": 43
+    },
+    {
+      "n": 252,
+      "accept_at_most": 13,
+      "reject_at_least": 43
+    },
+    {
+      "n": 253,
+      "accept_at_most": 13,
+      "reject_at_least": 43
+    },
+    {
+      "n": 254,
+      "accept_at_most": 14,
+      "reject_at_least": 43
+    },
+    {
+      "n": 255,
+      "accept_at_most": 14,
+      "reject_at_least": 44
+    },
+    {
+      "n": 256,
+      "accept_at_most": 14,
+      "reject_at_least": 44
+    },
+    {
+      "n": 257,
+      "accept_at_most": 14,
+      "reject_at_least": 44
+    },
+    {
+      "n": 258,
+      "accept_at_most": 14,
+      "reject_at_least": 44
+    },
+    {
+      "n": 259,
+      "accept_at_most": 14,
+      "reject_at_least": 44
+    },
+    {
+      "n": 260,
+      "accept_at_most": 14,
+      "reject_at_least": 44
+    },
+    {
+      "n": 261,
+      "accept_at_most": 14,
+      "reject_at_least": 44
+    },
+    {
+      "n": 262,
+      "accept_at_most": 14,
+      "reject_at_least": 45
+    },
+    {
+      "n": 263,
+      "accept_at_most": 14,
+      "reject_at_least": 45
+    },
+    {
+      "n": 264,
+      "accept_at_most": 14,
+      "reject_at_least": 45
+    },
+    {
+      "n": 265,
+      "accept_at_most": 14,
+      "reject_at_least": 45
+    },
+    {
+      "n": 266,
+      "accept_at_most": 14,
+      "reject_at_least": 45
+    },
+    {
+      "n": 267,
+      "accept_at_most": 14,
+      "reject_at_least": 45
+    },
+    {
+      "n": 268,
+      "accept_at_most": 15,
+      "reject_at_least": 45
+    },
+    {
+      "n": 269,
+      "accept_at_most": 15,
+      "reject_at_least": 46
+    },
+    {
+      "n": 270,
+      "accept_at_most": 15,
+      "reject_at_least": 46
+    },
+    {
+      "n": 271,
+      "accept_at_most": 15,
+      "reject_at_least": 46
+    },
+    {
+      "n": 272,
+      "accept_at_most": 15,
+      "reject_at_least": 46
+    },
+    {
+      "n": 273,
+      "accept_at_most": 15,
+      "reject_at_least": 46
+    },
+    {
+      "n": 274,
+      "accept_at_most": 15,
+      "reject_at_least": 46
+    },
+    {
+      "n": 275,
+      "accept_at_most": 15,
+      "reject_at_least": 46
+    },
+    {
+      "n": 276,
+      "accept_at_most": 15,
+      "reject_at_least": 46
+    },
+    {
+      "n": 277,
+      "accept_at_most": 15,
+      "reject_at_least": 47
+    },
+    {
+      "n": 278,
+      "accept_at_most": 15,
+      "reject_at_least": 47
+    },
+    {
+      "n": 279,
+      "accept_at_most": 15,
+      "reject_at_least": 47
+    },
+    {
+      "n": 280,
+      "accept_at_most": 15,
+      "reject_at_least": 47
+    },
+    {
+      "n": 281,
+      "accept_at_most": 16,
+      "reject_at_least": 47
+    },
+    {
+      "n": 282,
+      "accept_at_most": 16,
+      "reject_at_least": 47
+    },
+    {
+      "n": 283,
+      "accept_at_most": 16,
+      "reject_at_least": 47
+    },
+    {
+      "n": 284,
+      "accept_at_most": 16,
+      "reject_at_least": 48
+    },
+    {
+      "n": 285,
+      "accept_at_most": 16,
+      "reject_at_least": 48
+    },
+    {
+      "n": 286,
+      "accept_at_most": 16,
+      "reject_at_least": 48
+    },
+    {
+      "n": 287,
+      "accept_at_most": 16,
+      "reject_at_least": 48
+    },
+    {
+      "n": 288,
+      "accept_at_most": 16,
+      "reject_at_least": 48
+    },
+    {
+      "n": 289,
+      "accept_at_most": 16,
+      "reject_at_least": 48
+    },
+    {
+      "n": 290,
+      "accept_at_most": 16,
+      "reject_at_least": 48
+    },
+    {
+      "n": 291,
+      "accept_at_most": 16,
+      "reject_at_least": 48
+    },
+    {
+      "n": 292,
+      "accept_at_most": 16,
+      "reject_at_least": 49
+    },
+    {
+      "n": 293,
+      "accept_at_most": 16,
+      "reject_at_least": 49
+    },
+    {
+      "n": 294,
+      "accept_at_most": 16,
+      "reject_at_least": 49
+    },
+    {
+      "n": 295,
+      "accept_at_most": 17,
+      "reject_at_least": 49
+    },
+    {
+      "n": 296,
+      "accept_at_most": 17,
+      "reject_at_least": 49
+    },
+    {
+      "n": 297,
+      "accept_at_most": 17,
+      "reject_at_least": 49
+    },
+    {
+      "n": 298,
+      "accept_at_most": 17,
+      "reject_at_least": 49
+    },
+    {
+      "n": 299,
+      "accept_at_most": 17,
+      "reject_at_least": 50
+    },
+    {
+      "n": 300,
+      "accept_at_most": 17,
+      "reject_at_least": 50
+    }
+  ],
+  "operating_characteristics": [
+    {
+      "true_defect_rate": 0.01,
+      "accept_probability": 0.999892772310598,
+      "reject_probability": 0.00010722686715624225,
+      "unresolved_probability": 8.222453599889219e-10,
+      "expected_tests_up_to_cap": 42.94102543044154
+    },
+    {
+      "true_defect_rate": 0.05,
+      "accept_probability": 0.8574615639010744,
+      "reject_probability": 0.0036041361423123784,
+      "unresolved_probability": 0.1389342999566066,
+      "expected_tests_up_to_cap": 145.23723197961414
+    },
+    {
+      "true_defect_rate": 0.1,
+      "accept_probability": 0.066800700158904,
+      "reject_probability": 0.02754042087380219,
+      "unresolved_probability": 0.9056588789673021,
+      "expected_tests_up_to_cap": 277.9357265674951
+    },
+    {
+      "true_defect_rate": 0.15,
+      "accept_probability": 0.00502176756084747,
+      "reject_probability": 0.4126297468674737,
+      "unresolved_probability": 0.5823484855716721,
+      "expected_tests_up_to_cap": 230.63525187172965
+    },
+    {
+      "true_defect_rate": 0.2,
+      "accept_probability": 0.0005443416553511871,
+      "reject_probability": 0.9689023960053329,
+      "unresolved_probability": 0.030553262339320725,
+      "expected_tests_up_to_cap": 101.56223300100703
+    },
+    {
+      "true_defect_rate": 0.3,
+      "accept_probability": 5.443123068341608e-06,
+      "reject_probability": 0.9999945470144193,
+      "unresolved_probability": 9.862511581918497e-09,
+      "expected_tests_up_to_cap": 26.934688896550565
+    }
+  ],
+  "naive_repeated_fixed_tests_at_boundary": {
+    "true_defect_rate": 0.1,
+    "accept_probability": 0.32973138494043747,
+    "reject_probability": 0.23009086870354883,
+    "unresolved_probability": 0.44017774635601886,
+    "expected_tests_up_to_cap": 174.93483928441245
+  },
+  "validity": "Ville inequality controls probability of ever rejecting under p<=0.1 by 0.05, and ever accepting under p>=0.1 by 0.10, under iid Bernoulli sampling",
+  "cap_policy": "At 300 observations, unresolved remains unresolved; do not force acceptance or rejection",
+  "minimality": "No unique sample-size optimum is identified without separation from 0.1, power/indifference requirements or sampling/decision costs. These are valid sequential boundaries, not a proof of minimum expected sample size.",
+  "fixed_design_examples": {
+    "all_good_accept_n": 22,
+    "all_bad_reject_n": 2,
+    "scope": "predeclared fixed-size examples only; cannot repeatedly apply fixed-sample confidence thresholds without correcting optional stopping"
+  }
+}

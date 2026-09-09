@@ -97,6 +97,19 @@ python3 benchmarks/ethanol_2021b/run_all.py --source-dir /path/2021/B --output r
 
 通用分组比较已放入Skill的`grouped_regression.py`，可用于已审计的数值特征和明确的组编号。历史题重分析不算新盲测；正式源码附录、实验室复验和人工审查仍待完成。
 
+## 2024 B：概率与返工决策（进行中）
+
+[问题1、2阶段结果](reports/production-2024b/q1-q2-report.md)给出可随时停止的抽样候选，以及保留零件真实质量和检测知识的两零件返工模型。64类声明策略以有理数求解，识别14类无法终止的策略；六个代表最优策略分别以5万个完整订单仿真核对。未把每次免费补发算作新收入，也未把回收坏件重新抽成好件。
+
+抽样反例说明，逐次套用固定样本置信阈值不能保持原错误率。修正后的规则明确保留300件上限下的未决结果。**问题3和4尚未完成，本结果不属于四问完整实测。** 原题已在往年论文研究中接触，不标为盲测。
+
+```bash
+.venv/bin/python benchmarks/production_2024b/run_q1_q2.py \
+  --source /path/2024/B题.pdf --output runs/production-q1-q2
+```
+
+依赖已包含在统一环境中。结果与所有策略见[计算记录](reports/production-2024b/rework.json)、[抽样边界](reports/production-2024b/sampling.json)、[独立验证](reports/production-2024b/verification.json)。
+
 ## 大型原始输入审计
 
 [真实输入集成记录](reports/intake-2020d.json)：2020 D的30个工作表、1,796,765行数据，与 openpyxl 独立读取及 math.fsum 计算的行数、缺失数、范围和均值全部一致。复跑需要自备题目附件并安装 openpyxl：

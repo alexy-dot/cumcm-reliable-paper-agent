@@ -1,0 +1,110 @@
+{
+  "source_sha256": "f54529dd15d729b046e248ea41033b4f66ef68333be2bee912b0c54eafd227ab",
+  "cases": [
+    {
+      "case": 1,
+      "p1": 0.1,
+      "inspect1": 2,
+      "p2": 0.1,
+      "inspect2": 3,
+      "assembly_defect": 0.1,
+      "inspect_final": 3,
+      "replacement_loss": 6,
+      "disassembly": 5,
+      "purchase1": 4,
+      "purchase2": 18,
+      "assembly": 6,
+      "price": 56
+    },
+    {
+      "case": 2,
+      "p1": 0.2,
+      "inspect1": 2,
+      "p2": 0.2,
+      "inspect2": 3,
+      "assembly_defect": 0.2,
+      "inspect_final": 3,
+      "replacement_loss": 6,
+      "disassembly": 5,
+      "purchase1": 4,
+      "purchase2": 18,
+      "assembly": 6,
+      "price": 56
+    },
+    {
+      "case": 3,
+      "p1": 0.1,
+      "inspect1": 2,
+      "p2": 0.1,
+      "inspect2": 3,
+      "assembly_defect": 0.1,
+      "inspect_final": 3,
+      "replacement_loss": 30,
+      "disassembly": 5,
+      "purchase1": 4,
+      "purchase2": 18,
+      "assembly": 6,
+      "price": 56
+    },
+    {
+      "case": 4,
+      "p1": 0.2,
+      "inspect1": 1,
+      "p2": 0.2,
+      "inspect2": 1,
+      "assembly_defect": 0.2,
+      "inspect_final": 2,
+      "replacement_loss": 30,
+      "disassembly": 5,
+      "purchase1": 4,
+      "purchase2": 18,
+      "assembly": 6,
+      "price": 56
+    },
+    {
+      "case": 5,
+      "p1": 0.1,
+      "inspect1": 8,
+      "p2": 0.2,
+      "inspect2": 1,
+      "assembly_defect": 0.1,
+      "inspect_final": 2,
+      "replacement_loss": 10,
+      "disassembly": 5,
+      "purchase1": 4,
+      "purchase2": 18,
+      "assembly": 6,
+      "price": 56
+    },
+    {
+      "case": 6,
+      "p1": 0.05,
+      "inspect1": 2,
+      "p2": 0.05,
+      "inspect2": 3,
+      "assembly_defect": 0.05,
+      "inspect_final": 3,
+      "replacement_loss": 10,
+      "disassembly": 40,
+      "purchase1": 4,
+      "purchase2": 18,
+      "assembly": 6,
+      "price": 56
+    }
+  ],
+  "sampling": {
+    "nominal_rate": 0.1,
+    "reject_error": 0.05,
+    "accept_error": 0.1,
+    "cap": 300
+  },
+  "interpretations": [
+    "independent Bernoulli purchase defects, large lot; inspections perfect and do not damage good items",
+    "assembly failures are independent per attempt conditional on all inputs good, exactly as original appendix defines",
+    "quality of reused components is persistent; perfect prior inspection knowledge is retained",
+    "one customer pays price once; replacement until a good product arrives is free, with additional loss for each delivered defective product",
+    "compare stationary policies: fresh component inspections, recovered unknown-component inspections, final inspection, and disassembly; known-good components need not be re-tested",
+    "no holding, time, capacity, salvage or inspection damage costs supplied; expected profit per fulfilled order is the chosen objective"
+  ],
+  "scope": "Q1/Q2 development only; Q3 multi-stage production and Q4 sampled-rate propagation are not yet solved; previously studied historical topic, not a blind trial"
+}

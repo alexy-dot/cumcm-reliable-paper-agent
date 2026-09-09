@@ -1,0 +1,109 @@
+{
+  "source_sha256": "f54529dd15d729b046e248ea41033b4f66ef68333be2bee912b0c54eafd227ab",
+  "completed_scope": [
+    "Q1 anytime-valid sampling candidate with explicit unresolved outcomes",
+    "Q2 exact comparison of 64 declared stationary policies"
+  ],
+  "unfinished": [
+    "Q3 multi-stage eight-component model",
+    "Q4 propagation from actual or declared sample counts",
+    "full four-question manuscript"
+  ],
+  "selected_policies": [
+    {
+      "case": 1,
+      "bits": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "cost_exact": "33443/900",
+      "profit": 18.84111111111111
+    },
+    {
+      "case": 2,
+      "bits": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "cost_exact": "44",
+      "profit": 12.0
+    },
+    {
+      "case": 3,
+      "bits": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "cost_exact": "35573/900",
+      "profit": 16.474444444444444
+    },
+    {
+      "case": 4,
+      "bits": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "cost_exact": "165/4",
+      "profit": 14.75
+    },
+    {
+      "case": 5,
+      "bits": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "cost_exact": "12311/300",
+      "profit": 14.963333333333333
+    },
+    {
+      "case": 6,
+      "bits": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "cost_exact": "12390/361",
+      "profit": 21.678670360110804
+    }
+  ],
+  "sampling_at_boundary": {
+    "true_defect_rate": 0.1,
+    "accept_probability": 0.066800700158904,
+    "reject_probability": 0.02754042087380219,
+    "unresolved_probability": 0.9056588789673021,
+    "expected_tests_up_to_cap": 277.9357265674951
+  },
+  "verification_passed": true,
+  "source_outputs": {
+    "facts.json": "e6834a60d17866a05361f2743e103ab9c01707b8466856448e3e31e3359f81c4",
+    "protocol.json": "149ba2d5b41188fa7c951019342cb18f12dce8076c4a483bc0088e021d66affc",
+    "sampling.json": "1fe8f9c967b984adf9f0e0d6d00c41e7f94f827c2575745e7b0800e280cc7975",
+    "rework.json": "d9452feea6d994b5cb22806370cd57a0dfa1d0610e5eabab339e9b29c489947b",
+    "verification.json": "9c26b9c51860086e64241f52cad7c9ba486c04910f3b3e151542019ac8d263a0"
+  },
+  "submission_ready": false,
+  "national_award_level": "NOT_ESTABLISHED"
+}
