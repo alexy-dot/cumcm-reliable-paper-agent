@@ -54,8 +54,8 @@
     "passed": true
   },
   "paper": {
-    "pages": 16,
-    "sha256": "8b9914d4a35e6aee5942682e6eb3562677da660c25a8f259900943c8ba7a3b6f",
+    "pages": 19,
+    "sha256": "90a46877920cbc9dec8a5abf66a464f5476602d15cbf7a4c8233cd5ce5f30158",
     "backend": "latex",
     "fonts": [
       "/AKHCZK+STHeitiSC-Light",
@@ -77,7 +77,7 @@
       "/VDVGTR+CMSY8",
       "/YEUUOC+LMSans12-Regular-Identity-H"
     ],
-    "revision_at": "2026-09-09T00:20:57Z",
+    "revision_at": "2026-09-09T01:35:50Z",
     "structure_review": {
       "profile": "user-requested CUMCM paper structure; not an official universal chapter-order rule",
       "passed": true,
@@ -89,28 +89,28 @@
         "four_question_solution_subsections": true,
         "notation_table_columns": true
       },
-      "pages": 16,
+      "pages": 19,
       "heading_pages": {
         "一、问题重述": 2,
         "二、问题分析": 2,
         "三、模型假设": 4,
         "四、符号说明": 5,
         "五、模型的建立与求解": 5,
-        "六、模型检验与灵敏度分析": 14,
-        "七、模型评价与改进": 15,
-        "八、结论": 15,
-        "AI工具使用声明": 15,
-        "参考文献": 15,
-        "附录": 16
+        "六、模型检验与灵敏度分析": 15,
+        "七、模型评价与改进": 17,
+        "八、结论": 18,
+        "AI工具使用声明": 18,
+        "参考文献": 18,
+        "附录": 19
       },
-      "pdf_sha256": "8b9914d4a35e6aee5942682e6eb3562677da660c25a8f259900943c8ba7a3b6f",
+      "pdf_sha256": "90a46877920cbc9dec8a5abf66a464f5476602d15cbf7a4c8233cd5ce5f30158",
       "scope": "actual page-one contents and required structure; substantive writing and scientific quality still require review"
     },
     "visual_review": {
       "status": "TARGETED_REVISION_REVIEWED",
       "reviewer_type": "agent",
-      "scope": "Added mathematical arguments, formula typography, speed figure and equivalent-solution table inspected at readable scale on pages 10-13; whole-document page montage reviewed for flow. A4/content margins pass. Not a global scientific quality certification.",
-      "pdf_sha256": "8b9914d4a35e6aee5942682e6eb3562677da660c25a8f259900943c8ba7a3b6f"
+      "scope": "New decision-tradeoff/model-form/joint-scenario sections on pages 14-17 inspected at readable scale. Page-one abstract, expected section order, A4 and content margins checked mechanically. No research-quality or award certification.",
+      "pdf_sha256": "90a46877920cbc9dec8a5abf66a464f5476602d15cbf7a4c8233cd5ce5f30158"
     },
     "restatement_revision": {
       "evidence": [
@@ -163,5 +163,183 @@
     "superposition_error_c": 1.6200374375330284e-12,
     "feasible_equivalent_settings": 3,
     "report": "furnace-2020a-structural-evidence.json"
+  },
+  "decision_evidence": {
+    "report": "furnace-2020a-decision-evidence.json",
+    "passed": true,
+    "scope": "all seven parameters vary together; six +/-2%, entry width -2% to nominal; selected box, not inferred uncertainty distribution",
+    "area_cap_sweep_pct": [
+      0,
+      0.1,
+      0.25,
+      0.5,
+      1,
+      2,
+      5,
+      10
+    ],
+    "findings": [
+      "1%-10% area caps yielded the same best-found asymmetry; actual area increase about 0.66%",
+      "OAT interior suggestions fail some joint scenarios: Q2=7, Q3=7, Q4=8 of 256",
+      "Alternative model forms materially change Q2 feasible speed; not a confidence interval"
+    ],
+    "joint_cases": [
+      {
+        "question": "Q2",
+        "kind": "nominal_optimum",
+        "speed_cm_min": 79.2023311426206,
+        "scenario_count": 256,
+        "process_violations": 129,
+        "minimum_margins": [
+          0.7722651524777464,
+          1.2831500382696086,
+          22.962670000788165,
+          34.150279630841936,
+          29.588497240221557,
+          18.454737077602886,
+          -0.39594850941765003,
+          9.623610783176275
+        ],
+        "peak_range_c": [
+          239.60405149058235,
+          240.37638921682372
+        ],
+        "area_range": [
+          613.6427116957091,
+          655.2177091967416
+        ],
+        "q4_area_cap_violations": null
+      },
+      {
+        "question": "Q2",
+        "kind": "oat_interior_suggestion",
+        "speed_cm_min": 78.10000000000007,
+        "scenario_count": 256,
+        "process_violations": 7,
+        "minimum_margins": [
+          0.7819894916057182,
+          1.296849995034046,
+          24.868759537957715,
+          32.24031162168484,
+          31.13576205282206,
+          16.914037316498877,
+          -0.04719501737716314,
+          9.285408183476846
+        ],
+        "peak_range_c": [
+          239.95280498262284,
+          240.71459181652315
+        ],
+        "area_range": [
+          640.82996804506,
+          682.8013059012966
+        ],
+        "q4_area_cap_violations": null
+      },
+      {
+        "question": "Q3",
+        "kind": "nominal_optimum",
+        "speed_cm_min": 100,
+        "scenario_count": 256,
+        "process_violations": 137,
+        "minimum_margins": [
+          0.5883766422448611,
+          0.9938886581279434,
+          -0.39460671112667,
+          57.656648926083164,
+          11.743818271822846,
+          36.230127767352286,
+          -0.570368026542809,
+          9.440478891306782
+        ],
+        "peak_range_c": [
+          239.4296319734572,
+          240.55952110869322
+        ],
+        "area_range": [
+          397.2490024535126,
+          436.1799821684225
+        ],
+        "q4_area_cap_violations": null
+      },
+      {
+        "question": "Q3",
+        "kind": "oat_interior_suggestion",
+        "speed_cm_min": 98.70000000000007,
+        "scenario_count": 256,
+        "process_violations": 7,
+        "minimum_margins": [
+          0.5966142882557399,
+          1.0066535798764618,
+          0.898433000102159,
+          56.365645096022405,
+          13.005927995979562,
+          34.9877181703466,
+          -0.10462362600745223,
+          8.990991600078985
+        ],
+        "peak_range_c": [
+          239.89537637399255,
+          241.00900839992102
+        ],
+        "area_range": [
+          417.6703167690629,
+          457.1819130709961
+        ],
+        "q4_area_cap_violations": null
+      },
+      {
+        "question": "Q4",
+        "kind": "nominal_optimum",
+        "speed_cm_min": 91.4129200049847,
+        "scenario_count": 256,
+        "process_violations": 181,
+        "minimum_margins": [
+          0.8487375825250578,
+          1.1084430323348924,
+          -1.8526907859397852,
+          57.926960647504075,
+          12.893833601402292,
+          35.052032640380645,
+          -0.5672237627972834,
+          9.453560273391417
+        ],
+        "peak_range_c": [
+          239.43277623720272,
+          240.54643972660858
+        ],
+        "area_range": [
+          400.047212699993,
+          438.4041986945547
+        ],
+        "q4_area_cap_violations": 1
+      },
+      {
+        "question": "Q4",
+        "kind": "oat_interior_suggestion",
+        "speed_cm_min": 90.10000000000008,
+        "scenario_count": 256,
+        "process_violations": 8,
+        "minimum_margins": [
+          0.8574468869878022,
+          1.1221952411311549,
+          -0.05248949774536982,
+          56.10405813443927,
+          14.291562574117762,
+          33.67027941624798,
+          -0.061466178236941005,
+          8.964131681821783
+        ],
+        "peak_range_c": [
+          239.93853382176306,
+          241.03586831817822
+        ],
+        "area_range": [
+          422.35433458627256,
+          461.3745645089253
+        ],
+        "q4_area_cap_violations": 169
+      }
+    ]
   }
 }

@@ -41,6 +41,7 @@ def draw(run):
     solution = read_json(run / "artifacts/solution.json")
     calibration = read_json(run / "artifacts/calibration.json")
     structural = read_json(run / "artifacts/structural_evidence.json")
+    decision = read_json(run / "artifacts/decision_evidence.json")
     parameters = solution["parameters"]
     workbook = openpyxl.load_workbook(run / "sources/attachment_01__附件.xlsx", read_only=True, data_only=True)
     observed = np.asarray(list(workbook.active.values)[1:], float)
@@ -109,6 +110,22 @@ def draw(run):
     ax.legend(frameon=False)
     fig.tight_layout()
     fig.savefig(figures / "speed_boundary.png", dpi=220)
+    plt.close(fig)
+    fig, axes = plt.subplots(1,2,figsize=(8.1,3.8))
+    rows=decision["tradeoff"]
+    axes[0].plot([row["allowed_area_increase_pct"] for row in rows], [row["metrics"]["symmetry"] for row in rows],
+                 marker="o",ms=4,color="#106a8a",lw=1.5)
+    axes[0].set(xlabel="允许面积增量 / %",ylabel="不对称性 J")
+    axes[0].annotate("1%以后未找到进一步改善",xy=(2,rows[-1]["metrics"]["symmetry"]),xytext=(1,.038),
+                     arrowprops={"arrowstyle":"->","color":"#475569"},fontsize=9)
+    cases=decision["joint_scenarios"]["cases"]
+    groups=np.arange(3)
+    axes[1].bar(groups-.18,[row["process_violations"] for row in cases if row["kind"]=="nominal_optimum"],width=.36,color="#b34e39",label="名义优化")
+    axes[1].bar(groups+.18,[row["process_violations"] for row in cases if row["kind"]=="oat_interior_suggestion"],width=.36,color="#106a8a",label="逐参数留余量")
+    axes[1].set(xticks=groups,xticklabels=["问题二","问题三","问题四"],ylabel="256个联合情景中的越界数")
+    axes[1].legend(frameon=False,fontsize=8)
+    fig.tight_layout()
+    fig.savefig(figures / "decision_tradeoff.png",dpi=220)
     plt.close(fig)
 
 

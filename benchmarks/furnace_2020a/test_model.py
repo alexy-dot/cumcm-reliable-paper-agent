@@ -43,6 +43,27 @@ class FurnaceNumericsTest(unittest.TestCase):
         result = check_speed_identity([182,203,237,254], [50,70,40,45,24,30,99])
         self.assertTrue(result["passed"],result)
 
+    def test_tradeoff_envelope_cannot_choose_infeasible_or_worse_candidate(self):
+        from decision_evidence import select_incumbent
+        metrics={"max_rise":2.,"max_cooling":2.,"soak_150_190":80.,"time_above_217":60.,
+                 "peak":245.,"symmetry":.04,"area_rising_above_217":400.}
+        good={"settings":[175,195,235,255],"speed_cm_min":80.,"metrics":metrics}
+        bad={**good,"metrics":{**metrics,"peak":239.,"symmetry":.01}}
+        worse={**good,"metrics":{**metrics,"symmetry":.05}}
+        over_cap={**good,"metrics":{**metrics,"area_rising_above_217":450.,"symmetry":.02}}
+        self.assertIs(select_incumbent([good,bad,worse,over_cap],420),good)
+        self.assertIs(select_incumbent([good,over_cap],460),over_cap)
+        with self.assertRaises(ValueError): select_incumbent([good],390)
+
+    def test_joint_design_respects_asymmetric_entry_bound(self):
+        from decision_evidence import joint_parameters
+        base=np.array([50,70,40,45,24,30.5,99.])
+        p=joint_parameters(base,np.array([[0.]*7,[1.]*7]))
+        np.testing.assert_allclose(p[0],.98*base)
+        self.assertEqual(p[1,5],base[5])
+        np.testing.assert_allclose(p[1,[0,1,2,3,4,6]],1.02*base[[0,1,2,3,4,6]])
+        with self.assertRaises(ValueError): joint_parameters(base,np.array([[2.]*7]))
+
 
 if __name__ == "__main__":
     unittest.main()

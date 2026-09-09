@@ -3,7 +3,7 @@ import argparse
 import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "skill/cumcm-reliable-paper/scripts"))
-from engine import read_json, write_json
+from engine import read_json, write_json, sha256_file
 
 
 def compose(run):
@@ -13,6 +13,12 @@ def compose(run):
     reference = read_json(run / "artifacts/independent_solution.json")
     sensitivity = read_json(run / "artifacts/sensitivity.json")
     structural = read_json(run / "artifacts/structural_evidence.json")
+    decision = read_json(run / "artifacts/decision_evidence.json")
+    if decision.get("status") != "COMPLETE" or not decision.get("passed"):
+        raise ValueError("decision sensitivity evidence is incomplete or failed")
+    for name in ("solution.json","calibration.json","sensitivity.json"):
+        if decision.get("source_sha256",{}).get(name) != sha256_file(run / "artifacts" / name):
+            raise ValueError("decision evidence is stale; rerun against the current source artifacts")
     if not structural["passed"]:
         raise ValueError("model-structure evidence must pass before citing the conditional proofs")
     selected = calibration["models"]["zoned"]
@@ -38,7 +44,7 @@ def compose(run):
         {"lead": "针对问题二：", "text": f"固定温区设定，将各项制程指标表示为速度的函数，通过可行区间搜索与边界求根得到最大速度约{f(q2['speed_cm_min'])} cm/min，活动约束为峰值温度达到240℃下限。"},
         {"lead": "针对问题三：", "text": f"以上升超过217℃至峰值的面积为目标，结合差分进化与多起点SLSQP求解，得到最佳可行面积{f(q3['metrics']['area_rising_above_217'])}℃·s，速度{f(q3['speed_cm_min'])} cm/min。不同前段温区组合具有近乎相同的目标值，故同时报告代表解与替代解。"},
         {"lead": "针对问题四：", "text": f"定义覆盖峰值两侧较长区间的归一化镜像温差平方积分，在面积上浮不超过5%的约束下优化对称性，得到速度{f(q4['speed_cm_min'])} cm/min、面积{f(q4['metrics']['area_rising_above_217'])}℃·s及不对称性指标{f(q4['metrics']['symmetry'],6)}。与问题三相比，面积增加{f(area_change,2)}%，不对称性下降{f(symmetry_change,2)}%。"},
-        text("通过独立连续积分、阈值求根和自适应积分核对主要结果；参数扰动表明名义最优解贴近制程边界，应在实际使用时留出余量。上述结论适用于所选有效模型，跨工况迁移仍需新实验检验。"),
+        text("通过独立连续积分、阈值求根和自适应积分核对主要结果；进一步比较面积权衡、模型形式与参数联合扰动，发现5%的面积预算未用尽，逐参数检验通过的留余量方案仍可能在联合扰动下越界。上述结论适用于所选模型与设定情景，跨工况迁移仍需新实验检验。"),
         text("关键词：回焊炉；有效传热；参数辨识；约束优化；独立数值复核")], key="abstract")
 
     section("一、问题重述", [], True)
@@ -166,6 +172,14 @@ def compose(run):
         text(f"问题4面积比问题3增加{f(area_change,2)}%，不对称性降低{f(symmetry_change,2)}%；面积上限{f(q4['area_cap'])}℃·s未用尽。最终升降温、保温、回流和峰值限制均以原始高精度参数检查。"),
         figure("optimization", "图5 三个决策工况的曲线，以及按峰值时刻对齐的Q3、Q4曲线。")], level=2, key="q4")
 
+    section("5.4.1 面积约束与对称性权衡", [
+        text("5%的面积上限只是先前声明的工程偏好，并非题面指定。为检验该选择是否影响决策，分别将问题三面积结果的0.1%、0.25%、0.5%、1%、2%、5%和10%作为允许增量，以同样的两个随机种子搜索并局部精修，再用独立连续积分复核各候选的面积、对称性与制程限制。放宽上限时保留此前可行解，避免新搜索退化被误解为权衡关系。"),
+        table([["允许面积增量/%", "实际面积增量/%", "不对称性$J$", "速度/cm·min⁻¹"]] +
+              [[f(row["allowed_area_increase_pct"],2),f(row["actual_area_increase_pct"],3),f(row["metrics"]["symmetry"],6),f(row["speed_cm_min"],3)] for row in decision["tradeoff"]]),
+        text("面积上限较紧时，对称性改善随容许面积增加而逐步提升；从1%放宽至10%后，本次搜索得到的最佳指标已无实质改善，实际面积增加约0.66%。因此，至少在当前模型和搜索结果中，不需要耗尽5%的增量预算。若更强调面积，可选择0.5%这一较严格的候选；若更强调对称性，约1%的上限已容纳目前找到的最佳方案。"),
+        text("表中0%行只列问题三既有可行解，并未在零松弛面上重新最小化对称性。其余各行也是多起点搜索得到的候选，而非经全局证明的Pareto前沿；不能据此断言不存在更优权衡。"),
+        figure("decision_tradeoff", "图6 面积预算与对称性的数值权衡，以及名义方案和逐参数留余量方案在联合扰动下的越界计数。情景计数不表示实际风险概率。")],level=3)
+
     worst = max(independent["comparisons"], key=lambda row: row["error"] / row["tolerance"])
     section("六、模型检验与灵敏度分析", [
         text("独立程序未调用主模型的热驱动或递推函数，而是重新构造分段空间驱动，通过分段solve_ivp积分，连续求解阈值交点与峰值，并用自适应积分计算面积及对称性。两条路径共享的是已声明的数学模型与参数，不是程序输出；它们不构成第二次物理实验。"),
@@ -175,9 +189,24 @@ def compose(run):
         text("备选方案保持相应温区设定，仅降低速度，在所列情景下给制程指标保留余量。它们不是原目标的最优解，尤其Q4备选的面积可能超过前述5%偏好上限，应作为重新权衡的候选，而不能冒充原Q4答案。"),
     ])
 
+    model_names={"mixing":"边界混合", "radiative":"辐射修正", "two_node":"双节点", "smooth_two_node":"平滑双节点", "zoned":"分区模型"}
+    section("6.1 模型形式对速度决策的影响", [
+        text("拟合更好不自动等于换工况后的预测更准。保留各候选在原实验上校准的参数，将问题二相同的温区设定及79.202 cm/min名义速度分别代入，再用0.1 cm/min网格搜索各自满足制程要求的最高速度。这样可直接观察模型选择对决策的影响，而不只比较拟合误差。"),
+        table([["候选模型", "留出RMSE/℃", "名义峰值/℃", "最高速度/cm·min⁻¹"]] +
+              [[model_names[row["model"]],f(row["selection_block_rmse_c"]),f(row["fixed_q2_peak_c"]),
+                f(row["largest_feasible_grid_speed_cm_min"],1) if row["largest_feasible_grid_speed_cm_min"] is not None else "未找到"] for row in decision["alternative_models"]]),
+        text("不同形式下可行速度的变化，说明优化结果对传热代理的选择具有依赖性。候选模型并非同等可信的真实系统，也不能把它们的结果范围当作置信区间。分区模型仍有最低的模型选择留出误差，但在获得新速度工况的实验数据前，其优势只支持当前样本内的相对选择，不能证实79.202 cm/min在实物上可直接采用。")],level=2)
+
+    section("6.2 参数联合扰动与备选方案的适用范围", [
+        text("进一步使用固定种子的256个Sobol设计点，使七个参数同时变化：五个时间常数及冷却特征长度在名义值±2%内变化，触及上界的入口延伸长度只从−2%变至名义值。该盒形范围是人为设定的压力情景，没有从单次实验中估计出联合概率分布，因此越界数量仅用于比较方案脆弱性。"),
+        table([["问题", "方案", "速度/cm·min⁻¹", "制程越界数/256", "峰值范围/℃"]] +
+              [[row["question"],"名义优化" if row["kind"]=="nominal_optimum" else "逐参数留余量",f(row["speed_cm_min"],3),str(row["process_violations"]),
+                f(row["peak_range_c"][0],3)+"—"+f(row["peak_range_c"][1],3)] for row in decision["joint_scenarios"]["cases"]]),
+        text("联合扰动下，原先逐参数检验通过的三组留余量方案仍出现越界，说明逐个参数变化的结论不能外推为同时变化时的保证。问题四备选方案还会在大量设计点中超过原5%的面积上限，故其用途仅是制程余量的局部参考，不满足对原优化目标的普遍保证。后续应以新增工况测量约束参数相关性，并重新进行有明确不确定集合的稳健优化。")],level=2)
+
     section("七、模型评价与改进", [
         text("模型的优点在于：从题面几何与实验时间直接建立位置—时间关系，参数和控制变量含义明确；四问共用同一响应模型与制程指标，避免前后口径不一致；保留失败模型、多起点结果与独立计算路径，使拟合误差、数值误差和方案非唯一性均可检查。"),
-        text("模型的局限及改进方向包括三点。第一，一条中心曲线不足以验证其他速度、温区和板材下的迁移，建议补充至少一条改变速度与一条改变高温平台的实验。第二，入口参数顶到边界及早期残差说明驱动形式有偏差，应增加炉口附近测点或实测空气场。第三，搜索结果是条件数值最优且峰值贴下界，应结合测温误差、控制分辨率及工艺风险重新设置余量。")])
+        text("模型的局限及改进方向包括三点。第一，不同候选对速度决策给出不同判断，一条中心曲线不足以验证工况迁移，建议补充改变速度与高温平台的实验。第二，入口参数顶到边界及早期残差说明驱动形式有偏差，应增加炉口附近测点或实测空气场。第三，联合扰动已使原留余量建议出现反例，后续必须以可信的不确定集合重新优化，而不能仅降低一点速度便称为稳健工艺。")])
 
     section("八、结论", [
         text("本文完成四问所需的温度预测、速度边界、上升回流面积和对称性方案，并给出原始计算产物、独立复核与情景分析。结论的适用范围始终限定在明确的有效传热模型与输入数据；拟合良好和两套算法一致都不能替代新工况实验。"),
