@@ -1,0 +1,174 @@
+{
+  "label": "illustrative_n200_Jeffreys",
+  "provenance": "ILLUSTRATIVE_COUNTS_NOT_OBSERVED",
+  "prior": {
+    "alpha": 0.5,
+    "beta": 0.5
+  },
+  "q2": {
+    "1": [
+      {
+        "n": 200,
+        "k": 20,
+        "basis": "random_supply"
+      },
+      {
+        "n": 200,
+        "k": 20,
+        "basis": "random_supply"
+      },
+      {
+        "n": 200,
+        "k": 20,
+        "basis": "good_inputs"
+      }
+    ],
+    "2": [
+      {
+        "n": 200,
+        "k": 40,
+        "basis": "random_supply"
+      },
+      {
+        "n": 200,
+        "k": 40,
+        "basis": "random_supply"
+      },
+      {
+        "n": 200,
+        "k": 40,
+        "basis": "good_inputs"
+      }
+    ],
+    "3": [
+      {
+        "n": 200,
+        "k": 20,
+        "basis": "random_supply"
+      },
+      {
+        "n": 200,
+        "k": 20,
+        "basis": "random_supply"
+      },
+      {
+        "n": 200,
+        "k": 20,
+        "basis": "good_inputs"
+      }
+    ],
+    "4": [
+      {
+        "n": 200,
+        "k": 40,
+        "basis": "random_supply"
+      },
+      {
+        "n": 200,
+        "k": 40,
+        "basis": "random_supply"
+      },
+      {
+        "n": 200,
+        "k": 40,
+        "basis": "good_inputs"
+      }
+    ],
+    "5": [
+      {
+        "n": 200,
+        "k": 20,
+        "basis": "random_supply"
+      },
+      {
+        "n": 200,
+        "k": 40,
+        "basis": "random_supply"
+      },
+      {
+        "n": 200,
+        "k": 20,
+        "basis": "good_inputs"
+      }
+    ],
+    "6": [
+      {
+        "n": 200,
+        "k": 10,
+        "basis": "random_supply"
+      },
+      {
+        "n": 200,
+        "k": 10,
+        "basis": "random_supply"
+      },
+      {
+        "n": 200,
+        "k": 10,
+        "basis": "good_inputs"
+      }
+    ]
+  },
+  "q3": [
+    {
+      "n": 200,
+      "k": 20,
+      "basis": "random_supply"
+    },
+    {
+      "n": 200,
+      "k": 20,
+      "basis": "random_supply"
+    },
+    {
+      "n": 200,
+      "k": 20,
+      "basis": "random_supply"
+    },
+    {
+      "n": 200,
+      "k": 20,
+      "basis": "random_supply"
+    },
+    {
+      "n": 200,
+      "k": 20,
+      "basis": "random_supply"
+    },
+    {
+      "n": 200,
+      "k": 20,
+      "basis": "random_supply"
+    },
+    {
+      "n": 200,
+      "k": 20,
+      "basis": "random_supply"
+    },
+    {
+      "n": 200,
+      "k": 20,
+      "basis": "random_supply"
+    },
+    {
+      "n": 200,
+      "k": 20,
+      "basis": "good_inputs"
+    },
+    {
+      "n": 200,
+      "k": 20,
+      "basis": "good_inputs"
+    },
+    {
+      "n": 200,
+      "k": 20,
+      "basis": "good_inputs"
+    },
+    {
+      "n": 200,
+      "k": 20,
+      "basis": "good_inputs"
+    }
+  ]
+}

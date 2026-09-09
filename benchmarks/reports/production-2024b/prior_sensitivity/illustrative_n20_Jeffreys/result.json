@@ -1,0 +1,1319 @@
+{
+  "protocol_sha256": "72951f578ad5394317bb6e52fbc3041a0cf9cfe60cbef155fdf2919a9324cea1",
+  "candidates_sha256": "d249097c06506b00f0f1937305203b16bfcb8faf81b1df8711d1e7fb0081b763",
+  "sample_provenance": "ILLUSTRATIVE_COUNTS_NOT_OBSERVED",
+  "results": {
+    "Q2-1": {
+      "selected_policy": {
+        "part_tests": [
+          1,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 1
+      },
+      "nominal_policy": {
+        "part_tests": [
+          1,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 1
+      },
+      "selected": {
+        "posterior_mean_cost": 38.97820290984109,
+        "integration_standard_error": 0.044633046461979,
+        "posterior_mean_profit": 17.021797090158913,
+        "cost_parameter_quantiles_05_50_95": [
+          33.74903014056163,
+          38.306843053204815,
+          46.38789790697176
+        ],
+        "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+      },
+      "nominal": {
+        "posterior_mean_cost": 38.97820290984109,
+        "integration_standard_error": 0.044633046461979,
+        "posterior_mean_profit": 17.021797090158913,
+        "cost_parameter_quantiles_05_50_95": [
+          33.74903014056163,
+          38.306843053204815,
+          46.38789790697176
+        ],
+        "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+      },
+      "paired_cost_difference": 0.0,
+      "paired_difference_standard_error": 0.0,
+      "validation_finalists": [
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "posterior_mean_cost": 38.97820290984109,
+          "integration_standard_error": 0.044633046461979,
+          "posterior_mean_profit": 17.021797090158913,
+          "cost_parameter_quantiles_05_50_95": [
+            33.74903014056163,
+            38.306843053204815,
+            46.38789790697176
+          ],
+          "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "posterior_mean_cost": 39.28447942935732,
+          "integration_standard_error": 0.0309505163095481,
+          "posterior_mean_profit": 16.71552057064268,
+          "cost_parameter_quantiles_05_50_95": [
+            35.687499890432136,
+            38.829392659564455,
+            44.33312460992877
+          ],
+          "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "posterior_mean_cost": 39.67006951529353,
+          "integration_standard_error": 0.048805275953507046,
+          "posterior_mean_profit": 16.329930484706473,
+          "cost_parameter_quantiles_05_50_95": [
+            33.630736772315494,
+            39.0677598227588,
+            47.72500270166099
+          ],
+          "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "posterior_mean_cost": 39.755516082046256,
+          "integration_standard_error": 0.037457428402379894,
+          "posterior_mean_profit": 16.244483917953744,
+          "cost_parameter_quantiles_05_50_95": [
+            35.130098340438586,
+            39.29850893320996,
+            45.97586477288329
+          ],
+          "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "posterior_mean_cost": 41.1937244780396,
+          "integration_standard_error": 0.041093421269247817,
+          "posterior_mean_profit": 14.806275521960401,
+          "cost_parameter_quantiles_05_50_95": [
+            36.44305454936487,
+            40.55642431914299,
+            48.044402010499795
+          ],
+          "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+        }
+      ],
+      "policy_changed": false,
+      "posterior_parameters": [
+        [
+          2.5,
+          18.5
+        ],
+        [
+          2.5,
+          18.5
+        ],
+        [
+          2.5,
+          18.5
+        ]
+      ]
+    },
+    "Q2-2": {
+      "selected_policy": {
+        "part_tests": [
+          1,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 1
+      },
+      "nominal_policy": {
+        "part_tests": [
+          1,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 1
+      },
+      "selected": {
+        "posterior_mean_cost": 45.70328369445205,
+        "integration_standard_error": 0.04920845275860569,
+        "posterior_mean_profit": 10.296716305547953,
+        "cost_parameter_quantiles_05_50_95": [
+          39.71106448884193,
+          45.020686630946315,
+          54.01357022124141
+        ],
+        "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+      },
+      "nominal": {
+        "posterior_mean_cost": 45.70328369445205,
+        "integration_standard_error": 0.04920845275860569,
+        "posterior_mean_profit": 10.296716305547953,
+        "cost_parameter_quantiles_05_50_95": [
+          39.71106448884193,
+          45.020686630946315,
+          54.01357022124141
+        ],
+        "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+      },
+      "paired_cost_difference": 0.0,
+      "paired_difference_standard_error": 0.0,
+      "validation_finalists": [
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "posterior_mean_cost": 45.70328369445205,
+          "integration_standard_error": 0.04920845275860569,
+          "posterior_mean_profit": 10.296716305547953,
+          "cost_parameter_quantiles_05_50_95": [
+            39.71106448884193,
+            45.020686630946315,
+            54.01357022124141
+          ],
+          "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "posterior_mean_cost": 47.47367065534832,
+          "integration_standard_error": 0.06543528512404308,
+          "posterior_mean_profit": 8.526329344651678,
+          "cost_parameter_quantiles_05_50_95": [
+            39.321219792741196,
+            46.63628117165388,
+            58.524274327172506
+          ],
+          "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "posterior_mean_cost": 47.83863605521959,
+          "integration_standard_error": 0.04608602316701874,
+          "posterior_mean_profit": 8.161363944780412,
+          "cost_parameter_quantiles_05_50_95": [
+            42.26394882224379,
+            47.20827104395956,
+            55.571006717993434
+          ],
+          "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "posterior_mean_cost": 48.1042275133505,
+          "integration_standard_error": 0.05664131149834189,
+          "posterior_mean_profit": 7.8957724866494985,
+          "cost_parameter_quantiles_05_50_95": [
+            40.87168654333903,
+            47.47769929299176,
+            57.41006709166492
+          ],
+          "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "posterior_mean_cost": 48.96883527636426,
+          "integration_standard_error": 0.060401719775674885,
+          "posterior_mean_profit": 7.03116472363574,
+          "cost_parameter_quantiles_05_50_95": [
+            41.478137011073784,
+            48.13984997468985,
+            59.15992988895106
+          ],
+          "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+        }
+      ],
+      "policy_changed": false,
+      "posterior_parameters": [
+        [
+          4.5,
+          16.5
+        ],
+        [
+          4.5,
+          16.5
+        ],
+        [
+          4.5,
+          16.5
+        ]
+      ]
+    },
+    "Q2-3": {
+      "selected_policy": {
+        "part_tests": [
+          1,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 1
+      },
+      "nominal_policy": {
+        "part_tests": [
+          1,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 1
+      },
+      "selected": {
+        "posterior_mean_cost": 41.253060909919576,
+        "integration_standard_error": 0.04072271753046751,
+        "posterior_mean_profit": 14.746939090080424,
+        "cost_parameter_quantiles_05_50_95": [
+          36.529178696407456,
+          40.61163957162289,
+          48.1510302219691
+        ],
+        "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+      },
+      "nominal": {
+        "posterior_mean_cost": 41.253060909919576,
+        "integration_standard_error": 0.04072271753046751,
+        "posterior_mean_profit": 14.746939090080424,
+        "cost_parameter_quantiles_05_50_95": [
+          36.529178696407456,
+          40.61163957162289,
+          48.1510302219691
+        ],
+        "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+      },
+      "paired_cost_difference": 0.0,
+      "paired_difference_standard_error": 0.0,
+      "validation_finalists": [
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "posterior_mean_cost": 41.253060909919576,
+          "integration_standard_error": 0.04072271753046751,
+          "posterior_mean_profit": 14.746939090080424,
+          "cost_parameter_quantiles_05_50_95": [
+            36.529178696407456,
+            40.61163957162289,
+            48.1510302219691
+          ],
+          "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "posterior_mean_cost": 41.65503951138683,
+          "integration_standard_error": 0.044783985231519524,
+          "posterior_mean_profit": 14.344960488613168,
+          "cost_parameter_quantiles_05_50_95": [
+            36.18545393055542,
+            41.09925291151784,
+            49.1964877184041
+          ],
+          "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "posterior_mean_cost": 41.9075948161186,
+          "integration_standard_error": 0.029033907749987306,
+          "posterior_mean_profit": 14.092405183881397,
+          "cost_parameter_quantiles_05_50_95": [
+            38.57648546782487,
+            41.44267776875827,
+            46.88587660775662
+          ],
+          "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "posterior_mean_cost": 42.047756240829315,
+          "integration_standard_error": 0.034775590356064916,
+          "posterior_mean_profit": 13.952243759170685,
+          "cost_parameter_quantiles_05_50_95": [
+            37.84956140448697,
+            41.57727643510867,
+            47.93502356689946
+          ],
+          "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "posterior_mean_cost": 42.8308066923517,
+          "integration_standard_error": 0.052630749532007054,
+          "posterior_mean_profit": 13.1691933076483,
+          "cost_parameter_quantiles_05_50_95": [
+            36.926786523124214,
+            41.87420143523107,
+            51.88459904777575
+          ],
+          "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+        }
+      ],
+      "policy_changed": false,
+      "posterior_parameters": [
+        [
+          2.5,
+          18.5
+        ],
+        [
+          2.5,
+          18.5
+        ],
+        [
+          2.5,
+          18.5
+        ]
+      ]
+    },
+    "Q2-4": {
+      "selected_policy": {
+        "part_tests": [
+          1,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 1
+      },
+      "nominal_policy": {
+        "part_tests": [
+          1,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 1
+      },
+      "selected": {
+        "posterior_mean_cost": 42.776750133015284,
+        "integration_standard_error": 0.04118203959026175,
+        "posterior_mean_profit": 13.223249866984716,
+        "cost_parameter_quantiles_05_50_95": [
+          37.74398588329005,
+          42.228168867665254,
+          49.69837892855846
+        ],
+        "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+      },
+      "nominal": {
+        "posterior_mean_cost": 42.776750133015284,
+        "integration_standard_error": 0.04118203959026175,
+        "posterior_mean_profit": 13.223249866984716,
+        "cost_parameter_quantiles_05_50_95": [
+          37.74398588329005,
+          42.228168867665254,
+          49.69837892855846
+        ],
+        "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+      },
+      "paired_cost_difference": 0.0,
+      "paired_difference_standard_error": 0.0,
+      "validation_finalists": [
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "posterior_mean_cost": 42.776750133015284,
+          "integration_standard_error": 0.04118203959026175,
+          "posterior_mean_profit": 13.223249866984716,
+          "cost_parameter_quantiles_05_50_95": [
+            37.74398588329005,
+            42.228168867665254,
+            49.69837892855846
+          ],
+          "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "posterior_mean_cost": 44.966318313896465,
+          "integration_standard_error": 0.05262888181816022,
+          "posterior_mean_profit": 11.033681686103535,
+          "cost_parameter_quantiles_05_50_95": [
+            38.48637300644294,
+            44.333274984050355,
+            53.798208763917046
+          ],
+          "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "posterior_mean_cost": 44.95178781181699,
+          "integration_standard_error": 0.04626112043218885,
+          "posterior_mean_profit": 11.048212188183008,
+          "cost_parameter_quantiles_05_50_95": [
+            39.040522258506094,
+            44.45168922630911,
+            52.54384762949235
+          ],
+          "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "posterior_mean_cost": 46.80469141086827,
+          "integration_standard_error": 0.05389584663303842,
+          "posterior_mean_profit": 9.195308589131727,
+          "cost_parameter_quantiles_05_50_95": [
+            39.84971337015281,
+            46.22751454604966,
+            55.656769440686986
+          ],
+          "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "posterior_mean_cost": 48.87579933209158,
+          "integration_standard_error": 0.07961830500431136,
+          "posterior_mean_profit": 7.124200667908418,
+          "cost_parameter_quantiles_05_50_95": [
+            39.398873415322036,
+            47.67233946539538,
+            62.12926530637139
+          ],
+          "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+        }
+      ],
+      "policy_changed": false,
+      "posterior_parameters": [
+        [
+          4.5,
+          16.5
+        ],
+        [
+          4.5,
+          16.5
+        ],
+        [
+          4.5,
+          16.5
+        ]
+      ]
+    },
+    "Q2-5": {
+      "selected_policy": {
+        "part_tests": [
+          0,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 1,
+        "final_dismantle": 1
+      },
+      "nominal_policy": {
+        "part_tests": [
+          0,
+          1
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 1
+      },
+      "selected": {
+        "posterior_mean_cost": 43.502024920872515,
+        "integration_standard_error": 0.04844666051730153,
+        "posterior_mean_profit": 12.497975079127485,
+        "cost_parameter_quantiles_05_50_95": [
+          37.40401003907917,
+          42.97171450404829,
+          51.53830021015602
+        ],
+        "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+      },
+      "nominal": {
+        "posterior_mean_cost": 43.60781356456434,
+        "integration_standard_error": 0.056195447626232124,
+        "posterior_mean_profit": 12.392186435435661,
+        "cost_parameter_quantiles_05_50_95": [
+          36.49400546890807,
+          42.95769272072381,
+          52.84734733865071
+        ],
+        "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+      },
+      "paired_cost_difference": -0.1057886436918171,
+      "paired_difference_standard_error": 0.010743290570553647,
+      "validation_finalists": [
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "posterior_mean_cost": 43.502024920872515,
+          "integration_standard_error": 0.04844666051730153,
+          "posterior_mean_profit": 12.497975079127485,
+          "cost_parameter_quantiles_05_50_95": [
+            37.40401003907917,
+            42.97171450404829,
+            51.53830021015602
+          ],
+          "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "posterior_mean_cost": 43.60781356456434,
+          "integration_standard_error": 0.056195447626232124,
+          "posterior_mean_profit": 12.392186435435661,
+          "cost_parameter_quantiles_05_50_95": [
+            36.49400546890807,
+            42.95769272072381,
+            52.84734733865071
+          ],
+          "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "posterior_mean_cost": 46.70277801722744,
+          "integration_standard_error": 0.06070709864607137,
+          "posterior_mean_profit": 9.297221982772562,
+          "cost_parameter_quantiles_05_50_95": [
+            38.962377098300195,
+            46.071797982509146,
+            56.693395801915884
+          ],
+          "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "posterior_mean_cost": 47.305846754738226,
+          "integration_standard_error": 0.04314673419811534,
+          "posterior_mean_profit": 8.694153245261774,
+          "cost_parameter_quantiles_05_50_95": [
+            42.05579571066733,
+            46.72512816369144,
+            54.55060554414086
+          ],
+          "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 0
+          },
+          "posterior_mean_cost": 47.8150905415552,
+          "integration_standard_error": 0.07910605197011589,
+          "posterior_mean_profit": 8.1849094584448,
+          "cost_parameter_quantiles_05_50_95": [
+            38.65824059140404,
+            46.56051323433044,
+            61.14057609604159
+          ],
+          "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+        }
+      ],
+      "policy_changed": true,
+      "posterior_parameters": [
+        [
+          2.5,
+          18.5
+        ],
+        [
+          4.5,
+          16.5
+        ],
+        [
+          2.5,
+          18.5
+        ]
+      ]
+    },
+    "Q2-6": {
+      "selected_policy": {
+        "part_tests": [
+          1,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 0
+      },
+      "nominal_policy": {
+        "part_tests": [
+          0,
+          0
+        ],
+        "semi_tests": [],
+        "semi_dismantle": [],
+        "final_test": 0,
+        "final_dismantle": 0
+      },
+      "selected": {
+        "posterior_mean_cost": 37.28214611411179,
+        "integration_standard_error": 0.04867964875211489,
+        "posterior_mean_profit": 18.71785388588821,
+        "cost_parameter_quantiles_05_50_95": [
+          32.13225984150004,
+          36.37176119656611,
+          45.67340830948242
+        ],
+        "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+      },
+      "nominal": {
+        "posterior_mean_cost": 37.96929438153644,
+        "integration_standard_error": 0.05986081740810349,
+        "posterior_mean_profit": 18.030705618463557,
+        "cost_parameter_quantiles_05_50_95": [
+          31.347669424091375,
+          36.858745697074355,
+          48.26840341570052
+        ],
+        "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+      },
+      "paired_cost_difference": -0.6871482674246531,
+      "paired_difference_standard_error": 0.029323990011978513,
+      "validation_finalists": [
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 0
+          },
+          "posterior_mean_cost": 37.28214611411179,
+          "integration_standard_error": 0.04867964875211489,
+          "posterior_mean_profit": 18.71785388588821,
+          "cost_parameter_quantiles_05_50_95": [
+            32.13225984150004,
+            36.37176119656611,
+            45.67340830948242
+          ],
+          "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 0
+          },
+          "posterior_mean_cost": 37.96929438153644,
+          "integration_standard_error": 0.05986081740810349,
+          "posterior_mean_profit": 18.030705618463557,
+          "cost_parameter_quantiles_05_50_95": [
+            31.347669424091375,
+            36.858745697074355,
+            48.26840341570052
+          ],
+          "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 0,
+            "final_dismantle": 0
+          },
+          "posterior_mean_cost": 38.80592037695224,
+          "integration_standard_error": 0.039260925840282346,
+          "posterior_mean_profit": 17.194079623047763,
+          "cost_parameter_quantiles_05_50_95": [
+            34.71753661246228,
+            38.034839092580015,
+            45.48454767937803
+          ],
+          "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 0
+          },
+          "posterior_mean_cost": 39.106959966798165,
+          "integration_standard_error": 0.04036901994920673,
+          "posterior_mean_profit": 16.893040033201835,
+          "cost_parameter_quantiles_05_50_95": [
+            34.826764180127384,
+            38.35669713617401,
+            46.01260666014172
+          ],
+          "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+        },
+        {
+          "policy": {
+            "part_tests": [
+              0,
+              0
+            ],
+            "semi_tests": [],
+            "semi_dismantle": [],
+            "final_test": 1,
+            "final_dismantle": 0
+          },
+          "posterior_mean_cost": 39.132845416516574,
+          "integration_standard_error": 0.048833824727663365,
+          "posterior_mean_profit": 16.867154583483426,
+          "cost_parameter_quantiles_05_50_95": [
+            33.730993477548225,
+            38.22687148971855,
+            47.53475015491358
+          ],
+          "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+        }
+      ],
+      "policy_changed": true,
+      "posterior_parameters": [
+        [
+          1.5,
+          19.5
+        ],
+        [
+          1.5,
+          19.5
+        ],
+        [
+          1.5,
+          19.5
+        ]
+      ]
+    },
+    "Q3": {
+      "selected_policy": {
+        "part_tests": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "semi_tests": [
+          1,
+          1,
+          1
+        ],
+        "semi_dismantle": [
+          1,
+          1,
+          1
+        ],
+        "final_test": 0,
+        "final_dismantle": 1
+      },
+      "nominal_policy": {
+        "part_tests": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "semi_tests": [
+          1,
+          1,
+          1
+        ],
+        "semi_dismantle": [
+          1,
+          1,
+          1
+        ],
+        "final_test": 0,
+        "final_dismantle": 1
+      },
+      "selected": {
+        "posterior_mean_cost": 145.62542576923465,
+        "integration_standard_error": 0.07809486365963647,
+        "posterior_mean_profit": 54.37457423076535,
+        "cost_parameter_quantiles_05_50_95": [
+          135.8981807597897,
+          144.68064474883053,
+          158.51076592599603
+        ],
+        "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+      },
+      "nominal": {
+        "posterior_mean_cost": 145.62542576923465,
+        "integration_standard_error": 0.07809486365963647,
+        "posterior_mean_profit": 54.37457423076535,
+        "cost_parameter_quantiles_05_50_95": [
+          135.8981807597897,
+          144.68064474883053,
+          158.51076592599603
+        ],
+        "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+      },
+      "paired_cost_difference": 0.0,
+      "paired_difference_standard_error": 0.0,
+      "validation_finalists": [
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "semi_tests": [
+              1,
+              1,
+              1
+            ],
+            "semi_dismantle": [
+              1,
+              1,
+              1
+            ],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "posterior_mean_cost": 145.62542576923465,
+          "integration_standard_error": 0.07809486365963647,
+          "posterior_mean_profit": 54.37457423076535,
+          "cost_parameter_quantiles_05_50_95": [
+            135.8981807597897,
+            144.68064474883053,
+            158.51076592599603
+          ],
+          "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "semi_tests": [
+              1,
+              1,
+              1
+            ],
+            "semi_dismantle": [
+              1,
+              1,
+              1
+            ],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "posterior_mean_cost": 146.22156864002608,
+          "integration_standard_error": 0.08305492278766646,
+          "posterior_mean_profit": 53.77843135997392,
+          "cost_parameter_quantiles_05_50_95": [
+            135.62965405125385,
+            145.31251769007383,
+            159.68423539167804
+          ],
+          "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1
+            ],
+            "semi_tests": [
+              1,
+              1,
+              1
+            ],
+            "semi_dismantle": [
+              1,
+              1,
+              1
+            ],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "posterior_mean_cost": 146.19861577211026,
+          "integration_standard_error": 0.08272216358651827,
+          "posterior_mean_profit": 53.80138422788974,
+          "cost_parameter_quantiles_05_50_95": [
+            135.62435637153638,
+            145.34459387396234,
+            159.58162853819573
+          ],
+          "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0
+            ],
+            "semi_tests": [
+              1,
+              1,
+              1
+            ],
+            "semi_dismantle": [
+              1,
+              1,
+              1
+            ],
+            "final_test": 0,
+            "final_dismantle": 1
+          },
+          "posterior_mean_cost": 146.2235367128061,
+          "integration_standard_error": 0.0826514869043138,
+          "posterior_mean_profit": 53.776463287193906,
+          "cost_parameter_quantiles_05_50_95": [
+            135.85266261159956,
+            145.2898230200504,
+            159.64617991506765
+          ],
+          "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+        },
+        {
+          "policy": {
+            "part_tests": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "semi_tests": [
+              0,
+              1,
+              1
+            ],
+            "semi_dismantle": [
+              1,
+              1,
+              1
+            ],
+            "final_test": 1,
+            "final_dismantle": 1
+          },
+          "posterior_mean_cost": 146.5757762116819,
+          "integration_standard_error": 0.06550001164157895,
+          "posterior_mean_profit": 53.4242237883181,
+          "cost_parameter_quantiles_05_50_95": [
+            137.7611640306897,
+            146.022786029541,
+            157.1641240242978
+          ],
+          "scope": "distribution of conditional expected order costs across uncertain rates, not individual order outcomes"
+        }
+      ],
+      "policy_changed": false,
+      "posterior_parameters": [
+        [
+          2.5,
+          18.5
+        ],
+        [
+          2.5,
+          18.5
+        ],
+        [
+          2.5,
+          18.5
+        ],
+        [
+          2.5,
+          18.5
+        ],
+        [
+          2.5,
+          18.5
+        ],
+        [
+          2.5,
+          18.5
+        ],
+        [
+          2.5,
+          18.5
+        ],
+        [
+          2.5,
+          18.5
+        ],
+        [
+          2.5,
+          18.5
+        ],
+        [
+          2.5,
+          18.5
+        ],
+        [
+          2.5,
+          18.5
+        ],
+        [
+          2.5,
+          18.5
+        ]
+      ]
+    }
+  },
+  "retuned_after_validation": false,
+  "remaining": "Real sample counts, sampling design, prior assessment and team review are required before treating the illustrative decisions as operational recommendations"
+}

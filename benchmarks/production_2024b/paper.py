@@ -3,6 +3,7 @@ import argparse
 import re
 from pathlib import Path
 from prepare import read_json,write_json,sha256_file
+from prior_sensitivity import checked_report
 
 
 def typography(text):
@@ -40,6 +41,7 @@ def blocks(markdown):
 
 
 def compose(run):
+    priors=checked_report(run)
     q2=read_json(run/"artifacts/rework.json");q3=read_json(run/"artifacts/multistage/result.json");q4=read_json(run/"artifacts/q4_summary.json")
     verification=read_json(run/"artifacts/verification.json");multi=read_json(run/"artifacts/multistage/verification.json")
     figures=read_json(run/"artifacts/figures/figure_evidence.json")
@@ -132,6 +134,16 @@ def compose(run):
         text("抽样部分以独立数值积分核对混合似然，以12步全部路径枚举核对停止概率。问题二以闭式几何重购与无次品例核对边界，并逐件模拟六种情形；问题三以原两零件马尔可夫模型核对退化特例，再用对象树模拟验证层级关系。"),
         text("第四问向量化成本在多组参数和策略上与有理数计算一致；第二问后验成本由16/32阶Gauss-Jacobi积分核对全部有效策略，第三问已选全上游检测方案由解析Beta矩核对。选择样本和验证样本分离，验证结果不用于重新调参。"),
         text("样本量从20增至200时，部分第二问策略改变，表明不能只保留一个次品率点估计。由于两个样本量都是示例，变化只支持条件敏感性，不代表企业真的获得了这些观测，也不证明实际利润改善。")])
+    section("6.1 后验矩的存在条件与先验敏感性",[
+        text("有限次数抽样总能产生有限的样本均值和样本标准差，但这不证明总体矩存在。若后验为Beta(α,β)，返工成本中的逆合格率矩满足下式："),
+        {"equation":r"\mathbb E[(1-p)^{-2}]=\frac{(\alpha+\beta-1)(\alpha+\beta-2)}{(\beta-1)(\beta-2)},\qquad\beta>2."},
+        text("β≤1时，逆合格率均值发散；1<β≤2时，均值有限但方差发散。例如Beta(1,2)不能据普通随机积分的样本标准误宣称数值误差已控制。本项目的随机积分与标准误验算接口要求各阶段β>2，否则在计算前明确报出不适用，并要求改用有依据的解析或确定性积分。该要求不等于宣称均值不存在；前文20件与200件示例均满足有限方差条件。"),
+        text("保持同一批示例计数、成本和策略类，另用Jeffreys先验Beta(0.5,0.5)，以及均值0.1、强度20的Beta(2,18)先验比较。后者是假设性的先验信息，不是从原题得到的经验事实。每个先验仍先用512组参数选择，再用8192组新参数及独立积分验证，不在看到验证结果后重新挑选。"),
+        {"table":[["样本量","先验","问题","确定性期望成本/元","策略改变"]]+[
+            [str(r["n"]),"Beta(0.5,0.5)" if r["prior"]["name"]=="Jeffreys" else "Beta(2,18)",r["problem"],f"{r['deterministic_selected_cost']:.3f}","是" if r["changed_from_uniform_prior"] else "否"]
+            for r in priors["results"] if r["problem"] in ("Q2-1","Q2-5","Q3")]},
+        text("表中改变指相对于相同样本量、原均匀先验Beta(1,1)的策略。20件时，情形1在两个替代先验下改变，情形5在Beta(2,18)下改变；200件时，本次比较中全部策略保持一致。第三问策略虽不变，预测成本仍随先验变化，不能把不同先验的成本差理解为同一真实工厂的实际节省。"),
+        text("四组先验/样本量情景的第二问推荐均由确定性积分核对其在16类策略中的最低期望成本，第三问已选策略的成本由解析Beta矩核对。敏感性分析仅覆盖这些明确选择，不保证对所有先验稳健；真实使用仍需先验和抽样设计评估。")],2)
     section("七、模型评价与改进",[
         text("模型直接利用题意中的条件次品率、拆解不损伤、免费调换等约束，保留质量身份，避免无穷返工被有限截断掩盖。层级条件期望将复杂内部结构压缩为可逐层解释的量，且可用独立对象仿真验证。"),
         text("主要限制是独立质量与完美检测假设、所选回收策略类，以及缺失的库存和时间成本。序贯检验在阈值附近可能长期未决，贝叶斯决策也依赖先验和抽样条件。实际应用应先核对检测性能和抽样设计，再决定是否扩展状态与目标。")])

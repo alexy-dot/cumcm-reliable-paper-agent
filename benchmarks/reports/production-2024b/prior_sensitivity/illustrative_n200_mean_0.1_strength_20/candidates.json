@@ -1,0 +1,646 @@
+{
+  "Q2-1": {
+    "policy_count": 16,
+    "finalists": [
+      {
+        "policy": {
+          "part_tests": [
+            1,
+            0
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 0,
+          "final_dismantle": 1
+        },
+        "selection_mean_cost": 37.208484936081106
+      },
+      {
+        "policy": {
+          "part_tests": [
+            0,
+            0
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 0,
+          "final_dismantle": 1
+        },
+        "selection_mean_cost": 37.52659186563109
+      },
+      {
+        "policy": {
+          "part_tests": [
+            1,
+            1
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 0,
+          "final_dismantle": 1
+        },
+        "selection_mean_cost": 37.932843312143405
+      },
+      {
+        "policy": {
+          "part_tests": [
+            0,
+            1
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 0,
+          "final_dismantle": 1
+        },
+        "selection_mean_cost": 38.0164559644147
+      },
+      {
+        "policy": {
+          "part_tests": [
+            1,
+            0
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 0,
+          "final_dismantle": 0
+        },
+        "selection_mean_cost": 39.36004477889585
+      }
+    ],
+    "nominal_policy": {
+      "part_tests": [
+        1,
+        0
+      ],
+      "semi_tests": [],
+      "semi_dismantle": [],
+      "final_test": 0,
+      "final_dismantle": 1
+    }
+  },
+  "Q2-2": {
+    "policy_count": 16,
+    "finalists": [
+      {
+        "policy": {
+          "part_tests": [
+            1,
+            1
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 0,
+          "final_dismantle": 1
+        },
+        "selection_mean_cost": 43.45962880183774
+      },
+      {
+        "policy": {
+          "part_tests": [
+            1,
+            0
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 0,
+          "final_dismantle": 1
+        },
+        "selection_mean_cost": 44.76144651989101
+      },
+      {
+        "policy": {
+          "part_tests": [
+            0,
+            1
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 0,
+          "final_dismantle": 1
+        },
+        "selection_mean_cost": 45.36589645197826
+      },
+      {
+        "policy": {
+          "part_tests": [
+            1,
+            1
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 1,
+          "final_dismantle": 1
+        },
+        "selection_mean_cost": 45.74807737570129
+      },
+      {
+        "policy": {
+          "part_tests": [
+            1,
+            0
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 1,
+          "final_dismantle": 1
+        },
+        "selection_mean_cost": 46.47400722856244
+      }
+    ],
+    "nominal_policy": {
+      "part_tests": [
+        1,
+        1
+      ],
+      "semi_tests": [],
+      "semi_dismantle": [],
+      "final_test": 0,
+      "final_dismantle": 1
+    }
+  },
+  "Q2-3": {
+    "policy_count": 16,
+    "finalists": [
+      {
+        "policy": {
+          "part_tests": [
+            1,
+            0
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 1,
+          "final_dismantle": 1
+        },
+        "selection_mean_cost": 39.64397487431482
+      },
+      {
+        "policy": {
+          "part_tests": [
+            0,
+            0
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 1,
+          "final_dismantle": 1
+        },
+        "selection_mean_cost": 39.668368880706716
+      },
+      {
+        "policy": {
+          "part_tests": [
+            0,
+            1
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 1,
+          "final_dismantle": 1
+        },
+        "selection_mean_cost": 40.392789489688504
+      },
+      {
+        "policy": {
+          "part_tests": [
+            1,
+            1
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 1,
+          "final_dismantle": 1
+        },
+        "selection_mean_cost": 40.632397697491214
+      },
+      {
+        "policy": {
+          "part_tests": [
+            1,
+            1
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 0,
+          "final_dismantle": 1
+        },
+        "selection_mean_cost": 40.63771616760681
+      }
+    ],
+    "nominal_policy": {
+      "part_tests": [
+        1,
+        0
+      ],
+      "semi_tests": [],
+      "semi_dismantle": [],
+      "final_test": 1,
+      "final_dismantle": 1
+    }
+  },
+  "Q2-4": {
+    "policy_count": 16,
+    "finalists": [
+      {
+        "policy": {
+          "part_tests": [
+            1,
+            1
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 1,
+          "final_dismantle": 1
+        },
+        "selection_mean_cost": 40.74608700364543
+      },
+      {
+        "policy": {
+          "part_tests": [
+            1,
+            0
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 1,
+          "final_dismantle": 1
+        },
+        "selection_mean_cost": 42.554780963734004
+      },
+      {
+        "policy": {
+          "part_tests": [
+            0,
+            1
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 1,
+          "final_dismantle": 1
+        },
+        "selection_mean_cost": 42.56871190043226
+      },
+      {
+        "policy": {
+          "part_tests": [
+            0,
+            0
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 1,
+          "final_dismantle": 1
+        },
+        "selection_mean_cost": 44.15750566416192
+      },
+      {
+        "policy": {
+          "part_tests": [
+            1,
+            1
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 0,
+          "final_dismantle": 1
+        },
+        "selection_mean_cost": 45.41179202449845
+      }
+    ],
+    "nominal_policy": {
+      "part_tests": [
+        1,
+        1
+      ],
+      "semi_tests": [],
+      "semi_dismantle": [],
+      "final_test": 1,
+      "final_dismantle": 1
+    }
+  },
+  "Q2-5": {
+    "policy_count": 16,
+    "finalists": [
+      {
+        "policy": {
+          "part_tests": [
+            0,
+            1
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 0,
+          "final_dismantle": 1
+        },
+        "selection_mean_cost": 40.77761158924016
+      },
+      {
+        "policy": {
+          "part_tests": [
+            0,
+            1
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 1,
+          "final_dismantle": 1
+        },
+        "selection_mean_cost": 41.075512116400716
+      },
+      {
+        "policy": {
+          "part_tests": [
+            0,
+            1
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 0,
+          "final_dismantle": 0
+        },
+        "selection_mean_cost": 43.739872174119604
+      },
+      {
+        "policy": {
+          "part_tests": [
+            0,
+            1
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 1,
+          "final_dismantle": 0
+        },
+        "selection_mean_cost": 43.84397762858719
+      },
+      {
+        "policy": {
+          "part_tests": [
+            0,
+            0
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 1,
+          "final_dismantle": 1
+        },
+        "selection_mean_cost": 43.8505600995647
+      }
+    ],
+    "nominal_policy": {
+      "part_tests": [
+        0,
+        1
+      ],
+      "semi_tests": [],
+      "semi_dismantle": [],
+      "final_test": 0,
+      "final_dismantle": 1
+    }
+  },
+  "Q2-6": {
+    "policy_count": 16,
+    "finalists": [
+      {
+        "policy": {
+          "part_tests": [
+            0,
+            0
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 0,
+          "final_dismantle": 0
+        },
+        "selection_mean_cost": 35.13423989788613
+      },
+      {
+        "policy": {
+          "part_tests": [
+            1,
+            0
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 0,
+          "final_dismantle": 0
+        },
+        "selection_mean_cost": 35.26617363687822
+      },
+      {
+        "policy": {
+          "part_tests": [
+            0,
+            0
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 1,
+          "final_dismantle": 0
+        },
+        "selection_mean_cost": 36.82003781143342
+      },
+      {
+        "policy": {
+          "part_tests": [
+            1,
+            1
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 0,
+          "final_dismantle": 0
+        },
+        "selection_mean_cost": 37.25511681762512
+      },
+      {
+        "policy": {
+          "part_tests": [
+            0,
+            1
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 0,
+          "final_dismantle": 0
+        },
+        "selection_mean_cost": 37.393827544915254
+      }
+    ],
+    "nominal_policy": {
+      "part_tests": [
+        0,
+        0
+      ],
+      "semi_tests": [],
+      "semi_dismantle": [],
+      "final_test": 0,
+      "final_dismantle": 0
+    }
+  },
+  "Q3": {
+    "policy_count": 65536,
+    "finalists": [
+      {
+        "policy": {
+          "part_tests": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "semi_tests": [
+            1,
+            1,
+            1
+          ],
+          "semi_dismantle": [
+            1,
+            1,
+            1
+          ],
+          "final_test": 0,
+          "final_dismantle": 1
+        },
+        "selection_mean_cost": 139.74635166980744
+      },
+      {
+        "policy": {
+          "part_tests": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "semi_tests": [
+            1,
+            1,
+            1
+          ],
+          "semi_dismantle": [
+            1,
+            1,
+            1
+          ],
+          "final_test": 0,
+          "final_dismantle": 1
+        },
+        "selection_mean_cost": 139.89333031331833
+      },
+      {
+        "policy": {
+          "part_tests": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "semi_tests": [
+            1,
+            1,
+            1
+          ],
+          "semi_dismantle": [
+            1,
+            1,
+            1
+          ],
+          "final_test": 0,
+          "final_dismantle": 1
+        },
+        "selection_mean_cost": 139.9032765380737
+      },
+      {
+        "policy": {
+          "part_tests": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "semi_tests": [
+            1,
+            1,
+            1
+          ],
+          "semi_dismantle": [
+            1,
+            1,
+            1
+          ],
+          "final_test": 0,
+          "final_dismantle": 1
+        },
+        "selection_mean_cost": 139.92841085825071
+      },
+      {
+        "policy": {
+          "part_tests": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "semi_tests": [
+            1,
+            1,
+            1
+          ],
+          "semi_dismantle": [
+            1,
+            1,
+            1
+          ],
+          "final_test": 0,
+          "final_dismantle": 1
+        },
+        "selection_mean_cost": 140.0502551815846
+      }
+    ],
+    "nominal_policy": {
+      "part_tests": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "semi_tests": [
+        1,
+        1,
+        1
+      ],
+      "semi_dismantle": [
+        1,
+        1,
+        1
+      ],
+      "final_test": 0,
+      "final_dismantle": 1
+    }
+  }
+}

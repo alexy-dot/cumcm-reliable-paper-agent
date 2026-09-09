@@ -2,7 +2,7 @@
 import unittest
 from itertools import product
 import numpy as np
-from sampled_rates import counts_parameters,case_tree,evaluate,search
+from sampled_rates import counts_parameters,case_tree,evaluate,search,posterior_moment_status,solve
 from multistage import source_tree,leaf,assembly,order_cost
 from rework import evaluate as markov
 from test_production import CASE
@@ -10,6 +10,30 @@ from verify_sampled_rates import quadrature,all_tested_expectation
 
 
 class SampledRatesTest(unittest.TestCase):
+    def test_finite_mean_does_not_imply_finite_monte_carlo_variance(self):
+        parameters=counts_parameters([{"n":1,"k":0,"basis":"random_supply"}],["random_supply"],{"alpha":1,"beta":1})
+        status=posterior_moment_status(parameters)
+        self.assertTrue(status["inverse_good_rate_mean_finite"])
+        self.assertFalse(status["inverse_good_rate_variance_finite"])
+        self.assertEqual(status["variance_failure_stages"],[0])
+        with self.assertRaises(ValueError):all_tested_expectation(source_tree(),np.tile([3.,1.],(12,1)),0)
+
+    def test_unsupported_variance_is_rejected_before_creating_outputs(self):
+        import tempfile
+        from pathlib import Path
+        from prepare import write_json
+        with tempfile.TemporaryDirectory() as folder:
+            root=Path(folder)
+            write_json(root/"artifacts/facts.json",{"cases":[{**CASE,"case":1}]})
+            record=lambda basis:{"n":1,"k":0,"basis":basis}
+            samples={"provenance":"synthetic test only","prior":{"alpha":1,"beta":1},
+                     "q2":{"1":[record("random_supply"),record("random_supply"),record("good_inputs")]},
+                     "q3":[record("random_supply") for _ in range(8)]+[record("good_inputs") for _ in range(4)]}
+            write_json(root/"samples.json",samples)
+            with self.assertRaisesRegex(ValueError,"mean exists.*variance diverges"):
+                solve(root,root/"samples.json",root/"output")
+            self.assertFalse((root/"output").exists())
+
     def test_posterior_uses_counts_not_just_nominal_fraction(self):
         small=counts_parameters([{"n":20,"k":2,"basis":"random_supply"}],["random_supply"],{"alpha":1,"beta":1})
         large=counts_parameters([{"n":200,"k":20,"basis":"random_supply"}],["random_supply"],{"alpha":1,"beta":1})

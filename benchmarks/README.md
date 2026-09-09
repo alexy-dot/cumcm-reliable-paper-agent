@@ -124,6 +124,8 @@ python3 benchmarks/ethanol_2021b/run_all.py --source-dir /path/2021/B --output r
 
 [第四问结果](reports/production-2024b/q4-report.md)支持传入各阶段真实`n`、`k`及抽样条件，独立Beta先验显式声明。选择与验证分别使用512、8192组参数，第二问另用确定性积分核对全部有效策略。示例中20件样本使三种情形改变检测策略，200件示例回到名义方案；这不是额外抽样的实际净收益。
 
+[先验敏感性](reports/production-2024b/prior_sensitivity/report.json)固定同一计数，比较Jeffreys与假设性Beta(2,18)先验：20件时部分推荐改变，200件时本次比较的策略保持一致。接口也区分后验均值与方差是否存在；当前随机积分标准误路径不接受逆合格率方差发散的输入，不能凭有限样本标准差宣称误差已控制。
+
 ```bash
 .venv/bin/python benchmarks/production_2024b/run_all.py \
   --source /path/2024/B题.pdf --output runs/production-full --example-sizes 20 200 \

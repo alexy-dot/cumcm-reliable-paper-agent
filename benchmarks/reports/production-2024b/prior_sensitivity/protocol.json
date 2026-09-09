@@ -1,0 +1,24 @@
+{
+  "priors": [
+    {
+      "name": "Jeffreys",
+      "alpha": 0.5,
+      "beta": 0.5
+    },
+    {
+      "name": "mean_0.1_strength_20",
+      "alpha": 2.0,
+      "beta": 18.0
+    }
+  ],
+  "sample_sizes": [
+    20,
+    200
+  ],
+  "source_samples": {
+    "20": "7010a2ad6467c3200251d5b674b2d65ff003410ceb66f53c4cd131eb2fef614a",
+    "200": "1aae2fdf43c04f61ddc5d15fd9a20ff822a83de1683bf7f0e8d9da6db8f27c9f"
+  },
+  "scope": "same illustrative counts under declared alternative independent priors; Beta(2,18) expresses hypothetical prior information and is not empirically established",
+  "selection": "same 512 selection draws and 8192 separate validation draws; prior scenarios frozen before selection; no retuning after validation"
+}

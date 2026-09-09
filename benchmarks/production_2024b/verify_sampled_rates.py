@@ -28,6 +28,9 @@ def posterior_costs(tree,parameters,order):
 
 
 def all_tested_expectation(tree,parameters,final_test):
+    parameters=np.asarray(parameters,float)
+    if parameters.ndim!=2 or parameters.shape[1]!=2 or not np.isfinite(parameters).all() or np.any(parameters<=0) or np.any(parameters[:,1]<=1):
+        raise ValueError("finite analytic inverse-good-rate expectation requires positive shapes and beta>1")
     if len(parameters)!=len(tree["parts"])+len(tree["semis"])+1:raise ValueError("wrong posterior count")
     inv=(parameters.sum(axis=1)-1)/(parameters[:,1]-1)
     odds=parameters[:,0]/(parameters[:,1]-1)

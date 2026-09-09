@@ -28,6 +28,17 @@ def counts_parameters(samples,bases,prior):
     return np.asarray(parameters,float)
 
 
+def posterior_moment_status(parameters):
+    values=np.asarray(parameters,float)
+    if values.ndim!=2 or values.shape[1]!=2 or not len(values) or not np.isfinite(values).all() or np.any(values<=0):
+        raise ValueError("expected finite positive Beta shape pairs")
+    mean=bool(np.all(values[:,1]>1));variance=bool(np.all(values[:,1]>2))
+    return {"inverse_good_rate_mean_finite":mean,"inverse_good_rate_variance_finite":variance,
+            "mean_failure_stages":np.flatnonzero(values[:,1]<=1).tolist(),
+            "variance_failure_stages":np.flatnonzero(values[:,1]<=2).tolist(),
+            "scope":"for independent stage rates and the supplied tree policy costs, beta>2 at every stage is a sufficient condition for the finite-variance Monte Carlo standard-error calculation"}
+
+
 def draws(parameters,count,seed):
     rng=np.random.default_rng(seed)
     return np.column_stack([rng.beta(a,b,count) for a,b in parameters])
@@ -133,10 +144,15 @@ def solve(run,samples_path,output):
     problems=[("Q2-"+str(c["case"]),case_tree(c),samples["q2"][str(c["case"])] ) for c in facts["cases"]]
     problems.append(("Q3",source_tree(),samples["q3"]))
     parameters={name:counts_parameters(records,["random_supply"]*len(tree["parts"])+["good_inputs"]*(len(tree["semis"])+1),samples["prior"]) for name,tree,records in problems}
+    moments={name:posterior_moment_status(p) for name,p in parameters.items()}
+    for name,status in moments.items():
+        if not status["inverse_good_rate_variance_finite"]:
+            raise ValueError(f"{name}: posterior mean exists but inverse-good-rate variance diverges at stages {status['variance_failure_stages']}; this Monte Carlo/standard-error workflow requires beta>2. Use a justified analytic or deterministic integrator instead.")
     output.mkdir(parents=True,exist_ok=False)
     protocol={"samples":samples,"samples_sha256":sha256_file(samples_path),"selection_draws":DESIGN_DRAWS,"validation_draws":CHECK_DRAWS,
         "selection_seed_base":104729,"validation_seed_base":130363,"prior_and_likelihood":"independent Beta prior per stage, iid Bernoulli likelihood; assembly observations require all-good inputs",
         "objective":"minimum posterior expected completion cost among declared policies, equal integration weight; five finalists frozen before held-out integration",
+        "posterior_moment_checks":moments,
         "scope":"Monte Carlo posterior decision analysis conditional on supplied counts and prior; not an exact proof of expected-cost optimality or field reliability"}
     write_json(output/"protocol.json",protocol)
     selected={}

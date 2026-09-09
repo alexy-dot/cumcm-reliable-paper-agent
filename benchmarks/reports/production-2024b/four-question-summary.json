@@ -1,13 +1,13 @@
 {
   "case": "2024 B production decisions, four-question conditional training paper",
   "paper": {
-    "pages": 14,
-    "sha256": "febaf37edbe2479d7ae7437e7705f38382ee975023f56d2039b0f432ccdf21d4",
+    "pages": 15,
+    "sha256": "c796f1db6ae961993e5db97b802856d2db123cd5f07c3684e38b67eb4262ba49",
     "visual_review": {
       "reviewer_type": "agent",
-      "scope": "All 14 pages reviewed: first six pixel-identical to prior published paper, remaining pages reviewed as rendered sheets, figure pages 7 and 9 inspected at full resolution. After shortening an orphaned sentence, changed pages 9-11 rechecked. Assembly topology and exact cost decomposition inspected in standalone vector/raster previews; Chinese labels, legend, margins and section coverage pass. Agent visual review only.",
+      "scope": "First 12 pages pixel-identical to previously reviewed paper. New pages 13-15 checked at full resolution for posterior-moment formula, prior comparison table, Chinese typography and scope statements. All 15 pages have verified content margins and four-question structure. Agent visual review only.",
       "status": "PASS",
-      "pdf_sha256": "febaf37edbe2479d7ae7437e7705f38382ee975023f56d2039b0f432ccdf21d4"
+      "pdf_sha256": "c796f1db6ae961993e5db97b802856d2db123cd5f07c3684e38b67eb4262ba49"
     },
     "structure": {
       "profile": "user-requested CUMCM organization; recognized labels are conventions, not universal official rules",
@@ -21,7 +21,7 @@
         "all_questions_solution": true,
         "notation_table_columns": true
       },
-      "pages": 14,
+      "pages": 15,
       "question_count": 4,
       "question_evidence": {
         "analysis": {
@@ -121,24 +121,24 @@
           13
         ],
         "evaluation": [
-          13
+          14
         ],
         "conclusion": [
-          13
+          15
         ],
         "ai": [
-          14
+          15
         ],
         "references": [
-          14
+          15
         ],
         "appendix": [
-          14
+          15
         ]
       },
       "scope": "actual section coverage only; no certification of substantive answers, math, visual quality or awards",
       "question_mapping": "contract questions in listed order map to 问题一/问题1 etc.; nested outputs need semantic review",
-      "pdf_sha256": "febaf37edbe2479d7ae7437e7705f38382ee975023f56d2039b0f432ccdf21d4",
+      "pdf_sha256": "c796f1db6ae961993e5db97b802856d2db123cd5f07c3684e38b67eb4262ba49",
       "extractor": "pypdf layout text",
       "contract_sha256": "e3fa313a36599ca9b847d3c48e78b4e9b3757256c7bbaad06692cf89a634281f"
     }
@@ -450,6 +450,740 @@
         "verification_passed": true
       }
     ]
+  },
+  "prior_sensitivity": {
+    "report_sha256": "bc5ca6008ca40ed61357c40259e841b4229a3c69d2bb05c2e432ed7749007467",
+    "results": [
+      {
+        "n": 20,
+        "prior": {
+          "name": "Jeffreys",
+          "alpha": 0.5,
+          "beta": 0.5
+        },
+        "problem": "Q2-1",
+        "selected_policy": {
+          "part_tests": [
+            1,
+            0
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 0,
+          "final_dismantle": 1
+        },
+        "changed_from_uniform_prior": true,
+        "validation_mean_cost": 38.97820290984109,
+        "deterministic_selected_cost": 38.98129251700673,
+        "deterministic_selection_gap": 0.0,
+        "verification_passed": true
+      },
+      {
+        "n": 20,
+        "prior": {
+          "name": "Jeffreys",
+          "alpha": 0.5,
+          "beta": 0.5
+        },
+        "problem": "Q2-2",
+        "selected_policy": {
+          "part_tests": [
+            1,
+            1
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 0,
+          "final_dismantle": 1
+        },
+        "changed_from_uniform_prior": false,
+        "validation_mean_cost": 45.70328369445205,
+        "deterministic_selected_cost": 45.77419354838712,
+        "deterministic_selection_gap": 0.0,
+        "verification_passed": true
+      },
+      {
+        "n": 20,
+        "prior": {
+          "name": "Jeffreys",
+          "alpha": 0.5,
+          "beta": 0.5
+        },
+        "problem": "Q2-3",
+        "selected_policy": {
+          "part_tests": [
+            1,
+            0
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 1,
+          "final_dismantle": 1
+        },
+        "changed_from_uniform_prior": false,
+        "validation_mean_cost": 41.253060909919576,
+        "deterministic_selected_cost": 41.195578231292444,
+        "deterministic_selection_gap": 0.0,
+        "verification_passed": true
+      },
+      {
+        "n": 20,
+        "prior": {
+          "name": "Jeffreys",
+          "alpha": 0.5,
+          "beta": 0.5
+        },
+        "problem": "Q2-4",
+        "selected_policy": {
+          "part_tests": [
+            1,
+            1
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 1,
+          "final_dismantle": 1
+        },
+        "changed_from_uniform_prior": false,
+        "validation_mean_cost": 42.776750133015284,
+        "deterministic_selected_cost": 42.74193548387096,
+        "deterministic_selection_gap": 0.0,
+        "verification_passed": true
+      },
+      {
+        "n": 20,
+        "prior": {
+          "name": "Jeffreys",
+          "alpha": 0.5,
+          "beta": 0.5
+        },
+        "problem": "Q2-5",
+        "selected_policy": {
+          "part_tests": [
+            0,
+            1
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 1,
+          "final_dismantle": 1
+        },
+        "changed_from_uniform_prior": false,
+        "validation_mean_cost": 43.502024920872515,
+        "deterministic_selected_cost": 43.426559871260295,
+        "deterministic_selection_gap": 0.0,
+        "verification_passed": true
+      },
+      {
+        "n": 20,
+        "prior": {
+          "name": "Jeffreys",
+          "alpha": 0.5,
+          "beta": 0.5
+        },
+        "problem": "Q2-6",
+        "selected_policy": {
+          "part_tests": [
+            1,
+            0
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 0,
+          "final_dismantle": 0
+        },
+        "changed_from_uniform_prior": false,
+        "validation_mean_cost": 37.28214611411179,
+        "deterministic_selected_cost": 37.31802657295722,
+        "deterministic_selection_gap": 0.0,
+        "verification_passed": true
+      },
+      {
+        "n": 20,
+        "prior": {
+          "name": "Jeffreys",
+          "alpha": 0.5,
+          "beta": 0.5
+        },
+        "problem": "Q3",
+        "selected_policy": {
+          "part_tests": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "semi_tests": [
+            1,
+            1,
+            1
+          ],
+          "semi_dismantle": [
+            1,
+            1,
+            1
+          ],
+          "final_test": 0,
+          "final_dismantle": 1
+        },
+        "changed_from_uniform_prior": false,
+        "validation_mean_cost": 145.62542576923465,
+        "deterministic_selected_cost": 145.71428571428572,
+        "deterministic_selection_gap": null,
+        "verification_passed": true
+      },
+      {
+        "n": 20,
+        "prior": {
+          "name": "mean_0.1_strength_20",
+          "alpha": 2.0,
+          "beta": 18.0
+        },
+        "problem": "Q2-1",
+        "selected_policy": {
+          "part_tests": [
+            1,
+            0
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 0,
+          "final_dismantle": 1
+        },
+        "changed_from_uniform_prior": true,
+        "validation_mean_cost": 37.27776957672301,
+        "deterministic_selected_cost": 37.29857142857141,
+        "deterministic_selection_gap": 0.0,
+        "verification_passed": true
+      },
+      {
+        "n": 20,
+        "prior": {
+          "name": "mean_0.1_strength_20",
+          "alpha": 2.0,
+          "beta": 18.0
+        },
+        "problem": "Q2-2",
+        "selected_policy": {
+          "part_tests": [
+            1,
+            1
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 0,
+          "final_dismantle": 1
+        },
+        "changed_from_uniform_prior": false,
+        "validation_mean_cost": 40.987184450282456,
+        "deterministic_selected_cost": 40.99999999999997,
+        "deterministic_selection_gap": 0.0,
+        "verification_passed": true
+      },
+      {
+        "n": 20,
+        "prior": {
+          "name": "mean_0.1_strength_20",
+          "alpha": 2.0,
+          "beta": 18.0
+        },
+        "problem": "Q2-3",
+        "selected_policy": {
+          "part_tests": [
+            1,
+            0
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 1,
+          "final_dismantle": 1
+        },
+        "changed_from_uniform_prior": false,
+        "validation_mean_cost": 39.694128754963415,
+        "deterministic_selected_cost": 39.65571428571427,
+        "deterministic_selection_gap": 0.0,
+        "verification_passed": true
+      },
+      {
+        "n": 20,
+        "prior": {
+          "name": "mean_0.1_strength_20",
+          "alpha": 2.0,
+          "beta": 18.0
+        },
+        "problem": "Q2-4",
+        "selected_policy": {
+          "part_tests": [
+            1,
+            1
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 1,
+          "final_dismantle": 1
+        },
+        "changed_from_uniform_prior": false,
+        "validation_mean_cost": 38.746259116507176,
+        "deterministic_selected_cost": 38.72727272727271,
+        "deterministic_selection_gap": 0.0,
+        "verification_passed": true
+      },
+      {
+        "n": 20,
+        "prior": {
+          "name": "mean_0.1_strength_20",
+          "alpha": 2.0,
+          "beta": 18.0
+        },
+        "problem": "Q2-5",
+        "selected_policy": {
+          "part_tests": [
+            0,
+            1
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 0,
+          "final_dismantle": 1
+        },
+        "changed_from_uniform_prior": true,
+        "validation_mean_cost": 39.821544533035166,
+        "deterministic_selected_cost": 39.84597402597399,
+        "deterministic_selection_gap": 0.0,
+        "verification_passed": true
+      },
+      {
+        "n": 20,
+        "prior": {
+          "name": "mean_0.1_strength_20",
+          "alpha": 2.0,
+          "beta": 18.0
+        },
+        "problem": "Q2-6",
+        "selected_policy": {
+          "part_tests": [
+            1,
+            0
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 0,
+          "final_dismantle": 0
+        },
+        "changed_from_uniform_prior": false,
+        "validation_mean_cost": 37.52852888287557,
+        "deterministic_selected_cost": 37.53124999999997,
+        "deterministic_selection_gap": 0.0,
+        "verification_passed": true
+      },
+      {
+        "n": 20,
+        "prior": {
+          "name": "mean_0.1_strength_20",
+          "alpha": 2.0,
+          "beta": 18.0
+        },
+        "problem": "Q3",
+        "selected_policy": {
+          "part_tests": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "semi_tests": [
+            1,
+            1,
+            1
+          ],
+          "semi_dismantle": [
+            1,
+            1,
+            1
+          ],
+          "final_test": 0,
+          "final_dismantle": 1
+        },
+        "changed_from_uniform_prior": false,
+        "validation_mean_cost": 140.34746779786977,
+        "deterministic_selected_cost": 140.37142857142857,
+        "deterministic_selection_gap": null,
+        "verification_passed": true
+      },
+      {
+        "n": 200,
+        "prior": {
+          "name": "Jeffreys",
+          "alpha": 0.5,
+          "beta": 0.5
+        },
+        "problem": "Q2-1",
+        "selected_policy": {
+          "part_tests": [
+            1,
+            0
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 0,
+          "final_dismantle": 1
+        },
+        "changed_from_uniform_prior": false,
+        "validation_mean_cost": 37.334208286514894,
+        "deterministic_selected_cost": 37.33963487141682,
+        "deterministic_selection_gap": 0.0,
+        "verification_passed": true
+      },
+      {
+        "n": 200,
+        "prior": {
+          "name": "Jeffreys",
+          "alpha": 0.5,
+          "beta": 0.5
+        },
+        "problem": "Q2-2",
+        "selected_policy": {
+          "part_tests": [
+            1,
+            1
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 0,
+          "final_dismantle": 1
+        },
+        "changed_from_uniform_prior": false,
+        "validation_mean_cost": 44.16650705141056,
+        "deterministic_selected_cost": 44.172413793103416,
+        "deterministic_selection_gap": 0.0,
+        "verification_passed": true
+      },
+      {
+        "n": 200,
+        "prior": {
+          "name": "Jeffreys",
+          "alpha": 0.5,
+          "beta": 0.5
+        },
+        "problem": "Q2-3",
+        "selected_policy": {
+          "part_tests": [
+            1,
+            0
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 1,
+          "final_dismantle": 1
+        },
+        "changed_from_uniform_prior": false,
+        "validation_mean_cost": 39.688420196059866,
+        "deterministic_selected_cost": 39.691046337761996,
+        "deterministic_selection_gap": 0.0,
+        "verification_passed": true
+      },
+      {
+        "n": 200,
+        "prior": {
+          "name": "Jeffreys",
+          "alpha": 0.5,
+          "beta": 0.5
+        },
+        "problem": "Q2-4",
+        "selected_policy": {
+          "part_tests": [
+            1,
+            1
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 1,
+          "final_dismantle": 1
+        },
+        "changed_from_uniform_prior": false,
+        "validation_mean_cost": 41.39078347295994,
+        "deterministic_selected_cost": 41.394984326018786,
+        "deterministic_selection_gap": 0.0,
+        "verification_passed": true
+      },
+      {
+        "n": 200,
+        "prior": {
+          "name": "Jeffreys",
+          "alpha": 0.5,
+          "beta": 0.5
+        },
+        "problem": "Q2-5",
+        "selected_policy": {
+          "part_tests": [
+            0,
+            1
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 0,
+          "final_dismantle": 1
+        },
+        "changed_from_uniform_prior": false,
+        "validation_mean_cost": 41.267271807114135,
+        "deterministic_selected_cost": 41.2836697178805,
+        "deterministic_selection_gap": 0.0,
+        "verification_passed": true
+      },
+      {
+        "n": 200,
+        "prior": {
+          "name": "Jeffreys",
+          "alpha": 0.5,
+          "beta": 0.5
+        },
+        "problem": "Q2-6",
+        "selected_policy": {
+          "part_tests": [
+            0,
+            0
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 0,
+          "final_dismantle": 0
+        },
+        "changed_from_uniform_prior": false,
+        "validation_mean_cost": 34.668289918667654,
+        "deterministic_selected_cost": 34.67308458960616,
+        "deterministic_selection_gap": 0.0,
+        "verification_passed": true
+      },
+      {
+        "n": 200,
+        "prior": {
+          "name": "Jeffreys",
+          "alpha": 0.5,
+          "beta": 0.5
+        },
+        "problem": "Q3",
+        "selected_policy": {
+          "part_tests": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "semi_tests": [
+            1,
+            1,
+            1
+          ],
+          "semi_dismantle": [
+            1,
+            1,
+            1
+          ],
+          "final_test": 0,
+          "final_dismantle": 1
+        },
+        "changed_from_uniform_prior": false,
+        "validation_mean_cost": 140.33960603761716,
+        "deterministic_selected_cost": 140.35654596100278,
+        "deterministic_selection_gap": null,
+        "verification_passed": true
+      },
+      {
+        "n": 200,
+        "prior": {
+          "name": "mean_0.1_strength_20",
+          "alpha": 2.0,
+          "beta": 18.0
+        },
+        "problem": "Q2-1",
+        "selected_policy": {
+          "part_tests": [
+            1,
+            0
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 0,
+          "final_dismantle": 1
+        },
+        "changed_from_uniform_prior": false,
+        "validation_mean_cost": 37.171181246393104,
+        "deterministic_selected_cost": 37.183705583756335,
+        "deterministic_selection_gap": 0.0,
+        "verification_passed": true
+      },
+      {
+        "n": 200,
+        "prior": {
+          "name": "mean_0.1_strength_20",
+          "alpha": 2.0,
+          "beta": 18.0
+        },
+        "problem": "Q2-2",
+        "selected_policy": {
+          "part_tests": [
+            1,
+            1
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 0,
+          "final_dismantle": 1
+        },
+        "changed_from_uniform_prior": false,
+        "validation_mean_cost": 43.43785528490925,
+        "deterministic_selected_cost": 43.44067796610169,
+        "deterministic_selection_gap": 0.0,
+        "verification_passed": true
+      },
+      {
+        "n": 200,
+        "prior": {
+          "name": "mean_0.1_strength_20",
+          "alpha": 2.0,
+          "beta": 18.0
+        },
+        "problem": "Q2-3",
+        "selected_policy": {
+          "part_tests": [
+            1,
+            0
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 1,
+          "final_dismantle": 1
+        },
+        "changed_from_uniform_prior": false,
+        "validation_mean_cost": 39.548252757282484,
+        "deterministic_selected_cost": 39.54868020304568,
+        "deterministic_selection_gap": 0.0,
+        "verification_passed": true
+      },
+      {
+        "n": 200,
+        "prior": {
+          "name": "mean_0.1_strength_20",
+          "alpha": 2.0,
+          "beta": 18.0
+        },
+        "problem": "Q2-4",
+        "selected_policy": {
+          "part_tests": [
+            1,
+            1
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 1,
+          "final_dismantle": 1
+        },
+        "changed_from_uniform_prior": false,
+        "validation_mean_cost": 40.77580974028448,
+        "deterministic_selected_cost": 40.77966101694914,
+        "deterministic_selection_gap": 0.0,
+        "verification_passed": true
+      },
+      {
+        "n": 200,
+        "prior": {
+          "name": "mean_0.1_strength_20",
+          "alpha": 2.0,
+          "beta": 18.0
+        },
+        "problem": "Q2-5",
+        "selected_policy": {
+          "part_tests": [
+            0,
+            1
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 0,
+          "final_dismantle": 1
+        },
+        "changed_from_uniform_prior": false,
+        "validation_mean_cost": 40.79861635449975,
+        "deterministic_selected_cost": 40.813753764088446,
+        "deterministic_selection_gap": 0.0,
+        "verification_passed": true
+      },
+      {
+        "n": 200,
+        "prior": {
+          "name": "mean_0.1_strength_20",
+          "alpha": 2.0,
+          "beta": 18.0
+        },
+        "problem": "Q2-6",
+        "selected_policy": {
+          "part_tests": [
+            0,
+            0
+          ],
+          "semi_tests": [],
+          "semi_dismantle": [],
+          "final_test": 0,
+          "final_dismantle": 0
+        },
+        "changed_from_uniform_prior": false,
+        "validation_mean_cost": 34.99292920105823,
+        "deterministic_selected_cost": 34.999211589332404,
+        "deterministic_selection_gap": 0.0,
+        "verification_passed": true
+      },
+      {
+        "n": 200,
+        "prior": {
+          "name": "mean_0.1_strength_20",
+          "alpha": 2.0,
+          "beta": 18.0
+        },
+        "problem": "Q3",
+        "selected_policy": {
+          "part_tests": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "semi_tests": [
+            1,
+            1,
+            1
+          ],
+          "semi_dismantle": [
+            1,
+            1,
+            1
+          ],
+          "final_test": 0,
+          "final_dismantle": 1
+        },
+        "changed_from_uniform_prior": false,
+        "validation_mean_cost": 139.85687727982375,
+        "deterministic_selected_cost": 139.88324873096443,
+        "deterministic_selection_gap": null,
+        "verification_passed": true
+      }
+    ],
+    "scope": "same illustrative counts under declared alternative independent priors; Beta(2,18) expresses hypothetical prior information and is not empirically established"
   },
   "figure_evidence": {
     "source_protocol_sha256": "ccc9f9d7dc5a543cc1b7e7dbe8a42c6955efd5322faa20863100fc32c5e02682",

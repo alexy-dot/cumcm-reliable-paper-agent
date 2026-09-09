@@ -1,0 +1,235 @@
+{
+  "samples": {
+    "label": "illustrative_n20_Jeffreys",
+    "provenance": "ILLUSTRATIVE_COUNTS_NOT_OBSERVED",
+    "prior": {
+      "alpha": 0.5,
+      "beta": 0.5
+    },
+    "q2": {
+      "1": [
+        {
+          "n": 20,
+          "k": 2,
+          "basis": "random_supply"
+        },
+        {
+          "n": 20,
+          "k": 2,
+          "basis": "random_supply"
+        },
+        {
+          "n": 20,
+          "k": 2,
+          "basis": "good_inputs"
+        }
+      ],
+      "2": [
+        {
+          "n": 20,
+          "k": 4,
+          "basis": "random_supply"
+        },
+        {
+          "n": 20,
+          "k": 4,
+          "basis": "random_supply"
+        },
+        {
+          "n": 20,
+          "k": 4,
+          "basis": "good_inputs"
+        }
+      ],
+      "3": [
+        {
+          "n": 20,
+          "k": 2,
+          "basis": "random_supply"
+        },
+        {
+          "n": 20,
+          "k": 2,
+          "basis": "random_supply"
+        },
+        {
+          "n": 20,
+          "k": 2,
+          "basis": "good_inputs"
+        }
+      ],
+      "4": [
+        {
+          "n": 20,
+          "k": 4,
+          "basis": "random_supply"
+        },
+        {
+          "n": 20,
+          "k": 4,
+          "basis": "random_supply"
+        },
+        {
+          "n": 20,
+          "k": 4,
+          "basis": "good_inputs"
+        }
+      ],
+      "5": [
+        {
+          "n": 20,
+          "k": 2,
+          "basis": "random_supply"
+        },
+        {
+          "n": 20,
+          "k": 4,
+          "basis": "random_supply"
+        },
+        {
+          "n": 20,
+          "k": 2,
+          "basis": "good_inputs"
+        }
+      ],
+      "6": [
+        {
+          "n": 20,
+          "k": 1,
+          "basis": "random_supply"
+        },
+        {
+          "n": 20,
+          "k": 1,
+          "basis": "random_supply"
+        },
+        {
+          "n": 20,
+          "k": 1,
+          "basis": "good_inputs"
+        }
+      ]
+    },
+    "q3": [
+      {
+        "n": 20,
+        "k": 2,
+        "basis": "random_supply"
+      },
+      {
+        "n": 20,
+        "k": 2,
+        "basis": "random_supply"
+      },
+      {
+        "n": 20,
+        "k": 2,
+        "basis": "random_supply"
+      },
+      {
+        "n": 20,
+        "k": 2,
+        "basis": "random_supply"
+      },
+      {
+        "n": 20,
+        "k": 2,
+        "basis": "random_supply"
+      },
+      {
+        "n": 20,
+        "k": 2,
+        "basis": "random_supply"
+      },
+      {
+        "n": 20,
+        "k": 2,
+        "basis": "random_supply"
+      },
+      {
+        "n": 20,
+        "k": 2,
+        "basis": "random_supply"
+      },
+      {
+        "n": 20,
+        "k": 2,
+        "basis": "good_inputs"
+      },
+      {
+        "n": 20,
+        "k": 2,
+        "basis": "good_inputs"
+      },
+      {
+        "n": 20,
+        "k": 2,
+        "basis": "good_inputs"
+      },
+      {
+        "n": 20,
+        "k": 2,
+        "basis": "good_inputs"
+      }
+    ]
+  },
+  "samples_sha256": "19ff510eb3b2625527b33da2a81c256280515ddcb8d75d99d9033630e3e26a0f",
+  "selection_draws": 512,
+  "validation_draws": 8192,
+  "selection_seed_base": 104729,
+  "validation_seed_base": 130363,
+  "prior_and_likelihood": "independent Beta prior per stage, iid Bernoulli likelihood; assembly observations require all-good inputs",
+  "objective": "minimum posterior expected completion cost among declared policies, equal integration weight; five finalists frozen before held-out integration",
+  "posterior_moment_checks": {
+    "Q2-1": {
+      "inverse_good_rate_mean_finite": true,
+      "inverse_good_rate_variance_finite": true,
+      "mean_failure_stages": [],
+      "variance_failure_stages": [],
+      "scope": "for independent stage rates and the supplied tree policy costs, beta>2 at every stage is a sufficient condition for the finite-variance Monte Carlo standard-error calculation"
+    },
+    "Q2-2": {
+      "inverse_good_rate_mean_finite": true,
+      "inverse_good_rate_variance_finite": true,
+      "mean_failure_stages": [],
+      "variance_failure_stages": [],
+      "scope": "for independent stage rates and the supplied tree policy costs, beta>2 at every stage is a sufficient condition for the finite-variance Monte Carlo standard-error calculation"
+    },
+    "Q2-3": {
+      "inverse_good_rate_mean_finite": true,
+      "inverse_good_rate_variance_finite": true,
+      "mean_failure_stages": [],
+      "variance_failure_stages": [],
+      "scope": "for independent stage rates and the supplied tree policy costs, beta>2 at every stage is a sufficient condition for the finite-variance Monte Carlo standard-error calculation"
+    },
+    "Q2-4": {
+      "inverse_good_rate_mean_finite": true,
+      "inverse_good_rate_variance_finite": true,
+      "mean_failure_stages": [],
+      "variance_failure_stages": [],
+      "scope": "for independent stage rates and the supplied tree policy costs, beta>2 at every stage is a sufficient condition for the finite-variance Monte Carlo standard-error calculation"
+    },
+    "Q2-5": {
+      "inverse_good_rate_mean_finite": true,
+      "inverse_good_rate_variance_finite": true,
+      "mean_failure_stages": [],
+      "variance_failure_stages": [],
+      "scope": "for independent stage rates and the supplied tree policy costs, beta>2 at every stage is a sufficient condition for the finite-variance Monte Carlo standard-error calculation"
+    },
+    "Q2-6": {
+      "inverse_good_rate_mean_finite": true,
+      "inverse_good_rate_variance_finite": true,
+      "mean_failure_stages": [],
+      "variance_failure_stages": [],
+      "scope": "for independent stage rates and the supplied tree policy costs, beta>2 at every stage is a sufficient condition for the finite-variance Monte Carlo standard-error calculation"
+    },
+    "Q3": {
+      "inverse_good_rate_mean_finite": true,
+      "inverse_good_rate_variance_finite": true,
+      "mean_failure_stages": [],
+      "variance_failure_stages": [],
+      "scope": "for independent stage rates and the supplied tree policy costs, beta>2 at every stage is a sufficient condition for the finite-variance Monte Carlo standard-error calculation"
+    }
+  },
+  "scope": "Monte Carlo posterior decision analysis conditional on supplied counts and prior; not an exact proof of expected-cost optimality or field reliability"
+}
