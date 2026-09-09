@@ -5,6 +5,11 @@ from prepare import read_json,write_json,sha256_file
 
 
 def finish(run,visual_note=""):
+    figures=read_json(run/"artifacts/figures/figure_evidence.json")
+    if figures["source_result_sha256"]!=sha256_file(run/"artifacts/multistage/result.json") or figures["source_protocol_sha256"]!=sha256_file(run/"artifacts/multistage/protocol.json"):
+        raise ValueError("figure evidence predates current numerical sources")
+    for name,digest in figures["figure_sha256"].items():
+        if sha256_file(run/"artifacts/figures"/name)!=digest:raise ValueError("figure file changed")
     rendering=read_json(run/"paper/render_report.json");structure=read_json(run/"paper/structure_review.json")
     if rendering["render_status"]!="COMPILED" or rendering["pdf_sha256"]!=sha256_file(run/"paper/main.pdf") or rendering["document_sha256"]!=sha256_file(run/"paper/document.json"):
         raise ValueError("paper render is stale")
@@ -24,6 +29,7 @@ def finish(run,visual_note=""):
         "q1_q2":{"sampling_quadrature_checks":len(first["quadrature_checks"]),"simulated_orders":sum(r["orders"] for r in first["simulations"])},
         "q3":{"policy_count":65536,"best_policy":read_json(run/"artifacts/multistage/result.json")["best_policies"][0],"simulated_orders":sum(r["orders"] for r in third["checks"])},
         "q4":{"input_scope":fourth["scope"],"scenarios":fourth["scenarios"]},
+        "figure_evidence":figures,
         "workflow_scope":"source-frozen historical analysis and numerical checks; workflow stage remains READING, no human signoffs fabricated",
         "remaining":["actual Q4 sample counts and sampling-design/priors assessment","complete code appendix and formal AI details","team/reviewer assessment and current contest submission checks"],
         "submission_ready":False,"national_award_level":"NOT_ESTABLISHED"}

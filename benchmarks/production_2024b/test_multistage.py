@@ -43,5 +43,21 @@ class MultistageTest(unittest.TestCase):
         self.assertEqual(result["standard_error"],0)
         self.assertEqual(result["mean_customer_returns"],0)
 
+    def test_exact_cost_breakdown_matches_known_good_closed_form(self):
+        from figures import breakdown
+        tree=source_tree()
+        policy={"part_tests":[1]*8,"semi_tests":[1]*3,"semi_dismantle":[1]*3,"final_test":0,"final_dismantle":1,"cost_exact":"1258/9"}
+        result=breakdown(tree,policy)
+        exact={k:F(v) for k,v in result["exact_components"].items()}
+        self.assertEqual(exact["purchase"],F(64)/F(".9"))
+        self.assertEqual(exact["part_inspection"],F(11)/F(".9"))
+        self.assertEqual(exact["customer_exchange_loss"],F(40)/9)
+        self.assertEqual(exact["final_inspection"],0)
+        self.assertEqual(sum(exact.values()),F("1258/9"))
+        policy.update(final_test=1,cost_exact="142")
+        inspected=breakdown(tree,policy)
+        self.assertEqual(F(inspected["exact_components"]["customer_exchange_loss"]),0)
+        self.assertEqual(F(inspected["exact_components"]["final_inspection"]),F(20)/3)
+
 
 if __name__=="__main__":unittest.main()

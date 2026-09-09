@@ -1,13 +1,13 @@
 {
   "case": "2024 B production decisions, four-question conditional training paper",
   "paper": {
-    "pages": 13,
-    "sha256": "03b2837be75e84751998e1f12321bd31e8d79e0a3f4ad058ac0ef5e7878ce83d",
+    "pages": 14,
+    "sha256": "febaf37edbe2479d7ae7437e7705f38382ee975023f56d2039b0f432ccdf21d4",
     "visual_review": {
       "reviewer_type": "agent",
-      "scope": "All 13 pages inspected as rendered images; probability table, multiline final-cost formula and Q4 scenario table checked at full resolution. Tiny nonzero probabilities retain scientific notation. Other pages pixel-identical after probability-table revision. Chinese typography, equations, margins and four-question coverage pass. Agent visual review only; complete source appendix and formal AI details remain pending.",
+      "scope": "All 14 pages reviewed: first six pixel-identical to prior published paper, remaining pages reviewed as rendered sheets, figure pages 7 and 9 inspected at full resolution. After shortening an orphaned sentence, changed pages 9-11 rechecked. Assembly topology and exact cost decomposition inspected in standalone vector/raster previews; Chinese labels, legend, margins and section coverage pass. Agent visual review only.",
       "status": "PASS",
-      "pdf_sha256": "03b2837be75e84751998e1f12321bd31e8d79e0a3f4ad058ac0ef5e7878ce83d"
+      "pdf_sha256": "febaf37edbe2479d7ae7437e7705f38382ee975023f56d2039b0f432ccdf21d4"
     },
     "structure": {
       "profile": "user-requested CUMCM organization; recognized labels are conventions, not universal official rules",
@@ -21,7 +21,7 @@
         "all_questions_solution": true,
         "notation_table_columns": true
       },
-      "pages": 13,
+      "pages": 14,
       "question_count": 4,
       "question_evidence": {
         "analysis": {
@@ -91,7 +91,7 @@
             {
               "ordinal": 4,
               "label": "四",
-              "page": 9,
+              "page": 10,
               "heading": "5.4问题四：抽样率不确定性下的策略"
             }
           ],
@@ -118,27 +118,27 @@
           4
         ],
         "validation": [
-          12
+          13
         ],
         "evaluation": [
-          12
+          13
         ],
         "conclusion": [
-          12
+          13
         ],
         "ai": [
-          13
+          14
         ],
         "references": [
-          13
+          14
         ],
         "appendix": [
-          13
+          14
         ]
       },
       "scope": "actual section coverage only; no certification of substantive answers, math, visual quality or awards",
       "question_mapping": "contract questions in listed order map to 问题一/问题1 etc.; nested outputs need semantic review",
-      "pdf_sha256": "03b2837be75e84751998e1f12321bd31e8d79e0a3f4ad058ac0ef5e7878ce83d",
+      "pdf_sha256": "febaf37edbe2479d7ae7437e7705f38382ee975023f56d2039b0f432ccdf21d4",
       "extractor": "pypdf layout text",
       "contract_sha256": "e3fa313a36599ca9b847d3c48e78b4e9b3757256c7bbaad06692cf89a634281f"
     }
@@ -450,6 +450,145 @@
         "verification_passed": true
       }
     ]
+  },
+  "figure_evidence": {
+    "source_protocol_sha256": "ccc9f9d7dc5a543cc1b7e7dbe8a42c6955efd5322faa20863100fc32c5e02682",
+    "source_result_sha256": "5b6bf9e295a6d19cfb91b48d26d502b4ef310de3f200423dfd034a5dc2853271",
+    "topology_edges": [
+      [
+        "part-1",
+        "semi-1"
+      ],
+      [
+        "part-2",
+        "semi-1"
+      ],
+      [
+        "part-3",
+        "semi-1"
+      ],
+      [
+        "semi-1",
+        "final"
+      ],
+      [
+        "part-4",
+        "semi-2"
+      ],
+      [
+        "part-5",
+        "semi-2"
+      ],
+      [
+        "part-6",
+        "semi-2"
+      ],
+      [
+        "semi-2",
+        "final"
+      ],
+      [
+        "part-7",
+        "semi-3"
+      ],
+      [
+        "part-8",
+        "semi-3"
+      ],
+      [
+        "semi-3",
+        "final"
+      ]
+    ],
+    "policy_costs": {
+      "best": {
+        "components": {
+          "purchase": 71.11111111111111,
+          "part_inspection": 12.222222222222221,
+          "semi_assembly": 26.666666666666668,
+          "semi_inspection": 13.333333333333334,
+          "semi_dismantle": 2.0,
+          "final_assembly": 8.88888888888889,
+          "final_inspection": 0.0,
+          "final_dismantle": 1.1111111111111112,
+          "customer_exchange_loss": 4.444444444444445
+        },
+        "exact_components": {
+          "purchase": "640/9",
+          "part_inspection": "110/9",
+          "semi_assembly": "80/3",
+          "semi_inspection": "40/3",
+          "semi_dismantle": "2",
+          "final_assembly": "80/9",
+          "final_inspection": "0",
+          "final_dismantle": "10/9",
+          "customer_exchange_loss": "40/9"
+        },
+        "total": 139.77777777777777,
+        "exact_total": "1258/9"
+      },
+      "no_inspection_no_recovery": {
+        "components": {
+          "purchase": 226.60519433421757,
+          "part_inspection": 0.0,
+          "semi_assembly": 84.97694787533159,
+          "semi_inspection": 0.0,
+          "semi_dismantle": 0.0,
+          "final_assembly": 28.325649291777196,
+          "final_inspection": 0.0,
+          "final_dismantle": 0.0,
+          "customer_exchange_loss": 101.628246458886
+        },
+        "exact_components": {
+          "purchase": "64000000000000/282429536481",
+          "part_inspection": "0",
+          "semi_assembly": "8000000000000/94143178827",
+          "semi_inspection": "0",
+          "semi_dismantle": "0",
+          "final_assembly": "8000000000000/282429536481",
+          "final_inspection": "0",
+          "final_dismantle": "0",
+          "customer_exchange_loss": "28702818540760/282429536481"
+        },
+        "total": 441.53603796021235,
+        "exact_total": "124702818540760/282429536481"
+      },
+      "inspect_and_recover_everywhere": {
+        "components": {
+          "purchase": 71.11111111111111,
+          "part_inspection": 12.222222222222221,
+          "semi_assembly": 26.666666666666668,
+          "semi_inspection": 13.333333333333334,
+          "semi_dismantle": 2.0,
+          "final_assembly": 8.88888888888889,
+          "final_inspection": 6.666666666666667,
+          "final_dismantle": 1.1111111111111112,
+          "customer_exchange_loss": 0.0
+        },
+        "exact_components": {
+          "purchase": "640/9",
+          "part_inspection": "110/9",
+          "semi_assembly": "80/3",
+          "semi_inspection": "40/3",
+          "semi_dismantle": "2",
+          "final_assembly": "80/9",
+          "final_inspection": "20/3",
+          "final_dismantle": "10/9",
+          "customer_exchange_loss": "0"
+        },
+        "total": 142.0,
+        "exact_total": "142"
+      }
+    },
+    "scope": "exact fixed-policy expected cost decomposition, not simulation estimates or field cost measurements",
+    "figure_sha256": {
+      "assembly_tree.pdf": "7ff57ff7bf8de782f573e23ea1554b4d92fc841b7684c408f1dd655a19ad2db5",
+      "assembly_tree.svg": "ec68faad75d4df95633385b8459903db244e391638fbdef0ad9fb31cd2bc9a59",
+      "assembly_tree.png": "621f8f479f68357a6873eee536e421777c408331b1cb71f8fe714a01cc71c880",
+      "cost_breakdown.pdf": "282d0b6742e95baf6cfb7e2a3c97795fc78a8f41ae809220587f0a32fe80dfd5",
+      "cost_breakdown.svg": "a2433ea49acaced15c0e6926ae1df44773327fa12b1b8ad415805fdf7018ead0",
+      "cost_breakdown.png": "0a4ada2c240fd44c254b6109198691f7cfe6758bb3472d56d234b25d466577a3"
+    }
   },
   "workflow_scope": "source-frozen historical analysis and numerical checks; workflow stage remains READING, no human signoffs fabricated",
   "remaining": [

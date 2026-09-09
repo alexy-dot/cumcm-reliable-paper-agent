@@ -42,6 +42,11 @@ def blocks(markdown):
 def compose(run):
     q2=read_json(run/"artifacts/rework.json");q3=read_json(run/"artifacts/multistage/result.json");q4=read_json(run/"artifacts/q4_summary.json")
     verification=read_json(run/"artifacts/verification.json");multi=read_json(run/"artifacts/multistage/verification.json")
+    figures=read_json(run/"artifacts/figures/figure_evidence.json")
+    if figures["source_protocol_sha256"]!=sha256_file(run/"artifacts/multistage/protocol.json") or figures["source_result_sha256"]!=sha256_file(run/"artifacts/multistage/result.json"):
+        raise ValueError("figure evidence predates current production model")
+    for name,digest in figures["figure_sha256"].items():
+        if sha256_file(run/"artifacts/figures"/name)!=digest:raise ValueError("figure changed after evidence recording")
     if not verification["passed"] or verification["rework_sha256"]!=sha256_file(run/"artifacts/rework.json") or not multi["passed"] or multi["result_sha256"]!=sha256_file(run/"artifacts/multistage/result.json"):
         raise ValueError("Q2/Q3 verification is stale")
     for name,digest in q4["source_results"].items():
@@ -97,9 +102,18 @@ def compose(run):
     section("5.1 问题一：有效的序贯抽样方案",first_blocks,2)
     section("5.2 问题二：两零件的质量状态与成本",blocks(segments[2].split("\n",1)[1]),2)
     third=(run/"q3-report.md").read_text();parts=re.split(r"\n## \d+\. ",third)
-    section("5.3 问题三：多层组装与条件修复",[],2)
+    section("5.3 问题三：多层组装与条件修复",[
+        text("图1按原题图1的组装关系重绘：零件1—3构成半成品1，4—6构成半成品2，7—8构成半成品3，三者再组装为成品。箭头表示材料进入上层组装；拆解后仍是原来的子件，质量与已有检测知识不重置。"),
+        {"image":"artifacts/figures/assembly_tree.pdf","caption":"图1 原题八零件组装树。节点中的10%为全部输入子件合格时的条件组装次品率，不是混合输入的总体次品率。"}],2)
     for i,part in enumerate(parts[1:5],1):
-        title,body=part.split("\n",1);section(f"5.3.{i} {title}",blocks(body),3)
+        title,body=part.split("\n",1);content=blocks(body)
+        if i==3:
+            best_costs=figures["policy_costs"]["best"]["components"]
+            all_costs=figures["policy_costs"]["inspect_and_recover_everywhere"]["components"]
+            content.extend([
+                {"image":"artifacts/figures/cost_breakdown.pdf","caption":"图2 三种策略每个完成订单的精确期望成本分解。各分项之和与有理数总成本严格相等，图中未用仿真均值代替理论值。"},
+                text(f"购买、检测、组装、拆解和额外调换损失在同一完成订单口径下比较。最优代表不检最终成品，对应额外调换损失{best_costs['customer_exchange_loss']:.4f}元；全检方案省去该项，但增加最终检测费用{all_costs['final_inspection']:.4f}元。两者在本组条件下的其他期望费用相同，因此成本相差{all_costs['final_inspection']-best_costs['customer_exchange_loss']:.4f}元。成品检测减少顾客收到次品的风险，但本题成本目标不支持一律全检。")])
+        section(f"5.3.{i} {title}",content,3)
     fourth=(run/"q4-report.md").read_text();parts=re.split(r"\n## \d+\. ",fourth)
     section("5.4 问题四：抽样率不确定性下的策略",[text("原题未给各阶段实际抽样计数，以下先给一般条件模型，再给明确标注的样本量示例。")],2)
     for i,part in enumerate(parts[1:],1):

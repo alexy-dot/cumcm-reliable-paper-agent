@@ -101,6 +101,8 @@ python3 benchmarks/ethanol_2021b/run_all.py --source-dir /path/2021/B --output r
 
 [四问训练稿](reports/production-2024b-paper.pdf)覆盖序贯抽样、两零件和多层返工，以及实际抽样计数条件下的决策。第四问没有原题实际计数，因此数值部分明确采用20件/200件示例，不能冒充实测。
 
+图示直接绑定冻结的组装关系和精确成本分项：[可编辑组装图](reports/production-2024b/figures/assembly_tree.svg) · [成本分解图](reports/production-2024b/figures/cost_breakdown.svg)。成本柱形图按同一完成订单口径比较，未用仿真均值替代理论值。
+
 [问题1、2阶段结果](reports/production-2024b/q1-q2-report.md)给出可随时停止的抽样候选，以及保留零件真实质量和检测知识的两零件返工模型。64类声明策略以有理数求解，识别14类无法终止的策略；六个代表最优策略分别以5万个完整订单仿真核对。未把每次免费补发算作新收入，也未把回收坏件重新抽成好件。
 
 抽样反例说明，逐次套用固定样本置信阈值不能保持原错误率。修正后的规则明确保留300件上限下的未决结果。原题已在往年论文研究中接触，不标为盲测。
