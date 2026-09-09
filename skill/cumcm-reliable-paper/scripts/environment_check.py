@@ -18,9 +18,13 @@ IMPORT_PROBE=r'''
 import importlib, json, sys
 try:
     module=importlib.import_module(sys.argv[1])
-    print(json.dumps({"passed":True,"version":str(getattr(module,"__version__",getattr(module,"VersionBind","unknown")))}))
+    print(json.dumps({"passed":True,"status":"available","version":str(getattr(module,"__version__",getattr(module,"VersionBind","unknown")))}))
+except ModuleNotFoundError as exc:
+    status="missing" if exc.name==sys.argv[1] else "dependency_missing"
+    print(json.dumps({"passed":False,"status":status,"missing_module":exc.name,"error":str(exc)}))
+    raise SystemExit(1)
 except Exception as exc:
-    print(json.dumps({"passed":False,"error":type(exc).__name__+": "+str(exc)}))
+    print(json.dumps({"passed":False,"status":"broken","error":type(exc).__name__+": "+str(exc)}))
     raise SystemExit(1)
 '''
 
@@ -31,11 +35,15 @@ def probe_import(name,python=sys.executable):
             env=os.environ.copy();env["MPLCONFIGDIR"]=folder;env["XDG_CACHE_HOME"]=folder
             result=subprocess.run([python,"-I","-B","-c",IMPORT_PROBE,name],cwd=folder,env=env,capture_output=True,text=True,timeout=20)
         lines=result.stdout.strip().splitlines()
-        info=json.loads(lines[-1]) if lines else {"passed":False,"error":result.stderr[-1200:] or "import produced no result"}
+        info=json.loads(lines[-1]) if lines else {"passed":False,"status":"broken","error":result.stderr[-1200:] or "import produced no result"}
         info["passed"]=result.returncode==0 and info.get("passed") is True
         return {"module":name,"package":INSTALL_NAMES.get(name,name),**info}
-    except (OSError,subprocess.TimeoutExpired,json.JSONDecodeError) as exc:
-        return {"module":name,"package":INSTALL_NAMES.get(name,name),"passed":False,"error":type(exc).__name__+": "+str(exc)}
+    except subprocess.TimeoutExpired:
+        return {"module":name,"package":INSTALL_NAMES.get(name,name),"passed":False,"status":"timeout",
+                "error":"Import did not finish within 20 seconds; installation status is unresolved",
+                "next_step":"Retry this profile after other computations finish; a timeout does not mean the package is missing"}
+    except (OSError,json.JSONDecodeError) as exc:
+        return {"module":name,"package":INSTALL_NAMES.get(name,name),"passed":False,"status":"broken","error":type(exc).__name__+": "+str(exc)}
 
 
 def find_compiler(explicit=None):
@@ -122,5 +130,6 @@ def check_environment(profiles=None,compiler=None,smoke=False,cache_dir=None):
                 result["paper_smoke"]=compile_smoke(runtime["path"],cache_dir)
             else:result["paper_smoke"]={"attempted":False,"passed":False,"reason":"compiler or pypdf prerequisite failed"}
             result["passed"] &= result["paper_smoke"]["passed"] is True
-    result["missing_packages"]=[row["package"] for row in imports if not row["passed"]]
+    result["missing_packages"]=[row["package"] for row in imports if row.get("status")=="missing"]
+    result["failed_imports"]=[{"module":row["module"],"status":row.get("status","broken")} for row in imports if not row["passed"]]
     return result

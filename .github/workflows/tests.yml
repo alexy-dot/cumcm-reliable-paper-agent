@@ -55,3 +55,17 @@ jobs:
           python-version: '3.12'
       - run: python -m pip install -r requirements-submission.txt
       - run: python -m unittest discover -s tests -p 'test_submission.py' -v
+  unified-workspace:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements-all.txt -c constraints-python312.txt
+      - run: python -m pip check
+      - run: python skill/cumcm-reliable-paper/scripts/cumcm_agent.py doctor --profile statistics --profile submission
+      - run: python -m unittest discover -s tests -q
+      - run: python -m unittest discover -s benchmarks/furnace_2020a -p 'test_*.py' -q
+      - run: python -m unittest discover -s benchmarks/casting_2021d -p 'test_*.py' -q
+      - run: python -m unittest discover -s benchmarks/ethanol_2021b -p 'test_*.py' -q

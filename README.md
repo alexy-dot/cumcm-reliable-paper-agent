@@ -62,15 +62,19 @@ python3 skill/cumcm-reliable-paper/scripts/cumcm_agent.py doctor --profile paper
 
 配置可选`core`、`paper`、`statistics`、`submission`或`all`。`paper --smoke`用项目排版器试编译中文、公式、表格及源码字符；仅找到编译器不算编译通过。空缓存可能需要先正常编译以获取宏包。
 
-在虚拟环境中按需安装：
+完整环境可一次安装。以下为已测Python 3.12组合（macOS/Linux）：
 
 ```bash
-python3 -m pip install -r requirements-paper.txt
-python3 -m pip install -r requirements-submission.txt
-python3 -m pip install -r skill/cumcm-reliable-paper/scripts/requirements-statistics.txt
+python3.12 -m venv .venv
+.venv/bin/python -m pip install -r requirements-all.txt -c constraints-python312.txt
+.venv/bin/python skill/cumcm-reliable-paper/scripts/cumcm_agent.py doctor --profile all
 ```
 
-数学论文需要Tectonic或XeLaTeX及中文字体。各历史题的额外依赖和回放命令见[实测说明](benchmarks/README.md)。
+之后统一用`.venv/bin/python`运行回放，无需切换排版解释器。版本约束仅记录已测直接依赖，不是跨平台锁文件。轻量使用仍可只安装`requirements-paper.txt`、`requirements-submission.txt`或统计模块依赖。
+
+[统一环境实测](benchmarks/reports/unified-runtime.json)：三类历史题均由同一Python完成求解到PDF，核对范围内的数值与此前发布记录一致。导入超时会标为未确认，不误报为缺少依赖。
+
+数学论文还需要Tectonic或XeLaTeX及中文字体，Python安装不会代装它们。各题回放命令和适用边界见[实测说明](benchmarks/README.md)。
 
 ## 三类历史题实测
 

@@ -1,0 +1,7 @@
+# Optional complete workspace; core CLI still uses only the standard library.
+-r requirements-paper.txt
+-r requirements-submission.txt
+-r skill/cumcm-reliable-paper/scripts/requirements-statistics.txt
+-r benchmarks/furnace_2020a/requirements.txt
+-r benchmarks/casting_2021d/requirements.txt
+-r benchmarks/ethanol_2021b/requirements.txt

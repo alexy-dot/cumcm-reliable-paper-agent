@@ -1,0 +1,19 @@
+{
+  "scope": "Local Python 3.12.4 workspace consolidation; historical replay, not a fresh blind trial or award certification",
+  "requirements": "requirements-all.txt",
+  "constraints": "constraints-python312.txt",
+  "pip_check": "PASS",
+  "doctor_all_imports": "PASS",
+  "doctor_offline_chinese_math_code_compile": "PASS",
+  "tests": {"core_and_documents": 69, "furnace": 13, "casting": 14, "ethanol": 8},
+  "replays": {
+    "furnace": {"run": "runs/unified-runtime-furnace", "process_exit_code": 0, "pdf_pages": 22, "comparison": "calibration and headline results agree with published summary"},
+    "casting": {"run": "runs/unified-runtime-casting", "process_exit_code": 0, "pdf_pages": 48, "comparison": "complete solution agrees after excluding planning_seconds; support isolated reproduction passed"},
+    "ethanol": {"run": "runs/unified-runtime-ethanol", "process_exit_code": 0, "pdf_pages": 15, "comparison": "all original grouped predictions, decisions and seed-17/43/97 repetition records agree"}
+  },
+  "numeric_comparison": {"absolute_tolerance": 1e-10, "relative_tolerance": 0, "categorical_and_structure": "exact"},
+  "pdf_scope": "Successful compilation and structural checks; runtime replay PDFs do not replace previously visually reviewed published papers",
+  "initial_doctor_failure": "scikit-learn import timed out during concurrent computation; retry passed; timeout diagnosis now remains unresolved rather than labeling the package missing",
+  "submission_ready": false,
+  "national_award_level": "NOT_ESTABLISHED"
+}

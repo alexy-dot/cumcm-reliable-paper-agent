@@ -26,14 +26,33 @@ class EnvironmentCheckTest(unittest.TestCase):
         self.assertTrue(probe_import("json")["passed"])
         result=probe_import("cumcm_intentionally_missing_package")
         self.assertFalse(result["passed"])
-        self.assertIn("ModuleNotFoundError",result["error"])
+        self.assertEqual(result["status"],"missing")
+        self.assertEqual(result["missing_module"],"cumcm_intentionally_missing_package")
 
     def test_missing_required_package_cannot_pass_selected_profile(self):
-        def probe(name):return {"module":name,"package":name,"passed":name!="scipy"}
+        def probe(name):return {"module":name,"package":name,"passed":name!="scipy","status":"missing" if name=="scipy" else "available"}
         with patch("environment_check.probe_import",side_effect=probe):
             result=check_environment(["statistics"])
         self.assertFalse(result["passed"])
         self.assertEqual(result["missing_packages"],["scipy"])
+
+    def test_timeout_is_unresolved_not_a_missing_package(self):
+        with patch("environment_check.subprocess.run",side_effect=subprocess.TimeoutExpired("import",20)):
+            result=probe_import("sklearn")
+        self.assertFalse(result["passed"])
+        self.assertEqual(result["status"],"timeout")
+        with patch("environment_check.probe_import",return_value=result):
+            report=check_environment(["statistics"])
+        self.assertFalse(report["passed"])
+        self.assertEqual(report["missing_packages"],[])
+        self.assertTrue(all(row["status"]=="timeout" for row in report["failed_imports"]))
+
+    def test_missing_transitive_dependency_does_not_label_parent_package_missing(self):
+        response=subprocess.CompletedProcess([],1,stdout='{"passed":false,"status":"dependency_missing","missing_module":"numpy","error":"No module named numpy"}',stderr="")
+        with patch("environment_check.subprocess.run",return_value=response):
+            result=probe_import("sklearn")
+        self.assertEqual(result["status"],"dependency_missing")
+        self.assertEqual(result["missing_module"],"numpy")
 
     def test_compiler_presence_does_not_claim_compile_success(self):
         with patch("environment_check.probe_import",side_effect=lambda n:{"module":n,"passed":True}), \
