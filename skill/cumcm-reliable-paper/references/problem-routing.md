@@ -13,6 +13,8 @@ Route only after completing the problem contract. A problem may use multiple rou
 
 ## Selection rules
 
+For ordered contour or trajectory registration, `scripts/curve_coverage.py` provides `directed_coverage(source, target, tolerance=..., step=...)` and `compare_curves`. It measures arc-length coverage and missing intervals over the full supplied curves, with discretization bounds; NumPy/SciPy are optional dependencies. A small trimmed overlap residual can coexist with substantial missing geometry. Choose the physically meaningful overlap/domain before judging either direction, keep censored intervals separate, and do not confuse a reference-trace consensus with a union of all observations. Local fitted parameters only revise a global contour after feature correspondence and a geometric update have actually been performed.
+
 1. Start with a transparent executable baseline.
 2. Upgrade only for an observed limitation, not because a method name appears advanced.
 3. Freeze the decision time, available event prefix and irreversible actions before constructing a predictor or plan. A clairvoyant optimum may provide a retrospective bound, but cannot be used as an online decision input.

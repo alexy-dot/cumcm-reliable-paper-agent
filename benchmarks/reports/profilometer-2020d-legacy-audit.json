@@ -1,0 +1,682 @@
+{
+  "case": "2020 D preserved 180-minute trial",
+  "decision": "NOT_ACCEPTED_AS_COMPLETE_TIMED_PAPER",
+  "review_type": "agent reassessment, not external expert or award judgment",
+  "historical_record": {
+    "claimed_score": 93,
+    "claimed_p0_failures": 0,
+    "recorded_elapsed_seconds": 8521.148509,
+    "time_scope": "local timeline reports duration; this audit cannot independently attest original read isolation or contemporaneous artifact existence"
+  },
+  "paper_structure": {
+    "profile": "user-requested CUMCM organization; recognized labels are conventions, not universal official rules",
+    "passed": false,
+    "checks": {
+      "extractable_text": true,
+      "abstract_and_keywords_on_page_one": true,
+      "body_starts_on_page_two": false,
+      "required_heading_order": false,
+      "all_questions_analysis": false,
+      "all_questions_solution": false,
+      "notation_table_columns": false
+    },
+    "pages": 4,
+    "question_count": 4,
+    "question_evidence": {
+      "analysis": {
+        "expected_question_ids": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4"
+        ],
+        "found": [],
+        "assessed": false,
+        "missing_ids": [],
+        "not_assessed_reason": "section boundaries missing, duplicated or out of order",
+        "unknown_labels": []
+      },
+      "solution": {
+        "expected_question_ids": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4"
+        ],
+        "found": [],
+        "assessed": false,
+        "missing_ids": [],
+        "not_assessed_reason": "section boundaries missing, duplicated or out of order",
+        "unknown_labels": []
+      }
+    },
+    "heading_pages": {
+      "restatement": [],
+      "analysis": [],
+      "assumptions": [],
+      "notation": [],
+      "solution": [],
+      "validation": [],
+      "evaluation": [
+        4
+      ],
+      "conclusion": [
+        4
+      ],
+      "ai": [],
+      "references": [],
+      "appendix": []
+    },
+    "scope": "actual section coverage only; no certification of substantive answers, math, visual quality or awards",
+    "question_mapping": "contract questions in listed order map to 问题一/问题1 etc.; nested outputs need semantic review",
+    "pdf_sha256": "2811111b6547de31d5974776a04a5a5da2a86cfa4b7e66dfb9463ea6f8cf93cd",
+    "extractor": "pypdf layout text"
+  },
+  "coverage": [
+    {
+      "sheet": "25-1",
+      "raw_points": 74836,
+      "boundary_points": 0,
+      "non_boundary_source_length": 19.300849244086063,
+      "covered_fraction_lower": 0.9803159803159802,
+      "covered_fraction_upper": 0.9829059829059829,
+      "maximum_distance_lower": 0.050145241939133736,
+      "maximum_distance_upper": 0.05514451428446411,
+      "segments": [
+        {
+          "source_length": 19.300849244086063,
+          "target_length": 30.44566040511032,
+          "tolerance": 0.03,
+          "source_interval": 0.004998924953143243,
+          "target_sampling_radius_bound": 0.002499809868758751,
+          "source_intervals": 3861,
+          "target_points": 9370,
+          "covered_fraction_lower": 0.9803159803159803,
+          "covered_fraction_upper": 0.9829059829059829,
+          "unresolved_fraction": 0.00259000259000259,
+          "maximum_distance_lower": 0.050145241939133736,
+          "maximum_distance_upper": 0.05514451428446411,
+          "definitely_uncovered_arc_intervals": [
+            [
+              18.85094599830317,
+              18.940926647459747
+            ],
+            [
+              18.99091589699118,
+              19.230864294742055
+            ]
+          ],
+          "midpoint_sample_distance_quantiles": {
+            "q50": 0.00524326338791055,
+            "q90": 0.01747056672960536,
+            "q95": 0.019702319953092868,
+            "q99": 0.041909622243615705,
+            "max": 0.05264505180789249
+          },
+          "best_20_percent_midpoint_rms": 0.0032696315524174437,
+          "scope": "directed geometric support of supplied polylines; bounds include sampling error but not measurement uncertainty or wrong correspondences"
+        }
+      ]
+    },
+    {
+      "sheet": "25-2",
+      "raw_points": 82243,
+      "boundary_points": 860,
+      "non_boundary_source_length": 26.37250942550364,
+      "covered_fraction_lower": 0.8176303317535546,
+      "covered_fraction_upper": 0.8199052132701422,
+      "maximum_distance_lower": 0.3884714485494425,
+      "maximum_distance_upper": 0.39347102234478926,
+      "segments": [
+        {
+          "source_length": 26.37250942550364,
+          "target_length": 30.44566040511032,
+          "tolerance": 0.03,
+          "source_interval": 0.004999527853176046,
+          "target_sampling_radius_bound": 0.002499809868758751,
+          "source_intervals": 5275,
+          "target_points": 9370,
+          "covered_fraction_lower": 0.8176303317535545,
+          "covered_fraction_upper": 0.8199052132701422,
+          "unresolved_fraction": 0.002274881516587678,
+          "maximum_distance_lower": 0.3884714485494425,
+          "maximum_distance_upper": 0.39347102234478926,
+          "definitely_uncovered_arc_intervals": [
+            [
+              0.0,
+              0.30497119904373876
+            ],
+            [
+              19.548153905918337,
+              19.573151545184217
+            ],
+            [
+              19.688140685807266,
+              19.833126993549374
+            ],
+            [
+              22.09791311103812,
+              26.37250942550364
+            ]
+          ],
+          "midpoint_sample_distance_quantiles": {
+            "q50": 0.002970609654813297,
+            "q90": 0.1746737430983379,
+            "q95": 0.272977412907724,
+            "q99": 0.38362213203645656,
+            "max": 0.39097125841820124
+          },
+          "best_20_percent_midpoint_rms": 0.0013226029323589385,
+          "scope": "directed geometric support of supplied polylines; bounds include sampling error but not measurement uncertainty or wrong correspondences"
+        }
+      ]
+    },
+    {
+      "sheet": "26-1",
+      "raw_points": 70909,
+      "boundary_points": 293,
+      "non_boundary_source_length": 27.15262332406946,
+      "covered_fraction_lower": 0.712944209169582,
+      "covered_fraction_upper": 0.71883631007181,
+      "maximum_distance_lower": 0.5047676409061931,
+      "maximum_distance_upper": 0.509767231968477,
+      "segments": [
+        {
+          "source_length": 27.15262332406946,
+          "target_length": 30.44566040511032,
+          "tolerance": 0.03,
+          "source_interval": 0.004999562387050168,
+          "target_sampling_radius_bound": 0.002499809868758751,
+          "source_intervals": 5431,
+          "target_points": 9370,
+          "covered_fraction_lower": 0.712944209169582,
+          "covered_fraction_upper": 0.71883631007181,
+          "unresolved_fraction": 0.00589210090222795,
+          "maximum_distance_lower": 0.5047676409061931,
+          "maximum_distance_upper": 0.509767231968477,
+          "definitely_uncovered_arc_intervals": [
+            [
+              17.138499862807976,
+              17.19349504906553
+            ],
+            [
+              17.28848673441948,
+              17.463471417966236
+            ],
+            [
+              19.748271428848163,
+              27.152623324069463
+            ]
+          ],
+          "midpoint_sample_distance_quantiles": {
+            "q50": 0.006442859114610382,
+            "q90": 0.31802610067857556,
+            "q95": 0.41230514872423757,
+            "q99": 0.4922882591122326,
+            "max": 0.5072674507749518
+          },
+          "best_20_percent_midpoint_rms": 0.0015153102103004994,
+          "scope": "directed geometric support of supplied polylines; bounds include sampling error but not measurement uncertainty or wrong correspondences"
+        }
+      ]
+    },
+    {
+      "sheet": "26-2",
+      "raw_points": 69305,
+      "boundary_points": 0,
+      "non_boundary_source_length": 18.89539587528818,
+      "covered_fraction_lower": 0.5285714285714286,
+      "covered_fraction_upper": 0.5346560846560846,
+      "maximum_distance_lower": 0.11561703828756598,
+      "maximum_distance_upper": 0.12061623914511946,
+      "segments": [
+        {
+          "source_length": 18.89539587528818,
+          "target_length": 30.44566040511032,
+          "tolerance": 0.03,
+          "source_interval": 0.004998781977589466,
+          "target_sampling_radius_bound": 0.002499809868758751,
+          "source_intervals": 3780,
+          "target_points": 9370,
+          "covered_fraction_lower": 0.5285714285714286,
+          "covered_fraction_upper": 0.5346560846560846,
+          "unresolved_fraction": 0.006084656084656085,
+          "maximum_distance_lower": 0.11561703828756598,
+          "maximum_distance_upper": 0.12061623914511946,
+          "definitely_uncovered_arc_intervals": [
+            [
+              9.617656524882133,
+              15.931118162577627
+            ],
+            [
+              16.416000014403807,
+              18.89539587528818
+            ]
+          ],
+          "midpoint_sample_distance_quantiles": {
+            "q50": 0.0038939908523204685,
+            "q90": 0.09627397255101698,
+            "q95": 0.1005391510430088,
+            "q99": 0.11375134559721463,
+            "max": 0.11811684815632473
+          },
+          "best_20_percent_midpoint_rms": 0.0007045789591529347,
+          "scope": "directed geometric support of supplied polylines; bounds include sampling error but not measurement uncertainty or wrong correspondences"
+        }
+      ]
+    },
+    {
+      "sheet": "27-1",
+      "raw_points": 71347,
+      "boundary_points": 39,
+      "non_boundary_source_length": 28.51641875479062,
+      "covered_fraction_lower": 0.6910939691444601,
+      "covered_fraction_upper": 0.6995091164095372,
+      "maximum_distance_lower": 0.6495083581605242,
+      "maximum_distance_upper": 0.6545078541052639,
+      "segments": [
+        {
+          "source_length": 28.51641875479062,
+          "target_length": 30.44566040511032,
+          "tolerance": 0.03,
+          "source_interval": 0.00499937215196189,
+          "target_sampling_radius_bound": 0.002499809868758751,
+          "source_intervals": 5704,
+          "target_points": 9370,
+          "covered_fraction_lower": 0.69109396914446,
+          "covered_fraction_upper": 0.6995091164095372,
+          "unresolved_fraction": 0.008415147265077139,
+          "maximum_distance_lower": 0.6495083581605242,
+          "maximum_distance_upper": 0.6545078541052639,
+          "definitely_uncovered_arc_intervals": [
+            [
+              17.282829529332254,
+              17.312825762244024
+            ],
+            [
+              17.417812577435225,
+              17.572793114146045
+            ],
+            [
+              20.057481073671102,
+              27.816506653515958
+            ],
+            [
+              27.891497235795384,
+              28.51641875479062
+            ]
+          ],
+          "midpoint_sample_distance_quantiles": {
+            "q50": 0.003569949480867287,
+            "q90": 0.2307190281125647,
+            "q95": 0.27444494264063013,
+            "q99": 0.3701378742257151,
+            "max": 0.652008168029283
+          },
+          "best_20_percent_midpoint_rms": 0.0011928420650524133,
+          "scope": "directed geometric support of supplied polylines; bounds include sampling error but not measurement uncertainty or wrong correspondences"
+        }
+      ]
+    },
+    {
+      "sheet": "27-2",
+      "raw_points": 70318,
+      "boundary_points": 2272,
+      "non_boundary_source_length": 27.79858375867395,
+      "covered_fraction_lower": 0.6857913669064748,
+      "covered_fraction_upper": 0.6951438848920863,
+      "maximum_distance_lower": 0.6526799251535123,
+      "maximum_distance_upper": 0.6576796076624395,
+      "segments": [
+        {
+          "source_length": 27.79858375867395,
+          "target_length": 30.44566040511032,
+          "tolerance": 0.03,
+          "source_interval": 0.004999745280337042,
+          "target_sampling_radius_bound": 0.002499809868758751,
+          "source_intervals": 5560,
+          "target_points": 9370,
+          "covered_fraction_lower": 0.6857913669064748,
+          "covered_fraction_upper": 0.6951438848920863,
+          "unresolved_fraction": 0.00935251798561151,
+          "maximum_distance_lower": 0.6526799251535123,
+          "maximum_distance_upper": 0.6576796076624395,
+          "definitely_uncovered_arc_intervals": [
+            [
+              16.574155604317294,
+              16.59415458543864
+            ],
+            [
+              16.709148726886394,
+              16.854141340016167
+            ],
+            [
+              19.41901066882907,
+              27.098619419426765
+            ],
+            [
+              27.168615853351483,
+              27.798583758673953
+            ]
+          ],
+          "midpoint_sample_distance_quantiles": {
+            "q50": 0.00252654869578807,
+            "q90": 0.22634535150603172,
+            "q95": 0.2692367956308066,
+            "q99": 0.3802485251867491,
+            "max": 0.655179735022271
+          },
+          "best_20_percent_midpoint_rms": 0.0008990034031058572,
+          "scope": "directed geometric support of supplied polylines; bounds include sampling error but not measurement uncertainty or wrong correspondences"
+        }
+      ]
+    },
+    {
+      "sheet": "28-1",
+      "raw_points": 78525,
+      "boundary_points": 0,
+      "non_boundary_source_length": 20.892902702992348,
+      "covered_fraction_lower": 0.7451543431442929,
+      "covered_fraction_upper": 0.8923187365398421,
+      "maximum_distance_lower": 0.2653689693619287,
+      "maximum_distance_upper": 0.2703685282978079,
+      "segments": [
+        {
+          "source_length": 20.892902702992348,
+          "target_length": 30.44566040511032,
+          "tolerance": 0.03,
+          "source_interval": 0.004999498134240811,
+          "target_sampling_radius_bound": 0.002499809868758751,
+          "source_intervals": 4179,
+          "target_points": 9370,
+          "covered_fraction_lower": 0.7451543431442929,
+          "covered_fraction_upper": 0.8923187365398421,
+          "unresolved_fraction": 0.14716439339554918,
+          "maximum_distance_lower": 0.2653689693619287,
+          "maximum_distance_upper": 0.2703685282978079,
+          "definitely_uncovered_arc_intervals": [
+            [
+              0.0,
+              0.25997390298052214
+            ],
+            [
+              14.253569180720552,
+              14.258568678854793
+            ],
+            [
+              14.54853957064076,
+              14.558538566909242
+            ],
+            [
+              14.568537563177722,
+              14.573537061311963
+            ],
+            [
+              14.60853354825165,
+              14.613533046385891
+            ],
+            [
+              14.61853254452013,
+              14.623532042654372
+            ],
+            [
+              14.648529533325576,
+              14.663528027728299
+            ],
+            [
+              14.668527525862538,
+              14.67352702399678
+            ],
+            [
+              14.67852652213102,
+              14.683526020265262
+            ],
+            [
+              14.698524514667984,
+              14.703524012802225
+            ],
+            [
+              14.713523009070707,
+              14.718522507204948
+            ],
+            [
+              14.738520499741911,
+              14.758518492278874
+            ],
+            [
+              14.763517990413115,
+              14.98349590831971
+            ],
+            [
+              17.01329215082148,
+              17.048288637761164
+            ],
+            [
+              17.31326203887593,
+              17.663226908272787
+            ],
+            [
+              17.728220384017916,
+              17.743218878420638
+            ],
+            [
+              17.77321586722608,
+              17.788214361628807
+            ],
+            [
+              17.81821135043425,
+              17.86320683364242
+            ],
+            [
+              17.913201814984827,
+              17.923200811253306
+            ],
+            [
+              17.92820030938755,
+              17.983194788864196
+            ],
+            [
+              18.028190272072365,
+              18.06818625714629
+            ],
+            [
+              18.083184751549013,
+              18.148178227294142
+            ],
+            [
+              18.783114490342726,
+              19.30306229630377
+            ],
+            [
+              19.35805677578042,
+              19.893003076144186
+            ]
+          ],
+          "midpoint_sample_distance_quantiles": {
+            "q50": 0.010566178776752597,
+            "q90": 0.03541532508028564,
+            "q95": 0.04114123813347674,
+            "q99": 0.08279614178725779,
+            "max": 0.26786877923068747
+          },
+          "best_20_percent_midpoint_rms": 0.0006353745972729417,
+          "scope": "directed geometric support of supplied polylines; bounds include sampling error but not measurement uncertainty or wrong correspondences"
+        }
+      ]
+    },
+    {
+      "sheet": "28-2",
+      "raw_points": 80041,
+      "boundary_points": 0,
+      "non_boundary_source_length": 21.42567566587289,
+      "covered_fraction_lower": 0.9738684087727484,
+      "covered_fraction_upper": 0.9825011665888942,
+      "maximum_distance_lower": 0.39605115185138307,
+      "maximum_distance_upper": 0.4010504572481251,
+      "segments": [
+        {
+          "source_length": 21.42567566587289,
+          "target_length": 30.44566040511032,
+          "tolerance": 0.03,
+          "source_interval": 0.00499899105596661,
+          "target_sampling_radius_bound": 0.002499809868758751,
+          "source_intervals": 4286,
+          "target_points": 9370,
+          "covered_fraction_lower": 0.9738684087727485,
+          "covered_fraction_upper": 0.9825011665888941,
+          "unresolved_fraction": 0.00863275781614559,
+          "maximum_distance_lower": 0.39605115185138307,
+          "maximum_distance_upper": 0.4010504572481251,
+          "definitely_uncovered_arc_intervals": [
+            [
+              0.0,
+              0.36992533814152917
+            ],
+            [
+              19.55605301094138,
+              19.561052001997346
+            ]
+          ],
+          "midpoint_sample_distance_quantiles": {
+            "q50": 0.0024071435566136307,
+            "q90": 0.003954751987491125,
+            "q95": 0.007806630973134825,
+            "q99": 0.18614694544954974,
+            "max": 0.3985509617201418
+          },
+          "best_20_percent_midpoint_rms": 0.0011306229105381013,
+          "scope": "directed geometric support of supplied polylines; bounds include sampling error but not measurement uncertainty or wrong correspondences"
+        }
+      ]
+    },
+    {
+      "sheet": "29-1",
+      "raw_points": 82023,
+      "boundary_points": 2851,
+      "non_boundary_source_length": 29.690825743245746,
+      "covered_fraction_lower": 0.9957905371274626,
+      "covered_fraction_upper": 1.0,
+      "maximum_distance_lower": 0.02607313041393184,
+      "maximum_distance_upper": 0.03107258885511404,
+      "segments": [
+        {
+          "source_length": 29.690825743245746,
+          "target_length": 30.44566040511032,
+          "tolerance": 0.03,
+          "source_interval": 0.004999297144846902,
+          "target_sampling_radius_bound": 0.002499809868758751,
+          "source_intervals": 5939,
+          "target_points": 9370,
+          "covered_fraction_lower": 0.9957905371274626,
+          "covered_fraction_upper": 1.0,
+          "unresolved_fraction": 0.004209462872537464,
+          "maximum_distance_lower": 0.02607313041393184,
+          "maximum_distance_upper": 0.03107258885511404,
+          "definitely_uncovered_arc_intervals": [],
+          "midpoint_sample_distance_quantiles": {
+            "q50": 0.007888094480029001,
+            "q90": 0.022374242831613697,
+            "q95": 0.024196260824048212,
+            "q99": 0.026083180208694913,
+            "max": 0.02857294028269059
+          },
+          "best_20_percent_midpoint_rms": 0.0008620270711916128,
+          "scope": "directed geometric support of supplied polylines; bounds include sampling error but not measurement uncertainty or wrong correspondences"
+        }
+      ]
+    },
+    {
+      "sheet": "29-2",
+      "raw_points": 79110,
+      "boundary_points": 2587,
+      "non_boundary_source_length": 29.04331506545437,
+      "covered_fraction_lower": 0.957307626097435,
+      "covered_fraction_upper": 1.0,
+      "maximum_distance_lower": 0.031073256326523274,
+      "maximum_distance_upper": 0.036072921167347304,
+      "segments": [
+        {
+          "source_length": 29.04331506545437,
+          "target_length": 30.44566040511032,
+          "tolerance": 0.03,
+          "source_interval": 0.00499970994413055,
+          "target_sampling_radius_bound": 0.002499809868758751,
+          "source_intervals": 5809,
+          "target_points": 9370,
+          "covered_fraction_lower": 0.957307626097435,
+          "covered_fraction_upper": 1.0,
+          "unresolved_fraction": 0.04269237390256499,
+          "maximum_distance_lower": 0.031073256326523274,
+          "maximum_distance_upper": 0.036072921167347304,
+          "definitely_uncovered_arc_intervals": [],
+          "midpoint_sample_distance_quantiles": {
+            "q50": 0.003107937879239629,
+            "q90": 0.013080462236917046,
+            "q95": 0.01684767529831189,
+            "q99": 0.032692498656001455,
+            "max": 0.033573066195282025
+          },
+          "best_20_percent_midpoint_rms": 0.0011585011498055893,
+          "scope": "directed geometric support of supplied polylines; bounds include sampling error but not measurement uncertainty or wrong correspondences"
+        }
+      ]
+    }
+  ],
+  "coverage_scope": "uses saved transforms and supplied ordered contour; excludes original z=-20 points without joining gaps; .03 is the legacy diagnostic threshold, not an official measurement tolerance; raw noise contributes to arc length; coverage is not registration truth",
+  "findings": [
+    {
+      "id": "PAPER_FORMAT",
+      "severity": "blocking",
+      "evidence": "Page 1 includes abstract, restatement, assumptions and methods; formula subscripts and sqrt are printed as prose. No dedicated per-question analysis or notation table.",
+      "required_resolution": "A readable Chinese mathematical paper with the requested structure, reviewed on rendered pages."
+    },
+    {
+      "id": "METHOD_DRIFT",
+      "severity": "blocking",
+      "evidence": "Page 1 section 3.2 says sheet names choose angle branches; page 3 says they are only checked afterward. analysis.py calls estimate_tilt(raw) without the nominal name.",
+      "required_resolution": "Reconcile actual estimation, independent validation and all paper descriptions."
+    },
+    {
+      "id": "Q3_OUTPUTS",
+      "severity": "blocking",
+      "evidence": "Official Q3 requests all Q1 parameter types and complete contour. The delivered Q3 summary contains tilts, one primary circle and a reference-backbone consensus. It does not enumerate all required feature measurements.",
+      "required_resolution": "Deliver the full feature inventory with observed/estimated/unresolved statuses; justify any irrecoverable item from coverage and feature correspondence evidence."
+    },
+    {
+      "id": "Q3_UNION",
+      "severity": "blocking",
+      "evidence": "analysis.py constructs consensus only at resampled reference points. Other scans contribute only within a .03 tube. This cannot establish the union of all measured regions; full directed coverage is reported here.",
+      "required_resolution": "Integrate supported extensions or explicitly limit the output to the reference domain and quantify omitted observations."
+    },
+    {
+      "id": "Q4_CORRECTION",
+      "severity": "blocking",
+      "evidence": "main() produces the contour before local circle/angle analysis; corrected_workpiece2_parameters stores group summaries only. No geometric correspondence map or updated contour is generated afterward.",
+      "required_resolution": "Map local features to global features, apply constrained corrections and output the resulting contour with before/after residuals."
+    },
+    {
+      "id": "WEAK_ACCEPTANCE",
+      "severity": "blocking",
+      "evidence": "final_audit.py explicitly requires four pages and matches headings/numeric tokens. independent_check.py reads the original results.json for its 13 checks, rather than independently reconstructing Q3/Q4 from measurements.",
+      "required_resolution": "Retain these as consistency checks; accept each official requested output on independent evidence and actual paper review."
+    }
+  ],
+  "retained_evidence": "Source hashes and recorded duration agree with the archived audit; some geometric computations and consistency checks remain useful. No claim here that every old numerical estimate is wrong.",
+  "source_sha256": {
+    "blind_tests/2020_D_profilometer_strict/output/pdf/2020D_profilometer_strict_blind_test_paper.pdf": "2811111b6547de31d5974776a04a5a5da2a86cfa4b7e66dfb9463ea6f8cf93cd",
+    "blind_tests/2020_D_profilometer_strict/output/results.json": "2dafd19b9b2c17239ea6712d5f43fbf07529d42ac50348ad1cf96e8ebd25a5ae",
+    "blind_tests/2020_D_profilometer_strict/output/workpiece2_ordered_consensus.csv": "b9931db34eadcc6853d0ecac57b2a09e9dae78d278c9d63631956279dd57ba7c",
+    "blind_tests/2020_D_profilometer_strict/analysis.py": "727eec5720259cab29bc315a3e072161d0930c78355dd7148e8db5dfa1175995",
+    "blind_tests/2020_D_profilometer_strict/geometry_core.py": "2de6177b51efc45c2dd85fb783ef84f2487cf1b2c26349260a390d499c7ebba7",
+    "blind_tests/2020_D_profilometer_strict/independent_check.py": "f5071ff815529f17bab8f88072cd73c6de35f1780547570848796835a77341f7",
+    "blind_tests/2020_D_profilometer_strict/final_audit.py": "eedab6ef0fff485d854c16a155b665340468f145c1d55574c4a15bb48ee1e25f",
+    "blind_tests/2020_D_profilometer_strict/timeline.json": "2236680d0bbc2b7655f5724a14a59af4ceaa2142a391f863775dfdc1db2138f6",
+    "blind_tests/2020_D_profilometer_strict/INDEPENDENT_PAPER_REVIEW.md": "2ec95f24541c654cc1b02403998739b92c754f26da3fecf65d01887608f5dc8b"
+  },
+  "tool_sha256": {
+    "benchmarks/profilometer_2020d/audit_legacy.py": "8696598d07200dd190b9f37841b7d6c2bb8d2c59b6a59dbbf3220bdc7b9a99bd",
+    "skill/cumcm-reliable-paper/scripts/curve_coverage.py": "62fa02a403f46611e39f9b0ab20bc1684b47674ea950a09c4b1d3c6b42035026"
+  },
+  "submission_ready": false,
+  "national_award_level": "NOT_ESTABLISHED"
+}

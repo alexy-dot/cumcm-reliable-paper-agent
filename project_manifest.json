@@ -37,6 +37,14 @@
   "supervision": {
     "updated_on": "2026-09-09",
     "readiness": "NOT_ESTABLISHED",
+    "latest_readiness_review": {
+      "case": "2020 D archived timed trial",
+      "decision": "NOT_ACCEPTED_AS_COMPLETE_TIMED_PAPER",
+      "evidence": "benchmarks/reports/profilometer-2020d-legacy-audit.json",
+      "reason": "The archived 93/100 score does not establish complete Q3/Q4 outputs or acceptable paper structure; full-curve coverage contradicts the observed-union claim.",
+      "original_artifacts_preserved": true,
+      "new_blind_trial_started": false
+    },
     "latest_accepted_increment": {
       "name": "2024 B exact posterior expectation within declared independent-Beta policy classes",
       "evidence": "benchmarks/reports/production-2024b/exact_posterior/summary.json",

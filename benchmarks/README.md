@@ -39,6 +39,26 @@ python3 benchmarks/furnace_2020a/optimizer_comparison.py runs/furnace --output r
 
 输出目录须不存在。先写入固定协议，再执行搜索；独立复核后不重新选解，保留严格可行与数值容差可行两种判定。
 
+## 2020 D：旧限时稿的重新验收
+
+2026-09-04的本地时间线记录约142分钟完成，旧评审给出93/100。对冻结PDF、程序和输出的[重新复核](reports/profilometer-2020d-legacy-audit.json)不接受它作为完整限时论文：摘要与正文混页、公式以普通字符排版、倾角方法描述矛盾，第三问缺完整特征清单，第四问未实际输出修正后的轮廓。原稿、旧评分和时间线保留，后续修订不补算为限时成绩；本次也不能独立证明当时的阅读隔离。
+
+复算使用原有旋转和平移参数，把附件2的每次扫描与已交付共识线逐段比较。按旧模型的0.03距离阈值，并剔除原模型认定的z=-20边界点，26-2扫描至少46.5%的弧长偏离共识线超过阈值。该证据否定“最近20%残差小就足以证明覆盖观测并集”，但不单独判定真实轮廓或测量误差大小。
+
+可复用工具`skill/cumcm-reliable-paper/scripts/curve_coverage.py`按弧长报告覆盖上下界、遗漏区间和最大距离上下界。它保留目标折线顶点，并计入离散采样误差；需要先确定共同坐标系、单位与应当重合的范围。原始噪声会影响弧长，容差也需有测量依据，工具不自动认证物理对应或配准正确。
+
+```python
+from curve_coverage import compare_curves
+report = compare_curves(scan, reconstructed, tolerance=0.03, step=0.005)
+```
+
+复核需要自行提供原始训练目录及官方附件，不依赖参赛论文：
+
+```bash
+.venv/bin/python benchmarks/profilometer_2020d/audit_legacy.py \
+  --workspace /path/to/original-workspace --output runs/profilometer-review
+```
+
 ## 2021 D：异常通知下的在线切割
 
 [连铸切割训练稿](reports/casting-2021d-paper.pdf)覆盖12种尾坯与三种目标长度下各9次异常决策。尾坯用有理数枚举和凸性分配，在线方案用字典序动态规划；已启动的切口保持不变，未来通知不能提前进入决策。
