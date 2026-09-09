@@ -30,6 +30,19 @@ class FurnaceNumericsTest(unittest.TestCase):
         self.assertEqual(crossing(t, y, 150, True), 1.)
         self.assertEqual(crossing(t, y, 150, False), 3.)
 
+    def test_frozen_model_superposition_for_multiple_heater_settings(self):
+        from structural_evidence import affine_basis
+        parameters = [50, 70, 40, 45, 24, 30, 99]
+        _, ambient, basis = affine_basis(81., parameters, dx=.25)
+        for settings in [[165,185,225,245], [185,205,245,265], [173,198,230,257]]:
+            _, actual = temperature_curve(settings,81.,parameters,dx=.25)
+            np.testing.assert_allclose(ambient+(np.array(settings)-25)@basis, actual, atol=1e-8, rtol=0)
+
+    def test_positive_filter_identity_matches_independent_continuous_ode(self):
+        from structural_evidence import check_speed_identity
+        result = check_speed_identity([182,203,237,254], [50,70,40,45,24,30,99])
+        self.assertTrue(result["passed"],result)
+
 
 if __name__ == "__main__":
     unittest.main()

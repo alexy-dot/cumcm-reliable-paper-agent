@@ -54,16 +54,18 @@
     "passed": true
   },
   "paper": {
-    "pages": 15,
-    "sha256": "cc8b3af54104bde2e6d2bf3c5c3bcb4452fb7571551db3db1bbe70a582470b23",
+    "pages": 16,
+    "sha256": "8b9914d4a35e6aee5942682e6eb3562677da660c25a8f259900943c8ba7a3b6f",
     "backend": "latex",
     "fonts": [
       "/AKHCZK+STHeitiSC-Light",
       "/BZIVMZ+STSongti-SC-Regular",
       "/CAFSZL+CMSY10",
       "/DDIEWW+CMR12",
+      "/DZGKAF+CMMI6",
       "/FKPJSN+CMMI10",
-      "/FZDNHS+CMSY6",
+      "/FZDNHS+CMR6",
+      "/GJMHKB+CMSY6",
       "/IHAIZV+STHeitiSC-Medium",
       "/IXFAWU+TimesNewRomanPSMT",
       "/JAGKKY+CMR8",
@@ -75,7 +77,7 @@
       "/VDVGTR+CMSY8",
       "/YEUUOC+LMSans12-Regular-Identity-H"
     ],
-    "revision_at": "2026-09-08T15:27:25Z",
+    "revision_at": "2026-09-09T00:20:57Z",
     "structure_review": {
       "profile": "user-requested CUMCM paper structure; not an official universal chapter-order rule",
       "passed": true,
@@ -87,28 +89,28 @@
         "four_question_solution_subsections": true,
         "notation_table_columns": true
       },
-      "pages": 15,
+      "pages": 16,
       "heading_pages": {
         "一、问题重述": 2,
         "二、问题分析": 2,
         "三、模型假设": 4,
         "四、符号说明": 5,
         "五、模型的建立与求解": 5,
-        "六、模型检验与灵敏度分析": 12,
-        "七、模型评价与改进": 13,
-        "八、结论": 14,
-        "AI工具使用声明": 14,
-        "参考文献": 14,
-        "附录": 15
+        "六、模型检验与灵敏度分析": 14,
+        "七、模型评价与改进": 15,
+        "八、结论": 15,
+        "AI工具使用声明": 15,
+        "参考文献": 15,
+        "附录": 16
       },
-      "pdf_sha256": "cc8b3af54104bde2e6d2bf3c5c3bcb4452fb7571551db3db1bbe70a582470b23",
+      "pdf_sha256": "8b9914d4a35e6aee5942682e6eb3562677da660c25a8f259900943c8ba7a3b6f",
       "scope": "actual page-one contents and required structure; substantive writing and scientific quality still require review"
     },
     "visual_review": {
       "status": "TARGETED_REVISION_REVIEWED",
       "reviewer_type": "agent",
-      "scope": "Problem restatement compared with the original task and A001/B157 page 2. Revised page 2 and appendix inspected at readable resolution; document reflow inspected in page montage; no whole-paper quality certification.",
-      "pdf_sha256": "cc8b3af54104bde2e6d2bf3c5c3bcb4452fb7571551db3db1bbe70a582470b23"
+      "scope": "Added mathematical arguments, formula typography, speed figure and equivalent-solution table inspected at readable scale on pages 10-13; whole-document page montage reviewed for flow. A4/content margins pass. Not a global scientific quality certification.",
+      "pdf_sha256": "8b9914d4a35e6aee5942682e6eb3562677da660c25a8f259900943c8ba7a3b6f"
     },
     "restatement_revision": {
       "evidence": [
@@ -153,5 +155,13 @@
       }
     }
   },
-  "timed_trial_status": "NOT_CERTIFIED: the original manuscript failed acceptance; subsequent revisions followed user feedback."
+  "timed_trial_status": "NOT_CERTIFIED: the original manuscript failed acceptance; subsequent revisions followed user feedback.",
+  "model_structure_evidence": {
+    "passed": true,
+    "scope": "fixed positive time constants, fixed nonnegative forcing relative to ambient and common entry temperature; no physical validation",
+    "speed_identity_error_c": 1.911976426072215e-7,
+    "superposition_error_c": 1.6200374375330284e-12,
+    "feasible_equivalent_settings": 3,
+    "report": "furnace-2020a-structural-evidence.json"
+  }
 }

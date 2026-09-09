@@ -12,9 +12,15 @@ def compose(run):
     independent = read_json(run / "artifacts/independent_comparison.json")
     reference = read_json(run / "artifacts/independent_solution.json")
     sensitivity = read_json(run / "artifacts/sensitivity.json")
+    structural = read_json(run / "artifacts/structural_evidence.json")
+    if not structural["passed"]:
+        raise ValueError("model-structure evidence must pass before citing the conditional proofs")
     selected = calibration["models"]["zoned"]
     q1, q2, q3, q4 = [solution[name] for name in ["Q1", "Q2", "Q3", "Q4"]]
     f = lambda value, n=3: f"{value:.{n}f}"
+    def scientific(value):
+        mantissa, exponent = f"{value:.2e}".split("e")
+        return f"${mantissa}\\times10^{{{int(exponent)}}}$"
     text = lambda value: {"text": value}
     equation = lambda value: {"equation": value}
     table = lambda rows: {"table": rows}
@@ -120,9 +126,16 @@ def compose(run):
     metric_names = [("max_rise", "最大升温速率", "≤3℃/s"), ("max_cooling", "最大降温速率绝对值", "≤3℃/s"),
                     ("soak_150_190", "上升150—190℃时间", "60—120s"), ("time_above_217", "高于217℃总时间", "40—90s"), ("peak", "峰值", "240—250℃")]
     section("5.2 问题二：固定温区下的最大速度", [
-        text("固定182、203、237、254℃，在65—100 cm/min内以0.1 cm/min间隔检查全部制程限制，定位最高可行区间，再对活动边界求根。独立程序从连续ODE和峰值条件重新求根，核对速度。有限网格不能形式证明不存在极窄的漏检可行岛，结果为当前模型与搜索范围下的数值边界。"),
+        text("固定182、203、237、254℃，先在65—100 cm/min内检查全部制程限制并定位活动边界，再通过峰值温度下限求根。为说明该边界为何给出最大速度，而非仅是网格上最后一个可行点，下面利用一阶响应的正核性质证明峰值关于速度的单调性。"),
+        text(r"在本文假设下，$\tau_g>0$及驱动$U(x)$均不随速度改变。定义变换坐标$z(x)=\int_0^x\tau_g(\xi)^{-1}\,\mathrm d\xi$、$Y_v=T_v-25$和$F=U-25$，则响应满足"),
+        equation(r"\frac{\mathrm dY_v}{\mathrm dz}=\lambda_v(F-Y_v),\qquad\lambda_v=\frac{60}{v},\qquad Y_v(0)=0."),
+        text(r"取$v_1<v_2$，记$r=v_1/v_2\in(0,1)$。由线性方程的卷积解可得同一位置处两种速度的响应关系："),
+        equation(r"Y_{v_2}(z)=rY_{v_1}(z)+(1-r)\lambda_{v_2}\int_0^z e^{-\lambda_{v_2}(z-s)}Y_{v_1}(s)\,\mathrm ds."),
+        text(r"设有限炉程内$Y_{v_1}$的最大值为$M_1>0$。上式权重非负，总和为$1-(1-r)e^{-\lambda_{v_2}z}<1$，故在整个有限区间内$Y_{v_2}(z)<M_1$。于是中心温度峰值严格随速度增大而减小。此证明不要求各制程时间单调，也不要求先假定可行速度集合只有一个区间。"),
+        text(f"独立连续积分在70与90 cm/min两条曲线上验证该恒等式，最大温差为{scientific(structural['speed_comparison_identity']['max_identity_error_c'])}℃。求得峰值等于240℃的边界后，只要该点通过其余制程要求，所有更高速度必因峰值不足而不可行。由此得到模型内最大速度的条件证明；若实际换热参数随速度改变，证明不再适用。"),
         text(f"主算法边界速度为{f(q2['speed_cm_min'],6)} cm/min；独立连续积分求得{f(reference['Q2']['speed_cm_min'],6)} cm/min。活动约束是峰值降至240℃，其余指标保有名义余量。"),
         table([["制程指标", "要求", "问题2计算值"]] + [[name,limit,f(q2["metrics"][key],4)] for key,name,limit in metric_names]),
+        figure("speed_boundary", "图4 固定温区下峰值随速度下降；240℃交点给出速度上界，边界处其余制程要求另行核验。"),
         text("精确数值边界附近，模型误差、计算容差及控制分辨率都会影响合格判定。不能将显示为240.000℃理解为实物温度精确等于240℃；下文另给参数情景下的留余量方案。")], level=2, key="q2")
 
     section("5.3 问题三：最小化上升回流面积", [
@@ -131,8 +144,13 @@ def compose(run):
         table([["方案", "1—5区/℃", "6区/℃", "7区/℃", "8—9区/℃", "速度/cm·min⁻¹"]] + [["Q3", *[f(value,3) for value in q3["settings"]], f(q3["speed_cm_min"],3)]]),
         text(f"找到的上升面积为{f(q3['metrics']['area_rising_above_217'],6)}℃·s，峰值时刻{f(q3['metrics']['peak_time'])}s，上升越过217℃时刻{f(q3['metrics']['t217_up'])}s。速度100 cm/min与8—9区265℃达到允许上界，峰值接近240℃下界。"),
         table([["制程指标", "要求", "问题3计算值"]] + [[name,limit,f(q3["metrics"][key],4)] for key,name,limit in metric_names]),
-        text("不同起点得到的最优面积几乎一致，但前段温区组合不同。后段回流过程主要受进入高温平台时的状态、平台温度和速度控制，前段参数可在满足保温时间的条件下互相补偿。因此应交付一组可行代表及替代解，不宣称该设定唯一。"),
-        table([["代表起点", "1—5区/℃", "6区/℃", "7区/℃", "面积/℃·s"]] + [[str(row["seed"]), *[f(value,3) for value in row["settings_speed"][:3]], f(row["objective"]*1000,6)] for row in q3["attempts"][:3]]),
+        text(r"不同起点得到的面积几乎一致，但前段温区组合不同。这不仅是搜索输出的观察：固定速度和辨识参数后，热驱动对四组设定温度呈仿射关系，一阶响应方程又是线性的。因此，用四个单位温升响应$b_j(x)$，可写成"),
+        equation(r"T(x)=25+\sum_{j\in\{1,6,7,8\}}b_j(x)(T_j-25)."),
+        text(r"第8区起点$x_e=273.5$ cm之后，热驱动只与后段设定$T_8$有关。因此固定$v,T_8$并保持入口温度$T(x_e)$，便由解的唯一性得到相同的后段曲线。前段温区满足以下线性补偿关系即可保持该入口状态："),
+        equation(r"b_1(x_e)\Delta T_1+b_6(x_e)\Delta T_6+b_7(x_e)\Delta T_7=0,\qquad\Delta T_8=0."),
+        text(f"取第1组温区改变±0.25℃、第7区不变，并补偿第6区，得到下表三组可行设置。三组均在第8区之后才上升越过217℃，因此本题面积目标所覆盖的曲线也相同。单位响应叠加与直接求解的最大差为{scientific(structural['q3_superposition']['max_error_c'])}℃；这里证明的是模型内等价方案的存在，不是问题三全局最优性。"),
+        table([["1—5区/℃", "6区/℃", "入口温度/℃", "上升面积/℃·s", "保温时间/s"]] +
+              [[f(row["settings"][0],4),f(row["settings"][1],4),f(row["entry_temperature_c"],6),f(row["area"],6),f(60+row["constraint_margins"][2],4)] for row in structural["q3_superposition"]["alternatives"]]),
         text("多起点一致性是搜索稳定性的证据，不是非线性优化的全局证书。题面所求最优曲线在本文中被明确解释为所选有效模型下找到的最佳可行数值解。")], level=2, key="q3")
 
     section("5.4 问题四：面积与对称性的权衡", [
@@ -146,7 +164,7 @@ def compose(run):
                ["Q3",f(q3["metrics"]["area_rising_above_217"]),f(q3["metrics"]["symmetry"],6),f(q3["metrics"]["time_above_217"]),f(q3["metrics"]["peak"])],
                ["Q4",f(q4["metrics"]["area_rising_above_217"]),f(q4["metrics"]["symmetry"],6),f(q4["metrics"]["time_above_217"]),f(q4["metrics"]["peak"])]]),
         text(f"问题4面积比问题3增加{f(area_change,2)}%，不对称性降低{f(symmetry_change,2)}%；面积上限{f(q4['area_cap'])}℃·s未用尽。最终升降温、保温、回流和峰值限制均以原始高精度参数检查。"),
-        figure("optimization", "图4 三个决策工况的曲线，以及按峰值时刻对齐的Q3、Q4曲线。")], level=2, key="q4")
+        figure("optimization", "图5 三个决策工况的曲线，以及按峰值时刻对齐的Q3、Q4曲线。")], level=2, key="q4")
 
     worst = max(independent["comparisons"], key=lambda row: row["error"] / row["tolerance"])
     section("六、模型检验与灵敏度分析", [

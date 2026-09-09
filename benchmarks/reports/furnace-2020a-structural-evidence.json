@@ -1,0 +1,267 @@
+{
+  "scope": "fixed positive time constants, fixed nonnegative forcing relative to ambient and common entry temperature; no physical validation",
+  "speed_comparison_identity": {
+    "speeds_cm_min": [
+      70,
+      90
+    ],
+    "peak_temperatures_c": [
+      242.8279331514398,
+      236.57608851956874
+    ],
+    "max_identity_error_c": 1.911976426072215e-7,
+    "tolerance_c": 0.00001,
+    "passed": true
+  },
+  "speed_sweep": [
+    {
+      "speed_cm_min": 65,
+      "peak_c": 244.31887638149118
+    },
+    {
+      "speed_cm_min": 66,
+      "peak_c": 244.02363432785933
+    },
+    {
+      "speed_cm_min": 67,
+      "peak_c": 243.7268709641557
+    },
+    {
+      "speed_cm_min": 68,
+      "peak_c": 243.42863544338678
+    },
+    {
+      "speed_cm_min": 69,
+      "peak_c": 243.1289747965496
+    },
+    {
+      "speed_cm_min": 70,
+      "peak_c": 242.82793396108468
+    },
+    {
+      "speed_cm_min": 71,
+      "peak_c": 242.52555638286503
+    },
+    {
+      "speed_cm_min": 72,
+      "peak_c": 242.22188392401637
+    },
+    {
+      "speed_cm_min": 73,
+      "peak_c": 241.9169571295239
+    },
+    {
+      "speed_cm_min": 74,
+      "peak_c": 241.61081514672202
+    },
+    {
+      "speed_cm_min": 75,
+      "peak_c": 241.3034962024585
+    },
+    {
+      "speed_cm_min": 76,
+      "peak_c": 240.9950374842833
+    },
+    {
+      "speed_cm_min": 77,
+      "peak_c": 240.68547529358318
+    },
+    {
+      "speed_cm_min": 78,
+      "peak_c": 240.37484513434933
+    },
+    {
+      "speed_cm_min": 79,
+      "peak_c": 240.0631818348478
+    },
+    {
+      "speed_cm_min": 80,
+      "peak_c": 239.7505194327646
+    },
+    {
+      "speed_cm_min": 81,
+      "peak_c": 239.4368915195307
+    },
+    {
+      "speed_cm_min": 82,
+      "peak_c": 239.12233109910858
+    },
+    {
+      "speed_cm_min": 83,
+      "peak_c": 238.80687067990849
+    },
+    {
+      "speed_cm_min": 84,
+      "peak_c": 238.49054231300124
+    },
+    {
+      "speed_cm_min": 85,
+      "peak_c": 238.17337762424066
+    },
+    {
+      "speed_cm_min": 86,
+      "peak_c": 237.8554078415264
+    },
+    {
+      "speed_cm_min": 87,
+      "peak_c": 237.53666381767866
+    },
+    {
+      "speed_cm_min": 88,
+      "peak_c": 237.21717604871054
+    },
+    {
+      "speed_cm_min": 89,
+      "peak_c": 236.89697468918752
+    },
+    {
+      "speed_cm_min": 90,
+      "peak_c": 236.57608956396635
+    },
+    {
+      "speed_cm_min": 91,
+      "peak_c": 236.25455017751915
+    },
+    {
+      "speed_cm_min": 92,
+      "peak_c": 235.93238572051814
+    },
+    {
+      "speed_cm_min": 93,
+      "peak_c": 235.60962507479073
+    },
+    {
+      "speed_cm_min": 94,
+      "peak_c": 235.28629681650537
+    },
+    {
+      "speed_cm_min": 95,
+      "peak_c": 234.9624292172268
+    },
+    {
+      "speed_cm_min": 96,
+      "peak_c": 234.63805024471563
+    },
+    {
+      "speed_cm_min": 97,
+      "peak_c": 234.31318756178302
+    },
+    {
+      "speed_cm_min": 98,
+      "peak_c": 233.9878685249117
+    },
+    {
+      "speed_cm_min": 99,
+      "peak_c": 233.66212018188173
+    },
+    {
+      "speed_cm_min": 100,
+      "peak_c": 233.33596926882984
+    }
+  ],
+  "sweep_strictly_decreasing": true,
+  "q2_boundary": {
+    "speed_cm_min": 79.2023311426206,
+    "continuous_peak_c": 239.99999918585112,
+    "other_constraint_margins": [
+      0.8096780664834018,
+      1.3152008960217068,
+      24.309924539464077,
+      35.69007546053592,
+      30.52692108005664,
+      19.47307891994336
+    ]
+  },
+  "q3_superposition": {
+    "max_error_c": 1.6200374375330284e-12,
+    "tolerance_c": 1e-8,
+    "entry_cm": 273.5,
+    "entry_weights": [
+      0.36786524149647093,
+      0.15288267542813472,
+      0.392058083628136,
+      0.032834077168608644
+    ],
+    "null_direction": [
+      1,
+      -2.406193118129939,
+      0,
+      0
+    ],
+    "alternatives": [
+      {
+        "delta_t1_c": -0.25,
+        "settings": [
+          183.78827619839623,
+          198.33023146650913,
+          232.54223909477778,
+          265
+        ],
+        "entry_temperature_c": 199.1606681415662,
+        "post_entry_max_difference_c": 2.2737367544323206e-13,
+        "area": 416.2200651153951,
+        "constraint_margins": [
+          0.6336271454879037,
+          1.0316471999842418,
+          0.6247157305257645,
+          59.375284269474236,
+          12.712450264458198,
+          37.2875497355418,
+          0.00007209957428244707,
+          9.999927900425718
+        ],
+        "threshold_after_entry": true,
+        "feasible": true
+      },
+      {
+        "delta_t1_c": 0,
+        "settings": [
+          184.03827619839623,
+          197.72868318697664,
+          232.54223909477778,
+          265
+        ],
+        "entry_temperature_c": 199.1606681415664,
+        "post_entry_max_difference_c": 0,
+        "area": 416.22006511537313,
+        "constraint_margins": [
+          0.6299014723601912,
+          1.0316471999842407,
+          0.9152111305253499,
+          59.08478886947465,
+          12.712450264458369,
+          37.28754973554163,
+          0.00007209957431086877,
+          9.99992790042569
+        ],
+        "threshold_after_entry": true,
+        "feasible": true
+      },
+      {
+        "delta_t1_c": 0.25,
+        "settings": [
+          184.28827619839623,
+          197.12713490744414,
+          232.54223909477778,
+          265
+        ],
+        "entry_temperature_c": 199.1606681415665,
+        "post_entry_max_difference_c": 1.1368683772161603e-13,
+        "area": 416.22006511531606,
+        "constraint_margins": [
+          0.6261757992324797,
+          1.0316471999842407,
+          1.2031260938358628,
+          58.79687390616414,
+          12.712450264458425,
+          37.287549735541575,
+          0.0000720995743677122,
+          9.999927900425632
+        ],
+        "threshold_after_entry": true,
+        "feasible": true
+      }
+    ]
+  },
+  "passed": true
+}

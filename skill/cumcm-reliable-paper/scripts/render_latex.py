@@ -39,6 +39,11 @@ def render_latex(run, source, *, compiler=None, cache_dir=None, compile_pdf=True
     data = json.loads(source.read_text(encoding="utf-8"))
     output = run / "paper"
     output.mkdir(exist_ok=True)
+    document_sha256 = hashlib.sha256(source.read_bytes()).hexdigest()
+    (output / "render_report.json").write_text(json.dumps({"render_status": "PENDING", "source": source.name,
+                                                          "document_sha256": document_sha256,
+                                                          "note": "An existing PDF may be from an earlier generation; not accepted until compilation succeeds."},
+                                                         ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     if platform.system() == "Darwin":
         fonts = r"\setmainfont{Times New Roman}\setCJKmainfont{Songti SC}\setCJKsansfont{Heiti SC}"
     else:
@@ -152,7 +157,8 @@ FONTS
         report = {"pages": len(pdf.pages), "encrypted": pdf.is_encrypted,
                   "text_characters": sum(len(page.extract_text() or "") for page in pdf.pages),
                   "visual_review": "PENDING", "source": source.name, "backend": "latex",
-                  "fonts": font_names, "pdf_sha256": hashlib.sha256((output / "main.pdf").read_bytes()).hexdigest()}
+                  "fonts": font_names, "pdf_sha256": hashlib.sha256((output / "main.pdf").read_bytes()).hexdigest(),
+                  "document_sha256": document_sha256, "render_status": "COMPILED"}
         (output / "render_report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print({"tex": str(tex), "pdf_compiled": compile_pdf, "visual_review": "PENDING"})
 

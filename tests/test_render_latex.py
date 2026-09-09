@@ -45,3 +45,13 @@ class LatexSourceTest(unittest.TestCase):
         self.assertNotIn("⁻", tex)
         self.assertIn(r"\mathrm{min}^{-1}", tex)
         self.assertIn(r"{}^{\circ}\mathrm{C}", tex)
+
+    def test_source_only_generation_invalidates_an_old_pdf_receipt(self):
+        (self.root / "paper").mkdir()
+        (self.root / "paper/main.pdf").write_bytes(b"previous PDF")
+        (self.root / "paper/render_report.json").write_text('{"render_status":"COMPILED"}')
+        render_latex(self.root, self.source, compile_pdf=False)
+        report = json.loads((self.root / "paper/render_report.json").read_text())
+        self.assertEqual(report["render_status"], "PENDING")
+        self.assertNotIn("pdf_sha256", report)
+        self.assertEqual((self.root / "paper/main.pdf").read_bytes(), b"previous PDF")

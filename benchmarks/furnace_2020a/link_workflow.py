@@ -4,10 +4,15 @@ import csv
 import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "skill/cumcm-reliable-paper/scripts"))
-from engine import read_json, write_json, validate_run
+from engine import read_json, write_json, validate_run, sha256_file
 
 
 def link(run):
+    render = read_json(run / "paper/render_report.json")
+    if (render.get("render_status") != "COMPILED"
+            or render.get("document_sha256") != sha256_file(run / "paper/document.json")
+            or render.get("pdf_sha256") != sha256_file(run / "paper/main.pdf")):
+        raise ValueError("paper source or PDF differs from the successful compilation receipt; rebuild before validation")
     solution = read_json(run / "artifacts/solution.json")
     comparison = read_json(run / "artifacts/independent_comparison.json")
     if not comparison["passed"]:

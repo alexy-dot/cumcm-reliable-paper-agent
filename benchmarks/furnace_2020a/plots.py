@@ -40,6 +40,7 @@ def draw(run):
     figures.mkdir(exist_ok=True)
     solution = read_json(run / "artifacts/solution.json")
     calibration = read_json(run / "artifacts/calibration.json")
+    structural = read_json(run / "artifacts/structural_evidence.json")
     parameters = solution["parameters"]
     workbook = openpyxl.load_workbook(run / "sources/attachment_01__附件.xlsx", read_only=True, data_only=True)
     observed = np.asarray(list(workbook.active.values)[1:], float)
@@ -95,6 +96,19 @@ def draw(run):
     ax.legend(frameon=False)
     fig.tight_layout()
     fig.savefig(figures / "model_comparison.png", dpi=220)
+    plt.close(fig)
+    fig, ax = plt.subplots(figsize=(7.5, 3.5))
+    sweep = structural["speed_sweep"]
+    ax.plot([row["speed_cm_min"] for row in sweep], [row["peak_c"] for row in sweep], color="#106a8a", lw=1.8)
+    ax.axhline(240, color="#b34e39", lw=1, ls="--", label="峰值下限240℃")
+    speed = solution["Q2"]["speed_cm_min"]
+    ax.scatter([speed], [240], color="#b34e39", zorder=5)
+    ax.annotate(f"模型内速度上界 {speed:.3f} cm/min", xy=(speed,240), xytext=(speed+1,246),
+                arrowprops={"arrowstyle":"->", "color":"#475569"}, fontsize=10)
+    ax.set(xlabel="传送速度 / (cm/min)", ylabel=r"峰值温度 / $^{\circ}\mathrm{C}$")
+    ax.legend(frameon=False)
+    fig.tight_layout()
+    fig.savefig(figures / "speed_boundary.png", dpi=220)
     plt.close(fig)
 
 

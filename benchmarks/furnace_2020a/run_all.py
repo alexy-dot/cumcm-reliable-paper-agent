@@ -24,7 +24,7 @@ if __name__ == "__main__":
     def run(name, *extra, interpreter=sys.executable):
         subprocess.run([interpreter, str(scripts / name), *map(str, extra)], check=True)
     run("prepare.py", "--source-dir", args.source_dir.resolve(), "--output", output)
-    for phase in ["calibrate.py", "solve.py", "independent.py", "sensitivity.py", "plots.py", "paper.py"]:
+    for phase in ["calibrate.py", "solve.py", "independent.py", "sensitivity.py", "structural_evidence.py", "plots.py", "paper.py"]:
         run(phase, output)
     command = [args.paper_python, str(project / "skill/cumcm-reliable-paper/scripts/render_paper.py"),
                "--run", str(output), "--source", str(output / "paper/document.json")]
