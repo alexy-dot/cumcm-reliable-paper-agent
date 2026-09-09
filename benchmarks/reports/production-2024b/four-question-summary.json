@@ -1,0 +1,462 @@
+{
+  "case": "2024 B production decisions, four-question conditional training paper",
+  "paper": {
+    "pages": 13,
+    "sha256": "03b2837be75e84751998e1f12321bd31e8d79e0a3f4ad058ac0ef5e7878ce83d",
+    "visual_review": {
+      "reviewer_type": "agent",
+      "scope": "All 13 pages inspected as rendered images; probability table, multiline final-cost formula and Q4 scenario table checked at full resolution. Tiny nonzero probabilities retain scientific notation. Other pages pixel-identical after probability-table revision. Chinese typography, equations, margins and four-question coverage pass. Agent visual review only; complete source appendix and formal AI details remain pending.",
+      "status": "PASS",
+      "pdf_sha256": "03b2837be75e84751998e1f12321bd31e8d79e0a3f4ad058ac0ef5e7878ce83d"
+    },
+    "structure": {
+      "profile": "user-requested CUMCM organization; recognized labels are conventions, not universal official rules",
+      "passed": true,
+      "checks": {
+        "extractable_text": true,
+        "abstract_and_keywords_on_page_one": true,
+        "body_starts_on_page_two": true,
+        "required_heading_order": true,
+        "all_questions_analysis": true,
+        "all_questions_solution": true,
+        "notation_table_columns": true
+      },
+      "pages": 13,
+      "question_count": 4,
+      "question_evidence": {
+        "analysis": {
+          "expected_question_ids": [
+            "Q1",
+            "Q2",
+            "Q3",
+            "Q4"
+          ],
+          "found": [
+            {
+              "ordinal": 1,
+              "label": "一",
+              "page": 2,
+              "heading": "2.1问题一的分析"
+            },
+            {
+              "ordinal": 2,
+              "label": "二",
+              "page": 2,
+              "heading": "2.2问题二的分析"
+            },
+            {
+              "ordinal": 3,
+              "label": "三",
+              "page": 3,
+              "heading": "2.3问题三的分析"
+            },
+            {
+              "ordinal": 4,
+              "label": "四",
+              "page": 3,
+              "heading": "2.4问题四的分析"
+            }
+          ],
+          "assessed": true,
+          "missing_ids": [],
+          "not_assessed_reason": null,
+          "unknown_labels": []
+        },
+        "solution": {
+          "expected_question_ids": [
+            "Q1",
+            "Q2",
+            "Q3",
+            "Q4"
+          ],
+          "found": [
+            {
+              "ordinal": 1,
+              "label": "一",
+              "page": 4,
+              "heading": "5.1问题一：有效的序贯抽样方案"
+            },
+            {
+              "ordinal": 2,
+              "label": "二",
+              "page": 5,
+              "heading": "5.2问题二：两零件的质量状态与成本"
+            },
+            {
+              "ordinal": 3,
+              "label": "三",
+              "page": 7,
+              "heading": "5.3问题三：多层组装与条件修复"
+            },
+            {
+              "ordinal": 4,
+              "label": "四",
+              "page": 9,
+              "heading": "5.4问题四：抽样率不确定性下的策略"
+            }
+          ],
+          "assessed": true,
+          "missing_ids": [],
+          "not_assessed_reason": null,
+          "unknown_labels": []
+        }
+      },
+      "heading_pages": {
+        "restatement": [
+          2
+        ],
+        "analysis": [
+          2
+        ],
+        "assumptions": [
+          3
+        ],
+        "notation": [
+          4
+        ],
+        "solution": [
+          4
+        ],
+        "validation": [
+          12
+        ],
+        "evaluation": [
+          12
+        ],
+        "conclusion": [
+          12
+        ],
+        "ai": [
+          13
+        ],
+        "references": [
+          13
+        ],
+        "appendix": [
+          13
+        ]
+      },
+      "scope": "actual section coverage only; no certification of substantive answers, math, visual quality or awards",
+      "question_mapping": "contract questions in listed order map to 问题一/问题1 etc.; nested outputs need semantic review",
+      "pdf_sha256": "03b2837be75e84751998e1f12321bd31e8d79e0a3f4ad058ac0ef5e7878ce83d",
+      "extractor": "pypdf layout text",
+      "contract_sha256": "e3fa313a36599ca9b847d3c48e78b4e9b3757256c7bbaad06692cf89a634281f"
+    }
+  },
+  "source_sha256": "f54529dd15d729b046e248ea41033b4f66ef68333be2bee912b0c54eafd227ab",
+  "q1_q2": {
+    "sampling_quadrature_checks": 10,
+    "simulated_orders": 300000
+  },
+  "q3": {
+    "policy_count": 65536,
+    "best_policy": {
+      "part_tests": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "semi_tests": [
+        1,
+        1,
+        1
+      ],
+      "semi_dismantle": [
+        1,
+        1,
+        1
+      ],
+      "final_test": 0,
+      "final_dismantle": 1,
+      "cost_exact": "1258/9",
+      "expected_cost": 139.77777777777777,
+      "profit": 60.22222222222222,
+      "recovery_rule": "inspect each unknown immediate child after dismantling; repair bad children to known-good; preserve known-good items"
+    },
+    "simulated_orders": 200000
+  },
+  "q4": {
+    "input_scope": "Q4 conditional solution and two illustrative count scenarios; counts are not observed competition data",
+    "scenarios": [
+      {
+        "label": "illustrative_n20",
+        "provenance": "ILLUSTRATIVE_COUNTS_NOT_OBSERVED",
+        "results": [
+          {
+            "problem": "Q2-1",
+            "selected_policy": {
+              "part_tests": [
+                1,
+                1
+              ],
+              "semi_tests": [],
+              "semi_dismantle": [],
+              "final_test": 0,
+              "final_dismantle": 1
+            },
+            "expected_cost": 40.33333333333336,
+            "expected_profit": 15.666666666666643,
+            "changed": true
+          },
+          {
+            "problem": "Q2-2",
+            "selected_policy": {
+              "part_tests": [
+                1,
+                1
+              ],
+              "semi_tests": [],
+              "semi_dismantle": [],
+              "final_test": 0,
+              "final_dismantle": 1
+            },
+            "expected_cost": 46.750000000000014,
+            "expected_profit": 9.249999999999986,
+            "changed": false
+          },
+          {
+            "problem": "Q2-3",
+            "selected_policy": {
+              "part_tests": [
+                1,
+                0
+              ],
+              "semi_tests": [],
+              "semi_dismantle": [],
+              "final_test": 1,
+              "final_dismantle": 1
+            },
+            "expected_cost": 42.50482093663916,
+            "expected_profit": 13.495179063360837,
+            "changed": false
+          },
+          {
+            "problem": "Q2-4",
+            "selected_policy": {
+              "part_tests": [
+                1,
+                1
+              ],
+              "semi_tests": [],
+              "semi_dismantle": [],
+              "final_test": 1,
+              "final_dismantle": 1
+            },
+            "expected_cost": 43.56250000000001,
+            "expected_profit": 12.437499999999993,
+            "changed": false
+          },
+          {
+            "problem": "Q2-5",
+            "selected_policy": {
+              "part_tests": [
+                0,
+                1
+              ],
+              "semi_tests": [],
+              "semi_dismantle": [],
+              "final_test": 1,
+              "final_dismantle": 1
+            },
+            "expected_cost": 44.90995179063364,
+            "expected_profit": 11.090048209366358,
+            "changed": true
+          },
+          {
+            "problem": "Q2-6",
+            "selected_policy": {
+              "part_tests": [
+                1,
+                0
+              ],
+              "semi_tests": [],
+              "semi_dismantle": [],
+              "final_test": 0,
+              "final_dismantle": 0
+            },
+            "expected_cost": 39.635806968945786,
+            "expected_profit": 16.364193031054214,
+            "changed": true
+          },
+          {
+            "problem": "Q3",
+            "selected_policy": {
+              "part_tests": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "semi_tests": [
+                1,
+                1,
+                1
+              ],
+              "semi_dismantle": [
+                1,
+                1,
+                1
+              ],
+              "final_test": 0,
+              "final_dismantle": 1
+            },
+            "expected_cost": 150.16666666666666,
+            "expected_profit": 49.83333333333334,
+            "changed": false
+          }
+        ],
+        "verification_passed": true
+      },
+      {
+        "label": "illustrative_n200",
+        "provenance": "ILLUSTRATIVE_COUNTS_NOT_OBSERVED",
+        "results": [
+          {
+            "problem": "Q2-1",
+            "selected_policy": {
+              "part_tests": [
+                1,
+                0
+              ],
+              "semi_tests": [],
+              "semi_dismantle": [],
+              "final_test": 0,
+              "final_dismantle": 1
+            },
+            "expected_cost": 37.49199915041007,
+            "expected_profit": 18.508000849589934,
+            "changed": false
+          },
+          {
+            "problem": "Q2-2",
+            "selected_policy": {
+              "part_tests": [
+                1,
+                1
+              ],
+              "semi_tests": [],
+              "semi_dismantle": [],
+              "final_test": 0,
+              "final_dismantle": 1
+            },
+            "expected_cost": 44.27499999999999,
+            "expected_profit": 11.725000000000009,
+            "changed": false
+          },
+          {
+            "problem": "Q2-3",
+            "selected_policy": {
+              "part_tests": [
+                1,
+                0
+              ],
+              "semi_tests": [],
+              "semi_dismantle": [],
+              "final_test": 1,
+              "final_dismantle": 1
+            },
+            "expected_cost": 39.830117962291254,
+            "expected_profit": 16.169882037708746,
+            "changed": false
+          },
+          {
+            "problem": "Q2-4",
+            "selected_policy": {
+              "part_tests": [
+                1,
+                1
+              ],
+              "semi_tests": [],
+              "semi_dismantle": [],
+              "final_test": 1,
+              "final_dismantle": 1
+            },
+            "expected_cost": 41.48124999999998,
+            "expected_profit": 14.518750000000018,
+            "changed": false
+          },
+          {
+            "problem": "Q2-5",
+            "selected_policy": {
+              "part_tests": [
+                0,
+                1
+              ],
+              "semi_tests": [],
+              "semi_dismantle": [],
+              "final_test": 0,
+              "final_dismantle": 1
+            },
+            "expected_cost": 41.47882254190765,
+            "expected_profit": 14.521177458092353,
+            "changed": false
+          },
+          {
+            "problem": "Q2-6",
+            "selected_policy": {
+              "part_tests": [
+                0,
+                0
+              ],
+              "semi_tests": [],
+              "semi_dismantle": [],
+              "final_test": 0,
+              "final_dismantle": 0
+            },
+            "expected_cost": 34.989479224376744,
+            "expected_profit": 21.010520775623256,
+            "changed": false
+          },
+          {
+            "problem": "Q3",
+            "selected_policy": {
+              "part_tests": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "semi_tests": [
+                1,
+                1,
+                1
+              ],
+              "semi_dismantle": [
+                1,
+                1,
+                1
+              ],
+              "final_test": 0,
+              "final_dismantle": 1
+            },
+            "expected_cost": 140.81666666666666,
+            "expected_profit": 59.18333333333334,
+            "changed": false
+          }
+        ],
+        "verification_passed": true
+      }
+    ]
+  },
+  "workflow_scope": "source-frozen historical analysis and numerical checks; workflow stage remains READING, no human signoffs fabricated",
+  "remaining": [
+    "actual Q4 sample counts and sampling-design/priors assessment",
+    "complete code appendix and formal AI details",
+    "team/reviewer assessment and current contest submission checks"
+  ],
+  "submission_ready": false,
+  "national_award_level": "NOT_ESTABLISHED"
+}

@@ -1,0 +1,184 @@
+{
+  "samples": {
+    "label": "illustrative_n200",
+    "provenance": "ILLUSTRATIVE_COUNTS_NOT_OBSERVED",
+    "prior": {
+      "alpha": 1.0,
+      "beta": 1.0
+    },
+    "q2": {
+      "1": [
+        {
+          "n": 200,
+          "k": 20,
+          "basis": "random_supply"
+        },
+        {
+          "n": 200,
+          "k": 20,
+          "basis": "random_supply"
+        },
+        {
+          "n": 200,
+          "k": 20,
+          "basis": "good_inputs"
+        }
+      ],
+      "2": [
+        {
+          "n": 200,
+          "k": 40,
+          "basis": "random_supply"
+        },
+        {
+          "n": 200,
+          "k": 40,
+          "basis": "random_supply"
+        },
+        {
+          "n": 200,
+          "k": 40,
+          "basis": "good_inputs"
+        }
+      ],
+      "3": [
+        {
+          "n": 200,
+          "k": 20,
+          "basis": "random_supply"
+        },
+        {
+          "n": 200,
+          "k": 20,
+          "basis": "random_supply"
+        },
+        {
+          "n": 200,
+          "k": 20,
+          "basis": "good_inputs"
+        }
+      ],
+      "4": [
+        {
+          "n": 200,
+          "k": 40,
+          "basis": "random_supply"
+        },
+        {
+          "n": 200,
+          "k": 40,
+          "basis": "random_supply"
+        },
+        {
+          "n": 200,
+          "k": 40,
+          "basis": "good_inputs"
+        }
+      ],
+      "5": [
+        {
+          "n": 200,
+          "k": 20,
+          "basis": "random_supply"
+        },
+        {
+          "n": 200,
+          "k": 40,
+          "basis": "random_supply"
+        },
+        {
+          "n": 200,
+          "k": 20,
+          "basis": "good_inputs"
+        }
+      ],
+      "6": [
+        {
+          "n": 200,
+          "k": 10,
+          "basis": "random_supply"
+        },
+        {
+          "n": 200,
+          "k": 10,
+          "basis": "random_supply"
+        },
+        {
+          "n": 200,
+          "k": 10,
+          "basis": "good_inputs"
+        }
+      ]
+    },
+    "q3": [
+      {
+        "n": 200,
+        "k": 20,
+        "basis": "random_supply"
+      },
+      {
+        "n": 200,
+        "k": 20,
+        "basis": "random_supply"
+      },
+      {
+        "n": 200,
+        "k": 20,
+        "basis": "random_supply"
+      },
+      {
+        "n": 200,
+        "k": 20,
+        "basis": "random_supply"
+      },
+      {
+        "n": 200,
+        "k": 20,
+        "basis": "random_supply"
+      },
+      {
+        "n": 200,
+        "k": 20,
+        "basis": "random_supply"
+      },
+      {
+        "n": 200,
+        "k": 20,
+        "basis": "random_supply"
+      },
+      {
+        "n": 200,
+        "k": 20,
+        "basis": "random_supply"
+      },
+      {
+        "n": 200,
+        "k": 20,
+        "basis": "good_inputs"
+      },
+      {
+        "n": 200,
+        "k": 20,
+        "basis": "good_inputs"
+      },
+      {
+        "n": 200,
+        "k": 20,
+        "basis": "good_inputs"
+      },
+      {
+        "n": 200,
+        "k": 20,
+        "basis": "good_inputs"
+      }
+    ]
+  },
+  "samples_sha256": "1aae2fdf43c04f61ddc5d15fd9a20ff822a83de1683bf7f0e8d9da6db8f27c9f",
+  "selection_draws": 512,
+  "validation_draws": 8192,
+  "selection_seed_base": 104729,
+  "validation_seed_base": 130363,
+  "prior_and_likelihood": "independent Beta prior per stage, iid Bernoulli likelihood; assembly observations require all-good inputs",
+  "objective": "minimum posterior expected completion cost among declared policies, equal integration weight; five finalists frozen before held-out integration",
+  "scope": "Monte Carlo posterior decision analysis conditional on supplied counts and prior; not an exact proof of expected-cost optimality or field reliability"
+}

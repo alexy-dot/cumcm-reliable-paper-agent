@@ -97,7 +97,9 @@ python3 benchmarks/ethanol_2021b/run_all.py --source-dir /path/2021/B --output r
 
 通用分组比较已放入Skill的`grouped_regression.py`，可用于已审计的数值特征和明确的组编号。历史题重分析不算新盲测；正式源码附录、实验室复验和人工审查仍待完成。
 
-## 2024 B：概率与返工决策（进行中）
+## 2024 B：概率与返工决策
+
+[四问训练稿](reports/production-2024b-paper.pdf)覆盖序贯抽样、两零件和多层返工，以及实际抽样计数条件下的决策。第四问没有原题实际计数，因此数值部分明确采用20件/200件示例，不能冒充实测。
 
 [问题1、2阶段结果](reports/production-2024b/q1-q2-report.md)给出可随时停止的抽样候选，以及保留零件真实质量和检测知识的两零件返工模型。64类声明策略以有理数求解，识别14类无法终止的策略；六个代表最优策略分别以5万个完整订单仿真核对。未把每次免费补发算作新收入，也未把回收坏件重新抽成好件。
 
@@ -116,7 +118,17 @@ python3 benchmarks/ethanol_2021b/run_all.py --source-dir /path/2021/B --output r
 .venv/bin/python benchmarks/production_2024b/run_q3.py runs/production-q1-q2
 ```
 
-回收规则要求拆解后检测未知子件并递归修复，最优性限定该策略类。[完整结果与验证](reports/production-2024b/multistage/summary.json)。**问题4的抽样率不确定性传播及四问完整论文仍未完成。**
+回收规则要求拆解后检测未知子件并递归修复，最优性限定该策略类。[第三问结果与验证](reports/production-2024b/multistage/summary.json)。
+
+[第四问结果](reports/production-2024b/q4-report.md)支持传入各阶段真实`n`、`k`及抽样条件，独立Beta先验显式声明。选择与验证分别使用512、8192组参数，第二问另用确定性积分核对全部有效策略。示例中20件样本使三种情形改变检测策略，200件示例回到名义方案；这不是额外抽样的实际净收益。
+
+```bash
+.venv/bin/python benchmarks/production_2024b/run_all.py \
+  --source /path/2024/B题.pdf --output runs/production-full --example-sizes 20 200 \
+  --latex-compiler /path/to/tectonic --cache-dir /path/to/tex-cache
+```
+
+该命令显式请求示例计数。真实记录使用`sampled_rates.py RUN --samples records.json --output NEW_DIR`；格式见[示例计数](reports/production-2024b/example-n20.json)。四问成稿不等于正式提交认证，完整源码附录、AI使用详情和团队评阅仍待完成。
 
 ## 大型原始输入审计
 
