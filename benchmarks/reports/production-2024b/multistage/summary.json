@@ -1,0 +1,42 @@
+{
+  "source_sha256": "f54529dd15d729b046e248ea41033b4f66ef68333be2bee912b0c54eafd227ab",
+  "policy_count": 65536,
+  "best_policy": {
+    "part_tests": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "semi_tests": [
+      1,
+      1,
+      1
+    ],
+    "semi_dismantle": [
+      1,
+      1,
+      1
+    ],
+    "final_test": 0,
+    "final_dismantle": 1,
+    "cost_exact": "1258/9",
+    "expected_cost": 139.77777777777777,
+    "profit": 60.22222222222222,
+    "recovery_rule": "inspect each unknown immediate child after dismantling; repair bad children to known-good; preserve known-good items"
+  },
+  "simulation_orders": 200000,
+  "verification_passed": true,
+  "result_sha256": "5b6bf9e295a6d19cfb91b48d26d502b4ef310de3f200423dfd034a5dc2853271",
+  "verification_sha256": "5f8e80a36ee0dc7c9dad05437044519cb569b170fb63d590a13d2b81cf454a9c",
+  "unfinished": [
+    "Q4 sampled-rate propagation",
+    "complete four-question manuscript"
+  ],
+  "submission_ready": false,
+  "national_award_level": "NOT_ESTABLISHED"
+}

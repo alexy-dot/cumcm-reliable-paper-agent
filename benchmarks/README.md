@@ -101,7 +101,7 @@ python3 benchmarks/ethanol_2021b/run_all.py --source-dir /path/2021/B --output r
 
 [问题1、2阶段结果](reports/production-2024b/q1-q2-report.md)给出可随时停止的抽样候选，以及保留零件真实质量和检测知识的两零件返工模型。64类声明策略以有理数求解，识别14类无法终止的策略；六个代表最优策略分别以5万个完整订单仿真核对。未把每次免费补发算作新收入，也未把回收坏件重新抽成好件。
 
-抽样反例说明，逐次套用固定样本置信阈值不能保持原错误率。修正后的规则明确保留300件上限下的未决结果。**问题3和4尚未完成，本结果不属于四问完整实测。** 原题已在往年论文研究中接触，不标为盲测。
+抽样反例说明，逐次套用固定样本置信阈值不能保持原错误率。修正后的规则明确保留300件上限下的未决结果。原题已在往年论文研究中接触，不标为盲测。
 
 ```bash
 .venv/bin/python benchmarks/production_2024b/run_q1_q2.py \
@@ -109,6 +109,14 @@ python3 benchmarks/ethanol_2021b/run_all.py --source-dir /path/2021/B --output r
 ```
 
 依赖已包含在统一环境中。结果与所有策略见[计算记录](reports/production-2024b/rework.json)、[抽样边界](reports/production-2024b/sampling.json)、[独立验证](reports/production-2024b/verification.json)。
+
+[第三问多层返工](reports/production-2024b/q3-report.md)已扩展到原题八零件组装树：65,536类声明策略精确比较，最优代表成本139.7778元、利润60.2222元；全部检测并拆解的基线成本142元。独立对象树仿真验证20万个完整订单，保留坏件身份和已知质量，并以两零件模型验证递推退化的一致性。
+
+```bash
+.venv/bin/python benchmarks/production_2024b/run_q3.py runs/production-q1-q2
+```
+
+回收规则要求拆解后检测未知子件并递归修复，最优性限定该策略类。[完整结果与验证](reports/production-2024b/multistage/summary.json)。**问题4的抽样率不确定性传播及四问完整论文仍未完成。**
 
 ## 大型原始输入审计
 

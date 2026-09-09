@@ -1,0 +1,116 @@
+{
+  "source_sha256": "f54529dd15d729b046e248ea41033b4f66ef68333be2bee912b0c54eafd227ab",
+  "tree": {
+    "parts": [
+      {
+        "id": "1",
+        "p": 0.1,
+        "purchase": 2,
+        "test": 1
+      },
+      {
+        "id": "2",
+        "p": 0.1,
+        "purchase": 8,
+        "test": 1
+      },
+      {
+        "id": "3",
+        "p": 0.1,
+        "purchase": 12,
+        "test": 2
+      },
+      {
+        "id": "4",
+        "p": 0.1,
+        "purchase": 2,
+        "test": 1
+      },
+      {
+        "id": "5",
+        "p": 0.1,
+        "purchase": 8,
+        "test": 1
+      },
+      {
+        "id": "6",
+        "p": 0.1,
+        "purchase": 12,
+        "test": 2
+      },
+      {
+        "id": "7",
+        "p": 0.1,
+        "purchase": 8,
+        "test": 1
+      },
+      {
+        "id": "8",
+        "p": 0.1,
+        "purchase": 12,
+        "test": 2
+      }
+    ],
+    "semis": [
+      {
+        "id": "1",
+        "children": [
+          0,
+          1,
+          2
+        ],
+        "p": 0.1,
+        "assembly": 8,
+        "test": 4,
+        "dismantle": 6
+      },
+      {
+        "id": "2",
+        "children": [
+          3,
+          4,
+          5
+        ],
+        "p": 0.1,
+        "assembly": 8,
+        "test": 4,
+        "dismantle": 6
+      },
+      {
+        "id": "3",
+        "children": [
+          6,
+          7
+        ],
+        "p": 0.1,
+        "assembly": 8,
+        "test": 4,
+        "dismantle": 6
+      }
+    ],
+    "final": {
+      "p": 0.1,
+      "assembly": 8,
+      "test": 6,
+      "dismantle": 10,
+      "exchange_loss": 40,
+      "price": 200
+    }
+  },
+  "policy": "8 fresh part inspections, 3 fresh semi inspections, 3 semi dismantles, final inspection and dismantle; recovered unknown children always inspected",
+  "assumptions": [
+    "independent purchase quality and per-attempt conditional assembly failures",
+    "zero inspection error",
+    "dismantling preserves item quality and prior known-good status",
+    "no shared parts across branches, no time/capacity/holding costs",
+    "one sale per fulfilled order; replacements free plus specified loss"
+  ],
+  "simulation": {
+    "orders": 50000,
+    "seeds": [
+      20240911,
+      20240912
+    ],
+    "threshold": "6 sample standard errors + 0.02 yuan"
+  }
+}

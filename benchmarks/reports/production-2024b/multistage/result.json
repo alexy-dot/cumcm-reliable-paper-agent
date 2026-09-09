@@ -1,0 +1,93 @@
+{
+  "policy_count": 65536,
+  "best_policies": [
+    {
+      "part_tests": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "semi_tests": [
+        1,
+        1,
+        1
+      ],
+      "semi_dismantle": [
+        1,
+        1,
+        1
+      ],
+      "final_test": 0,
+      "final_dismantle": 1,
+      "cost_exact": "1258/9",
+      "expected_cost": 139.77777777777777,
+      "profit": 60.22222222222222,
+      "recovery_rule": "inspect each unknown immediate child after dismantling; repair bad children to known-good; preserve known-good items"
+    }
+  ],
+  "baselines": {
+    "no_inspection_no_recovery": {
+      "part_tests": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "semi_tests": [
+        0,
+        0,
+        0
+      ],
+      "semi_dismantle": [
+        0,
+        0,
+        0
+      ],
+      "final_test": 0,
+      "final_dismantle": 0,
+      "cost_exact": "124702818540760/282429536481",
+      "expected_cost": 441.53603796021235,
+      "profit": -241.53603796021238,
+      "recovery_rule": "inspect each unknown immediate child after dismantling; repair bad children to known-good; preserve known-good items"
+    },
+    "inspect_and_recover_everywhere": {
+      "part_tests": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "semi_tests": [
+        1,
+        1,
+        1
+      ],
+      "semi_dismantle": [
+        1,
+        1,
+        1
+      ],
+      "final_test": 1,
+      "final_dismantle": 1,
+      "cost_exact": "142",
+      "expected_cost": 142.0,
+      "profit": 58.0,
+      "recovery_rule": "inspect each unknown immediate child after dismantling; repair bad children to known-good; preserve known-good items"
+    }
+  },
+  "scope": "exact optimum among declared fresh-inspection/dismantle policies with all unknown recovered children inspected; not a theorem over all history-dependent production policies",
+  "protocol_sha256": "ccc9f9d7dc5a543cc1b7e7dbe8a42c6955efd5322faa20863100fc32c5e02682"
+}

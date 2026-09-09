@@ -1,0 +1,91 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "policy": "best",
+      "expected_cost": 139.77777777777777,
+      "orders": 50000,
+      "seed": 20240911,
+      "mean_cost": 139.77464,
+      "standard_error": 0.11305786792186549,
+      "mean_customer_returns": 0.11176,
+      "cost_components": {
+        "customer_exchange_loss": 4.4704,
+        "final_assembly": 8.89408,
+        "final_dismantle": 1.1176,
+        "part_inspection": 12.22732,
+        "purchase": 71.14144,
+        "semi_assembly": 26.6328,
+        "semi_dismantle": 1.9746,
+        "semi_inspection": 13.3164
+      },
+      "absolute_error": 0.0031377777777663596,
+      "allowed_error": 0.698347207531193,
+      "passed": true
+    },
+    {
+      "policy": "best",
+      "expected_cost": 139.77777777777777,
+      "orders": 50000,
+      "seed": 20240912,
+      "mean_cost": 139.70154,
+      "standard_error": 0.11242913340753265,
+      "mean_customer_returns": 0.10958,
+      "cost_components": {
+        "customer_exchange_loss": 4.3832,
+        "final_assembly": 8.87664,
+        "final_dismantle": 1.0958,
+        "part_inspection": 12.22798,
+        "purchase": 71.1178,
+        "semi_assembly": 26.66672,
+        "semi_dismantle": 2.00004,
+        "semi_inspection": 13.33336
+      },
+      "absolute_error": 0.07623777777777718,
+      "allowed_error": 0.6945748004451959,
+      "passed": true
+    },
+    {
+      "policy": "no_inspection_no_recovery",
+      "expected_cost": 441.53603796021235,
+      "orders": 50000,
+      "seed": 20240911,
+      "mean_cost": 442.88704,
+      "standard_error": 1.813207303320628,
+      "mean_customer_returns": 2.55064,
+      "cost_components": {
+        "customer_exchange_loss": 102.0256,
+        "final_assembly": 28.40512,
+        "purchase": 227.24096,
+        "semi_assembly": 85.21536
+      },
+      "absolute_error": 1.3510020397876588,
+      "allowed_error": 10.899243819923768,
+      "passed": true
+    },
+    {
+      "policy": "inspect_and_recover_everywhere",
+      "expected_cost": 142.0,
+      "orders": 50000,
+      "seed": 20240911,
+      "mean_cost": 141.9748,
+      "standard_error": 0.07671659669148624,
+      "mean_customer_returns": 0.0,
+      "cost_components": {
+        "final_assembly": 8.89408,
+        "final_dismantle": 1.1176,
+        "final_inspection": 6.67056,
+        "part_inspection": 12.22732,
+        "purchase": 71.14144,
+        "semi_assembly": 26.6328,
+        "semi_dismantle": 1.9746,
+        "semi_inspection": 13.3164
+      },
+      "absolute_error": 0.025200000000012324,
+      "allowed_error": 0.4802995801489175,
+      "passed": true
+    }
+  ],
+  "result_sha256": "5b6bf9e295a6d19cfb91b48d26d502b4ef310de3f200423dfd034a5dc2853271",
+  "scope": "independent object-level simulation retaining full internal item trees and observed quality; finite-sample numerical agreement, not field validation"
+}
