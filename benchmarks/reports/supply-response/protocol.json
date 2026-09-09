@@ -1,0 +1,34 @@
+{
+  "source_observation_sha256": "e8dae3ca12e06bb488874cf186b36e0da057e3bdbcb639a0aee7bcc5f367ec0e",
+  "source_facts_sha256": "f39e0c57fd4d453864e500237cf56aaa15dafd67d99f8d6322ac0a3709f592e3",
+  "methods": [
+    "identity",
+    "ratio_all",
+    "ratio_48",
+    "saturation_all",
+    "saturation_48",
+    "bins_all",
+    "bins_48"
+  ],
+  "outer_origins": [
+    72,
+    96,
+    120,
+    144,
+    168,
+    192,
+    216
+  ],
+  "horizon": 24,
+  "inner_origins": "two preceding 24-week blocks, each fitted on its earlier history only",
+  "selection_metric": "inner pooled weekly squared error of total product-equivalent supply",
+  "recent_window": 48,
+  "minimum_recent_active_weeks": 4,
+  "saturation_order_quantile": 0.9,
+  "order_bins": 3,
+  "cold_start": "training-pooled volume ratio fallback, explicitly flagged",
+  "local_order_support": "count fitted observations within ±20% of predicted order; diagnostic, not a validity certificate",
+  "outer_update": "refit once at each origin, freeze model across the next 24 weeks",
+  "information_scope": "historical future order quantities supplied as conditional prediction inputs; future supply excluded from fitting and family selection",
+  "analyst_exposure": "all historical blocks previously inspected; retrospective study, not new unseen validation or randomized policy evidence"
+}

@@ -35,8 +35,15 @@
   },
   "claim_boundary": "National-award-oriented reliability workflow; no award guarantee.",
   "supervision": {
-    "updated_on": "2026-09-09",
+    "updated_on": "2026-09-10",
     "readiness": "NOT_ESTABLISHED",
+    "latest_response_study": {
+      "case": "2021 C retrospective rolling-origin supply response study",
+      "evidence": "benchmarks/reports/supply-response/report.json",
+      "finding": "Past-only nested selection did not improve on the quantity-ratio baseline; old timed plans were preserved. Local order-support gaps were identified and a separately verified S140-unavailable contingency requires 35 suppliers.",
+      "unseen_test": false,
+      "capacity_identified": false
+    },
     "latest_timed_trial": {
       "case": "2021 C supply ordering and transport",
       "local_elapsed_minutes": 52.45245794852575,

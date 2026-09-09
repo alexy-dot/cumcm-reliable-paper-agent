@@ -1,0 +1,5941 @@
+{
+  "protocol_sha256": "f5a2c1db9930d858987097db5097387e4a2453320e0c9d77c395335ec094e174",
+  "folds": [
+    {
+      "training_weeks": 72,
+      "validation_weeks": [
+        73,
+        96
+      ],
+      "inner_scores": {
+        "identity": 223790380.91256893,
+        "ratio_all": 85487120.36899082,
+        "ratio_48": 85487120.36899082,
+        "saturation_all": 93365617.46655911,
+        "saturation_48": 93365617.46655911,
+        "bins_all": 110937466.62071879,
+        "bins_48": 110937466.62071879
+      },
+      "selected_before_outer_supply": "ratio_all",
+      "methods": {
+        "identity": {
+          "active_cell_mae_raw": 44.52278177458034,
+          "active_cell_rmse_raw": 816.4789911436486,
+          "weekly_total_mae_product": 10207.930345117844,
+          "weekly_total_rmse_product": 16841.36300120456,
+          "weekly_bias_product": 10123.849957912456,
+          "weekly_total_mae_raw": 6587.666666666667,
+          "outside_fitted_order_range": 129,
+          "cold_start": 2,
+          "no_nearby_orders": 293
+        },
+        "ratio_all": {
+          "active_cell_mae_raw": 43.72878162464539,
+          "active_cell_rmse_raw": 577.574319878813,
+          "weekly_total_mae_product": 7905.734499155397,
+          "weekly_total_rmse_product": 12078.606172683316,
+          "weekly_bias_product": -1245.0417204783869,
+          "weekly_total_mae_raw": 5066.709515447657,
+          "outside_fitted_order_range": 129,
+          "cold_start": 2,
+          "no_nearby_orders": 293
+        },
+        "ratio_48": {
+          "active_cell_mae_raw": 43.88751475927422,
+          "active_cell_rmse_raw": 646.8387814628205,
+          "weekly_total_mae_product": 8074.717012045974,
+          "weekly_total_rmse_product": 13940.575229848495,
+          "weekly_bias_product": -2886.1760452906638,
+          "weekly_total_mae_raw": 5198.533615442039,
+          "outside_fitted_order_range": 240,
+          "cold_start": 2,
+          "no_nearby_orders": 411
+        },
+        "saturation_all": {
+          "active_cell_mae_raw": 48.657090294132495,
+          "active_cell_rmse_raw": 719.0611993357044,
+          "weekly_total_mae_product": 8442.29730206255,
+          "weekly_total_rmse_product": 15951.41343037932,
+          "weekly_bias_product": -7038.789721494173,
+          "weekly_total_mae_raw": 5510.354204157629,
+          "outside_fitted_order_range": 129,
+          "cold_start": 2,
+          "no_nearby_orders": 293
+        },
+        "saturation_48": {
+          "active_cell_mae_raw": 49.812737518414565,
+          "active_cell_rmse_raw": 739.1644358463543,
+          "weekly_total_mae_product": 8830.757140122767,
+          "weekly_total_rmse_product": 16728.67303097996,
+          "weekly_bias_product": -8108.6433509342505,
+          "weekly_total_mae_raw": 5759.210439492538,
+          "outside_fitted_order_range": 240,
+          "cold_start": 2,
+          "no_nearby_orders": 411
+        },
+        "bins_all": {
+          "active_cell_mae_raw": 67.64319075300922,
+          "active_cell_rmse_raw": 789.4846287504954,
+          "weekly_total_mae_product": 10124.427094609397,
+          "weekly_total_rmse_product": 17620.635004583994,
+          "weekly_bias_product": -6829.047380312691,
+          "weekly_total_mae_raw": 6652.363917379553,
+          "outside_fitted_order_range": 129,
+          "cold_start": 2,
+          "no_nearby_orders": 293
+        },
+        "bins_48": {
+          "active_cell_mae_raw": 69.68509039699344,
+          "active_cell_rmse_raw": 809.9856910218612,
+          "weekly_total_mae_product": 9900.13542584133,
+          "weekly_total_rmse_product": 18098.065848264338,
+          "weekly_bias_product": -7375.058379257566,
+          "weekly_total_mae_raw": 6502.700384926294,
+          "outside_fitted_order_range": 240,
+          "cold_start": 2,
+          "no_nearby_orders": 411
+        }
+      }
+    },
+    {
+      "training_weeks": 96,
+      "validation_weeks": [
+        97,
+        120
+      ],
+      "inner_scores": {
+        "identity": 299311500.76598525,
+        "ratio_all": 115739425.13785149,
+        "ratio_48": 139962880.4699925,
+        "saturation_all": 190826483.45809194,
+        "saturation_48": 203526938.93336716,
+        "bins_all": 230232032.64329377,
+        "bins_48": 238758637.38496432
+      },
+      "selected_before_outer_supply": "ratio_all",
+      "methods": {
+        "identity": {
+          "active_cell_mae_raw": 37.34825870646766,
+          "active_cell_rmse_raw": 545.6323680541161,
+          "weekly_total_mae_product": 8495.167297979797,
+          "weekly_total_rmse_product": 11596.92478072471,
+          "weekly_bias_product": 8453.986742424242,
+          "weekly_total_mae_raw": 5519.958333333333,
+          "outside_fitted_order_range": 100,
+          "cold_start": 1,
+          "no_nearby_orders": 247
+        },
+        "ratio_all": {
+          "active_cell_mae_raw": 35.052429403902266,
+          "active_cell_rmse_raw": 392.25264268295234,
+          "weekly_total_mae_product": 4941.494540339124,
+          "weekly_total_rmse_product": 7002.470740428152,
+          "weekly_bias_product": 1648.7856410729148,
+          "weekly_total_mae_raw": 3147.921325826205,
+          "outside_fitted_order_range": 100,
+          "cold_start": 1,
+          "no_nearby_orders": 247
+        },
+        "ratio_48": {
+          "active_cell_mae_raw": 34.91701101983559,
+          "active_cell_rmse_raw": 377.9073757281767,
+          "weekly_total_mae_product": 5065.854595501715,
+          "weekly_total_rmse_product": 6882.238319929653,
+          "weekly_bias_product": 1600.5605186921196,
+          "weekly_total_mae_raw": 3258.15358548774,
+          "outside_fitted_order_range": 197,
+          "cold_start": 1,
+          "no_nearby_orders": 372
+        },
+        "saturation_all": {
+          "active_cell_mae_raw": 31.05683224050373,
+          "active_cell_rmse_raw": 337.8714944074303,
+          "weekly_total_mae_product": 3696.8266938864194,
+          "weekly_total_rmse_product": 5977.731794179293,
+          "weekly_bias_product": 568.3984424693241,
+          "weekly_total_mae_raw": 2422.2156864462563,
+          "outside_fitted_order_range": 100,
+          "cold_start": 1,
+          "no_nearby_orders": 247
+        },
+        "saturation_48": {
+          "active_cell_mae_raw": 34.64024037858004,
+          "active_cell_rmse_raw": 349.77153294776065,
+          "weekly_total_mae_product": 3836.3693384163234,
+          "weekly_total_rmse_product": 6078.061746619353,
+          "weekly_bias_product": 1398.089304983149,
+          "weekly_total_mae_raw": 2518.61664011489,
+          "outside_fitted_order_range": 197,
+          "cold_start": 1,
+          "no_nearby_orders": 372
+        },
+        "bins_all": {
+          "active_cell_mae_raw": 49.39313699514875,
+          "active_cell_rmse_raw": 409.78087384107187,
+          "weekly_total_mae_product": 6368.586573913372,
+          "weekly_total_rmse_product": 8610.562166372378,
+          "weekly_bias_product": 87.57883402764325,
+          "weekly_total_mae_raw": 4191.158956548062,
+          "outside_fitted_order_range": 100,
+          "cold_start": 1,
+          "no_nearby_orders": 247
+        },
+        "bins_48": {
+          "active_cell_mae_raw": 48.3176681473641,
+          "active_cell_rmse_raw": 394.97715216847587,
+          "weekly_total_mae_product": 5869.044647772731,
+          "weekly_total_rmse_product": 7248.278352898898,
+          "weekly_bias_product": 481.1606757155946,
+          "weekly_total_mae_raw": 3881.3922040537127,
+          "outside_fitted_order_range": 197,
+          "cold_start": 1,
+          "no_nearby_orders": 372
+        }
+      }
+    },
+    {
+      "training_weeks": 120,
+      "validation_weeks": [
+        121,
+        144
+      ],
+      "inner_scores": {
+        "identity": 209060086.05406436,
+        "ratio_all": 97463661.77266796,
+        "ratio_48": 120852421.0156868,
+        "saturation_all": 145090433.91501388,
+        "saturation_48": 158395667.98657688,
+        "bins_all": 192314279.3928671,
+        "bins_48": 190038763.26460734
+      },
+      "selected_before_outer_supply": "ratio_all",
+      "methods": {
+        "identity": {
+          "active_cell_mae_raw": 39.13735523835174,
+          "active_cell_rmse_raw": 829.3473925293832,
+          "weekly_total_mae_product": 8818.543771043767,
+          "weekly_total_rmse_product": 16713.03829964135,
+          "weekly_bias_product": 8727.88089225589,
+          "weekly_total_mae_raw": 5687.625,
+          "outside_fitted_order_range": 79,
+          "cold_start": 0,
+          "no_nearby_orders": 217
+        },
+        "ratio_all": {
+          "active_cell_mae_raw": 50.87141106218835,
+          "active_cell_rmse_raw": 718.9511540381152,
+          "weekly_total_mae_product": 10070.985961322838,
+          "weekly_total_rmse_product": 15003.851766065161,
+          "weekly_bias_product": -4570.597354380458,
+          "weekly_total_mae_raw": 6490.148391095695,
+          "outside_fitted_order_range": 79,
+          "cold_start": 0,
+          "no_nearby_orders": 217
+        },
+        "ratio_48": {
+          "active_cell_mae_raw": 51.771429358184925,
+          "active_cell_rmse_raw": 742.700643416516,
+          "weekly_total_mae_product": 10671.075995266228,
+          "weekly_total_rmse_product": 15240.619476437261,
+          "weekly_bias_product": -3205.406846502921,
+          "weekly_total_mae_raw": 6851.692733264053,
+          "outside_fitted_order_range": 183,
+          "cold_start": 0,
+          "no_nearby_orders": 356
+        },
+        "saturation_all": {
+          "active_cell_mae_raw": 54.93544378557894,
+          "active_cell_rmse_raw": 791.4706770130164,
+          "weekly_total_mae_product": 9735.691818000889,
+          "weekly_total_rmse_product": 15927.848464532219,
+          "weekly_bias_product": -6144.936932790264,
+          "weekly_total_mae_raw": 6197.996501326067,
+          "outside_fitted_order_range": 79,
+          "cold_start": 0,
+          "no_nearby_orders": 217
+        },
+        "saturation_48": {
+          "active_cell_mae_raw": 61.6737564313656,
+          "active_cell_rmse_raw": 841.7685336221847,
+          "weekly_total_mae_product": 10585.492368040725,
+          "weekly_total_rmse_product": 16822.681947839785,
+          "weekly_bias_product": -4260.787044965791,
+          "weekly_total_mae_raw": 6695.435647523113,
+          "outside_fitted_order_range": 183,
+          "cold_start": 0,
+          "no_nearby_orders": 356
+        },
+        "bins_all": {
+          "active_cell_mae_raw": 69.94357582487042,
+          "active_cell_rmse_raw": 860.4681622499004,
+          "weekly_total_mae_product": 11669.108657921779,
+          "weekly_total_rmse_product": 18113.70808397151,
+          "weekly_bias_product": -8039.467867322671,
+          "weekly_total_mae_raw": 7475.390103204576,
+          "outside_fitted_order_range": 79,
+          "cold_start": 0,
+          "no_nearby_orders": 217
+        },
+        "bins_48": {
+          "active_cell_mae_raw": 80.12168508315145,
+          "active_cell_rmse_raw": 932.2093824939678,
+          "weekly_total_mae_product": 13791.015958666057,
+          "weekly_total_rmse_product": 19425.935714170966,
+          "weekly_bias_product": -4976.359653421748,
+          "weekly_total_mae_raw": 8805.238017792055,
+          "outside_fitted_order_range": 183,
+          "cold_start": 0,
+          "no_nearby_orders": 356
+        }
+      }
+    },
+    {
+      "training_weeks": 144,
+      "validation_weeks": [
+        145,
+        168
+      ],
+      "inner_scores": {
+        "identity": 206907156.78753272,
+        "ratio_all": 137075082.1443045,
+        "ratio_48": 139820843.15893346,
+        "saturation_all": 144714817.05612168,
+        "saturation_48": 159972731.25694606,
+        "bins_all": 201124100.68614912,
+        "bins_48": 214952258.72610286
+      },
+      "selected_before_outer_supply": "ratio_all",
+      "methods": {
+        "identity": {
+          "active_cell_mae_raw": 48.86208718626156,
+          "active_cell_rmse_raw": 709.9744105757552,
+          "weekly_total_mae_product": 11376.242634680137,
+          "weekly_total_rmse_product": 18652.141630273036,
+          "weekly_bias_product": 11335.748106060608,
+          "weekly_total_mae_raw": 7322.041666666667,
+          "outside_fitted_order_range": 59,
+          "cold_start": 0,
+          "no_nearby_orders": 122
+        },
+        "ratio_all": {
+          "active_cell_mae_raw": 34.614784084525056,
+          "active_cell_rmse_raw": 387.48641631015374,
+          "weekly_total_mae_product": 5893.288811837262,
+          "weekly_total_rmse_product": 8477.212817786349,
+          "weekly_bias_product": 1739.9841097780452,
+          "weekly_total_mae_raw": 3798.806704066186,
+          "outside_fitted_order_range": 59,
+          "cold_start": 0,
+          "no_nearby_orders": 122
+        },
+        "ratio_48": {
+          "active_cell_mae_raw": 33.52199840219638,
+          "active_cell_rmse_raw": 401.2995916168454,
+          "weekly_total_mae_product": 5886.555885292852,
+          "weekly_total_rmse_product": 8080.614093540808,
+          "weekly_bias_product": 2908.7204938628947,
+          "weekly_total_mae_raw": 3809.794221433776,
+          "outside_fitted_order_range": 162,
+          "cold_start": 0,
+          "no_nearby_orders": 246
+        },
+        "saturation_all": {
+          "active_cell_mae_raw": 35.602371052455325,
+          "active_cell_rmse_raw": 368.24287379341894,
+          "weekly_total_mae_product": 5554.186229288386,
+          "weekly_total_rmse_product": 8494.105773423431,
+          "weekly_bias_product": 2618.2683191856245,
+          "weekly_total_mae_raw": 3602.108440357378,
+          "outside_fitted_order_range": 59,
+          "cold_start": 0,
+          "no_nearby_orders": 122
+        },
+        "saturation_48": {
+          "active_cell_mae_raw": 42.71758589298749,
+          "active_cell_rmse_raw": 401.4534223977736,
+          "weekly_total_mae_product": 7086.863155049909,
+          "weekly_total_rmse_product": 8999.974474410315,
+          "weekly_bias_product": 3252.3064725865747,
+          "weekly_total_mae_raw": 4593.14874603393,
+          "outside_fitted_order_range": 162,
+          "cold_start": 0,
+          "no_nearby_orders": 246
+        },
+        "bins_all": {
+          "active_cell_mae_raw": 51.940219378331946,
+          "active_cell_rmse_raw": 415.3625382115971,
+          "weekly_total_mae_product": 7238.774194043588,
+          "weekly_total_rmse_product": 9895.608970038798,
+          "weekly_bias_product": 1323.1684785833177,
+          "weekly_total_mae_raw": 4708.964796373013,
+          "outside_fitted_order_range": 59,
+          "cold_start": 0,
+          "no_nearby_orders": 122
+        },
+        "bins_48": {
+          "active_cell_mae_raw": 51.49697493189891,
+          "active_cell_rmse_raw": 424.55974923480306,
+          "weekly_total_mae_product": 6945.91060754975,
+          "weekly_total_rmse_product": 9593.487456856883,
+          "weekly_bias_product": 1389.9628900847526,
+          "weekly_total_mae_raw": 4513.375599827932,
+          "outside_fitted_order_range": 162,
+          "cold_start": 0,
+          "no_nearby_orders": 246
+        }
+      }
+    },
+    {
+      "training_weeks": 168,
+      "validation_weeks": [
+        169,
+        192
+      ],
+      "inner_scores": {
+        "identity": 313614018.30052155,
+        "ratio_all": 148489352.4880489,
+        "ratio_48": 148786403.07714456,
+        "saturation_all": 162923094.79960328,
+        "saturation_48": 182001084.22910595,
+        "bins_all": 213014748.7196236,
+        "bins_48": 234700989.97798666
+      },
+      "selected_before_outer_supply": "ratio_all",
+      "methods": {
+        "identity": {
+          "active_cell_mae_raw": 35.24885237980188,
+          "active_cell_rmse_raw": 620.152534642668,
+          "weekly_total_mae_product": 8726.69297138047,
+          "weekly_total_rmse_product": 13753.28686484617,
+          "weekly_bias_product": 8664.653829966326,
+          "weekly_total_mae_raw": 5650.625,
+          "outside_fitted_order_range": 35,
+          "cold_start": 0,
+          "no_nearby_orders": 179
+        },
+        "ratio_all": {
+          "active_cell_mae_raw": 26.128099733844326,
+          "active_cell_rmse_raw": 319.30867709791727,
+          "weekly_total_mae_product": 4797.839622872935,
+          "weekly_total_rmse_product": 6274.9915249507685,
+          "weekly_bias_product": -1249.6241972876012,
+          "weekly_total_mae_raw": 3079.500642347141,
+          "outside_fitted_order_range": 35,
+          "cold_start": 0,
+          "no_nearby_orders": 179
+        },
+        "ratio_48": {
+          "active_cell_mae_raw": 24.502571202028985,
+          "active_cell_rmse_raw": 312.35591402763635,
+          "weekly_total_mae_product": 4396.984902502859,
+          "weekly_total_rmse_product": 6213.086029906377,
+          "weekly_bias_product": -1291.4308743648144,
+          "weekly_total_mae_raw": 2849.3011703610123,
+          "outside_fitted_order_range": 189,
+          "cold_start": 0,
+          "no_nearby_orders": 379
+        },
+        "saturation_all": {
+          "active_cell_mae_raw": 29.049375853089185,
+          "active_cell_rmse_raw": 286.3220823025921,
+          "weekly_total_mae_product": 4143.541972028933,
+          "weekly_total_rmse_product": 5905.802538739764,
+          "weekly_bias_product": -125.44799137484597,
+          "weekly_total_mae_raw": 2624.977685095679,
+          "outside_fitted_order_range": 35,
+          "cold_start": 0,
+          "no_nearby_orders": 179
+        },
+        "saturation_48": {
+          "active_cell_mae_raw": 28.47548483969027,
+          "active_cell_rmse_raw": 295.5301045521915,
+          "weekly_total_mae_product": 4295.196639096819,
+          "weekly_total_rmse_product": 6117.652330963788,
+          "weekly_bias_product": -506.13061688839804,
+          "weekly_total_mae_raw": 2686.51431179501,
+          "outside_fitted_order_range": 189,
+          "cold_start": 0,
+          "no_nearby_orders": 379
+        },
+        "bins_all": {
+          "active_cell_mae_raw": 45.12700098010149,
+          "active_cell_rmse_raw": 355.2484777710654,
+          "weekly_total_mae_product": 6887.715825382802,
+          "weekly_total_rmse_product": 8648.208841280886,
+          "weekly_bias_product": 732.1256432119189,
+          "weekly_total_mae_raw": 4433.0836803551465,
+          "outside_fitted_order_range": 35,
+          "cold_start": 0,
+          "no_nearby_orders": 179
+        },
+        "bins_48": {
+          "active_cell_mae_raw": 46.65850516108543,
+          "active_cell_rmse_raw": 375.2226088931341,
+          "weekly_total_mae_product": 7202.732343708085,
+          "weekly_total_rmse_product": 8719.61011467684,
+          "weekly_bias_product": -287.172946323982,
+          "weekly_total_mae_raw": 4633.652029300188,
+          "outside_fitted_order_range": 189,
+          "cold_start": 0,
+          "no_nearby_orders": 379
+        }
+      }
+    },
+    {
+      "training_weeks": 192,
+      "validation_weeks": [
+        193,
+        216
+      ],
+      "inner_scores": {
+        "identity": 268527643.49125737,
+        "ratio_all": 55619327.89812257,
+        "ratio_48": 51949381.07187406,
+        "saturation_all": 53514168.25834515,
+        "saturation_48": 59212605.29129195,
+        "bins_all": 86357296.5251606,
+        "bins_48": 84033301.0684225
+      },
+      "selected_before_outer_supply": "ratio_48",
+      "methods": {
+        "identity": {
+          "active_cell_mae_raw": 60.30138674884438,
+          "active_cell_rmse_raw": 761.6225179078436,
+          "weekly_total_mae_product": 11992.854587542088,
+          "weekly_total_rmse_product": 15663.30614702492,
+          "weekly_bias_product": 11951.234217171717,
+          "weekly_total_mae_raw": 7789.25,
+          "outside_fitted_order_range": 29,
+          "cold_start": 0,
+          "no_nearby_orders": 44
+        },
+        "ratio_all": {
+          "active_cell_mae_raw": 40.24000950518058,
+          "active_cell_rmse_raw": 466.3155700506269,
+          "weekly_total_mae_product": 6323.473225607861,
+          "weekly_total_rmse_product": 8086.497332539781,
+          "weekly_bias_product": 2825.389608199155,
+          "weekly_total_mae_raw": 4149.601274337842,
+          "outside_fitted_order_range": 29,
+          "cold_start": 0,
+          "no_nearby_orders": 44
+        },
+        "ratio_48": {
+          "active_cell_mae_raw": 43.32043984145199,
+          "active_cell_rmse_raw": 510.2195990975915,
+          "weekly_total_mae_product": 6927.237353308087,
+          "weekly_total_rmse_product": 9002.658400780852,
+          "weekly_bias_product": 3445.4342214147364,
+          "weekly_total_mae_raw": 4567.221225132146,
+          "outside_fitted_order_range": 117,
+          "cold_start": 0,
+          "no_nearby_orders": 143
+        },
+        "saturation_all": {
+          "active_cell_mae_raw": 37.649761035287625,
+          "active_cell_rmse_raw": 407.81064030276895,
+          "weekly_total_mae_product": 5939.8865438124485,
+          "weekly_total_rmse_product": 8328.23925111527,
+          "weekly_bias_product": 1068.1166724567408,
+          "weekly_total_mae_raw": 3879.5848997710905,
+          "outside_fitted_order_range": 29,
+          "cold_start": 0,
+          "no_nearby_orders": 44
+        },
+        "saturation_48": {
+          "active_cell_mae_raw": 35.50179567168229,
+          "active_cell_rmse_raw": 389.52199155396715,
+          "weekly_total_mae_product": 5482.067080295274,
+          "weekly_total_rmse_product": 7949.562292056902,
+          "weekly_bias_product": -206.2877340783657,
+          "weekly_total_mae_raw": 3564.6764765372695,
+          "outside_fitted_order_range": 117,
+          "cold_start": 0,
+          "no_nearby_orders": 143
+        },
+        "bins_all": {
+          "active_cell_mae_raw": 53.80547649384346,
+          "active_cell_rmse_raw": 455.3482204112253,
+          "weekly_total_mae_product": 6592.08899171107,
+          "weekly_total_rmse_product": 9847.844710166379,
+          "weekly_bias_product": -260.46354277842744,
+          "weekly_total_mae_raw": 4319.449975017078,
+          "outside_fitted_order_range": 29,
+          "cold_start": 0,
+          "no_nearby_orders": 44
+        },
+        "bins_48": {
+          "active_cell_mae_raw": 53.79285518281653,
+          "active_cell_rmse_raw": 454.1081854222322,
+          "weekly_total_mae_product": 6060.787267090035,
+          "weekly_total_rmse_product": 9711.042150469813,
+          "weekly_bias_product": -1027.462571249141,
+          "weekly_total_mae_raw": 3964.1498895770296,
+          "outside_fitted_order_range": 117,
+          "cold_start": 0,
+          "no_nearby_orders": 143
+        }
+      }
+    },
+    {
+      "training_weeks": 216,
+      "validation_weeks": [
+        217,
+        240
+      ],
+      "inner_scores": {
+        "identity": 217246029.5210894,
+        "ratio_all": 52383478.87368848,
+        "ratio_48": 59825148.1480839,
+        "saturation_all": 52119036.32520104,
+        "saturation_48": 50310605.338919826,
+        "bins_all": 85885780.7989804,
+        "bins_48": 85167970.10008802
+      },
+      "selected_before_outer_supply": "saturation_48",
+      "methods": {
+        "identity": {
+          "active_cell_mae_raw": 49.68361398963731,
+          "active_cell_rmse_raw": 604.987757605335,
+          "weekly_total_mae_product": 8941.152146464648,
+          "weekly_total_rmse_product": 11895.47203979852,
+          "weekly_bias_product": 8883.031355218858,
+          "weekly_total_mae_raw": 6041.625,
+          "outside_fitted_order_range": 10,
+          "cold_start": 0,
+          "no_nearby_orders": 38
+        },
+        "ratio_all": {
+          "active_cell_mae_raw": 35.486715215276234,
+          "active_cell_rmse_raw": 438.9754890804697,
+          "weekly_total_mae_product": 5058.5882652656965,
+          "weekly_total_rmse_product": 7404.460984435055,
+          "weekly_bias_product": 1755.2020207818532,
+          "weekly_total_mae_raw": 3471.972346391238,
+          "outside_fitted_order_range": 10,
+          "cold_start": 0,
+          "no_nearby_orders": 38
+        },
+        "ratio_48": {
+          "active_cell_mae_raw": 33.55587524837069,
+          "active_cell_rmse_raw": 481.0937894973857,
+          "weekly_total_mae_product": 5058.238812146935,
+          "weekly_total_rmse_product": 8321.821420747647,
+          "weekly_bias_product": 1356.3961137121694,
+          "weekly_total_mae_raw": 3415.390765131193,
+          "outside_fitted_order_range": 88,
+          "cold_start": 0,
+          "no_nearby_orders": 118
+        },
+        "saturation_all": {
+          "active_cell_mae_raw": 40.53908515699407,
+          "active_cell_rmse_raw": 551.9150840363963,
+          "weekly_total_mae_product": 5706.89504023501,
+          "weekly_total_rmse_product": 8983.188509311076,
+          "weekly_bias_product": -2469.5953222099633,
+          "weekly_total_mae_raw": 3913.982758453307,
+          "outside_fitted_order_range": 10,
+          "cold_start": 0,
+          "no_nearby_orders": 38
+        },
+        "saturation_48": {
+          "active_cell_mae_raw": 41.837858779773704,
+          "active_cell_rmse_raw": 566.1073040192929,
+          "weekly_total_mae_product": 5833.895372567723,
+          "weekly_total_rmse_product": 9436.563163347275,
+          "weekly_bias_product": -3511.9944828808834,
+          "weekly_total_mae_raw": 3974.170890737782,
+          "outside_fitted_order_range": 88,
+          "cold_start": 0,
+          "no_nearby_orders": 118
+        },
+        "bins_all": {
+          "active_cell_mae_raw": 66.74008065064021,
+          "active_cell_rmse_raw": 665.0761661630288,
+          "weekly_total_mae_product": 8739.634930603634,
+          "weekly_total_rmse_product": 12160.922975036237,
+          "weekly_bias_product": -2400.2652627020384,
+          "weekly_total_mae_raw": 5908.5230851567785,
+          "outside_fitted_order_range": 10,
+          "cold_start": 0,
+          "no_nearby_orders": 38
+        },
+        "bins_48": {
+          "active_cell_mae_raw": 64.81635912050665,
+          "active_cell_rmse_raw": 662.1881898740875,
+          "weekly_total_mae_product": 8256.655180672662,
+          "weekly_total_rmse_product": 11856.575334261293,
+          "weekly_bias_product": -2995.786091269945,
+          "weekly_total_mae_raw": 5570.169724471551,
+          "outside_fitted_order_range": 88,
+          "cold_start": 0,
+          "no_nearby_orders": 118
+        }
+      }
+    }
+  ],
+  "pooled_metrics": {
+    "identity": {
+      "active_cell_mae_raw": 44.43594863362305,
+      "active_cell_rmse_raw": 705.276928785226,
+      "weekly_total_mae_product": 9794.083393458392,
+      "weekly_total_rmse_product": 15219.078828895652,
+      "weekly_bias_product": 9734.340728715728,
+      "weekly_total_mae_raw": 6371.255952380952
+    },
+    "ratio_all": {
+      "active_cell_mae_raw": 37.827416200457876,
+      "active_cell_rmse_raw": 486.67845244892465,
+      "weekly_total_mae_product": 6427.343560914445,
+      "weekly_total_rmse_product": 9647.346257900826,
+      "weekly_bias_product": 129.1568725265031,
+      "weekly_total_mae_raw": 4172.094314215995
+    },
+    "ratio_48": {
+      "active_cell_mae_raw": 37.693896382164304,
+      "active_cell_rmse_raw": 513.5624751631358,
+      "weekly_total_mae_product": 6582.952079437806,
+      "weekly_total_rmse_product": 10199.304291684695,
+      "weekly_bias_product": 275.4425116462171,
+      "weekly_total_mae_raw": 4278.583902321709
+    },
+    "saturation_all": {
+      "active_cell_mae_raw": 39.44639869978871,
+      "active_cell_rmse_raw": 524.8225056227426,
+      "weekly_total_mae_product": 6174.189371330662,
+      "weekly_total_rmse_product": 10696.880759451427,
+      "weekly_bias_product": -1646.2837905367944,
+      "weekly_total_mae_raw": 4021.6028822296294
+    },
+    "saturation_48": {
+      "active_cell_mae_raw": 41.97704442741576,
+      "active_cell_rmse_raw": 545.5577409797775,
+      "weekly_total_mae_product": 6564.37729908422,
+      "weekly_total_rmse_product": 11151.319200916147,
+      "weekly_bias_product": -1706.2067788825666,
+      "weekly_total_mae_raw": 4255.967593176362
+    },
+    "bins_all": {
+      "active_cell_mae_raw": 57.40601009292875,
+      "active_cell_rmse_raw": 591.7400882650969,
+      "weekly_total_mae_product": 8231.476609740805,
+      "weekly_total_rmse_product": 12707.240148984281,
+      "weekly_bias_product": -2198.053013898993,
+      "weekly_total_mae_raw": 5384.1335020048855
+    },
+    "bins_48": {
+      "active_cell_mae_raw": 58.9731215503788,
+      "active_cell_rmse_raw": 612.2019444790774,
+      "weekly_total_mae_product": 8289.468775900094,
+      "weekly_total_rmse_product": 12875.191123920547,
+      "weekly_bias_product": -2112.9594393888624,
+      "weekly_total_mae_raw": 5410.096835706967
+    },
+    "nested_selected": {
+      "active_cell_mae_raw": 38.986617820079246,
+      "active_cell_rmse_raw": 507.6919051706809,
+      "weekly_total_mae_product": 6624.353737343338,
+      "weekly_total_rmse_product": 10009.838943877958,
+      "weekly_bias_product": -534.7219689659477,
+      "weekly_total_mae_raw": 4303.496956378973
+    }
+  },
+  "old_plan_order_support": {
+    "Q2": {
+      "active_suppliers": 26,
+      "without_nearby_orders": 1,
+      "suppliers": [
+        {
+          "supplier": "S037",
+          "planned_order": 420.35403726708074,
+          "nearby_historical_orders": 11,
+          "active_weeks": 161,
+          "longest_active_run": 18
+        },
+        {
+          "supplier": "S108",
+          "planned_order": 1077.5390915601083,
+          "nearby_historical_orders": 27,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S126",
+          "planned_order": 1322.85,
+          "nearby_historical_orders": 5,
+          "active_weeks": 100,
+          "longest_active_run": 14
+        },
+        {
+          "supplier": "S131",
+          "planned_order": 580.7541666666667,
+          "nearby_historical_orders": 122,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S139",
+          "planned_order": 793.5178571428571,
+          "nearby_historical_orders": 1,
+          "active_weeks": 224,
+          "longest_active_run": 45
+        },
+        {
+          "supplier": "S140",
+          "planned_order": 2186.831818181818,
+          "nearby_historical_orders": 0,
+          "active_weeks": 220,
+          "longest_active_run": 23
+        },
+        {
+          "supplier": "S143",
+          "planned_order": 394.0416666666667,
+          "nearby_historical_orders": 44,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S151",
+          "planned_order": 1110.4583333333333,
+          "nearby_historical_orders": 3,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S194",
+          "planned_order": 422.4166666666667,
+          "nearby_historical_orders": 205,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S201",
+          "planned_order": 7116.306122448979,
+          "nearby_historical_orders": 5,
+          "active_weeks": 49,
+          "longest_active_run": 13
+        },
+        {
+          "supplier": "S229",
+          "planned_order": 1499.5208333333333,
+          "nearby_historical_orders": 128,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S247",
+          "planned_order": 233.33333333333334,
+          "nearby_historical_orders": 209,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S268",
+          "planned_order": 539.0416666666666,
+          "nearby_historical_orders": 213,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S275",
+          "planned_order": 658.9583333333334,
+          "nearby_historical_orders": 178,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S282",
+          "planned_order": 702.2125,
+          "nearby_historical_orders": 64,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S306",
+          "planned_order": 523.666666666663,
+          "nearby_historical_orders": 149,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S307",
+          "planned_order": 592.9244186046511,
+          "nearby_historical_orders": 1,
+          "active_weeks": 172,
+          "longest_active_run": 19
+        },
+        {
+          "supplier": "S308",
+          "planned_order": 776.1583333333332,
+          "nearby_historical_orders": 48,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S329",
+          "planned_order": 651.4583333333334,
+          "nearby_historical_orders": 176,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S330",
+          "planned_order": 720.7499999999999,
+          "nearby_historical_orders": 35,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S340",
+          "planned_order": 716.6666666666666,
+          "nearby_historical_orders": 145,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S348",
+          "planned_order": 839.7437185929648,
+          "nearby_historical_orders": 3,
+          "active_weeks": 199,
+          "longest_active_run": 24
+        },
+        {
+          "supplier": "S352",
+          "planned_order": 372.0833333333333,
+          "nearby_historical_orders": 82,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S356",
+          "planned_order": 552.55,
+          "nearby_historical_orders": 37,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S361",
+          "planned_order": 1389.3833333333334,
+          "nearby_historical_orders": 119,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S395",
+          "planned_order": 1255.1904761904761,
+          "nearby_historical_orders": 8,
+          "active_weeks": 84,
+          "longest_active_run": 8
+        }
+      ],
+      "scope": "nearby means within ±20% of proposed quantity; absence indicates limited local support, not proof of inability; activity depends on prior ordering"
+    },
+    "Q3": {
+      "active_suppliers": 310,
+      "without_nearby_orders": 136,
+      "suppliers": [
+        {
+          "supplier": "S001",
+          "planned_order": 2.5384615384615383,
+          "nearby_historical_orders": 0,
+          "active_weeks": 91,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S002",
+          "planned_order": 3.2526315789473683,
+          "nearby_historical_orders": 4,
+          "active_weeks": 95,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S004",
+          "planned_order": 6.922330097087379,
+          "nearby_historical_orders": 1,
+          "active_weeks": 103,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S005",
+          "planned_order": 57.35087719298246,
+          "nearby_historical_orders": 24,
+          "active_weeks": 114,
+          "longest_active_run": 63
+        },
+        {
+          "supplier": "S007",
+          "planned_order": 27.983333333333334,
+          "nearby_historical_orders": 15,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S008",
+          "planned_order": 1.6785714285714286,
+          "nearby_historical_orders": 1,
+          "active_weeks": 56,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S009",
+          "planned_order": 8.9375,
+          "nearby_historical_orders": 0,
+          "active_weeks": 80,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S010",
+          "planned_order": 6.545454545454546,
+          "nearby_historical_orders": 1,
+          "active_weeks": 88,
+          "longest_active_run": 8
+        },
+        {
+          "supplier": "S012",
+          "planned_order": 4.529411764705882,
+          "nearby_historical_orders": 3,
+          "active_weeks": 68,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S014",
+          "planned_order": 1.1851851851851851,
+          "nearby_historical_orders": 22,
+          "active_weeks": 27,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S015",
+          "planned_order": 516.3518518518518,
+          "nearby_historical_orders": 0,
+          "active_weeks": 54,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S016",
+          "planned_order": 1.7272727272727273,
+          "nearby_historical_orders": 2,
+          "active_weeks": 22,
+          "longest_active_run": 2
+        },
+        {
+          "supplier": "S017",
+          "planned_order": 2.8955223880597014,
+          "nearby_historical_orders": 1,
+          "active_weeks": 67,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S018",
+          "planned_order": 1.5694444444443796,
+          "nearby_historical_orders": 0,
+          "active_weeks": 72,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S019",
+          "planned_order": 4.775862068965517,
+          "nearby_historical_orders": 0,
+          "active_weeks": 58,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S021",
+          "planned_order": 5.225806451612903,
+          "nearby_historical_orders": 0,
+          "active_weeks": 62,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S022",
+          "planned_order": 4.757575757575758,
+          "nearby_historical_orders": 0,
+          "active_weeks": 66,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S024",
+          "planned_order": 3.051948051948052,
+          "nearby_historical_orders": 5,
+          "active_weeks": 77,
+          "longest_active_run": 9
+        },
+        {
+          "supplier": "S025",
+          "planned_order": 2.2888888888888888,
+          "nearby_historical_orders": 27,
+          "active_weeks": 135,
+          "longest_active_run": 11
+        },
+        {
+          "supplier": "S026",
+          "planned_order": 1.3529411764705883,
+          "nearby_historical_orders": 0,
+          "active_weeks": 17,
+          "longest_active_run": 2
+        },
+        {
+          "supplier": "S027",
+          "planned_order": 1.7659574468085106,
+          "nearby_historical_orders": 2,
+          "active_weeks": 47,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S028",
+          "planned_order": 2.979591836734694,
+          "nearby_historical_orders": 2,
+          "active_weeks": 49,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S029",
+          "planned_order": 10.844444444444445,
+          "nearby_historical_orders": 0,
+          "active_weeks": 90,
+          "longest_active_run": 8
+        },
+        {
+          "supplier": "S030",
+          "planned_order": 4.344827586206897,
+          "nearby_historical_orders": 1,
+          "active_weeks": 29,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S031",
+          "planned_order": 168.975,
+          "nearby_historical_orders": 189,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S034",
+          "planned_order": 22.155844155844157,
+          "nearby_historical_orders": 0,
+          "active_weeks": 77,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S035",
+          "planned_order": 2.26,
+          "nearby_historical_orders": 10,
+          "active_weeks": 100,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S036",
+          "planned_order": 1.8518518518518519,
+          "nearby_historical_orders": 13,
+          "active_weeks": 54,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S038",
+          "planned_order": 1.175,
+          "nearby_historical_orders": 72,
+          "active_weeks": 80,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S040",
+          "planned_order": 134.83333333333331,
+          "nearby_historical_orders": 121,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S042",
+          "planned_order": 5.392857142857143,
+          "nearby_historical_orders": 2,
+          "active_weeks": 56,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S043",
+          "planned_order": 5.132352941176471,
+          "nearby_historical_orders": 0,
+          "active_weeks": 68,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S045",
+          "planned_order": 1.792682926829268,
+          "nearby_historical_orders": 3,
+          "active_weeks": 82,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S046",
+          "planned_order": 1.3962264150943395,
+          "nearby_historical_orders": 0,
+          "active_weeks": 159,
+          "longest_active_run": 13
+        },
+        {
+          "supplier": "S047",
+          "planned_order": 99.32584269662921,
+          "nearby_historical_orders": 0,
+          "active_weeks": 89,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S048",
+          "planned_order": 1.8599999999999999,
+          "nearby_historical_orders": 5,
+          "active_weeks": 50,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S049",
+          "planned_order": 1.2325581395348837,
+          "nearby_historical_orders": 37,
+          "active_weeks": 43,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S050",
+          "planned_order": 1.59375,
+          "nearby_historical_orders": 0,
+          "active_weeks": 32,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S051",
+          "planned_order": 51.9344262295082,
+          "nearby_historical_orders": 0,
+          "active_weeks": 61,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S052",
+          "planned_order": 1.4000000000000001,
+          "nearby_historical_orders": 0,
+          "active_weeks": 45,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S053",
+          "planned_order": 1.9354838709677422,
+          "nearby_historical_orders": 3,
+          "active_weeks": 31,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S054",
+          "planned_order": 3.875968992248062,
+          "nearby_historical_orders": 7,
+          "active_weeks": 129,
+          "longest_active_run": 16
+        },
+        {
+          "supplier": "S055",
+          "planned_order": 133.97916666666666,
+          "nearby_historical_orders": 0,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S056",
+          "planned_order": 1.25,
+          "nearby_historical_orders": 37,
+          "active_weeks": 44,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S057",
+          "planned_order": 2.086206896551724,
+          "nearby_historical_orders": 5,
+          "active_weeks": 58,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S058",
+          "planned_order": 4.697368421052632,
+          "nearby_historical_orders": 1,
+          "active_weeks": 76,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S059",
+          "planned_order": 8.10204081632653,
+          "nearby_historical_orders": 0,
+          "active_weeks": 98,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S062",
+          "planned_order": 4.470588235294118,
+          "nearby_historical_orders": 1,
+          "active_weeks": 17,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S064",
+          "planned_order": 93.35074626865672,
+          "nearby_historical_orders": 0,
+          "active_weeks": 134,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S065",
+          "planned_order": 2.4545454545454546,
+          "nearby_historical_orders": 7,
+          "active_weeks": 88,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S066",
+          "planned_order": 6.673758865248227,
+          "nearby_historical_orders": 6,
+          "active_weeks": 141,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S068",
+          "planned_order": 4.173913043478261,
+          "nearby_historical_orders": 0,
+          "active_weeks": 69,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S069",
+          "planned_order": 3.8061224489795924,
+          "nearby_historical_orders": 1,
+          "active_weeks": 98,
+          "longest_active_run": 11
+        },
+        {
+          "supplier": "S071",
+          "planned_order": 4.555555555555555,
+          "nearby_historical_orders": 0,
+          "active_weeks": 72,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S072",
+          "planned_order": 2.5609756097560976,
+          "nearby_historical_orders": 1,
+          "active_weeks": 41,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S073",
+          "planned_order": 1.3478260869565217,
+          "nearby_historical_orders": 0,
+          "active_weeks": 23,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S075",
+          "planned_order": 2.455223880597015,
+          "nearby_historical_orders": 27,
+          "active_weeks": 134,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S077",
+          "planned_order": 4.586206896551724,
+          "nearby_historical_orders": 0,
+          "active_weeks": 58,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S078",
+          "planned_order": 94.73831775700934,
+          "nearby_historical_orders": 10,
+          "active_weeks": 107,
+          "longest_active_run": 10
+        },
+        {
+          "supplier": "S079",
+          "planned_order": 5.211538461538462,
+          "nearby_historical_orders": 2,
+          "active_weeks": 52,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S081",
+          "planned_order": 1.5483870967741935,
+          "nearby_historical_orders": 0,
+          "active_weeks": 31,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S082",
+          "planned_order": 1.3888888888888888,
+          "nearby_historical_orders": 0,
+          "active_weeks": 72,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S083",
+          "planned_order": 68.75,
+          "nearby_historical_orders": 0,
+          "active_weeks": 32,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S087",
+          "planned_order": 2.263157894736842,
+          "nearby_historical_orders": 6,
+          "active_weeks": 38,
+          "longest_active_run": 2
+        },
+        {
+          "supplier": "S088",
+          "planned_order": 3.751633986928104,
+          "nearby_historical_orders": 11,
+          "active_weeks": 153,
+          "longest_active_run": 12
+        },
+        {
+          "supplier": "S089",
+          "planned_order": 5.930232558139535,
+          "nearby_historical_orders": 4,
+          "active_weeks": 43,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S091",
+          "planned_order": 2.423076923076923,
+          "nearby_historical_orders": 8,
+          "active_weeks": 52,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S092",
+          "planned_order": 2.4769230769230766,
+          "nearby_historical_orders": 31,
+          "active_weeks": 130,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S093",
+          "planned_order": 20.576271186440678,
+          "nearby_historical_orders": 0,
+          "active_weeks": 59,
+          "longest_active_run": 8
+        },
+        {
+          "supplier": "S095",
+          "planned_order": 1.5352112676056338,
+          "nearby_historical_orders": 0,
+          "active_weeks": 71,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S096",
+          "planned_order": 339.0,
+          "nearby_historical_orders": 0,
+          "active_weeks": 54,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S097",
+          "planned_order": 214.59459459459458,
+          "nearby_historical_orders": 7,
+          "active_weeks": 74,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S098",
+          "planned_order": 1.5933014354066986,
+          "nearby_historical_orders": 0,
+          "active_weeks": 209,
+          "longest_active_run": 22
+        },
+        {
+          "supplier": "S099",
+          "planned_order": 34.46341463414634,
+          "nearby_historical_orders": 0,
+          "active_weeks": 41,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S101",
+          "planned_order": 10.821917808219178,
+          "nearby_historical_orders": 0,
+          "active_weeks": 73,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S102",
+          "planned_order": 9.671875,
+          "nearby_historical_orders": 2,
+          "active_weeks": 64,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S104",
+          "planned_order": 6.458333333333333,
+          "nearby_historical_orders": 4,
+          "active_weeks": 72,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S105",
+          "planned_order": 3.2181818181818183,
+          "nearby_historical_orders": 5,
+          "active_weeks": 55,
+          "longest_active_run": 9
+        },
+        {
+          "supplier": "S106",
+          "planned_order": 1.564102564102564,
+          "nearby_historical_orders": 0,
+          "active_weeks": 39,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S108",
+          "planned_order": 1131.0208333333333,
+          "nearby_historical_orders": 13,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S109",
+          "planned_order": 2.3214285714285716,
+          "nearby_historical_orders": 3,
+          "active_weeks": 56,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S111",
+          "planned_order": 27.894736842105264,
+          "nearby_historical_orders": 0,
+          "active_weeks": 38,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S112",
+          "planned_order": 11.8125,
+          "nearby_historical_orders": 0,
+          "active_weeks": 16,
+          "longest_active_run": 2
+        },
+        {
+          "supplier": "S113",
+          "planned_order": 2.356060606060606,
+          "nearby_historical_orders": 21,
+          "active_weeks": 132,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S114",
+          "planned_order": 63.12987012987012,
+          "nearby_historical_orders": 0,
+          "active_weeks": 231,
+          "longest_active_run": 47
+        },
+        {
+          "supplier": "S115",
+          "planned_order": 5.609929078014185,
+          "nearby_historical_orders": 11,
+          "active_weeks": 141,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S116",
+          "planned_order": 2.3513513513513513,
+          "nearby_historical_orders": 3,
+          "active_weeks": 37,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S117",
+          "planned_order": 33.88775510204081,
+          "nearby_historical_orders": 0,
+          "active_weeks": 98,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S118",
+          "planned_order": 26.82857142857143,
+          "nearby_historical_orders": 0,
+          "active_weeks": 70,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S119",
+          "planned_order": 1.872340425531915,
+          "nearby_historical_orders": 1,
+          "active_weeks": 47,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S120",
+          "planned_order": 1.375,
+          "nearby_historical_orders": 0,
+          "active_weeks": 32,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S121",
+          "planned_order": 3.4074074074073706,
+          "nearby_historical_orders": 3,
+          "active_weeks": 54,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S122",
+          "planned_order": 1.5333333333333177,
+          "nearby_historical_orders": 0,
+          "active_weeks": 45,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S123",
+          "planned_order": 25.458333333333332,
+          "nearby_historical_orders": 72,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S124",
+          "planned_order": 2.1,
+          "nearby_historical_orders": 4,
+          "active_weeks": 30,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S125",
+          "planned_order": 3.983050847457627,
+          "nearby_historical_orders": 0,
+          "active_weeks": 59,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S126",
+          "planned_order": 1322.85,
+          "nearby_historical_orders": 5,
+          "active_weeks": 100,
+          "longest_active_run": 14
+        },
+        {
+          "supplier": "S127",
+          "planned_order": 7.59375,
+          "nearby_historical_orders": 1,
+          "active_weeks": 64,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S128",
+          "planned_order": 1.7746478873239437,
+          "nearby_historical_orders": 6,
+          "active_weeks": 71,
+          "longest_active_run": 9
+        },
+        {
+          "supplier": "S130",
+          "planned_order": 3.552083333333334,
+          "nearby_historical_orders": 6,
+          "active_weeks": 96,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S131",
+          "planned_order": 580.7541666666667,
+          "nearby_historical_orders": 122,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S132",
+          "planned_order": 1.5,
+          "nearby_historical_orders": 0,
+          "active_weeks": 50,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S134",
+          "planned_order": 7.9230769230769225,
+          "nearby_historical_orders": 0,
+          "active_weeks": 65,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S137",
+          "planned_order": 63.89285714285714,
+          "nearby_historical_orders": 2,
+          "active_weeks": 84,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S138",
+          "planned_order": 16.89308176100629,
+          "nearby_historical_orders": 0,
+          "active_weeks": 159,
+          "longest_active_run": 13
+        },
+        {
+          "supplier": "S139",
+          "planned_order": 793.5178571428571,
+          "nearby_historical_orders": 1,
+          "active_weeks": 224,
+          "longest_active_run": 45
+        },
+        {
+          "supplier": "S140",
+          "planned_order": 2186.831818181818,
+          "nearby_historical_orders": 0,
+          "active_weeks": 220,
+          "longest_active_run": 23
+        },
+        {
+          "supplier": "S141",
+          "planned_order": 2.6307692307692307,
+          "nearby_historical_orders": 16,
+          "active_weeks": 130,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S142",
+          "planned_order": 5.173913043478261,
+          "nearby_historical_orders": 0,
+          "active_weeks": 46,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S143",
+          "planned_order": 394.0416666666667,
+          "nearby_historical_orders": 44,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S144",
+          "planned_order": 3.15,
+          "nearby_historical_orders": 0,
+          "active_weeks": 20,
+          "longest_active_run": 2
+        },
+        {
+          "supplier": "S145",
+          "planned_order": 34.97260273972603,
+          "nearby_historical_orders": 0,
+          "active_weeks": 73,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S146",
+          "planned_order": 4.25668449197861,
+          "nearby_historical_orders": 5,
+          "active_weeks": 187,
+          "longest_active_run": 18
+        },
+        {
+          "supplier": "S147",
+          "planned_order": 7.9,
+          "nearby_historical_orders": 0,
+          "active_weeks": 20,
+          "longest_active_run": 2
+        },
+        {
+          "supplier": "S148",
+          "planned_order": 12.85,
+          "nearby_historical_orders": 0,
+          "active_weeks": 80,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S149",
+          "planned_order": 2.5308641975308643,
+          "nearby_historical_orders": 10,
+          "active_weeks": 81,
+          "longest_active_run": 10
+        },
+        {
+          "supplier": "S150",
+          "planned_order": 22.866666666666667,
+          "nearby_historical_orders": 0,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S152",
+          "planned_order": 2.6350364963503647,
+          "nearby_historical_orders": 17,
+          "active_weeks": 137,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S153",
+          "planned_order": 47.517857142857146,
+          "nearby_historical_orders": 0,
+          "active_weeks": 56,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S154",
+          "planned_order": 98.3076923076923,
+          "nearby_historical_orders": 9,
+          "active_weeks": 104,
+          "longest_active_run": 76
+        },
+        {
+          "supplier": "S155",
+          "planned_order": 7.666666666666668,
+          "nearby_historical_orders": 1,
+          "active_weeks": 54,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S156",
+          "planned_order": 5.395833333333333,
+          "nearby_historical_orders": 1,
+          "active_weeks": 48,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S157",
+          "planned_order": 252.15151515151516,
+          "nearby_historical_orders": 0,
+          "active_weeks": 132,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S158",
+          "planned_order": 199.11764705882354,
+          "nearby_historical_orders": 0,
+          "active_weeks": 51,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S159",
+          "planned_order": 3.0853658536585185,
+          "nearby_historical_orders": 5,
+          "active_weeks": 82,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S160",
+          "planned_order": 921.8823529411765,
+          "nearby_historical_orders": 0,
+          "active_weeks": 68,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S162",
+          "planned_order": 11.12359550561798,
+          "nearby_historical_orders": 0,
+          "active_weeks": 89,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S163",
+          "planned_order": 10.448717948717949,
+          "nearby_historical_orders": 2,
+          "active_weeks": 78,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S165",
+          "planned_order": 6.957894736842105,
+          "nearby_historical_orders": 0,
+          "active_weeks": 95,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S166",
+          "planned_order": 2.7692307692308873,
+          "nearby_historical_orders": 0,
+          "active_weeks": 52,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S167",
+          "planned_order": 3.2142857142857144,
+          "nearby_historical_orders": 1,
+          "active_weeks": 70,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S168",
+          "planned_order": 24.415384615384614,
+          "nearby_historical_orders": 0,
+          "active_weeks": 65,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S169",
+          "planned_order": 2.1707317073170733,
+          "nearby_historical_orders": 33,
+          "active_weeks": 123,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S170",
+          "planned_order": 8.24390243902439,
+          "nearby_historical_orders": 1,
+          "active_weeks": 41,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S172",
+          "planned_order": 2.124087591240876,
+          "nearby_historical_orders": 22,
+          "active_weeks": 137,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S174",
+          "planned_order": 2.007936507936508,
+          "nearby_historical_orders": 26,
+          "active_weeks": 126,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S175",
+          "planned_order": 1.929078014184397,
+          "nearby_historical_orders": 25,
+          "active_weeks": 141,
+          "longest_active_run": 11
+        },
+        {
+          "supplier": "S176",
+          "planned_order": 4.8625,
+          "nearby_historical_orders": 0,
+          "active_weeks": 80,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S178",
+          "planned_order": 2.7111111111111112,
+          "nearby_historical_orders": 5,
+          "active_weeks": 45,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S179",
+          "planned_order": 8.527027027027026,
+          "nearby_historical_orders": 0,
+          "active_weeks": 74,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S180",
+          "planned_order": 1.0338983050847457,
+          "nearby_historical_orders": 57,
+          "active_weeks": 59,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S181",
+          "planned_order": 10.0,
+          "nearby_historical_orders": 0,
+          "active_weeks": 58,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S182",
+          "planned_order": 4.145833333333333,
+          "nearby_historical_orders": 1,
+          "active_weeks": 48,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S184",
+          "planned_order": 11.075471698113208,
+          "nearby_historical_orders": 1,
+          "active_weeks": 53,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S185",
+          "planned_order": 6.0,
+          "nearby_historical_orders": 2,
+          "active_weeks": 83,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S186",
+          "planned_order": 19.568181818181817,
+          "nearby_historical_orders": 0,
+          "active_weeks": 132,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S187",
+          "planned_order": 1.9047619047619047,
+          "nearby_historical_orders": 6,
+          "active_weeks": 84,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S188",
+          "planned_order": 1.6153846153846154,
+          "nearby_historical_orders": 0,
+          "active_weeks": 26,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S189",
+          "planned_order": 54.698113207547166,
+          "nearby_historical_orders": 64,
+          "active_weeks": 159,
+          "longest_active_run": 134
+        },
+        {
+          "supplier": "S190",
+          "planned_order": 3.571428571428572,
+          "nearby_historical_orders": 0,
+          "active_weeks": 21,
+          "longest_active_run": 2
+        },
+        {
+          "supplier": "S191",
+          "planned_order": 35.1578947368421,
+          "nearby_historical_orders": 0,
+          "active_weeks": 133,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S193",
+          "planned_order": 2.8,
+          "nearby_historical_orders": 5,
+          "active_weeks": 30,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S194",
+          "planned_order": 422.4166666666667,
+          "nearby_historical_orders": 205,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S195",
+          "planned_order": 36.78048780487805,
+          "nearby_historical_orders": 0,
+          "active_weeks": 41,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S196",
+          "planned_order": 1.2291666666666667,
+          "nearby_historical_orders": 43,
+          "active_weeks": 48,
+          "longest_active_run": 2
+        },
+        {
+          "supplier": "S197",
+          "planned_order": 4.696,
+          "nearby_historical_orders": 24,
+          "active_weeks": 125,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S198",
+          "planned_order": 5.344827586206897,
+          "nearby_historical_orders": 0,
+          "active_weeks": 87,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S199",
+          "planned_order": 32.041666666666664,
+          "nearby_historical_orders": 0,
+          "active_weeks": 48,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S200",
+          "planned_order": 13.273972602739725,
+          "nearby_historical_orders": 0,
+          "active_weeks": 73,
+          "longest_active_run": 9
+        },
+        {
+          "supplier": "S201",
+          "planned_order": 7116.306122448979,
+          "nearby_historical_orders": 5,
+          "active_weeks": 49,
+          "longest_active_run": 13
+        },
+        {
+          "supplier": "S202",
+          "planned_order": 8.661654135338345,
+          "nearby_historical_orders": 3,
+          "active_weeks": 133,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S203",
+          "planned_order": 1.2142857142857142,
+          "nearby_historical_orders": 24,
+          "active_weeks": 28,
+          "longest_active_run": 2
+        },
+        {
+          "supplier": "S204",
+          "planned_order": 4.407407407407407,
+          "nearby_historical_orders": 1,
+          "active_weeks": 27,
+          "longest_active_run": 2
+        },
+        {
+          "supplier": "S205",
+          "planned_order": 4.873239436619718,
+          "nearby_historical_orders": 4,
+          "active_weeks": 71,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S208",
+          "planned_order": 118.15873015873018,
+          "nearby_historical_orders": 2,
+          "active_weeks": 126,
+          "longest_active_run": 66
+        },
+        {
+          "supplier": "S209",
+          "planned_order": 3.7671232876712692,
+          "nearby_historical_orders": 2,
+          "active_weeks": 73,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S211",
+          "planned_order": 5.145161290322581,
+          "nearby_historical_orders": 0,
+          "active_weeks": 62,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S213",
+          "planned_order": 1.1265060240963856,
+          "nearby_historical_orders": 148,
+          "active_weeks": 166,
+          "longest_active_run": 9
+        },
+        {
+          "supplier": "S214",
+          "planned_order": 5.838709677419355,
+          "nearby_historical_orders": 0,
+          "active_weeks": 93,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S215",
+          "planned_order": 15.381578947368421,
+          "nearby_historical_orders": 0,
+          "active_weeks": 76,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S216",
+          "planned_order": 2.574324324324324,
+          "nearby_historical_orders": 22,
+          "active_weeks": 148,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S217",
+          "planned_order": 4.488372093023261,
+          "nearby_historical_orders": 6,
+          "active_weeks": 43,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S219",
+          "planned_order": 9.416666666666666,
+          "nearby_historical_orders": 0,
+          "active_weeks": 36,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S221",
+          "planned_order": 2.3412698412698414,
+          "nearby_historical_orders": 22,
+          "active_weeks": 126,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S222",
+          "planned_order": 31.23076923076923,
+          "nearby_historical_orders": 0,
+          "active_weeks": 39,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S224",
+          "planned_order": 2.672727272727273,
+          "nearby_historical_orders": 1,
+          "active_weeks": 110,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S225",
+          "planned_order": 1.75,
+          "nearby_historical_orders": 1,
+          "active_weeks": 16,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S226",
+          "planned_order": 4.220338983050848,
+          "nearby_historical_orders": 2,
+          "active_weeks": 59,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S227",
+          "planned_order": 11.179487179487179,
+          "nearby_historical_orders": 2,
+          "active_weeks": 39,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S228",
+          "planned_order": 67.64912280701755,
+          "nearby_historical_orders": 0,
+          "active_weeks": 57,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S229",
+          "planned_order": 1499.5208333333333,
+          "nearby_historical_orders": 128,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S230",
+          "planned_order": 46.64705882352941,
+          "nearby_historical_orders": 0,
+          "active_weeks": 34,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S231",
+          "planned_order": 53.923076923109754,
+          "nearby_historical_orders": 0,
+          "active_weeks": 78,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S232",
+          "planned_order": 3.45,
+          "nearby_historical_orders": 2,
+          "active_weeks": 40,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S233",
+          "planned_order": 2.6,
+          "nearby_historical_orders": 7,
+          "active_weeks": 85,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S235",
+          "planned_order": 8.105263157894736,
+          "nearby_historical_orders": 2,
+          "active_weeks": 38,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S237",
+          "planned_order": 2.090909090909091,
+          "nearby_historical_orders": 22,
+          "active_weeks": 121,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S238",
+          "planned_order": 24.254545454545454,
+          "nearby_historical_orders": 1,
+          "active_weeks": 55,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S240",
+          "planned_order": 1.5625,
+          "nearby_historical_orders": 0,
+          "active_weeks": 64,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S242",
+          "planned_order": 9.261538461538402,
+          "nearby_historical_orders": 3,
+          "active_weeks": 65,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S243",
+          "planned_order": 1.5116279069767442,
+          "nearby_historical_orders": 0,
+          "active_weeks": 86,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S246",
+          "planned_order": 188.98611111111111,
+          "nearby_historical_orders": 0,
+          "active_weeks": 72,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S248",
+          "planned_order": 6.08235294117647,
+          "nearby_historical_orders": 2,
+          "active_weeks": 85,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S249",
+          "planned_order": 6.083333333333332,
+          "nearby_historical_orders": 2,
+          "active_weeks": 60,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S250",
+          "planned_order": 34.473684210526315,
+          "nearby_historical_orders": 0,
+          "active_weeks": 19,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S251",
+          "planned_order": 38.648148148148145,
+          "nearby_historical_orders": 0,
+          "active_weeks": 54,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S254",
+          "planned_order": 3.4,
+          "nearby_historical_orders": 1,
+          "active_weeks": 45,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S255",
+          "planned_order": 1.3333333333333333,
+          "nearby_historical_orders": 0,
+          "active_weeks": 36,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S256",
+          "planned_order": 2.876923076923077,
+          "nearby_historical_orders": 16,
+          "active_weeks": 130,
+          "longest_active_run": 9
+        },
+        {
+          "supplier": "S258",
+          "planned_order": 4.4,
+          "nearby_historical_orders": 24,
+          "active_weeks": 140,
+          "longest_active_run": 13
+        },
+        {
+          "supplier": "S259",
+          "planned_order": 2.925925925925926,
+          "nearby_historical_orders": 1,
+          "active_weeks": 54,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S260",
+          "planned_order": 3.9931034482758627,
+          "nearby_historical_orders": 1,
+          "active_weeks": 145,
+          "longest_active_run": 16
+        },
+        {
+          "supplier": "S261",
+          "planned_order": 19.984615384615385,
+          "nearby_historical_orders": 0,
+          "active_weeks": 65,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S264",
+          "planned_order": 2.9,
+          "nearby_historical_orders": 0,
+          "active_weeks": 10,
+          "longest_active_run": 2
+        },
+        {
+          "supplier": "S265",
+          "planned_order": 7.2250000000000005,
+          "nearby_historical_orders": 2,
+          "active_weeks": 80,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S266",
+          "planned_order": 23.416666666666668,
+          "nearby_historical_orders": 170,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S268",
+          "planned_order": 0.3358559422759855,
+          "nearby_historical_orders": 0,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S269",
+          "planned_order": 5.406451612903226,
+          "nearby_historical_orders": 1,
+          "active_weeks": 155,
+          "longest_active_run": 9
+        },
+        {
+          "supplier": "S271",
+          "planned_order": 5.17741935483871,
+          "nearby_historical_orders": 8,
+          "active_weeks": 62,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S272",
+          "planned_order": 18.22222222222222,
+          "nearby_historical_orders": 0,
+          "active_weeks": 18,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S273",
+          "planned_order": 108.56565656565657,
+          "nearby_historical_orders": 22,
+          "active_weeks": 99,
+          "longest_active_run": 87
+        },
+        {
+          "supplier": "S274",
+          "planned_order": 3.6530612244897958,
+          "nearby_historical_orders": 9,
+          "active_weeks": 49,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S275",
+          "planned_order": 658.9583333333334,
+          "nearby_historical_orders": 178,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S276",
+          "planned_order": 9.35897435897436,
+          "nearby_historical_orders": 0,
+          "active_weeks": 78,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S277",
+          "planned_order": 20.597560975609756,
+          "nearby_historical_orders": 0,
+          "active_weeks": 82,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S278",
+          "planned_order": 5.192771084337349,
+          "nearby_historical_orders": 3,
+          "active_weeks": 83,
+          "longest_active_run": 9
+        },
+        {
+          "supplier": "S279",
+          "planned_order": 5.795918367346939,
+          "nearby_historical_orders": 0,
+          "active_weeks": 49,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S280",
+          "planned_order": 7.474137931034482,
+          "nearby_historical_orders": 2,
+          "active_weeks": 116,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S281",
+          "planned_order": 1.4081632653061225,
+          "nearby_historical_orders": 0,
+          "active_weeks": 49,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S282",
+          "planned_order": 702.2125,
+          "nearby_historical_orders": 64,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S283",
+          "planned_order": 1.8970588235294117,
+          "nearby_historical_orders": 4,
+          "active_weeks": 68,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S285",
+          "planned_order": 83.82278481012658,
+          "nearby_historical_orders": 0,
+          "active_weeks": 79,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S286",
+          "planned_order": 1.5,
+          "nearby_historical_orders": 0,
+          "active_weeks": 40,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S287",
+          "planned_order": 13.966666666666665,
+          "nearby_historical_orders": 0,
+          "active_weeks": 60,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S288",
+          "planned_order": 1.393939393939394,
+          "nearby_historical_orders": 0,
+          "active_weeks": 33,
+          "longest_active_run": 2
+        },
+        {
+          "supplier": "S289",
+          "planned_order": 21.321428571428573,
+          "nearby_historical_orders": 0,
+          "active_weeks": 56,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S291",
+          "planned_order": 60.65765765765766,
+          "nearby_historical_orders": 0,
+          "active_weeks": 222,
+          "longest_active_run": 23
+        },
+        {
+          "supplier": "S292",
+          "planned_order": 93.7457627118644,
+          "nearby_historical_orders": 15,
+          "active_weeks": 118,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S293",
+          "planned_order": 19.98507462686567,
+          "nearby_historical_orders": 0,
+          "active_weeks": 67,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S294",
+          "planned_order": 75.9625,
+          "nearby_historical_orders": 163,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S295",
+          "planned_order": 14.843373493975905,
+          "nearby_historical_orders": 0,
+          "active_weeks": 83,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S296",
+          "planned_order": 1.34,
+          "nearby_historical_orders": 0,
+          "active_weeks": 50,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S298",
+          "planned_order": 2.8235294117528484,
+          "nearby_historical_orders": 0,
+          "active_weeks": 17,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S299",
+          "planned_order": 8.294117647058824,
+          "nearby_historical_orders": 0,
+          "active_weeks": 136,
+          "longest_active_run": 9
+        },
+        {
+          "supplier": "S300",
+          "planned_order": 35.0,
+          "nearby_historical_orders": 1,
+          "active_weeks": 11,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S302",
+          "planned_order": 17.123595505617978,
+          "nearby_historical_orders": 0,
+          "active_weeks": 89,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S303",
+          "planned_order": 3.7857142857142856,
+          "nearby_historical_orders": 0,
+          "active_weeks": 14,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S304",
+          "planned_order": 3.42,
+          "nearby_historical_orders": 7,
+          "active_weeks": 100,
+          "longest_active_run": 11
+        },
+        {
+          "supplier": "S306",
+          "planned_order": 511.9978036230475,
+          "nearby_historical_orders": 150,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S307",
+          "planned_order": 592.9244186046511,
+          "nearby_historical_orders": 1,
+          "active_weeks": 172,
+          "longest_active_run": 19
+        },
+        {
+          "supplier": "S308",
+          "planned_order": 776.1583333333332,
+          "nearby_historical_orders": 48,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S309",
+          "planned_order": 42.111111111111114,
+          "nearby_historical_orders": 0,
+          "active_weeks": 27,
+          "longest_active_run": 2
+        },
+        {
+          "supplier": "S310",
+          "planned_order": 2.298611111111111,
+          "nearby_historical_orders": 26,
+          "active_weeks": 144,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S311",
+          "planned_order": 2.325,
+          "nearby_historical_orders": 6,
+          "active_weeks": 80,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S312",
+          "planned_order": 2.180327868852459,
+          "nearby_historical_orders": 10,
+          "active_weeks": 61,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S315",
+          "planned_order": 16.923076923076923,
+          "nearby_historical_orders": 0,
+          "active_weeks": 26,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S316",
+          "planned_order": 1.627906976744186,
+          "nearby_historical_orders": 0,
+          "active_weeks": 43,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S317",
+          "planned_order": 3.658823529411765,
+          "nearby_historical_orders": 0,
+          "active_weeks": 85,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S318",
+          "planned_order": 2.794392523364486,
+          "nearby_historical_orders": 5,
+          "active_weeks": 107,
+          "longest_active_run": 12
+        },
+        {
+          "supplier": "S319",
+          "planned_order": 20.267605633802816,
+          "nearby_historical_orders": 0,
+          "active_weeks": 71,
+          "longest_active_run": 9
+        },
+        {
+          "supplier": "S321",
+          "planned_order": 2.5,
+          "nearby_historical_orders": 0,
+          "active_weeks": 12,
+          "longest_active_run": 1
+        },
+        {
+          "supplier": "S322",
+          "planned_order": 2.90625,
+          "nearby_historical_orders": 1,
+          "active_weeks": 64,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S323",
+          "planned_order": 53.03846153846153,
+          "nearby_historical_orders": 0,
+          "active_weeks": 26,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S324",
+          "planned_order": 2.4926470588235294,
+          "nearby_historical_orders": 36,
+          "active_weeks": 136,
+          "longest_active_run": 8
+        },
+        {
+          "supplier": "S326",
+          "planned_order": 19.629032258064516,
+          "nearby_historical_orders": 0,
+          "active_weeks": 62,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S327",
+          "planned_order": 2.310344827586207,
+          "nearby_historical_orders": 4,
+          "active_weeks": 29,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S328",
+          "planned_order": 1.5135135135135136,
+          "nearby_historical_orders": 0,
+          "active_weeks": 37,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S329",
+          "planned_order": 651.4583333333334,
+          "nearby_historical_orders": 176,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S330",
+          "planned_order": 720.75,
+          "nearby_historical_orders": 35,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S332",
+          "planned_order": 7.5294117647059045,
+          "nearby_historical_orders": 0,
+          "active_weeks": 51,
+          "longest_active_run": 8
+        },
+        {
+          "supplier": "S333",
+          "planned_order": 12.330645161290322,
+          "nearby_historical_orders": 0,
+          "active_weeks": 124,
+          "longest_active_run": 27
+        },
+        {
+          "supplier": "S335",
+          "planned_order": 230.23076923076923,
+          "nearby_historical_orders": 0,
+          "active_weeks": 52,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S336",
+          "planned_order": 2.723404255319149,
+          "nearby_historical_orders": 1,
+          "active_weeks": 47,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S337",
+          "planned_order": 1.2,
+          "nearby_historical_orders": 25,
+          "active_weeks": 30,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S338",
+          "planned_order": 187.11764705882354,
+          "nearby_historical_orders": 0,
+          "active_weeks": 204,
+          "longest_active_run": 20
+        },
+        {
+          "supplier": "S339",
+          "planned_order": 7.958333333333334,
+          "nearby_historical_orders": 0,
+          "active_weeks": 72,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S340",
+          "planned_order": 716.6666666666666,
+          "nearby_historical_orders": 145,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S341",
+          "planned_order": 23.93333333333333,
+          "nearby_historical_orders": 0,
+          "active_weeks": 60,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S344",
+          "planned_order": 5.022222222222222,
+          "nearby_historical_orders": 0,
+          "active_weeks": 45,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S346",
+          "planned_order": 102.95833333333333,
+          "nearby_historical_orders": 145,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S348",
+          "planned_order": 839.7437185929648,
+          "nearby_historical_orders": 3,
+          "active_weeks": 199,
+          "longest_active_run": 24
+        },
+        {
+          "supplier": "S350",
+          "planned_order": 16.44,
+          "nearby_historical_orders": 0,
+          "active_weeks": 75,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S352",
+          "planned_order": 372.0833333333333,
+          "nearby_historical_orders": 82,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S353",
+          "planned_order": 1.475,
+          "nearby_historical_orders": 0,
+          "active_weeks": 40,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S354",
+          "planned_order": 36.5625,
+          "nearby_historical_orders": 0,
+          "active_weeks": 64,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S358",
+          "planned_order": 1.9333333333333333,
+          "nearby_historical_orders": 1,
+          "active_weeks": 15,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S359",
+          "planned_order": 3.8541666666666665,
+          "nearby_historical_orders": 1,
+          "active_weeks": 48,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S360",
+          "planned_order": 2.8675496688741724,
+          "nearby_historical_orders": 29,
+          "active_weeks": 151,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S361",
+          "planned_order": 1389.3833333333334,
+          "nearby_historical_orders": 119,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S363",
+          "planned_order": 2.0869565217391304,
+          "nearby_historical_orders": 2,
+          "active_weeks": 46,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S364",
+          "planned_order": 120.95833333333333,
+          "nearby_historical_orders": 39,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S366",
+          "planned_order": 1.0327868852459017,
+          "nearby_historical_orders": 59,
+          "active_weeks": 61,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S367",
+          "planned_order": 115.16666666666667,
+          "nearby_historical_orders": 32,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S369",
+          "planned_order": 31.49253731343284,
+          "nearby_historical_orders": 0,
+          "active_weeks": 67,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S370",
+          "planned_order": 7.38,
+          "nearby_historical_orders": 1,
+          "active_weeks": 50,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S371",
+          "planned_order": 41.25714285714286,
+          "nearby_historical_orders": 0,
+          "active_weeks": 70,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S372",
+          "planned_order": 20.435897435897434,
+          "nearby_historical_orders": 0,
+          "active_weeks": 39,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S373",
+          "planned_order": 10.887323943661972,
+          "nearby_historical_orders": 0,
+          "active_weeks": 71,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S375",
+          "planned_order": 8.163934426229508,
+          "nearby_historical_orders": 0,
+          "active_weeks": 61,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S376",
+          "planned_order": 5.4275362318841065,
+          "nearby_historical_orders": 8,
+          "active_weeks": 138,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S378",
+          "planned_order": 3.9454545454545453,
+          "nearby_historical_orders": 0,
+          "active_weeks": 55,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S380",
+          "planned_order": 40.2,
+          "nearby_historical_orders": 3,
+          "active_weeks": 50,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S381",
+          "planned_order": 6.4375,
+          "nearby_historical_orders": 1,
+          "active_weeks": 32,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S384",
+          "planned_order": 2.3260869565217392,
+          "nearby_historical_orders": 1,
+          "active_weeks": 46,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S385",
+          "planned_order": 3.158536585365854,
+          "nearby_historical_orders": 3,
+          "active_weeks": 82,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S386",
+          "planned_order": 2.0370370370370368,
+          "nearby_historical_orders": 9,
+          "active_weeks": 54,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S387",
+          "planned_order": 26.960526315789473,
+          "nearby_historical_orders": 0,
+          "active_weeks": 76,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S388",
+          "planned_order": 7.197183098591529,
+          "nearby_historical_orders": 3,
+          "active_weeks": 71,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S389",
+          "planned_order": 11.41304347826087,
+          "nearby_historical_orders": 0,
+          "active_weeks": 46,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S390",
+          "planned_order": 5.244897959183674,
+          "nearby_historical_orders": 1,
+          "active_weeks": 49,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S392",
+          "planned_order": 2.449275362318841,
+          "nearby_historical_orders": 34,
+          "active_weeks": 138,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S393",
+          "planned_order": 2.1818181818181817,
+          "nearby_historical_orders": 0,
+          "active_weeks": 33,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S394",
+          "planned_order": 13.000000000000002,
+          "nearby_historical_orders": 0,
+          "active_weeks": 66,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S395",
+          "planned_order": 1255.1904761904761,
+          "nearby_historical_orders": 8,
+          "active_weeks": 84,
+          "longest_active_run": 8
+        },
+        {
+          "supplier": "S396",
+          "planned_order": 11.56043956043956,
+          "nearby_historical_orders": 0,
+          "active_weeks": 91,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S397",
+          "planned_order": 1.0169491525423742,
+          "nearby_historical_orders": 58,
+          "active_weeks": 59,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S399",
+          "planned_order": 4.688524590163935,
+          "nearby_historical_orders": 4,
+          "active_weeks": 61,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S400",
+          "planned_order": 11.194444444444445,
+          "nearby_historical_orders": 2,
+          "active_weeks": 72,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S401",
+          "planned_order": 2.9850746268656723,
+          "nearby_historical_orders": 4,
+          "active_weeks": 67,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S402",
+          "planned_order": 13.123287671232877,
+          "nearby_historical_orders": 0,
+          "active_weeks": 73,
+          "longest_active_run": 5
+        }
+      ],
+      "scope": "nearby means within ±20% of proposed quantity; absence indicates limited local support, not proof of inability; activity depends on prior ordering"
+    },
+    "Q4": {
+      "active_suppliers": 402,
+      "without_nearby_orders": 180,
+      "suppliers": [
+        {
+          "supplier": "S001",
+          "planned_order": 2.5384615384615383,
+          "nearby_historical_orders": 0,
+          "active_weeks": 91,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S002",
+          "planned_order": 3.2526315789473683,
+          "nearby_historical_orders": 4,
+          "active_weeks": 95,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S003",
+          "planned_order": 71.75376884419916,
+          "nearby_historical_orders": 18,
+          "active_weeks": 199,
+          "longest_active_run": 22
+        },
+        {
+          "supplier": "S004",
+          "planned_order": 6.922330097087379,
+          "nearby_historical_orders": 1,
+          "active_weeks": 103,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S005",
+          "planned_order": 57.35087719298246,
+          "nearby_historical_orders": 24,
+          "active_weeks": 114,
+          "longest_active_run": 63
+        },
+        {
+          "supplier": "S006",
+          "planned_order": 8.399999999999364,
+          "nearby_historical_orders": 0,
+          "active_weeks": 55,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S007",
+          "planned_order": 27.983333333333334,
+          "nearby_historical_orders": 15,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S008",
+          "planned_order": 1.6785714285714286,
+          "nearby_historical_orders": 1,
+          "active_weeks": 56,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S009",
+          "planned_order": 8.9375,
+          "nearby_historical_orders": 0,
+          "active_weeks": 80,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S010",
+          "planned_order": 6.545454545454546,
+          "nearby_historical_orders": 1,
+          "active_weeks": 88,
+          "longest_active_run": 8
+        },
+        {
+          "supplier": "S011",
+          "planned_order": 1.9534883720930285,
+          "nearby_historical_orders": 11,
+          "active_weeks": 43,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S012",
+          "planned_order": 4.529411764705882,
+          "nearby_historical_orders": 3,
+          "active_weeks": 68,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S013",
+          "planned_order": 1.5172413793103448,
+          "nearby_historical_orders": 0,
+          "active_weeks": 29,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S014",
+          "planned_order": 1.1851851851851851,
+          "nearby_historical_orders": 22,
+          "active_weeks": 27,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S015",
+          "planned_order": 516.3518518518518,
+          "nearby_historical_orders": 0,
+          "active_weeks": 54,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S016",
+          "planned_order": 1.7272727272727273,
+          "nearby_historical_orders": 2,
+          "active_weeks": 22,
+          "longest_active_run": 2
+        },
+        {
+          "supplier": "S017",
+          "planned_order": 2.8955223880597014,
+          "nearby_historical_orders": 1,
+          "active_weeks": 67,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S018",
+          "planned_order": 1.5694444444444444,
+          "nearby_historical_orders": 0,
+          "active_weeks": 72,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S019",
+          "planned_order": 4.775862068965517,
+          "nearby_historical_orders": 0,
+          "active_weeks": 58,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S020",
+          "planned_order": 2.0561797752809263,
+          "nearby_historical_orders": 5,
+          "active_weeks": 89,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S021",
+          "planned_order": 5.225806451612903,
+          "nearby_historical_orders": 0,
+          "active_weeks": 62,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S022",
+          "planned_order": 4.757575757575758,
+          "nearby_historical_orders": 0,
+          "active_weeks": 66,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S023",
+          "planned_order": 46.6625,
+          "nearby_historical_orders": 3,
+          "active_weeks": 160,
+          "longest_active_run": 11
+        },
+        {
+          "supplier": "S024",
+          "planned_order": 3.051948051948052,
+          "nearby_historical_orders": 5,
+          "active_weeks": 77,
+          "longest_active_run": 9
+        },
+        {
+          "supplier": "S025",
+          "planned_order": 2.2888888888888888,
+          "nearby_historical_orders": 27,
+          "active_weeks": 135,
+          "longest_active_run": 11
+        },
+        {
+          "supplier": "S026",
+          "planned_order": 1.3529411764705883,
+          "nearby_historical_orders": 0,
+          "active_weeks": 17,
+          "longest_active_run": 2
+        },
+        {
+          "supplier": "S027",
+          "planned_order": 1.7659574468085106,
+          "nearby_historical_orders": 2,
+          "active_weeks": 47,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S028",
+          "planned_order": 2.979591836734694,
+          "nearby_historical_orders": 2,
+          "active_weeks": 49,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S029",
+          "planned_order": 10.844444444444445,
+          "nearby_historical_orders": 0,
+          "active_weeks": 90,
+          "longest_active_run": 8
+        },
+        {
+          "supplier": "S030",
+          "planned_order": 4.344827586206897,
+          "nearby_historical_orders": 1,
+          "active_weeks": 29,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S031",
+          "planned_order": 168.975,
+          "nearby_historical_orders": 189,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S032",
+          "planned_order": 1.515625,
+          "nearby_historical_orders": 0,
+          "active_weeks": 64,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S033",
+          "planned_order": 1.4736842105263046,
+          "nearby_historical_orders": 0,
+          "active_weeks": 19,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S034",
+          "planned_order": 22.155844155844157,
+          "nearby_historical_orders": 0,
+          "active_weeks": 77,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S035",
+          "planned_order": 2.26,
+          "nearby_historical_orders": 10,
+          "active_weeks": 100,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S036",
+          "planned_order": 1.8518518518518519,
+          "nearby_historical_orders": 13,
+          "active_weeks": 54,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S037",
+          "planned_order": 420.35403726708074,
+          "nearby_historical_orders": 11,
+          "active_weeks": 161,
+          "longest_active_run": 18
+        },
+        {
+          "supplier": "S038",
+          "planned_order": 1.175,
+          "nearby_historical_orders": 72,
+          "active_weeks": 80,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S039",
+          "planned_order": 15.0,
+          "nearby_historical_orders": 0,
+          "active_weeks": 63,
+          "longest_active_run": 8
+        },
+        {
+          "supplier": "S040",
+          "planned_order": 134.83333333333337,
+          "nearby_historical_orders": 121,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S041",
+          "planned_order": 3.274193548386946,
+          "nearby_historical_orders": 4,
+          "active_weeks": 62,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S042",
+          "planned_order": 5.392857142857143,
+          "nearby_historical_orders": 2,
+          "active_weeks": 56,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S043",
+          "planned_order": 5.132352941176471,
+          "nearby_historical_orders": 0,
+          "active_weeks": 68,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S044",
+          "planned_order": 1.588235294117635,
+          "nearby_historical_orders": 0,
+          "active_weeks": 17,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S045",
+          "planned_order": 1.792682926829268,
+          "nearby_historical_orders": 3,
+          "active_weeks": 82,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S046",
+          "planned_order": 1.3962264150943395,
+          "nearby_historical_orders": 0,
+          "active_weeks": 159,
+          "longest_active_run": 13
+        },
+        {
+          "supplier": "S047",
+          "planned_order": 99.32584269662921,
+          "nearby_historical_orders": 0,
+          "active_weeks": 89,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S048",
+          "planned_order": 1.8599999999999999,
+          "nearby_historical_orders": 5,
+          "active_weeks": 50,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S049",
+          "planned_order": 1.2325581395348837,
+          "nearby_historical_orders": 37,
+          "active_weeks": 43,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S050",
+          "planned_order": 1.59375,
+          "nearby_historical_orders": 0,
+          "active_weeks": 32,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S051",
+          "planned_order": 51.9344262295082,
+          "nearby_historical_orders": 0,
+          "active_weeks": 61,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S052",
+          "planned_order": 1.4000000000000001,
+          "nearby_historical_orders": 0,
+          "active_weeks": 45,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S053",
+          "planned_order": 1.9354838709677422,
+          "nearby_historical_orders": 3,
+          "active_weeks": 31,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S054",
+          "planned_order": 3.875968992248062,
+          "nearby_historical_orders": 7,
+          "active_weeks": 129,
+          "longest_active_run": 16
+        },
+        {
+          "supplier": "S055",
+          "planned_order": 133.97916666666666,
+          "nearby_historical_orders": 0,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S056",
+          "planned_order": 1.25,
+          "nearby_historical_orders": 37,
+          "active_weeks": 44,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S057",
+          "planned_order": 2.086206896551724,
+          "nearby_historical_orders": 5,
+          "active_weeks": 58,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S058",
+          "planned_order": 4.697368421052632,
+          "nearby_historical_orders": 1,
+          "active_weeks": 76,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S059",
+          "planned_order": 8.10204081632653,
+          "nearby_historical_orders": 0,
+          "active_weeks": 98,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S060",
+          "planned_order": 3.5599999999999974,
+          "nearby_historical_orders": 1,
+          "active_weeks": 25,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S061",
+          "planned_order": 19.940298507462686,
+          "nearby_historical_orders": 0,
+          "active_weeks": 67,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S062",
+          "planned_order": 4.470588235294118,
+          "nearby_historical_orders": 1,
+          "active_weeks": 17,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S063",
+          "planned_order": 12.25974025974853,
+          "nearby_historical_orders": 0,
+          "active_weeks": 77,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S064",
+          "planned_order": 93.35074626865672,
+          "nearby_historical_orders": 0,
+          "active_weeks": 134,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S065",
+          "planned_order": 2.4545454545454546,
+          "nearby_historical_orders": 7,
+          "active_weeks": 88,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S066",
+          "planned_order": 6.673758865248227,
+          "nearby_historical_orders": 6,
+          "active_weeks": 141,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S067",
+          "planned_order": 1.0769230769230895,
+          "nearby_historical_orders": 158,
+          "active_weeks": 169,
+          "longest_active_run": 12
+        },
+        {
+          "supplier": "S068",
+          "planned_order": 4.173913043478261,
+          "nearby_historical_orders": 0,
+          "active_weeks": 69,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S069",
+          "planned_order": 3.8061224489795924,
+          "nearby_historical_orders": 1,
+          "active_weeks": 98,
+          "longest_active_run": 11
+        },
+        {
+          "supplier": "S070",
+          "planned_order": 2.657142857142857,
+          "nearby_historical_orders": 1,
+          "active_weeks": 35,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S071",
+          "planned_order": 4.555555555555555,
+          "nearby_historical_orders": 0,
+          "active_weeks": 72,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S072",
+          "planned_order": 2.5609756097560976,
+          "nearby_historical_orders": 1,
+          "active_weeks": 41,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S073",
+          "planned_order": 1.3478260869565217,
+          "nearby_historical_orders": 0,
+          "active_weeks": 23,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S074",
+          "planned_order": 178.3497267759563,
+          "nearby_historical_orders": 1,
+          "active_weeks": 183,
+          "longest_active_run": 37
+        },
+        {
+          "supplier": "S075",
+          "planned_order": 2.455223880597015,
+          "nearby_historical_orders": 27,
+          "active_weeks": 134,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S076",
+          "planned_order": 1.373134328358209,
+          "nearby_historical_orders": 0,
+          "active_weeks": 201,
+          "longest_active_run": 18
+        },
+        {
+          "supplier": "S077",
+          "planned_order": 4.586206896551724,
+          "nearby_historical_orders": 0,
+          "active_weeks": 58,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S078",
+          "planned_order": 94.73831775700934,
+          "nearby_historical_orders": 10,
+          "active_weeks": 107,
+          "longest_active_run": 10
+        },
+        {
+          "supplier": "S079",
+          "planned_order": 5.211538461538462,
+          "nearby_historical_orders": 2,
+          "active_weeks": 52,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S080",
+          "planned_order": 78.66666666666667,
+          "nearby_historical_orders": 16,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S081",
+          "planned_order": 1.5483870967741935,
+          "nearby_historical_orders": 0,
+          "active_weeks": 31,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S082",
+          "planned_order": 1.3888888888888888,
+          "nearby_historical_orders": 0,
+          "active_weeks": 72,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S083",
+          "planned_order": 68.75,
+          "nearby_historical_orders": 0,
+          "active_weeks": 32,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S084",
+          "planned_order": 7.746478873239085,
+          "nearby_historical_orders": 4,
+          "active_weeks": 71,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S085",
+          "planned_order": 1.7857142857144974,
+          "nearby_historical_orders": 2,
+          "active_weeks": 56,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S086",
+          "planned_order": 144.1866028708134,
+          "nearby_historical_orders": 0,
+          "active_weeks": 209,
+          "longest_active_run": 23
+        },
+        {
+          "supplier": "S087",
+          "planned_order": 2.263157894736842,
+          "nearby_historical_orders": 6,
+          "active_weeks": 38,
+          "longest_active_run": 2
+        },
+        {
+          "supplier": "S088",
+          "planned_order": 3.751633986928104,
+          "nearby_historical_orders": 11,
+          "active_weeks": 153,
+          "longest_active_run": 12
+        },
+        {
+          "supplier": "S089",
+          "planned_order": 5.930232558139535,
+          "nearby_historical_orders": 4,
+          "active_weeks": 43,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S090",
+          "planned_order": 5.6976744186046515,
+          "nearby_historical_orders": 0,
+          "active_weeks": 43,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S091",
+          "planned_order": 2.423076923076923,
+          "nearby_historical_orders": 8,
+          "active_weeks": 52,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S092",
+          "planned_order": 2.476923076923077,
+          "nearby_historical_orders": 31,
+          "active_weeks": 130,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S093",
+          "planned_order": 20.576271186440678,
+          "nearby_historical_orders": 0,
+          "active_weeks": 59,
+          "longest_active_run": 8
+        },
+        {
+          "supplier": "S094",
+          "planned_order": 4.764705882352987,
+          "nearby_historical_orders": 3,
+          "active_weeks": 51,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S095",
+          "planned_order": 1.5352112676056338,
+          "nearby_historical_orders": 0,
+          "active_weeks": 71,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S096",
+          "planned_order": 339.0,
+          "nearby_historical_orders": 0,
+          "active_weeks": 54,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S097",
+          "planned_order": 214.59459459459458,
+          "nearby_historical_orders": 7,
+          "active_weeks": 74,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S098",
+          "planned_order": 1.5933014354066986,
+          "nearby_historical_orders": 0,
+          "active_weeks": 209,
+          "longest_active_run": 22
+        },
+        {
+          "supplier": "S099",
+          "planned_order": 34.46341463414634,
+          "nearby_historical_orders": 0,
+          "active_weeks": 41,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S100",
+          "planned_order": 16.153846153845848,
+          "nearby_historical_orders": 0,
+          "active_weeks": 91,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S101",
+          "planned_order": 10.821917808219178,
+          "nearby_historical_orders": 0,
+          "active_weeks": 73,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S102",
+          "planned_order": 9.671875,
+          "nearby_historical_orders": 2,
+          "active_weeks": 64,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S103",
+          "planned_order": 40.17460317460363,
+          "nearby_historical_orders": 0,
+          "active_weeks": 63,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S104",
+          "planned_order": 6.458333333333333,
+          "nearby_historical_orders": 4,
+          "active_weeks": 72,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S105",
+          "planned_order": 3.2181818181818183,
+          "nearby_historical_orders": 5,
+          "active_weeks": 55,
+          "longest_active_run": 9
+        },
+        {
+          "supplier": "S106",
+          "planned_order": 1.564102564102564,
+          "nearby_historical_orders": 0,
+          "active_weeks": 39,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S107",
+          "planned_order": 23.66666666666667,
+          "nearby_historical_orders": 0,
+          "active_weeks": 63,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S108",
+          "planned_order": 1131.0208333333333,
+          "nearby_historical_orders": 13,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S109",
+          "planned_order": 2.3214285714285716,
+          "nearby_historical_orders": 3,
+          "active_weeks": 56,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S110",
+          "planned_order": 2.7532467532467533,
+          "nearby_historical_orders": 19,
+          "active_weeks": 154,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S111",
+          "planned_order": 27.894736842105264,
+          "nearby_historical_orders": 0,
+          "active_weeks": 38,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S112",
+          "planned_order": 11.8125,
+          "nearby_historical_orders": 0,
+          "active_weeks": 16,
+          "longest_active_run": 2
+        },
+        {
+          "supplier": "S113",
+          "planned_order": 2.356060606060606,
+          "nearby_historical_orders": 21,
+          "active_weeks": 132,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S114",
+          "planned_order": 63.12987012987012,
+          "nearby_historical_orders": 0,
+          "active_weeks": 231,
+          "longest_active_run": 47
+        },
+        {
+          "supplier": "S115",
+          "planned_order": 5.609929078014185,
+          "nearby_historical_orders": 11,
+          "active_weeks": 141,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S116",
+          "planned_order": 2.3513513513513513,
+          "nearby_historical_orders": 3,
+          "active_weeks": 37,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S117",
+          "planned_order": 33.88775510204081,
+          "nearby_historical_orders": 0,
+          "active_weeks": 98,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S118",
+          "planned_order": 26.82857142857143,
+          "nearby_historical_orders": 0,
+          "active_weeks": 70,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S119",
+          "planned_order": 1.872340425531915,
+          "nearby_historical_orders": 1,
+          "active_weeks": 47,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S120",
+          "planned_order": 1.375,
+          "nearby_historical_orders": 0,
+          "active_weeks": 32,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S121",
+          "planned_order": 3.407407407407407,
+          "nearby_historical_orders": 3,
+          "active_weeks": 54,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S122",
+          "planned_order": 1.5333333333333334,
+          "nearby_historical_orders": 0,
+          "active_weeks": 45,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S123",
+          "planned_order": 25.458333333333332,
+          "nearby_historical_orders": 72,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S124",
+          "planned_order": 2.1,
+          "nearby_historical_orders": 4,
+          "active_weeks": 30,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S125",
+          "planned_order": 3.983050847457627,
+          "nearby_historical_orders": 0,
+          "active_weeks": 59,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S126",
+          "planned_order": 1322.85,
+          "nearby_historical_orders": 5,
+          "active_weeks": 100,
+          "longest_active_run": 14
+        },
+        {
+          "supplier": "S127",
+          "planned_order": 7.59375,
+          "nearby_historical_orders": 1,
+          "active_weeks": 64,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S128",
+          "planned_order": 1.7746478873239437,
+          "nearby_historical_orders": 6,
+          "active_weeks": 71,
+          "longest_active_run": 9
+        },
+        {
+          "supplier": "S129",
+          "planned_order": 11.85221674876849,
+          "nearby_historical_orders": 2,
+          "active_weeks": 203,
+          "longest_active_run": 23
+        },
+        {
+          "supplier": "S130",
+          "planned_order": 3.552083333333334,
+          "nearby_historical_orders": 6,
+          "active_weeks": 96,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S131",
+          "planned_order": 580.7541666666667,
+          "nearby_historical_orders": 122,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S132",
+          "planned_order": 1.5,
+          "nearby_historical_orders": 0,
+          "active_weeks": 50,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S133",
+          "planned_order": 2.033333333333333,
+          "nearby_historical_orders": 5,
+          "active_weeks": 30,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S134",
+          "planned_order": 7.9230769230769225,
+          "nearby_historical_orders": 0,
+          "active_weeks": 65,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S135",
+          "planned_order": 3.857142857142857,
+          "nearby_historical_orders": 1,
+          "active_weeks": 21,
+          "longest_active_run": 1
+        },
+        {
+          "supplier": "S136",
+          "planned_order": 19.477272727272727,
+          "nearby_historical_orders": 0,
+          "active_weeks": 44,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S137",
+          "planned_order": 63.89285714285714,
+          "nearby_historical_orders": 2,
+          "active_weeks": 84,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S138",
+          "planned_order": 16.89308176100629,
+          "nearby_historical_orders": 0,
+          "active_weeks": 159,
+          "longest_active_run": 13
+        },
+        {
+          "supplier": "S139",
+          "planned_order": 793.5178571428571,
+          "nearby_historical_orders": 1,
+          "active_weeks": 224,
+          "longest_active_run": 45
+        },
+        {
+          "supplier": "S140",
+          "planned_order": 2186.831818181818,
+          "nearby_historical_orders": 0,
+          "active_weeks": 220,
+          "longest_active_run": 23
+        },
+        {
+          "supplier": "S141",
+          "planned_order": 2.6307692307692307,
+          "nearby_historical_orders": 16,
+          "active_weeks": 130,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S142",
+          "planned_order": 5.173913043478261,
+          "nearby_historical_orders": 0,
+          "active_weeks": 46,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S143",
+          "planned_order": 394.0416666666667,
+          "nearby_historical_orders": 44,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S144",
+          "planned_order": 3.15,
+          "nearby_historical_orders": 0,
+          "active_weeks": 20,
+          "longest_active_run": 2
+        },
+        {
+          "supplier": "S145",
+          "planned_order": 34.97260273972603,
+          "nearby_historical_orders": 0,
+          "active_weeks": 73,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S146",
+          "planned_order": 4.25668449197861,
+          "nearby_historical_orders": 5,
+          "active_weeks": 187,
+          "longest_active_run": 18
+        },
+        {
+          "supplier": "S147",
+          "planned_order": 7.9,
+          "nearby_historical_orders": 0,
+          "active_weeks": 20,
+          "longest_active_run": 2
+        },
+        {
+          "supplier": "S148",
+          "planned_order": 12.85,
+          "nearby_historical_orders": 0,
+          "active_weeks": 80,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S149",
+          "planned_order": 2.5308641975308643,
+          "nearby_historical_orders": 10,
+          "active_weeks": 81,
+          "longest_active_run": 10
+        },
+        {
+          "supplier": "S150",
+          "planned_order": 22.866666666666667,
+          "nearby_historical_orders": 0,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S151",
+          "planned_order": 1110.4583333333333,
+          "nearby_historical_orders": 3,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S152",
+          "planned_order": 2.6350364963503647,
+          "nearby_historical_orders": 17,
+          "active_weeks": 137,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S153",
+          "planned_order": 47.517857142857146,
+          "nearby_historical_orders": 0,
+          "active_weeks": 56,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S154",
+          "planned_order": 98.3076923076923,
+          "nearby_historical_orders": 9,
+          "active_weeks": 104,
+          "longest_active_run": 76
+        },
+        {
+          "supplier": "S155",
+          "planned_order": 7.666666666666668,
+          "nearby_historical_orders": 1,
+          "active_weeks": 54,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S156",
+          "planned_order": 5.395833333333333,
+          "nearby_historical_orders": 1,
+          "active_weeks": 48,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S157",
+          "planned_order": 252.15151515151516,
+          "nearby_historical_orders": 0,
+          "active_weeks": 132,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S158",
+          "planned_order": 199.11764705882354,
+          "nearby_historical_orders": 0,
+          "active_weeks": 51,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S159",
+          "planned_order": 3.0853658536585367,
+          "nearby_historical_orders": 5,
+          "active_weeks": 82,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S160",
+          "planned_order": 921.8823529411765,
+          "nearby_historical_orders": 0,
+          "active_weeks": 68,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S161",
+          "planned_order": 346.52777777777777,
+          "nearby_historical_orders": 0,
+          "active_weeks": 72,
+          "longest_active_run": 9
+        },
+        {
+          "supplier": "S162",
+          "planned_order": 11.12359550561798,
+          "nearby_historical_orders": 0,
+          "active_weeks": 89,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S163",
+          "planned_order": 10.448717948717949,
+          "nearby_historical_orders": 2,
+          "active_weeks": 78,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S164",
+          "planned_order": 11.333333333333119,
+          "nearby_historical_orders": 0,
+          "active_weeks": 78,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S165",
+          "planned_order": 6.957894736842105,
+          "nearby_historical_orders": 0,
+          "active_weeks": 95,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S166",
+          "planned_order": 2.769230769230769,
+          "nearby_historical_orders": 0,
+          "active_weeks": 52,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S167",
+          "planned_order": 3.2142857142857144,
+          "nearby_historical_orders": 1,
+          "active_weeks": 70,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S168",
+          "planned_order": 24.415384615384614,
+          "nearby_historical_orders": 0,
+          "active_weeks": 65,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S169",
+          "planned_order": 2.1707317073170733,
+          "nearby_historical_orders": 33,
+          "active_weeks": 123,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S170",
+          "planned_order": 8.24390243902439,
+          "nearby_historical_orders": 1,
+          "active_weeks": 41,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S171",
+          "planned_order": 1.5873015873015872,
+          "nearby_historical_orders": 0,
+          "active_weeks": 63,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S172",
+          "planned_order": 2.124087591240876,
+          "nearby_historical_orders": 22,
+          "active_weeks": 137,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S173",
+          "planned_order": 47.17948717948718,
+          "nearby_historical_orders": 0,
+          "active_weeks": 39,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S174",
+          "planned_order": 2.007936507936508,
+          "nearby_historical_orders": 26,
+          "active_weeks": 126,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S175",
+          "planned_order": 1.929078014184397,
+          "nearby_historical_orders": 25,
+          "active_weeks": 141,
+          "longest_active_run": 11
+        },
+        {
+          "supplier": "S176",
+          "planned_order": 4.8625,
+          "nearby_historical_orders": 0,
+          "active_weeks": 80,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S177",
+          "planned_order": 1.8831168831168617,
+          "nearby_historical_orders": 3,
+          "active_weeks": 77,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S178",
+          "planned_order": 2.7111111111111112,
+          "nearby_historical_orders": 5,
+          "active_weeks": 45,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S179",
+          "planned_order": 8.527027027027026,
+          "nearby_historical_orders": 0,
+          "active_weeks": 74,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S180",
+          "planned_order": 1.0338983050847457,
+          "nearby_historical_orders": 57,
+          "active_weeks": 59,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S181",
+          "planned_order": 10.0,
+          "nearby_historical_orders": 0,
+          "active_weeks": 58,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S182",
+          "planned_order": 4.145833333333333,
+          "nearby_historical_orders": 1,
+          "active_weeks": 48,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S183",
+          "planned_order": 107.2439024390244,
+          "nearby_historical_orders": 0,
+          "active_weeks": 82,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S184",
+          "planned_order": 11.075471698113208,
+          "nearby_historical_orders": 1,
+          "active_weeks": 53,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S185",
+          "planned_order": 6.0,
+          "nearby_historical_orders": 2,
+          "active_weeks": 83,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S186",
+          "planned_order": 19.568181818181817,
+          "nearby_historical_orders": 0,
+          "active_weeks": 132,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S187",
+          "planned_order": 1.9047619047619047,
+          "nearby_historical_orders": 6,
+          "active_weeks": 84,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S188",
+          "planned_order": 1.6153846153846154,
+          "nearby_historical_orders": 0,
+          "active_weeks": 26,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S189",
+          "planned_order": 54.698113207547166,
+          "nearby_historical_orders": 64,
+          "active_weeks": 159,
+          "longest_active_run": 134
+        },
+        {
+          "supplier": "S190",
+          "planned_order": 3.571428571428572,
+          "nearby_historical_orders": 0,
+          "active_weeks": 21,
+          "longest_active_run": 2
+        },
+        {
+          "supplier": "S191",
+          "planned_order": 35.1578947368421,
+          "nearby_historical_orders": 0,
+          "active_weeks": 133,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S192",
+          "planned_order": 12.176470588235293,
+          "nearby_historical_orders": 0,
+          "active_weeks": 68,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S193",
+          "planned_order": 2.8,
+          "nearby_historical_orders": 5,
+          "active_weeks": 30,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S194",
+          "planned_order": 422.4166666666667,
+          "nearby_historical_orders": 205,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S195",
+          "planned_order": 36.78048780487805,
+          "nearby_historical_orders": 0,
+          "active_weeks": 41,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S196",
+          "planned_order": 1.2291666666666667,
+          "nearby_historical_orders": 43,
+          "active_weeks": 48,
+          "longest_active_run": 2
+        },
+        {
+          "supplier": "S197",
+          "planned_order": 4.696,
+          "nearby_historical_orders": 24,
+          "active_weeks": 125,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S198",
+          "planned_order": 5.344827586206897,
+          "nearby_historical_orders": 0,
+          "active_weeks": 87,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S199",
+          "planned_order": 32.041666666666664,
+          "nearby_historical_orders": 0,
+          "active_weeks": 48,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S200",
+          "planned_order": 13.273972602739725,
+          "nearby_historical_orders": 0,
+          "active_weeks": 73,
+          "longest_active_run": 9
+        },
+        {
+          "supplier": "S201",
+          "planned_order": 7116.306122448979,
+          "nearby_historical_orders": 5,
+          "active_weeks": 49,
+          "longest_active_run": 13
+        },
+        {
+          "supplier": "S202",
+          "planned_order": 8.661654135338345,
+          "nearby_historical_orders": 3,
+          "active_weeks": 133,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S203",
+          "planned_order": 1.2142857142857142,
+          "nearby_historical_orders": 24,
+          "active_weeks": 28,
+          "longest_active_run": 2
+        },
+        {
+          "supplier": "S204",
+          "planned_order": 4.407407407407407,
+          "nearby_historical_orders": 1,
+          "active_weeks": 27,
+          "longest_active_run": 2
+        },
+        {
+          "supplier": "S205",
+          "planned_order": 4.873239436619718,
+          "nearby_historical_orders": 4,
+          "active_weeks": 71,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S206",
+          "planned_order": 1.5333333333333334,
+          "nearby_historical_orders": 0,
+          "active_weeks": 15,
+          "longest_active_run": 2
+        },
+        {
+          "supplier": "S207",
+          "planned_order": 6.109890109890062,
+          "nearby_historical_orders": 4,
+          "active_weeks": 91,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S208",
+          "planned_order": 118.15873015873018,
+          "nearby_historical_orders": 2,
+          "active_weeks": 126,
+          "longest_active_run": 66
+        },
+        {
+          "supplier": "S209",
+          "planned_order": 3.767123287671233,
+          "nearby_historical_orders": 2,
+          "active_weeks": 73,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S210",
+          "planned_order": 248.942446043166,
+          "nearby_historical_orders": 6,
+          "active_weeks": 139,
+          "longest_active_run": 11
+        },
+        {
+          "supplier": "S211",
+          "planned_order": 5.145161290322581,
+          "nearby_historical_orders": 0,
+          "active_weeks": 62,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S212",
+          "planned_order": 14.485294117647058,
+          "nearby_historical_orders": 0,
+          "active_weeks": 68,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S213",
+          "planned_order": 1.1265060240963856,
+          "nearby_historical_orders": 148,
+          "active_weeks": 166,
+          "longest_active_run": 9
+        },
+        {
+          "supplier": "S214",
+          "planned_order": 5.838709677419355,
+          "nearby_historical_orders": 0,
+          "active_weeks": 93,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S215",
+          "planned_order": 15.381578947368421,
+          "nearby_historical_orders": 0,
+          "active_weeks": 76,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S216",
+          "planned_order": 2.574324324324324,
+          "nearby_historical_orders": 22,
+          "active_weeks": 148,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S217",
+          "planned_order": 4.488372093023256,
+          "nearby_historical_orders": 6,
+          "active_weeks": 43,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S218",
+          "planned_order": 61.41666666666666,
+          "nearby_historical_orders": 33,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S219",
+          "planned_order": 9.416666666666666,
+          "nearby_historical_orders": 0,
+          "active_weeks": 36,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S220",
+          "planned_order": 10.048387096774194,
+          "nearby_historical_orders": 0,
+          "active_weeks": 62,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S221",
+          "planned_order": 2.3412698412698414,
+          "nearby_historical_orders": 22,
+          "active_weeks": 126,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S222",
+          "planned_order": 31.23076923076923,
+          "nearby_historical_orders": 0,
+          "active_weeks": 39,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S223",
+          "planned_order": 6.594594594594481,
+          "nearby_historical_orders": 0,
+          "active_weeks": 37,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S224",
+          "planned_order": 2.672727272727273,
+          "nearby_historical_orders": 1,
+          "active_weeks": 110,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S225",
+          "planned_order": 1.75,
+          "nearby_historical_orders": 1,
+          "active_weeks": 16,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S226",
+          "planned_order": 4.220338983050848,
+          "nearby_historical_orders": 2,
+          "active_weeks": 59,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S227",
+          "planned_order": 11.179487179487179,
+          "nearby_historical_orders": 2,
+          "active_weeks": 39,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S228",
+          "planned_order": 67.64912280701755,
+          "nearby_historical_orders": 0,
+          "active_weeks": 57,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S229",
+          "planned_order": 1499.5208333333333,
+          "nearby_historical_orders": 128,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S230",
+          "planned_order": 46.64705882352941,
+          "nearby_historical_orders": 0,
+          "active_weeks": 34,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S231",
+          "planned_order": 53.92307692307692,
+          "nearby_historical_orders": 0,
+          "active_weeks": 78,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S232",
+          "planned_order": 3.45,
+          "nearby_historical_orders": 2,
+          "active_weeks": 40,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S233",
+          "planned_order": 2.6,
+          "nearby_historical_orders": 7,
+          "active_weeks": 85,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S234",
+          "planned_order": 35.78217821782178,
+          "nearby_historical_orders": 0,
+          "active_weeks": 101,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S235",
+          "planned_order": 8.105263157894736,
+          "nearby_historical_orders": 2,
+          "active_weeks": 38,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S236",
+          "planned_order": 1.28,
+          "nearby_historical_orders": 0,
+          "active_weeks": 25,
+          "longest_active_run": 2
+        },
+        {
+          "supplier": "S237",
+          "planned_order": 2.090909090909091,
+          "nearby_historical_orders": 22,
+          "active_weeks": 121,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S238",
+          "planned_order": 24.254545454545454,
+          "nearby_historical_orders": 1,
+          "active_weeks": 55,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S239",
+          "planned_order": 3.613793103448276,
+          "nearby_historical_orders": 44,
+          "active_weeks": 145,
+          "longest_active_run": 11
+        },
+        {
+          "supplier": "S240",
+          "planned_order": 1.5625,
+          "nearby_historical_orders": 0,
+          "active_weeks": 64,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S241",
+          "planned_order": 11.964285714285714,
+          "nearby_historical_orders": 0,
+          "active_weeks": 56,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S242",
+          "planned_order": 9.261538461538462,
+          "nearby_historical_orders": 3,
+          "active_weeks": 65,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S243",
+          "planned_order": 1.5116279069767442,
+          "nearby_historical_orders": 0,
+          "active_weeks": 86,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S244",
+          "planned_order": 70.8375,
+          "nearby_historical_orders": 67,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S245",
+          "planned_order": 3.533742331288343,
+          "nearby_historical_orders": 7,
+          "active_weeks": 163,
+          "longest_active_run": 13
+        },
+        {
+          "supplier": "S246",
+          "planned_order": 188.9861111111121,
+          "nearby_historical_orders": 0,
+          "active_weeks": 72,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S247",
+          "planned_order": 233.33333333333334,
+          "nearby_historical_orders": 209,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S248",
+          "planned_order": 6.08235294117647,
+          "nearby_historical_orders": 2,
+          "active_weeks": 85,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S249",
+          "planned_order": 6.083333333333332,
+          "nearby_historical_orders": 2,
+          "active_weeks": 60,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S250",
+          "planned_order": 34.473684210526315,
+          "nearby_historical_orders": 0,
+          "active_weeks": 19,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S251",
+          "planned_order": 38.648148148148145,
+          "nearby_historical_orders": 0,
+          "active_weeks": 54,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S252",
+          "planned_order": 25.050847457627118,
+          "nearby_historical_orders": 0,
+          "active_weeks": 59,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S253",
+          "planned_order": 2.4722222222222223,
+          "nearby_historical_orders": 10,
+          "active_weeks": 72,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S254",
+          "planned_order": 3.4,
+          "nearby_historical_orders": 1,
+          "active_weeks": 45,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S255",
+          "planned_order": 1.3333333333333333,
+          "nearby_historical_orders": 0,
+          "active_weeks": 36,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S256",
+          "planned_order": 2.876923076923077,
+          "nearby_historical_orders": 16,
+          "active_weeks": 130,
+          "longest_active_run": 9
+        },
+        {
+          "supplier": "S257",
+          "planned_order": 2.9411764705877608,
+          "nearby_historical_orders": 1,
+          "active_weeks": 51,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S258",
+          "planned_order": 4.4,
+          "nearby_historical_orders": 24,
+          "active_weeks": 140,
+          "longest_active_run": 13
+        },
+        {
+          "supplier": "S259",
+          "planned_order": 2.925925925925926,
+          "nearby_historical_orders": 1,
+          "active_weeks": 54,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S260",
+          "planned_order": 3.9931034482758627,
+          "nearby_historical_orders": 1,
+          "active_weeks": 145,
+          "longest_active_run": 16
+        },
+        {
+          "supplier": "S261",
+          "planned_order": 19.984615384615385,
+          "nearby_historical_orders": 0,
+          "active_weeks": 65,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S262",
+          "planned_order": 14.964285714285714,
+          "nearby_historical_orders": 0,
+          "active_weeks": 56,
+          "longest_active_run": 2
+        },
+        {
+          "supplier": "S263",
+          "planned_order": 3.105263157894727,
+          "nearby_historical_orders": 20,
+          "active_weeks": 152,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S264",
+          "planned_order": 2.9,
+          "nearby_historical_orders": 0,
+          "active_weeks": 10,
+          "longest_active_run": 2
+        },
+        {
+          "supplier": "S265",
+          "planned_order": 7.2250000000000005,
+          "nearby_historical_orders": 2,
+          "active_weeks": 80,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S266",
+          "planned_order": 23.416666666666668,
+          "nearby_historical_orders": 170,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S267",
+          "planned_order": 7.921348314606742,
+          "nearby_historical_orders": 0,
+          "active_weeks": 89,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S268",
+          "planned_order": 539.0416666666666,
+          "nearby_historical_orders": 213,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S269",
+          "planned_order": 5.406451612903226,
+          "nearby_historical_orders": 1,
+          "active_weeks": 155,
+          "longest_active_run": 9
+        },
+        {
+          "supplier": "S270",
+          "planned_order": 1.421875,
+          "nearby_historical_orders": 0,
+          "active_weeks": 64,
+          "longest_active_run": 2
+        },
+        {
+          "supplier": "S271",
+          "planned_order": 5.17741935483871,
+          "nearby_historical_orders": 8,
+          "active_weeks": 62,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S272",
+          "planned_order": 18.22222222222222,
+          "nearby_historical_orders": 0,
+          "active_weeks": 18,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S273",
+          "planned_order": 108.56565656565657,
+          "nearby_historical_orders": 22,
+          "active_weeks": 99,
+          "longest_active_run": 87
+        },
+        {
+          "supplier": "S274",
+          "planned_order": 3.6530612244897958,
+          "nearby_historical_orders": 9,
+          "active_weeks": 49,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S275",
+          "planned_order": 658.9583333333334,
+          "nearby_historical_orders": 178,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S276",
+          "planned_order": 9.35897435897436,
+          "nearby_historical_orders": 0,
+          "active_weeks": 78,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S277",
+          "planned_order": 20.597560975610225,
+          "nearby_historical_orders": 0,
+          "active_weeks": 82,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S278",
+          "planned_order": 5.192771084337349,
+          "nearby_historical_orders": 3,
+          "active_weeks": 83,
+          "longest_active_run": 9
+        },
+        {
+          "supplier": "S279",
+          "planned_order": 5.795918367346981,
+          "nearby_historical_orders": 0,
+          "active_weeks": 49,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S280",
+          "planned_order": 7.474137931034482,
+          "nearby_historical_orders": 2,
+          "active_weeks": 116,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S281",
+          "planned_order": 1.4081632653061225,
+          "nearby_historical_orders": 0,
+          "active_weeks": 49,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S282",
+          "planned_order": 702.2125,
+          "nearby_historical_orders": 64,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S283",
+          "planned_order": 1.8970588235294117,
+          "nearby_historical_orders": 4,
+          "active_weeks": 68,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S284",
+          "planned_order": 189.64583333333334,
+          "nearby_historical_orders": 48,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S285",
+          "planned_order": 83.82278481012658,
+          "nearby_historical_orders": 0,
+          "active_weeks": 79,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S286",
+          "planned_order": 1.5,
+          "nearby_historical_orders": 0,
+          "active_weeks": 40,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S287",
+          "planned_order": 13.966666666666665,
+          "nearby_historical_orders": 0,
+          "active_weeks": 60,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S288",
+          "planned_order": 1.393939393939394,
+          "nearby_historical_orders": 0,
+          "active_weeks": 33,
+          "longest_active_run": 2
+        },
+        {
+          "supplier": "S289",
+          "planned_order": 21.321428571428573,
+          "nearby_historical_orders": 0,
+          "active_weeks": 56,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S290",
+          "planned_order": 40.90410958903993,
+          "nearby_historical_orders": 0,
+          "active_weeks": 73,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S291",
+          "planned_order": 60.65765765765766,
+          "nearby_historical_orders": 0,
+          "active_weeks": 222,
+          "longest_active_run": 23
+        },
+        {
+          "supplier": "S292",
+          "planned_order": 93.7457627118644,
+          "nearby_historical_orders": 15,
+          "active_weeks": 118,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S293",
+          "planned_order": 19.98507462686567,
+          "nearby_historical_orders": 0,
+          "active_weeks": 67,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S294",
+          "planned_order": 75.96249999999999,
+          "nearby_historical_orders": 163,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S295",
+          "planned_order": 14.843373493975905,
+          "nearby_historical_orders": 0,
+          "active_weeks": 83,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S296",
+          "planned_order": 1.34,
+          "nearby_historical_orders": 0,
+          "active_weeks": 50,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S297",
+          "planned_order": 66.06756756756756,
+          "nearby_historical_orders": 0,
+          "active_weeks": 74,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S298",
+          "planned_order": 2.823529411764706,
+          "nearby_historical_orders": 0,
+          "active_weeks": 17,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S299",
+          "planned_order": 8.294117647058824,
+          "nearby_historical_orders": 0,
+          "active_weeks": 136,
+          "longest_active_run": 9
+        },
+        {
+          "supplier": "S300",
+          "planned_order": 35.0,
+          "nearby_historical_orders": 1,
+          "active_weeks": 11,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S301",
+          "planned_order": 2.1,
+          "nearby_historical_orders": 2,
+          "active_weeks": 40,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S302",
+          "planned_order": 17.123595505617978,
+          "nearby_historical_orders": 0,
+          "active_weeks": 89,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S303",
+          "planned_order": 3.7857142857142856,
+          "nearby_historical_orders": 0,
+          "active_weeks": 14,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S304",
+          "planned_order": 3.42,
+          "nearby_historical_orders": 7,
+          "active_weeks": 100,
+          "longest_active_run": 11
+        },
+        {
+          "supplier": "S305",
+          "planned_order": 1.25,
+          "nearby_historical_orders": 16,
+          "active_weeks": 20,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S306",
+          "planned_order": 523.6666666666665,
+          "nearby_historical_orders": 149,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S307",
+          "planned_order": 592.9244186046511,
+          "nearby_historical_orders": 1,
+          "active_weeks": 172,
+          "longest_active_run": 19
+        },
+        {
+          "supplier": "S308",
+          "planned_order": 776.1583333333332,
+          "nearby_historical_orders": 48,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S309",
+          "planned_order": 42.111111111111114,
+          "nearby_historical_orders": 0,
+          "active_weeks": 27,
+          "longest_active_run": 2
+        },
+        {
+          "supplier": "S310",
+          "planned_order": 2.298611111111111,
+          "nearby_historical_orders": 26,
+          "active_weeks": 144,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S311",
+          "planned_order": 2.325,
+          "nearby_historical_orders": 6,
+          "active_weeks": 80,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S312",
+          "planned_order": 2.180327868852459,
+          "nearby_historical_orders": 10,
+          "active_weeks": 61,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S313",
+          "planned_order": 14.768115942028976,
+          "nearby_historical_orders": 0,
+          "active_weeks": 69,
+          "longest_active_run": 9
+        },
+        {
+          "supplier": "S314",
+          "planned_order": 13.106382978723405,
+          "nearby_historical_orders": 1,
+          "active_weeks": 235,
+          "longest_active_run": 143
+        },
+        {
+          "supplier": "S315",
+          "planned_order": 16.923076923076923,
+          "nearby_historical_orders": 0,
+          "active_weeks": 26,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S316",
+          "planned_order": 1.627906976744186,
+          "nearby_historical_orders": 0,
+          "active_weeks": 43,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S317",
+          "planned_order": 3.658823529411765,
+          "nearby_historical_orders": 0,
+          "active_weeks": 85,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S318",
+          "planned_order": 2.794392523364486,
+          "nearby_historical_orders": 5,
+          "active_weeks": 107,
+          "longest_active_run": 12
+        },
+        {
+          "supplier": "S319",
+          "planned_order": 20.267605633802816,
+          "nearby_historical_orders": 0,
+          "active_weeks": 71,
+          "longest_active_run": 9
+        },
+        {
+          "supplier": "S320",
+          "planned_order": 5.403225806451613,
+          "nearby_historical_orders": 1,
+          "active_weeks": 62,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S321",
+          "planned_order": 2.5,
+          "nearby_historical_orders": 0,
+          "active_weeks": 12,
+          "longest_active_run": 1
+        },
+        {
+          "supplier": "S322",
+          "planned_order": 2.90625,
+          "nearby_historical_orders": 1,
+          "active_weeks": 64,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S323",
+          "planned_order": 53.03846153846153,
+          "nearby_historical_orders": 0,
+          "active_weeks": 26,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S324",
+          "planned_order": 2.4926470588235294,
+          "nearby_historical_orders": 36,
+          "active_weeks": 136,
+          "longest_active_run": 8
+        },
+        {
+          "supplier": "S325",
+          "planned_order": 8.213114754098394,
+          "nearby_historical_orders": 1,
+          "active_weeks": 61,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S326",
+          "planned_order": 19.62903225806438,
+          "nearby_historical_orders": 0,
+          "active_weeks": 62,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S327",
+          "planned_order": 2.310344827586207,
+          "nearby_historical_orders": 4,
+          "active_weeks": 29,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S328",
+          "planned_order": 1.5135135135135136,
+          "nearby_historical_orders": 0,
+          "active_weeks": 37,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S329",
+          "planned_order": 651.4583333333334,
+          "nearby_historical_orders": 176,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S330",
+          "planned_order": 720.75,
+          "nearby_historical_orders": 35,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S331",
+          "planned_order": 2.972972972972973,
+          "nearby_historical_orders": 3,
+          "active_weeks": 74,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S332",
+          "planned_order": 7.529411764705882,
+          "nearby_historical_orders": 0,
+          "active_weeks": 51,
+          "longest_active_run": 8
+        },
+        {
+          "supplier": "S333",
+          "planned_order": 12.330645161290322,
+          "nearby_historical_orders": 0,
+          "active_weeks": 124,
+          "longest_active_run": 27
+        },
+        {
+          "supplier": "S334",
+          "planned_order": 30.722222222222225,
+          "nearby_historical_orders": 1,
+          "active_weeks": 72,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S335",
+          "planned_order": 230.23076923076923,
+          "nearby_historical_orders": 0,
+          "active_weeks": 52,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S336",
+          "planned_order": 2.723404255319149,
+          "nearby_historical_orders": 1,
+          "active_weeks": 47,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S337",
+          "planned_order": 1.2,
+          "nearby_historical_orders": 25,
+          "active_weeks": 30,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S338",
+          "planned_order": 187.11764705882354,
+          "nearby_historical_orders": 0,
+          "active_weeks": 204,
+          "longest_active_run": 20
+        },
+        {
+          "supplier": "S339",
+          "planned_order": 7.958333333333334,
+          "nearby_historical_orders": 0,
+          "active_weeks": 72,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S340",
+          "planned_order": 716.6666666666666,
+          "nearby_historical_orders": 145,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S341",
+          "planned_order": 23.93333333333333,
+          "nearby_historical_orders": 0,
+          "active_weeks": 60,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S342",
+          "planned_order": 4.4,
+          "nearby_historical_orders": 5,
+          "active_weeks": 40,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S343",
+          "planned_order": 42.885714285714286,
+          "nearby_historical_orders": 0,
+          "active_weeks": 70,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S344",
+          "planned_order": 5.022222222222222,
+          "nearby_historical_orders": 0,
+          "active_weeks": 45,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S345",
+          "planned_order": 3.090909090909091,
+          "nearby_historical_orders": 0,
+          "active_weeks": 33,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S346",
+          "planned_order": 102.95833333333333,
+          "nearby_historical_orders": 145,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S347",
+          "planned_order": 1.5507246376811454,
+          "nearby_historical_orders": 0,
+          "active_weeks": 69,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S348",
+          "planned_order": 839.7437185929648,
+          "nearby_historical_orders": 3,
+          "active_weeks": 199,
+          "longest_active_run": 24
+        },
+        {
+          "supplier": "S349",
+          "planned_order": 1.3714285714285714,
+          "nearby_historical_orders": 0,
+          "active_weeks": 35,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S350",
+          "planned_order": 16.44,
+          "nearby_historical_orders": 0,
+          "active_weeks": 75,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S351",
+          "planned_order": 1.0,
+          "nearby_historical_orders": 39,
+          "active_weeks": 39,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S352",
+          "planned_order": 372.0833333333333,
+          "nearby_historical_orders": 82,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S353",
+          "planned_order": 1.475,
+          "nearby_historical_orders": 0,
+          "active_weeks": 40,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S354",
+          "planned_order": 36.5625,
+          "nearby_historical_orders": 0,
+          "active_weeks": 64,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S355",
+          "planned_order": 35.18518518518518,
+          "nearby_historical_orders": 0,
+          "active_weeks": 27,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S356",
+          "planned_order": 552.55,
+          "nearby_historical_orders": 37,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S357",
+          "planned_order": 3.0294117647058822,
+          "nearby_historical_orders": 2,
+          "active_weeks": 68,
+          "longest_active_run": 9
+        },
+        {
+          "supplier": "S358",
+          "planned_order": 1.9333333333333333,
+          "nearby_historical_orders": 1,
+          "active_weeks": 15,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S359",
+          "planned_order": 3.8541666666666665,
+          "nearby_historical_orders": 1,
+          "active_weeks": 48,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S360",
+          "planned_order": 2.8675496688741724,
+          "nearby_historical_orders": 29,
+          "active_weeks": 151,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S361",
+          "planned_order": 1389.3833333333334,
+          "nearby_historical_orders": 119,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S362",
+          "planned_order": 1.1428571428571428,
+          "nearby_historical_orders": 62,
+          "active_weeks": 70,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S363",
+          "planned_order": 2.0869565217391304,
+          "nearby_historical_orders": 2,
+          "active_weeks": 46,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S364",
+          "planned_order": 120.95833333333333,
+          "nearby_historical_orders": 39,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S365",
+          "planned_order": 170.66666666666666,
+          "nearby_historical_orders": 134,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S366",
+          "planned_order": 1.0327868852459017,
+          "nearby_historical_orders": 59,
+          "active_weeks": 61,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S367",
+          "planned_order": 115.16666666666667,
+          "nearby_historical_orders": 32,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S368",
+          "planned_order": 4.3,
+          "nearby_historical_orders": 1,
+          "active_weeks": 30,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S369",
+          "planned_order": 31.49253731343284,
+          "nearby_historical_orders": 0,
+          "active_weeks": 67,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S370",
+          "planned_order": 7.38,
+          "nearby_historical_orders": 1,
+          "active_weeks": 50,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S371",
+          "planned_order": 41.25714285714286,
+          "nearby_historical_orders": 0,
+          "active_weeks": 70,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S372",
+          "planned_order": 20.435897435897434,
+          "nearby_historical_orders": 0,
+          "active_weeks": 39,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S373",
+          "planned_order": 10.887323943661972,
+          "nearby_historical_orders": 0,
+          "active_weeks": 71,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S374",
+          "planned_order": 202.55416666666667,
+          "nearby_historical_orders": 0,
+          "active_weeks": 240,
+          "longest_active_run": 240
+        },
+        {
+          "supplier": "S375",
+          "planned_order": 8.163934426229508,
+          "nearby_historical_orders": 0,
+          "active_weeks": 61,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S376",
+          "planned_order": 5.427536231884058,
+          "nearby_historical_orders": 8,
+          "active_weeks": 138,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S377",
+          "planned_order": 1.4912280701754386,
+          "nearby_historical_orders": 0,
+          "active_weeks": 57,
+          "longest_active_run": 8
+        },
+        {
+          "supplier": "S378",
+          "planned_order": 3.9454545454545453,
+          "nearby_historical_orders": 0,
+          "active_weeks": 55,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S379",
+          "planned_order": 5.918918918918919,
+          "nearby_historical_orders": 1,
+          "active_weeks": 37,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S380",
+          "planned_order": 40.19999999999973,
+          "nearby_historical_orders": 3,
+          "active_weeks": 50,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S381",
+          "planned_order": 6.4375,
+          "nearby_historical_orders": 1,
+          "active_weeks": 32,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S382",
+          "planned_order": 6.594594594594595,
+          "nearby_historical_orders": 0,
+          "active_weeks": 37,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S383",
+          "planned_order": 4.235294117647059,
+          "nearby_historical_orders": 1,
+          "active_weeks": 34,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S384",
+          "planned_order": 2.3260869565217437,
+          "nearby_historical_orders": 1,
+          "active_weeks": 46,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S385",
+          "planned_order": 3.158536585365854,
+          "nearby_historical_orders": 3,
+          "active_weeks": 82,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S386",
+          "planned_order": 2.037037037037037,
+          "nearby_historical_orders": 9,
+          "active_weeks": 54,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S387",
+          "planned_order": 26.960526315789473,
+          "nearby_historical_orders": 0,
+          "active_weeks": 76,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S388",
+          "planned_order": 7.197183098591549,
+          "nearby_historical_orders": 3,
+          "active_weeks": 71,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S389",
+          "planned_order": 11.41304347826087,
+          "nearby_historical_orders": 0,
+          "active_weeks": 46,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S390",
+          "planned_order": 5.244897959183674,
+          "nearby_historical_orders": 1,
+          "active_weeks": 49,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S391",
+          "planned_order": 11.39240506329114,
+          "nearby_historical_orders": 0,
+          "active_weeks": 79,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S392",
+          "planned_order": 2.449275362318841,
+          "nearby_historical_orders": 34,
+          "active_weeks": 138,
+          "longest_active_run": 7
+        },
+        {
+          "supplier": "S393",
+          "planned_order": 2.1818181818181817,
+          "nearby_historical_orders": 0,
+          "active_weeks": 33,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S394",
+          "planned_order": 13.000000000000002,
+          "nearby_historical_orders": 0,
+          "active_weeks": 66,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S395",
+          "planned_order": 1255.1904761904761,
+          "nearby_historical_orders": 8,
+          "active_weeks": 84,
+          "longest_active_run": 8
+        },
+        {
+          "supplier": "S396",
+          "planned_order": 11.56043956043956,
+          "nearby_historical_orders": 0,
+          "active_weeks": 91,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S397",
+          "planned_order": 1.0169491525423728,
+          "nearby_historical_orders": 58,
+          "active_weeks": 59,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S398",
+          "planned_order": 4.975,
+          "nearby_historical_orders": 0,
+          "active_weeks": 40,
+          "longest_active_run": 3
+        },
+        {
+          "supplier": "S399",
+          "planned_order": 4.688524590163935,
+          "nearby_historical_orders": 4,
+          "active_weeks": 61,
+          "longest_active_run": 6
+        },
+        {
+          "supplier": "S400",
+          "planned_order": 11.194444444444445,
+          "nearby_historical_orders": 2,
+          "active_weeks": 72,
+          "longest_active_run": 5
+        },
+        {
+          "supplier": "S401",
+          "planned_order": 2.9850746268656723,
+          "nearby_historical_orders": 4,
+          "active_weeks": 67,
+          "longest_active_run": 4
+        },
+        {
+          "supplier": "S402",
+          "planned_order": 13.123287671232877,
+          "nearby_historical_orders": 0,
+          "active_weeks": 73,
+          "longest_active_run": 5
+        }
+      ],
+      "scope": "nearby means within ±20% of proposed quantity; absence indicates limited local support, not proof of inability; activity depends on prior ordering"
+    }
+  },
+  "predictions_sha256": "df9ae76ecf132b93205048916713d3b045c474c6688a01e76fba9eca77587d0f",
+  "source_code_sha256": {
+    "benchmarks/supply_2021c/response_study.py": "8d336530a1ce928688e17492a461e0959d7e8d9341b7e8a01af057f5e0f3e532",
+    "skill/cumcm-reliable-paper/scripts/conditional_supply.py": "3abfb92eaff6768bc4d69679f273fdd16c602b347f2e361cc64ccad370d4bf13"
+  },
+  "scope": "all historical blocks previously inspected; retrospective study, not new unseen validation or randomized policy evidence",
+  "old_timed_results_changed": false,
+  "capacity_identified": false,
+  "submission_ready": false
+}

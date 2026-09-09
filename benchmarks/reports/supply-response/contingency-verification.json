@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "independent_upper_bound": {
+    "supplier_count": 34,
+    "maximum_product_output": 28180.061354566496,
+    "type_counts": [
+      11,
+      11,
+      12
+    ],
+    "type_count_allocations_enumerated": 630
+  },
+  "required_output": 28200.0,
+  "candidate_supplier_count": 35,
+  "candidate_product_output": 28200.0,
+  "candidate_purchase_index": 490923.5013235489,
+  "source_contingency_sha256": "1a46d7fe188b4288098b9bb0481720eadd8de431079ce9534f718f3b7c91c23b",
+  "scope": "minimum count proved only under original fitted supply caps, identical within-type conversion and unrestricted transport links/splitting; no physical supply guarantee"
+}

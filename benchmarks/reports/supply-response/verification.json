@@ -1,0 +1,89 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "origin": 72,
+      "baseline_max_error": 0.0,
+      "selected_array_max_error": 0.0,
+      "passed": true
+    },
+    {
+      "origin": 96,
+      "baseline_max_error": 0.0,
+      "selected_array_max_error": 0.0,
+      "passed": true
+    },
+    {
+      "origin": 120,
+      "baseline_max_error": 0.0,
+      "selected_array_max_error": 0.0,
+      "passed": true
+    },
+    {
+      "origin": 144,
+      "baseline_max_error": 0.0,
+      "selected_array_max_error": 0.0,
+      "passed": true
+    },
+    {
+      "origin": 168,
+      "baseline_max_error": 0.0,
+      "selected_array_max_error": 0.0,
+      "passed": true
+    },
+    {
+      "origin": 192,
+      "baseline_max_error": 0.0,
+      "selected_array_max_error": 0.0,
+      "passed": true
+    },
+    {
+      "origin": 216,
+      "baseline_max_error": 0.0,
+      "selected_array_max_error": 0.0,
+      "passed": true
+    },
+    {
+      "method": "identity",
+      "max_metric_error": 1.8189894035458565e-12,
+      "passed": true
+    },
+    {
+      "method": "ratio_all",
+      "max_metric_error": 1.8189894035458565e-12,
+      "passed": true
+    },
+    {
+      "method": "ratio_48",
+      "max_metric_error": 1.8189894035458565e-12,
+      "passed": true
+    },
+    {
+      "method": "saturation_all",
+      "max_metric_error": 1.8189894035458565e-12,
+      "passed": true
+    },
+    {
+      "method": "saturation_48",
+      "max_metric_error": 9.094947017729282e-13,
+      "passed": true
+    },
+    {
+      "method": "bins_all",
+      "max_metric_error": 9.094947017729282e-13,
+      "passed": true
+    },
+    {
+      "method": "bins_48",
+      "max_metric_error": 9.094947017729282e-13,
+      "passed": true
+    },
+    {
+      "method": "nested_selected",
+      "max_metric_error": 9.094947017729282e-13,
+      "passed": true
+    }
+  ],
+  "report_sha256": "5a2fe0f3b388ffa9bb20a6df855e71f0d4a8387284f99a86018dd9ad06cdce2f",
+  "scope": "independent scalar score recomputation, row/week alignment, direct ratio baseline and selected-array agreement; does not independently validate every nonlinear fitter or certify causal effects"
+}

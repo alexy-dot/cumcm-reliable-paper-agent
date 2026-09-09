@@ -21,6 +21,35 @@
 
 本次还修复了长文件清单跨页裁切：排版器支持带重复表头的长表，并以85行真实TeX分页测试验证。工作流跑通不等于政策可靠；后48周的供货总量诊断误差较大，实际能力上限未校准，正式AI声明和独立使用详情尚未满足2026提交检查。上述限制保留在冻结成果中，后续改进不追溯修改此次成绩。
 
+### 后续供货模型比较：没有证据就不升级
+
+[回溯实验](reports/supply-response/report.json)固定7种候选，在7个连续24周窗口前分别只用历史拟合；模型选择使用前两个24周窗口的产品当量总供货平方误差。所有历史数据此前已被分析者接触，因此这是回溯验证，不是新的未见数据成绩，也不是对改变订货政策的因果验证。
+
+| 方法 | 每周总供货MAE | 每周总供货RMSE | 平均偏差 |
+| --- | ---: | ---: | ---: |
+| 全历史数量比例 | 6427.34 | 9647.35 | 129.16 |
+| 全历史饱和响应 | 6174.19 | 10696.88 | -1646.28 |
+| 仅按此前窗口选模 | 6624.35 | 10009.84 | -534.72 |
+
+单位均为产品立方米；低MAE并不意味着大误差风险同步降低。嵌套选模没有优于基线，故不替换冻结计划。[逐预测值](reports/supply-response/predictions.npz)与[独立标量核算](reports/supply-response/verification.json)保留全部比较，包括较差的候选。
+
+[订货支持审计](reports/supply-response/order-support.json)发现S140推荐量约2186.83原料立方米，夹在历史20与6000的订货空档中，不能仅因未超过历史最大值就视为充分支持。若暂不依赖S140，[备用计划](reports/supply-response/contingency.json)需要35家，归一化24周采购费490923.50，比原26家方案低199.79，但多9家合同且仍有S338、S374两处邻近数据不足。[独立按材料类别计数枚举](reports/supply-response/contingency-verification.json)证明34家最高只能支持28180.06，低于28200需求。这里是供应商暂不可用的情景，不是判定S140无法供货，更不是已确认的安全方案。
+
+可复用`conditional_supply.py`接口按供应商×周矩阵拟合，返回预测及历史范围外、内部空档、冷启动诊断；需NumPy。邻近定义为订购量±20%，是可调诊断口径，不是统计有效性门槛。
+
+```python
+from conditional_supply import fit_response, predict_response
+model = fit_response(past_orders, past_supply, method="ratio_all")
+prediction, support = predict_response(model, future_orders)
+```
+
+复跑实验和独立核算：
+
+```bash
+.venv/bin/python benchmarks/supply_2021c/response_study.py RUN --output NEW_DIRECTORY
+.venv/bin/python benchmarks/supply_2021c/verify_response_study.py RUN NEW_DIRECTORY
+```
+
 ## 2020 A：连续模型与约束优化
 
 2020 A“炉温曲线”的项目内首次实测，在约30分钟内完成四问和671条采样输出，29项独立数值检查通过。原8页稿的结构、字体与公式排版不合格，先前的排版通过记录已撤回。当前22页修订稿采用摘要独页、背景与条件—逐问要求的重述、逐问分析、模型假设、符号说明与分问求解结构，并使用宋体、黑体和TeX数学公式。修订补充了完整优化约束、求解设置与同预算算法对照；数值验收与论文修订分别记录。
